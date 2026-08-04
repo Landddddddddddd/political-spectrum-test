@@ -203,6 +203,25 @@
     animation-duration:.001ms!important; animation-iteration-count:1!important;
     transition-duration:.001ms!important; scroll-behavior:auto!important;
   }
+
+  /* ====== 测试前概览 ====== */
+  .overview{margin:14px 0 6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:12px 16px;}
+  .overview>summary{cursor:pointer;font-weight:800;color:var(--ink);font-size:15px;list-style:none;outline:none;}
+  .overview>summary::-webkit-details-marker{display:none;}
+  .overview>summary:before{content:"▾ ";color:var(--accent);font-size:13px;}
+  .overview:not([open])>summary:before{content:"▸ ";}
+  .ov-flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0 8px;}
+  .ov-step{display:flex;align-items:center;gap:7px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px;padding:6px 11px;border-radius:99px;}
+  .ov-step b{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;}
+  .ov-arrow{color:var(--muted);font-weight:700;font-size:13px;}
+  .ov-tip{font-size:13px;color:var(--muted);margin:6px 0 10px;line-height:1.7;}
+  .ov-dims{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .ov-dim{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:3px;}
+  .ov-name{font-weight:700;font-size:13px;color:var(--ink);}
+  .ov-poles{font-size:11px;color:var(--muted);line-height:1.5;}
+  .ov-get{font-size:13px;color:var(--ink);margin-top:10px;line-height:1.7;background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:9px 12px;}
+  .ov-get b{color:var(--accent);}
+  @media(max-width:560px){ .ov-dims{grid-template-columns:repeat(2,1fr);} .ov-flow{font-size:12px;} }
 </style>
 </head>
 <body>
@@ -288,8 +307,20 @@
        优先挑你还没碰到过的<b>领域</b>，并专门追问你态度还模糊的<b>维度</b>。</p>
     <p style="font-size:14px;color:var(--muted)">
        维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
-       选项数 2–8 不固定。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
+        选项数 2–8 不固定。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
     </p>
+    <details class="overview" open>
+      <summary>测试前概览</summary>
+      <div class="ov-flow">
+        <div class="ov-step"><b>1</b> 选量</div><span class="ov-arrow">→</span>
+        <div class="ov-step"><b>2</b> 情景答题</div><span class="ov-arrow">→</span>
+        <div class="ov-step"><b>3</b> 看画像与光谱</div><span class="ov-arrow">→</span>
+        <div class="ov-step"><b>4</b> 导出 / 保存</div>
+      </div>
+      <p class="ov-tip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定。</p>
+      <div class="ov-dims" id="ovDims"></div>
+      <div class="ov-get"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
+    </details>
     <div class="qc-label">先选题量：</div>
     <div class="qc-tabs" id="qcTabs">
       <button data-q="15" onclick="setQ(15)">15 题</button>
@@ -347,7 +378,8 @@
     <div class="top5" id="topList"></div>
     <div class="spectrum">
       <div class="sp-head">政治光谱位置 <span class="pill">可切换维度</span>
-        <button class="btn ghost sp-mini" onclick="downloadCard()">导出分享卡</button>
+        <button class="btn ghost sp-mini" onclick="downloadCard()">保存为图片</button>
+        <button class="btn ghost sp-mini" onclick="copySummary()">复制摘要</button>
       </div>
       <div class="sp-tabs" id="spTabs">
         <button data-mode="1" onclick="setSpecMode(1)">1 维</button>
@@ -1143,33 +1175,51 @@ function renderLegend(){
 }
 
 function wrapText(ctx, text, x, y, maxW, lh){
-  let line="", yy=y;
+  let line="", yy=y, n=0;
   for(const ch of text){
-    if(ctx.measureText(line+ch).width > maxW){ ctx.fillText(line, x, yy); line=ch; yy+=lh; }
+    if(ctx.measureText(line+ch).width > maxW){ ctx.fillText(line, x, yy); line=ch; yy+=lh; n++; }
     else line+=ch;
   }
-  if(line) ctx.fillText(line, x, yy);
+  if(line){ ctx.fillText(line, x, yy); n++; }
+  return n;
 }
-function downloadCard(){
+// 把风格化 SVG 拟形象绘制到 canvas 上（异步）
+function svgToImage(svg){
+  return new Promise((resolve,reject)=>{
+    const img=new Image();
+    const blob=new Blob([svg], {type:"image/svg+xml;charset=utf-8"});
+    const url=URL.createObjectURL(blob);
+    img.onload=()=>{ resolve(img); setTimeout(()=>URL.revokeObjectURL(url), 1500); };
+    img.onerror=(e)=>{ URL.revokeObjectURL(url); reject(e); };
+    img.src=url;
+  });
+}
+async function downloadCard(){
   if(!RESULT_COUNTS) return;
-  const res = dominantPoles(RESULT_COUNTS);
-  const primary = matchArch(res);
-  const W=720, H=900, c=document.createElement("canvas"); c.width=W; c.height=H;
+  const res=dominantPoles(RESULT_COUNTS);
+  const primary=matchArch(res);
+  const W=760, H=1060;
+  const c=document.createElement("canvas"); c.width=W; c.height=H;
   const x=c.getContext("2d");
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
   x.fillStyle="#3b6df0"; x.fillRect(0,0,W,12);
   x.fillStyle="#1f2933"; x.font="bold 30px sans-serif"; x.fillText("我的意识形态画像", 40, 62);
   x.fillStyle="#3b6df0"; x.font="bold 16px monospace"; x.fillText("签名 "+DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join(""), 40, 94);
-  x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(primary.name, 40, 142);
+  x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(primary.name, 40, 144);
   x.fillStyle="#1f2933"; x.font="16px sans-serif";
-  wrapText(x, primary.desc, 40, 176, W-80, 26);
-  const figs = FIGURES[primary.name]||[];
-  let y=232;
+  const used=wrapText(x, primary.desc, 40, 178, W-80, 26);
+  let y=178+used*26+12;
+  const figs=FIGURES[primary.name]||[];
   if(figs.length){
-    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("代表人物", 40, y);
-    x.fillStyle="#1f2933"; x.font="15px sans-serif";
-    x.fillText(figs.map(f=>f.name).join("、"), 108, y);
-    y=258;
+    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("代表人物", 40, y); y+=8;
+    for(const f of figs){
+      const svg=makePortrait(f.name+"|"+f.en).replace("<svg ", '<svg width="100" height="100" ');
+      try{ const img=await svgToImage(svg); x.drawImage(img,40,y,50,50); }catch(e){}
+      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText(f.name+(f.en?("  "+f.en):""), 100, y+18);
+      x.fillStyle="#6b7785"; x.font="12px sans-serif"; x.fillText((f.years||"")+(f.role?(" · "+f.role):""), 100, y+36);
+      y+=62;
+    }
+    y+=4;
   }
   x.font="14px sans-serif";
   DIMS.forEach(d=>{
@@ -1180,15 +1230,43 @@ function downloadCard(){
     x.fillStyle="#1f2933"; x.fillText(dimLean(d.key)+" "+dimPct(d.key)+"%", 620, y);
     y+=42;
   });
-  x.fillStyle="#6b7785"; x.font="13px sans-serif";
-  x.fillText("意识形态测试 · 自适应版 · 教育用途", 40, H-28);
-  const a=document.createElement("a");
-  a.download="意识形态画像.png"; a.href=c.toDataURL("image/png"); a.click();
+  y+=12;
+  x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("匹配度最高的阵营", 40, y); y+=24;
+  const topAll=ARCH.map(a=>{ let s=0; for(const k in a.need){const u=res[k]; if(u==="混合")continue; if(u===a.need[k])s++; else s--;} return {a,s}; })
+    .sort((p,q)=>q.s-p.s).slice(0,5);
+  topAll.forEach(xx=>{ const isMe=xx.a===primary; x.fillStyle=isMe?"#3b6df0":"#1f2933"; x.font=(isMe?"bold ":"")+"14px sans-serif"; x.fillText((isMe?"★ ":"")+xx.a.name+"  （"+(xx.s>0?"+":"")+xx.s+"）", 40, y); y+=24; });
+  x.fillStyle="#6b7785"; x.font="13px sans-serif"; x.fillText("意识形态测试 · 自适应版 · 教育用途", 40, H-26);
+  try{
+    const a=document.createElement("a"); a.download="意识形态画像.png"; a.href=c.toDataURL("image/png"); a.click();
+    toast("已保存为图片");
+  }catch(e){ alert("导出图片失败：" + e.message); }
+}
+function copySummary(){
+  if(!RESULT_COUNTS) return;
+  const res=dominantPoles(RESULT_COUNTS);
+  const primary=matchArch(res);
+  const sig=DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join("");
+  const dimsTxt=DIMS.map(d=>`${d.name}：${dimLean(d.key)}（${dimPct(d.key)}%）`).join("；");
+  const figs=(FIGURES[primary.name]||[]).map(f=>f.name).join("、");
+  const text=`【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;
+  const done=()=>toast("已复制结果摘要");
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));
+  } else fallbackCopy(text,done);
+}
+function fallbackCopy(text,done){
+  try{ const ta=document.createElement("textarea"); ta.value=text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove(); done(); }
+  catch(e){ toast("复制失败，请手动选择"); }
+}
+function renderOverview(){
+  const el=$("ovDims"); if(!el) return;
+  el.innerHTML=DIMS.map(d=>`<div class="ov-dim"><span class="ov-name">${d.name}</span><span class="ov-poles">${d.poles[0].label} ↔ ${d.poles[1].label}</span></div>`).join("");
 }
 
 /* ---------- 起始页：检测续测 ---------- */
 (function init(){
   loadTheme(); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn();
+  renderOverview();
   if(window.matchMedia){
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ()=>{ if(getTheme()==="auto") applyTheme("auto"); });
   }
