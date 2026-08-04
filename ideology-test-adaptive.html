@@ -101,6 +101,25 @@
   .top5 .item .sc{flex:0 0 36px;text-align:right;color:var(--muted);font-size:12px;}
   .top5 .item.me .nm{font-weight:800;color:var(--accent);}
   .top5 .item.me .bar>span{background:linear-gradient(90deg,#3b6df0,#6ea0ff);}
+  /* ===== 新增：各意识形态代表人物 + 拟形象 ===== */
+  .figures{margin:16px 0 4px;}
+  .figures .fttl{font-weight:700;font-size:15px;margin-bottom:4px;}
+  .figures .fsub{font-size:12px;color:var(--muted);margin-bottom:10px;}
+  .fig-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+  .fig-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfcfe;}
+  .fig-avatar{flex:0 0 76px;width:76px;height:76px;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(31,41,51,.12);background:#eef2f7;}
+  .fig-avatar svg{width:100%;height:100%;display:block;}
+  .fig-body{flex:1;min-width:0;}
+  .fig-name{font-size:15px;font-weight:800;color:var(--ink);}
+  .fig-name .en{font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;}
+  .fig-meta{font-size:12px;color:var(--muted);margin:1px 0 6px;}
+  .fig-note{font-size:13px;color:var(--ink);line-height:1.65;}
+  .fig-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
+  .fig-chip{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 11px 4px 4px;font-size:12px;color:var(--ink);}
+  .fig-chip .cav{flex:0 0 30px;width:30px;height:30px;border-radius:50%;overflow:hidden;background:#eef2f7;box-shadow:0 1px 4px rgba(31,41,51,.12);}
+  .fig-chip .cav svg{width:100%;height:100%;display:block;}
+  .fig-chip b{font-weight:700;}
+  .fig-chip span{color:var(--muted);font-size:11px;}
 </style>
 </head>
 <body>
@@ -166,6 +185,7 @@
       <div class="desc" id="pDesc"></div>
     </div>
     <div class="sec" id="secLine"></div>
+    <div class="figures" id="figures"></div>
     <div class="dims" id="dims"></div>
     <div class="top5" id="topList"></div>
     <div class="spectrum">
@@ -193,8 +213,10 @@
 </div>
 
 <script>
-/* ====== 题库（由构建脚本注入 300 题） ====== */
+/* ====== 题库（由构建脚本注入 500 题） ====== */
 const QUESTION_BANK = __BANK__;
+/* ====== 各意识形态代表人物（由构建脚本注入） ====== */
+const FIGURES = __FIGURES__;
 const BANK = QUESTION_BANK;
 const BYID = {};
 BANK.forEach(q=>BYID[q.id]=q);
@@ -432,8 +454,80 @@ function matchArch(res){
   if(bestScore<=0) best=ARCH.find(a=>a.name==="温和混合派");
   return best;
 }
-function finish(){
-  const counts=tallyDims();
+/* ---------- 代表人物 + 风格化拟形象（SVG 插画头像） ---------- */
+function hashStr(s){ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
+
+// 依据种子生成确定性的「风格化插画头像」——抽象、图标化，明确为拟形象而非真实照片
+function makePortrait(seed){
+  const h = hashStr(seed);
+  const hue  = h % 360;
+  const hue2 = (hue + 30 + (h>>3)%50) % 360;
+  const skin = ['#f1c9a5','#e8b890','#d9a273','#c68a5e','#b07a52','#8a5a3b'][h%6];
+  const hair = ['#2b2b2b','#3a2a1a','#5a3a22','#6b4a2a','#1f1f1f','#4a3219'][(h>>4)%6];
+  const coat = `hsl(${(hue+200)%360},42%,58%)`;
+  const coat2= `hsl(${(hue+200)%360},42%,48%)`;
+  const style = h % 4;                 // 0 短发 1 长发 2 光头 3 盘发/帽
+  const glasses = ((h>>6)%3)===0;
+  const beard = ((h>>8)%4)===0;
+  const bg1 = `hsl(${hue},72%,91%)`;
+  const bg2 = `hsl(${hue2},62%,79%)`;
+  let hairSvg = "";
+  if(style===0){ hairSvg = `<path d="M30 42 Q30 22 50 22 Q70 22 70 42 Q66 34 50 33 Q34 34 30 42 Z" fill="${hair}"/>`; }
+  else if(style===1){ hairSvg = `<path d="M28 46 Q26 20 50 20 Q74 20 72 46 L72 60 Q66 40 50 39 Q34 40 28 60 Z" fill="${hair}"/>`; }
+  else if(style===2){ hairSvg = `<path d="M33 36 Q50 26 67 36 Q60 32 50 32 Q40 32 33 36 Z" fill="${hair}"/>`; }
+  else { hairSvg = `<path d="M30 44 Q30 20 50 20 Q70 20 70 44 Q64 33 50 33 Q36 33 30 44 Z" fill="${hair}"/><circle cx="50" cy="20" r="6" fill="${hair}"/>`; }
+  const glassesSvg = glasses
+    ? `<g stroke="#333" stroke-width="1.6" fill="none"><circle cx="43" cy="45" r="5"/><circle cx="57" cy="45" r="5"/><line x1="48" y1="45" x2="52" y2="45"/></g>`
+    : "";
+  const beardSvg = beard
+    ? `<path d="M36 50 Q40 66 50 67 Q60 66 64 50 Q58 60 50 60 Q42 60 36 50 Z" fill="${hair}" opacity=".85"/>`
+    : "";
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img">
+    <defs><linearGradient id="bg${h}" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="${bg1}"/><stop offset="1" stop-color="${bg2}"/></linearGradient></defs>
+    <rect width="100" height="100" rx="14" fill="url(#bg${h})"/>
+    <path d="M12 100 Q12 72 50 72 Q88 72 88 100 Z" fill="${coat}"/>
+    <path d="M50 72 L40 100 L60 100 Z" fill="${coat2}"/>
+    <rect x="44" y="58" width="12" height="16" fill="${skin}"/>
+    <circle cx="50" cy="46" r="20" fill="${skin}"/>
+    <circle cx="32" cy="46" r="3.2" fill="${skin}"/><circle cx="68" cy="46" r="3.2" fill="${skin}"/>
+    ${hairSvg}
+    <circle cx="43" cy="45" r="2.1" fill="#2b2b2b"/><circle cx="57" cy="45" r="2.1" fill="#2b2b2b"/>
+    <path d="M44 54 Q50 58 56 54" stroke="#9c5a3c" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    ${beardSvg}
+    ${glassesSvg}
+  </svg>`;
+}
+
+function renderFigures(primary, secs){
+  const figs = FIGURES[primary.name] || [];
+  let html = `<div class="fttl">代表人物 · ${primary.name}</div>`;
+  html += `<div class="fsub">以下为该思潮在思想史上有代表性的理论与行动者，按其对理想的阐述与贡献列出；右侧为风格化「拟形象」插画，并非真实照片。</div>`;
+  html += `<div class="fig-grid">`;
+  figs.forEach(f=>{
+    html += `<div class="fig-card">
+      <div class="fig-avatar" title="${f.name}">${makePortrait(f.name+'|'+f.en)}</div>
+      <div class="fig-body">
+        <div class="fig-name">${f.name}<span class="en">${f.en||''}</span></div>
+        <div class="fig-meta">${f.years||''}${f.role?(' · '+f.role):''}</div>
+        <div class="fig-note">${f.note||''}</div>
+      </div></div>`;
+  });
+  html += `</div>`;
+  // 也较契合的阵营：小头像 chips
+  if(secs && secs.length){
+    html += `<div class="fig-chips">`;
+    secs.forEach(nm=>{
+      const sf = (FIGURES[nm]||[])[0]; if(!sf) return;
+      html += `<div class="fig-chip" title="${nm}"><div class="cav">${makePortrait(sf.name+'|'+sf.en)}</div>`+
+        `<div><b>${nm}</b><br><span>${sf.name}</span></div></div>`;
+    });
+    html += `</div>`;
+  }
+  $("figures").innerHTML = html;
+}
+
+function finish(){  const counts=tallyDims();
   RESULT_COUNTS = counts;
   const res=dominantPoles(counts);
   const primary=matchArch(res);
@@ -462,6 +556,7 @@ function finish(){
     .filter(x=>x.a!==primary).sort((x,y)=>y.s-x.s);
   const secs=ranked.filter(x=>x.s>0).slice(0,2).map(x=>x.a.name);
   $("secLine").innerHTML = secs.length ? `也较契合：<b>${secs.join("、")}</b>` : `你几乎只契合 <b>${primary.name}</b>`;
+  renderFigures(primary, secs);
 
   // Top 候选阵营匹配度（含主结果，取分最高 5 个）
   const topAll = ARCH.map(a=>{ let s=0; for(const k in a.need){const u=res[k]; if(u==="混合")continue; if(u===a.need[k])s++; else s--;} return {a,s}; })
@@ -716,7 +811,15 @@ function downloadCard(){
   x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(primary.name, 40, 142);
   x.fillStyle="#1f2933"; x.font="16px sans-serif";
   wrapText(x, primary.desc, 40, 176, W-80, 26);
-  let y=250; x.font="14px sans-serif";
+  const figs = FIGURES[primary.name]||[];
+  let y=232;
+  if(figs.length){
+    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("代表人物", 40, y);
+    x.fillStyle="#1f2933"; x.font="15px sans-serif";
+    x.fillText(figs.map(f=>f.name).join("、"), 108, y);
+    y=258;
+  }
+  x.font="14px sans-serif";
   DIMS.forEach(d=>{
     const frac=(dimPos(d.key)+1)/2;
     x.fillStyle="#6b7785"; x.fillText(d.name, 40, y);
