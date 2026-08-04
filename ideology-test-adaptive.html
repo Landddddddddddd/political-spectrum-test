@@ -9,6 +9,9 @@
     --bg:#f5f7fa; --card:#fff; --ink:#1f2933; --muted:#6b7785;
     --line:#e2e8f0; --accent:#3b6df0; --accent-soft:#e8f0ff;
     --shadow:0 8px 30px rgba(31,41,51,.08);
+    --panel:var(--panel); --chip:#ffffff; --avatar-bg:var(--avatar-bg);
+    --svg-ink:#1f2933; --svg-muted:#6b7785; --svg-line:#cbd5e1; --svg-grid:#e2e8f0; --svg-accent:#3b6df0;
+    --svg-accent-soft:rgba(59,109,240,.18);
   }
   *{box-sizing:border-box;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
@@ -26,7 +29,7 @@
   .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
   .bar>span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
   .counter{font-size:13px;color:var(--muted);}
-  .scene{font-size:17px;font-weight:600;min-height:64px;background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .scene{font-size:17px;font-weight:600;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
   .opts{display:grid;gap:10px;margin-top:12px;}
   .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
   .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
@@ -50,13 +53,13 @@
   .dim .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:4px;}
   .dim .top b{color:var(--ink);}
   .poles{display:flex;gap:8px;}
-  .pole{flex:1;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;position:relative;overflow:hidden;background:#fbfcfe;}
+  .pole{flex:1;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;position:relative;overflow:hidden;background:var(--panel);}
   .pole .lab{position:relative;z-index:1;}
   .pole .fill{position:absolute;left:0;top:0;bottom:0;background:var(--line);opacity:.5;}
   .pole.dom{border-color:var(--accent);font-weight:700;color:var(--accent);}
   .pole.dom .fill{background:var(--accent);opacity:.18;}
   .sig{margin-top:14px;}
-  .sig .item{font-size:14px;border-left:3px solid var(--accent);padding:6px 12px;margin:8px 0;background:#fbfcfe;border-radius:0 10px 10px 0;}
+  .sig .item{font-size:14px;border-left:3px solid var(--accent);padding:6px 12px;margin:8px 0;background:var(--panel);border-radius:0 10px 10px 0;}
   .sig .item .q{color:var(--muted);font-size:12px;}
   .foot{font-size:12px;color:var(--muted);text-align:center;margin-top:4px;}
   .hidden{display:none;}
@@ -66,7 +69,7 @@
   .qc-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
   .qc-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   /* ===== 政治光谱位置可视化 ===== */
-  .spectrum{margin:16px 0 6px;border:1px dashed var(--line);border-radius:14px;padding:16px;background:#fbfcfe;}
+  .spectrum{margin:16px 0 6px;border:1px dashed var(--line);border-radius:14px;padding:16px;background:var(--panel);}
   .sp-head{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;}
   .sp-tabs{display:flex;gap:6px;margin-bottom:10px;}
   .sp-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;font-weight:600;padding:6px 16px;border-radius:9px;cursor:pointer;transition:all .15s;}
@@ -85,7 +88,7 @@
   .qc-custom{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:-4px 0 14px;}
   .qc-custom input{width:88px;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);}
   .qc-custom .btn{padding:8px 14px;font-size:13px;}
-  .diminfo{border:1px solid var(--line);border-radius:12px;background:#fbfcfe;padding:4px 14px;margin:14px 0;}
+  .diminfo{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:4px 14px;margin:14px 0;}
   .diminfo summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--accent);padding:6px 0;list-style:none;}
   .diminfo summary::-webkit-details-marker{display:none;}
   .diminfo .di{font-size:13px;color:var(--ink);margin:7px 0;padding-left:10px;border-left:3px solid var(--accent-soft);}
@@ -106,8 +109,8 @@
   .figures .fttl{font-weight:700;font-size:15px;margin-bottom:4px;}
   .figures .fsub{font-size:12px;color:var(--muted);margin-bottom:10px;}
   .fig-grid{display:grid;grid-template-columns:1fr;gap:12px;}
-  .fig-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfcfe;}
-  .fig-avatar{flex:0 0 76px;width:76px;height:76px;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(31,41,51,.12);background:#eef2f7;}
+  .fig-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--panel);}
+  .fig-avatar{flex:0 0 76px;width:76px;height:76px;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(31,41,51,.12);background:var(--avatar-bg);}
   .fig-avatar svg{width:100%;height:100%;display:block;}
   .fig-body{flex:1;min-width:0;}
   .fig-name{font-size:15px;font-weight:800;color:var(--ink);}
@@ -115,15 +118,97 @@
   .fig-meta{font-size:12px;color:var(--muted);margin:1px 0 6px;}
   .fig-note{font-size:13px;color:var(--ink);line-height:1.65;}
   .fig-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
-  .fig-chip{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:4px 11px 4px 4px;font-size:12px;color:var(--ink);}
-  .fig-chip .cav{flex:0 0 30px;width:30px;height:30px;border-radius:50%;overflow:hidden;background:#eef2f7;box-shadow:0 1px 4px rgba(31,41,51,.12);}
+  .fig-chip{display:flex;align-items:center;gap:7px;background:var(--chip);border:1px solid var(--line);border-radius:99px;padding:4px 11px 4px 4px;font-size:12px;color:var(--ink);}
+  .fig-chip .cav{flex:0 0 30px;width:30px;height:30px;border-radius:50%;overflow:hidden;background:var(--avatar-bg);box-shadow:0 1px 4px rgba(31,41,51,.12);}
   .fig-chip .cav svg{width:100%;height:100%;display:block;}
   .fig-chip b{font-weight:700;}
   .fig-chip span{color:var(--muted);font-size:11px;}
+  /* ===== 新增：主题（亮/暗/跟随系统） + 顶栏 + 账户弹窗 ===== */
+  :root[data-theme="dark"]{
+    --bg:#0e1320; --card:#161c2b; --ink:#e6ebf2; --muted:#93a1b5;
+    --line:#283042; --accent:#5b8cff; --accent-soft:#1b2740;
+    --shadow:0 8px 30px rgba(0,0,0,.45);
+    --panel:#11161f; --chip:#1c2433; --avatar-bg:#0f1420;
+    --svg-ink:#e6ebf2; --svg-muted:#93a1b5; --svg-line:#36425a; --svg-grid:#283042; --svg-accent:#5b8cff;
+    --svg-accent-soft:rgba(91,140,255,.22);
+  }
+  :root[data-theme="dark"] body{color:var(--ink);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;}
+  .topbar .brand{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:.5px;}
+  .tb-actions{display:flex;gap:8px;}
+  .tb-btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:13px;font-weight:600;padding:7px 12px;border-radius:10px;cursor:pointer;transition:all .15s;}
+  .tb-btn:hover{border-color:var(--accent);color:var(--accent);}
+  .tb-btn .dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;margin-right:5px;background:var(--accent);}
+  /* 弹窗 */
+  .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:50;padding:16px;}
+  .modal.hidden{display:none;}
+  .modal-mask{position:absolute;inset:0;background:rgba(15,19,32,.5);backdrop-filter:blur(2px);}
+  .modal-box{position:relative;width:100%;max-width:460px;max-height:86vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:20px;}
+  .modal-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:17px;color:var(--ink);margin-bottom:12px;}
+  .modal-head .x{appearance:none;border:none;background:transparent;color:var(--muted);font-size:18px;cursor:pointer;}
+  .acc-cur{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  .acc-cur b{color:var(--accent);}
+  .acc-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px;}
+  .acc-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:9px 11px;background:var(--panel);}
+  .acc-item.cur{border-color:var(--accent);}
+  .acc-item .ava{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;flex:0 0 auto;}
+  .acc-item .nm{flex:1;font-weight:700;color:var(--ink);font-size:14px;}
+  .acc-item .nm small{display:block;color:var(--muted);font-weight:500;font-size:11px;}
+  .acc-item .acts{display:flex;gap:5px;}
+  .mini{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:12px;padding:4px 9px;border-radius:8px;cursor:pointer;}
+  .mini:hover{color:var(--accent);border-color:var(--accent);}
+  .mini.danger:hover{color:#e2554f;border-color:#e2554f;}
+  .acc-new{display:flex;flex-direction:column;gap:8px;border-top:1px dashed var(--line);padding-top:12px;margin-top:4px;}
+  .acc-new input{font-size:14px;padding:9px 11px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ink);}
+  .picker{display:flex;flex-wrap:wrap;gap:6px;}
+  .picker .opt{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;cursor:pointer;border:2px solid transparent;background:var(--panel);}
+  .picker .opt.sel{border-color:var(--accent);}
+  .acc-hist{margin-top:14px;border-top:1px dashed var(--line);padding-top:12px;}
+  .acc-hist .ht{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:8px;}
+  .hist-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--panel);margin:6px 0;cursor:pointer;}
+  .hist-item:hover{border-color:var(--accent);}
+  .hist-item .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:1px;background:var(--accent-soft);color:var(--accent);padding:3px 7px;border-radius:7px;font-weight:700;flex:0 0 auto;}
+  .hist-item .info{flex:1;min-width:0;}
+  .hist-item .info b{color:var(--ink);font-size:14px;}
+  .hist-item .info small{display:block;color:var(--muted);font-size:11px;}
+  .hist-empty{font-size:13px;color:var(--muted);}
+  .acc-io{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .acc-io .btn{flex:1;justify-content:center;}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:var(--ink);color:var(--card);font-size:13px;padding:10px 16px;border-radius:10px;z-index:80;opacity:0;transition:opacity .25s;pointer-events:none;}
+  .toast.show{opacity:.95;}
 </style>
 </head>
 <body>
 <div class="wrap" id="app">
+
+  <div class="topbar">
+    <div class="brand">意识形态测试</div>
+    <div class="tb-actions">
+      <button class="tb-btn" id="themeBtn" onclick="cycleTheme()" title="切换外观：亮 / 暗 / 跟随系统">☀️ 亮色</button>
+      <button class="tb-btn" id="accBtn" onclick="openAcc()" title="账户与历史"><span class="dot" id="accDot"></span><span id="accLabel">本地访客</span> ▾</button>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="accModal">
+    <div class="modal-mask" onclick="closeAcc()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>账户与历史</span><button class="x" onclick="closeAcc()">✕</button></div>
+      <div class="acc-cur" id="accCur"></div>
+      <div class="acc-list" id="accList"></div>
+      <div class="acc-new">
+        <input id="accName" placeholder="新账户昵称（留空自动命名）" maxlength="12" />
+        <div class="picker" id="emojiPick"></div>
+        <div class="picker" id="colorPick"></div>
+        <button class="btn" onclick="newAccount()">+ 新建账户</button>
+      </div>
+      <div class="acc-hist" id="accHist"></div>
+      <div class="acc-io">
+        <button class="btn ghost" onclick="exportAccounts()">导出账号</button>
+        <label class="btn ghost">导入账号<input type="file" id="accFile" accept="application/json" onchange="importAccounts(this)" hidden /></label>
+        <button class="btn ghost" onclick="closeAcc()">关闭</button>
+      </div>
+    </div>
+  </div>
 
   <section class="card" id="start">
     <h1>意识形态测试 · 自适应版</h1>
@@ -217,6 +302,127 @@
 const QUESTION_BANK = __BANK__;
 /* ====== 各意识形态代表人物（由构建脚本注入） ====== */
 const FIGURES = __FIGURES__;
+
+/* ====== 主题（亮 / 暗 / 跟随系统） ====== */
+const THEME_KEY = "ideo_theme";
+const THEME_ORDER = ["light","dark","auto"];
+const THEME_LABEL = {light:"☀️ 亮色", dark:"🌙 暗色", auto:"🌗 跟随系统"};
+function getTheme(){ try{ return localStorage.getItem(THEME_KEY) || "light"; }catch(e){ return "light"; } }
+function applyTheme(t){
+  const mode = t==="auto"
+    ? (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+    : t;
+  document.documentElement.setAttribute("data-theme", mode);
+}
+function updateThemeBtn(){ const t=getTheme(); const b=$("themeBtn"); if(b) b.textContent = THEME_LABEL[t]; }
+function cycleTheme(){
+  const cur=getTheme(); const i=THEME_ORDER.indexOf(cur); const nx=THEME_ORDER[(i+1)%THEME_ORDER.length];
+  try{ localStorage.setItem(THEME_KEY, nx); }catch(e){}
+  applyTheme(nx); updateThemeBtn();
+  toast("外观：" + THEME_LABEL[nx]);
+}
+
+/* ====== 本地账户体系（多账户 + 历史 + 导出/导入） ====== */
+const ACC_KEY = "ideo_accounts", CUR_KEY = "ideo_cur_acc";
+const EMOJIS = ["🙂","😎","🌟","🌍","🔥","🌱","⚡","🕊️","🛡️","🤝","📚","🎯","🪐","🍃","💡","🐉"];
+const COLORS = ["#3b6df0","#e2554f","#3fae6b","#f5a623","#9b59b6","#1ab6c4","#e91e8c","#6b7785"];
+let selectedEmoji = EMOJIS[0], selectedColor = COLORS[0];
+let ACCOUNTS = [], CUR_ACC = null;
+
+function loadAccounts(){
+  try{ ACCOUNTS = JSON.parse(localStorage.getItem(ACC_KEY)) || []; }catch(e){ ACCOUNTS = []; }
+  if(!ACCOUNTS.length){ ACCOUNTS = [{id:"local", name:"本地访客", emoji:"🙂", color:"#3b6df0", history:[]}]; saveAccounts(); }
+  const cur = localStorage.getItem(CUR_KEY);
+  CUR_ACC = (cur && ACCOUNTS.find(a=>a.id===cur)) ? cur : ACCOUNTS[0].id;
+}
+function saveAccounts(){ try{ localStorage.setItem(ACC_KEY, JSON.stringify(ACCOUNTS)); }catch(e){} }
+function getCur(){ return ACCOUNTS.find(a=>a.id===CUR_ACC) || ACCOUNTS[0]; }
+function addHistory(entry){ const a=getCur(); a.history = a.history || []; a.history.unshift(entry); saveAccounts(); refreshAccUI(); }
+function refreshAccUI(){
+  const cur=getCur();
+  $("accLabel").textContent = cur.name;
+  $("accDot").style.background = cur.color;
+  $("accCur").innerHTML = `当前账户：<b>${cur.emoji} ${cur.name}</b> · 共 ${cur.history.length} 条历史`;
+  $("accList").innerHTML = ACCOUNTS.map(a=>{
+    const curc = a.id===CUR_ACC;
+    return `<div class="acc-item ${curc?'cur':''}">
+      <div class="ava" style="background:${a.color}">${a.emoji}</div>
+      <div class="nm">${a.name}<small>${a.history.length} 条历史</small></div>
+      <div class="acts">
+        ${curc?'<span class="mini">使用中</span>':`<button class="mini" onclick="switchAccount('${a.id}')">切换</button>`}
+        <button class="mini" onclick="renameAccount('${a.id}')">改名</button>
+        <button class="mini danger" onclick="deleteAccount('${a.id}')">删除</button>
+      </div></div>`;
+  }).join("");
+  const h = cur.history || [];
+  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看）</div>` + (h.length ? h.map(e=>{
+    const d=new Date(e.ts);
+    const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+    return `<div class="hist-item" onclick="viewHistory(${e.ts})">
+      <span class="code">${e.code}</span>
+      <div class="info"><b>${e.primary}</b><small>${ds}</small></div>
+    </div>`;
+  }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`);
+}
+function renderPickers(){
+  $("emojiPick").innerHTML = EMOJIS.map((e,i)=>`<div class="opt ${i===0?'sel':''}" onclick="pickEmoji(this,'${e}')">${e}</div>`).join("");
+  $("colorPick").innerHTML = COLORS.map((c,i)=>`<div class="opt ${i===0?'sel':''}" style="background:${c}" onclick="pickColor(this,'${c}')"></div>`).join("");
+}
+function pickEmoji(el,e){ selectedEmoji=e; [...$("emojiPick").children].forEach(x=>x.classList.remove("sel")); el.classList.add("sel"); }
+function pickColor(el,c){ selectedColor=c; [...$("colorPick").children].forEach(x=>x.classList.remove("sel")); el.classList.add("sel"); }
+function openAcc(){ renderPickers(); refreshAccUI(); $("accModal").classList.remove("hidden"); }
+function closeAcc(){ $("accModal").classList.add("hidden"); }
+function newAccount(){
+  const name = ($("accName").value||"").trim() || ("用户"+Math.floor(Math.random()*900+100));
+  const id = "u"+Date.now();
+  ACCOUNTS.push({id, name, emoji:selectedEmoji, color:selectedColor, history:[]});
+  CUR_ACC = id; saveAccounts(); refreshAccUI();
+  $("accName").value=""; toast("已创建并切换到 "+name);
+}
+function switchAccount(id){ CUR_ACC=id; try{ localStorage.setItem(CUR_KEY, id); }catch(e){} saveAccounts(); refreshAccUI(); toast("已切换到 "+getCur().name); }
+function renameAccount(id){
+  const a=ACCOUNTS.find(x=>x.id===id); if(!a) return;
+  const n=prompt("修改账户昵称", a.name); if(n&&n.trim()){ a.name=n.trim(); saveAccounts(); refreshAccUI(); }
+}
+function deleteAccount(id){
+  if(ACCOUNTS.length<=1){ alert("至少保留一个账户"); return; }
+  if(!confirm("删除该账户及其全部历史记录？")) return;
+  ACCOUNTS = ACCOUNTS.filter(a=>a.id!==id);
+  if(CUR_ACC===id) CUR_ACC=ACCOUNTS[0].id;
+  try{ localStorage.setItem(CUR_KEY, CUR_ACC); }catch(e){}
+  saveAccounts(); refreshAccUI(); toast("已删除");
+}
+function viewHistory(ts){
+  const e=getCur().history.find(h=>h.ts===ts); if(!e) return;
+  closeAcc(); renderResultFromData(e.counts, e.primary, true);
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+function exportAccounts(){
+  const blob=new Blob([JSON.stringify(ACCOUNTS,null,2)], {type:"application/json"});
+  const a=document.createElement("a"); a.download="意识形态测试-账号.json"; a.href=URL.createObjectURL(blob); a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 1000); toast("已导出账号文件");
+}
+function importAccounts(input){
+  const file=input.files && input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      if(!Array.isArray(data)) throw new Error("格式错误");
+      let added=0;
+      data.forEach(d=>{ if(d&&d.id&&d.name){ if(!ACCOUNTS.find(a=>a.id===d.id)){ ACCOUNTS.push(d); added++; } } });
+      saveAccounts(); refreshAccUI(); toast("已导入 "+added+" 个账户");
+    }catch(err){ alert("导入失败：" + err.message); }
+    input.value="";
+  };
+  reader.readAsText(file);
+}
+function toast(msg){
+  let t=$("toast");
+  if(!t){ t=document.createElement("div"); t.id="toast"; t.className="toast"; document.body.appendChild(t); }
+  t.textContent=msg; t.classList.add("show"); clearTimeout(t._tm); t._tm=setTimeout(()=>t.classList.remove("show"),1800);
+}
+
 const BANK = QUESTION_BANK;
 const BYID = {};
 BANK.forEach(q=>BYID[q.id]=q);
@@ -527,10 +733,16 @@ function renderFigures(primary, secs){
   $("figures").innerHTML = html;
 }
 
-function finish(){  const counts=tallyDims();
+function finish(){
+  const counts=tallyDims();
+  renderResultFromData(counts, null, false);
+}
+
+// 渲染结果面板；forcePrimaryName 用于回看历史；isHistory 时跳过单项明细
+function renderResultFromData(counts, forcePrimaryName, isHistory){
   RESULT_COUNTS = counts;
   const res=dominantPoles(counts);
-  const primary=matchArch(res);
+  const primary = forcePrimaryName ? (ARCH.find(a=>a.name===forcePrimaryName) || matchArch(res)) : matchArch(res);
   persist();
   $("quiz").classList.add("hidden");
   $("result").classList.remove("hidden");
@@ -558,7 +770,6 @@ function finish(){  const counts=tallyDims();
   $("secLine").innerHTML = secs.length ? `也较契合：<b>${secs.join("、")}</b>` : `你几乎只契合 <b>${primary.name}</b>`;
   renderFigures(primary, secs);
 
-  // Top 候选阵营匹配度（含主结果，取分最高 5 个）
   const topAll = ARCH.map(a=>{ let s=0; for(const k in a.need){const u=res[k]; if(u==="混合")continue; if(u===a.need[k])s++; else s--;} return {a,s}; })
     .sort((x,y)=>y.s-x.s).slice(0,5);
   const maxSc = Math.max(1, topAll[0].s);
@@ -569,15 +780,29 @@ function finish(){  const counts=tallyDims();
     return `<div class="item ${isMe?'me':''}"><span class="nm" title="${x.a.name}">${x.a.name}</span><span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
   }).join("");
 
-  const need=primary.need; let sigHtml="";
-  seq.forEach(id=>{ const q=BYID[id]; const opt=q.options[answers[id]];
-    if(!opt) return;
-    const hit=opt.tags.some(t=>{ const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; });
-    if(hit) sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${opt.t}</div>`;
-  });
-  $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
+  if(isHistory){
+    $("sigList").innerHTML = `<div class='item'>这是历史记录，单项选择明细未保存。</div>`;
+  }else{
+    const need=primary.need; let sigHtml="";
+    seq.forEach(id=>{ const q=BYID[id]; const opt=q.options[answers[id]];
+      if(!opt) return;
+      const hit=opt.tags.some(t=>{ const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; });
+      if(hit) sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${opt.t}</div>`;
+    });
+    $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
+  }
 
   setSpecMode(SPEC_MODE, true);
+
+  if(!isHistory){
+    addHistory({
+      ts: Date.now(),
+      code: DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join(""),
+      primary: primary.name,
+      counts: JSON.parse(JSON.stringify(counts)),
+      top: topAll.map(x=>x.a.name)
+    });
+  }
 }
 
 /* ---------- 政治光谱位置可视化（1D / 2D / 3D） ---------- */
@@ -646,12 +871,12 @@ function render1D(stage){
   const mag = dimPct(d.key);
   const lean = dimLean(d.key);
   stage.innerHTML = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
-    <line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
-    <line x1="${(x0+x1)/2}" y1="${y-12}" x2="${(x0+x1)/2}" y2="${y+12}" stroke="#94a3b8" stroke-width="2"/>
-    <circle cx="${cx.toFixed(1)}" cy="${y}" r="10" fill="#3b6df0" stroke="#fff" stroke-width="3"/>
-    <text x="${x0}" y="${y-24}" font-size="13" fill="#1f2933" text-anchor="start" font-weight="600">${p0.label}</text>
-    <text x="${x1}" y="${y-24}" font-size="13" fill="#1f2933" text-anchor="end" font-weight="600">${p1.label}</text>
-    <text x="${cx.toFixed(1)}" y="${y+34}" font-size="13" fill="#3b6df0" text-anchor="middle" font-weight="700">${lean} · ${mag}%</text>
+    <line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="var(--svg-line)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="${(x0+x1)/2}" y1="${y-12}" x2="${(x0+x1)/2}" y2="${y+12}" stroke="var(--svg-muted)" stroke-width="2"/>
+    <circle cx="${cx.toFixed(1)}" cy="${y}" r="10" fill="var(--svg-accent)" stroke="#fff" stroke-width="3"/>
+    <text x="${x0}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${p0.label}</text>
+    <text x="${x1}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${p1.label}</text>
+    <text x="${cx.toFixed(1)}" y="${y+34}" font-size="13" fill="var(--svg-accent)" text-anchor="middle" font-weight="700">${lean} · ${mag}%</text>
   </svg>`;
 }
 
@@ -661,18 +886,18 @@ function render2D(stage){
   const S=380, pad=46, ox=pad, oy=pad, sz=S-2*pad;
   const mx = ox + (px+1)/2*sz, my = oy + (1-(py+1)/2)*sz;
   stage.innerHTML = `<svg viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">
-    <rect x="${ox}" y="${oy}" width="${sz}" height="${sz}" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
-    <line x1="${ox+sz/2}" y1="${oy}" x2="${ox+sz/2}" y2="${oy+sz}" stroke="#cbd5e1" stroke-width="1.5"/>
-    <line x1="${ox}" y1="${oy+sz/2}" x2="${ox+sz}" y2="${oy+sz/2}" stroke="#cbd5e1" stroke-width="1.5"/>
-    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+(px+1)/2*sz}" y2="${oy+sz/2}" stroke="#3b6df0" stroke-width="1" stroke-dasharray="4 4"/>
-    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+sz/2}" y2="${my.toFixed(1)}" stroke="#3b6df0" stroke-width="1" stroke-dasharray="4 4"/>
-    <circle cx="${mx.toFixed(1)}" cy="${my.toFixed(1)}" r="9" fill="#3b6df0" stroke="#fff" stroke-width="3"/>
-    <text x="${ox}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="start" font-weight="600">${dx.poles[0].label}</text>
-    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dx.poles[1].label}</text>
-    <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600">${dx.name} →</text>
-    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.poles[1].label}</text>
-    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.poles[0].label}</text>
-    <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.name} ↑</text>
+    <rect x="${ox}" y="${oy}" width="${sz}" height="${sz}" fill="var(--panel)" stroke="var(--svg-grid)" stroke-width="1.5"/>
+    <line x1="${ox+sz/2}" y1="${oy}" x2="${ox+sz/2}" y2="${oy+sz}" stroke="var(--svg-line)" stroke-width="1.5"/>
+    <line x1="${ox}" y1="${oy+sz/2}" x2="${ox+sz}" y2="${oy+sz/2}" stroke="var(--svg-line)" stroke-width="1.5"/>
+    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+(px+1)/2*sz}" y2="${oy+sz/2}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+sz/2}" y2="${my.toFixed(1)}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="${mx.toFixed(1)}" cy="${my.toFixed(1)}" r="9" fill="var(--svg-accent)" stroke="#fff" stroke-width="3"/>
+    <text x="${ox}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${dx.poles[0].label}</text>
+    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dx.poles[1].label}</text>
+    <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="middle" font-weight="600">${dx.name} →</text>
+    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.poles[1].label}</text>
+    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.poles[0].label}</text>
+    <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.name} ↑</text>
   </svg>`;
 }
 
@@ -757,22 +982,22 @@ function renderRadar(stage){
   let grid="";
   [0.33,0.66,1].forEach(f=>{
     const p = DIMS.map((d,i)=>{const a=ang(i);return (cx+Math.cos(a)*R*f).toFixed(1)+","+(cy+Math.sin(a)*R*f).toFixed(1);}).join(" ");
-    grid += `<polygon points="${p}" fill="none" stroke="#e2e8f0" stroke-width="1"/>`;
+    grid += `<polygon points="${p}" fill="none" stroke="var(--svg-grid)" stroke-width="1"/>`;
   });
   let axesSvg="", labels="";
   DIMS.forEach((d,i)=>{
     const a=ang(i);
     const ox=cx+Math.cos(a)*R, oy=cy+Math.sin(a)*R;
-    axesSvg += `<line x1="${cx}" y1="${cy}" x2="${ox.toFixed(1)}" y2="${oy.toFixed(1)}" stroke="#cbd5e1" stroke-width="1"/>`;
+    axesSvg += `<line x1="${cx}" y1="${cy}" x2="${ox.toFixed(1)}" y2="${oy.toFixed(1)}" stroke="var(--svg-line)" stroke-width="1"/>`;
     const lx=cx+Math.cos(a)*(R+22), ly=cy+Math.sin(a)*(R+22);
     const anchor = Math.abs(Math.cos(a))<0.3 ? "middle" : (Math.cos(a)>0?"start":"end");
-    labels += `<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" font-size="12" fill="#1f2933" text-anchor="${anchor}" font-weight="600">${d.name}</text>`;
+    labels += `<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" font-size="12" fill="var(--svg-ink)" text-anchor="${anchor}" font-weight="600">${d.name}</text>`;
   });
   const poly = coords.map(c=>c[0].toFixed(1)+","+c[1].toFixed(1)).join(" ");
   stage.innerHTML = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
     ${grid}${axesSvg}
-    <polygon points="${poly}" fill="rgba(59,109,240,.18)" stroke="#3b6df0" stroke-width="2.5"/>
-    ${coords.map(c=>`<circle cx="${c[0].toFixed(1)}" cy="${c[1].toFixed(1)}" r="4" fill="#3b6df0"/>`).join("")}
+    <polygon points="${poly}" fill="var(--svg-accent-soft)" stroke="var(--svg-accent)" stroke-width="2.5"/>
+    ${coords.map(c=>`<circle cx="${c[0].toFixed(1)}" cy="${c[1].toFixed(1)}" r="4" fill="var(--svg-accent)"/>`).join("")}
     ${labels}
   </svg>`;
 }
@@ -836,6 +1061,10 @@ function downloadCard(){
 
 /* ---------- 起始页：检测续测 ---------- */
 (function init(){
+  loadTheme(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn();
+  if(window.matchMedia){
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ()=>{ if(getTheme()==="auto") applyTheme("auto"); });
+  }
   const s=loadSave();
   const savedTotal = s && s.total ? s.total : 50;
   setQ(savedTotal);                       // 默认激活对应题量标签
