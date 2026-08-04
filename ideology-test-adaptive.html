@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>意识形态测试 · 自适应 50 题版</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --ink:#1f2933; --muted:#6b7785;
+    --line:#e2e8f0; --accent:#3b6df0; --accent-soft:#e8f0ff;
+    --shadow:0 8px 30px rgba(31,41,51,.08);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;display:flex;justify-content:center;padding:24px 16px;min-height:100vh;}
+  .wrap{width:100%;max-width:680px;}
+  .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:28px 26px;margin-bottom:18px;border:1px solid var(--line);}
+  h1{font-size:24px;margin:0 0 6px;letter-spacing:.5px;}
+  h2{font-size:19px;margin:0 0 14px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
+  .btn{appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;transition:transform .08s,opacity .2s;}
+  .btn:hover{opacity:.92;} .btn:active{transform:scale(.98);}
+  .btn.ghost{background:var(--accent-soft);color:var(--accent);}
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .row{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;}
+  .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
+  .bar>span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
+  .counter{font-size:13px;color:var(--muted);}
+  .scene{font-size:17px;font-weight:600;min-height:64px;background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .opts{display:grid;gap:10px;margin-top:12px;}
+  .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
+  .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
+  .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
+  .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+  .opt.sel .key{background:var(--accent);color:#fff;}
+  .opt.focus{outline:3px solid var(--accent);outline-offset:2px;box-shadow:0 0 0 4px var(--accent-soft);}
+  .kbd-hint{font-size:12px;color:var(--muted);margin:12px 2px 4px;text-align:center;}
+  .kbd-hint b{color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 6px;font-family:ui-monospace,Menlo,Consolas,monospace;}
+  .code{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;letter-spacing:2px;
+    background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:8px;font-weight:700;}
+  .primary{border:1.5px solid var(--accent);background:linear-gradient(180deg,#f3f7ff,#fff);border-radius:14px;padding:18px;margin:8px 0 14px;}
+  .primary .name{font-size:22px;font-weight:800;color:var(--accent);}
+  .primary .desc{font-size:14px;color:var(--ink);margin-top:6px;}
+  .sec{font-size:14px;color:var(--muted);} .sec b{color:var(--ink);}
+  .dims{margin:14px 0 6px;}
+  .dim{margin:12px 0;}
+  .dim .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:4px;}
+  .dim .top b{color:var(--ink);}
+  .poles{display:flex;gap:8px;}
+  .pole{flex:1;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;position:relative;overflow:hidden;background:#fbfcfe;}
+  .pole .lab{position:relative;z-index:1;}
+  .pole .fill{position:absolute;left:0;top:0;bottom:0;background:var(--line);opacity:.5;}
+  .pole.dom{border-color:var(--accent);font-weight:700;color:var(--accent);}
+  .pole.dom .fill{background:var(--accent);opacity:.18;}
+  .sig{margin-top:14px;}
+  .sig .item{font-size:14px;border-left:3px solid var(--accent);padding:6px 12px;margin:8px 0;background:#fbfcfe;border-radius:0 10px 10px 0;}
+  .sig .item .q{color:var(--muted);font-size:12px;}
+  .foot{font-size:12px;color:var(--muted);text-align:center;margin-top:4px;}
+  .hidden{display:none;}
+  .pill{display:inline-block;font-size:12px;color:var(--accent);background:var(--accent-soft);border-radius:99px;padding:3px 10px;margin-left:6px;}
+  .qc-label{font-size:13px;color:var(--muted);margin:4px 0 6px;}
+  .qc-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+  .qc-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
+  .qc-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  /* ===== 政治光谱位置可视化 ===== */
+  .spectrum{margin:16px 0 6px;border:1px dashed var(--line);border-radius:14px;padding:16px;background:#fbfcfe;}
+  .sp-head{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;}
+  .sp-tabs{display:flex;gap:6px;margin-bottom:10px;}
+  .sp-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;font-weight:600;padding:6px 16px;border-radius:9px;cursor:pointer;transition:all .15s;}
+  .sp-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .sp-sels{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+  .sp-sel{display:flex;flex-direction:column;font-size:11px;color:var(--muted);gap:3px;}
+  .sp-sel select{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);}
+  .sp-stage{display:flex;justify-content:center;}
+  .sp-stage svg{width:100%;max-width:560px;height:auto;}
+  .sp-legend{font-size:12px;color:var(--muted);margin-top:8px;display:flex;flex-direction:column;gap:3px;}
+  .sp-legend b{color:var(--ink);}
+  .sp-hint{font-size:11px;color:var(--muted);text-align:center;margin-top:2px;}
+  #spCanvas{display:block;margin:0 auto;touch-action:none;cursor:grab;}
+  #spCanvas:active{cursor:grabbing;}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+
+  <section class="card" id="start">
+    <h1>意识形态测试 · 自适应版</h1>
+    <p class="sub">从 <b id="bkCount">500</b> 道题库里，根据你前面的回答<b>有目的地抽题</b>：
+       优先挑你还没碰到过的<b>领域</b>，并专门追问你态度还模糊的<b>维度</b>。</p>
+    <p style="font-size:14px;color:var(--muted)">
+       维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
+       选项数 2–8 不固定。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
+    </p>
+    <div class="qc-label">先选题量：</div>
+    <div class="qc-tabs" id="qcTabs">
+      <button data-q="15" onclick="setQ(15)">15 题</button>
+      <button data-q="30" onclick="setQ(30)">30 题</button>
+      <button data-q="50" onclick="setQ(50)">50 题</button>
+      <button data-q="100" onclick="setQ(100)">100 题</button>
+    </div>
+    <div class="row">
+      <button class="btn" onclick="freshStart()">开始新测试 →</button>
+    </div>
+    <div class="row" id="resumeRow" style="display:none;">
+      <button class="btn ghost" id="resumeBtn" onclick="resume()"></button>
+    </div>
+  </section>
+
+  <section class="card hidden" id="quiz">
+    <div class="counter" id="counter"></div>
+    <div class="bar"><span id="prog"></span></div>
+    <div class="scene" id="scene"></div>
+    <div class="opts" id="opts"></div>
+    <div class="kbd-hint">键盘操作：<b>↑↓←→</b> 或 <b>W A S D</b> 移动选择 · <b>空格 / 回车</b> 确认并进入下一题</div>
+    <div class="row">
+      <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
+      <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
+    </div>
+  </section>
+
+  <section class="card hidden" id="result">
+    <h2>你的意识形态画像</h2>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:6px;">你的维度签名</div>
+    <div class="code" id="code"></div>
+    <div class="primary">
+      <div class="name" id="pName"></div>
+      <div class="desc" id="pDesc"></div>
+    </div>
+    <div class="sec" id="secLine"></div>
+    <div class="dims" id="dims"></div>
+    <div class="spectrum">
+      <div class="sp-head">政治光谱位置 <span class="pill">可切换维度</span></div>
+      <div class="sp-tabs" id="spTabs">
+        <button data-mode="1" onclick="setSpecMode(1)">1 维</button>
+        <button data-mode="2" onclick="setSpecMode(2)">2 维</button>
+        <button data-mode="3" onclick="setSpecMode(3)">3 维</button>
+      </div>
+      <div class="sp-sels" id="spSels"></div>
+      <div class="sp-stage" id="spStage"></div>
+      <div class="sp-legend" id="spLegend"></div>
+    </div>
+    <div class="sig">
+      <div style="font-weight:700;margin:6px 0 2px;">塑造你结果的关键选择</div>
+      <div id="sigList"></div>
+    </div>
+    <div class="row"><button class="btn ghost" onclick="freshStart()">重新测试</button></div>
+    <p class="foot">本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。</p>
+  </section>
+
+</div>
+
+<script>
+/* ====== 题库（由构建脚本注入 300 题） ====== */
+const QUESTION_BANK = __BANK__;
+const BANK = QUESTION_BANK;
+const BYID = {};
+BANK.forEach(q=>BYID[q.id]=q);
+
+/* ====== 维度与细分阵营（沿用多维版） ====== */
+const DIMS = [
+  {key:"ECO", name:"经济", poles:[{k:"L",label:"平等 / 再分配"},{k:"R",label:"自由市场"}]},
+  {key:"GOV", name:"治理", poles:[{k:"A",label:"权威 / 秩序"},{k:"L",label:"自由 / 分权"}]},
+  {key:"CUL", name:"文化", poles:[{k:"T",label:"传统"},{k:"P",label:"进步 / 多元"}]},
+  {key:"NAT", name:"国际", poles:[{k:"N",label:"民族优先"},{k:"C",label:"国际 / 开放"}]},
+  {key:"ENV", name:"生态", poles:[{k:"G",label:"发展优先"},{k:"S",label:"生态优先"}]},
+  {key:"TECH", name:"技术监控", poles:[{k:"K",label:"集中管控"},{k:"U",label:"隐私自主"}]},
+  {key:"SEC", name:"世俗信仰", poles:[{k:"E",label:"世俗公共"},{k:"F",label:"信仰入公"}]},
+  {key:"COL", name:"个人集体", poles:[{k:"I",label:"个人优先"},{k:"M",label:"共同体优先"}]},
+];
+const ARCH = [
+  /* 自由 / 自由意志家族 */
+  {name:"自由意志主义", need:{ECO:"R",GOV:"L",COL:"I",TECH:"U",SEC:"E"}, desc:"主张最小政府、绝对个人自由与市场至上，反对一切非必要干预，包括技术与信仰领域的强制。"},
+  {name:"古典自由主义", need:{ECO:"R",GOV:"L",CUL:"T",NAT:"C",COL:"I"}, desc:"强调自由市场、个人权利与有限政府，重视传统与自发秩序、国际开放。"},
+  {name:"右翼自由意志主义", need:{ECO:"R",GOV:"L",COL:"I",NAT:"N"}, desc:"经济彻底自由化、个人至上，但在民族与文化边界上偏向自主设限。"},
+  {name:"自由保守主义", need:{ECO:"R",GOV:"L",CUL:"T",COL:"I"}, desc:"经济自由、文化保守，强调个人责任与传统价值，政府守夜人角色。"},
+  {name:"技术自由意志主义", need:{TECH:"U",ECO:"R",GOV:"L",COL:"I",SEC:"E"}, desc:"以技术去中心化、隐私与开源自治为核心，反对集中式监控与管控。"},
+
+  /* 社会自由 / 社民 / 民主社会主义 */
+  {name:"社会自由主义", need:{ECO:"L",GOV:"L",CUL:"P",COL:"I"}, desc:"在自由框架下强调平等机会与社会权利，支持渐进改革与多元包容。"},
+  {name:"社会民主主义", need:{ECO:"L",GOV:"A",CUL:"P",NAT:"C",COL:"M",ENV:"S"}, desc:"市场经济加强福利与再分配，混合经济、绿色导向、国际协作。"},
+  {name:"民主社会主义", need:{ECO:"L",GOV:"L",CUL:"P",COL:"M",NAT:"C"}, desc:"在民主框架内追求经济平等与劳动者主权，反对资本集中。"},
+  {name:"自由社会主义", need:{ECO:"L",GOV:"L",COL:"I",CUL:"P"}, desc:"主张生产资料民主控制，但坚持基层自治与个人自由，反对国家集权。"},
+  {name:"进步主义", need:{CUL:"P",ECO:"L",COL:"M",GOV:"L",NAT:"C"}, desc:"以平等、多元与权利扩张为核心，支持改革、包容与跨国协作。"},
+
+  /* 左翼集体 / 社会主义 / 无政府 */
+  {name:"社会主义", need:{ECO:"L",GOV:"A",CUL:"P",COL:"M"}, desc:"追求生产资料社会化与强再分配，倚重国家力量调节经济与分配。"},
+  {name:"无政府主义", need:{GOV:"L",COL:"I",ECO:"L",TECH:"U"}, desc:"质疑一切等级权威，倾向自发秩序、基层自治、直接民主与去中心化。"},
+  {name:"无政府共产主义", need:{GOV:"L",ECO:"L",COL:"M",CUL:"P"}, desc:"主张废除国家与资本，以自愿协作的共同体组织生产与分配。"},
+  {name:"生态社会主义", need:{ENV:"S",ECO:"L",COL:"M",CUL:"P"}, desc:"将生态可持续与反资本逻辑结合，主张系统性经济与能源转型。"},
+
+  /* 保守 / 民族 / 传统 */
+  {name:"保守主义", need:{CUL:"T",GOV:"A",ECO:"R",COL:"M"}, desc:"重视传统、秩序与制度延续，对市场与权威均持审慎态度，强调共同体。"},
+  {name:"民族保守主义", need:{CUL:"T",GOV:"A",NAT:"N",COL:"M",SEC:"F"}, desc:"强调国家主权、文化边界与传统秩序，经济偏市场，信仰嵌入公共生活。"},
+  {name:"传统保守主义", need:{GOV:"A",CUL:"T",COL:"M",SEC:"F"}, desc:"以历史传承、等级与宗教价值为锚，反对激进变革与世俗化。"},
+  {name:"威权民族主义", need:{GOV:"A",NAT:"N",CUL:"T",COL:"M"}, desc:"强国家、反建制，以民族与传统文化动员的权威取向，集体优先。"},
+  {name:"宗教保守", need:{SEC:"F",CUL:"T",GOV:"A",COL:"M"}, desc:"以特定信仰传统为道德基础，主张信仰价值进入公共与法律领域。"},
+  {name:"基督教民主", need:{GOV:"A",CUL:"T",SEC:"F",COL:"M",ECO:"L"}, desc:"以社会教义平衡市场与福利，强调辅助原则、家庭与共同体。"},
+
+  /* 绿色 / 生态 */
+  {name:"绿色政治", need:{ENV:"S",CUL:"P",COL:"M"}, desc:"以生态可持续为核心，可跨越左右，强调代际责任与基层民主。"},
+  {name:"绿色保守主义", need:{ENV:"S",CUL:"T",GOV:"A"}, desc:"从传统责任、审慎与 stewardship 出发重视环境与代际延续。"},
+  {name:"生态自由主义", need:{ENV:"S",GOV:"L",ECO:"R",COL:"I"}, desc:"以市场工具（如碳交易）与个人自由手段推动生态转型。"},
+  {name:"生态个人主义", need:{ENV:"S",COL:"I",GOV:"L"}, desc:"把环保视为个人责任与生活方式选择，反对强制性的集体管制。"},
+  {name:"生态技术主义", need:{ENV:"S",TECH:"K",GOV:"A"}, desc:"相信通过集中化的技术与专家治理（如地球工程）实现可持续。"},
+
+  /* 技术 / 监控 */
+  {name:"技术威权主义", need:{TECH:"K",GOV:"A",COL:"M"}, desc:"支持以算法、数据与集中监控提升治理效率，个人服从系统。"},
+  {name:"监控国家主义", need:{TECH:"K",GOV:"A",NAT:"N",COL:"M"}, desc:"以国家主导的 surveillance 与数据集中保障安全与秩序，边界收紧。"},
+  {name:"隐私个人主义", need:{TECH:"U",COL:"I",GOV:"L",SEC:"E"}, desc:"把数据隐私与个人自主视为基本权利，反对任何形式的强制采集。"},
+  {name:"数字自由意志", need:{TECH:"U",GOV:"L",ECO:"R",COL:"I",SEC:"E"}, desc:"主张加密、开源与平台去中心化，技术选择自由至上。"},
+  {name:"去中心化生态主义", need:{ENV:"S",TECH:"U",GOV:"L",COL:"I"}, desc:"用分布式、自下而上的技术与社区行动实现生态目标，拒斥集中管控。"},
+
+  /* 世俗 / 信仰 */
+  {name:"世俗自由主义", need:{SEC:"E",GOV:"L",CUL:"P"}, desc:"主张政教分离、公共决策基于理性与普遍权利，信仰留归私人。"},
+  {name:"世俗主义", need:{SEC:"E",GOV:"L"}, desc:"强调公共领域的世俗化与中立，反对以任何信仰划定公共政策。"},
+  {name:"政教分离进步主义", need:{SEC:"E",CUL:"P",GOV:"L",ECO:"L"}, desc:"在世俗框架下推进平等与权利扩张，反对信仰对公权力的渗透。"},
+  {name:"信仰社群", need:{SEC:"F",COL:"M",CUL:"T"}, desc:"以信仰为纽带组织基层互助与公益，重视共同体伦理。"},
+  {name:"神权倾向", need:{SEC:"F",GOV:"A",CUL:"T"}, desc:"主张以宗教法或信仰权威主导公共与法律秩序，权威集中。"},
+
+  /* 个人 / 集体基础 */
+  {name:"个人主义", need:{COL:"I",GOV:"L",ECO:"R"}, desc:"个人权利、选择自由与自我负责优先于任何集体安排。"},
+  {name:"社群主义", need:{COL:"M",CUL:"T",GOV:"A"}, desc:"强调共同体、公益与成员责任，认为个人嵌于社群关系之中。"},
+  {name:"集体主义", need:{COL:"M",ECO:"L",GOV:"A"}, desc:"共同体或国家目标优先于个人偏好，支持必要的集体约束与互助。"},
+
+  /* 国际 / 世界 */
+  {name:"世界主义", need:{NAT:"C",CUL:"P",COL:"I"}, desc:"以人类共同体视角看待权利与责任，重视开放、流动与跨文化协作。"},
+  {name:"全球治理主义", need:{NAT:"C",GOV:"A",COL:"M",ENV:"S"}, desc:"主张通过超国家机制协调气候、贸易与安全，集体高于单边。"},
+  {name:"贸易自由主义", need:{NAT:"C",ECO:"R",GOV:"L"}, desc:"支持自由贸易、资本与人员流动，反对保护主义壁垒。"},
+  {name:"贸易保护主义", need:{NAT:"N",ECO:"R",GOV:"A"}, desc:"以关税与产业保护维护本国就业与战略自主，国家干预市场。"},
+  {name:"民族主义", need:{NAT:"N",COL:"M"}, desc:"以国家主权与民族认同为先，强调集体利益、边界与文化延续。"},
+
+  /* 发展 / 增长 */
+  {name:"发展主义", need:{ENV:"G",GOV:"A",ECO:"R",NAT:"N"}, desc:"把经济增长与工业化置于优先，倚重国家主导的基建与产业政策。"},
+  {name:"自由发展主义", need:{ENV:"G",GOV:"L",ECO:"R",NAT:"C"}, desc:"以市场开放与自由贸易驱动发展，弱化环保约束。"},
+  {name:"市场原教旨", need:{ECO:"R",GOV:"L",COL:"I",ENV:"G"}, desc:"坚信市场能解决一切，反对管制、再分配与环保干预。"},
+
+  /* 混合 / 平衡 */
+  {name:"社会市场模式", need:{ECO:"L",GOV:"A",COL:"M",NAT:"C"}, desc:"以秩序与共识为基础，兼顾市场效率与社会团结的协调型体制。"},
+  {name:"第三条道路", need:{ECO:"L",GOV:"A",CUL:"P",NAT:"C"}, desc:"在左右之间寻求务实平衡，市场与福利、改革与稳定并重。"},
+  {name:"自由多元主义", need:{GOV:"L",CUL:"P",COL:"I",NAT:"C",SEC:"E"}, desc:"以个人自由、文化多元与开放社会为底色的温和立场。"},
+  {name:"温和混合派", need:{}, desc:"各维度无明显主导倾向，取向混合或平衡，难以归入单一阵营。"},
+];
+
+let TOTAL = 50;
+const STORE_KEY = "ideo_adaptive_v2";
+
+let seq = [];        // 已选题目 id（按顺序）
+let focusIdx = 0;     // 当前键盘高亮的选项下标
+let answers = {};    // qid -> 选项下标
+let pos = 0;         // 当前进度
+const $ = id => document.getElementById(id);
+
+/* ---------- 存档 ---------- */
+function loadSave(){ try{ return JSON.parse(localStorage.getItem(STORE_KEY)); }catch(e){ return null; } }
+function persist(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify({seq, answers, pos, total:TOTAL})); }catch(e){} }
+function setQ(n){
+  TOTAL = n;
+  document.querySelectorAll("#qcTabs button").forEach(b=>b.classList.toggle("active", Number(b.dataset.q)===n));
+}
+function answeredCount(){ return seq.filter(id=>answers[id]!=null).length; }
+
+/* ---------- 自适应选题 ---------- */
+function buildDomainCounts(){
+  const m={}; seq.forEach(id=>{ const d=BYID[id].domain; m[d]=(m[d]||0)+1; }); return m;
+}
+function recomputeDimCounts(){
+  const counts={}; DIMS.forEach(d=>{ counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0); });
+  seq.forEach(id=>{ const ai=answers[id]; if(ai==null) return; BYID[id].options[ai].tags.forEach(t=>{
+    const [dim,pole]=t.split(":"); if(counts[dim] && pole in counts[dim]) counts[dim][pole]++; }); });
+  return counts;
+}
+function uncertainty(dim, c){
+  const a=c[DIMS.find(d=>d.key===dim).poles[0].k];
+  const b=c[DIMS.find(d=>d.key===dim).poles[1].k];
+  const tot=a+b; return tot===0 ? 1 : 1 - Math.abs(a-b)/(tot+1);
+}
+function selectNext(){
+  const dcount = buildDomainCounts();
+  const dimc = recomputeDimCounts();
+  const used = new Set(seq);
+  const maxD = Math.max(1, ...Object.values(dcount));
+  const unc = {}; DIMS.forEach(d=> unc[d.key]=uncertainty(d.key, dimc[d.key]));
+  let best=null, bestScore=-1e9;
+  BANK.forEach(q=>{
+    if(used.has(q.id)) return;
+    const dc = dcount[q.domain]||0;
+    const domainScore = dc===0 ? 1000 : (maxD - dc)*10;     // 未碰过的领域大幅优先
+    const covered = new Set();
+    q.options.forEach(o=>o.tags.forEach(t=>covered.add(t.split(":")[0])));
+    let info=0; covered.forEach(dim=> info += unc[dim]);      // 越不确定的维度越想问
+    const score = domainScore + info*5 + Math.random()*0.01;
+    if(score>bestScore){ bestScore=score; best=q; }
+  });
+  seq.push(best.id);
+}
+
+/* ---------- 流程 ---------- */
+function freshStart(){
+  seq=[]; answers={}; pos=0;
+  selectNext();                 // 先抽第 1 题
+  persist();
+  $("start").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  showQuestion();
+}
+function resume(){
+  const s = loadSave();
+  if(!s){ freshStart(); return; }
+  TOTAL = s.total || 50; setQ(TOTAL);
+  seq=s.seq||[]; answers=s.answers||{}; pos=s.pos||0;
+  ensureCurrent();
+}
+function ensureCurrent(){
+  if(answeredCount()>=TOTAL){ finish(); return; }
+  if(pos>=TOTAL) pos=TOTAL-1;
+  if(seq[pos]===undefined) selectNext();
+  $("start").classList.add("hidden");
+  $("result").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  showQuestion();
+}
+function showQuestion(){
+  const q = BYID[seq[pos]];
+  $("counter").textContent = `第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain}（${q.options.length} 选项）`;
+  $("prog").style.width = (answeredCount()/TOTAL*100) + "%";
+  $("scene").textContent = q.scene;
+  const opts=$("opts"); opts.innerHTML="";
+  const keys="ABCDEFGH";
+  focusIdx = (answers[q.id]!=null) ? answers[q.id] : 0;
+  q.options.forEach((o,i)=>{
+    const d=document.createElement("div");
+    d.className="opt"+(answers[q.id]===i?" sel":"")+(i===focusIdx?" focus":"");
+    d.innerHTML=`<span class="key">${keys[i]}</span><span>${o.t}</span>`;
+    d.onclick=()=>{ answers[q.id]=i; focusIdx=i; persist(); showQuestion(); };
+    opts.appendChild(d);
+  });
+  applyFocus();
+  $("prevBtn").disabled=(pos===0);
+  $("nextBtn").textContent=(pos===TOTAL-1)?"查看结果 →":"下一题 →";
+}
+function applyFocus(){
+  const opts=$("opts"); if(!opts) return;
+  const kids=opts.children;
+  for(let i=0;i<kids.length;i++) kids[i].classList.toggle("focus", i===focusIdx);
+  if(kids[focusIdx]) kids[focusIdx].scrollIntoView({block:"nearest"});
+}
+function onKey(e){
+  if($("quiz").classList.contains("hidden")) return;          // 仅答题页响应
+  if(document.activeElement && document.activeElement.tagName==="BUTTON") document.activeElement.blur();
+  const tag=(e.target.tagName||"").toUpperCase();
+  if(tag==="INPUT"||tag==="TEXTAREA"||tag==="SELECT") return;
+  const q=BYID[seq[pos]]; if(!q) return;
+  const n=q.options.length;
+  const kk = (e.key && e.key.length===1) ? e.key.toLowerCase() : (e.key||"");
+  const move={"arrowup":-1,"w":-1,"arrowleft":-1,"a":-1,"arrowdown":1,"s":1,"arrowright":1,"d":1};
+  if(kk in move){
+    e.preventDefault();
+    focusIdx=Math.max(0, Math.min(n-1, focusIdx+move[kk]));
+    applyFocus();
+    return;
+  }
+  if(kk===" "||e.code==="Space"||kk==="enter"){
+    e.preventDefault();
+    if(focusIdx<0||focusIdx>=n) focusIdx=0;
+    answers[q.id]=focusIdx; persist();
+    if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
+    else finish();
+  }
+}
+document.addEventListener("keydown", onKey);
+function prev(){ if(pos>0){ pos--; persist(); showQuestion(); } }
+function next(){
+  if(answers[seq[pos]]==null){ alert("请先选择一个选项"); return; }
+  if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
+  else finish();
+}
+
+/* ---------- 结果与细分阵营匹配 ---------- */
+function tallyDims(){
+  const counts={}; DIMS.forEach(d=>{ counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0); });
+  seq.forEach(id=>{ const ai=answers[id]; if(ai==null) return; BYID[id].options[ai].tags.forEach(t=>{
+    const [dim,pole]=t.split(":"); if(counts[dim]&&pole in counts[dim]) counts[dim][pole]++; }); });
+  return counts;
+}
+function dominantPoles(counts){
+  const res={};
+  DIMS.forEach(d=>{
+    const c=counts[d.key]; let best=null,bestN=-1,tie=false;
+    d.poles.forEach(p=>{ const n=c[p.k];
+      if(n>bestN){bestN=n;best=p.k;tie=false;} else if(n===bestN&&n>0){tie=true;} });
+    res[d.key] = (bestN<=0||tie) ? "混合" : best;
+  });
+  return res;
+}
+function matchArch(res){
+  let best=null,bestScore=-1e9;
+  ARCH.forEach(a=>{
+    let s=0; for(const k in a.need){ const u=res[k];
+      if(u==="混合") continue; if(u===a.need[k]) s++; else s--; }
+    if(s>bestScore || (s===bestScore && Object.keys(a.need).length>(best?Object.keys(best.need).length:0))){
+      bestScore=s; best=a; }
+  });
+  if(bestScore<=0) best=ARCH.find(a=>a.name==="温和混合派");
+  return best;
+}
+function finish(){
+  const counts=tallyDims();
+  RESULT_COUNTS = counts;
+  const res=dominantPoles(counts);
+  const primary=matchArch(res);
+  persist();
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+
+  $("code").textContent = DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join("");
+  $("pName").textContent = primary.name;
+  $("pDesc").textContent = primary.desc;
+
+  let dh="";
+  DIMS.forEach(d=>{
+    const c=counts[d.key]; const dom=res[d.key];
+    const maxN=Math.max(1,...d.poles.map(p=>c[p.k]));
+    let ph="";
+    d.poles.forEach(p=>{ const n=c[p.k]; const w=n/maxN*100; const isDom=dom===p.k;
+      ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${p.label} ${n>0?'·'+n:''}</span></div>`; });
+    dh+=`<div class="dim"><div class="top"><span>${d.name}</span><b>${dom==="混合"?"混合 / 未定":d.poles.find(p=>p.k===dom).label}</b></div><div class="poles">${ph}</div></div>`;
+  });
+  $("dims").innerHTML=dh;
+
+  const ranked=ARCH.map(a=>{ let s=0; for(const k in a.need){const u=res[k]; if(u==="混合")continue; if(u===a.need[k])s++; else s--;} return {a,s}; })
+    .filter(x=>x.a!==primary).sort((x,y)=>y.s-x.s);
+  const secs=ranked.filter(x=>x.s>0).slice(0,2).map(x=>x.a.name);
+  $("secLine").innerHTML = secs.length ? `也较契合：<b>${secs.join("、")}</b>` : `你几乎只契合 <b>${primary.name}</b>`;
+
+  const need=primary.need; let sigHtml="";
+  seq.forEach(id=>{ const q=BYID[id]; const opt=q.options[answers[id]];
+    if(!opt) return;
+    const hit=opt.tags.some(t=>{ const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; });
+    if(hit) sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${opt.t}</div>`;
+  });
+  $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
+
+  setSpecMode(SPEC_MODE, true);
+}
+
+/* ---------- 政治光谱位置可视化（1D / 2D / 3D） ---------- */
+let RESULT_COUNTS = null;
+let SPEC_MODE = 2;                       // 默认 2 维（经典政治罗盘：经济 × 治理）
+let SPEC_DIMS = {x:"ECO", y:"GOV", z:"CUL"};
+let SP_ROT = {yaw:-0.6, pitch:-0.35};    // 3D 立方体初始视角
+
+// 把某维度两极其命中数折算成 [-1,1] 的连续坐标：pole0→-1，pole1→+1，无数据→0（居中）
+function dimPos(key){
+  if(!RESULT_COUNTS) return 0;
+  const d = DIMS.find(x=>x.key===key); if(!d) return 0;
+  const c = RESULT_COUNTS[key];
+  const n0 = c[d.poles[0].k], n1 = c[d.poles[1].k], tot = n0+n1;
+  return tot===0 ? 0 : (n1-n0)/tot;
+}
+function dimPct(key){ return Math.round(Math.abs(dimPos(key))*100); }
+function dimLean(key){
+  const d = DIMS.find(x=>x.key===key), p = dimPos(key);
+  if(Math.abs(p)<0.08) return "居中 / 混合";
+  return p<0 ? d.poles[0].label : d.poles[1].label;
+}
+
+function setSpecMode(m, silent){
+  SPEC_MODE = m;
+  // 确保所选维度在当前模式下都有合法值
+  if(!SPEC_DIMS.x) SPEC_DIMS.x = DIMS[0].key;
+  if(!SPEC_DIMS.y) SPEC_DIMS.y = DIMS[1].key;
+  if(!SPEC_DIMS.z) SPEC_DIMS.z = DIMS[2].key;
+  document.querySelectorAll("#spTabs button").forEach(b=>{
+    b.classList.toggle("active", Number(b.dataset.mode)===m);
+  });
+  renderSpectrum();
+}
+function specDimChange(axis, val){ SPEC_DIMS[axis]=val; renderSpectrum(); }
+
+function buildSpecSels(){
+  const axisLabels = {x:"横轴 X", y:"纵轴 Y", z:"竖轴 Z"};
+  const need = SPEC_MODE===1 ? ["x"] : SPEC_MODE===2 ? ["x","y"] : ["x","y","z"];
+  let html="";
+  need.forEach(a=>{
+    html += `<label class="sp-sel"><span>${axisLabels[a]}</span><select onchange="specDimChange('${a}',this.value)">`+
+      DIMS.map(d=>`<option value="${d.key}" ${SPEC_DIMS[a]===d.key?"selected":""}>${d.name}</option>`).join("")+
+      `</select></label>`;
+  });
+  $("spSels").innerHTML = html;
+}
+
+function renderSpectrum(){
+  if(!RESULT_COUNTS) return;
+  buildSpecSels();
+  const stage = $("spStage");
+  if(SPEC_MODE===1) render1D(stage);
+  else if(SPEC_MODE===2) render2D(stage);
+  else render3D(stage);
+  renderLegend();
+}
+
+function render1D(stage){
+  const d = DIMS.find(x=>x.key===SPEC_DIMS.x);
+  const pos = dimPos(d.key);
+  const p0=d.poles[0], p1=d.poles[1];
+  const W=560,H=150,pad=46,x0=pad,x1=W-pad,y=H/2;
+  const cx = x0 + (pos+1)/2*(x1-x0);
+  const mag = dimPct(d.key);
+  const lean = dimLean(d.key);
+  stage.innerHTML = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
+    <line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="#cbd5e1" stroke-width="4" stroke-linecap="round"/>
+    <line x1="${(x0+x1)/2}" y1="${y-12}" x2="${(x0+x1)/2}" y2="${y+12}" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="${cx.toFixed(1)}" cy="${y}" r="10" fill="#3b6df0" stroke="#fff" stroke-width="3"/>
+    <text x="${x0}" y="${y-24}" font-size="13" fill="#1f2933" text-anchor="start" font-weight="600">${p0.label}</text>
+    <text x="${x1}" y="${y-24}" font-size="13" fill="#1f2933" text-anchor="end" font-weight="600">${p1.label}</text>
+    <text x="${cx.toFixed(1)}" y="${y+34}" font-size="13" fill="#3b6df0" text-anchor="middle" font-weight="700">${lean} · ${mag}%</text>
+  </svg>`;
+}
+
+function render2D(stage){
+  const dx = DIMS.find(x=>x.key===SPEC_DIMS.x), dy = DIMS.find(x=>x.key===SPEC_DIMS.y);
+  const px = dimPos(dx.key), py = dimPos(dy.key);
+  const S=380, pad=46, ox=pad, oy=pad, sz=S-2*pad;
+  const mx = ox + (px+1)/2*sz, my = oy + (1-(py+1)/2)*sz;
+  stage.innerHTML = `<svg viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">
+    <rect x="${ox}" y="${oy}" width="${sz}" height="${sz}" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+    <line x1="${ox+sz/2}" y1="${oy}" x2="${ox+sz/2}" y2="${oy+sz}" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="${ox}" y1="${oy+sz/2}" x2="${ox+sz}" y2="${oy+sz/2}" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+(px+1)/2*sz}" y2="${oy+sz/2}" stroke="#3b6df0" stroke-width="1" stroke-dasharray="4 4"/>
+    <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+sz/2}" y2="${my.toFixed(1)}" stroke="#3b6df0" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="${mx.toFixed(1)}" cy="${my.toFixed(1)}" r="9" fill="#3b6df0" stroke="#fff" stroke-width="3"/>
+    <text x="${ox}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="start" font-weight="600">${dx.poles[0].label}</text>
+    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dx.poles[1].label}</text>
+    <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="#1f2933" text-anchor="middle" font-weight="600">${dx.name} →</text>
+    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.poles[1].label}</text>
+    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.poles[0].label}</text>
+    <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="#1f2933" text-anchor="end" font-weight="600">${dy.name} ↑</text>
+  </svg>`;
+}
+
+function render3D(stage){
+  stage.innerHTML = `<canvas id="spCanvas" width="440" height="400"></canvas><div class="sp-hint">拖动立方体可旋转视角</div>`;
+  const cv = $("spCanvas"), ctx = cv.getContext("2d");
+  const W=cv.width, H=cv.height, cx=W/2, cy=H/2, scale=120;
+  const dx=DIMS.find(x=>x.key===SPEC_DIMS.x), dy=DIMS.find(x=>x.key===SPEC_DIMS.y), dz=DIMS.find(x=>x.key===SPEC_DIMS.z);
+  const colors={"x":"#e2554f","y":"#3fae6b","z":"#3b6df0"};
+  function rot(p){
+    const cY=Math.cos(SP_ROT.yaw), sY=Math.sin(SP_ROT.yaw), cX=Math.cos(SP_ROT.pitch), sX=Math.sin(SP_ROT.pitch);
+    let [x,y,z]=p;
+    let x1=x*cY+z*sY, z1=-x*sY+z*cY;
+    let y1=y*cX-z1*sX, z2=y*sX+z1*cX;
+    return [x1,y1,z2];
+  }
+  function proj(p){ const r=rot(p); return [cx+r[0]*scale, cy-r[1]*scale, r[2]]; }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // 立方体 8 顶点
+    const v=[];
+    for(const X of [-1,1]) for(const Y of [-1,1]) for(const Z of [-1,1]) v.push([X,Y,Z]);
+    // 12 条边
+    const edges=[];
+    for(let i=0;i<v.length;i++) for(let j=i+1;j<v.length;j++){
+      const d=Math.abs(v[i][0]-v[j][0])+Math.abs(v[i][1]-v[j][1])+Math.abs(v[i][2]-v[j][2]);
+      if(d===2) edges.push([i,j]);
+    }
+    edges.sort((a,b)=>{
+      const za=(proj(v[a[0]])[2]+proj(v[a[1]])[2]), zb=(proj(v[b[0]])[2]+proj(v[b[1]])[2]);
+      return za-zb;
+    });
+    edges.forEach(e=>{
+      const a=proj(v[e[0]]), b=proj(v[e[1]]);
+      ctx.strokeStyle="rgba(148,163,184,.55)"; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
+    });
+    // 三条坐标轴（从中心指向 + 极），颜色区分
+    const axisMap=[["x",dx,colors.x,[1,0,0]],["y",dy,colors.y,[0,1,0]],["z",dz,colors.z,[0,0,1]]];
+    axisMap.forEach(([k,d,col,dir])=>{
+      const a=proj([0,0,0]), b=proj(dir);
+      ctx.strokeStyle=col; ctx.lineWidth=2.5;
+      ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
+      ctx.fillStyle=col; ctx.font="bold 12px sans-serif";
+      ctx.fillText(d.poles[1].label, b[0]+4, b[1]);
+      const n=proj(dir.map(x=>-x)); ctx.fillText(d.poles[0].label, n[0]-4, n[1]);
+    });
+    // 用户位置点
+    const P=[dimPos(dx.key), dimPos(dy.key), dimPos(dz.key)];
+    const p=proj(P);
+    // 连到三条轴的投影虚线
+    ctx.strokeStyle="rgba(59,109,240,.4)"; ctx.setLineDash([4,4]); ctx.lineWidth=1;
+    [[1,0,0],[0,1,0],[0,0,1]].forEach((dir,idx)=>{
+      const q=proj([P[0]*dir[0],P[1]*dir[1],P[2]*dir[2]]);
+      ctx.beginPath(); ctx.moveTo(p[0],p[1]); ctx.lineTo(q[0],q[1]); ctx.stroke();
+    });
+    ctx.setLineDash([]);
+    ctx.fillStyle="#3b6df0"; ctx.strokeStyle="#fff"; ctx.lineWidth=3;
+    ctx.beginPath(); ctx.arc(p[0],p[1],9,0,Math.PI*2); ctx.fill(); ctx.stroke();
+  }
+  let dragging=false, lx=0, ly=0;
+  cv.addEventListener("pointerdown",e=>{dragging=true;lx=e.clientX;ly=e.clientY;cv.setPointerCapture(e.pointerId);});
+  cv.addEventListener("pointerup",()=>dragging=false);
+  cv.addEventListener("pointermove",e=>{
+    if(!dragging) return;
+    SP_ROT.yaw += (e.clientX-lx)*0.01; SP_ROT.pitch += (e.clientY-ly)*0.01;
+    SP_ROT.pitch = Math.max(-1.4, Math.min(1.4, SP_ROT.pitch));
+    lx=e.clientX; ly=e.clientY; draw();
+  });
+  draw();
+}
+
+function renderLegend(){
+  const axes = SPEC_MODE===1 ? ["x"] : SPEC_MODE===2 ? ["x","y"] : ["x","y","z"];
+  let html = axes.map(a=>{
+    const d = DIMS.find(x=>x.key===SPEC_DIMS[a]);
+    return `<div><b>${a.toUpperCase()} · ${d.name}</b>：${dimLean(d.key)}（${dimPct(d.key)}%）</div>`;
+  }).join("");
+  $("spLegend").innerHTML = html;
+}
+
+/* ---------- 起始页：检测续测 ---------- */
+(function init(){
+  const s=loadSave();
+  const savedTotal = s && s.total ? s.total : 50;
+  setQ(savedTotal);                       // 默认激活对应题量标签
+  if(s && Array.isArray(s.seq) && s.seq.length>0 && answeredCount()<savedTotal){
+    $("resumeRow").style.display="flex";
+    $("resumeBtn").textContent = `继续上次测试（剩 ${savedTotal-answeredCount()} 题）`;
+  }
+})();
+</script>
+</body>
+</html>

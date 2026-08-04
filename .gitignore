@@ -1,0 +1,25 @@
+# ===== 中间产物与临时文件（已合并进 question_bank.json，无需入库）=====
+patch_*.json
+_pt*.json
+_probe.txt
+patch_data.txt
+
+# 备份
+*_orig.json
+question_bank_300.json
+question_bank_orig.json
+
+# 一次性生成脚本
+build_bank.py
+gen_col.py
+make_patch.py
+
+# 构建输出（可由 build.js + question_bank.json 再生）
+deploy/
+
+# 项目私有数据 / 记忆
+.workbuddy/
+
+# 系统
+.DS_Store
+*.log

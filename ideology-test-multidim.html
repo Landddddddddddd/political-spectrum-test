@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>意识形态测试 · 多维细分版</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --ink:#1f2933; --muted:#6b7785;
+    --line:#e2e8f0; --accent:#3b6df0; --accent-soft:#e8f0ff;
+    --shadow:0 8px 30px rgba(31,41,51,.08);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;display:flex;justify-content:center;padding:24px 16px;min-height:100vh;}
+  .wrap{width:100%;max-width:680px;}
+  .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:28px 26px;margin-bottom:18px;border:1px solid var(--line);}
+  h1{font-size:24px;margin:0 0 6px;letter-spacing:.5px;}
+  h2{font-size:19px;margin:0 0 14px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
+  .btn{appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;transition:transform .08s,opacity .2s;}
+  .btn:hover{opacity:.92;} .btn:active{transform:scale(.98);}
+  .btn.ghost{background:var(--accent-soft);color:var(--accent);}
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .row{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;}
+  .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
+  .bar>span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
+  .counter{font-size:13px;color:var(--muted);}
+  .scene{font-size:17px;font-weight:600;min-height:64px;background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .opts{display:grid;gap:10px;margin-top:12px;}
+  .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
+  .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
+  .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
+  .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+  .opt.sel .key{background:var(--accent);color:#fff;}
+  /* 结果 */
+  .code{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;letter-spacing:2px;
+    background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:8px;font-weight:700;}
+  .primary{border:1.5px solid var(--accent);background:linear-gradient(180deg,#f3f7ff,#fff);border-radius:14px;padding:18px;margin:8px 0 14px;}
+  .primary .name{font-size:22px;font-weight:800;color:var(--accent);}
+  .primary .desc{font-size:14px;color:var(--ink);margin-top:6px;}
+  .sec{font-size:14px;color:var(--muted);} .sec b{color:var(--ink);}
+  .dims{margin:14px 0 6px;}
+  .dim{margin:12px 0;}
+  .dim .top{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-bottom:4px;}
+  .dim .top b{color:var(--ink);}
+  .poles{display:flex;gap:8px;}
+  .pole{flex:1;border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;position:relative;overflow:hidden;background:#fbfcfe;}
+  .pole .lab{position:relative;z-index:1;}
+  .pole .fill{position:absolute;left:0;top:0;bottom:0;background:var(--line);opacity:.5;}
+  .pole.dom{border-color:var(--accent);font-weight:700;color:var(--accent);}
+  .pole.dom .fill{background:var(--accent);opacity:.18;}
+  .sig{margin-top:14px;}
+  .sig .item{font-size:14px;border-left:3px solid var(--accent);padding:6px 12px;margin:8px 0;background:#fbfcfe;border-radius:0 10px 10px 0;}
+  .sig .item .q{color:var(--muted);font-size:12px;}
+  .foot{font-size:12px;color:var(--muted);text-align:center;margin-top:4px;}
+  .hidden{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+
+  <section class="card" id="start">
+    <h1>意识形态测试 · 多维细分版</h1>
+    <p class="sub">还是把<b>具体情景</b>摆在你面前，让你选真实的<b>行动或想法</b>。
+       但这一次，结果会从 <b>5 个维度</b>拆解，再组合成一个<b>细分的子类型</b>。</p>
+    <p style="font-size:14px;color:var(--muted)">
+       维度：<b>经济 · 治理 · 文化 · 国际 · 生态</b>。每个维度看你选的选项更偏向哪一端，
+       再把 5 个主导极拼成你的具体阵营（如「生态社会主义」「民族保守主义」「自由意志主义」等 20 种）。<br>
+       共 <b>14</b> 个情景，约 4 分钟。
+    </p>
+    <div class="row"><button class="btn" onclick="startTest()">开始测试 →</button></div>
+  </section>
+
+  <section class="card hidden" id="quiz">
+    <div class="counter" id="counter"></div>
+    <div class="bar"><span id="prog"></span></div>
+    <div class="scene" id="scene"></div>
+    <div class="opts" id="opts"></div>
+    <div class="row">
+      <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
+      <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
+    </div>
+  </section>
+
+  <section class="card hidden" id="result">
+    <h2>你的意识形态画像</h2>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:6px;">你的维度签名</div>
+    <div class="code" id="code"></div>
+    <div class="primary">
+      <div class="name" id="pName"></div>
+      <div class="desc" id="pDesc"></div>
+    </div>
+    <div class="sec" id="secLine"></div>
+
+    <div class="dims" id="dims"></div>
+
+    <div class="sig">
+      <div style="font-weight:700;margin:6px 0 2px;">塑造你结果的关键选择</div>
+      <div id="sigList"></div>
+    </div>
+    <div class="row"><button class="btn ghost" onclick="restart()">重新测试</button></div>
+    <p class="foot">本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。</p>
+  </section>
+
+</div>
+
+<script>
+/* ---------- 维度定义 ---------- */
+const DIMS = [
+  {key:"ECO", name:"经济", poles:[{k:"L",label:"平等 / 再分配"},{k:"R",label:"自由市场"}]},
+  {key:"GOV", name:"治理", poles:[{k:"A",label:"权威 / 秩序"},{k:"L",label:"自由 / 分权"}]},
+  {key:"CUL", name:"文化", poles:[{k:"T",label:"传统"},{k:"P",label:"进步 / 多元"}]},
+  {key:"NAT", name:"国际", poles:[{k:"N",label:"民族优先"},{k:"C",label:"国际 / 开放"}]},
+  {key:"ENV", name:"生态", poles:[{k:"G",label:"发展优先"},{k:"S",label:"生态优先"}]},
+];
+
+/* ---------- 细分阵营（按维度极组合匹配） ---------- */
+const ARCH = [
+  {name:"自由意志主义", need:{ECO:"R",GOV:"L",CUL:"P",NAT:"C"}, desc:"主张最小政府、绝对个人自由与市场至上，反对一切非必要干预。"},
+  {name:"古典自由主义", need:{ECO:"R",GOV:"L",CUL:"T",NAT:"C"}, desc:"强调自由市场、个人权利与有限政府，重视传统与自发秩序。"},
+  {name:"无政府主义", need:{GOV:"L",ECO:"L",CUL:"P"}, desc:"质疑一切等级权威，倾向自发秩序、基层自治与直接民主。"},
+  {name:"民主社会主义", need:{ECO:"L",GOV:"L",CUL:"P",NAT:"C"}, desc:"在民主框架内追求经济平等与劳动者主权，反对资本集中。"},
+  {name:"社会民主主义", need:{ECO:"L",CUL:"P",NAT:"C",ENV:"S"}, desc:"市场经济加强福利与再分配，混合经济、绿色导向。"},
+  {name:"社会主义", need:{ECO:"L",GOV:"A",CUL:"P"}, desc:"追求生产资料社会化与强再分配，倚重国家力量调节经济。"},
+  {name:"进步主义", need:{CUL:"P",ECO:"L",NAT:"C"}, desc:"以平等、多元与权利扩张为核心，支持改革与包容。"},
+  {name:"生态社会主义", need:{ENV:"S",ECO:"L",CUL:"P"}, desc:"将生态可持续与反资本逻辑结合，主张系统性转型。"},
+  {name:"绿色自由主义", need:{ENV:"S",ECO:"R",GOV:"L"}, desc:"以市场与个人自由手段推动生态转型。"},
+  {name:"绿色保守主义", need:{ENV:"S",CUL:"T"}, desc:"从传统责任与审慎出发重视环境与代际延续。"},
+  {name:"绿色政治", need:{ENV:"S"}, desc:"以生态可持续为核心，可跨越左右的价值取向。"},
+  {name:"民族保守主义", need:{CUL:"T",GOV:"A",NAT:"N",ECO:"R"}, desc:"强调国家主权、文化边界与传统秩序，经济偏市场。"},
+  {name:"保守主义", need:{CUL:"T",GOV:"A",ECO:"R"}, desc:"重视传统、秩序与制度延续，对市场与权威均持审慎态度。"},
+  {name:"自由保守主义", need:{CUL:"T",ECO:"R",GOV:"L"}, desc:"经济自由、文化保守，强调个人责任与传统价值。"},
+  {name:"民族主义", need:{NAT:"N",GOV:"A"}, desc:"以国家主权与民族认同为先，强调集体利益与边界。"},
+  {name:"威权民粹主义", need:{GOV:"A",NAT:"N",CUL:"T"}, desc:"强国家、反建制，以民族与传统文化动员的权威取向。"},
+  {name:"社群主义", need:{CUL:"T",NAT:"C"}, desc:"强调共同体、公益与成员责任，平衡个人与社群。"},
+  {name:"世界主义", need:{NAT:"C",CUL:"P"}, desc:"以人类共同体视角看待权利与责任，重视开放与协作。"},
+  {name:"自由派", need:{GOV:"L",ECO:"R"}, desc:"偏向个人自由与市场的温和立场。"},
+  {name:"温和混合派", need:{}, desc:"各维度无明显主导倾向，取向混合或平衡。"},
+];
+
+/* ---------- 情景题（选项带 维度:极 标签） ---------- */
+const QUESTIONS = [
+  {scene:"社区要新修一条路，会占用一小块公共绿地。你会怎么看？",
+   options:[
+     {t:"支持修路，交通便利优先，绿地可以另找地方补", tags:["ENV:G","NAT:N"]},
+     {t:"反对占用绿地，环境比便利更重要", tags:["ENV:S"]},
+     {t:"由居民投票决定，结果我服从", tags:["GOV:L"]},
+     {t:"修路根本不该由政府规划，居民自己协商解决用地", tags:["GOV:L","CUL:P"]},
+   ]},
+  {scene:"一位同事公开表达了一种你强烈不同意的价值观。",
+   options:[
+     {t:"他有权表达，我保留意见但不干涉", tags:["GOV:L","CUL:P"]},
+     {t:"这种表达会伤害团队和谐，应该被劝止", tags:["GOV:A","CUL:T"]},
+     {t:"我会在公开场合反驳，但也要保障他说话的权利", tags:["GOV:L","CUL:P"]},
+     {t:"单位或平台应当限制这类有害言论", tags:["GOV:A","NAT:N"]},
+   ]},
+  {scene:"公司老板决定裁员降本，你被留了下来。",
+   options:[
+     {t:"这是市场正常调整，可以理解", tags:["ECO:R"]},
+     {t:"工人应该联合起来争取补偿和权益", tags:["ECO:L","CUL:P"]},
+     {t:"政府应强制企业保障就业与安置", tags:["ECO:L","GOV:A"]},
+     {t:"裁不裁员本就是老板的自由，不该干预", tags:["ECO:R","GOV:L"]},
+   ]},
+  {scene:"小区有人建议加装监控摄像头防盗窃。",
+   options:[
+     {t:"装，安全比隐私更重要", tags:["GOV:A","NAT:N"]},
+     {t:"不装，隐私不可侵犯", tags:["GOV:L","CUL:P"]},
+     {t:"可以装，但要严格规范数据用途", tags:["GOV:L"]},
+   ]},
+  {scene:"本国某产业受到外来贸易压力冲击。",
+   options:[
+     {t:"政府应补贴保护本国产业", tags:["NAT:N","ECO:L"]},
+     {t:"开放竞争，倒逼产业自己升级", tags:["ECO:R","NAT:C"]},
+     {t:"建立工会与产业工人保护网", tags:["ECO:L","CUL:P"]},
+     {t:"这是全球分工，个人自谋出路", tags:["ECO:R","GOV:L"]},
+   ]},
+  {scene:"网上有人呼吁为弱势群体募捐，但平台抽成很高。",
+   options:[
+     {t:"还是捐，善意优先", tags:["CUL:P"]},
+     {t:"更应该建立制度性保障，而不是靠捐赠", tags:["ECO:L"]},
+     {t:"抽成由市场调节，捐不捐是个人自由", tags:["ECO:R","GOV:L"]},
+     {t:"政府应监管平台抽成", tags:["GOV:A"]},
+   ]},
+  {scene:"你所在城市空气污染严重。",
+   options:[
+     {t:"限制私家车、大力发展公共交通", tags:["ENV:S","GOV:A"]},
+     {t:"靠技术进步和企业自律解决", tags:["ENV:G","ECO:R"]},
+     {t:"个人减少消费、过更简朴的生活", tags:["ENV:S","GOV:L"]},
+     {t:"这是发展必经阶段，先富起来再说", tags:["ENV:G","NAT:N"]},
+   ]},
+  {scene:"学校想推行统一校服和价值观教育。",
+   options:[
+     {t:"支持，有利于集体认同与纪律", tags:["CUL:T","GOV:A","NAT:N"]},
+     {t:"反对，这会压抑个性与多元", tags:["CUL:P","GOV:L"]},
+     {t:"由家庭自主选择是否参与", tags:["GOV:L","CUL:P"]},
+     {t:"教育应由社区共同决定，而非自上而下", tags:["GOV:L","CUL:T"]},
+     {t:"应该教批判思维，而不是统一的价值", tags:["CUL:P","GOV:L"]},
+   ]},
+  {scene:"邻居把自家院子改成小花园，但违反了小区规定。",
+   options:[
+     {t:"按规定要求他恢复", tags:["GOV:A","CUL:T"]},
+     {t:"只要不妨碍别人，就随他去", tags:["GOV:L","CUL:P"]},
+     {t:"由业委会民主讨论裁定", tags:["GOV:L"]},
+   ]},
+  {scene:"一笔意外之财（如拆迁补偿）到了你手上。",
+   options:[
+     {t:"拿去投资增值，财富自己打理", tags:["ECO:R","GOV:L"]},
+     {t:"拿出一部分捐助社区公益", tags:["CUL:P"]},
+     {t:"支持对这类收益征更高税，用于公共", tags:["ECO:L","GOV:A"]},
+     {t:"存起来求安稳，不冒风险", tags:["CUL:T"]},
+   ]},
+  {scene:"言论平台上出现了明显虚假的信息。",
+   options:[
+     {t:"让用户自己辨别，不删帖", tags:["GOV:L","CUL:P"]},
+     {t:"平台应标记并限流不实信息", tags:["GOV:L"]},
+     {t:"政府应立法惩处造谣", tags:["GOV:A","NAT:N"]},
+     {t:"由社区自治审核更可信", tags:["GOV:L","CUL:T"]},
+   ]},
+  {scene:"公司想推行弹性远程办公。",
+   options:[
+     {t:"支持，信任员工自主安排", tags:["GOV:L","ECO:R"]},
+     {t:"反对，现场协作效率更高", tags:["GOV:A","CUL:T"]},
+     {t:"由团队自己决定", tags:["GOV:L"]},
+     {t:"应写入劳动法，保障远程工作权利", tags:["ECO:L","GOV:A"]},
+   ]},
+  {scene:"外来文化与新移民进入你的社区。",
+   options:[
+     {t:"欢迎，多元让社区更好", tags:["CUL:P","NAT:C"]},
+     {t:"担心冲击本地文化与就业", tags:["NAT:N","CUL:T"]},
+     {t:"依法平等对待，权利与义务对等", tags:["GOV:L","NAT:C"]},
+     {t:"由基层社区自行磨合融合", tags:["GOV:L","CUL:T"]},
+     {t:"优先保障本地居民，再谈包容", tags:["NAT:N","CUL:T"]},
+   ]},
+  {scene:"面对气候变化的长期风险。",
+   options:[
+     {t:"由国家主导转型，设定硬性指标", tags:["ENV:S","GOV:A"]},
+     {t:"靠个人责任与企业创新应对", tags:["ENV:S","GOV:L"]},
+     {t:"应限制资本逐利对生态的破坏", tags:["ENV:S","ECO:L"]},
+     {t:"这是遥远的问题，先顾当下发展", tags:["ENV:G","NAT:N"]},
+     {t:"通过国际协作共同应对", tags:["ENV:S","NAT:C"]},
+     {t:"我认为这被夸大成了焦虑", tags:["ENV:G","GOV:L"]},
+   ]},
+];
+
+const answers = new Array(QUESTIONS.length).fill(null);
+let cur = 0;
+const $ = id => document.getElementById(id);
+
+function startTest(){ $("start").classList.add("hidden"); $("quiz").classList.remove("hidden"); showQuestion(); }
+
+function showQuestion(){
+  const q = QUESTIONS[cur];
+  $("counter").textContent = `情景 ${cur+1} / ${QUESTIONS.length}（${q.options.length} 个选项）`;
+  $("prog").style.width = (cur/QUESTIONS.length*100) + "%";
+  $("scene").textContent = q.scene;
+  const opts = $("opts"); opts.innerHTML = "";
+  const keys = "ABCDEFGH";
+  q.options.forEach((o,i)=>{
+    const d = document.createElement("div");
+    d.className = "opt" + (answers[cur]===i ? " sel":"");
+    d.innerHTML = `<span class="key">${keys[i]}</span><span>${o.t}</span>`;
+    d.onclick = ()=>{ answers[cur]=i; showQuestion(); };
+    opts.appendChild(d);
+  });
+  $("prevBtn").disabled = (cur===0);
+  $("nextBtn").textContent = (cur===QUESTIONS.length-1) ? "查看结果 →" : "下一题 →";
+}
+
+function prev(){ if(cur>0){cur--;showQuestion();} }
+function next(){
+  if(answers[cur]===null){ alert("请先选择一个选项"); return; }
+  if(cur < QUESTIONS.length-1){ cur++; showQuestion(); } else finish();
+}
+
+/* 统计每个维度各极被命中的次数 */
+function tallyDims(){
+  const counts = {};
+  DIMS.forEach(d=>{ counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0); });
+  QUESTIONS.forEach((q,i)=>{
+    q.options[answers[i]].tags.forEach(tag=>{
+      const [dim,pole]=tag.split(":");
+      if(counts[dim] && pole in counts[dim]) counts[dim][pole]++;
+    });
+  });
+  return counts;
+}
+
+/* 每个维度判定主导极（命中多者胜；平局或都 0 为“混合”） */
+function dominantPoles(counts){
+  const res={};
+  DIMS.forEach(d=>{
+    const c=counts[d.key];
+    let best=null,bestN=-1, tie=false;
+    d.poles.forEach(p=>{
+      const n=c[p.k];
+      if(n>bestN){bestN=n;best=p.k;tie=false;}
+      else if(n===bestN && n>0){tie=true;}
+    });
+    if(bestN<=0) res[d.key]="混合";
+    else if(tie) res[d.key]="混合";
+    else res[d.key]=best;
+  });
+  return res;
+}
+
+/* 按维度极匹配细分阵营：命中 +1，明确相反 -1，混合不计 */
+function matchArch(res){
+  let best=null,bestScore=-1e9;
+  ARCH.forEach(a=>{
+    let s=0;
+    for(const k in a.need){
+      const u=res[k];
+      if(u==="混合") continue;
+      if(u===a.need[k]) s++;
+      else s--;
+    }
+    if(s>bestScore || (s===bestScore && Object.keys(a.need).length> (best?Object.keys(best.need).length:0))){
+      bestScore=s; best=a;
+    }
+  });
+  // 无任何正向匹配（全混合或全相反）时回落到温和混合派
+  if(bestScore<=0) best=ARCH.find(a=>a.name==="温和混合派");
+  return {arch:best, score:bestScore};
+}
+
+function finish(){
+  const counts = tallyDims();
+  const res = dominantPoles(counts);
+  const {arch:primary} = matchArch(res);
+
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+
+  // 维度签名
+  const sig = DIMS.map(d=> res[d.key]==="混合" ? "·" : res[d.key]).join("");
+  $("code").textContent = sig;
+
+  $("pName").textContent = primary.name;
+  $("pDesc").textContent = primary.desc;
+
+  // 维度可视化
+  let dh="";
+  DIMS.forEach(d=>{
+    const c=counts[d.key];
+    const dom=res[d.key];
+    const maxN=Math.max(1,...d.poles.map(p=>c[p.k]));
+    let polesHtml="";
+    d.poles.forEach(p=>{
+      const n=c[p.k];
+      const w=n/maxN*100;
+      const isDom = dom===p.k;
+      polesHtml += `<div class="pole ${isDom?'dom':''}">
+        <span class="fill" style="width:${w}%"></span>
+        <span class="lab">${p.label} ${n>0?'·'+n:''}</span></div>`;
+    });
+    dh += `<div class="dim"><div class="top"><span>${d.name}</span>
+      <b>${dom==="混合"?"混合 / 未定":(d.poles.find(p=>p.k===dom).label)}</b></div>
+      <div class="poles">${polesHtml}</div></div>`;
+  });
+  $("dims").innerHTML = dh;
+
+  // 次要可能（再算一次其余阵营得分，取前 2 个 >0）
+  const ranked = ARCH.map(a=>{
+    let s=0; for(const k in a.need){const u=res[k]; if(u==="混合")continue; if(u===a.need[k])s++; else s--;}
+    return {a,s};
+  }).filter(x=>x.a!==primary).sort((x,y)=>y.s-x.s);
+  const secs = ranked.filter(x=>x.s>0).slice(0,2).map(x=>x.a.name);
+  $("secLine").innerHTML = secs.length ? `也较契合：<b>${secs.join("、")}</b>` : `你几乎只契合 <b>${primary.name}</b>`;
+
+  // 关键选择：命中主阵营所需极的选项
+  const need = primary.need;
+  let sigHtml="";
+  QUESTIONS.forEach((q,i)=>{
+    const opt=q.options[answers[i]];
+    const hit = opt.tags.some(tag=>{
+      const [dim,pole]=tag.split(":");
+      return need[dim]===pole && res[dim]===pole;
+    });
+    if(hit) sigHtml += `<div class="item"><div class="q">情景：${q.scene}</div>你的选择：${opt.t}</div>`;
+  });
+  $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
+}
+
+function restart(){
+  answers.fill(null); cur=0;
+  $("result").classList.add("hidden");
+  $("start").classList.remove("hidden");
+}
+</script>
+</body>
+</html>

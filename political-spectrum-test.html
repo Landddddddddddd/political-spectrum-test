@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>政治光谱测试 · 价值坐标</title>
+<style>
+  :root{
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --ink:#1f2933;
+    --muted:#6b7785;
+    --line:#e2e8f0;
+    --accent:#3b6df0;
+    --accent-soft:#e8f0ff;
+    --left:#e0533d;
+    --right:#2f8f5b;
+    --auth:#c7942e;
+    --lib:#5b6ee0;
+    --shadow:0 8px 30px rgba(31,41,51,.08);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;
+    display:flex;justify-content:center;padding:24px 16px;min-height:100vh;
+  }
+  .wrap{width:100%;max-width:640px;}
+  .card{
+    background:var(--card);border-radius:18px;box-shadow:var(--shadow);
+    padding:28px 26px;margin-bottom:18px;border:1px solid var(--line);
+  }
+  h1{font-size:24px;margin:0 0 6px;letter-spacing:.5px;}
+  h2{font-size:19px;margin:0 0 14px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 18px;}
+  .btn{
+    appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;
+    padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;
+    transition:transform .08s ease, opacity .2s ease;
+  }
+  .btn:hover{opacity:.92;}
+  .btn:active{transform:scale(.98);}
+  .btn.ghost{background:var(--accent-soft);color:var(--accent);}
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .row{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;}
+
+  /* 进度条 */
+  .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
+  .bar > span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
+  .counter{font-size:13px;color:var(--muted);}
+
+  /* 题目 */
+  .q{font-size:17px;font-weight:600;min-height:60px;}
+  .opts{display:grid;gap:10px;margin-top:8px;}
+  .opt{
+    display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);
+    border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s ease;
+    background:#fff;font-size:15px;
+  }
+  .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
+  .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
+  .opt .dot{
+    width:18px;height:18px;border-radius:50%;border:2px solid var(--line);flex:0 0 auto;
+  }
+  .opt.sel .dot{border-color:var(--accent);background:var(--accent);box-shadow:inset 0 0 0 3px #fff;}
+
+  /* 结果 */
+  .compass{display:block;margin:8px auto 6px;}
+  .scores{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 6px;}
+  .score{padding:14px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe;}
+  .score .label{font-size:13px;color:var(--muted);}
+  .score .val{font-size:22px;font-weight:700;margin-top:2px;}
+  .tag{
+    display:inline-block;font-size:14px;font-weight:700;padding:6px 14px;border-radius:99px;
+    margin:6px 6px 0 0;
+  }
+  .axis-x{color:#fff;background:linear-gradient(90deg,var(--left),var(--right));}
+  .axis-y{color:#fff;background:linear-gradient(180deg,var(--auth),var(--lib));}
+  .verdict{font-size:16px;font-weight:700;margin:14px 0 4px;}
+  .desc{font-size:14px;color:var(--muted);}
+  .foot{font-size:12px;color:var(--muted);text-align:center;margin-top:4px;}
+  .hidden{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+
+  <!-- 起始页 -->
+  <section class="card" id="start">
+    <h1>政治光谱测试</h1>
+    <p class="sub">用一组价值判断题，找到你在两个维度上的位置：<br>
+      经济（左 ↔ 右）· 社会（威权 ↔ 自由）</p>
+    <p style="font-size:14px;color:var(--muted)">
+      共 <b>20</b> 道题，每题按认同程度选择。约 3 分钟。结果仅反映你的价值倾向，无标准答案。
+    </p>
+    <div class="row">
+      <button class="btn" onclick="startTest()">开始测试 →</button>
+    </div>
+  </section>
+
+  <!-- 答题页 -->
+  <section class="card hidden" id="quiz">
+    <div class="counter" id="counter">第 1 / 20 题</div>
+    <div class="bar"><span id="prog"></span></div>
+    <div class="q" id="question"></div>
+    <div class="opts" id="opts"></div>
+    <div class="row">
+      <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
+      <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
+    </div>
+  </section>
+
+  <!-- 结果页 -->
+  <section class="card hidden" id="result">
+    <h2>你的政治光谱</h2>
+    <div id="compassHost"></div>
+    <div class="scores">
+      <div class="score">
+        <div class="label">经济轴（左 ↔ 右）</div>
+        <div class="val" id="ecoVal"></div>
+      </div>
+      <div class="score">
+        <div class="label">社会轴（威权 ↔ 自由）</div>
+        <div class="val" id="socVal"></div>
+      </div>
+    </div>
+    <div id="tags"></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="desc" id="desc"></div>
+    <div class="row">
+      <button class="btn ghost" onclick="restart()">重新测试</button>
+    </div>
+    <p class="foot">本测试为教育性自我探索工具，参考经典政治罗盘思路，结果仅供娱乐与反思。</p>
+  </section>
+
+</div>
+
+<script>
+/* ---------- 题目 ----------
+   axis: "eco" 经济轴 | "soc" 社会轴
+   pole: 该题“同意”指向的立场
+     eco: "L" 左 / "R" 右
+     soc: "A" 威权 / "F" 自由
+*/
+const QUESTIONS = [
+  {axis:"eco", pole:"L", text:"财富应当更平等地分配，过大的贫富差距是不公平的。"},
+  {axis:"eco", pole:"L", text:"政府有责任为所有人提供基本的医疗、教育与住房保障。"},
+  {axis:"eco", pole:"L", text:"能源、交通等关键基础产业应由国家主导，而非私人资本。"},
+  {axis:"eco", pole:"L", text:"劳动者应当通过工会拥有更强的集体议价能力。"},
+  {axis:"eco", pole:"L", text:"自由市场往往导致垄断与不平等，需要政府强力监管。"},
+
+  {axis:"eco", pole:"R", text:"降低税率、减少管制能释放更大的经济活力。"},
+  {axis:"eco", pole:"R", text:"私有产权和自由竞争是繁荣的根本。"},
+  {axis:"eco", pole:"R", text:"个人应为自己的经济成败承担主要责任。"},
+  {axis:"eco", pole:"R", text:"过多的社会福利会削弱人们的工作动力。"},
+  {axis:"eco", pole:"R", text:"政府干预经济通常效率低下，市场自我调节更优。"},
+
+  {axis:"soc", pole:"A", text:"为了社会安全与秩序，政府可以适度限制部分个人自由。"},
+  {axis:"soc", pole:"A", text:"社会需要共同的传统价值观来维系稳定。"},
+  {axis:"soc", pole:"A", text:"法律应当维护主流的道德观念。"},
+  {axis:"soc", pole:"A", text:"在危机时期，强有力的集中领导比分散决策更有效。"},
+  {axis:"soc", pole:"A", text:"国家统一和集体利益应优先于个人诉求。"},
+
+  {axis:"soc", pole:"F", text:"个人有权自行决定自己的生活方式，即使不被社会普遍接受。"},
+  {axis:"soc", pole:"F", text:"应当允许尽可能广泛的观点与表达，哪怕有争议。"},
+  {axis:"soc", pole:"F", text:"国家应尽量少干预私人生活与文化领域。"},
+  {axis:"soc", pole:"F", text:"多元化与差异让社会更有活力。"},
+  {axis:"soc", pole:"F", text:"个人自由比整齐划一的社会秩序更重要。"},
+];
+
+const OPTIONS = [
+  {t:"强烈反对", v:-2},
+  {t:"反对", v:-1},
+  {t:"中立", v:0},
+  {t:"同意", v:1},
+  {t:"强烈同意", v:2},
+];
+
+const answers = new Array(QUESTIONS.length).fill(null);
+let cur = 0;
+
+const $ = id => document.getElementById(id);
+
+function startTest(){
+  $("start").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  showQuestion();
+}
+
+function showQuestion(){
+  const q = QUESTIONS[cur];
+  $("counter").textContent = `第 ${cur+1} / ${QUESTIONS.length} 题`;
+  $("prog").style.width = ((cur)/QUESTIONS.length*100) + "%";
+  $("question").textContent = q.text;
+
+  const opts = $("opts");
+  opts.innerHTML = "";
+  OPTIONS.forEach(o=>{
+    const d = document.createElement("div");
+    d.className = "opt" + (answers[cur]===o.v ? " sel":"");
+    d.innerHTML = `<span class="dot"></span><span>${o.t}</span>`;
+    d.onclick = ()=>{ answers[cur]=o.v; showQuestion(); };
+    opts.appendChild(d);
+  });
+
+  $("prevBtn").disabled = (cur===0);
+  $("nextBtn").textContent = (cur===QUESTIONS.length-1) ? "查看结果 →" : "下一题 →";
+}
+
+function prev(){ if(cur>0){cur--;showQuestion();} }
+function next(){
+  if(answers[cur]===null){ alert("请先选择一个选项"); return; }
+  if(cur < QUESTIONS.length-1){ cur++; showQuestion(); }
+  else { finish(); }
+}
+
+function compute(){
+  let eco=0, soc=0;
+  QUESTIONS.forEach((q,i)=>{
+    const r = answers[i];
+    if(r===null) return;
+    if(q.axis==="eco"){
+      eco += (q.pole==="R") ? r : -r;
+    } else {
+      soc += (q.pole==="F") ? r : -r;
+    }
+  });
+  // 每轴最大绝对值 = 10（5 题 × 2）
+  return {eco: Math.max(-10,Math.min(10,eco)), soc: Math.max(-10,Math.min(10,soc))};
+}
+
+function finish(){
+  const {eco, soc} = compute();
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+
+  $("ecoVal").textContent = (eco<0? "左 "+eco : eco>0? "右 +"+eco : "中间 "+eco);
+  $("socVal").textContent = (soc<0? "威权 "+soc : soc>0? "自由 +"+soc : "中间 "+soc);
+
+  // 标签
+  const ecoTag = eco < -2 ? "经济左翼" : eco > 2 ? "经济右翼" : "经济中间";
+  const socTag = soc < -2 ? "社会威权" : soc > 2 ? "社会自由" : "社会中间";
+  $("tags").innerHTML =
+    `<span class="tag axis-x">${ecoTag}</span><span class="tag axis-y">${socTag}</span>`;
+
+  // 结论文字
+  let v, d;
+  if(Math.abs(eco)<=2 && Math.abs(soc)<=2){
+    v = "温和的中间派";
+    d = "你在两个维度上都接近中线，倾向务实与平衡，不强烈归属于某一端。";
+  } else if(eco<0 && soc>0){
+    v = "经济左翼 · 社会自由派";
+    d = "你支持更强的再分配与公共保障，同时重视个人自由与多元表达。";
+  } else if(eco>0 && soc>0){
+    v = "经济右翼 · 社会自由派";
+    d = "你偏好自由市场与个人责任，也强调个人自由与有限的政府干预。";
+  } else if(eco<0 && soc<0){
+    v = "经济左翼 · 社会威权派";
+    d = "你支持较强的公共资源与平等，同时倾向于秩序、集体与国家权威。";
+  } else {
+    v = "经济右翼 · 社会威权派";
+    d = "你偏好自由市场，同时也更看重秩序、传统与强有力的治理。";
+  }
+  $("verdict").textContent = v;
+  $("desc").textContent = d;
+
+  drawCompass(eco, soc);
+}
+
+function drawCompass(eco, soc){
+  const size=320, pad=30, span=10;
+  const w=size, h=size;
+  const cx=w/2, cy=h/2;
+  const px = cx + (eco/span)*(w/2-pad);
+  const py = cy - (soc/span)*(h/2-pad); // 自由在上，威权在下
+
+  const svg = `
+  <svg class="compass" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="政治光谱罗盘">
+    <rect x="0" y="0" width="${w}" height="${h}" rx="16" fill="#fbfcfe" stroke="#e2e8f0"/>
+    <!-- 四象限底色 -->
+    <rect x="${pad}" y="${pad}" width="${w/2-pad}" height="${h/2-pad}" fill="#fdeee9"/>
+    <rect x="${w/2}" y="${pad}" width="${w/2-pad}" height="${h/2-pad}" fill="#f3f7ec"/>
+    <rect x="${pad}" y="${h/2}" width="${w/2-pad}" height="${h/2-pad}" fill="#f6f0e2"/>
+    <rect x="${w/2}" y="${h/2}" width="${w/2-pad}" height="${h/2-pad}" fill="#eef0fb"/>
+    <!-- 坐标轴 -->
+    <line x1="${cx}" y1="${pad}" x2="${cx}" y2="${h-pad}" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="#cbd5e1" stroke-width="1.5"/>
+    <!-- 轴线标签 -->
+    <text x="${pad+6}" y="${h-pad-8}" font-size="11" fill="#e0533d">← 经济左</text>
+    <text x="${w-pad-6}" y="${h-pad-8}" font-size="11" fill="#2f8f5b" text-anchor="end">经济右 →</text>
+    <text x="${w-pad-6}" y="${pad+14}" font-size="11" fill="#5b6ee0" text-anchor="end">自由 ↑</text>
+    <text x="${pad+6}" y="${pad+14}" font-size="11" fill="#c7942e">↓ 威权</text>
+    <!-- 用户位置 -->
+    <circle cx="${px}" cy="${py}" r="11" fill="#3b6df0" stroke="#fff" stroke-width="3" opacity=".95"/>
+    <circle cx="${px}" cy="${py}" r="18" fill="#3b6df0" opacity=".18"/>
+  </svg>`;
+  $("compassHost").innerHTML = svg;
+}
+
+function restart(){
+  answers.fill(null); cur=0;
+  $("result").classList.add("hidden");
+  $("start").classList.remove("hidden");
+}
+</script>
+</body>
+</html>

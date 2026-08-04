@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>意识形态测试 · 情景版</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --ink:#1f2933; --muted:#6b7785;
+    --line:#e2e8f0; --accent:#3b6df0; --accent-soft:#e8f0ff;
+    --shadow:0 8px 30px rgba(31,41,51,.08);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;display:flex;justify-content:center;padding:24px 16px;min-height:100vh;}
+  .wrap{width:100%;max-width:660px;}
+  .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:28px 26px;margin-bottom:18px;border:1px solid var(--line);}
+  h1{font-size:24px;margin:0 0 6px;letter-spacing:.5px;}
+  h2{font-size:19px;margin:0 0 14px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
+  .btn{appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;transition:transform .08s,opacity .2s;}
+  .btn:hover{opacity:.92;} .btn:active{transform:scale(.98);}
+  .btn.ghost{background:var(--accent-soft);color:var(--accent);}
+  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .row{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;}
+  .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
+  .bar>span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
+  .counter{font-size:13px;color:var(--muted);}
+  .scene{font-size:17px;font-weight:600;min-height:64px;background:#fbfcfe;border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+  .opts{display:grid;gap:10px;margin-top:12px;}
+  .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
+  .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
+  .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
+  .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+  .opt.sel .key{background:var(--accent);color:#fff;}
+  /* 结果 */
+  .primary{border:1.5px solid var(--accent);background:linear-gradient(180deg,#f3f7ff,#fff);border-radius:14px;padding:18px;margin:6px 0 14px;}
+  .primary .name{font-size:22px;font-weight:800;color:var(--accent);}
+  .primary .desc{font-size:14px;color:var(--ink);margin-top:6px;}
+  .sec{font-size:14px;color:var(--muted);}
+  .sec b{color:var(--ink);}
+  .dist{margin:14px 0 4px;}
+  .drow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:13px;}
+  .dname{width:96px;flex:0 0 auto;color:var(--muted);}
+  .dtrack{flex:1;height:12px;background:var(--line);border-radius:99px;overflow:hidden;}
+  .dfill{height:100%;border-radius:99px;}
+  .dcnt{width:28px;text-align:right;color:var(--muted);}
+  .sig{margin-top:14px;}
+  .sig .item{font-size:14px;border-left:3px solid var(--accent);padding:6px 12px;margin:8px 0;background:#fbfcfe;border-radius:0 10px 10px 0;}
+  .sig .item .q{color:var(--muted);font-size:12px;}
+  .foot{font-size:12px;color:var(--muted);text-align:center;margin-top:4px;}
+  .hidden{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+
+  <!-- 起始页 -->
+  <section class="card" id="start">
+    <h1>意识形态测试 · 情景版</h1>
+    <p class="sub">不是问你「同不同意」，而是把你放进<strong>具体情景</strong>里，
+       让你选真实的<strong>行动或想法</strong>。每题选项多少不一（2–8 个）。</p>
+    <p style="font-size:14px;color:var(--muted)">
+       我们不给你打「倾向分」，而是看你选了哪些<strong>带有特征标签</strong>的选项，
+       最后归纳出你最契合的<strong>具体意识形态阵营</strong>。<br>
+       共 <b>14</b> 个情景，约 4 分钟。
+    </p>
+    <div class="row"><button class="btn" onclick="startTest()">开始测试 →</button></div>
+  </section>
+
+  <!-- 答题页 -->
+  <section class="card hidden" id="quiz">
+    <div class="counter" id="counter"></div>
+    <div class="bar"><span id="prog"></span></div>
+    <div class="scene" id="scene"></div>
+    <div class="opts" id="opts"></div>
+    <div class="row">
+      <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
+      <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
+    </div>
+  </section>
+
+  <!-- 结果页 -->
+  <section class="card hidden" id="result">
+    <h2>你的意识形态画像</h2>
+    <div class="primary">
+      <div class="name" id="pName"></div>
+      <div class="desc" id="pDesc"></div>
+    </div>
+    <div class="sec" id="secLine"></div>
+    <div class="dist" id="dist"></div>
+    <div class="sig">
+      <div style="font-weight:700;margin-bottom:2px;">你最具代表性的选择</div>
+      <div id="sigList"></div>
+    </div>
+    <div class="row"><button class="btn ghost" onclick="restart()">重新测试</button></div>
+    <p class="foot">本测试为教育性自我探索工具，阵营标签仅用于理解价值倾向，不构成政治立场判定。</p>
+  </section>
+
+</div>
+
+<script>
+/* ---------- 阵营定义 ---------- */
+const IDEO = {
+  lib:  {name:"自由主义",   color:"#5b6ee0", desc:"强调个人权利、法治、自由市场与有限政府，相信个体自由与程序正义。"},
+  con:  {name:"保守主义",   color:"#8a6d3b", desc:"重视传统、秩序、制度延续与渐进改革，对激进变革持审慎态度。"},
+  soc:  {name:"社会主义",   color:"#e0533d", desc:"追求经济平等、劳动者权益与对资本强监管，反对财富与权力过度集中。"},
+  sdem: {name:"社会民主主义",color:"#2f8f5b", desc:"在市场经济基础上主张强有力社会福利与再分配，走混合经济路线。"},
+  libt: {name:"自由意志主义",color:"#7a5bd0", desc:"主张最小政府、最大个人自由，反对一切非必要的强制与干预。"},
+  anar: {name:"无政府主义", color:"#d98a3d", desc:"质疑一切等级权威，倾向自发秩序、基层自治与直接民主。"},
+  green:{name:"绿色政治",   color:"#3a9d6e", desc:"以生态可持续为核心，强调环境、后代利益与生活方式的转变。"},
+  nat:  {name:"民族主义",   color:"#c0392b", desc:"强调国家主权、文化认同与集体利益，重视边界与共同体凝聚力。"},
+  comm: {name:"社群主义",   color:"#3b8fb0", desc:"强调共同体、公益与成员责任，认为个人嵌于社群关系之中。"},
+  prog: {name:"进步主义",   color:"#d05ba0", desc:"关注平等、多元与权利扩张，支持包容、改革与社会进步。"},
+};
+
+/* ---------- 情景题（选项数不固定，选项带特征标签） ---------- */
+const QUESTIONS = [
+  {scene:"社区要新修一条路，会占用一小块公共绿地。你会怎么看？",
+   options:[
+     {t:"支持修路，交通便利优先，绿地可以另找地方补", tags:["con","nat"]},
+     {t:"反对占用绿地，环境比便利更重要", tags:["green"]},
+     {t:"由居民投票决定，结果我服从", tags:["lib"]},
+     {t:"修路根本不该由政府规划，居民自己协商解决用地", tags:["anar","libt"]},
+   ]},
+  {scene:"一位同事公开表达了一种你强烈不同意的价值观。",
+   options:[
+     {t:"他有权表达，我保留意见但不干涉", tags:["lib","libt"]},
+     {t:"这种表达会伤害团队和谐，应该被劝止", tags:["con","comm"]},
+     {t:"我会在公开场合反驳，但也要保障他说话的权利", tags:["lib","prog"]},
+     {t:"单位或平台应当限制这类有害言论", tags:["con","nat"]},
+   ]},
+  {scene:"公司老板决定裁员降本，你被留了下来。",
+   options:[
+     {t:"这是市场正常调整，可以理解", tags:["lib","con"]},
+     {t:"工人应该联合起来争取补偿和权益", tags:["soc"]},
+     {t:"政府应强制企业保障就业与安置", tags:["sdem","soc"]},
+     {t:"裁不裁员本就是老板的自由，不该干预", tags:["libt"]},
+   ]},
+  {scene:"小区有人建议加装监控摄像头防盗窃。",
+   options:[
+     {t:"装，安全比隐私更重要", tags:["con","nat"]},
+     {t:"不装，隐私不可侵犯", tags:["lib","libt"]},
+     {t:"可以装，但要严格规范数据用途", tags:["sdem","lib"]},
+   ]},
+  {scene:"本国某产业受到外来贸易压力冲击。",
+   options:[
+     {t:"政府应补贴保护本国产业", tags:["nat","soc"]},
+     {t:"开放竞争，倒逼产业自己升级", tags:["lib"]},
+     {t:"建立工会与产业工人保护网", tags:["soc","sdem"]},
+     {t:"这是全球分工，个人自谋出路", tags:["libt"]},
+   ]},
+  {scene:"网上有人呼吁为弱势群体募捐，但平台抽成很高。",
+   options:[
+     {t:"还是捐，善意优先", tags:["comm","prog"]},
+     {t:"更应该建立制度性保障，而不是靠捐赠", tags:["sdem","soc"]},
+     {t:"抽成由市场调节，捐不捐是个人自由", tags:["libt","lib"]},
+     {t:"政府应监管平台抽成", tags:["sdem","nat"]},
+   ]},
+  {scene:"你所在城市空气污染严重。",
+   options:[
+     {t:"限制私家车、大力发展公共交通", tags:["green","sdem"]},
+     {t:"靠技术进步和企业自律解决", tags:["lib","con"]},
+     {t:"个人减少消费、过更简朴的生活", tags:["green","anar"]},
+     {t:"这是发展必经阶段，先富起来再说", tags:["con","nat"]},
+   ]},
+  {scene:"学校想推行统一校服和价值观教育。",
+   options:[
+     {t:"支持，有利于集体认同与纪律", tags:["con","nat","comm"]},
+     {t:"反对，这会压抑个性与多元", tags:["lib","prog"]},
+     {t:"由家庭自主选择是否参与", tags:["libt","lib"]},
+     {t:"教育应由社区共同决定，而非自上而下", tags:["anar","comm"]},
+     {t:"应该教批判思维，而不是统一的价值", tags:["prog","lib"]},
+   ]},
+  {scene:"邻居把自家院子改成小花园，但违反了小区规定。",
+   options:[
+     {t:"按规定要求他恢复", tags:["con"]},
+     {t:"只要不妨碍别人，就随他去", tags:["libt","lib"]},
+     {t:"由业委会民主讨论裁定", tags:["lib","comm"]},
+   ]},
+  {scene:"一笔意外之财（如拆迁补偿）到了你手上。",
+   options:[
+     {t:"拿去投资增值，财富自己打理", tags:["libt","lib"]},
+     {t:"拿出一部分捐助社区公益", tags:["comm","prog"]},
+     {t:"支持对这类收益征更高税，用于公共", tags:["soc","sdem"]},
+     {t:"存起来求安稳，不冒风险", tags:["con"]},
+   ]},
+  {scene:"言论平台上出现了明显虚假的信息。",
+   options:[
+     {t:"让用户自己辨别，不删帖", tags:["libt","lib"]},
+     {t:"平台应标记并限流不实信息", tags:["sdem","lib"]},
+     {t:"政府应立法惩处造谣", tags:["con","nat"]},
+     {t:"由社区自治审核更可信", tags:["anar","comm"]},
+   ]},
+  {scene:"公司想推行弹性远程办公。",
+   options:[
+     {t:"支持，信任员工自主安排", tags:["lib","libt"]},
+     {t:"反对，现场协作效率更高", tags:["con"]},
+     {t:"由团队自己决定", tags:["anar","lib"]},
+     {t:"应写入劳动法，保障远程工作权利", tags:["sdem","soc"]},
+   ]},
+  {scene:"外来文化与新移民进入你的社区。",
+   options:[
+     {t:"欢迎，多元让社区更好", tags:["prog","lib"]},
+     {t:"担心冲击本地文化与就业", tags:["nat","con"]},
+     {t:"依法平等对待，权利与义务对等", tags:["lib","sdem"]},
+     {t:"由基层社区自行磨合融合", tags:["comm","anar"]},
+     {t:"优先保障本地居民，再谈包容", tags:["con","comm"]},
+   ]},
+  {scene:"面对气候变化的长期风险。",
+   options:[
+     {t:"由国家主导转型，设定硬性指标", tags:["green","sdem"]},
+     {t:"靠个人责任与企业创新应对", tags:["green","lib"]},
+     {t:"应限制资本逐利对生态的破坏", tags:["green","soc","anar"]},
+     {t:"这是遥远的问题，先顾当下发展", tags:["con","nat"]},
+     {t:"通过国际协作共同应对", tags:["prog","lib"]},
+     {t:"我认为这被夸大成了焦虑", tags:["libt","con"]},
+   ]},
+];
+
+const answers = new Array(QUESTIONS.length).fill(null);
+let cur = 0;
+const $ = id => document.getElementById(id);
+
+function startTest(){ $("start").classList.add("hidden"); $("quiz").classList.remove("hidden"); showQuestion(); }
+
+function showQuestion(){
+  const q = QUESTIONS[cur];
+  $("counter").textContent = `情景 ${cur+1} / ${QUESTIONS.length}（${q.options.length} 个选项）`;
+  $("prog").style.width = (cur/QUESTIONS.length*100) + "%";
+  $("scene").textContent = q.scene;
+  const opts = $("opts"); opts.innerHTML = "";
+  const keys = "ABCDEFGH";
+  q.options.forEach((o,i)=>{
+    const d = document.createElement("div");
+    d.className = "opt" + (answers[cur]===i ? " sel":"");
+    d.innerHTML = `<span class="key">${keys[i]}</span><span>${o.t}</span>`;
+    d.onclick = ()=>{ answers[cur]=i; showQuestion(); };
+    opts.appendChild(d);
+  });
+  $("prevBtn").disabled = (cur===0);
+  $("nextBtn").textContent = (cur===QUESTIONS.length-1) ? "查看结果 →" : "下一题 →";
+}
+
+function prev(){ if(cur>0){cur--;showQuestion();} }
+function next(){
+  if(answers[cur]===null){ alert("请先选择一个选项"); return; }
+  if(cur < QUESTIONS.length-1){ cur++; showQuestion(); } else finish();
+}
+
+function finish(){
+  // 统计各阵营被命中的次数（特征是“选了哪些带标签的选项”，不是连续分数）
+  const tally = {};
+  QUESTIONS.forEach((q,i)=>{
+    const opt = q.options[answers[i]];
+    opt.tags.forEach(t=> tally[t]=(tally[t]||0)+1);
+  });
+  const ranked = Object.entries(tally).sort((a,b)=> b[1]-a[1]);
+  const primary = ranked[0][0];
+  const pMax = ranked[0][1];
+
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+
+  $("pName").textContent = IDEO[primary].name;
+  $("pDesc").textContent = IDEO[primary].desc;
+
+  // 次要契合
+  const secs = ranked.slice(1).filter(r=>r[1]>0).slice(0,3).map(r=>IDEO[r[0]].name);
+  $("secLine").innerHTML = secs.length
+    ? `也较契合：<b>${secs.join("、")}</b>`
+    : `你几乎只契合 <b>${IDEO[primary].name}</b>`;
+
+  // 分布（显示命中次数，非归一化分数）
+  const max = Math.max(...ranked.map(r=>r[1]));
+  let html = "";
+  ranked.filter(r=>r[1]>0).forEach(r=>{
+    const id=r[0], c=IDEO[id].color, n=r[1];
+    html += `<div class="drow"><span class="dname">${IDEO[id].name}</span>
+      <span class="dtrack"><span class="dfill" style="width:${n/max*100}%;background:${c}"></span></span>
+      <span class="dcnt">${n}</span></div>`;
+  });
+  $("dist").innerHTML = html;
+
+  // 最具代表性的选择：命中出现 primary 标签的选项
+  let sig = "";
+  QUESTIONS.forEach((q,i)=>{
+    const opt = q.options[answers[i]];
+    if(opt.tags.includes(primary)){
+      sig += `<div class="item"><div class="q">情景：${q.scene}</div>你的选择：${opt.t}</div>`;
+    }
+  });
+  $("sigList").innerHTML = sig || "<div class='item'>没有明显代表性的单项选择。</div>";
+}
+
+function restart(){
+  answers.fill(null); cur=0;
+  $("result").classList.add("hidden");
+  $("start").classList.remove("hidden");
+}
+</script>
+</body>
+</html>
