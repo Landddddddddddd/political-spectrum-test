@@ -176,6 +176,33 @@
   .acc-io .btn{flex:1;justify-content:center;}
   .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:var(--ink);color:var(--card);font-size:13px;padding:10px 16px;border-radius:10px;z-index:80;opacity:0;transition:opacity .25s;pointer-events:none;}
   .toast.show{opacity:.95;}
+
+  /* ====== 设置面板 ====== */
+  .set-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;}
+  .set-label{font-size:14px;color:var(--ink);}
+  .set-label b{font-size:15px;}
+  .set-label small{display:block;color:var(--muted);font-size:11px;margin-top:2px;font-weight:500;}
+  .set-sub{border-left:3px solid var(--accent-soft);padding-left:12px;margin:2px 0 4px;transition:opacity .2s;}
+  .set-sub.off{opacity:.4;pointer-events:none;filter:grayscale(.6);}
+  .set-sub .set-row{padding:7px 0;}
+  .set-val{font-size:13px;color:var(--muted);min-width:38px;text-align:right;}
+  .set-sub input[type=range]{flex:1;max-width:200px;accent-color:var(--accent);}
+  .set-prev{align-self:flex-start;margin-top:2px;font-size:13px;}
+  .set-hr{border:none;border-top:1px dashed var(--line);margin:10px 0;}
+  .switch{position:relative;display:inline-block;width:46px;height:26px;flex:none;}
+  .switch input{opacity:0;width:0;height:0;position:absolute;cursor:pointer;}
+  .switch .slider{position:absolute;cursor:pointer;inset:0;background:var(--line);border-radius:99px;transition:background .2s;}
+  .switch .slider:before{content:"";position:absolute;height:20px;width:20px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .2s;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+  .switch input:checked + .slider{background:var(--accent);}
+  .switch input:checked + .slider:before{transform:translateX(20px);}
+  .switch.sm{width:38px;height:22px;}
+  .switch.sm .slider:before{height:16px;width:16px;left:3px;top:3px;}
+  .switch.sm input:checked + .slider:before{transform:translateX(16px);}
+  /* 减弱动效 */
+  :root.reduce *, :root.reduce *::before, :root.reduce *::after{
+    animation-duration:.001ms!important; animation-iteration-count:1!important;
+    transition-duration:.001ms!important; scroll-behavior:auto!important;
+  }
 </style>
 </head>
 <body>
@@ -185,6 +212,7 @@
     <div class="brand">意识形态测试</div>
     <div class="tb-actions">
       <button class="tb-btn" id="themeBtn" onclick="cycleTheme()" title="切换外观：亮 / 暗 / 跟随系统">☀️ 亮色</button>
+      <button class="tb-btn" id="setBtn" onclick="openSettings()" title="设置：音效、动效">⚙️ 设置</button>
       <button class="tb-btn" id="accBtn" onclick="openAcc()" title="账户与历史"><span class="dot" id="accDot"></span><span id="accLabel">本地访客</span> ▾</button>
     </div>
   </div>
@@ -206,6 +234,50 @@
         <button class="btn ghost" onclick="exportAccounts()">导出账号</button>
         <label class="btn ghost">导入账号<input type="file" id="accFile" accept="application/json" onchange="importAccounts(this)" hidden /></label>
         <button class="btn ghost" onclick="closeAcc()">关闭</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="setModal">
+    <div class="modal-mask" onclick="closeSettings()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>设置</span><button class="x" onclick="closeSettings()">✕</button></div>
+
+      <div class="set-row">
+        <div class="set-label"><b>音效</b><small>为选择与界面操作播放提示音</small></div>
+        <label class="switch"><input type="checkbox" id="setSound" onchange="setSoundOn(this.checked)"><span class="slider"></span></label>
+      </div>
+
+      <div class="set-sub" id="setSub">
+        <div class="set-row">
+          <div class="set-label">音量</div>
+          <input type="range" id="setVol" min="0" max="100" value="50" oninput="setVol(this.value)" onchange="setVol(this.value)">
+          <span class="set-val" id="setVolVal">50%</span>
+        </div>
+        <div class="set-row">
+          <div class="set-label">选择 / 确认音</div>
+          <label class="switch sm"><input type="checkbox" id="setSel" onchange="setCat('select',this.checked)"><span class="slider"></span></label>
+        </div>
+        <div class="set-row">
+          <div class="set-label">完成测试音</div>
+          <label class="switch sm"><input type="checkbox" id="setFin" onchange="setCat('finish',this.checked)"><span class="slider"></span></label>
+        </div>
+        <div class="set-row">
+          <div class="set-label">界面操作音</div>
+          <label class="switch sm"><input type="checkbox" id="setUi" onchange="setCat('ui',this.checked)"><span class="slider"></span></label>
+        </div>
+        <button class="btn ghost set-prev" onclick="previewSfx()">试听完成音 ♪</button>
+      </div>
+
+      <hr class="set-hr">
+
+      <div class="set-row">
+        <div class="set-label"><b>减弱动效</b><small>关闭过渡与动画，降低视觉刺激</small></div>
+        <label class="switch"><input type="checkbox" id="setRM" onchange="setReduceMotion(this.checked)"><span class="slider"></span></label>
+      </div>
+
+      <div class="acc-io">
+        <button class="btn ghost" onclick="closeSettings()">关闭</button>
       </div>
     </div>
   </div>
@@ -321,6 +393,58 @@ function cycleTheme(){
   applyTheme(nx); updateThemeBtn();
   toast("外观：" + THEME_LABEL[nx]);
 }
+
+/* ====== 设置：音效（Web Audio 合成，无需外部文件）与动效 ====== */
+const SET_KEY = "ideo_settings";
+let SETTINGS = { sound:true, volume:50, select:true, finish:true, ui:true, reduceMotion:false };
+function loadSettings(){ try{ const s=JSON.parse(localStorage.getItem(SET_KEY)); if(s && typeof s==="object") Object.assign(SETTINGS, s); }catch(e){} }
+function saveSettings(){ try{ localStorage.setItem(SET_KEY, JSON.stringify(SETTINGS)); }catch(e){} }
+function applySettings(){ document.documentElement.classList.toggle("reduce", !!SETTINGS.reduceMotion); }
+
+let _actx=null;
+function audioCtx(){
+  if(!_actx){ try{ _actx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return null; } }
+  return _actx;
+}
+function tone(freq, t0, dur, type){
+  const ctx=audioCtx(); if(!ctx) return;
+  const o=ctx.createOscillator(), g=ctx.createGain();
+  o.type=type||"sine"; o.frequency.value=freq;
+  const peak=Math.max(0.0001, (SETTINGS.volume/100)*0.35);
+  const t=ctx.currentTime+t0;
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(peak, t+0.012);
+  g.gain.exponentialRampToValueAtTime(0.0001, t+dur);
+  o.connect(g); g.connect(ctx.destination);
+  o.start(t); o.stop(t+dur+0.03);
+}
+// kind: 'select' 选择/确认 · 'ui' 界面操作 · 'finish' 完成测试
+function sfx(kind){
+  if(!SETTINGS.sound) return;
+  if(kind!=="finish" && !SETTINGS[kind]) return;
+  if(kind==="finish" && !SETTINGS.finish) return;
+  const ctx=audioCtx(); if(!ctx) return;
+  if(ctx.state==="suspended"){ ctx.resume(); }
+  if(kind==="select"){ tone(620,0,0.07,"sine"); }
+  else if(kind==="ui"){ tone(440,0,0.05,"triangle"); }
+  else if(kind==="finish"){ [523.25,659.25,783.99,1046.50].forEach((f,i)=>tone(f, i*0.11, 0.26, "triangle")); }
+}
+function openSettings(){ syncSettingsUI(); $("setModal").classList.remove("hidden"); }
+function closeSettings(){ $("setModal").classList.add("hidden"); }
+function syncSettingsUI(){
+  $("setSound").checked = !!SETTINGS.sound;
+  $("setVol").value = SETTINGS.volume; $("setVolVal").textContent = SETTINGS.volume+"%";
+  $("setSel").checked = !!SETTINGS.select;
+  $("setFin").checked = !!SETTINGS.finish;
+  $("setUi").checked = !!SETTINGS.ui;
+  $("setRM").checked = !!SETTINGS.reduceMotion;
+  $("setSub").classList.toggle("off", !SETTINGS.sound);
+}
+function setSoundOn(v){ SETTINGS.sound=!!v; saveSettings(); syncSettingsUI(); if(v) sfx("ui"); }
+function setVol(v){ SETTINGS.volume=Math.max(0,Math.min(100,Number(v)||0)); $("setVolVal").textContent=SETTINGS.volume+"%"; saveSettings(); }
+function setCat(k,v){ SETTINGS[k]=!!v; saveSettings(); if(k==="finish") previewSfx(); else sfx(k); }
+function setReduceMotion(v){ SETTINGS.reduceMotion=!!v; document.documentElement.classList.toggle("reduce", v); saveSettings(); if(v) sfx("ui"); }
+function previewSfx(){ sfx("finish"); }
 
 /* ====== 本地账户体系（多账户 + 历史 + 导出/导入） ====== */
 const ACC_KEY = "ideo_accounts", CUR_KEY = "ideo_cur_acc";
@@ -588,7 +712,7 @@ function showQuestion(){
     const d=document.createElement("div");
     d.className="opt"+(answers[q.id]===i?" sel":"")+(i===focusIdx?" focus":"");
     d.innerHTML=`<span class="key">${keys[i]}</span><span>${o.t}</span>`;
-    d.onclick=()=>{ answers[q.id]=i; focusIdx=i; persist(); showQuestion(); };
+    d.onclick=()=>{ answers[q.id]=i; focusIdx=i; persist(); showQuestion(); sfx("select"); };
     opts.appendChild(d);
   });
   applyFocus();
@@ -618,6 +742,7 @@ function onKey(e){
   }
   if(kk===" "||e.code==="Space"||kk==="enter"){
     e.preventDefault();
+    sfx("select");
     if(focusIdx<0||focusIdx>=n) focusIdx=0;
     answers[q.id]=focusIdx; persist();
     if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
@@ -627,6 +752,7 @@ function onKey(e){
 document.addEventListener("keydown", onKey);
 function prev(){ if(pos>0){ pos--; persist(); showQuestion(); } }
 function next(){
+  sfx("select");
   if(answers[seq[pos]]==null){ alert("请先选择一个选项"); return; }
   if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
   else finish();
@@ -734,6 +860,7 @@ function renderFigures(primary, secs){
 }
 
 function finish(){
+  sfx("finish");
   const counts=tallyDims();
   renderResultFromData(counts, null, false);
 }
@@ -1061,10 +1188,16 @@ function downloadCard(){
 
 /* ---------- 起始页：检测续测 ---------- */
 (function init(){
-  loadTheme(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn();
+  loadTheme(); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn();
   if(window.matchMedia){
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ()=>{ if(getTheme()==="auto") applyTheme("auto"); });
   }
+  // 全局：除「选择/前进/后退」与设置面板内控件外，按钮点击播放界面操作音
+  document.addEventListener("click", (e)=>{
+    if(e.target.closest("#setModal")) return;
+    if(e.target.closest("#nextBtn, #prevBtn, .opt")) return;
+    if(e.target.closest("button, .acc-item, .hist-item, select")) sfx("ui");
+  });
   const s=loadSave();
   const savedTotal = s && s.total ? s.total : 50;
   setQ(savedTotal);                       // 默认激活对应题量标签
