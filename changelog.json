@@ -11,7 +11,11 @@
       "支持 15/30/50/100 题量及自定义 5-500 题",
       "键盘答题：方向键/WASD + 空格/回车"
     ],
-    "stats": {"questions": 500, "ideologies": 50, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 50,
+      "domains": 30
+    }
   },
   {
     "date": "2026-08-03",
@@ -22,7 +26,11 @@
       "代表人物覆盖思想史、理论贡献与行动实践",
       "拟形象明确标注为非真实照片，基于名字哈希确定性生成"
     ],
-    "stats": {"questions": 500, "ideologies": 120, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 120,
+      "domains": 30
+    }
   },
   {
     "date": "2026-08-04",
@@ -35,7 +43,11 @@
       "测试前概览面板：流程图 + 8 维度说明 + 可测出意识形态列表",
       "查看所有可被测出的意识形态弹窗（含搜索）"
     ],
-    "stats": {"questions": 500, "ideologies": 120, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 120,
+      "domains": 30
+    }
   },
   {
     "date": "2026-08-05",
@@ -47,7 +59,11 @@
       "复制结果摘要到剪贴板",
       "起始页按钮数字改为动态显示实际阵营数（120）"
     ],
-    "stats": {"questions": 500, "ideologies": 120, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 120,
+      "domains": 30
+    }
   },
   {
     "date": "2026-08-09",
@@ -57,7 +73,11 @@
       "创建每日题库扩展自动化任务（每天 10:00 新增 10 题）",
       "更新日志功能上线，用户可在产品内查看每次更新内容"
     ],
-    "stats": {"questions": 500, "ideologies": 120, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 120,
+      "domains": 30
+    }
   },
   {
     "date": "2026-08-09",
@@ -69,6 +89,22 @@
       "结果页代表人物卡片可点击展开查看完整详情",
       "「所有意识形态」弹窗中每张阵营卡片新增代表人物展开入口"
     ],
-    "stats": {"questions": 500, "ideologies": 120, "domains": 30}
+    "stats": {
+      "questions": 500,
+      "ideologies": 120,
+      "domains": 30
+    }
+  },
+  {
+    "date": "2026-08-09",
+    "title": "每日题库扩展 +10题",
+    "items": [
+      "新增领域：贸易产业、移民文化、性别平权、司法法治、宗教与信仰、住房城市、农业食品、媒体信息、治安刑罚、外交国际（各1题）"
+    ],
+    "stats": {
+      "questions": 510,
+      "ideologies": 120,
+      "domains": 30
+    }
   }
 ]
