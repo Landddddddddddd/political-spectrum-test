@@ -109,7 +109,9 @@
   .figures .fttl{font-weight:700;font-size:15px;margin-bottom:4px;}
   .figures .fsub{font-size:12px;color:var(--muted);margin-bottom:10px;}
   .fig-grid{display:grid;grid-template-columns:1fr;gap:12px;}
-  .fig-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--panel);}
+  .fig-card{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--panel);cursor:pointer;transition:border-color .2s,box-shadow .2s;}
+  .fig-card:hover{border-color:var(--accent);box-shadow:0 2px 12px rgba(91,140,255,.12);}
+  .fig-card.expanded{border-color:var(--accent);box-shadow:0 4px 16px rgba(91,140,255,.16);}
   .fig-avatar{flex:0 0 76px;width:76px;height:76px;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(31,41,51,.12);background:var(--avatar-bg);}
   .fig-avatar svg{width:100%;height:100%;display:block;}
   .fig-body{flex:1;min-width:0;}
@@ -117,6 +119,22 @@
   .fig-name .en{font-size:11px;font-weight:500;color:var(--muted);margin-left:6px;}
   .fig-meta{font-size:12px;color:var(--muted);margin:1px 0 6px;}
   .fig-note{font-size:13px;color:var(--ink);line-height:1.65;}
+  .fig-toggle{font-size:12px;color:var(--accent);font-weight:600;margin-top:6px;user-select:none;}
+  .fig-detail{display:none;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);animation:figFade .3s ease;}
+  .fig-card.expanded .fig-detail{display:block;}
+  .fig-card.expanded .fig-toggle::after{content:' ▾';}
+  .fig-toggle::after{content:' ▸';}
+  @keyframes figFade{from{opacity:0;transform:translateY(-4px);}to{opacity:1;transform:translateY(0);}}
+  .fig-detail h4{font-size:13px;font-weight:700;color:var(--accent);margin:0 0 6px;}
+  .fig-bio{font-size:13px;color:var(--ink);line-height:1.75;margin-bottom:14px;}
+  .fig-deeds{margin-bottom:14px;}
+  .fig-deed{display:flex;gap:8px;margin-bottom:8px;}
+  .fig-deed::before{content:'';flex:0 0 6px;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:7px;}
+  .fig-deed-body{flex:1;}
+  .fig-deed-t{font-size:13px;font-weight:700;color:var(--ink);}
+  .fig-deed-d{font-size:12.5px;color:var(--muted);line-height:1.6;margin-top:2px;}
+  .fig-works{display:flex;flex-wrap:wrap;gap:6px;}
+  .fig-work{font-size:12px;color:var(--ink);background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:3px 9px;}
   .fig-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
   .fig-chip{display:flex;align-items:center;gap:7px;background:var(--chip);border:1px solid var(--line);border-radius:99px;padding:4px 11px 4px 4px;font-size:12px;color:var(--ink);}
   .fig-chip .cav{flex:0 0 30px;width:30px;height:30px;border-radius:50%;overflow:hidden;background:var(--avatar-bg);box-shadow:0 1px 4px rgba(31,41,51,.12);}
@@ -244,6 +262,22 @@
   .ac-detail{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:7px;}
   .ac-tenets{display:flex;flex-wrap:wrap;gap:5px;}
   .ac-tenets span{font-size:11px;color:var(--muted);background:var(--accent-soft);border:1px solid var(--line);border-radius:99px;padding:2px 8px;}
+  .ac-figs-toggle{font-size:12px;color:var(--accent);font-weight:600;margin-top:8px;cursor:pointer;user-select:none;}
+  .ac-figs-toggle::after{content:' ▸';}
+  .arch-card.expanded .ac-figs-toggle::after{content:' ▾';}
+  .ac-figs-detail{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);}
+  .arch-card.expanded .ac-figs-detail{display:block;animation:figFade .3s ease;}
+  .ac-fig-mini{display:flex;gap:10px;margin-bottom:10px;}
+  .ac-fig-mini .fig-avatar{flex:0 0 52px;width:52px;height:52px;border-radius:10px;}
+  .ac-fig-mini .fig-body{flex:1;min-width:0;}
+  .ac-fig-mini .fig-name{font-size:13px;}
+  .ac-fig-mini .fig-meta{font-size:11px;margin:1px 0 4px;}
+  .ac-fig-mini .fig-note{font-size:12px;line-height:1.55;}
+  .ac-fig-mini .fig-deeds{margin:8px 0;}
+  .ac-fig-mini .fig-deed-t{font-size:12px;font-weight:700;}
+  .ac-fig-mini .fig-deed-d{font-size:11.5px;line-height:1.55;}
+  .ac-fig-mini .fig-works{margin-top:6px;}
+  .ac-fig-mini .fig-work{font-size:11px;}
   @media(max-width:680px){ .arch-grid{grid-template-columns:1fr;} .arch-box{max-width:94vw;} }
 
   /* ====== 精度徽章 ====== */
@@ -2722,15 +2756,43 @@ function makePortrait(seed){
 function renderFigures(primary, secs){
   const figs = FIGURES[primary.name] || [];
   let html = `<div class="fttl">代表人物 · ${primary.name}</div>`;
-  html += `<div class="fsub">以下为该思潮在思想史上有代表性的理论与行动者，按其对理想的阐述与贡献列出；右侧为风格化「拟形象」插画，并非真实照片。</div>`;
+  html += `<div class="fsub">以下为该思潮在思想史上有代表性的理论与行动者。点击卡片可展开查看生平简介、主要事迹与代表著作；右侧为风格化「拟形象」插画，并非真实照片。</div>`;
   html += `<div class="fig-grid">`;
-  figs.forEach(f=>{
-    html += `<div class="fig-card">
+  figs.forEach((f, idx)=>{
+    const hasDetail = f.bio || (f.deeds && f.deeds.length) || (f.works && f.works.length);
+    let detailHtml = '';
+    if(hasDetail){
+      detailHtml = '<div class="fig-detail">';
+      if(f.bio){
+        detailHtml += '<h4>生平简介</h4>';
+        detailHtml += `<div class="fig-bio">${f.bio}</div>`;
+      }
+      if(f.deeds && f.deeds.length){
+        detailHtml += '<h4>主要事迹</h4>';
+        detailHtml += '<div class="fig-deeds">';
+        f.deeds.forEach(d=>{
+          detailHtml += `<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">${d.t}</div><div class="fig-deed-d">${d.d}</div></div></div>`;
+        });
+        detailHtml += '</div>';
+      }
+      if(f.works && f.works.length){
+        detailHtml += '<h4>代表著作</h4>';
+        detailHtml += '<div class="fig-works">';
+        f.works.forEach(w=>{
+          detailHtml += `<span class="fig-work">${w}</span>`;
+        });
+        detailHtml += '</div>';
+      }
+      detailHtml += '</div>';
+    }
+    html += `<div class="fig-card" onclick="this.classList.toggle('expanded')">
       <div class="fig-avatar" title="${f.name}">${makePortrait(f.name+'|'+f.en)}</div>
       <div class="fig-body">
         <div class="fig-name">${f.name}<span class="en">${f.en||''}</span></div>
         <div class="fig-meta">${f.years||''}${f.role?(' · '+f.role):''}</div>
         <div class="fig-note">${f.note||''}</div>
+        ${hasDetail ? '<div class="fig-toggle">查看详细事迹</div>' : ''}
+        ${detailHtml}
       </div></div>`;
   });
   html += `</div>`;
@@ -3139,12 +3201,42 @@ function renderArchList(list){
   g.innerHTML = list.map(a=>{
     const gi = ARCH.indexOf(a)+1;
     const sig = archSig(a);
+    const figs = FIGURES[a.name] || [];
+    let figsHtml = '';
+    if(figs.length){
+      figsHtml = '<div class="ac-figs-toggle" onclick="this.closest(\'.arch-card\').classList.toggle(\'expanded\');event.stopPropagation();">代表人物（'+figs.length+'）</div>';
+      figsHtml += '<div class="ac-figs-detail">';
+      figs.forEach(f=>{
+        let detail = '';
+        if(f.bio) detail += '<div class="fig-bio" style="font-size:12px;margin-bottom:8px;">'+f.bio+'</div>';
+        if(f.deeds && f.deeds.length){
+          detail += '<div class="fig-deeds">';
+          f.deeds.forEach(d=>{ detail += '<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">'+d.t+'</div><div class="fig-deed-d">'+d.d+'</div></div></div>'; });
+          detail += '</div>';
+        }
+        if(f.works && f.works.length){
+          detail += '<div class="fig-works">';
+          f.works.forEach(w=>{ detail += '<span class="fig-work">'+w+'</span>'; });
+          detail += '</div>';
+        }
+        figsHtml += '<div class="ac-fig-mini">'+
+          '<div class="fig-avatar" title="'+f.name+'">'+makePortrait(f.name+'|'+(f.en||''))+'</div>'+
+          '<div class="fig-body">'+
+          '<div class="fig-name">'+f.name+(f.en?'<span class="en">'+f.en+'</span>':'')+'</div>'+
+          '<div class="fig-meta">'+(f.years||'')+(f.role?(' · '+f.role):'')+'</div>'+
+          '<div class="fig-note">'+(f.note||'')+'</div>'+
+          detail+
+          '</div></div>';
+      });
+      figsHtml += '</div>';
+    }
     return `<div class="arch-card">
       <div class="ac-top"><span class="ac-idx">${String(gi).padStart(2,'0')}</span><span class="ac-name">${a.name}</span></div>
       <div class="ac-sig">${sig}</div>
       <div class="ac-desc">${a.desc}</div>
       <div class="ac-detail">${a.detail}</div>
       <div class="ac-tenets">${a.tenets.map(t=>'<span>'+t+'</span>').join('')}</div>
+      ${figsHtml}
     </div>`;
   }).join("");
 }
