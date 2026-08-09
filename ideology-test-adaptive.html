@@ -358,7 +358,7 @@
       <p class="ov-tip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定。</p>
       <div class="ov-dims" id="ovDims"></div>
       <div class="ov-get"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
-      <div class="ov-actions"><button class="btn ghost" onclick="openArch()">📚 查看所有可被测出的意识形态（50）</button></div>
+      <div class="ov-actions"><button class="btn ghost" onclick="openArch()">📚 查看所有可被测出的意识形态（<span id="ovArchCount">…</span>）</button></div>
     </details>
     <div class="qc-label">先选题量：</div>
     <div class="qc-tabs" id="qcTabs">
@@ -3090,6 +3090,7 @@ function fallbackCopy(text,done){
 function renderOverview(){
   const el=$("ovDims"); if(!el) return;
   el.innerHTML=DIMS.map(d=>`<div class="ov-dim"><span class="ov-name">${d.name}</span><span class="ov-poles">${d.poles[0].label} ↔ ${d.poles[1].label}</span></div>`).join("");
+  const cn=$("ovArchCount"); if(cn) cn.textContent = ARCH.length;
 }
 
 /* ---------- 所有意识形态弹窗 ---------- */
