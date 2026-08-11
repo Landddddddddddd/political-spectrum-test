@@ -2,7 +2,11 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#3b6df0" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e1320" media="(prefers-color-scheme: dark)" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <title>意识形态测试 · 自适应 500 题版</title>
 <style>
   :root{
@@ -302,6 +306,232 @@
   .cl-items li{font-size:13px;color:var(--ink);line-height:1.6;padding-left:16px;position:relative;}
   .cl-items li:before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--accent);}
   @media(max-width:560px){ .cl-stat{min-width:70px;} }
+
+  /* ================================== */
+  /* ====== 移动端全面适配 (≤680px) ====== */
+  /* ================================== */
+  @media(max-width:680px){
+    /* 基础布局 */
+    body{padding:10px 6px;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;}
+    .wrap{max-width:100%;}
+    .card{padding:16px 13px;margin-bottom:12px;border-radius:14px;}
+
+    /* 顶栏 */
+    .topbar{flex-wrap:wrap;gap:6px;margin-bottom:10px;}
+    .topbar .brand{font-size:13px;}
+    .tb-actions{gap:5px;flex-wrap:wrap;}
+    .tb-btn{font-size:11px;padding:6px 9px;border-radius:8px;}
+    .tb-btn .dot{width:10px;height:10px;margin-right:3px;}
+
+    /* 标题与文本 */
+    h1{font-size:20px;}
+    h2{font-size:17px;}
+    .sub{font-size:13px;}
+
+    /* 题量选择 */
+    .qc-label{font-size:12px;}
+    .qc-tabs{gap:6px;margin-bottom:10px;}
+    .qc-tabs button{font-size:13px;padding:8px 13px;}
+    .qc-custom{flex-wrap:wrap;gap:6px;}
+    .qc-custom input{width:72px;font-size:13px;padding:7px 9px;}
+    .qc-custom .btn{padding:7px 12px;font-size:12px;}
+
+    /* 维度详解折叠 */
+    .diminfo{padding:2px 11px;}
+    .diminfo summary{font-size:13px;}
+    .diminfo .di{font-size:12px;}
+
+    /* 答题区域 */
+    .counter{font-size:12px;}
+    .bar{margin:5px 0 14px;}
+    .scene{font-size:15px;padding:12px 13px;border-radius:10px;min-height:auto;}
+    .opts{gap:8px;margin-top:10px;}
+    .opt{padding:11px 12px;font-size:14px;gap:9px;border-radius:10px;}
+    .opt .key{width:22px;height:22px;font-size:12px;}
+    .kbd-hint{display:none;}
+
+    /* 上一题/下一题按钮 */
+    .row{margin-top:16px;gap:8px;}
+    .btn{font-size:14px;padding:11px 18px;border-radius:10px;}
+
+    /* 结果页 */
+    .primary{padding:14px;border-radius:12px;margin:6px 0 12px;}
+    .primary .name{font-size:19px;}
+    .primary .desc{font-size:13px;}
+    .primary .pdetail{font-size:12px;line-height:1.65;}
+    .primary .tenets span{font-size:11px;padding:2px 8px;}
+    .sec{font-size:13px;}
+
+    /* 维度条 */
+    .dim{margin:10px 0;}
+    .dim .top{font-size:12px;}
+    .poles{gap:5px;}
+    .pole{padding:6px 8px;font-size:12px;border-radius:8px;}
+
+    /* 签名项 */
+    .sig .item{font-size:13px;padding:5px 10px;margin:6px 0;}
+    .sig .item .q{font-size:11px;}
+
+    /* Top5 候选 */
+    .top5 .ttl{font-size:14px;}
+    .top5 .item{gap:8px;font-size:13px;}
+    .top5 .item .nm{flex:0 0 96px;font-size:13px;}
+    .top5 .item .sc{flex:0 0 32px;font-size:11px;}
+
+    /* 光谱可视化 */
+    .spectrum{padding:12px;border-radius:12px;}
+    .sp-head{font-size:13px;flex-wrap:wrap;gap:5px;margin-bottom:8px;}
+    .sp-head .pill{font-size:11px;padding:2px 8px;}
+    .sp-head .sp-mini{padding:5px 9px;font-size:11px;margin-left:4px;}
+    .sp-head .sp-mini+.sp-mini{margin-left:0;}
+    .sp-tabs{gap:5px;margin-bottom:8px;}
+    .sp-tabs button{font-size:12px;padding:5px 12px;border-radius:8px;}
+    .sp-sels{gap:8px;}
+    .sp-sel select{font-size:12px;padding:4px 7px;}
+    .sp-stage svg{max-width:100%;}
+    .sp-legend{font-size:11px;}
+
+    /* 代表人物卡片 */
+    .figures .fttl{font-size:14px;}
+    .figures .fsub{font-size:11px;}
+    .fig-grid{gap:10px;}
+    .fig-card{padding:11px;gap:10px;border-radius:12px;}
+    .fig-avatar{flex:0 0 58px;width:58px;height:58px;border-radius:11px;}
+    .fig-name{font-size:14px;}
+    .fig-name .en{font-size:10px;}
+    .fig-meta{font-size:11px;}
+    .fig-note{font-size:12px;line-height:1.55;}
+    .fig-toggle{font-size:11px;margin-top:4px;}
+    .fig-bio{font-size:12px;line-height:1.7;margin-bottom:12px;}
+    .fig-deed-t{font-size:12px;}
+    .fig-deed-d{font-size:11.5px;line-height:1.5;}
+    .fig-work{font-size:11px;padding:2px 8px;}
+    .fig-chips{gap:8px;}
+    .fig-chip{font-size:11px;padding:3px 9px 3px 3px;gap:5px;}
+    .fig-chip .cav{flex:0 0 26px;width:26px;height:26px;}
+    .fig-chip b{font-size:11px;}
+    .fig-chip span{font-size:10px;}
+
+    /* 弹窗通用 */
+    .modal{padding:6px;}
+    .modal-mask{border-radius:0;}
+    .modal-box{max-width:100%!important;padding:14px;border-radius:14px;max-height:92vh;}
+    .modal-head{font-size:15px;margin-bottom:10px;}
+
+    /* 账户弹窗 */
+    .acc-cur{font-size:12px;margin-bottom:8px;}
+    .acc-list{gap:6px;margin-bottom:10px;}
+    .acc-item{padding:7px 8px;gap:7px;border-radius:10px;}
+    .acc-item .ava{width:30px;height:30px;font-size:15px;}
+    .acc-item .nm{font-size:13px;}
+    .acc-item .nm small{font-size:10px;}
+    .acc-item .acts{gap:3px;}
+    .mini{font-size:11px;padding:3px 7px;border-radius:7px;}
+    .acc-new input{font-size:13px;padding:8px 10px;}
+    .picker .opt{width:28px;height:28px;font-size:15px;border-radius:8px;}
+    .acc-hist{margin-top:10px;padding-top:10px;}
+    .acc-hist .ht{font-size:13px;margin-bottom:6px;}
+    .hist-item{padding:7px 8px;gap:8px;border-radius:9px;}
+    .hist-item .code{font-size:11px;padding:2px 6px;}
+    .hist-item .info b{font-size:13px;}
+    .hist-item .info small{font-size:10px;}
+    .acc-io{gap:6px;margin-top:10px;}
+    .acc-io .btn{font-size:12px;padding:8px 10px;}
+
+    /* 设置弹窗 */
+    .set-row{padding:7px 0;gap:8px;}
+    .set-label{font-size:13px;}
+    .set-label b{font-size:14px;}
+    .set-label small{font-size:10px;}
+    .set-sub input[type=range]{max-width:130px;}
+    .set-val{font-size:12px;min-width:32px;}
+    .set-prev{font-size:12px;padding:6px 10px;}
+
+    /* 测试前概览 */
+    .overview{padding:10px 12px;border-radius:12px;}
+    .overview>summary{font-size:14px;}
+    .ov-step{font-size:11px;padding:5px 8px;gap:5px;}
+    .ov-step b{width:18px;height:18px;font-size:11px;}
+    .ov-arrow{font-size:11px;}
+    .ov-tip{font-size:12px;line-height:1.6;margin:6px 0 8px;}
+    .ov-name{font-size:12px;}
+    .ov-poles{font-size:10px;}
+    .ov-get{font-size:12px;line-height:1.6;padding:8px 10px;border-radius:9px;}
+    .ov-actions .btn{font-size:12px;padding:8px 12px;}
+
+    /* 所有意识形态弹窗 */
+    .arch-box{max-width:100%;padding:14px;}
+    .arch-hint{font-size:12px;margin:4px 0 10px;}
+    .arch-search input{font-size:13px;padding:8px 11px;}
+    .arch-card{padding:11px 12px;border-radius:10px;}
+    .ac-name{font-size:14px;}
+    .ac-sig{font-size:10px;}
+    .ac-desc{font-size:12px;line-height:1.55;}
+    .ac-detail{font-size:11px;line-height:1.55;}
+    .ac-tenets span{font-size:10px;padding:2px 7px;}
+    .ac-figs-toggle{font-size:11px;}
+    .ac-fig-mini{gap:8px;margin-bottom:8px;}
+    .ac-fig-mini .fig-avatar{flex:0 0 44px;width:44px;height:44px;border-radius:9px;}
+    .ac-fig-mini .fig-name{font-size:12px;}
+    .ac-fig-mini .fig-meta{font-size:10px;}
+    .ac-fig-mini .fig-note{font-size:11px;line-height:1.5;}
+    .ac-fig-mini .fig-deed-t{font-size:11px;}
+    .ac-fig-mini .fig-deed-d{font-size:11px;line-height:1.5;}
+    .ac-fig-mini .fig-work{font-size:10px;padding:2px 7px;}
+
+    /* 更新日志弹窗 */
+    .cl-box{max-width:100%;padding:14px;}
+    .cl-stat{min-width:60px;padding:8px 6px;}
+    .cl-stat .num{font-size:18px;}
+    .cl-stat .lbl{font-size:10px;}
+    .cl-entry{padding:12px 13px;border-radius:12px;}
+    .cl-ver{font-size:14px;}
+    .cl-date{font-size:12px;}
+    .cl-items li{font-size:12px;line-height:1.55;}
+
+    /* 精度徽章 */
+    .badge{font-size:11px;padding:2px 8px;}
+
+    /* 底部 */
+    .foot{font-size:11px;line-height:1.5;}
+
+    /* 文本溢出保护 */
+    .scene,.opt,.fig-note,.fig-bio,.ac-desc,.ac-detail,.ov-tip,.ov-get{overflow-wrap:anywhere;word-break:break-word;}
+
+    /* 触摸优化 */
+    .btn,.opt,.tb-btn,.mini,.qc-tabs button,.sp-tabs button,.arch-card,.fig-card,.hist-item,.acc-item{touch-action:manipulation;}
+    .opt{-webkit-user-select:none;user-select:none;}
+  }
+
+  /* ====== 超小屏适配 (≤400px) ====== */
+  @media(max-width:400px){
+    body{padding:8px 4px;}
+    .card{padding:14px 11px;border-radius:12px;}
+    .topbar{gap:4px;}
+    .topbar .brand{font-size:12px;}
+    .tb-actions{gap:4px;}
+    .tb-btn{font-size:10px;padding:5px 7px;}
+    .tb-btn .dot{margin-right:2px;}
+    /* 账户按钮只显示圆点和箭头 */
+    #accLabel{display:inline;width:auto;font-size:0;}
+    #accLabel::after{content:"▾";font-size:10px;color:var(--ink);}
+    #accBtn .dot{margin-right:0;}
+    h1{font-size:18px;}
+    h2{font-size:16px;}
+    .scene{font-size:14px;padding:11px 11px;}
+    .opt{font-size:13px;padding:10px 10px;gap:8px;border-radius:9px;}
+    .opt .key{width:20px;height:20px;font-size:11px;}
+    .primary .name{font-size:17px;}
+    .fig-avatar{flex:0 0 50px;width:50px;height:50px;}
+    .top5 .item .nm{flex:0 0 76px;font-size:12px;}
+    .top5 .item .sc{flex:0 0 28px;font-size:10px;}
+    .sp-head .pill{display:none;}
+    .sp-head .sp-mini{padding:4px 8px;font-size:10px;}
+    .btn{font-size:13px;padding:10px 16px;}
+    .qc-tabs button{font-size:12px;padding:7px 11px;}
+    .modal-box{padding:12px;}
+    .ov-dim{padding:7px 8px;}
+  }
 </style>
 </head>
 <body>
