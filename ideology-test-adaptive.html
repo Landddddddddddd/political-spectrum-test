@@ -38,8 +38,15 @@
   .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
   .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
   .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
-  .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;}
+  .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;transition:all .15s;}
   .opt.sel .key{background:var(--accent);color:#fff;}
+  .opt .check{display:none;}
+  .opt.sel .key .letter{display:none;}
+  .opt.sel .key .check{display:inline;}
+  .sel-hint{font-size:13px;color:var(--muted);margin:8px 2px 0;display:flex;align-items:center;gap:6px;}
+  .sel-hint .sel-badge{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:99px;padding:2px 8px;transition:all .15s;}
+  .sel-hint .sel-badge.has{color:#fff;background:var(--accent);}
+  .multi-hint{font-size:12px;color:var(--accent);background:var(--accent-soft);border-radius:8px;padding:4px 10px;margin:8px 0 0;display:inline-block;font-weight:600;}
   .opt.focus{outline:3px solid var(--accent);outline-offset:2px;box-shadow:0 0 0 4px var(--accent-soft);}
   .kbd-hint{font-size:12px;color:var(--muted);margin:12px 2px 4px;text-align:center;}
   .kbd-hint b{color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 6px;font-family:ui-monospace,Menlo,Consolas,monospace;}
@@ -349,6 +356,8 @@
     .opt{padding:11px 12px;font-size:14px;gap:9px;border-radius:10px;}
     .opt .key{width:22px;height:22px;font-size:12px;}
     .kbd-hint{display:none;}
+    .multi-hint{font-size:11px;padding:3px 8px;}
+    .sel-hint{font-size:12px;margin-top:6px;}
 
     /* 上一题/下一题按钮 */
     .row{margin-top:16px;gap:8px;}
@@ -637,7 +646,7 @@
        优先挑你还没碰到过的<b>领域</b>，并专门追问你态度还模糊的<b>维度</b>。</p>
     <p style="font-size:14px;color:var(--muted)">
        维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
-        选项数 2–8 不固定。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
+        选项数 2–8 不固定，<b>支持多选</b>——可同时选择多个你认同的选项。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
     </p>
     <details class="overview" open>
       <summary>测试前概览</summary>
@@ -647,7 +656,7 @@
         <div class="ov-step"><b>3</b> 看画像与光谱</div><span class="ov-arrow">→</span>
         <div class="ov-step"><b>4</b> 导出 / 保存</div>
       </div>
-      <p class="ov-tip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定。</p>
+      <p class="ov-tip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定，<b>支持多选</b>——同时选择多个认同的选项会让你的画像更丰富。</p>
       <div class="ov-dims" id="ovDims"></div>
       <div class="ov-get"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
       <div class="ov-actions"><button class="btn ghost" onclick="openArch()">📚 查看所有可被测出的意识形态（<span id="ovArchCount">…</span>）</button></div>
@@ -687,8 +696,10 @@
     <div class="counter" id="counter"></div>
     <div class="bar"><span id="prog"></span></div>
     <div class="scene" id="scene"></div>
+    <div style="margin-top:8px;"><span class="multi-hint">☑ 可多选 — 点击切换选中 / 取消</span></div>
     <div class="opts" id="opts"></div>
-    <div class="kbd-hint">键盘操作：<b>↑↓←→</b> 或 <b>W A S D</b> 移动选择 · <b>空格 / 回车</b> 确认并进入下一题</div>
+    <div class="sel-hint" id="selHint"><span class="sel-badge">0</span> <span>已选 — 至少选 1 项方可继续</span></div>
+    <div class="kbd-hint">键盘操作：<b>↑↓←→</b> 或 <b>W A S D</b> 移动焦点 · <b>空格</b> 选中 / 取消当前项 · <b>回车</b> 确认并下一题</div>
     <div class="row">
       <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
       <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
@@ -2726,16 +2737,42 @@ function setQCustom(){
   TOTAL = v;
   document.querySelectorAll("#qcTabs button").forEach(b=>b.classList.remove("active"));
 }
-function answeredCount(){ return seq.filter(id=>answers[id]!=null).length; }
+function answeredCount(){ return seq.filter(id=>{ const a=answers[id]; return a!=null && (Array.isArray(a)?a.length>0:true); }).length; }
+
+/* ---------- 多选支持 ---------- */
+// 兼容旧版单选数据：answers[qid] 可能是数字（旧）或数组（新）
+function getSel(qid){
+  const a = answers[qid];
+  if(a == null) return [];
+  if(Array.isArray(a)) return a;
+  return [a];   // 旧版单选数据自动转单元素数组
+}
+function toggleOpt(qid, idx){
+  let sel = getSel(qid);
+  const i = sel.indexOf(idx);
+  if(i >= 0) sel = sel.filter(x=>x!==idx);
+  else sel = [...sel, idx];
+  if(sel.length === 0) delete answers[qid];
+  else answers[qid] = sel;
+  persist();
+  showQuestion();
+  sfx("select");
+}
 
 /* ---------- 自适应选题 ---------- */
 function buildDomainCounts(){
   const m={}; seq.forEach(id=>{ const d=BYID[id].domain; m[d]=(m[d]||0)+1; }); return m;
 }
 function recomputeDimCounts(){
+  // 多选加权：每题选了 k 项，每项的 tags 权重为 1/k
+  // 效果：同一题选了对立两极 → 各得 0.5，自然抵消 → 该维度不确定性升高 → 算法追问更多
   const counts={}; DIMS.forEach(d=>{ counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0); });
-  seq.forEach(id=>{ const ai=answers[id]; if(ai==null) return; BYID[id].options[ai].tags.forEach(t=>{
-    const [dim,pole]=t.split(":"); if(counts[dim] && pole in counts[dim]) counts[dim][pole]++; }); });
+  seq.forEach(id=>{
+    const sel = getSel(id); if(!sel.length) return;
+    const w = 1 / sel.length;
+    sel.forEach(ai => { BYID[id].options[ai].tags.forEach(t=>{
+      const [dim,pole]=t.split(":"); if(counts[dim] && pole in counts[dim]) counts[dim][pole] += w; }); });
+  });
   return counts;
 }
 function uncertainty(dim, c){
@@ -2793,21 +2830,30 @@ function ensureCurrent(){
 }
 function showQuestion(){
   const q = BYID[seq[pos]];
-  $("counter").textContent = `第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain}（${q.options.length} 选项）`;
+  const sel = getSel(q.id);
+  $("counter").textContent = `第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain}（${q.options.length} 选项 · 可多选）`;
   $("prog").style.width = (answeredCount()/TOTAL*100) + "%";
   $("scene").textContent = q.scene;
   const opts=$("opts"); opts.innerHTML="";
   const keys="ABCDEFGH";
-  focusIdx = (answers[q.id]!=null) ? answers[q.id] : 0;
+  focusIdx = sel.length ? sel[sel.length-1] : 0;
   q.options.forEach((o,i)=>{
     const d=document.createElement("div");
-    d.className="opt"+(answers[q.id]===i?" sel":"")+(i===focusIdx?" focus":"");
-    d.innerHTML=`<span class="key">${keys[i]}</span><span>${o.t}</span>`;
-    d.onclick=()=>{ answers[q.id]=i; focusIdx=i; persist(); showQuestion(); sfx("select"); };
+    const isSel = sel.includes(i);
+    d.className="opt"+(isSel?" sel":"")+(i===focusIdx?" focus":"");
+    d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${o.t}</span>`;
+    d.onclick=()=>{ toggleOpt(q.id, i); };
     opts.appendChild(d);
   });
   applyFocus();
+  // 更新选择提示
+  const sh = $("selHint");
+  if(sh){
+    const n = sel.length;
+    sh.innerHTML = `<span class="sel-badge${n>0?' has':''}">${n}</span> <span>${n>0?'已选 '+n+' 项 — 可继续选择或点「下一题」':'至少选 1 项方可继续'}</span>`;
+  }
   $("prevBtn").disabled=(pos===0);
+  $("nextBtn").disabled=(sel.length===0);
   $("nextBtn").textContent=(pos===TOTAL-1)?"查看结果 →":"下一题 →";
 }
 function applyFocus(){
@@ -2831,11 +2877,17 @@ function onKey(e){
     applyFocus();
     return;
   }
-  if(kk===" "||e.code==="Space"||kk==="enter"){
+  // 空格 = 切换选中 / 取消当前焦点项
+  if(kk===" "||e.code==="Space"){
     e.preventDefault();
+    toggleOpt(q.id, focusIdx);
+    return;
+  }
+  // 回车 = 确认并进入下一题
+  if(kk==="enter"){
+    e.preventDefault();
+    if(getSel(q.id).length === 0) return;
     sfx("select");
-    if(focusIdx<0||focusIdx>=n) focusIdx=0;
-    answers[q.id]=focusIdx; persist();
     if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
     else finish();
   }
@@ -2844,25 +2896,32 @@ document.addEventListener("keydown", onKey);
 function prev(){ if(pos>0){ pos--; persist(); showQuestion(); } }
 function next(){
   sfx("select");
-  if(answers[seq[pos]]==null){ alert("请先选择一个选项"); return; }
+  if(getSel(seq[pos]).length === 0){ alert("请至少选择一个选项"); return; }
   if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
   else finish();
 }
 
 /* ---------- 结果与细分阵营匹配 ---------- */
 function tallyDims(){
+  // 多选加权：每题选了 k 项，每项 tags 权重 1/k
+  // 选了对立项 → 各得 0.5 → dimPos 趋近 0（居中）→ 自然产生"混合"倾向
   const counts={}; DIMS.forEach(d=>{ counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0); });
-  seq.forEach(id=>{ const ai=answers[id]; if(ai==null) return; BYID[id].options[ai].tags.forEach(t=>{
-    const [dim,pole]=t.split(":"); if(counts[dim]&&pole in counts[dim]) counts[dim][pole]++; }); });
+  seq.forEach(id=>{
+    const sel = getSel(id); if(!sel.length) return;
+    const w = 1 / sel.length;
+    sel.forEach(ai => { BYID[id].options[ai].tags.forEach(t=>{
+      const [dim,pole]=t.split(":"); if(counts[dim]&&pole in counts[dim]) counts[dim][pole] += w; }); });
+  });
   return counts;
 }
 function dominantPoles(counts){
   const res={};
+  const EPS=0.001;   // 浮点容差：多选加权后两极其计数可能非常接近
   DIMS.forEach(d=>{
-    const c=counts[d.key]; let best=null,bestN=-1,tie=false;
+    const c=counts[d.key]; let best=null,bestN=-1e9,tie=false;
     d.poles.forEach(p=>{ const n=c[p.k];
-      if(n>bestN){bestN=n;best=p.k;tie=false;} else if(n===bestN&&n>0){tie=true;} });
-    res[d.key] = (bestN<=0||tie) ? "混合" : best;
+      if(n>bestN+EPS){bestN=n;best=p.k;tie=false;} else if(Math.abs(n-bestN)<EPS&&n>EPS){tie=true;} });
+    res[d.key] = (bestN<=EPS||tie) ? "混合" : best;
   });
   return res;
 }
@@ -3070,7 +3129,8 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
     const maxN=Math.max(1,...d.poles.map(p=>c[p.k]));
     let ph="";
     d.poles.forEach(p=>{ const n=c[p.k]; const w=n/maxN*100; const isDom=dom===p.k;
-      ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${p.label} ${n>0?'·'+n:''}</span></div>`; });
+      const nLabel = n>0 ? '·'+(Number.isInteger(n)?n:n.toFixed(1)) : '';
+      ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${p.label} ${nLabel}</span></div>`; });
     dh+=`<div class="dim"><div class="top"><span>${d.name}</span><b>${dom==="混合"?"混合 / 未定":d.poles.find(p=>p.k===dom).label}</b></div><div class="poles">${ph}</div></div>`;
   });
   $("dims").innerHTML=dh;
@@ -3094,10 +3154,16 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
     $("sigList").innerHTML = `<div class='item'>这是历史记录，单项选择明细未保存。</div>`;
   }else{
     const need=primary.need; let sigHtml="";
-    seq.forEach(id=>{ const q=BYID[id]; const opt=q.options[answers[id]];
-      if(!opt) return;
-      const hit=opt.tags.some(t=>{ const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; });
-      if(hit) sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${opt.t}</div>`;
+    seq.forEach(id=>{
+      const q=BYID[id]; const sel=getSel(id); if(!sel.length) return;
+      // 找出命中主阵营 need 的选项
+      const hitOpts = sel.filter(ai => q.options[ai].tags.some(t=>{
+        const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; }));
+      if(hitOpts.length){
+        const optsText = hitOpts.map(ai => q.options[ai].t).join(" ／ ");
+        const multiTag = sel.length > 1 ? ` <small style="color:var(--muted)">（本题共选 ${sel.length} 项）</small>` : "";
+        sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${optsText}${multiTag}</div>`;
+      }
     });
     $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
   }
