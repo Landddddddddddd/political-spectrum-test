@@ -106,5 +106,26 @@
       "ideologies": 120,
       "domains": 30
     }
+  },
+  {
+    "date": "2026-08-11",
+    "title": "v1.6 全面移动端适配",
+    "items": [
+      "两档响应式断点：≤680px（平板/大屏手机）和 ≤400px（小屏手机）",
+      "顶栏按钮自适应：缩小字体/间距，小屏隐藏冗余文字",
+      "卡片/弹窗/选项全面缩减内边距，最大化内容区域",
+      "答题选项增大触摸目标，添加 touch-action:manipulation 消除点击延迟",
+      "隐藏键盘操作提示（移动端无物理键盘）",
+      "代表人物卡片头像缩小，文本字号调优",
+      "光谱可视化/Top5/维度条/概览面板全面移动端布局优化",
+      "viewport-fit=cover 适配刘海屏，theme-color 适配浏览器地址栏",
+      "apple-mobile-web-app-capable 支持 iOS 添加到主屏幕",
+      "文本溢出保护（overflow-wrap:anywhere）防止长文撑破布局"
+    ],
+    "stats": {
+      "questions": 510,
+      "ideologies": 120,
+      "domains": 30
+    }
   }
 ]
