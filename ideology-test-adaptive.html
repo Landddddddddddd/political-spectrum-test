@@ -570,6 +570,24 @@
     .modal-box{padding:12px;}
     .ov-dim{padding:7px 8px;}
   }
+  /* ====== v1.11 分享 / 好友结果（去中心化 B 方案） ====== */
+  .share-field{display:flex;flex-direction:column;gap:4px;margin:10px 0;}
+  .share-field label{font-size:13px;color:var(--muted);}
+  .share-field textarea{width:100%;height:64px;resize:vertical;font-family:var(--font-mono,monospace);font-size:12px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);}
+  .share-actions{display:flex;gap:8px;flex-wrap:wrap;}
+  .friend-sec{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px;}
+  .friend-sec .ht{font-size:13px;font-weight:600;margin-bottom:6px;}
+  .fi-item{display:flex;align-items:center;gap:8px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer;}
+  .fi-item.sel{border-color:var(--accent);background:var(--accent-soft);}
+  .fi-item .code{font-family:var(--font-mono,monospace);font-weight:600;}
+  .fi-item .info{flex:1;min-width:0;}
+  .fi-item .info b{display:block;font-size:13px;}
+  .fi-item .info small{color:var(--muted);font-size:12px;}
+  .fi-item .acts{display:flex;gap:4px;}
+  .friend-empty{font-size:13px;color:var(--muted);}
+  .paste-area{width:100%;height:90px;resize:vertical;font-family:var(--font-mono,monospace);font-size:12px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);}
+  .fi-note{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5;}
+  .acts2{display:flex;gap:4px;align-items:center;}
 </style>
 </head>
 <body>
@@ -601,6 +619,7 @@
       <div class="acc-io">
         <button class="btn ghost" onclick="exportAccounts()">导出账号</button>
         <label class="btn ghost">导入账号<input type="file" id="accFile" accept="application/json" onchange="importAccounts(this)" hidden /></label>
+        <button class="btn ghost" onclick="openPastFriend()">导入好友结果</button>
         <button class="btn ghost" onclick="closeAcc()">关闭</button>
       </div>
     </div>
@@ -611,6 +630,52 @@
     <div class="modal-box">
       <div class="modal-head"><span>对比两次测试结果</span><button class="x" onclick="closeCompare()">✕</button></div>
       <div id="cmpBody"></div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="shareModal">
+    <div class="modal-mask" onclick="closeShare()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>分享我的测试结果</span><button class="x" onclick="closeShare()">✕</button></div>
+      <div class="fi-note">把下面任一种发给好友：对方粘贴「分享码」到「导入好友结果」，或打开「分享链接」会自动导入。全程不经过任何服务器，结果只在本机对比。</div>
+      <div id="shareWho" style="font-weight:600;margin:8px 0;"></div>
+      <div class="share-field">
+        <label>分享码（复制后发给好友）</label>
+        <textarea id="shareCode" readonly onclick="this.select()"></textarea>
+        <div class="share-actions"><button class="btn ghost" onclick="copyText('shareCode')">复制分享码</button></div>
+      </div>
+      <div class="share-field">
+        <label>分享链接（点击打开自动导入）</label>
+        <textarea id="shareLink" readonly onclick="this.select()"></textarea>
+        <div class="share-actions"><button class="btn ghost" onclick="copyText('shareLink')">复制链接</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="friendImportModal">
+    <div class="modal-mask" onclick="closeFriendImport()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>收到好友的测试结果</span><button class="x" onclick="closeFriendImport()">✕</button></div>
+      <div id="fiWho" style="font-weight:600;margin:10px 0;"></div>
+      <div class="fi-note">导入后，该结果会出现在你的「账户与历史 → 好友结果」中，可与你自己的测试结果并排对比。它只存在你本机，不会上传。</div>
+      <div class="share-actions" style="margin-top:10px;">
+        <button class="btn" onclick="confirmFriendImport()">导入并查看</button>
+        <button class="btn ghost" onclick="closeFriendImport()">忽略</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="friendPasteModal">
+    <div class="modal-mask" onclick="closePasteFriend()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>导入好友结果</span><button class="x" onclick="closePasteFriend()">✕</button></div>
+      <div class="fi-note">把好友发给你的「分享码」粘贴到这里（也可直接粘贴整条分享链接）。</div>
+      <textarea class="paste-area" id="pasteInput" placeholder="粘贴分享码或分享链接…"></textarea>
+      <div class="share-actions" style="margin-top:10px;">
+        <button class="btn" onclick="doPasteImport()">导入</button>
+        <button class="btn ghost" onclick="closePasteFriend()">取消</button>
+      </div>
+      <div id="pasteErr" class="fi-note" style="color:var(--danger,#a32d2d)"></div>
     </div>
   </div>
 
@@ -777,7 +842,7 @@
       <div style="font-weight:700;margin:6px 0 2px;">塑造你结果的关键选择</div>
       <div id="sigList"></div>
     </div>
-    <div class="row"><button class="btn ghost" onclick="freshStart()">重新测试</button></div>
+    <div class="row"><button class="btn ghost" onclick="openShare()">分享我的结果</button><button class="btn ghost" onclick="freshStart()">重新测试</button></div>
     <p class="foot">本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。</p>
   </section>
 
@@ -900,22 +965,42 @@ function refreshAccUI(){
       <span class="cmp-count">已选 <b>${compareSel.length}</b>/2 用于对比</span>
       <span class="cmp-acts">
         <button class="mini" onclick="clearCompare()" ${compareSel.length?'':'disabled'}>清除</button>
-        <button class="mini" onclick="openCompare()" ${compareSel.length===2?'':'disabled'}>对比两次测试</button>
+        <button class="mini" onclick="openCompare()" ${compareSel.length===2?'':'disabled'}>对比所选</button>
       </span>
     </div>`;
-  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看 · 选 2 条可对比）</div>` + cmpBar + (h.length ? h.map(e=>{
-    const d=new Date(e.ts);
-    const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-    const top2 = (e.top && e.top.length>1) ? `<small class="top2">亦契合：${e.top[1]}</small>` : "";
-    const meta = `<small>${ds}${(e.n!=null?` · ${e.n}题`:"")}${e.partial?' · 提前结束':''}</small>`;
-    const sel = compareSel.includes(e.ts) ? "sel" : "";
-    const btn = compareSel.includes(e.ts) ? "✓已选" : "+对比";
+  const histHtml = h.length ? h.map(e=>{
+    const ds=fmtDate(e.ts);
+    const top2=(e.top&&e.top.length>1)?`<small class="top2">亦契合：${esc(e.top[1])}</small>`:"";
+    const meta=`<small>${ds}${(e.n!=null?` · ${e.n}题`:"")}${e.partial?' · 提前结束':''}</small>`;
+    const sel=compareSel.includes("h:"+e.ts)?"sel":"";
+    const btn=compareSel.includes("h:"+e.ts)?"✓已选":"+对比";
     return `<div class="hist-item ${sel}" onclick="viewHistory(${e.ts})">
-      <span class="code">${e.code}</span>
-      <div class="info"><b>${e.primary}</b>${meta}${top2}</div>
-      <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare(${e.ts})">${btn}</button>
+      <span class="code">${esc(e.code)}</span>
+      <div class="info"><b>${esc(e.primary)}</b>${meta}${top2}</div>
+      <div class="acts2">
+        <button class="mini" onclick="event.stopPropagation(); shareEntry(${e.ts})">分享</button>
+        <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare('h:${e.ts}')">${btn}</button>
+      </div>
     </div>`;
-  }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`);
+  }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`;
+
+  const fr=(cur.friends||[]);
+  const frHtml = `<div class="friend-sec"><div class="ht">好友结果（导入后与你的测试并排对比）</div>` + (fr.length ? fr.map(f=>{
+    const ds=fmtDate(f.importedTs);
+    const by=f.by?`<small>来自 ${esc(f.by)}</small>`:"";
+    const sel=compareSel.includes("f:"+f.fid)?"sel":"";
+    const btn=compareSel.includes("f:"+f.fid)?"✓已选":"+对比";
+    return `<div class="fi-item ${sel}" onclick="viewFriend('${f.fid}')">
+      <span class="code">${esc(f.code)}</span>
+      <div class="info"><b>${esc(f.primary)}</b>${by}<small>${ds}${f.partial?' · 提前结束':''}</small></div>
+      <div class="acts">
+        <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare('f:${f.fid}')">${btn}</button>
+        <button class="mini danger" onclick="event.stopPropagation(); removeFriend('${f.fid}')">移除</button>
+      </div>
+    </div>`;
+  }).join("") : `<div class="friend-empty">还没有导入好友结果。点下方「导入好友结果」粘贴分享码，或让好友发你分享链接。</div>`) + `</div>`;
+
+  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看 · 选 2 条可对比）</div>` + cmpBar + histHtml + frHtml;
 }
 function renderPickers(){
   $("emojiPick").innerHTML = EMOJIS.map((e,i)=>`<div class="opt ${i===0?'sel':''}" onclick="pickEmoji(this,'${e}')">${e}</div>`).join("");
@@ -969,11 +1054,16 @@ function toggleCompare(ts){
   refreshAccUI();
 }
 function clearCompare(){ compareSel = []; refreshAccUI(); }
+function getEntryById(id){
+  const a=getCur();
+  if(!id) return null;
+  if(id[0]==="h"){ const e=(a.history||[]).find(x=>x.ts===+id.slice(2)); return e?Object.assign({},e,{ts:e.ts}):null; }
+  if(id[0]==="f"){ const e=(a.friends||[]).find(x=>x.fid===id.slice(2)); return e?Object.assign({},e,{ts:e.importedTs}):null; }
+  return null;
+}
 function openCompare(){
-  const h = getCur().history || [];
-  const a = h.find(x=>x.ts===compareSel[0]);
-  const b = h.find(x=>x.ts===compareSel[1]);
-  if(!a || !b){ toast("请选择两条历史记录"); return; }
+  const a=getEntryById(compareSel[0]), b=getEntryById(compareSel[1]);
+  if(!a || !b){ toast("请选择两条记录（自己的历史或好友结果）"); return; }
   let rows = DIMS.map(d=>{
     const pa = dimPosOf(a.counts, d.key), pb = dimPosOf(b.counts, d.key);
     const delta = pb - pa;
@@ -990,13 +1080,13 @@ function openCompare(){
   }).join("");
   $("cmpBody").innerHTML = `
     <div class="cmp-head">
-      <div class="cmp-col"><b>${a.primary}</b><small>${fmtDate(a.ts)}</small><small>${a.code}</small>${a.top&&a.top[1]?`<small class="top2">亦：${a.top[1]}</small>`:""}</div>
+      <div class="cmp-col"><b>${esc(a.primary)}</b><small>${fmtDate(a.ts)}</small><small>${esc(a.code)}</small>${a.top&&a.top[1]?`<small class="top2">亦：${esc(a.top[1])}</small>`:""}</div>
       <div class="cmp-vs">VS</div>
-      <div class="cmp-col"><b>${b.primary}</b><small>${fmtDate(b.ts)}</small><small>${b.code}</small>${b.top&&b.top[1]?`<small class="top2">亦：${b.top[1]}</small>`:""}</div>
+      <div class="cmp-col"><b>${esc(b.primary)}</b><small>${fmtDate(b.ts)}</small><small>${esc(b.code)}</small>${b.top&&b.top[1]?`<small class="top2">亦：${esc(b.top[1])}</small>`:""}</div>
     </div>
-    <div class="cmp-legend">各维坐标 ∈[-1,1]：0=居中。▲ = 本次相比上次更偏该维「第二极」（维度名右侧标签），▼ = 更偏「第一极」（左侧标签）。</div>
+    <div class="cmp-legend">各维坐标 ∈[-1,1]：0=居中。▲ = 右列相比左列更偏该维「第二极」（维度名右侧标签），▼ = 更偏「第一极」（左侧标签）。</div>
     ${rows}
-    <div class="cmp-note">坐标由该次测试的八维计数折算，跨次对比反映你政治倾向的漂移；维度下两行分别为两次测试的值。</div>`;
+    <div class="cmp-note">坐标由该次测试的八维计数折算；左右两列可为「你 vs 好友」或「两次测试」，反映政治倾向的差异。</div>`;
   $("cmpModal").classList.remove("hidden");
 }
 function closeCompare(){ $("cmpModal").classList.add("hidden"); }
@@ -1020,6 +1110,88 @@ function importAccounts(input){
   };
   reader.readAsText(file);
 }
+/* ====== v1.11 去中心化分享（B 方案）：分享码 / 链接 + 好友结果对比 ====== */
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function b64eUtf8(str){ return btoa(unescape(encodeURIComponent(str))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,""); }
+function b64dUtf8(b64){ b64=b64.replace(/-/g,"+").replace(/_/g,"/"); while(b64.length%4) b64+="="; return decodeURIComponent(escape(atob(b64))); }
+
+function buildSharePayload(entry, byName){
+  const p={v:1, by:byName||"", code:entry.code||"", p:entry.primary||"", c:entry.counts||{}, t:Array.isArray(entry.top)?entry.top:[], n:entry.n||null, par:entry.partial?1:0};
+  return "IDEO1-"+b64eUtf8(JSON.stringify(p));
+}
+function buildShareLink(payload){ return location.origin+location.pathname+"#r="+payload; }
+// 解析分享码/链接；净化 counts（仅保留 8 维 + 非负数字）与字符串长度，防畸形/恶意数据
+function parseSharePayload(str){
+  if(!str) return null;
+  str=String(str).trim();
+  const m=str.match(/(?:#|\?)r=([^&?#\s]+)/); if(m) str=m[1];
+  if(str.indexOf("IDEO1-")===0) str=str.slice(6);
+  let p; try{ p=JSON.parse(b64dUtf8(str)); }catch(e){ return null; }
+  if(!p||p.v!==1||!p.c||!p.p) return null;
+  const clean={};
+  DIMS.forEach(d=>{ const src=(p.c&&p.c[d.key])||{}; clean[d.key]={}; d.poles.forEach(po=>{ const v=+src[po.k]; clean[d.key][po.k]=(Number.isFinite(v)&&v>=0)?v:0; }); });
+  const top=(Array.isArray(p.t)?p.t:[]).slice(0,5).map(x=>String(x).slice(0,40));
+  return {by:String(p.by||"").slice(0,20), code:String(p.code||"").slice(0,16), primary:String(p.p).slice(0,40), counts:clean, top, n:(p.n==null?null:+p.n), partial:!!p.par};
+}
+
+let LAST_RESULT=null;
+function openShare(entry){
+  entry = entry || LAST_RESULT || (getCur().history||[])[0];
+  if(!entry){ toast("暂无可分享的结果，先完成一次测试吧"); return; }
+  const payload=buildSharePayload(entry, getCur().name);
+  $("shareWho").textContent=(entry.primary||"")+"（"+(entry.code||"")+"）";
+  $("shareCode").value=payload;
+  $("shareLink").value=buildShareLink(payload);
+  $("shareModal").classList.remove("hidden");
+}
+function closeShare(){ $("shareModal").classList.add("hidden"); }
+function copyText(id){ const el=$(id); if(!el) return; el.select(); try{ navigator.clipboard.writeText(el.value); toast("已复制到剪贴板"); }catch(e){ try{ document.execCommand("copy"); toast("已复制"); }catch(_){ toast("复制失败，请手动选择"); } } }
+function shareEntry(ts){ const e=(getCur().history||[]).find(x=>x.ts===ts); if(e) openShare(e); }
+
+/* 好友结果存储（仅本机） */
+function addFriend(entry){
+  const a=getCur(); a.friends=a.friends||[];
+  const fid="f"+Date.now()+Math.floor(Math.random()*1000);
+  a.friends.unshift(Object.assign({fid, importedTs:Date.now()}, entry));
+  saveAccounts(); refreshAccUI();
+  return fid;
+}
+function viewFriend(fid){
+  const e=(getCur().friends||[]).find(f=>f.fid===fid); if(!e) return;
+  closeAcc(); renderResultFromData(e.counts, e.primary, true, e.partial);
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+function removeFriend(fid){
+  const a=getCur(); if(!a.friends) return;
+  a.friends=a.friends.filter(f=>f.fid!==fid); saveAccounts(); refreshAccUI(); toast("已移除该好友结果");
+}
+
+/* 自动导入（来自分享链接 #r=） */
+let pendingFriend=null;
+function checkSharedOnLoad(){
+  const m=location.hash.match(/r=([^&?#\s]+)/);
+  if(!m) return;
+  try{ history.replaceState(null,"",location.pathname); }catch(e){}
+  const entry=parseSharePayload(m[1]);
+  if(entry){ pendingFriend=entry; $("fiWho").textContent=(entry.by?esc(entry.by)+" 的 ":"好友的 ")+esc(entry.primary)+"（"+esc(entry.code)+"）"; $("friendImportModal").classList.remove("hidden"); }
+  else toast("分享链接无效或已损坏");
+}
+function closeFriendImport(){ $("friendImportModal").classList.add("hidden"); pendingFriend=null; }
+function confirmFriendImport(){ const e=pendingFriend; if(!e){ closeFriendImport(); return; } const fid=addFriend(e); closeFriendImport(); viewFriend(fid); }
+
+/* 手动粘贴导入 */
+function openPastFriend(){ $("pasteInput").value=""; $("pasteErr").textContent=""; $("friendPasteModal").classList.remove("hidden"); }
+function closePasteFriend(){ $("friendPasteModal").classList.add("hidden"); }
+function doPasteImport(){
+  const raw=$("pasteInput").value||"";
+  const entry=parseSharePayload(raw);
+  if(!entry){ $("pasteErr").textContent="无法解析：请确认粘贴的是完整分享码或分享链接。"; return; }
+  const fid=addFriend(entry); closePasteFriend(); toast("已导入 "+entry.primary+" 的结果");
+  const hist=(getCur().history||[])[0];
+  compareSel=[]; if(hist) compareSel.push("h:"+hist.ts); compareSel.push("f:"+fid);
+  refreshAccUI();
+}
+
 function toast(msg){
   let t=$("toast");
   if(!t){ t=document.createElement("div"); t.id="toast"; t.className="toast"; document.body.appendChild(t); }
@@ -1537,7 +1709,7 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   setSpecMode(SPEC_MODE, true);
 
   if(!isHistory){
-    addHistory({
+    const entry = {
       ts: Date.now(),
       code: DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join(""),
       primary: primary.name,
@@ -1545,7 +1717,9 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
       top: topAll.map(x=>x.a.name),
       n: TOTAL,
       partial: !!partial
-    });
+    };
+    LAST_RESULT = entry;
+    addHistory(entry);
   }
 }
 
@@ -1945,7 +2119,7 @@ function closeChangelog(){ $("clModal").classList.add("hidden"); }
 
 /* ---------- 起始页：检测续测 ---------- */
 (function init(){
-  loadTheme(); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn();
+  loadTheme(); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn(); checkSharedOnLoad();
   renderOverview();
   if(window.matchMedia){
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ()=>{ if(getTheme()==="auto") applyTheme("auto"); });
