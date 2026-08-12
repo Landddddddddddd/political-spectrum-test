@@ -853,7 +853,7 @@
       <div style="font-weight:700;margin:6px 0 2px;">塑造你结果的关键选择</div>
       <div id="sigList"></div>
     </div>
-    <div class="row"><button class="btn ghost" onclick="openShare()">分享我的结果</button><button class="btn ghost" onclick="freshStart()">重新测试</button></div>
+    <div class="row"><button class="btn ghost" onclick="tryNativeShare()">分享我的结果</button><button class="btn ghost" onclick="freshStart()">重新测试</button></div>
     <p class="foot">本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。</p>
   </section>
 
@@ -1156,8 +1156,22 @@ function openShare(entry){
   $("shareModal").classList.remove("hidden");
 }
 function closeShare(){ $("shareModal").classList.add("hidden"); }
+// 分享入口：优先调用系统原生分享（navigator.share），不支持或用户取消/出错时回退到现有复制码弹窗（本地功能保留）
+function tryNativeShare(entry){
+  entry = entry || LAST_RESULT || (getCur().history||[])[0];
+  if(!entry){ toast(g("暂无可分享的结果，先完成一次测试吧","No result to share yet — finish a test first")); return; }
+  const payload=buildSharePayload(entry, getCur().name);
+  const url=buildShareLink(payload);
+  const title=g("我的意识形态画像","My Political Spectrum Result");
+  const text=g("我的阵营："+dispName(entry.primary||"")+"（"+entry.code+"）","My camp: "+dispName(entry.primary||"")+" ("+entry.code+")");
+  if(typeof navigator!=="undefined" && typeof navigator.share==="function"){
+    navigator.share({title:title, text:text, url:url}).catch(function(){ openShare(entry); });
+  } else {
+    openShare(entry);
+  }
+}
 function copyText(id){ const el=$(id); if(!el) return; el.select(); try{ navigator.clipboard.writeText(el.value); toast("已复制到剪贴板"); }catch(e){ try{ document.execCommand("copy"); toast("已复制"); }catch(_){ toast("复制失败，请手动选择"); } } }
-function shareEntry(ts){ const e=(getCur().history||[]).find(x=>x.ts===ts); if(e) openShare(e); }
+function shareEntry(ts){ const e=(getCur().history||[]).find(x=>x.ts===ts); if(e) tryNativeShare(e); }
 
 /* 好友结果存储（仅本机） */
 function addFriend(entry){
@@ -1236,7 +1250,11 @@ const ARCH = __ARCH__;
 
 /* ====== 多语言（i18n） ====== */
 const LANG_KEY = "ideo_lang";
-let CUR_LANG = (function(){ try{ return localStorage.getItem(LANG_KEY) || "zh"; }catch(e){ return "zh"; } })();
+let CUR_LANG = (function(){
+  try{ const saved=localStorage.getItem(LANG_KEY); if(saved==="zh"||saved==="en") return saved; }catch(e){}
+  try{ const navLang=(typeof navigator!=="undefined"&&navigator.language)?navigator.language:""; if(navLang&&/^zh/i.test(navLang)) return "zh"; }catch(e){}
+  return "en";
+})();
 let _suppressHistory = false;
 // 整段静态文本（含混合块）的英文映射；data-i18n 与全文档整节点自动翻译共用此表
 const UI_EN = {
@@ -1316,6 +1334,12 @@ function dname(d){ return CUR_LANG==="en" && d.name_en ? d.name_en : d.name; }
 function plabel(p){ return (CUR_LANG==="en" && p.label_en) ? p.label_en : p.label; }
 function archName(a){ return CUR_LANG==="en" && a.name_en ? a.name_en : a.name; }
 function dispName(n){ const a=ARCH.find(x=>x.name===n); return (CUR_LANG==="en" && a && a.name_en) ? a.name_en : n; }
+// 语言感知：动态内容英文优先、中文兜底，但必须随 CUR_LANG 切换（不能中文模式也显示英文）
+function qscene(q){ return CUR_LANG==="en" ? (q.scene_en||q.scene) : q.scene; }
+function qopt(o){ return CUR_LANG==="en" ? (o.t_en||o.t) : o.t; }
+function qdomain(q){ return CUR_LANG==="en" ? (q.domain_en||q.domain) : q.domain; }
+function fen(o,k){ return CUR_LANG==="en" ? ((o[k+"_en"]!=null)?o[k+"_en"]:o[k]) : o[k]; }
+function figName(f){ return CUR_LANG==="en" ? (f.en||f.name) : f.name; }
 function applyLang(){
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const key=el.getAttribute("data-i18n");
@@ -1506,9 +1530,9 @@ function ensureCurrent(){
 function showQuestion(){
   const q = BYID[seq[pos]];
   const sel = getSel(q.id);
-  $("counter").textContent = g(`第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain_en||q.domain}（${q.options.length} 选项 · 可多选）`, `Q ${pos+1} / ${TOTAL} · Domain: ${q.domain_en||q.domain} (${q.options.length} options · multi-select)`);
+  $("counter").textContent = g(`第 ${pos+1} / ${TOTAL} 题 · 领域：${qdomain(q)}（${q.options.length} 选项 · 可多选）`, `Q ${pos+1} / ${TOTAL} · Domain: ${qdomain(q)} (${q.options.length} options · multi-select)`);
   $("prog").style.width = (answeredCount()/TOTAL*100) + "%";
-  $("scene").textContent = q.scene_en||q.scene;
+  $("scene").textContent = qscene(q);
   const opts=$("opts"); opts.innerHTML="";
   const keys="ABCDEFGH";
   focusIdx = sel.length ? sel[sel.length-1] : 0;
@@ -1516,7 +1540,7 @@ function showQuestion(){
     const d=document.createElement("div");
     const isSel = sel.includes(i);
     d.className="opt"+(isSel?" sel":"")+(i===focusIdx?" focus":"");
-    d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${o.t_en||o.t}</span>`;
+    d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${qopt(o)}</span>`;
     d.onclick=()=>{ toggleOpt(q.id, i); };
     opts.appendChild(d);
   });
@@ -1744,21 +1768,21 @@ function renderFigures(primary, secs){
     if(hasDetail){
       detailHtml = '<div class="fig-detail">';
       if(f.bio){
-        detailHtml += '<h4>生平简介</h4>';
-        detailHtml += `<div class="fig-bio">${f.bio}</div>`;
+        detailHtml += '<h4>'+g('生平简介','Biography')+'</h4>';
+        detailHtml += `<div class="fig-bio">${fen(f,'bio')}</div>`;
       }
       if(f.deeds && f.deeds.length){
-        detailHtml += '<h4>主要事迹</h4>';
+        detailHtml += '<h4>'+g('主要事迹','Major deeds')+'</h4>';
         detailHtml += '<div class="fig-deeds">';
         f.deeds.forEach(d=>{
-          detailHtml += `<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">${d.t}</div><div class="fig-deed-d">${d.d}</div></div></div>`;
+          detailHtml += `<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">${CUR_LANG==='en'?(d.t_en||d.t):d.t}</div><div class="fig-deed-d">${CUR_LANG==='en'?(d.d_en||d.d):d.d}</div></div></div>`;
         });
         detailHtml += '</div>';
       }
       if(f.works && f.works.length){
-        detailHtml += '<h4>代表著作</h4>';
+        detailHtml += '<h4>'+g('代表著作','Key works')+'</h4>';
         detailHtml += '<div class="fig-works">';
-        f.works.forEach(w=>{
+        fen(f,'works').forEach(w=>{
           detailHtml += `<span class="fig-work">${w}</span>`;
         });
         detailHtml += '</div>';
@@ -1768,9 +1792,9 @@ function renderFigures(primary, secs){
     html += `<div class="fig-card" onclick="this.classList.toggle('expanded')">
       <div class="fig-avatar" title="${f.name}">${makePortrait(f.name+'|'+f.en)}</div>
       <div class="fig-body">
-        <div class="fig-name">${f.en||f.name}<span class="en">${f.en?f.name:''}</span></div>
-        <div class="fig-meta">${f.years||''}${f.role?(' · '+f.role):''}</div>
-        <div class="fig-note">${f.note||''}</div>
+        <div class="fig-name">${figName(f)}<span class="en">${CUR_LANG==='en'?(f.name):(f.en||'')}</span></div>
+        <div class="fig-meta">${f.years||''}${fen(f,'role')?(' · '+fen(f,'role')):''}</div>
+        <div class="fig-note">${fen(f,'note')}</div>
         ${hasDetail ? '<div class="fig-toggle">'+g('查看详细事迹','View details')+'</div>' : ''}
         ${detailHtml}
       </div></div>`;
@@ -1864,9 +1888,9 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
       const hitOpts = sel.filter(ai => q.options[ai].tags.some(t=>{
         const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; }));
       if(hitOpts.length){
-        const optsText = hitOpts.map(ai => q.options[ai].t_en||q.options[ai].t).join(" ／ ");
+        const optsText = hitOpts.map(ai => qopt(q.options[ai])).join(" ／ ");
         const multiTag = sel.length > 1 ? ` <small style="color:var(--muted)">${g('（本题共选 '+sel.length+' 项）','( '+sel.length+' options chosen for this question)')}</small>` : "";
-        sigHtml+=`<div class="item"><div class="q">${g('领域 ','Domain ')}${q.domain_en||q.domain}：${q.scene_en||q.scene}</div>${g('你的选择：','Your choice: ')}${optsText}${multiTag}</div>`;
+        sigHtml+=`<div class="item"><div class="q">${g('领域 ','Domain ')}${qdomain(q)}：${qscene(q)}</div>${g('你的选择：','Your choice: ')}${optsText}${multiTag}</div>`;
       }
     });
     $("sigList").innerHTML = sigHtml || `<div class='item'>${g('没有明显代表性的单项选择。','No single representative choice.')}</div>`;
@@ -2140,8 +2164,8 @@ async function downloadCard(){
     for(const f of figs){
       const svg=makePortrait(f.name+"|"+f.en).replace("<svg ", '<svg width="100" height="100" ');
       try{ const img=await svgToImage(svg); x.drawImage(img,40,y,50,50); }catch(e){}
-      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText((f.en||f.name), 100, y+18);
-      x.fillStyle="#6b7785"; x.font="12px sans-serif"; x.fillText((f.years||"")+(f.role?(" · "+f.role):""), 100, y+36);
+      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText(figName(f), 100, y+18);
+      x.fillStyle="#6b7785"; x.font="12px sans-serif"; x.fillText((f.years||"")+(fen(f,'role')?(" · "+fen(f,'role')):""), 100, y+36);
       y+=62;
     }
     y+=4;
@@ -2174,7 +2198,7 @@ function copySummary(){
   const sep = CUR_LANG==="en" ? "; " : "；";
   const fsep = CUR_LANG==="en" ? ", " : "、";
   const dimsTxt=DIMS.map(d=>`${dname(d)}: ${dimLean(d.key)} (${dimPct(d.key)}%)`).join(sep);
-  const figs=(FIGURES[primary.name]||[]).map(f=>f.en||f.name).join(fsep);
+  const figs=(FIGURES[primary.name]||[]).map(f=>figName(f)).join(fsep);
   const text = CUR_LANG==="en"
     ? `【My Ideological Profile】\nDimensional signature: ${sig}\nClosest camp: ${archName(primary)}\n${primary.desc_en||primary.desc}\n\nDimensional leanings:\n${dimsTxt}\nRepresentative figures: ${figs}\n—— Political Spectrum Test · Adaptive (educational use)`
     : `【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;
@@ -2216,23 +2240,23 @@ function renderArchList(list){
       figsHtml += '<div class="ac-figs-detail">';
       figs.forEach(f=>{
         let detail = '';
-        if(f.bio) detail += '<div class="fig-bio" style="font-size:12px;margin-bottom:8px;">'+f.bio+'</div>';
+        if(f.bio) detail += '<div class="fig-bio" style="font-size:12px;margin-bottom:8px;">'+fen(f,'bio')+'</div>';
         if(f.deeds && f.deeds.length){
           detail += '<div class="fig-deeds">';
-          f.deeds.forEach(d=>{ detail += '<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">'+d.t+'</div><div class="fig-deed-d">'+d.d+'</div></div></div>'; });
+          f.deeds.forEach(d=>{ detail += '<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">'+(CUR_LANG==='en'?(d.t_en||d.t):d.t)+'</div><div class="fig-deed-d">'+(CUR_LANG==='en'?(d.d_en||d.d):d.d)+'</div></div></div>'; });
           detail += '</div>';
         }
         if(f.works && f.works.length){
           detail += '<div class="fig-works">';
-          f.works.forEach(w=>{ detail += '<span class="fig-work">'+w+'</span>'; });
+          fen(f,'works').forEach(w=>{ detail += '<span class="fig-work">'+w+'</span>'; });
           detail += '</div>';
         }
         figsHtml += '<div class="ac-fig-mini">'+
           '<div class="fig-avatar" title="'+f.name+'">'+makePortrait(f.name+'|'+(f.en||''))+'</div>'+
           '<div class="fig-body">'+
-          '<div class="fig-name">'+(f.en||f.name)+(f.en?'<span class="en">'+f.name+'</span>':'')+'</div>'+
-          '<div class="fig-meta">'+(f.years||'')+(f.role?(' · '+f.role):'')+'</div>'+
-          '<div class="fig-note">'+(f.note||'')+'</div>'+
+          '<div class="fig-name">'+figName(f)+(CUR_LANG==='en'?('<span class="en">'+f.name+'</span>'):(f.en?'<span class="en">'+f.en+'</span>':''))+'</div>'+
+          '<div class="fig-meta">'+(f.years||'')+(fen(f,'role')?(' · '+fen(f,'role')):'')+'</div>'+
+          '<div class="fig-note">'+fen(f,'note')+'</div>'+
           detail+
           '</div></div>';
       });

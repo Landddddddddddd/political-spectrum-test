@@ -235,5 +235,21 @@
       "ideologies": 120,
       "domains": 30
     }
+  },
+  {
+    "date": "2026-08-12",
+    "title": "v1.12.1 海外部署 + 语言自动识别 + 原生分享兜底",
+    "items": [
+      "部署到 GitHub Pages（https://landddddddddddd.github.io/political-spectrum-test/）：海外可达、全球 CDN、零后端，复用现有 gh 凭证无需新令牌",
+      "语言默认值改为按浏览器语言判定：navigator.language 以 zh 开头（zh-CN/zh-TW 等）→ 中文，其余 → 英文；已手动选择的语言仍持久化优先",
+      "新增 tryNativeShare：分享按钮优先调用系统原生分享（navigator.share），不支持或用户取消/出错时回退到原有复制码弹窗，本地功能完整保留",
+      "附 vercel.json 便于后续一键切到 Vercel；Cloudflare Pages 亦可经仓库连接或 wrangler pages deploy deploy 部署",
+      "本次上线站点含截至当前的英文翻译进度（题目经 MyMemory 逐题翻译、润色进行中）"
+    ],
+    "stats": {
+      "questions": 510,
+      "ideologies": 120,
+      "domains": 30
+    }
   }
 ]
