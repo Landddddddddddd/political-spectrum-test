@@ -201,6 +201,30 @@
   .hist-item .info b{color:var(--ink);font-size:14px;}
   .hist-item .info small{display:block;color:var(--muted);font-size:11px;}
   .hist-empty{font-size:13px;color:var(--muted);}
+  .cmp-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 4px;font-size:12px;color:var(--muted);}
+  .cmp-bar .cmp-count b{color:var(--accent);}
+  .cmp-bar .cmp-acts{display:flex;gap:6px;}
+  .hist-item.sel{border-color:var(--accent);background:var(--accent-soft);}
+  .hist-item .info .top2{color:var(--muted);}
+  .hist-item .cmp{flex:0 0 auto;}
+  #cmpModal .modal-box{max-height:86vh;overflow:auto;}
+  .cmp-head{display:flex;align-items:stretch;gap:10px;margin-bottom:12px;}
+  .cmp-col{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;min-width:0;}
+  .cmp-col b{display:block;color:var(--ink);font-size:15px;}
+  .cmp-col small{display:block;color:var(--muted);font-size:11px;}
+  .cmp-col .top2{color:var(--accent);}
+  .cmp-vs{display:flex;align-items:center;color:var(--muted);font-weight:800;font-size:13px;}
+  .cmp-row{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding:8px 2px;}
+  .cmp-dim{width:54px;flex:0 0 auto;font-weight:700;color:var(--ink);font-size:13px;}
+  .cmp-vals{flex:1;display:flex;flex-direction:column;gap:3px;}
+  .cv{display:flex;justify-content:space-between;font-size:12px;}
+  .cv .cvn{color:var(--muted);}
+  .cv .cvp{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--ink);font-weight:600;}
+  .cmp-delta{width:84px;flex:0 0 auto;text-align:right;font-size:12px;font-weight:700;color:var(--muted);}
+  .cmp-delta.up{color:#3fae6b;}
+  .cmp-delta.down{color:#e2554f;}
+  .cmp-delta.same{color:var(--muted);}
+  .cmp-legend,.cmp-note{font-size:11px;color:var(--muted);margin:10px 0 2px;line-height:1.5;}
   .acc-io{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
   .acc-io .btn{flex:1;justify-content:center;}
   .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);background:var(--ink);color:var(--card);font-size:13px;padding:10px 16px;border-radius:10px;z-index:80;opacity:0;transition:opacity .25s;pointer-events:none;}
@@ -577,6 +601,14 @@
     </div>
   </div>
 
+  <div class="modal hidden" id="cmpModal">
+    <div class="modal-mask" onclick="closeCompare()"></div>
+    <div class="modal-box">
+      <div class="modal-head"><span>对比两次测试结果</span><button class="x" onclick="closeCompare()">✕</button></div>
+      <div id="cmpBody"></div>
+    </div>
+  </div>
+
   <div class="modal hidden" id="setModal">
     <div class="modal-mask" onclick="closeSettings()"></div>
     <div class="modal-box">
@@ -829,6 +861,7 @@ const EMOJIS = ["🙂","😎","🌟","🌍","🔥","🌱","⚡","🕊️","🛡�
 const COLORS = ["#3b6df0","#e2554f","#3fae6b","#f5a623","#9b59b6","#1ab6c4","#e91e8c","#6b7785"];
 let selectedEmoji = EMOJIS[0], selectedColor = COLORS[0];
 let ACCOUNTS = [], CUR_ACC = null;
+let compareSel = [];   // 历史对比所选（最多 2 条 ts）
 
 function loadAccounts(){
   try{ ACCOUNTS = JSON.parse(localStorage.getItem(ACC_KEY)) || []; }catch(e){ ACCOUNTS = []; }
@@ -856,12 +889,23 @@ function refreshAccUI(){
       </div></div>`;
   }).join("");
   const h = cur.history || [];
-  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看）</div>` + (h.length ? h.map(e=>{
+  const cmpBar = `<div class="cmp-bar">
+      <span class="cmp-count">已选 <b>${compareSel.length}</b>/2 用于对比</span>
+      <span class="cmp-acts">
+        <button class="mini" onclick="clearCompare()" ${compareSel.length?'':'disabled'}>清除</button>
+        <button class="mini" onclick="openCompare()" ${compareSel.length===2?'':'disabled'}>对比两次测试</button>
+      </span>
+    </div>`;
+  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看 · 选 2 条可对比）</div>` + cmpBar + (h.length ? h.map(e=>{
     const d=new Date(e.ts);
     const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
-    return `<div class="hist-item" onclick="viewHistory(${e.ts})">
+    const top2 = (e.top && e.top.length>1) ? `<small class="top2">亦契合：${e.top[1]}</small>` : "";
+    const sel = compareSel.includes(e.ts) ? "sel" : "";
+    const btn = compareSel.includes(e.ts) ? "✓已选" : "+对比";
+    return `<div class="hist-item ${sel}" onclick="viewHistory(${e.ts})">
       <span class="code">${e.code}</span>
-      <div class="info"><b>${e.primary}</b><small>${ds}</small></div>
+      <div class="info"><b>${e.primary}</b><small>${ds}</small>${top2}</div>
+      <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare(${e.ts})">${btn}</button>
     </div>`;
   }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`);
 }
@@ -898,6 +942,55 @@ function viewHistory(ts){
   closeAcc(); renderResultFromData(e.counts, e.primary, true);
   window.scrollTo({top:0, behavior:"smooth"});
 }
+// 把某次测试的 counts 折算成某维 [-1,1] 连续坐标（不依赖全局 RESULT_COUNTS）
+function dimPosOf(counts, key){
+  const d = DIMS.find(x=>x.key===key); if(!d) return 0;
+  const c = counts[key]; const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
+  return tot===0 ? 0 : (n1-n0)/tot;
+}
+function leanTxt(d, p){
+  if(Math.abs(p)<0.08) return "居中 / 混合";
+  return p<0 ? d.poles[0].label : d.poles[1].label;
+}
+function fmtDate(ts){ const d=new Date(ts); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
+function toggleCompare(ts){
+  const i = compareSel.indexOf(ts);
+  if(i>=0) compareSel.splice(i,1);
+  else { if(compareSel.length>=2) compareSel.shift(); compareSel.push(ts); }
+  refreshAccUI();
+}
+function clearCompare(){ compareSel = []; refreshAccUI(); }
+function openCompare(){
+  const h = getCur().history || [];
+  const a = h.find(x=>x.ts===compareSel[0]);
+  const b = h.find(x=>x.ts===compareSel[1]);
+  if(!a || !b){ toast("请选择两条历史记录"); return; }
+  let rows = DIMS.map(d=>{
+    const pa = dimPosOf(a.counts, d.key), pb = dimPosOf(b.counts, d.key);
+    const delta = pb - pa;
+    const arrow = Math.abs(delta)<0.02 ? "—" : (delta>0 ? "▲" : "▼");
+    const dtxt = Math.abs(delta)<0.02 ? "基本不变" : `${arrow} ${Math.abs(delta).toFixed(2)}`;
+    return `<div class="cmp-row">
+        <div class="cmp-dim">${d.name}</div>
+        <div class="cmp-vals">
+          <div class="cv"><span class="cvn">${leanTxt(d,pa)}</span><span class="cvp">${pa>=0?'+':''}${pa.toFixed(2)}</span></div>
+          <div class="cv"><span class="cvn">${leanTxt(d,pb)}</span><span class="cvp">${pb>=0?'+':''}${pb.toFixed(2)}</span></div>
+        </div>
+        <div class="cmp-delta ${Math.abs(delta)<0.02?'same':(delta>0?'up':'down')}">${dtxt}</div>
+      </div>`;
+  }).join("");
+  $("cmpBody").innerHTML = `
+    <div class="cmp-head">
+      <div class="cmp-col"><b>${a.primary}</b><small>${fmtDate(a.ts)}</small><small>${a.code}</small>${a.top&&a.top[1]?`<small class="top2">亦：${a.top[1]}</small>`:""}</div>
+      <div class="cmp-vs">VS</div>
+      <div class="cmp-col"><b>${b.primary}</b><small>${fmtDate(b.ts)}</small><small>${b.code}</small>${b.top&&b.top[1]?`<small class="top2">亦：${b.top[1]}</small>`:""}</div>
+    </div>
+    <div class="cmp-legend">各维坐标 ∈[-1,1]：0=居中。▲ = 本次相比上次更偏该维「第二极」（维度名右侧标签），▼ = 更偏「第一极」（左侧标签）。</div>
+    ${rows}
+    <div class="cmp-note">坐标由该次测试的八维计数折算，跨次对比反映你政治倾向的漂移；维度下两行分别为两次测试的值。</div>`;
+  $("cmpModal").classList.remove("hidden");
+}
+function closeCompare(){ $("cmpModal").classList.add("hidden"); }
 function exportAccounts(){
   const blob=new Blob([JSON.stringify(ACCOUNTS,null,2)], {type:"application/json"});
   const a=document.createElement("a"); a.download="意识形态测试-账号.json"; a.href=URL.createObjectURL(blob); a.click();
@@ -1344,7 +1437,7 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
   RESULT_COUNTS = counts;
   const res=dominantPoles(counts);
   const primary = forcePrimaryName ? (ARCH.find(a=>a.name===forcePrimaryName) || matchPrimary(counts)) : matchPrimary(counts);
-  persist();
+  if(!isHistory) persist();   // 回看历史时不把旧测试状态写回进行中的存档
   $("quiz").classList.add("hidden");
   $("result").classList.remove("hidden");
 
