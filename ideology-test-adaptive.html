@@ -79,6 +79,8 @@
   .qc-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
   .qc-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
   .qc-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .lang-btns{display:flex;gap:8px;}
+  .lang-btns .btn.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   /* ===== 政治光谱位置可视化 ===== */
   .spectrum{margin:16px 0 6px;border:1px dashed var(--line);border-radius:14px;padding:16px;background:var(--panel);}
   .sp-head{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;}
@@ -599,6 +601,7 @@
       <button class="tb-btn" id="themeBtn" onclick="cycleTheme()" title="切换外观：亮 / 暗 / 跟随系统">☀️ 亮色</button>
       <button class="tb-btn" id="setBtn" onclick="openSettings()" title="设置：音效、动效">⚙️ 设置</button>
       <button class="tb-btn" id="clBtn" onclick="openChangelog()" title="更新日志">📋 日志</button>
+      <button class="tb-btn" id="langBtn" onclick="cycleLang()" title="切换语言">🌐 中文</button>
       <button class="tb-btn" id="accBtn" onclick="openAcc()" title="账户与历史"><span class="dot" id="accDot"></span><span id="accLabel">本地访客</span> ▾</button>
     </div>
   </div>
@@ -610,7 +613,7 @@
       <div class="acc-cur" id="accCur"></div>
       <div class="acc-list" id="accList"></div>
       <div class="acc-new">
-        <input id="accName" placeholder="新账户昵称（留空自动命名）" maxlength="12" />
+        <input id="accName" placeholder="新账户昵称（留空自动命名）" data-i18n-ph="accNamePh" maxlength="12" />
         <div class="picker" id="emojiPick"></div>
         <div class="picker" id="colorPick"></div>
         <button class="btn" onclick="newAccount()">+ 新建账户</button>
@@ -670,7 +673,7 @@
     <div class="modal-box">
       <div class="modal-head"><span>导入好友结果</span><button class="x" onclick="closePasteFriend()">✕</button></div>
       <div class="fi-note">把好友发给你的「分享码」粘贴到这里（也可直接粘贴整条分享链接）。</div>
-      <textarea class="paste-area" id="pasteInput" placeholder="粘贴分享码或分享链接…"></textarea>
+      <textarea class="paste-area" id="pasteInput" placeholder="粘贴分享码或分享链接…" data-i18n-ph="pastePh"></textarea>
       <div class="share-actions" style="margin-top:10px;">
         <button class="btn" onclick="doPasteImport()">导入</button>
         <button class="btn ghost" onclick="closePasteFriend()">取消</button>
@@ -683,6 +686,14 @@
     <div class="modal-mask" onclick="closeSettings()"></div>
     <div class="modal-box">
       <div class="modal-head"><span>设置</span><button class="x" onclick="closeSettings()">✕</button></div>
+
+      <div class="set-row">
+        <div class="set-label"><b>语言</b><small>界面与结果使用的语言</small></div>
+        <div class="lang-btns">
+          <button class="btn ghost" id="langZh" onclick="setLang('zh')">中文</button>
+          <button class="btn ghost" id="langEn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
 
       <div class="set-row">
         <div class="set-label"><b>音效</b><small>为选择与界面操作播放提示音</small></div>
@@ -726,9 +737,9 @@
   <div class="modal hidden" id="archModal">
     <div class="modal-mask" onclick="closeArch()"></div>
     <div class="modal-box arch-box">
-      <div class="modal-head"><span>可被测出的意识形态 · 共 <b id="archTotal">50</b> 种</span><button class="x" onclick="closeArch()">✕</button></div>
+      <div class="modal-head"><span data-i18n="archHead">可被测出的意识形态 · 共 <b id="archTotal">50</b> 种</span><button class="x" onclick="closeArch()">✕</button></div>
       <p class="arch-hint">这里是测试可能匹配到的全部细分阵营。每道题的具体选择会组合出你的维度签名，再映射到其中最契合的一个。点击名称可在结果页了解自己的位置。</p>
-      <div class="arch-search"><input id="archSearch" type="text" placeholder="搜索阵营名称（如：自由 / 社会 / 生态…）" oninput="filterArch(this.value)" /></div>
+      <div class="arch-search"><input id="archSearch" type="text" placeholder="搜索阵营名称（如：自由 / 社会 / 生态…）" data-i18n-ph="archSearchPh" oninput="filterArch(this.value)" /></div>
       <div class="arch-grid" id="archGrid"></div>
     </div>
   </div>
@@ -744,24 +755,24 @@
 
   <section class="card" id="start">
     <h1>意识形态测试 · 自适应版</h1>
-    <p class="sub">从 <b id="bkCount">500</b> 道题库里，根据你前面的回答<b>有目的地抽题</b>：
+    <p class="sub" data-i18n="startSub">从 <b id="bkCount">500</b> 道题库里，根据你前面的回答<b>有目的地抽题</b>：
        优先挑你还没碰到过的<b>领域</b>，并专门追问你态度还模糊的<b>维度</b>。</p>
-    <p style="font-size:14px;color:var(--muted)">
+    <p style="font-size:14px;color:var(--muted)" data-i18n="startMuted">
        维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
         选项数 2–8 不固定，<b>支持多选</b>——可同时选择多个你认同的选项。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
     </p>
     <details class="overview" open>
       <summary>测试前概览</summary>
-      <div class="ov-flow">
+      <div class="ov-flow" data-i18n="ovFlow">
         <div class="ov-step"><b>1</b> 选量</div><span class="ov-arrow">→</span>
         <div class="ov-step"><b>2</b> 情景答题</div><span class="ov-arrow">→</span>
         <div class="ov-step"><b>3</b> 看画像与光谱</div><span class="ov-arrow">→</span>
         <div class="ov-step"><b>4</b> 导出 / 保存</div>
       </div>
-      <p class="ov-tip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定，<b>支持多选</b>——同时选择多个认同的选项会让你的画像更丰富。</p>
+      <p class="ov-tip" data-i18n="ovTip">答题时系统会<b>有目的地抽题</b>：优先挑你还没碰过的领域，并追问你态度还模糊的维度。每题是具体情景下的行动 / 想法选择，选项数 2–8 不固定，<b>支持多选</b>——同时选择多个认同的选项会让你的画像更丰富。</p>
       <div class="ov-dims" id="ovDims"></div>
-      <div class="ov-get"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
-      <div class="ov-actions"><button class="btn ghost" onclick="openArch()">📚 查看所有可被测出的意识形态（<span id="ovArchCount">…</span>）</button></div>
+      <div class="ov-get" data-i18n="ovGet"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
+      <div class="ov-actions"><button class="btn ghost" data-i18n="ovActions" onclick="openArch()">📚 查看所有可被测出的意识形态（<span id="ovArchCount">…</span>）</button></div>
     </details>
     <div class="qc-label">先选题量：</div>
     <div class="qc-tabs" id="qcTabs">
@@ -824,7 +835,7 @@
     <div class="dims" id="dims"></div>
     <div class="top5" id="topList"></div>
     <div class="spectrum">
-      <div class="sp-head">政治光谱位置 <span class="pill">可切换维度</span>
+      <div class="sp-head" data-i18n="spHead">政治光谱位置 <span class="pill">可切换维度</span>
         <button class="btn ghost sp-mini" onclick="downloadCard()">保存为图片</button>
         <button class="btn ghost sp-mini" onclick="copySummary()">复制摘要</button>
       </div>
@@ -948,59 +959,59 @@ function refreshAccUI(){
   const cur=getCur();
   $("accLabel").textContent = cur.name;
   $("accDot").style.background = cur.color;
-  $("accCur").innerHTML = `当前账户：<b>${cur.emoji} ${cur.name}</b> · 共 ${cur.history.length} 条历史`;
+  $("accCur").innerHTML = `${g('当前账户：','Current account: ')}<b>${cur.emoji} ${cur.name}</b> · ${g('共 '+cur.history.length+' 条历史', cur.history.length+' records')}`;
   $("accList").innerHTML = ACCOUNTS.map(a=>{
     const curc = a.id===CUR_ACC;
     return `<div class="acc-item ${curc?'cur':''}">
       <div class="ava" style="background:${a.color}">${a.emoji}</div>
-      <div class="nm">${a.name}<small>${a.history.length} 条历史</small></div>
+      <div class="nm">${a.name}<small>${g(''+a.history.length+' 条历史', a.history.length+' records')}</small></div>
       <div class="acts">
-        ${curc?'<span class="mini">使用中</span>':`<button class="mini" onclick="switchAccount('${a.id}')">切换</button>`}
-        <button class="mini" onclick="renameAccount('${a.id}')">改名</button>
-        <button class="mini danger" onclick="deleteAccount('${a.id}')">删除</button>
+        ${curc?'<span class="mini">'+g('使用中','In use')+'</span>':`<button class="mini" onclick="switchAccount('${a.id}')">${g('切换','Switch')}</button>`}
+        <button class="mini" onclick="renameAccount('${a.id}')">${g('改名','Rename')}</button>
+        <button class="mini danger" onclick="deleteAccount('${a.id}')">${g('删除','Delete')}</button>
       </div></div>`;
   }).join("");
   const h = cur.history || [];
   const cmpBar = `<div class="cmp-bar">
-      <span class="cmp-count">已选 <b>${compareSel.length}</b>/2 用于对比</span>
+      <span class="cmp-count">${g('已选 '+compareSel.length+'/2 用于对比', compareSel.length+'/2 selected for compare')}</span>
       <span class="cmp-acts">
-        <button class="mini" onclick="clearCompare()" ${compareSel.length?'':'disabled'}>清除</button>
-        <button class="mini" onclick="openCompare()" ${compareSel.length===2?'':'disabled'}>对比所选</button>
+        <button class="mini" onclick="clearCompare()" ${compareSel.length?'':'disabled'}>${g('清除','Clear')}</button>
+        <button class="mini" onclick="openCompare()" ${compareSel.length===2?'':'disabled'}>${g('对比所选','Compare selected')}</button>
       </span>
     </div>`;
   const histHtml = h.length ? h.map(e=>{
     const ds=fmtDate(e.ts);
-    const top2=(e.top&&e.top.length>1)?`<small class="top2">亦契合：${esc(e.top[1])}</small>`:"";
-    const meta=`<small>${ds}${(e.n!=null?` · ${e.n}题`:"")}${e.partial?' · 提前结束':''}</small>`;
+    const top2=(e.top&&e.top.length>1)?`<small class="top2">${g('亦契合：','Also: ')}${esc(e.top[1])}</small>`:"";
+    const meta=`<small>${ds}${(e.n!=null?` · ${e.n}${g('题','Q')}`:"")}${e.partial?' · '+g('提前结束','ended early'):''}</small>`;
     const sel=compareSel.includes("h:"+e.ts)?"sel":"";
-    const btn=compareSel.includes("h:"+e.ts)?"✓已选":"+对比";
+    const btn=compareSel.includes("h:"+e.ts)?g("✓已选","✓ Selected"):g("+对比","+ Compare");
     return `<div class="hist-item ${sel}" onclick="viewHistory(${e.ts})">
       <span class="code">${esc(e.code)}</span>
-      <div class="info"><b>${esc(e.primary)}</b>${meta}${top2}</div>
+      <div class="info"><b>${esc(dispName(e.primary))}</b>${meta}${top2}</div>
       <div class="acts2">
-        <button class="mini" onclick="event.stopPropagation(); shareEntry(${e.ts})">分享</button>
+        <button class="mini" onclick="event.stopPropagation(); shareEntry(${e.ts})">${g('分享','Share')}</button>
         <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare('h:${e.ts}')">${btn}</button>
       </div>
     </div>`;
-  }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`;
+  }).join("") : `<div class="hist-empty">${g('还没有完成过测试，去测一次吧。','No tests completed yet—take one!')}</div>`;
 
   const fr=(cur.friends||[]);
-  const frHtml = `<div class="friend-sec"><div class="ht">好友结果（导入后与你的测试并排对比）</div>` + (fr.length ? fr.map(f=>{
+  const frHtml = `<div class="friend-sec"><div class="ht">${g('好友结果（导入后与你的测试并排对比）','Friend results (compare side-by-side with yours)')}</div>` + (fr.length ? fr.map(f=>{
     const ds=fmtDate(f.importedTs);
-    const by=f.by?`<small>来自 ${esc(f.by)}</small>`:"";
+    const by=f.by?`<small>${g('来自 ','From ')}${esc(f.by)}</small>`:"";
     const sel=compareSel.includes("f:"+f.fid)?"sel":"";
-    const btn=compareSel.includes("f:"+f.fid)?"✓已选":"+对比";
+    const btn=compareSel.includes("f:"+f.fid)?g("✓已选","✓ Selected"):g("+对比","+ Compare");
     return `<div class="fi-item ${sel}" onclick="viewFriend('${f.fid}')">
       <span class="code">${esc(f.code)}</span>
-      <div class="info"><b>${esc(f.primary)}</b>${by}<small>${ds}${f.partial?' · 提前结束':''}</small></div>
+      <div class="info"><b>${esc(dispName(f.primary))}</b>${by}<small>${ds}${f.partial?' · '+g('提前结束','ended early'):''}</small></div>
       <div class="acts">
         <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare('f:${f.fid}')">${btn}</button>
-        <button class="mini danger" onclick="event.stopPropagation(); removeFriend('${f.fid}')">移除</button>
+        <button class="mini danger" onclick="event.stopPropagation(); removeFriend('${f.fid}')">${g('移除','Remove')}</button>
       </div>
     </div>`;
-  }).join("") : `<div class="friend-empty">还没有导入好友结果。点下方「导入好友结果」粘贴分享码，或让好友发你分享链接。</div>`) + `</div>`;
+  }).join("") : `<div class="friend-empty">${g('还没有导入好友结果。点下方「导入好友结果」粘贴分享码，或让好友发你分享链接。','No friend results imported yet. Tap “Import Friend’s Result” below or have a friend send you a link.')}</div>`) + `</div>`;
 
-  $("accHist").innerHTML = `<div class="ht">历史记录（点击回看 · 选 2 条可对比）</div>` + cmpBar + histHtml + frHtml;
+  $("accHist").innerHTML = `<div class="ht">${g('历史记录（点击回看 · 选 2 条可对比）','History (tap to view · pick 2 to compare)')}</div>` + cmpBar + histHtml + frHtml;
 }
 function renderPickers(){
   $("emojiPick").innerHTML = EMOJIS.map((e,i)=>`<div class="opt ${i===0?'sel':''}" onclick="pickEmoji(this,'${e}')">${e}</div>`).join("");
@@ -1043,8 +1054,8 @@ function dimPosOf(counts, key){
   return tot===0 ? 0 : (n1-n0)/tot;
 }
 function leanTxt(d, p){
-  if(Math.abs(p)<0.08) return "居中 / 混合";
-  return p<0 ? d.poles[0].label : d.poles[1].label;
+  if(Math.abs(p)<0.08) return g("居中 / 混合","Centered / Mixed");
+  return plabel(p<0 ? d.poles[0] : d.poles[1]);
 }
 function fmtDate(ts){ const d=new Date(ts); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
 function toggleCompare(ts){
@@ -1068,9 +1079,9 @@ function openCompare(){
     const pa = dimPosOf(a.counts, d.key), pb = dimPosOf(b.counts, d.key);
     const delta = pb - pa;
     const arrow = Math.abs(delta)<0.02 ? "—" : (delta>0 ? "▲" : "▼");
-    const dtxt = Math.abs(delta)<0.02 ? "基本不变" : `${arrow} ${Math.abs(delta).toFixed(2)}`;
+    const dtxt = Math.abs(delta)<0.02 ? g("基本不变","No change") : `${arrow} ${Math.abs(delta).toFixed(2)}`;
     return `<div class="cmp-row">
-        <div class="cmp-dim">${d.name}</div>
+        <div class="cmp-dim">${dname(d)}</div>
         <div class="cmp-vals">
           <div class="cv"><span class="cvn">${leanTxt(d,pa)}</span><span class="cvp">${pa>=0?'+':''}${pa.toFixed(2)}</span></div>
           <div class="cv"><span class="cvn">${leanTxt(d,pb)}</span><span class="cvp">${pb>=0?'+':''}${pb.toFixed(2)}</span></div>
@@ -1080,13 +1091,13 @@ function openCompare(){
   }).join("");
   $("cmpBody").innerHTML = `
     <div class="cmp-head">
-      <div class="cmp-col"><b>${esc(a.primary)}</b><small>${fmtDate(a.ts)}</small><small>${esc(a.code)}</small>${a.top&&a.top[1]?`<small class="top2">亦：${esc(a.top[1])}</small>`:""}</div>
+      <div class="cmp-col"><b>${esc(dispName(a.primary))}</b><small>${fmtDate(a.ts)}</small><small>${esc(a.code)}</small>${a.top&&a.top[1]?`<small class="top2">${g('亦：','Also: ')}${esc(a.top[1])}</small>`:""}</div>
       <div class="cmp-vs">VS</div>
-      <div class="cmp-col"><b>${esc(b.primary)}</b><small>${fmtDate(b.ts)}</small><small>${esc(b.code)}</small>${b.top&&b.top[1]?`<small class="top2">亦：${esc(b.top[1])}</small>`:""}</div>
+      <div class="cmp-col"><b>${esc(dispName(b.primary))}</b><small>${fmtDate(b.ts)}</small><small>${esc(b.code)}</small>${b.top&&b.top[1]?`<small class="top2">${g('亦：','Also: ')}${esc(b.top[1])}</small>`:""}</div>
     </div>
-    <div class="cmp-legend">各维坐标 ∈[-1,1]：0=居中。▲ = 右列相比左列更偏该维「第二极」（维度名右侧标签），▼ = 更偏「第一极」（左侧标签）。</div>
+    <div class="cmp-legend">${g('各维坐标 ∈[-1,1]：0=居中。▲ = 右列相比左列更偏该维「第二极」（维度名右侧标签），▼ = 更偏「第一极」（左侧标签）。','Each dimension coordinate ∈[-1,1]: 0 = center. ▲ = right column leans more toward the dimension’s second pole (right-side label), ▼ = toward the first pole (left-side label).')}</div>
     ${rows}
-    <div class="cmp-note">坐标由该次测试的八维计数折算；左右两列可为「你 vs 好友」或「两次测试」，反映政治倾向的差异。</div>`;
+    <div class="cmp-note">${g('坐标由该次测试的八维计数折算；左右两列可为「你 vs 好友」或「两次测试」，反映政治倾向的差异。','Coordinates are derived from each test’s 8-dimension tallies; the two columns can be “you vs friend” or “two tests”, showing how political leanings differ.')}</div>`;
   $("cmpModal").classList.remove("hidden");
 }
 function closeCompare(){ $("cmpModal").classList.add("hidden"); }
@@ -1139,7 +1150,7 @@ function openShare(entry){
   entry = entry || LAST_RESULT || (getCur().history||[])[0];
   if(!entry){ toast("暂无可分享的结果，先完成一次测试吧"); return; }
   const payload=buildSharePayload(entry, getCur().name);
-  $("shareWho").textContent=(entry.primary||"")+"（"+(entry.code||"")+"）";
+  $("shareWho").textContent=dispName(entry.primary||"")+"（"+(entry.code||"")+"）";
   $("shareCode").value=payload;
   $("shareLink").value=buildShareLink(payload);
   $("shareModal").classList.remove("hidden");
@@ -1193,9 +1204,17 @@ function doPasteImport(){
 }
 
 function toast(msg){
+  let m = msg;
+  if(CUR_LANG==="en" && TOAST_EN[msg]!=null) m = TOAST_EN[msg];
+  else if(CUR_LANG==="en" && typeof msg==="string"){
+    // 兼容「已创建并切换到 X」「已切换到 X」「已导入 X 个账户」这类带后缀的提示
+    for(const k in TOAST_EN){
+      if(msg.indexOf(k)===0 && msg.length>k.length) m = TOAST_EN[k] + msg.slice(k.length);
+    }
+  }
   let t=$("toast");
   if(!t){ t=document.createElement("div"); t.id="toast"; t.className="toast"; document.body.appendChild(t); }
-  t.textContent=msg; t.classList.add("show"); clearTimeout(t._tm); t._tm=setTimeout(()=>t.classList.remove("show"),1800);
+  t.textContent=m; t.classList.add("show"); clearTimeout(t._tm); t._tm=setTimeout(()=>t.classList.remove("show"),1800);
 }
 
 const BANK = QUESTION_BANK;
@@ -1204,16 +1223,163 @@ BANK.forEach(q=>BYID[q.id]=q);
 
 /* ====== 维度与细分阵营（沿用多维版） ====== */
 const DIMS = [
-  {key:"ECO", name:"经济", poles:[{k:"L",label:"平等 / 再分配"},{k:"R",label:"自由市场"}]},
-  {key:"GOV", name:"治理", poles:[{k:"A",label:"权威 / 秩序"},{k:"L",label:"自由 / 分权"}]},
-  {key:"CUL", name:"文化", poles:[{k:"T",label:"传统"},{k:"P",label:"进步 / 多元"}]},
-  {key:"NAT", name:"国际", poles:[{k:"N",label:"民族优先"},{k:"C",label:"国际 / 开放"}]},
-  {key:"ENV", name:"生态", poles:[{k:"G",label:"发展优先"},{k:"S",label:"生态优先"}]},
-  {key:"TECH", name:"技术监控", poles:[{k:"K",label:"集中管控"},{k:"U",label:"隐私自主"}]},
-  {key:"SEC", name:"世俗信仰", poles:[{k:"E",label:"世俗公共"},{k:"F",label:"信仰入公"}]},
-  {key:"COL", name:"个人集体", poles:[{k:"I",label:"个人优先"},{k:"M",label:"共同体优先"}]},
+  {key:"ECO", name:"经济", name_en:"Economy", poles:[{k:"L",label:"平等 / 再分配",label_en:"Equality / Redistribution"},{k:"R",label:"自由市场",label_en:"Free Market"}]},
+  {key:"GOV", name:"治理", name_en:"Governance", poles:[{k:"A",label:"权威 / 秩序",label_en:"Authority / Order"},{k:"L",label:"自由 / 分权",label_en:"Liberty / Decentralization"}]},
+  {key:"CUL", name:"文化", name_en:"Culture", poles:[{k:"T",label:"传统",label_en:"Tradition"},{k:"P",label:"进步 / 多元",label_en:"Progress / Pluralism"}]},
+  {key:"NAT", name:"国际", name_en:"Nation", poles:[{k:"N",label:"民族优先",label_en:"National Priority"},{k:"C",label:"国际 / 开放",label_en:"International / Open"}]},
+  {key:"ENV", name:"生态", name_en:"Ecology", poles:[{k:"G",label:"发展优先",label_en:"Development First"},{k:"S",label:"生态优先",label_en:"Ecology First"}]},
+  {key:"TECH", name:"技术监控", name_en:"Tech & Surveillance", poles:[{k:"K",label:"集中管控",label_en:"Central Control"},{k:"U",label:"隐私自主",label_en:"Privacy Autonomy"}]},
+  {key:"SEC", name:"世俗信仰", name_en:"Secular & Faith", poles:[{k:"E",label:"世俗公共",label_en:"Secular Public"},{k:"F",label:"信仰入公",label_en:"Faith in Public"}]},
+  {key:"COL", name:"个人集体", name_en:"Individual & Collective", poles:[{k:"I",label:"个人优先",label_en:"Individual First"},{k:"M",label:"共同体优先",label_en:"Community First"}]},
 ];
 const ARCH = __ARCH__;
+
+/* ====== 多语言（i18n） ====== */
+const LANG_KEY = "ideo_lang";
+let CUR_LANG = (function(){ try{ return localStorage.getItem(LANG_KEY) || "zh"; }catch(e){ return "zh"; } })();
+let _suppressHistory = false;
+// 整段静态文本（含混合块）的英文映射；data-i18n 与全文档整节点自动翻译共用此表
+const UI_EN = {
+  // 顶栏
+  "⚙️ 设置":"⚙️ Settings","📋 日志":"📋 Changelog","本地访客":"Guest",
+  // 设置弹窗
+  "设置":"Settings","音效":"Sound","为选择与界面操作播放提示音":"Play cues for selections and interface actions",
+  "音量":"Volume","选择 / 确认音":"Select / Confirm","完成测试音":"Finish","界面操作音":"UI Actions",
+  "试听完成音 ♪":"Preview Finish ♪","减弱动效":"Reduce Motion","关闭过渡与动画，降低视觉刺激":"Disable transitions and animations to reduce visual stimulation",
+  // 账户弹窗
+  "账户与历史":"Account & History","+ 新建账户":"+ New Account","导出账号":"Export Account","导入好友结果":"Import Friend's Result","关闭":"Close",
+  // 对比弹窗
+  "对比两次测试结果":"Compare Two Results",
+  // 分享弹窗
+  "分享我的测试结果":"Share My Result",
+  "把下面任一种发给好友：对方粘贴「分享码」到「导入好友结果」，或打开「分享链接」会自动导入。全程不经过任何服务器，结果只在本机对比。":"Send either of these to a friend: they paste the share code into “Import Friend's Result”, or open the share link to auto-import. Nothing goes through any server; results are compared only on their device.",
+  "分享码（复制后发给好友）":"Share code (copy and send to a friend)","分享链接（点击打开自动导入）":"Share link (opens to auto-import)",
+  "复制分享码":"Copy Code","复制链接":"Copy Link",
+  // 好友导入弹窗
+  "收到好友的测试结果":"Received a Friend's Result",
+  "导入后，该结果会出现在你的「账户与历史 → 好友结果」中，可与你自己的测试结果并排对比。它只存在你本机，不会上传。":"After import, this result appears under “Account & History → Friend Results” and can be compared side-by-side with your own. It stays only on your device and is never uploaded.",
+  "导入并查看":"Import & View","忽略":"Ignore",
+  "把好友发给你的「分享码」粘贴到这里（也可直接粘贴整条分享链接）。":"Paste the share code your friend sent (or the full share link).",
+  "导入":"Import","取消":"Cancel",
+  // 意识形态列表弹窗
+  "这里是测试可能匹配到的全部细分阵营。每道题的具体选择会组合出你的维度签名，再映射到其中最契合的一个。点击名称可在结果页了解自己的位置。":"All the sub-camps this test can match you to. Your answers combine into a dimensional signature, mapped to the closest fit. Click a name to see where you stand.",
+  // 更新日志
+  "📋 更新日志":"📋 Changelog",
+  // 起始页
+  "意识形态测试 · 自适应版":"Political Spectrum Test · Adaptive",
+  "测试前概览":"Overview Before You Start",
+  "先选题量：":"Choose question count:","15 题":"15 Q","30 题":"30 Q","50 题":"50 Q","100 题":"100 Q",
+  "自定义题量：":"Custom count:","设定":"Set",
+  "8 个维度分别量什么？（点击展开）":"What do the 8 dimensions measure? (click to expand)",
+  "经济：资源该怎么分配——平等/再分配 ↔ 自由市场/私有。关心的是「靠国家调剂，还是靠市场与个人努力」。":"Economy: how resources are distributed — equality/redistribution ↔ free market/private ownership. The question is state mediation versus market and individual effort.",
+  "治理：权力该集中还是下放——权威/秩序 ↔ 自由/分权。关心「要多少管控才算安全」。":"Governance: whether power should be centralized or devolved — authority/order ↔ liberty/decentralization. How much control is needed for security.",
+  "文化：规范该守旧还是求变——传统 ↔ 进步/多元。关心「社会开放到什么程度」。":"Culture: whether norms should preserve tradition or embrace change — tradition ↔ progress/pluralism. How open should society be.",
+  "国际：对外设边界还是拆边界——民族优先 ↔ 国际/开放。关心「主权与协作如何取舍」。":"Nation: drawing boundaries outward or opening them — national priority ↔ international/open. How to balance sovereignty and cooperation.",
+  "生态：发展经济还是保护环境优先——发展优先 ↔ 生态优先。":"Ecology: prioritizing economic development or environmental protection — development first ↔ ecology first.",
+  "技术监控：面对算法与数据——集中管控 ↔ 隐私自主。关心「监控提效，还是隐私自决」。":"Tech & Surveillance: facing algorithms and data — central control ↔ privacy autonomy. Surveillance efficiency versus individual privacy.",
+  "世俗信仰：信仰该不该进公共生活——世俗公共 ↔ 信仰入公。关心「政教如何分野」。":"Secular & Faith: whether faith belongs in public life — secular public ↔ faith in public. How to separate church and state.",
+  "个人集体：个人权利与共同体利益谁优先——个人优先 ↔ 共同体优先。覆盖面最广的一维。":"Individual & Collective: whose interest comes first — individual ↔ community. The broadest dimension.",
+  "开始新测试 →":"Start New Test →",
+  // 结果页
+  "你的意识形态画像":"Your Ideological Profile","你的维度签名":"Your Dimensional Signature",
+  "塑造你结果的关键选择":"Key Choices That Shaped Your Result",
+  "本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。":"This test is an educational self-exploration tool. Subtype labels help understand value tendencies and do not constitute a political-stance judgment.",
+  "可切换维度":"Switchable","1 维":"1D","2 维":"2D","3 维":"3D","雷达":"Radar","保存为图片":"Save as Image","复制摘要":"Copy Summary",
+  "分享我的结果":"Share My Result","重新测试":"Retake",
+  // 混合块（data-i18n）
+  "accNamePh":"New account nickname (blank = auto-named)","pastePh":"Paste a share code or share link…","archSearchPh":"Search camp name (e.g. Liberty / Social / Eco…)",
+  "startSub":`From a <b id="bkCount">500</b>-question bank, questions are <b>selected on purpose</b> from your earlier answers: the system favors domains you haven't seen and probes <b>dimensions</b> where your stance is still fuzzy.`,
+  "startMuted":`Dimensions expanded to <b>8</b>: Economy · Governance · Culture · Nation · Ecology · Tech-Surveillance · Secular-Faith · Individual-Collective. Each question is a choice of action or opinion in a concrete scenario, with 2–8 options (not fixed) and <b>multi-select support</b>—you may pick several options you agree with. Together they form your nuanced camp.<br>Your progress is auto-saved; you may leave and resume later.`,
+  "ovFlow":`<div class="ov-step"><b>1</b> Pick count</div><span class="ov-arrow">→</span><div class="ov-step"><b>2</b> Scenario Q&amp;A</div><span class="ov-arrow">→</span><div class="ov-step"><b>3</b> Profile &amp; spectrum</div><span class="ov-arrow">→</span><div class="ov-step"><b>4</b> Export / Save</div>`,
+  "ovTip":`While answering, the system <b>selects questions purposefully</b>: it favors domains you haven't encountered and probes dimensions where your stance is fuzzy. Each question is a choice of action or opinion in a concrete scenario, with 2–8 options (not fixed) and <b>multi-select</b>—choosing several options you agree with makes your profile richer.`,
+  "ovGet":`After finishing you'll get: an <b>8-dimension signature</b>, the ideology camp that fits you best, your position on the political spectrum (switchable 1D / 2D / 3D / radar), historical representative figures of that camp (illustrated), and you can <b>save as an image</b> or copy a text summary.`,
+  "ovActions":`📚 View all detectable ideologies (<span id="ovArchCount">…</span>)`,
+  "archHead":`Detectable ideologies · <b id="archTotal">50</b> in total`,
+  "spHead":`Political spectrum position <span class="pill">Switchable dimensions</span><button class="btn ghost sp-mini" onclick="downloadCard()">Save as Image</button><button class="btn ghost sp-mini" onclick="copySummary()">Copy Summary</button>`
+};
+const TOAST_EN = {
+  "已复制到剪贴板":"Copied to clipboard","已复制":"Copied","复制失败，请手动选择":"Copy failed, please select manually",
+  "暂无可分享的结果，先完成一次测试吧":"No result to share yet—finish a test first.",
+  "已创建并切换到 ":"Account created and switched to ",
+  "已切换到 ":"Switched to ","已删除":"Deleted","至少保留一个账户":"Keep at least one account",
+  "已导出账号文件":"Account file exported","已导入 ":"Imported "," 个账户":" accounts",
+  "请至少选择一个选项":"Please select at least one option",
+  "至少答 ":"Answer at least "," 题才能提前出结果":" questions to finish early",
+  "至少答 5 题后可随时结束并直接出结果":"You can finish early after 5 questions",
+  "请选择两条记录（自己的历史或好友结果）":"Select two records (your history or a friend's result)",
+  "导入好友结果成功":"Friend result imported","该结果已存在":"This result already exists",
+  "分享码无效或格式不正确":"Invalid or malformed share code","已复制结果摘要":"Result summary copied",
+  "外观：":"Appearance: "
+};
+function g(zh, en){ return CUR_LANG==="en" ? en : zh; }
+function dname(d){ return CUR_LANG==="en" && d.name_en ? d.name_en : d.name; }
+function plabel(p){ return (CUR_LANG==="en" && p.label_en) ? p.label_en : p.label; }
+function archName(a){ return CUR_LANG==="en" && a.name_en ? a.name_en : a.name; }
+function dispName(n){ const a=ARCH.find(x=>x.name===n); return (CUR_LANG==="en" && a && a.name_en) ? a.name_en : n; }
+function applyLang(){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key=el.getAttribute("data-i18n");
+    if(el._zhHTML===undefined) el._zhHTML=el.innerHTML;
+    const en=UI_EN[key];
+    el.innerHTML=(CUR_LANG==="en" && en!=null) ? en : el._zhHTML;
+  });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{
+    const key=el.getAttribute("data-i18n-ph");
+    if(el._zhPH===undefined) el._zhPH=el.placeholder;
+    const en=UI_EN[key];
+    el.placeholder=(CUR_LANG==="en" && en!=null) ? en : el._zhPH;
+  });
+  if(document.body){
+    const walker=document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(n){
+        if(!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        const pe=n.parentElement;
+        if(pe && (pe.tagName==="SCRIPT"||pe.tagName==="STYLE")) return NodeFilter.FILTER_REJECT;
+        if(pe && pe.closest("[data-i18n]")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    let n;
+    while(n=walker.nextNode()){
+      const txt=n.nodeValue.trim();
+      if(UI_EN[txt]!=null){
+        if(n._zh===undefined) n._zh=n.nodeValue;
+        n.nodeValue = (CUR_LANG==="en") ? UI_EN[txt] : n._zh;
+      }
+    }
+  }
+  document.title = CUR_LANG==="en" ? "Political Spectrum Test · Adaptive" : "意识形态测试 · 自适应 500 题版";
+  updateLangBtn();
+}
+function cycleLang(){ setLang(CUR_LANG==="en"?"zh":"en"); }
+function setLang(l){
+  CUR_LANG = (l==="en") ? "en" : "zh";
+  try{ localStorage.setItem(LANG_KEY, CUR_LANG); }catch(e){}
+  applyLang();
+  rerenderForLang();
+}
+function rerenderForLang(){
+  try{
+    if(!$("start").classList.contains("hidden")) renderOverview();
+    if(!$("quiz").classList.contains("hidden")) showQuestion();
+    if(!$("result").classList.contains("hidden") && LAST_RESULT){
+      _suppressHistory=true;
+      renderResultFromData(LAST_RESULT.counts, LAST_RESULT.primary, false, LAST_RESULT.partial);
+      _suppressHistory=false;
+    }
+    if(!$("accModal").classList.contains("hidden")) refreshAccUI();
+    if(!$("archModal").classList.contains("hidden")) openArch();
+    if(!$("cmpModal").classList.contains("hidden") && compareSel.length===2) openCompare();
+    if(!$("clModal").classList.contains("hidden")) renderChangelog();
+    if(!$("shareModal").classList.contains("hidden") && LAST_RESULT) openShare();
+  }catch(e){ /* 语言切换不应中断交互 */ }
+}
+function updateLangBtn(){
+  const b=$("langBtn"); if(b) b.textContent = "🌐 " + (CUR_LANG==="en"?"English":"中文");
+  const zh=$("langZh"), en=$("langEn");
+  if(zh) zh.classList.toggle("active", CUR_LANG==="zh");
+  if(en) en.classList.toggle("active", CUR_LANG==="en");
+}
 
 let TOTAL = 50;
 const STORE_KEY = "ideo_adaptive_v2";
@@ -1233,7 +1399,7 @@ function setQ(n){
 }
 function setQCustom(){
   const v = parseInt($("qcInput").value, 10);
-  if(isNaN(v) || v < 5 || v > 500){ alert("题量请填 5–500 之间的整数"); return; }
+  if(isNaN(v) || v < 5 || v > 500){ toast(g("题量请填 5–500 之间的整数","Enter an integer between 5 and 500")); return; }
   TOTAL = v;
   document.querySelectorAll("#qcTabs button").forEach(b=>b.classList.remove("active"));
 }
@@ -1340,9 +1506,9 @@ function ensureCurrent(){
 function showQuestion(){
   const q = BYID[seq[pos]];
   const sel = getSel(q.id);
-  $("counter").textContent = `第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain}（${q.options.length} 选项 · 可多选）`;
+  $("counter").textContent = g(`第 ${pos+1} / ${TOTAL} 题 · 领域：${q.domain_en||q.domain}（${q.options.length} 选项 · 可多选）`, `Q ${pos+1} / ${TOTAL} · Domain: ${q.domain_en||q.domain} (${q.options.length} options · multi-select)`);
   $("prog").style.width = (answeredCount()/TOTAL*100) + "%";
-  $("scene").textContent = q.scene;
+  $("scene").textContent = q.scene_en||q.scene;
   const opts=$("opts"); opts.innerHTML="";
   const keys="ABCDEFGH";
   focusIdx = sel.length ? sel[sel.length-1] : 0;
@@ -1350,7 +1516,7 @@ function showQuestion(){
     const d=document.createElement("div");
     const isSel = sel.includes(i);
     d.className="opt"+(isSel?" sel":"")+(i===focusIdx?" focus":"");
-    d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${o.t}</span>`;
+    d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${o.t_en||o.t}</span>`;
     d.onclick=()=>{ toggleOpt(q.id, i); };
     opts.appendChild(d);
   });
@@ -1359,12 +1525,12 @@ function showQuestion(){
   const sh = $("selHint");
   if(sh){
     const n = sel.length;
-    sh.innerHTML = `<span class="sel-badge${n>0?' has':''}">${n}</span> <span>${n>0?'已选 '+n+' 项 — 可继续选择或点「下一题」':'至少选 1 项方可继续'}</span>`;
+    sh.innerHTML = `<span class="sel-badge${n>0?' has':''}">${n}</span> <span>${n>0?g('已选 '+n+' 项 — 可继续选择或点「下一题」','Selected '+n+' — keep choosing or tap Next'):g('至少选 1 项方可继续','Select at least 1 to continue')}</span>`;
   }
   $("prevBtn").disabled=(pos===0);
   $("nextBtn").disabled=(sel.length===0);
-  $("nextBtn").textContent=(pos===TOTAL-1)?"查看结果 →":"下一题 →";
-  const eb=$("earlyBtn"); if(eb){ eb.disabled=!canEarlyExit(); eb.title=`至少答 ${MIN_EARLY_EXIT} 题后可随时结束并直接出结果（已答 ${answeredCount()} 题）`; }
+  $("nextBtn").textContent=(pos===TOTAL-1)?g("查看结果 →","View Result →"):g("下一题 →","Next →");
+  const eb=$("earlyBtn"); if(eb){ eb.disabled=!canEarlyExit(); eb.title=g(`至少答 ${MIN_EARLY_EXIT} 题后可随时结束并直接出结果（已答 ${answeredCount()} 题）`, "You can finish early after "+MIN_EARLY_EXIT+" questions (answered "+answeredCount()+")"); }
 }
 function applyFocus(){
   const opts=$("opts"); if(!opts) return;
@@ -1405,14 +1571,14 @@ function onKey(e){
   if(kk==="escape"){
     e.preventDefault();
     if(canEarlyExit()) finishEarly();
-    else toast(`至少答 ${MIN_EARLY_EXIT} 题才能提前出结果`);
+    else toast(g(`至少答 ${MIN_EARLY_EXIT} 题才能提前出结果`, `Answer at least ${MIN_EARLY_EXIT} questions to finish early`));
   }
 }
 document.addEventListener("keydown", onKey);
 function prev(){ if(pos>0){ pos--; persist(); showQuestion(); } }
 function next(){
   sfx("select");
-  if(getSel(seq[pos]).length === 0){ alert("请至少选择一个选项"); return; }
+  if(getSel(seq[pos]).length === 0){ toast(g("请至少选择一个选项","Please select at least one option")); return; }
   if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
   else finish();
 }
@@ -1569,8 +1735,8 @@ function makePortrait(seed){
 
 function renderFigures(primary, secs){
   const figs = FIGURES[primary.name] || [];
-  let html = `<div class="fttl">代表人物 · ${primary.name}</div>`;
-  html += `<div class="fsub">以下为该思潮在思想史上有代表性的理论与行动者。点击卡片可展开查看生平简介、主要事迹与代表著作；右侧为风格化「拟形象」插画，并非真实照片。</div>`;
+  let html = `<div class="fttl">${g('代表人物','Representative figures')} · ${archName(primary)}</div>`;
+  html += `<div class="fsub">${g('以下为该思潮在思想史上有代表性的理论与行动者。点击卡片可展开查看生平简介、主要事迹与代表著作；右侧为风格化「拟形象」插画，并非真实照片。','The following are representative theorists and actors of this current in intellectual history. Click a card to expand their biography, major deeds, and key works; the stylized portrait on the right is an illustration, not a real photo.')}</div>`;
   html += `<div class="fig-grid">`;
   figs.forEach((f, idx)=>{
     const hasDetail = f.bio || (f.deeds && f.deeds.length) || (f.works && f.works.length);
@@ -1602,10 +1768,10 @@ function renderFigures(primary, secs){
     html += `<div class="fig-card" onclick="this.classList.toggle('expanded')">
       <div class="fig-avatar" title="${f.name}">${makePortrait(f.name+'|'+f.en)}</div>
       <div class="fig-body">
-        <div class="fig-name">${f.name}<span class="en">${f.en||''}</span></div>
+        <div class="fig-name">${f.en||f.name}<span class="en">${f.en?f.name:''}</span></div>
         <div class="fig-meta">${f.years||''}${f.role?(' · '+f.role):''}</div>
         <div class="fig-note">${f.note||''}</div>
-        ${hasDetail ? '<div class="fig-toggle">查看详细事迹</div>' : ''}
+        ${hasDetail ? '<div class="fig-toggle">'+g('查看详细事迹','View details')+'</div>' : ''}
         ${detailHtml}
       </div></div>`;
   });
@@ -1616,7 +1782,7 @@ function renderFigures(primary, secs){
     secs.forEach(nm=>{
       const sf = (FIGURES[nm]||[])[0]; if(!sf) return;
       html += `<div class="fig-chip" title="${nm}"><div class="cav">${makePortrait(sf.name+'|'+sf.en)}</div>`+
-        `<div><b>${nm}</b><br><span>${sf.name}</span></div></div>`;
+        `<div><b>${dispName(nm)}</b><br><span>${sf.en||sf.name}</span></div></div>`;
     });
     html += `</div>`;
   }
@@ -1648,18 +1814,18 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   $("code").textContent = DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join("");
   const pm = precisionMode();
   const cov = dimCov(counts);
-  const lowDims = DIMS.filter(d=> cov[d.key] < COV_MIN).map(d=>d.name);
+  const lowDims = DIMS.filter(d=> cov[d.key] < COV_MIN).map(d=>dname(d));
   const effN = TOTAL;   // 现在 = 实际出结果所用题数（提前结束时小于原计划总题数）
   $("precTag").innerHTML = pm==="long"
-    ? `<span class="badge hi">高精度 · 据 ${effN} 题在 ${ARCH.length} 类中精细定位${partial?'（提前结束）':''}</span>`
-    : `<span class="badge">标准精度 · 据 ${effN} 题定位大类${partial?'（提前结束 · 结果较粗）':'；更多题可细分至 '+ARCH.length+' 类'}</span>`;
+    ? `<span class="badge hi">${g('高精度 · 据 '+effN+' 题在 '+ARCH.length+' 类中精细定位'+(partial?'（提前结束）':''), 'High precision · located among '+ARCH.length+' types using '+effN+' questions'+(partial?' (ended early)':''))}</span>`
+    : `<span class="badge">${g('标准精度 · 据 '+effN+' 题定位大类'+(partial?'（提前结束 · 结果较粗）':'；更多题可细分至 '+ARCH.length+' 类'), 'Standard precision · located among major types using '+effN+' questions'+(partial?' (ended early · coarser result)':'; more questions refine to '+ARCH.length+' types'))}</span>`;
   $("covNote").innerHTML = lowDims.length
-    ? `<span class="warn">⚠ 以下维度答题偏少、结果较初步：${lowDims.join("、")}。继续作答可提升精度。</span>`
-    : (partial ? `<span class="hint">已提前结束 · 基于 ${effN} 题出结果；继续作答可提升精度。</span>` : "");
-  $("pName").textContent = primary.name;
-  $("pDesc").innerHTML = `<div>${primary.desc}</div>` +
-    (primary.detail ? `<div class="pdetail">${primary.detail}</div>` : "") +
-    (primary.tenets && primary.tenets.length ? `<div class="tenets">${primary.tenets.map(t=>`<span>${t}</span>`).join("")}</div>` : "");
+    ? `<span class="warn">⚠ ${g('以下维度答题偏少、结果较初步：','Too few answers on these dimensions, results are tentative: ')}${lowDims.map(d=>dname(d)).join(g('、',', '))}。${g('继续作答可提升精度。','Answer more to improve precision.')}</span>`
+    : (partial ? `<span class="hint">${g('已提前结束 · 基于 '+effN+' 题出结果；继续作答可提升精度。','Ended early · results based on '+effN+' questions; answer more to improve precision.')}</span>` : "");
+  $("pName").textContent = archName(primary);
+  $("pDesc").innerHTML = `<div>${primary.desc_en||primary.desc}</div>` +
+    (primary.detail ? `<div class="pdetail">${primary.detail_en||primary.detail}</div>` : "") +
+    (primary.tenets && primary.tenets.length ? `<div class="tenets">${primary.tenets.map(t=>`<span>${t}</span>`).join("")}</div>` : (primary.tenets_en && primary.tenets_en.length ? `<div class="tenets">${primary.tenets_en.map(t=>`<span>${t}</span>`).join("")}</div>` : ""));
 
   let dh="";
   DIMS.forEach(d=>{
@@ -1668,24 +1834,24 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
     let ph="";
     d.poles.forEach(p=>{ const n=c[p.k]; const w=n/maxN*100; const isDom=dom===p.k;
       const nLabel = n>0 ? '·'+(Number.isInteger(n)?n:n.toFixed(1)) : '';
-      ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${p.label} ${nLabel}</span></div>`; });
-    dh+=`<div class="dim"><div class="top"><span>${d.name}${cov[d.key] < COV_MIN ? `<span class="cov-low">数据不足</span>`:""}</span><b>${dom==="混合"?"混合 / 未定":d.poles.find(p=>p.k===dom).label}</b></div><div class="poles">${ph}</div></div>`;
+      ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${plabel(p)} ${nLabel}</span></div>`; });
+    dh+=`<div class="dim"><div class="top"><span>${dname(d)}${cov[d.key] < COV_MIN ? `<span class="cov-low">${g('数据不足','Insufficient data')}</span>`:""}</span><b>${dom==="混合"?g("混合 / 未定","Mixed / Undetermined"):plabel(d.poles.find(p=>p.k===dom))}</b></div><div class="poles">${ph}</div></div>`;
   });
   $("dims").innerHTML=dh;
 
   const ranked=rankArch(counts).filter(x=>x.a!==primary);
-  const secs=ranked.filter(x=> precisionMode()==="long" ? x.score>0.78 : x.score>0).slice(0,2).map(x=>x.a.name);
-  $("secLine").innerHTML = secs.length ? `也较契合：<b>${secs.join("、")}</b>` : `你几乎只契合 <b>${primary.name}</b>`;
+  const secs=ranked.filter(x=> precisionMode()==="long" ? x.score>0.78 : x.score>0).slice(0,2).map(x=>archName(x.a));
+  $("secLine").innerHTML = secs.length ? `${g('也较契合：','Also close to: ')}<b>${secs.join(g('、',', '))}</b>` : `${g('你几乎只契合 ','You align almost solely with ')}<b>${archName(primary)}</b>`;
   renderFigures(primary, secs);
 
   const isLong = precisionMode()==="long";
   const topAll = rankArch(counts).slice(0,5);
   const maxSc = Math.max(1e-6, topAll[0].score);
-  $("topList").innerHTML = `<div class="ttl">匹配度最高的阵营</div>` + topAll.map(x=>{
+  $("topList").innerHTML = `<div class="ttl">${g('匹配度最高的阵营','Top matching camps')}</div>` + topAll.map(x=>{
     const isMe = x.a===primary;
     const w = Math.max(6, Math.round(x.score/maxSc*100));
     const sc = isLong ? Math.round(x.score*100)+"%" : ((x.score>0?"+":"") + x.score);
-    return `<div class="item ${isMe?'me':''}"><span class="nm" title="${x.a.name}">${x.a.name}</span><span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
+    return `<div class="item ${isMe?'me':''}"><span class="nm" title="${archName(x.a)}">${archName(x.a)}</span><span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
   }).join("");
 
   if(isHistory){
@@ -1698,17 +1864,17 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
       const hitOpts = sel.filter(ai => q.options[ai].tags.some(t=>{
         const [dim,pole]=t.split(":"); return need[dim]===pole && res[dim]===pole; }));
       if(hitOpts.length){
-        const optsText = hitOpts.map(ai => q.options[ai].t).join(" ／ ");
-        const multiTag = sel.length > 1 ? ` <small style="color:var(--muted)">（本题共选 ${sel.length} 项）</small>` : "";
-        sigHtml+=`<div class="item"><div class="q">领域 ${q.domain}：${q.scene}</div>你的选择：${optsText}${multiTag}</div>`;
+        const optsText = hitOpts.map(ai => q.options[ai].t_en||q.options[ai].t).join(" ／ ");
+        const multiTag = sel.length > 1 ? ` <small style="color:var(--muted)">${g('（本题共选 '+sel.length+' 项）','( '+sel.length+' options chosen for this question)')}</small>` : "";
+        sigHtml+=`<div class="item"><div class="q">${g('领域 ','Domain ')}${q.domain_en||q.domain}：${q.scene_en||q.scene}</div>${g('你的选择：','Your choice: ')}${optsText}${multiTag}</div>`;
       }
     });
-    $("sigList").innerHTML = sigHtml || "<div class='item'>没有明显代表性的单项选择。</div>";
+    $("sigList").innerHTML = sigHtml || `<div class='item'>${g('没有明显代表性的单项选择。','No single representative choice.')}</div>`;
   }
 
   setSpecMode(SPEC_MODE, true);
 
-  if(!isHistory){
+  if(!isHistory && !_suppressHistory){
     const entry = {
       ts: Date.now(),
       code: DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join(""),
@@ -1740,8 +1906,8 @@ function dimPos(key){
 function dimPct(key){ return Math.round(Math.abs(dimPos(key))*100); }
 function dimLean(key){
   const d = DIMS.find(x=>x.key===key), p = dimPos(key);
-  if(Math.abs(p)<0.08) return "居中 / 混合";
-  return p<0 ? d.poles[0].label : d.poles[1].label;
+  if(Math.abs(p)<0.08) return g("居中 / 混合","Centered / Mixed");
+  return plabel(p<0 ? d.poles[0] : d.poles[1]);
 }
 
 function setSpecMode(m, silent){
@@ -1763,7 +1929,7 @@ function buildSpecSels(){
   let html="";
   need.forEach(a=>{
     html += `<label class="sp-sel"><span>${axisLabels[a]}</span><select onchange="specDimChange('${a}',this.value)">`+
-      DIMS.map(d=>`<option value="${d.key}" ${SPEC_DIMS[a]===d.key?"selected":""}>${d.name}</option>`).join("")+
+      DIMS.map(d=>`<option value="${d.key}" ${SPEC_DIMS[a]===d.key?"selected":""}>${dname(d)}</option>`).join("")+
       `</select></label>`;
   });
   $("spSels").innerHTML = html;
@@ -1792,8 +1958,8 @@ function render1D(stage){
     <line x1="${x0}" y1="${y}" x2="${x1}" y2="${y}" stroke="var(--svg-line)" stroke-width="4" stroke-linecap="round"/>
     <line x1="${(x0+x1)/2}" y1="${y-12}" x2="${(x0+x1)/2}" y2="${y+12}" stroke="var(--svg-muted)" stroke-width="2"/>
     <circle cx="${cx.toFixed(1)}" cy="${y}" r="10" fill="var(--svg-accent)" stroke="#fff" stroke-width="3"/>
-    <text x="${x0}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${p0.label}</text>
-    <text x="${x1}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${p1.label}</text>
+    <text x="${x0}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${plabel(p0)}</text>
+    <text x="${x1}" y="${y-24}" font-size="13" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(p1)}</text>
     <text x="${cx.toFixed(1)}" y="${y+34}" font-size="13" fill="var(--svg-accent)" text-anchor="middle" font-weight="700">${lean} · ${mag}%</text>
   </svg>`;
 }
@@ -1810,12 +1976,12 @@ function render2D(stage){
     <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+(px+1)/2*sz}" y2="${oy+sz/2}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
     <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+sz/2}" y2="${my.toFixed(1)}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
     <circle cx="${mx.toFixed(1)}" cy="${my.toFixed(1)}" r="9" fill="var(--svg-accent)" stroke="#fff" stroke-width="3"/>
-    <text x="${ox}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${dx.poles[0].label}</text>
-    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dx.poles[1].label}</text>
-    <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="middle" font-weight="600">${dx.name} →</text>
-    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.poles[1].label}</text>
-    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.poles[0].label}</text>
-    <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dy.name} ↑</text>
+    <text x="${ox}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${plabel(dx.poles[0])}</text>
+    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dx.poles[1])}</text>
+    <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="middle" font-weight="600">${dname(dx)} →</text>
+    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dy.poles[1])}</text>
+    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dy.poles[0])}</text>
+    <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dname(dy)} ↑</text>
   </svg>`;
 }
 
@@ -1860,8 +2026,8 @@ function render3D(stage){
       ctx.strokeStyle=col; ctx.lineWidth=2.5;
       ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
       ctx.fillStyle=col; ctx.font="bold 12px sans-serif";
-      ctx.fillText(d.poles[1].label, b[0]+4, b[1]);
-      const n=proj(dir.map(x=>-x)); ctx.fillText(d.poles[0].label, n[0]-4, n[1]);
+      ctx.fillText(plabel(d.poles[1]), b[0]+4, b[1]);
+      const n=proj(dir.map(x=>-x)); ctx.fillText(plabel(d.poles[0]), n[0]-4, n[1]);
     });
     // 用户位置点
     const P=[dimPos(dx.key), dimPos(dy.key), dimPos(dz.key)];
@@ -1909,7 +2075,7 @@ function renderRadar(stage){
     axesSvg += `<line x1="${cx}" y1="${cy}" x2="${ox.toFixed(1)}" y2="${oy.toFixed(1)}" stroke="var(--svg-line)" stroke-width="1"/>`;
     const lx=cx+Math.cos(a)*(R+22), ly=cy+Math.sin(a)*(R+22);
     const anchor = Math.abs(Math.cos(a))<0.3 ? "middle" : (Math.cos(a)>0?"start":"end");
-    labels += `<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" font-size="12" fill="var(--svg-ink)" text-anchor="${anchor}" font-weight="600">${d.name}</text>`;
+    labels += `<text x="${lx.toFixed(1)}" y="${(ly+4).toFixed(1)}" font-size="12" fill="var(--svg-ink)" text-anchor="${anchor}" font-weight="600">${dname(d)}</text>`;
   });
   const poly = coords.map(c=>c[0].toFixed(1)+","+c[1].toFixed(1)).join(" ");
   stage.innerHTML = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
@@ -1922,13 +2088,13 @@ function renderRadar(stage){
 
 function renderLegend(){
   if(SPEC_MODE===4){
-    $("spLegend").innerHTML = "雷达图：每个轴 = 一个维度；你离中心越远，表示该维度越偏向外侧所标的极（poles[1]）。";
+    $("spLegend").innerHTML = g("雷达图：每个轴 = 一个维度；你离中心越远，表示该维度越偏向外侧所标的极（poles[1]）。", "Radar chart: each axis is a dimension; the farther from center, the more you lean toward the pole labeled at the outer end (poles[1]).");
     return;
   }
   const axes = SPEC_MODE===1 ? ["x"] : SPEC_MODE===2 ? ["x","y"] : ["x","y","z"];
   let html = axes.map(a=>{
     const d = DIMS.find(x=>x.key===SPEC_DIMS[a]);
-    return `<div><b>${a.toUpperCase()} · ${d.name}</b>：${dimLean(d.key)}（${dimPct(d.key)}%）</div>`;
+    return `<div><b>${a.toUpperCase()} · ${dname(d)}</b>：${dimLean(d.key)}（${dimPct(d.key)}%）</div>`;
   }).join("");
   $("spLegend").innerHTML = html;
 }
@@ -1962,19 +2128,19 @@ async function downloadCard(){
   const x=c.getContext("2d");
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
   x.fillStyle="#3b6df0"; x.fillRect(0,0,W,12);
-  x.fillStyle="#1f2933"; x.font="bold 30px sans-serif"; x.fillText("我的意识形态画像", 40, 62);
-  x.fillStyle="#3b6df0"; x.font="bold 16px monospace"; x.fillText("签名 "+DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join(""), 40, 94);
-  x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(primary.name, 40, 144);
+  x.fillStyle="#1f2933"; x.font="bold 30px sans-serif"; x.fillText(g("我的意识形态画像","My Ideological Profile"), 40, 62);
+  x.fillStyle="#3b6df0"; x.font="bold 16px monospace"; x.fillText(g("签名 ","Signature ")+DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join(""), 40, 94);
+  x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(archName(primary), 40, 144);
   x.fillStyle="#1f2933"; x.font="16px sans-serif";
-  const used=wrapText(x, primary.desc, 40, 178, W-80, 26);
+  const used=wrapText(x, primary.desc_en||primary.desc, 40, 178, W-80, 26);
   let y=178+used*26+12;
   const figs=FIGURES[primary.name]||[];
   if(figs.length){
-    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("代表人物", 40, y); y+=8;
+    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText(g("代表人物","Representative figures"), 40, y); y+=8;
     for(const f of figs){
       const svg=makePortrait(f.name+"|"+f.en).replace("<svg ", '<svg width="100" height="100" ');
       try{ const img=await svgToImage(svg); x.drawImage(img,40,y,50,50); }catch(e){}
-      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText(f.name+(f.en?("  "+f.en):""), 100, y+18);
+      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText((f.en||f.name), 100, y+18);
       x.fillStyle="#6b7785"; x.font="12px sans-serif"; x.fillText((f.years||"")+(f.role?(" · "+f.role):""), 100, y+36);
       y+=62;
     }
@@ -1983,32 +2149,36 @@ async function downloadCard(){
   x.font="14px sans-serif";
   DIMS.forEach(d=>{
     const frac=(dimPos(d.key)+1)/2;
-    x.fillStyle="#6b7785"; x.fillText(d.name, 40, y);
+    x.fillStyle="#6b7785"; x.fillText(dname(d), 40, y);
     x.fillStyle="#e2e8f0"; x.fillRect(150, y-12, 460, 14);
     x.fillStyle="#3b6df0"; x.fillRect(150, y-12, frac*460, 14);
     x.fillStyle="#1f2933"; x.fillText(dimLean(d.key)+" "+dimPct(d.key)+"%", 620, y);
     y+=42;
   });
   y+=12;
-  x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText("匹配度最高的阵营", 40, y); y+=24;
+  x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText(g("匹配度最高的阵营","Closest-matching camps"), 40, y); y+=24;
   const isLong=precisionMode()==="long";
   const topAll=rankArch(RESULT_COUNTS).slice(0,5);
-  topAll.forEach(xx=>{ const isMe=xx.a===primary; x.fillStyle=isMe?"#3b6df0":"#1f2933"; x.font=(isMe?"bold ":"")+"14px sans-serif"; const sc=isLong?Math.round(xx.score*100)+"%":((xx.score>0?"+":"")+xx.score); x.fillText((isMe?"★ ":"")+xx.a.name+"  （"+sc+"）", 40, y); y+=24; });
-  x.fillStyle="#6b7785"; x.font="13px sans-serif"; x.fillText("意识形态测试 · 自适应版 · 教育用途", 40, H-26);
+  topAll.forEach(xx=>{ const isMe=xx.a===primary; x.fillStyle=isMe?"#3b6df0":"#1f2933"; x.font=(isMe?"bold ":"")+"14px sans-serif"; const sc=isLong?Math.round(xx.score*100)+"%":((xx.score>0?"+":"")+xx.score); x.fillText((isMe?"★ ":"")+archName(xx.a)+"  （"+sc+"）", 40, y); y+=24; });
+  x.fillStyle="#6b7785"; x.font="13px sans-serif"; x.fillText(g("意识形态测试 · 自适应版 · 教育用途","Political Spectrum Test · Adaptive · Educational use"), 40, H-26);
   try{
-    const a=document.createElement("a"); a.download="意识形态画像.png"; a.href=c.toDataURL("image/png"); a.click();
-    toast("已保存为图片");
-  }catch(e){ alert("导出图片失败：" + e.message); }
+    const a=document.createElement("a"); a.download=g("意识形态画像.png","ideology-profile.png"); a.href=c.toDataURL("image/png"); a.click();
+    toast(g("已保存为图片","Saved as image"));
+  }catch(e){ alert(g("导出图片失败：","Failed to export image: ") + e.message); }
 }
 function copySummary(){
   if(!RESULT_COUNTS) return;
   const res=dominantPoles(RESULT_COUNTS);
   const primary=matchPrimary(RESULT_COUNTS);
   const sig=DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join("");
-  const dimsTxt=DIMS.map(d=>`${d.name}：${dimLean(d.key)}（${dimPct(d.key)}%）`).join("；");
-  const figs=(FIGURES[primary.name]||[]).map(f=>f.name).join("、");
-  const text=`【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;
-  const done=()=>toast("已复制结果摘要");
+  const sep = CUR_LANG==="en" ? "; " : "；";
+  const fsep = CUR_LANG==="en" ? ", " : "、";
+  const dimsTxt=DIMS.map(d=>`${dname(d)}: ${dimLean(d.key)} (${dimPct(d.key)}%)`).join(sep);
+  const figs=(FIGURES[primary.name]||[]).map(f=>f.en||f.name).join(fsep);
+  const text = CUR_LANG==="en"
+    ? `【My Ideological Profile】\nDimensional signature: ${sig}\nClosest camp: ${archName(primary)}\n${primary.desc_en||primary.desc}\n\nDimensional leanings:\n${dimsTxt}\nRepresentative figures: ${figs}\n—— Political Spectrum Test · Adaptive (educational use)`
+    : `【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;
+  const done=()=>toast(g("已复制结果摘要","Result summary copied"));
   if(navigator.clipboard && navigator.clipboard.writeText){
     navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));
   } else fallbackCopy(text,done);
@@ -2019,7 +2189,7 @@ function fallbackCopy(text,done){
 }
 function renderOverview(){
   const el=$("ovDims"); if(!el) return;
-  el.innerHTML=DIMS.map(d=>`<div class="ov-dim"><span class="ov-name">${d.name}</span><span class="ov-poles">${d.poles[0].label} ↔ ${d.poles[1].label}</span></div>`).join("");
+  el.innerHTML=DIMS.map(d=>`<div class="ov-dim"><span class="ov-name">${dname(d)}</span><span class="ov-poles">${plabel(d.poles[0])} ↔ ${plabel(d.poles[1])}</span></div>`).join("");
   const cn=$("ovArchCount"); if(cn) cn.textContent = ARCH.length;
 }
 
@@ -2030,19 +2200,19 @@ function archSig(a){
   return keys.map(k=>{
     const d = DIMS.find(x=>x.key===k);
     const p = d && d.poles.find(pp=>pp.k===a.need[k]);
-    return p ? p.label : k;
+    return p ? plabel(p) : k;
   }).join(" · ");
 }
 function renderArchList(list){
-  const g=$("archGrid"); if(!g) return;
-  if(!list.length){ g.innerHTML='<div class="arch-empty">没有匹配的阵营，换个关键词试试。</div>'; return; }
-  g.innerHTML = list.map(a=>{
+  const grid=$("archGrid"); if(!grid) return;
+  if(!list.length){ grid.innerHTML='<div class="arch-empty">'+g('没有匹配的阵营，换个关键词试试。','No matching camps — try another keyword.')+'</div>'; return; }
+  grid.innerHTML = list.map(a=>{
     const gi = ARCH.indexOf(a)+1;
     const sig = archSig(a);
     const figs = FIGURES[a.name] || [];
     let figsHtml = '';
     if(figs.length){
-      figsHtml = '<div class="ac-figs-toggle" onclick="this.closest(\'.arch-card\').classList.toggle(\'expanded\');event.stopPropagation();">代表人物（'+figs.length+'）</div>';
+      figsHtml = '<div class="ac-figs-toggle" onclick="this.closest(\'.arch-card\').classList.toggle(\'expanded\');event.stopPropagation();">'+g('代表人物','Representative figures')+'（'+figs.length+'）</div>';
       figsHtml += '<div class="ac-figs-detail">';
       figs.forEach(f=>{
         let detail = '';
@@ -2060,7 +2230,7 @@ function renderArchList(list){
         figsHtml += '<div class="ac-fig-mini">'+
           '<div class="fig-avatar" title="'+f.name+'">'+makePortrait(f.name+'|'+(f.en||''))+'</div>'+
           '<div class="fig-body">'+
-          '<div class="fig-name">'+f.name+(f.en?'<span class="en">'+f.en+'</span>':'')+'</div>'+
+          '<div class="fig-name">'+(f.en||f.name)+(f.en?'<span class="en">'+f.name+'</span>':'')+'</div>'+
           '<div class="fig-meta">'+(f.years||'')+(f.role?(' · '+f.role):'')+'</div>'+
           '<div class="fig-note">'+(f.note||'')+'</div>'+
           detail+
@@ -2069,11 +2239,11 @@ function renderArchList(list){
       figsHtml += '</div>';
     }
     return `<div class="arch-card">
-      <div class="ac-top"><span class="ac-idx">${String(gi).padStart(2,'0')}</span><span class="ac-name">${a.name}</span></div>
+      <div class="ac-top"><span class="ac-idx">${String(gi).padStart(2,'0')}</span><span class="ac-name">${archName(a)}</span></div>
       <div class="ac-sig">${sig}</div>
-      <div class="ac-desc">${a.desc}</div>
-      <div class="ac-detail">${a.detail}</div>
-      <div class="ac-tenets">${a.tenets.map(t=>'<span>'+t+'</span>').join('')}</div>
+      <div class="ac-desc">${a.desc_en||a.desc}</div>
+      <div class="ac-detail">${a.detail_en||a.detail}</div>
+      <div class="ac-tenets">${(a.tenets_en||a.tenets).map(t=>'<span>'+t+'</span>').join('')}</div>
       ${figsHtml}
     </div>`;
   }).join("");
@@ -2088,7 +2258,7 @@ function openArch(){
 function closeArch(){ $("archModal").classList.add("hidden"); }
 function filterArch(q){
   q=(q||"").trim();
-  const list = !q ? ARCH : ARCH.filter(a=>a.name.includes(q));
+  const list = !q ? ARCH : ARCH.filter(a=>a.name.includes(q) || (a.name_en && a.name_en.toLowerCase().includes(q.toLowerCase())));
   renderArchList(list);
 }
 
@@ -2098,16 +2268,16 @@ function renderChangelog(){
   const latest = CHANGELOG[CHANGELOG.length-1];
   const st = latest.stats || {};
   $("clSummary").innerHTML = `
-    <div class="cl-stat"><div class="num">${st.questions||'?'}</div><div class="lbl">题库总量</div></div>
-    <div class="cl-stat"><div class="num">${st.ideologies||'?'}</div><div class="lbl">意识形态</div></div>
-    <div class="cl-stat"><div class="num">${st.domains||'?'}</div><div class="lbl">领域</div></div>
-    <div class="cl-stat"><div class="num">${CHANGELOG.length}</div><div class="lbl">更新次数</div></div>`;
+    <div class="cl-stat"><div class="num">${st.questions||'?'}</div><div class="lbl">${g('题库总量','Questions')}</div></div>
+    <div class="cl-stat"><div class="num">${st.ideologies||'?'}</div><div class="lbl">${g('意识形态','Ideologies')}</div></div>
+    <div class="cl-stat"><div class="num">${st.domains||'?'}</div><div class="lbl">${g('领域','Domains')}</div></div>
+    <div class="cl-stat"><div class="num">${CHANGELOG.length}</div><div class="lbl">${g('更新次数','Updates')}</div></div>`;
   $("clList").innerHTML = CHANGELOG.slice().reverse().map((e,i)=>{
     const isLatest = i===0;
     return `<div class="cl-entry ${isLatest?'latest':''}">
       <div class="cl-top">
         <span class="cl-ver">${e.title||''}</span>
-        ${isLatest?'<span class="cl-new">最新</span>':''}
+        ${isLatest?'<span class="cl-new">'+g('最新','Latest')+'</span>':''}
         <span class="cl-date">${e.date}</span>
       </div>
       <ul class="cl-items">${(e.items||[]).map(it=>`<li>${it}</li>`).join('')}</ul>
@@ -2119,7 +2289,8 @@ function closeChangelog(){ $("clModal").classList.add("hidden"); }
 
 /* ---------- 起始页：检测续测 ---------- */
 (function init(){
-  loadTheme(); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn(); checkSharedOnLoad();
+  applyTheme(getTheme()); loadSettings(); applySettings(); loadAccounts(); renderPickers(); refreshAccUI(); updateThemeBtn(); checkSharedOnLoad();
+  applyLang();
   renderOverview();
   if(window.matchMedia){
     window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ()=>{ if(getTheme()==="auto") applyTheme("auto"); });
