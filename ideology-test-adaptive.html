@@ -201,6 +201,11 @@
   .hist-item .info b{color:var(--ink);font-size:14px;}
   .hist-item .info small{display:block;color:var(--muted);font-size:11px;}
   .hist-empty{font-size:13px;color:var(--muted);}
+  .cov-low{font-size:10px;font-weight:700;color:#b8860b;background:rgba(184,134,11,.16);padding:1px 6px;border-radius:6px;margin-left:6px;vertical-align:middle;}
+  .cov-note{font-size:12px;margin:6px 0 2px;line-height:1.5;}
+  .cov-note .warn{color:#b8860b;}
+  .cov-note .hint{color:var(--muted);}
+  #earlyBtn:disabled{opacity:.45;cursor:not-allowed;}
   .cmp-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:8px 0 4px;font-size:12px;color:var(--muted);}
   .cmp-bar .cmp-count b{color:var(--accent);}
   .cmp-bar .cmp-acts{display:flex;gap:6px;}
@@ -731,9 +736,10 @@
     <div style="margin-top:8px;"><span class="multi-hint">☑ 可多选 — 点击切换选中 / 取消</span></div>
     <div class="opts" id="opts"></div>
     <div class="sel-hint" id="selHint"><span class="sel-badge">0</span> <span>已选 — 至少选 1 项方可继续</span></div>
-    <div class="kbd-hint">键盘操作：<b>↑↓←→</b> 或 <b>W A S D</b> 移动焦点 · <b>空格</b> 选中 / 取消当前项 · <b>回车</b> 确认并下一题</div>
+    <div class="kbd-hint">键盘操作：<b>↑↓←→</b> 或 <b>W A S D</b> 移动焦点 · <b>空格</b> 选中 / 取消当前项 · <b>回车</b> 确认并下一题 · <b>Esc</b> 提前结束出结果（满 5 题后）</div>
     <div class="row">
       <button class="btn ghost" id="prevBtn" onclick="prev()">← 上一题</button>
+      <button class="btn ghost" id="earlyBtn" onclick="finishEarly()" disabled title="至少答 5 题后可随时结束并直接出结果">结束并出结果 ✕</button>
       <button class="btn" id="nextBtn" onclick="next()">下一题 →</button>
     </div>
   </section>
@@ -743,6 +749,7 @@
     <div style="font-size:13px;color:var(--muted);margin-bottom:6px;">你的维度签名</div>
     <div class="code" id="code"></div>
     <div class="prec" id="precTag"></div>
+    <div class="cov-note" id="covNote"></div>
     <div class="primary">
       <div class="name" id="pName"></div>
       <div class="desc" id="pDesc"></div>
@@ -900,11 +907,12 @@ function refreshAccUI(){
     const d=new Date(e.ts);
     const ds = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
     const top2 = (e.top && e.top.length>1) ? `<small class="top2">亦契合：${e.top[1]}</small>` : "";
+    const meta = `<small>${ds}${(e.n!=null?` · ${e.n}题`:"")}${e.partial?' · 提前结束':''}</small>`;
     const sel = compareSel.includes(e.ts) ? "sel" : "";
     const btn = compareSel.includes(e.ts) ? "✓已选" : "+对比";
     return `<div class="hist-item ${sel}" onclick="viewHistory(${e.ts})">
       <span class="code">${e.code}</span>
-      <div class="info"><b>${e.primary}</b><small>${ds}</small>${top2}</div>
+      <div class="info"><b>${e.primary}</b>${meta}${top2}</div>
       <button class="mini cmp" onclick="event.stopPropagation(); toggleCompare(${e.ts})">${btn}</button>
     </div>`;
   }).join("") : `<div class="hist-empty">还没有完成过测试，去测一次吧。</div>`);
@@ -939,7 +947,8 @@ function deleteAccount(id){
 }
 function viewHistory(ts){
   const e=getCur().history.find(h=>h.ts===ts); if(!e) return;
-  closeAcc(); renderResultFromData(e.counts, e.primary, true);
+  if(e.n!=null) TOTAL=e.n;
+  closeAcc(); renderResultFromData(e.counts, e.primary, true, e.partial);
   window.scrollTo({top:0, behavior:"smooth"});
 }
 // 把某次测试的 counts 折算成某维 [-1,1] 连续坐标（不依赖全局 RESULT_COUNTS）
@@ -1058,6 +1067,15 @@ function setQCustom(){
 }
 function answeredCount(){ return seq.filter(id=>{ const a=answers[id]; return a!=null && (Array.isArray(a)?a.length>0:true); }).length; }
 
+/* ---------- 提前结束（随时出结果） ---------- */
+const MIN_EARLY_EXIT = 5;        // 至少答满此题数才允许提前结束出结果
+const COV_MIN = 2;               // 某维度被触及的加权计数低于此值 → 标注「数据不足」
+function canEarlyExit(){ return answeredCount() >= MIN_EARLY_EXIT; }
+// 维度覆盖度：每维的加权命中总数（来自 counts 本身，回看历史也能用）
+function dimCov(counts){
+  const cov={}; DIMS.forEach(d=>{ const c=counts[d.key]; cov[d.key]=(c[d.poles[0].k]||0)+(c[d.poles[1].k]||0); }); return cov;
+}
+
 /* ---------- 多选支持 ---------- */
 // 兼容旧版单选数据：answers[qid] 可能是数字（旧）或数组（新）
 function getSel(qid){
@@ -1174,6 +1192,7 @@ function showQuestion(){
   $("prevBtn").disabled=(pos===0);
   $("nextBtn").disabled=(sel.length===0);
   $("nextBtn").textContent=(pos===TOTAL-1)?"查看结果 →":"下一题 →";
+  const eb=$("earlyBtn"); if(eb){ eb.disabled=!canEarlyExit(); eb.title=`至少答 ${MIN_EARLY_EXIT} 题后可随时结束并直接出结果（已答 ${answeredCount()} 题）`; }
 }
 function applyFocus(){
   const opts=$("opts"); if(!opts) return;
@@ -1209,6 +1228,12 @@ function onKey(e){
     sfx("select");
     if(pos<TOTAL-1){ pos++; if(seq[pos]===undefined) selectNext(); persist(); showQuestion(); }
     else finish();
+  }
+  // Esc = 随时提前结束并出结果（达到最低题数下限后）
+  if(kk==="escape"){
+    e.preventDefault();
+    if(canEarlyExit()) finishEarly();
+    else toast(`至少答 ${MIN_EARLY_EXIT} 题才能提前出结果`);
   }
 }
 document.addEventListener("keydown", onKey);
@@ -1426,14 +1451,21 @@ function renderFigures(primary, secs){
   $("figures").innerHTML = html;
 }
 
-function finish(){
+function finishWith(answeredN, partial){
   sfx("finish");
+  // 让精度模式 / 徽章 / 历史都按「实际出结果所用的题数」计算，而非原计划总题数
+  TOTAL = answeredN;
   const counts=tallyDims();
-  renderResultFromData(counts, null, false);
+  renderResultFromData(counts, null, false, partial);
+}
+function finish(){ finishWith(answeredCount(), false); }
+function finishEarly(){
+  if(!canEarlyExit()){ toast(`至少答 ${MIN_EARLY_EXIT} 题才能提前出结果`); return; }
+  finishWith(answeredCount(), true);
 }
 
 // 渲染结果面板；forcePrimaryName 用于回看历史；isHistory 时跳过单项明细
-function renderResultFromData(counts, forcePrimaryName, isHistory){
+function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   RESULT_COUNTS = counts;
   const res=dominantPoles(counts);
   const primary = forcePrimaryName ? (ARCH.find(a=>a.name===forcePrimaryName) || matchPrimary(counts)) : matchPrimary(counts);
@@ -1443,9 +1475,15 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
 
   $("code").textContent = DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join("");
   const pm = precisionMode();
+  const cov = dimCov(counts);
+  const lowDims = DIMS.filter(d=> cov[d.key] < COV_MIN).map(d=>d.name);
+  const effN = TOTAL;   // 现在 = 实际出结果所用题数（提前结束时小于原计划总题数）
   $("precTag").innerHTML = pm==="long"
-    ? `<span class="badge hi">高精度 · 据 ${TOTAL} 题在 ${ARCH.length} 类中精细定位</span>`
-    : `<span class="badge">标准精度 · ${TOTAL} 题定位大类；更多题可细分至 ${ARCH.length} 类</span>`;
+    ? `<span class="badge hi">高精度 · 据 ${effN} 题在 ${ARCH.length} 类中精细定位${partial?'（提前结束）':''}</span>`
+    : `<span class="badge">标准精度 · 据 ${effN} 题定位大类${partial?'（提前结束 · 结果较粗）':'；更多题可细分至 '+ARCH.length+' 类'}</span>`;
+  $("covNote").innerHTML = lowDims.length
+    ? `<span class="warn">⚠ 以下维度答题偏少、结果较初步：${lowDims.join("、")}。继续作答可提升精度。</span>`
+    : (partial ? `<span class="hint">已提前结束 · 基于 ${effN} 题出结果；继续作答可提升精度。</span>` : "");
   $("pName").textContent = primary.name;
   $("pDesc").innerHTML = `<div>${primary.desc}</div>` +
     (primary.detail ? `<div class="pdetail">${primary.detail}</div>` : "") +
@@ -1459,7 +1497,7 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
     d.poles.forEach(p=>{ const n=c[p.k]; const w=n/maxN*100; const isDom=dom===p.k;
       const nLabel = n>0 ? '·'+(Number.isInteger(n)?n:n.toFixed(1)) : '';
       ph+=`<div class="pole ${isDom?'dom':''}"><span class="fill" style="width:${w}%"></span><span class="lab">${p.label} ${nLabel}</span></div>`; });
-    dh+=`<div class="dim"><div class="top"><span>${d.name}</span><b>${dom==="混合"?"混合 / 未定":d.poles.find(p=>p.k===dom).label}</b></div><div class="poles">${ph}</div></div>`;
+    dh+=`<div class="dim"><div class="top"><span>${d.name}${cov[d.key] < COV_MIN ? `<span class="cov-low">数据不足</span>`:""}</span><b>${dom==="混合"?"混合 / 未定":d.poles.find(p=>p.k===dom).label}</b></div><div class="poles">${ph}</div></div>`;
   });
   $("dims").innerHTML=dh;
 
@@ -1504,7 +1542,9 @@ function renderResultFromData(counts, forcePrimaryName, isHistory){
       code: DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join(""),
       primary: primary.name,
       counts: JSON.parse(JSON.stringify(counts)),
-      top: topAll.map(x=>x.a.name)
+      top: topAll.map(x=>x.a.name),
+      n: TOTAL,
+      partial: !!partial
     });
   }
 }
