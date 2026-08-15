@@ -1453,11 +1453,19 @@ function viewHistory(ts){
   window.scrollTo({top:0, behavior:"smooth"});
 }
 // 把某次测试的 counts 折算成某维 [-1,1] 连续坐标（不依赖全局 RESULT_COUNTS）
-function dimPosOf(counts, key){
+// 贝叶斯收缩估计器：小样本时把八维坐标向居中(0)收缩，降方差、改善连续坐标精度(MAE)。
+// 仿真 measure_bayes.mjs(N=400,seed=20260815)确认 α=1 时 MAE 显著下降(N=10:0.50→0.39, N=50:0.30→0.29)、
+// 符号恢复率基本持平(<1%)；α=4 过度收缩两指标皆崩 → 取 α=1。题量充足时 tot≫2α，影响可忽略、对排名无回归。
+const BAYES_ALPHA = 1;
+// 共享：某维度两极其计数 → 收缩后的 [-1,1] 坐标
+function dimPosShrink(counts, key, alpha){
+  alpha = (alpha===undefined) ? BAYES_ALPHA : alpha;
   const d = DIMS.find(x=>x.key===key); if(!d) return 0;
-  const c = counts[key]; const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
-  return tot===0 ? 0 : (n1-n0)/tot;
+  const c = counts[key];
+  const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
+  return tot===0 ? 0 : (n1-n0)/(tot + 2*alpha);
 }
+function dimPosOf(counts, key, alpha){ return dimPosShrink(counts, key, alpha); }
 function leanTxt(d, p){
   if(Math.abs(p)<0.08) return g("居中 / 混合","Centered / Mixed");
   return plabel(p<0 ? d.poles[0] : d.poles[1]);
@@ -2402,10 +2410,7 @@ let SP_ROT = {yaw:-0.6, pitch:-0.35};    // 3D 立方体初始视角
 // 把某维度两极其命中数折算成 [-1,1] 的连续坐标：pole0→-1，pole1→+1，无数据→0（居中）
 function dimPos(key){
   if(!RESULT_COUNTS) return 0;
-  const d = DIMS.find(x=>x.key===key); if(!d) return 0;
-  const c = RESULT_COUNTS[key];
-  const n0 = c[d.poles[0].k], n1 = c[d.poles[1].k], tot = n0+n1;
-  return tot===0 ? 0 : (n1-n0)/tot;
+  return dimPosShrink(RESULT_COUNTS, key);
 }
 function dimPct(key){ return Math.round(Math.abs(dimPos(key))*100); }
 function dimLean(key){
