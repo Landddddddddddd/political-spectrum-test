@@ -1,0 +1,5 @@
+session_id,question_id,chosen_option,self_label,retake_of
+sEXAMPLE1,1,0;2,自由意志主义,
+sEXAMPLE1,3,1,自由意志主义,
+sEXAMPLE1,5,0;3,自由意志主义,
+sEXAMPLE2,1,1,社会民主,sEXAMPLE1

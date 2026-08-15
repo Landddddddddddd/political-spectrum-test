@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>意识形态测试 · 校准采集（D13）</title>
+<style>
+  :root{ --bg:#fff; --surface:#f5f6f8; --border:#e2e4e9; --text:#1c1d21; --muted:#6b6f76; --purple:#534AB7; --teal:#0F6E56; --blue:#2F6FB0; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:24px 16px;max-width:760px;margin:0 auto;}
+  h1{font-size:20px;font-weight:600;margin:0 0 4px;}
+  .sub{color:var(--muted);font-size:13px;margin:0 0 18px;}
+  .note{font-size:12px;color:var(--muted);background:var(--surface);border-radius:10px;padding:12px 14px;margin:14px 0;}
+  .card{background:var(--surface);border-radius:12px;padding:18px;margin:14px 0;}
+  .bar{height:10px;border-radius:6px;background:var(--border);overflow:hidden;margin:4px 0 10px;}
+  .bar > i{display:block;height:100%;background:var(--purple);}
+  .qhead{display:flex;justify-content:space-between;align:baseline;gap:10px;margin-bottom:6px;}
+  .qtxt{font-size:16px;font-weight:500;}
+  .opt{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;border:1px solid var(--border);border-radius:10px;margin:8px 0;cursor:pointer;background:#fff;transition:.12s;}
+  .opt:hover{border-color:var(--purple);}
+  .opt.on{background:#efeefc;border-color:var(--purple);}
+  .opt input{margin-top:4px;}
+  .opt .t{flex:1;}
+  button{font:inherit;border:0;border-radius:10px;padding:11px 18px;cursor:pointer;}
+  .primary{background:var(--purple);color:#fff;}
+  .ghost{background:var(--surface);color:var(--text);border:1px solid var(--border);}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+  input[type=number],input[type=text]{font:inherit;padding:8px 10px;border:1px solid var(--border);border-radius:8px;}
+  label{font-size:13px;color:var(--muted);}
+  textarea{width:100%;height:120px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;border:1px solid var(--border);border-radius:8px;padding:8px;}
+  .hidden{display:none;}
+  .pill{display:inline-block;font-size:12px;background:#e9e7fb;color:var(--purple);border-radius:999px;padding:2px 10px;margin:2px;}
+  .ok{color:var(--teal);} .err{color:#c0392b;}
+  code{background:var(--surface);padding:1px 5px;border-radius:5px;font-size:12px;}
+</style>
+</head>
+<body>
+<h1>意识形态测试 · 校准采集页（D13）</h1>
+<p class="sub">用途：收集<strong>真实人类作答</strong>，用于校准精度模型的响应噪声。本页<strong>完全本地</strong>运行，不联网上传任何数据；结果仅由你下载保存。</p>
+
+<div id="setup" class="card">
+  <div class="note">说明：受试者会跑一遍<strong>真实自适应测试</strong>（复用线上同款选题/计分逻辑），结束时<strong>自报立场</strong>。结束后可下载 CSV，每行一道题，格式 <code>session_id,question_id,chosen_option,self_label,retake_of</code>。把多份 CSV 直接首尾拼接即可汇总。</div>
+  <div class="row">
+    <label>测试题数 N：</label>
+    <input type="number" id="nQ" value="60" min="5" max="540" style="width:90px">
+    <button class="primary" id="startBtn">开始测试</button>
+  </div>
+  <div id="loadErr" class="err hidden"></div>
+</div>
+
+<div id="quiz" class="hidden">
+  <div class="qhead">
+    <span class="qtxt" id="qText"></span>
+    <span class="pill" id="qProg"></span>
+  </div>
+  <div id="opts"></div>
+  <div class="row">
+    <button class="primary" id="nextBtn">下一题</button>
+    <span id="warn" class="err"></span>
+  </div>
+</div>
+
+<div id="finish" class="hidden">
+  <div class="card">
+    <h1 style="font-size:17px">你的八维画像（仅供参考）</h1>
+    <div id="bars"></div>
+  </div>
+  <div class="card">
+    <h1 style="font-size:17px">自报立场（D13 关键字段）</h1>
+    <div class="row" style="margin-top:6px">
+      <label>你的意识形态 / 立场（自由填写，如「自由意志主义」「社会民主」「保守派」等）：</label>
+    </div>
+    <input type="text" id="selfLabel" list="archList" placeholder="可输入，或从下方 120 类中挑选" style="width:100%">
+    <datalist id="archList"></datalist>
+    <div class="row" style="margin-top:10px">
+      <label>若为<strong>重测</strong>，请填入上一次的 session_id（留空表示首次）：</label>
+    </div>
+    <input type="text" id="retakeOf" placeholder="session_id（见下方「本机上次记录」）" style="width:320px">
+    <div class="row" style="margin-top:8px">
+      <span class="pill" id="sidPill"></span>
+      <span class="muted" id="priorSids"></span>
+    </div>
+  </div>
+  <div class="card">
+    <h1 style="font-size:17px">导出数据</h1>
+    <div class="row">
+      <button class="primary" id="dlBtn">下载 CSV</button>
+      <button class="ghost" id="copyBtn">复制 CSV 文本</button>
+    </div>
+    <textarea id="csvOut" readonly></textarea>
+  </div>
+</div>
+
+<script>
+/* ===================== 移植自 ideology-test-adaptive.html 的核心算法 ===================== */
+const DIMS = [
+  {key:"ECO", name:"经济", poles:[{k:"L",label:"平等/再分配"},{k:"R",label:"自由市场"}]},
+  {key:"GOV", name:"治理", poles:[{k:"A",label:"权威/秩序"},{k:"L",label:"自由/分权"}]},
+  {key:"CUL", name:"文化", poles:[{k:"T",label:"传统"},{k:"P",label:"进步/多元"}]},
+  {key:"NAT", name:"国际", poles:[{k:"N",label:"民族优先"},{k:"C",label:"国际/开放"}]},
+  {key:"ENV", name:"生态", poles:[{k:"G",label:"发展优先"},{k:"S",label:"生态优先"}]},
+  {key:"TECH",name:"技术监控", poles:[{k:"K",label:"集中管控"},{k:"U",label:"隐私自主"}]},
+  {key:"SEC", name:"世俗信仰", poles:[{k:"E",label:"世俗公共"},{k:"F",label:"信仰入公"}]},
+  {key:"COL", name:"个人集体", poles:[{k:"I",label:"个人优先"},{k:"M",label:"共同体优先"}]},
+];
+let BANK=[], BYID={}, ARCH=[];
+let seq=[], answers={}, pos=0, TOTAL=60;
+
+function dimPosOf(counts, key){
+  const d=DIMS.find(x=>x.key===key); if(!d) return 0;
+  const c=counts[key]; const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
+  return tot===0?0:(n1-n0)/tot;
+}
+function precisionMode(){ return TOTAL<=40 ? "short" : "long"; }
+function buildDomainCounts(){ const m={}; seq.forEach(id=>{const d=BYID[id].domain; m[d]=(m[d]||0)+1;}); return m; }
+function recomputeDimCounts(){
+  const counts={}; DIMS.forEach(d=>{counts[d.key]={}; d.poles.forEach(p=>counts[d.key][p.k]=0);});
+  seq.forEach(id=>{
+    const sel=answers[id]; if(!sel||!sel.length) return;
+    const w=1/sel.length;
+    sel.forEach(ai=>{ (BYID[id].options[ai].tags||[]).forEach(t=>{ const [dim,pole]=t.split(":"); if(counts[dim]&&pole in counts[dim]) counts[dim][pole]+=w; }); });
+  });
+  return counts;
+}
+function uncertainty(dim,c){
+  const a=c[DIMS.find(d=>d.key===dim).poles[0].k];
+  const b=c[DIMS.find(d=>d.key===dim).poles[1].k];
+  const tot=a+b; return tot===0?1:1-Math.abs(a-b)/(tot+1);
+}
+function selectNext(){
+  const dcount=buildDomainCounts();
+  const dimc=recomputeDimCounts();
+  const used=new Set(seq);
+  const maxD=Math.max(1,...Object.values(dcount));
+  const unc={}; DIMS.forEach(d=>unc[d.key]=uncertainty(d.key,dimc[d.key]));
+  const mode=precisionMode();
+  const infoWeight = mode==="long"?12:5;
+  let best=null,bestScore=-1e9;
+  BANK.forEach(q=>{
+    if(used.has(q.id)) return;
+    const dc=dcount[q.domain]||0;
+    const domainScore = dc===0?1000:(maxD-dc)*10;
+    const covered=new Set();
+    q.options.forEach(o=>(o.tags||[]).forEach(t=>covered.add(t.split(":")[0])));
+    let info=0; covered.forEach(dim=>info+=unc[dim]);
+    const score=domainScore+info*infoWeight+Math.random()*0.01;
+    if(score>bestScore){bestScore=score;best=q;}
+  });
+  seq.push(best.id);
+}
+function leanLabel(d,p){
+  if(Math.abs(p)<0.08) return "居中/混合";
+  return p<0 ? d.poles[0].label : d.poles[1].label;
+}
+
+/* ===================== 流程 UI ===================== */
+const $ = id=>document.getElementById(id);
+function uuid(){ return "s"+Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+
+async function boot(){
+  try{
+    const [b,a]=await Promise.all([
+      fetch("./question_bank.json").then(r=>{if(!r.ok)throw 0;return r.json();}),
+      fetch("./arch_data.json").then(r=>{if(!r.ok)throw 0;return r.json();})
+    ]);
+    BANK=b; ARCH=a; BANK.forEach(q=>BYID[q.id]=q);
+    // 自报立场 datalist
+    const dl=$("archList");
+    ARCH.forEach(x=>{ const o=document.createElement("option"); o.value=(x.name||"")+" / "+(x.name_en||""); dl.appendChild(o); });
+    $("startBtn").disabled=false;
+  }catch(e){
+    $("loadErr").classList.remove("hidden");
+    $("loadErr").textContent="无法加载 question_bank.json / arch_data.json。请通过本地服务器打开（如在该目录运行 python3 -m http.server 然后访问 http://localhost:8000/calibrate.html），或直接部署到 GitHub Pages。";
+  }
+}
+$("startBtn").addEventListener("click",()=>{
+  TOTAL=Math.max(5,Math.min(540,parseInt($("nQ").value)||60));
+  seq=[]; answers={}; pos=0;
+  selectNext();
+  $("setup").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  renderQ();
+});
+function renderQ(){
+  const id=seq[pos]; const q=BYID[id];
+  $("qText").textContent=(pos+1)+". "+ (q.text||q.text_en||("(题干缺失 "+id+")"));
+  $("qProg").textContent=(pos+1)+" / "+TOTAL;
+  const box=$("opts"); box.innerHTML="";
+  const sel=answers[id]||[];
+  q.options.forEach((o,i)=>{
+    const div=document.createElement("label"); div.className="opt"+(sel.includes(i)?" on":"");
+    const cb=document.createElement("input"); cb.type="checkbox"; cb.checked=sel.includes(i);
+    const t=document.createElement("div"); t.className="t"; t.textContent=o.text||o.text_en||("选项"+(i+1));
+    div.appendChild(cb); div.appendChild(t);
+    div.addEventListener("click",ev=>{
+      ev.preventDefault();
+      let s=answers[id]||[];
+      if(s.includes(i)) s=s.filter(x=>x!==i); else s=[...s,i];
+      answers[id]=s; renderQ();
+    });
+    box.appendChild(div);
+  });
+  $("warn").textContent="";
+}
+$("nextBtn").addEventListener("click",()=>{
+  const id=seq[pos];
+  if(!answers[id]||!answers[id].length){ $("warn").textContent="请至少选择一个选项再继续。"; return; }
+  if(pos+1<TOTAL){ pos++; selectNext(); renderQ(); window.scrollTo({top:0,behavior:"smooth"}); }
+  else { finish(); }
+});
+function finish(){
+  $("quiz").classList.add("hidden");
+  $("finish").classList.remove("hidden");
+  // 画像
+  const counts=recomputeDimCounts();
+  const bars=$("bars"); bars.innerHTML="";
+  DIMS.forEach(d=>{
+    const p=dimPosOf(counts,d.key);
+    const pct=Math.round(Math.abs(p)*100);
+    const div=document.createElement("div");
+    div.innerHTML=`<div style="display:flex;justify-content:space-between;font-size:13px"><span>${d.name}</span><span>${leanLabel(d,p)} (${p>=0?"+":""}${p.toFixed(2)})</span></div>`;
+    const bar=document.createElement("div"); bar.className="bar";
+    const i=document.createElement("i"); i.style.width=pct+"%"; bar.appendChild(i);
+    div.appendChild(bar); bars.appendChild(div);
+  });
+  // session_id（本机生成并记忆，便于重测关联）
+  const sid=uuid();
+  let prior=[]; try{ prior=JSON.parse(localStorage.getItem("calib_sids")||"[]"); }catch(e){}
+  prior.push(sid); localStorage.setItem("calib_sids",JSON.stringify(prior.slice(-5)));
+  $("sidPill").textContent="本次 session_id: "+sid;
+  $("priorSids").textContent="本机最近记录: "+prior.slice(0,-1).join(", ");
+  buildCSV(sid);
+}
+function buildCSV(sid){
+  const selfLabel=($("selfLabel").value||"").trim();
+  const retakeOf=($("retakeOf").value||"").trim();
+  const rows=[["session_id","question_id","chosen_option","self_label","retake_of"]];
+  seq.forEach(id=>{
+    const sel=answers[id]||[];
+    rows.push([sid,id,sel.join(";"),selfLabel,retakeOf]);
+  });
+  const csv=rows.map(r=>r.map(c=>/[\",\n]/.test(c)?'"'+c.replace(/"/g,'""')+'"':c).join(",")).join("\n");
+  $("csvOut").value=csv;
+}
+$("selfLabel").addEventListener("input",()=>{ const sid=$("sidPill").textContent.replace("本次 session_id: ",""); if(sid) buildCSV(sid); });
+$("retakeOf").addEventListener("input",()=>{ const sid=$("sidPill").textContent.replace("本次 session_id: ",""); if(sid) buildCSV(sid); });
+$("dlBtn").addEventListener("click",()=>{
+  const blob=new Blob([$("csvOut").value],{type:"text/csv;charset=utf-8"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob);
+  a.download="calib_"+(Date.now())+".csv"; a.click();
+});
+$("copyBtn").addEventListener("click",()=>{ $("csvOut").select(); document.execCommand("copy"); });
+
+boot();
+</script>
+</body>
+</html>
