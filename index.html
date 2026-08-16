@@ -859,6 +859,7 @@
     <div class="code" id="code"></div>
     <div class="prec" id="precTag"></div>
     <div class="cov-note" id="covNote"></div>
+    <div class="family-box" id="familyBox"></div>
     <div class="primary">
       <div class="name" id="pName"></div>
       <div class="desc" id="pDesc"></div>
@@ -2199,6 +2200,44 @@ function matchPrimary(counts){
   }
   return matchArch(res);
 }
+/* ---------- 方案C：家族（政治罗盘四象限）分组呈现 ---------- */
+// 家族由 ECO(经济 L/R) × GOV(治理 A/L) 组合，无需改动 arch_data.json。
+const FAMILIES = {
+  "L_L": { zh:"自由左派", en:"Libertarian Left" },
+  "L_A": { zh:"威权左派", en:"Authoritarian Left" },
+  "R_L": { zh:"自由右派", en:"Libertarian Right" },
+  "R_A": { zh:"威权右派", en:"Authoritarian Right" },
+};
+function _ecoPole(){ const v=dimPos("ECO"); return v>0.1?"R":v<-0.1?"L":"M"; }
+function _govPole(){ const v=dimPos("GOV"); return v>0.1?"L":v<-0.1?"A":"M"; }
+function _famKey(e,g){ return (e==="M"||g==="M")?"M":e+"_"+g; }
+function userFamilyKey(){ return _famKey(_ecoPole(), _govPole()); }
+function archFamilyKey(a){
+  const e=a.need&&a.need.ECO, g=a.need&&a.need.GOV;
+  return (e&&g) ? _famKey(e,g) : "?";
+}
+// 2x2 罗盘：上行=治理自由(L)，下行=治理威权(A)；左列=经济左(L)，右列=经济右(R)
+function renderFamilyBox(){
+  const fk=userFamilyKey(), fam=FAMILIES[fk], cur=CUR_LANG==="en";
+  const title = fam ? (cur?fam.en:fam.zh) : (cur?"Mixed / Undetermined":"混合 / 未定");
+  const cells=[
+    {k:"L_L",label:cur?"Lib-Left":"自由左派"},
+    {k:"R_L",label:cur?"Lib-Right":"自由右派"},
+    {k:"L_A",label:cur?"Auth-Left":"威权左派"},
+    {k:"R_A",label:cur?"Auth-Right":"威权右派"},
+  ];
+  const grid=cells.map(c=>`<div style="padding:9px 6px;border-radius:10px;font-size:12px;text-align:center;${c.k===fk?'background:var(--accent,#4f7cff);color:#fff;font-weight:700;':'background:rgba(127,127,127,.12);color:var(--muted,#888);'}">${c.label}</div>`).join("");
+  const note = cur
+    ? "Even if the top label feels off, you belong to this family — see the ranked camps below."
+    : "即使首项标签感觉不准，你也属于这个家族；下方按匹配度列出具体阵营。";
+  const box=`<div style="margin:12px 0;padding:13px;border:1px solid var(--border,#e3e3e8);border-radius:14px;background:var(--card2,#fafafe);">
+    <div style="font-weight:700;font-size:15px;margin-bottom:9px;">${cur?'Your spectrum family: ':'你的政治光谱家族：'}<b>${title}</b></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:330px;">${grid}</div>
+    <div style="font-size:12px;color:var(--muted,#888);margin-top:9px;line-height:1.5;">${note}</div>
+  </div>`;
+  const el=document.getElementById("familyBox"); if(el) el.innerHTML=box;
+}
+
 /* ---------- 代表人物 + 风格化拟形象（SVG 插画头像） ---------- */
 function hashStr(s){ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
 
@@ -2316,6 +2355,7 @@ function finishEarly(){
 // 渲染结果面板；forcePrimaryName 用于回看历史；isHistory 时跳过单项明细
 function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   RESULT_COUNTS = counts;
+  renderFamilyBox();
   const res=dominantPoles(counts);
   const primary = forcePrimaryName ? (ARCH.find(a=>a.name===forcePrimaryName) || matchPrimary(counts)) : matchPrimary(counts);
   if(!isHistory) persist();   // 回看历史时不把旧测试状态写回进行中的存档
@@ -2356,13 +2396,15 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   renderFigures(primary, secs);
 
   const isLong = precisionMode()==="long";
+  const uk = userFamilyKey();
   const topAll = rankArch(counts).slice(0,5);
   const maxSc = Math.max(1e-6, topAll[0].score);
   $("topList").innerHTML = `<div class="ttl">${g('匹配度最高的阵营','Top matching camps')}</div>` + topAll.map(x=>{
     const isMe = x.a===primary;
+    const inFam = uk!=="M" && uk!=="?" && archFamilyKey(x.a)===uk;
     const w = Math.max(6, Math.round(x.score/maxSc*100));
     const sc = isLong ? Math.round(x.score*100)+"%" : ((x.score>0?"+":"") + x.score);
-    return `<div class="item ${isMe?'me':''}"><span class="nm" title="${archName(x.a)}">${archName(x.a)}</span><span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
+    return `<div class="item ${isMe?'me':''} ${inFam?'infam':''}"><span class="nm" title="${archName(x.a)}">${archName(x.a)}</span>${inFam?'<span style="font-size:11px;color:var(--accent,#4f7cff);border:1px solid var(--accent,#4f7cff);border-radius:6px;padding:1px 5px;margin-left:6px;">家族</span>':''}<span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
   }).join("");
 
   if(isHistory){
