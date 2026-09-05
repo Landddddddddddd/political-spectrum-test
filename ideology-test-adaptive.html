@@ -79,6 +79,22 @@
   .qc-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
   .qc-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
   .qc-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .qc-preview{margin:4px 0 14px;font-size:13px;line-height:1.5;}
+  .qp-head{display:flex;align-items:baseline;gap:8px;}
+  .qp-val{font-size:22px;font-weight:700;color:var(--accent);}
+  .qp-cap{color:var(--muted);}
+  .qp-band{margin-left:auto;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;white-space:nowrap;}
+  .qp-band.b1{background:#eef2ff;color:#5566cc;}
+  .qp-band.b2{background:#e8f6ee;color:#2e8b57;}
+  .qp-band.b3{background:#e6f3ff;color:#1f6fb2;}
+  .qp-band.b4{background:#fff1e0;color:#c4761a;}
+  .qp-spark{display:block;width:100%;max-width:320px;height:62px;margin:6px 0 2px;}
+  .qp-curve{fill:none;stroke:var(--accent);stroke-width:2;}
+  .qp-dot{fill:var(--accent);stroke:#fff;stroke-width:2;}
+  .qp-grid{stroke:var(--line);stroke-width:1;}
+  .qp-grid-95{stroke:var(--muted);stroke-dasharray:3 3;opacity:.5;}
+  .qp-ax{font-size:9px;fill:var(--muted);}
+  .qp-note{color:var(--muted);font-size:12px;margin-top:2px;}
   .lang-btns{display:flex;gap:8px;}
   .lang-btns .btn.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   /* ===== 政治光谱位置可视化 ===== */
@@ -590,6 +606,21 @@
   .paste-area{width:100%;height:90px;resize:vertical;font-family:var(--font-mono,monospace);font-size:12px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);}
   .fi-note{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.5;}
   .acts2{display:flex;gap:4px;align-items:center;}
+  /* ===== C-lite 云同步屏 ===== */
+  .csync-msg{font-size:14px;margin:4px 0 10px;}
+  .csync-note{font-size:12px;color:var(--muted);line-height:1.5;margin:6px 0;}
+  .csync-state{font-size:12px;color:var(--muted);margin-left:8px;}
+  .csync-box{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0;background:var(--panel);}
+  .csync-box-t{font-weight:700;font-size:13px;margin-bottom:6px;}
+  .csync-form label{display:block;font-size:13px;margin:8px 0;}
+  .csync-form input[type=text],.csync-form input:not([type]){width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);margin-top:4px;}
+  .csync-check{display:flex;gap:8px;align-items:flex-start;font-size:13px;line-height:1.4;}
+  .csync-check input{margin-top:3px;}
+  .friend-item{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;}
+  .friend-result{font-size:13px;color:var(--muted);}
+  #csyncFriends input{width:auto;flex:1;min-width:140px;padding:7px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);}
+  #csync input{max-width:260px;}
+  .csync-form input{max-width:320px;}
 </style>
 </head>
 <body>
@@ -761,6 +792,19 @@
        维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
         选项数 2–8 不固定，<b>支持多选</b>——可同时选择多个你认同的选项。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
     </p>
+    <div class="qc-label">先选题量：</div>
+    <div class="qc-tabs" id="qcTabs">
+      <button data-q="15" onclick="setQ(15)">15 题</button>
+      <button data-q="30" onclick="setQ(30)">30 题</button>
+      <button data-q="50" onclick="setQ(50)">50 题</button>
+      <button data-q="100" onclick="setQ(100)">100 题</button>
+    </div>
+    <div class="qc-custom">
+      <span>自定义题量：</span>
+      <input id="qcInput" type="number" min="5" max="500" step="5" placeholder="5–500" />
+      <button class="btn ghost" onclick="setQCustom()">设定</button>
+    </div>
+    <div class="qc-preview" id="qcPreview"></div>
     <details class="overview" open>
       <summary>测试前概览</summary>
       <div class="ov-flow" data-i18n="ovFlow">
@@ -774,18 +818,6 @@
       <div class="ov-get" data-i18n="ovGet"><b>完成测试后你会得到：</b>8 维维度签名、最契合的意识形态阵营画像、政治光谱位置（可切换 1 维 / 2 维 / 3 维 / 雷达图）、该阵营的历史代表人物（拟形象），并可将结果<b>保存为图片</b>或复制文字摘要。</div>
       <div class="ov-actions"><button class="btn ghost" data-i18n="ovActions" onclick="openArch()">📚 查看所有可被测出的意识形态（<span id="ovArchCount">…</span>）</button></div>
     </details>
-    <div class="qc-label">先选题量：</div>
-    <div class="qc-tabs" id="qcTabs">
-      <button data-q="15" onclick="setQ(15)">15 题</button>
-      <button data-q="30" onclick="setQ(30)">30 题</button>
-      <button data-q="50" onclick="setQ(50)">50 题</button>
-      <button data-q="100" onclick="setQ(100)">100 题</button>
-    </div>
-    <div class="qc-custom">
-      <span>自定义题量：</span>
-      <input id="qcInput" type="number" min="5" max="500" step="5" placeholder="5–500" />
-      <button class="btn ghost" onclick="setQCustom()">设定</button>
-    </div>
     <details class="diminfo">
       <summary>8 个维度分别量什么？（点击展开）</summary>
       <div class="di"><b>经济</b>：资源该怎么分配——平等/再分配 ↔ 自由市场/私有。关心的是「靠国家调剂，还是靠市场与个人努力」。</div>
@@ -799,6 +831,7 @@
     </details>
     <div class="row">
       <button class="btn" onclick="freshStart()">开始新测试 →</button>
+      <button class="btn ghost" id="cloudBtnStart" onclick="openCSync()">☁ 云同步 / 好友</button>
     </div>
     <div class="row" id="resumeRow" style="display:none;">
       <button class="btn ghost" id="resumeBtn" onclick="resume()"></button>
@@ -826,6 +859,7 @@
     <div class="code" id="code"></div>
     <div class="prec" id="precTag"></div>
     <div class="cov-note" id="covNote"></div>
+    <div class="family-box" id="familyBox"></div>
     <div class="primary">
       <div class="name" id="pName"></div>
       <div class="desc" id="pDesc"></div>
@@ -836,7 +870,7 @@
     <div class="top5" id="topList"></div>
     <div class="spectrum">
       <div class="sp-head" data-i18n="spHead">政治光谱位置 <span class="pill">可切换维度</span>
-        <button class="btn ghost sp-mini" onclick="downloadCard()">保存为图片</button>
+        <button class="btn ghost sp-mini" onclick="downloadCard()">生成分享图</button>
         <button class="btn ghost sp-mini" onclick="copySummary()">复制摘要</button>
       </div>
       <div class="sp-tabs" id="spTabs">
@@ -857,10 +891,19 @@
     <p class="foot">本测试为教育性自我探索工具，子类型标签仅用于理解价值倾向，不构成政治立场判定。</p>
   </section>
 
+  <section class="card hidden" id="csync">
+    <h2>☁ 云同步 / 好友</h2>
+    <div id="csyncBody"></div>
+    <div class="row"><button class="btn ghost" onclick="closeCSync()">← 返回</button></div>
+  </section>
+
 </div>
 
+<!-- ===== C-lite：Supabase 配置 + 客户端模块（构建时由 build.js 内联进来） ===== -->
+<script> "__SUPABASE_JS__"; </script>
+
 <script>
-/* ====== 题库（由构建脚本注入 500 题） ====== */
+/* ====== 题库（题量随 question_bank.json 实时变化；构建时由 build.js 注入） ====== */
 const QUESTION_BANK = __BANK__;
 /* ====== 各意识形态代表人物（由构建脚本注入） ====== */
 const FIGURES = __FIGURES__;
@@ -1048,11 +1091,19 @@ function viewHistory(ts){
   window.scrollTo({top:0, behavior:"smooth"});
 }
 // 把某次测试的 counts 折算成某维 [-1,1] 连续坐标（不依赖全局 RESULT_COUNTS）
-function dimPosOf(counts, key){
+// 贝叶斯收缩估计器：小样本时把八维坐标向居中(0)收缩，降方差、改善连续坐标精度(MAE)。
+// 仿真 measure_bayes.mjs(N=400,seed=20260815)确认 α=1 时 MAE 显著下降(N=10:0.50→0.39, N=50:0.30→0.29)、
+// 符号恢复率基本持平(<1%)；α=4 过度收缩两指标皆崩 → 取 α=1。题量充足时 tot≫2α，影响可忽略、对排名无回归。
+const BAYES_ALPHA = 1;
+// 共享：某维度两极其计数 → 收缩后的 [-1,1] 坐标
+function dimPosShrink(counts, key, alpha){
+  alpha = (alpha===undefined) ? BAYES_ALPHA : alpha;
   const d = DIMS.find(x=>x.key===key); if(!d) return 0;
-  const c = counts[key]; const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
-  return tot===0 ? 0 : (n1-n0)/tot;
+  const c = counts[key];
+  const n0=c[d.poles[0].k], n1=c[d.poles[1].k], tot=n0+n1;
+  return tot===0 ? 0 : (n1-n0)/(tot + 2*alpha);
 }
+function dimPosOf(counts, key, alpha){ return dimPosShrink(counts, key, alpha); }
 function leanTxt(d, p){
   if(Math.abs(p)<0.08) return g("居中 / 混合","Centered / Mixed");
   return plabel(p<0 ? d.poles[0] : d.poles[1]);
@@ -1372,8 +1423,19 @@ function applyLang(){
       }
     }
   }
-  document.title = CUR_LANG==="en" ? "Political Spectrum Test · Adaptive" : "意识形态测试 · 自适应 500 题版";
+  document.title = CUR_LANG==="en" ? "Political Spectrum Test · Adaptive" : "意识形态测试 · 自适应 "+bankLen()+" 题版";
   updateLangBtn();
+  updatePreview();
+  refreshBankCount();
+}
+// 题库数量：始终从注入的题库实时读取，不写死，题库增减后页面自动更新
+function bankLen(){ return (typeof QUESTION_BANK!=="undefined" && QUESTION_BANK && Array.isArray(QUESTION_BANK)) ? QUESTION_BANK.length : 500; }
+function refreshBankCount(){
+  const n = bankLen();
+  const el = document.getElementById("bkCount");
+  if(el) el.textContent = n;          // 开屏「从 N 道题库里」实时回填
+  const qi = document.getElementById("qcInput");
+  if(qi){ qi.max = n; qi.placeholder = "5–"+n; }  // 自定义题量上限同步真实题量
 }
 function cycleLang(){ setLang(CUR_LANG==="en"?"zh":"en"); }
 function setLang(l){
@@ -1420,12 +1482,75 @@ function persist(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify({seq, an
 function setQ(n){
   TOTAL = n;
   document.querySelectorAll("#qcTabs button").forEach(b=>b.classList.toggle("active", Number(b.dataset.q)===n));
+  updatePreview();
 }
 function setQCustom(){
   const v = parseInt($("qcInput").value, 10);
-  if(isNaN(v) || v < 5 || v > 500){ toast(g("题量请填 5–500 之间的整数","Enter an integer between 5 and 500")); return; }
+  if(isNaN(v) || v < 5 || v > bankLen()){ toast(g("题量请填 5–"+bankLen()+" 之间的整数","Enter an integer between 5 and "+bankLen())); return; }
   TOTAL = v;
   document.querySelectorAll("#qcTabs button").forEach(b=>b.classList.remove("active"));
+  updatePreview();
+}
+
+/* ---------- 题量 → 精度（实测，非模型预估） ----------
+   实测来自 measure_accuracy.mjs：复刻线上自适应选题 + 1/k 加权计分 + dimPosOf，
+   应答用 Luce/softmax 模型（β=1.2，truth 均匀 [-1,1]），N=400 受访者、seed=20260815。
+   指标 = 八维「符号还原率」（各维符号与真值一致的比例）。
+   原始分档（已写入 measure_accuracy.out.json）：
+     N:   10   20   30   50   75  100  150  200  300  500
+     acc:62.0 69.2 69.1 73.6 74.7 75.4 76.1 73.5 75.7 75.2  (%)  ← N=200 为采样噪声
+     dim:7.09 7.93 8.00 8.00 8.00 8.00 8.00 8.00 8.00 8.00  (/8)
+   为开屏显示平滑（抹平 N=200 那一档的采样噪声下探），对实测点做最小二乘饱和拟合：
+     f(n) = base + (top-base) * n/(n+half) */
+const MEASURED = [
+  {n:10,acc:62.0,dims:7.09},{n:20,acc:69.2,dims:7.93},{n:30,acc:69.1,dims:8.00},
+  {n:50,acc:73.6,dims:8.00},{n:75,acc:74.7,dims:8.00},{n:100,acc:75.4,dims:8.00},
+  {n:150,acc:76.1,dims:8.00},{n:200,acc:73.5,dims:8.00},{n:300,acc:75.7,dims:8.00},
+  {n:500,acc:75.2,dims:8.00}
+];
+const ACC_FIT = {base:49.8, top:76.8, half:10};
+const DIM_FIT = {base:4.9,  top:8.0,  half:2.5};
+function estAccuracy(n){
+  const f = ACC_FIT.base + (ACC_FIT.top-ACC_FIT.base)*(n/(n+ACC_FIT.half));
+  return Math.round(f*10)/10;                 // 一位小数百分比（如 76.8）
+}
+function estDims(n){
+  const f = DIM_FIT.base + (DIM_FIT.top-DIM_FIT.base)*(n/(n+DIM_FIT.half));
+  return Math.min(8, Math.round(f*10)/10);
+}
+function accSpark(n){
+  const W=300, H=62, pad=8, yMin=55, yMax=80;
+  const lg5=Math.log(5), span=Math.log(500)-lg5;
+  const xFor=x=> pad + (Math.log(x)-lg5)/span*(W-2*pad);
+  const yFor=a=> pad + (1-(a-yMin)/(yMax-yMin))*(H-2*pad);
+  const samples=[5,10,15,20,30,40,50,70,100,150,200,300,500];
+  const pts=samples.map(x=>[xFor(x), yFor(estAccuracy(x))]);
+  const d=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+  const cx=xFor(n), cy=yFor(estAccuracy(n));
+  return '<svg class="qp-spark" viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" preserveAspectRatio="none" aria-hidden="true">'
+    +'<line x1="'+pad+'" y1="'+yFor(yMax)+'" x2="'+(W-pad)+'" y2="'+yFor(yMax)+'" class="qp-grid"/>'
+    +'<line x1="'+pad+'" y1="'+yFor(76)+'" x2="'+(W-pad)+'" y2="'+yFor(76)+'" class="qp-grid qp-grid-76"/>'
+    +'<path d="'+d+'" class="qp-curve"/>'
+    +'<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="4.5" class="qp-dot"/>'
+    +'<text x="'+pad+'" y="'+(H-1)+'" class="qp-ax">5</text>'
+    +'<text x="'+(W-pad-2)+'" y="'+(H-1)+'" text-anchor="end" class="qp-ax">500</text>'
+    +'</svg>';
+}
+function updatePreview(){
+  const el=$("qcPreview"); if(!el) return;
+  const n=TOTAL, a=estAccuracy(n), dims=estDims(n);
+  let band, cls;
+  if(n<=15){ band=g("快速档 · 偏概览","Quick"); cls="b1"; }
+  else if(n<=40){ band=g("标准档","Standard"); cls="b2"; }
+  else if(n<=90){ band=g("较高档","Higher"); cls="b3"; }
+  else { band=g("高可信档","High-conf."); cls="b4"; }
+  el.innerHTML =
+    '<div class="qp-head"><span class="qp-val">'+a+'%</span>'
+    +'<span class="qp-cap">'+g("实测精度","Measured accuracy")+'</span>'
+    +'<span class="qp-band '+cls+'">'+band+'</span></div>'
+    + accSpark(n)
+    +'<div class="qp-note">'+g("预计触及 ","Est. coverage: ")+'<b>'+dims+'/8</b>'
+    +g(" 个维度（各 ≥2 次命中）。曲线为实测精度（N=400 仿真 · 八维符号还原率）。"," dims (≥2 hits). Curve = measured accuracy (N=400 sim · 8-dim sign recovery).")+'</div>';
 }
 function answeredCount(){ return seq.filter(id=>{ const a=answers[id]; return a!=null && (Array.isArray(a)?a.length>0:true); }).length; }
 
@@ -1712,6 +1837,44 @@ function matchPrimary(counts){
   }
   return matchArch(res);
 }
+/* ---------- 方案C：家族（政治罗盘四象限）分组呈现 ---------- */
+// 家族由 ECO(经济 L/R) × GOV(治理 A/L) 组合，无需改动 arch_data.json。
+const FAMILIES = {
+  "L_L": { zh:"自由左派", en:"Libertarian Left" },
+  "L_A": { zh:"威权左派", en:"Authoritarian Left" },
+  "R_L": { zh:"自由右派", en:"Libertarian Right" },
+  "R_A": { zh:"威权右派", en:"Authoritarian Right" },
+};
+function _ecoPole(){ const v=dimPos("ECO"); return v>0.1?"R":v<-0.1?"L":"M"; }
+function _govPole(){ const v=dimPos("GOV"); return v>0.1?"L":v<-0.1?"A":"M"; }
+function _famKey(e,g){ return (e==="M"||g==="M")?"M":e+"_"+g; }
+function userFamilyKey(){ return _famKey(_ecoPole(), _govPole()); }
+function archFamilyKey(a){
+  const e=a.need&&a.need.ECO, g=a.need&&a.need.GOV;
+  return (e&&g) ? _famKey(e,g) : "?";
+}
+// 2x2 罗盘：上行=治理自由(L)，下行=治理威权(A)；左列=经济左(L)，右列=经济右(R)
+function renderFamilyBox(){
+  const fk=userFamilyKey(), fam=FAMILIES[fk], cur=CUR_LANG==="en";
+  const title = fam ? (cur?fam.en:fam.zh) : (cur?"Mixed / Undetermined":"混合 / 未定");
+  const cells=[
+    {k:"L_L",label:cur?"Lib-Left":"自由左派"},
+    {k:"R_L",label:cur?"Lib-Right":"自由右派"},
+    {k:"L_A",label:cur?"Auth-Left":"威权左派"},
+    {k:"R_A",label:cur?"Auth-Right":"威权右派"},
+  ];
+  const grid=cells.map(c=>`<div style="padding:9px 6px;border-radius:10px;font-size:12px;text-align:center;${c.k===fk?'background:var(--accent,#4f7cff);color:#fff;font-weight:700;':'background:rgba(127,127,127,.12);color:var(--muted,#888);'}">${c.label}</div>`).join("");
+  const note = cur
+    ? "Even if the top label feels off, you belong to this family — see the ranked camps below."
+    : "即使首项标签感觉不准，你也属于这个家族；下方按匹配度列出具体阵营。";
+  const box=`<div style="margin:12px 0;padding:13px;border:1px solid var(--border,#e3e3e8);border-radius:14px;background:var(--card2,#fafafe);">
+    <div style="font-weight:700;font-size:15px;margin-bottom:9px;">${cur?'Your spectrum family: ':'你的政治光谱家族：'}<b>${title}</b></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:330px;">${grid}</div>
+    <div style="font-size:12px;color:var(--muted,#888);margin-top:9px;line-height:1.5;">${note}</div>
+  </div>`;
+  const el=document.getElementById("familyBox"); if(el) el.innerHTML=box;
+}
+
 /* ---------- 代表人物 + 风格化拟形象（SVG 插画头像） ---------- */
 function hashStr(s){ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return h>>>0; }
 
@@ -1829,6 +1992,7 @@ function finishEarly(){
 // 渲染结果面板；forcePrimaryName 用于回看历史；isHistory 时跳过单项明细
 function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   RESULT_COUNTS = counts;
+  renderFamilyBox();
   const res=dominantPoles(counts);
   const primary = forcePrimaryName ? (ARCH.find(a=>a.name===forcePrimaryName) || matchPrimary(counts)) : matchPrimary(counts);
   if(!isHistory) persist();   // 回看历史时不把旧测试状态写回进行中的存档
@@ -1869,13 +2033,15 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   renderFigures(primary, secs);
 
   const isLong = precisionMode()==="long";
+  const uk = userFamilyKey();
   const topAll = rankArch(counts).slice(0,5);
   const maxSc = Math.max(1e-6, topAll[0].score);
   $("topList").innerHTML = `<div class="ttl">${g('匹配度最高的阵营','Top matching camps')}</div>` + topAll.map(x=>{
     const isMe = x.a===primary;
+    const inFam = uk!=="M" && uk!=="?" && archFamilyKey(x.a)===uk;
     const w = Math.max(6, Math.round(x.score/maxSc*100));
     const sc = isLong ? Math.round(x.score*100)+"%" : ((x.score>0?"+":"") + x.score);
-    return `<div class="item ${isMe?'me':''}"><span class="nm" title="${archName(x.a)}">${archName(x.a)}</span><span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
+    return `<div class="item ${isMe?'me':''} ${inFam?'infam':''}"><span class="nm" title="${archName(x.a)}">${archName(x.a)}</span>${inFam?'<span style="font-size:11px;color:var(--accent,#4f7cff);border:1px solid var(--accent,#4f7cff);border-radius:6px;padding:1px 5px;margin-left:6px;">家族</span>':''}<span class="bar"><span style="width:${w}%"></span></span><span class="sc">${sc}</span></div>`;
   }).join("");
 
   if(isHistory){
@@ -1910,6 +2076,7 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
     };
     LAST_RESULT = entry;
     addHistory(entry);
+    csyncAutoUpload();   // C-lite：若已登录且已设 handle，自动把（密文）结果上行
   }
 }
 
@@ -1922,10 +2089,7 @@ let SP_ROT = {yaw:-0.6, pitch:-0.35};    // 3D 立方体初始视角
 // 把某维度两极其命中数折算成 [-1,1] 的连续坐标：pole0→-1，pole1→+1，无数据→0（居中）
 function dimPos(key){
   if(!RESULT_COUNTS) return 0;
-  const d = DIMS.find(x=>x.key===key); if(!d) return 0;
-  const c = RESULT_COUNTS[key];
-  const n0 = c[d.poles[0].k], n1 = c[d.poles[1].k], tot = n0+n1;
-  return tot===0 ? 0 : (n1-n0)/tot;
+  return dimPosShrink(RESULT_COUNTS, key);
 }
 function dimPct(key){ return Math.round(Math.abs(dimPos(key))*100); }
 function dimLean(key){
@@ -1988,6 +2152,14 @@ function render1D(stage){
   </svg>`;
 }
 
+// 二维罗盘坐标轴简称：仅用于 2D 图，不改动 DIMS 的全局 pole 文案（避免影响 1D/雷达/3D/分享卡）
+const COMPASS_LABEL = { ECO:{L:"计划", R:"放任"}, GOV:{A:"集权", L:"分权"} };
+function clabel(d, poleIdx){
+  const pole = d.poles[poleIdx];
+  const ov = COMPASS_LABEL[d.key];
+  return (ov && ov[pole.k]) ? ov[pole.k] : plabel(pole);
+}
+
 function render2D(stage){
   const dx = DIMS.find(x=>x.key===SPEC_DIMS.x), dy = DIMS.find(x=>x.key===SPEC_DIMS.y);
   const px = dimPos(dx.key), py = dimPos(dy.key);
@@ -2000,11 +2172,11 @@ function render2D(stage){
     <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+(px+1)/2*sz}" y2="${oy+sz/2}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
     <line x1="${mx.toFixed(1)}" y1="${my.toFixed(1)}" x2="${ox+sz/2}" y2="${my.toFixed(1)}" stroke="var(--svg-accent)" stroke-width="1" stroke-dasharray="4 4"/>
     <circle cx="${mx.toFixed(1)}" cy="${my.toFixed(1)}" r="9" fill="var(--svg-accent)" stroke="#fff" stroke-width="3"/>
-    <text x="${ox}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${plabel(dx.poles[0])}</text>
-    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dx.poles[1])}</text>
+    <text x="${ox}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="start" font-weight="600">${clabel(dx,0)}</text>
+    <text x="${ox+sz}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${clabel(dx,1)}</text>
     <text x="${ox+sz/2}" y="${oy-14}" font-size="12" fill="var(--svg-ink)" text-anchor="middle" font-weight="600">${dname(dx)} →</text>
-    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dy.poles[1])}</text>
-    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${plabel(dy.poles[0])}</text>
+    <text x="${ox-8}" y="${oy+10}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${clabel(dy,1)}</text>
+    <text x="${ox-8}" y="${oy+sz}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${clabel(dy,0)}</text>
     <text x="${ox-8}" y="${oy+sz/2}" font-size="12" fill="var(--svg-ink)" text-anchor="end" font-weight="600">${dname(dy)} ↑</text>
   </svg>`;
 }
@@ -2147,48 +2319,56 @@ async function downloadCard(){
   if(!RESULT_COUNTS) return;
   const res=dominantPoles(RESULT_COUNTS);
   const primary=matchPrimary(RESULT_COUNTS);
-  const W=760, H=1060;
+  const fk=userFamilyKey(); const fam=FAMILIES[fk];
+  const sig=DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join("");
+  const W=1080, H=1440;
   const c=document.createElement("canvas"); c.width=W; c.height=H;
   const x=c.getContext("2d");
   x.fillStyle="#ffffff"; x.fillRect(0,0,W,H);
-  x.fillStyle="#3b6df0"; x.fillRect(0,0,W,12);
-  x.fillStyle="#1f2933"; x.font="bold 30px sans-serif"; x.fillText(g("我的意识形态画像","My Ideological Profile"), 40, 62);
-  x.fillStyle="#3b6df0"; x.font="bold 16px monospace"; x.fillText(g("签名 ","Signature ")+DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join(""), 40, 94);
-  x.fillStyle="#3b6df0"; x.font="bold 34px sans-serif"; x.fillText(archName(primary), 40, 144);
-  x.fillStyle="#1f2933"; x.font="16px sans-serif";
-  const used=wrapText(x, primary.desc_en||primary.desc, 40, 178, W-80, 26);
-  let y=178+used*26+12;
-  const figs=FIGURES[primary.name]||[];
-  if(figs.length){
-    x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText(g("代表人物","Representative figures"), 40, y); y+=8;
-    for(const f of figs){
-      const svg=makePortrait(f.name+"|"+f.en).replace("<svg ", '<svg width="100" height="100" ');
-      try{ const img=await svgToImage(svg); x.drawImage(img,40,y,50,50); }catch(e){}
-      x.fillStyle="#1f2933"; x.font="bold 14px sans-serif"; x.fillText(figName(f), 100, y+18);
-      x.fillStyle="#6b7785"; x.font="12px sans-serif"; x.fillText((f.years||"")+(fen(f,'role')?(" · "+fen(f,'role')):""), 100, y+36);
-      y+=62;
-    }
-    y+=4;
-  }
-  x.font="14px sans-serif";
-  DIMS.forEach(d=>{
-    const frac=(dimPos(d.key)+1)/2;
-    x.fillStyle="#6b7785"; x.fillText(dname(d), 40, y);
-    x.fillStyle="#e2e8f0"; x.fillRect(150, y-12, 460, 14);
-    x.fillStyle="#3b6df0"; x.fillRect(150, y-12, frac*460, 14);
-    x.fillStyle="#1f2933"; x.fillText(dimLean(d.key)+" "+dimPct(d.key)+"%", 620, y);
-    y+=42;
-  });
-  y+=12;
-  x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.fillText(g("匹配度最高的阵营","Closest-matching camps"), 40, y); y+=24;
+  x.fillStyle="#3b6df0"; x.fillRect(0,0,W,14);
+  // 标题 + 签名 + 家族徽标
+  x.fillStyle="#1f2933"; x.font="bold 42px sans-serif"; x.fillText(g("我的价值观光谱画像","My Values Spectrum Profile"), 48, 84);
+  x.fillStyle="#3b6df0"; x.font="bold 20px monospace"; x.fillText(g("签名 ","Signature ")+sig, 48, 122);
+  if(fam){ x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.textAlign="right"; x.fillText("· "+(CUR_LANG==="en"?fam.en:fam.zh), W-48, 122); x.textAlign="left"; }
+  // 主阵营
+  x.fillStyle="#3b6df0"; x.font="bold 46px sans-serif"; x.fillText(archName(primary), 48, 186);
+  x.fillStyle="#1f2933"; x.font="17px sans-serif";
+  const used=wrapText(x, primary.desc_en||primary.desc, 48, 218, W-96, 26);
+  let y=218+used*26+24;
+  // 8 维雷达
+  const cx=W/2, cy=y+330, R=270;
+  drawRadar(x, cx, cy, R, res);
+  y=cy+R+56;
+  // 匹配阵营
+  x.fillStyle="#3b6df0"; x.font="bold 20px sans-serif"; x.fillText(g("匹配度最高的阵营","Closest-matching camps"), 48, y); y+=34;
   const isLong=precisionMode()==="long";
   const topAll=rankArch(RESULT_COUNTS).slice(0,5);
-  topAll.forEach(xx=>{ const isMe=xx.a===primary; x.fillStyle=isMe?"#3b6df0":"#1f2933"; x.font=(isMe?"bold ":"")+"14px sans-serif"; const sc=isLong?Math.round(xx.score*100)+"%":((xx.score>0?"+":"")+xx.score); x.fillText((isMe?"★ ":"")+archName(xx.a)+"  （"+sc+"）", 40, y); y+=24; });
-  x.fillStyle="#6b7785"; x.font="13px sans-serif"; x.fillText(g("意识形态测试 · 自适应版 · 教育用途","Political Spectrum Test · Adaptive · Educational use"), 40, H-26);
+  topAll.forEach(xx=>{ const isMe=xx.a===primary; x.fillStyle=isMe?"#3b6df0":"#1f2933"; x.font=(isMe?"bold ":"")+"17px sans-serif"; const sc=isLong?Math.round(xx.score*100)+"%":((xx.score>0?"+":"")+xx.score); x.fillText((isMe?"★ ":"")+archName(xx.a)+"  （"+sc+"）", 48, y); y+=32; });
+  // 页脚（中性，附网址便于找到测试）
+  x.fillStyle="#94a3b8"; x.font="14px sans-serif"; x.fillText(g("8 维自我认知测试 · 教育用途","8-Dimension Self-Awareness Test · Educational use"), 48, H-44);
+  x.fillStyle="#3b6df0"; x.font="14px sans-serif"; x.fillText("landddddddddddd.github.io/political-spectrum-test", 48, H-22);
   try{
-    const a=document.createElement("a"); a.download=g("意识形态画像.png","ideology-profile.png"); a.href=c.toDataURL("image/png"); a.click();
-    toast(g("已保存为图片","Saved as image"));
+    const a=document.createElement("a"); a.download=g("价值观光谱画像.png","values-spectrum-profile.png"); a.href=c.toDataURL("image/png"); a.click();
+    toast(g("已生成分享图","Share card generated"));
   }catch(e){ alert(g("导出图片失败：","Failed to export image: ") + e.message); }
+}
+// 在 canvas 上绘制 8 维雷达（res: 各维主极 'L'/'R'/.../'混合'；折线路径由 dimPos 决定）
+function drawRadar(x, cx, cy, R, res){
+  const n=DIMS.length;
+  x.strokeStyle="#e2e8f0"; x.lineWidth=1;
+  for(let ring=1; ring<=4; ring++){ const rr=R*ring/4; x.beginPath(); for(let i=0;i<=n;i++){ const a=-Math.PI/2+i*2*Math.PI/n; const px=cx+rr*Math.cos(a), py=cy+rr*Math.sin(a); i?x.lineTo(px,py):x.moveTo(px,py); } x.stroke(); }
+  for(let i=0;i<n;i++){
+    const d=DIMS[i]; const a=-Math.PI/2+i*2*Math.PI/n;
+    const px=cx+R*Math.cos(a), py=cy+R*Math.sin(a);
+    x.strokeStyle="#cbd5e1"; x.lineWidth=1; x.beginPath(); x.moveTo(cx,cy); x.lineTo(px,py); x.stroke();
+    const lx=cx+(R+32)*Math.cos(a), ly=cy+(R+32)*Math.sin(a);
+    x.fillStyle="#1f2933"; x.font="bold 16px sans-serif"; x.textAlign="center"; x.textBaseline="middle"; x.fillText(dname(d), lx, ly);
+  }
+  x.textAlign="left"; x.textBaseline="alphabetic";
+  x.beginPath();
+  for(let i=0;i<=n;i++){ const idx=i%n; const d=DIMS[idx]; const a=-Math.PI/2+idx*2*Math.PI/n; const v=(dimPos(d.key)+1)/2; const rr=R*Math.max(0,Math.min(1,v)); const px=cx+rr*Math.cos(a), py=cy+rr*Math.sin(a); i?x.lineTo(px,py):x.moveTo(px,py); }
+  x.closePath(); x.fillStyle="rgba(59,109,240,0.22)"; x.fill(); x.strokeStyle="#3b6df0"; x.lineWidth=2.5; x.stroke();
+  for(let i=0;i<n;i++){ const d=DIMS[i]; const a=-Math.PI/2+i*2*Math.PI/n; const v=(dimPos(d.key)+1)/2; const rr=R*Math.max(0,Math.min(1,v)); const px=cx+rr*Math.cos(a), py=cy+rr*Math.sin(a); x.fillStyle="#3b6df0"; x.beginPath(); x.arc(px,py,4,0,7); x.fill(); }
 }
 function copySummary(){
   if(!RESULT_COUNTS) return;
@@ -2334,5 +2514,176 @@ function closeChangelog(){ $("clModal").classList.add("hidden"); }
   }
 })();
 </script>
+
+<!-- ===================== C-lite 云同步 UI 粘合层 ===================== -->
+<script>
+function csyncAvailable(){ return !!(window.CSync && window.SUPABASE_READY && window.SUPABASE_READY()); }
+
+async function openCSync(){
+  ["start","quiz","result"].forEach(id=>{ const e=$(id); if(e) e.classList.add("hidden"); });
+  $("csync").classList.remove("hidden");
+  await renderCSync();
+}
+function closeCSync(){
+  $("csync").classList.add("hidden");
+  if(RESULT_COUNTS) $("result").classList.remove("hidden");
+  else $("start").classList.remove("hidden");
+}
+
+async function renderCSync(){
+  const body = $("csyncBody");
+  if(!csyncAvailable()){
+    body.innerHTML = `<p class="csync-msg">${g('云同步功能未启用（未配置 Supabase）。','Cloud sync is not enabled (Supabase not configured).')}</p>`;
+    return;
+  }
+  await CSync.init();
+  const me = CSync.me();
+  const signedIn = CSync.isSignedIn();
+  if(!signedIn){
+    body.innerHTML = `
+      <p class="csync-msg">${g('登录后即可跨设备同步你的（密文）结果、添加好友互看阵营。我们看不到你的政治倾向明文。','Sign in to sync your (encrypted) result across devices and add friends to compare camps. We never see your political views in plaintext.')}</p>
+      <div class="row">
+        <button class="btn" onclick="csyncSignIn('google')">${g('使用 Google 登录','Sign in with Google')}</button>
+        <button class="btn ghost" onclick="csyncSignIn('discord')" title="${g('需在 Supabase 后台启用 Discord 登录','Enable Discord in Supabase dashboard first')}">${g('使用 Discord 登录','Sign in with Discord')}</button>
+      </div>
+      <p class="csync-note">${g('若尚未在 Supabase 后台启用 Discord，点击会提示未配置；启用后即自动可用。','If Discord isn’t enabled in the Supabase dashboard yet, clicking shows “not configured”; once enabled it works automatically.')}</p>`;
+    return;
+  }
+  if(!me || !me.handle){
+    body.innerHTML = `
+      <p class="csync-msg">${g('欢迎！先设置一个公开假名（handle），好友将凭它找到你。','Welcome! Set a public handle first; friends will find you by it.')}</p>
+      <div class="csync-form">
+        <label>${g('假名 handle：','Handle:')}<br><input id="csHandle" maxlength="24" placeholder="如 xiaol"></label>
+        <label class="csync-check"><input type="checkbox" id="csAge"> ${g('我确认我已年满 16 岁（按最严市场要求）。','I confirm I am at least 16 years old (strictest market rule).')}</label>
+        <label class="csync-check"><input type="checkbox" id="csConsent"> ${g('我同意隐私政策：政治倾向仅以密文存储于服务器，密钥留在本机。','I agree to the privacy policy: political views are stored server-side only as ciphertext; keys stay on this device.')}</label>
+        <div class="row"><button class="btn" onclick="csyncSetup()">${g('保存并进入','Save & continue')}</button></div>
+      </div>`;
+    return;
+  }
+  // 已完整登录 + 已设 handle
+  let html = `<p class="csync-msg">${g('已登录为','Signed in as')} <b>@${me.handle}</b></p>`;
+  html += `<div class="csync-box">
+    <div class="csync-box-t">${g('我的结果（密文同步）','My result (encrypted sync)')}</div>
+    <div class="row"><button class="btn ghost" onclick="csyncUploadNow()">${g('上传 / 重新上传我的结果','Upload / re-upload my result')}</button><span id="csyncUploadState" class="csync-state"></span></div>
+    <div class="csync-note">${g('完成测试后会自动上传。数据在本地 AES-GCM 加密后才上传，服务器只读密文。','Auto-uploaded after each test. Data is AES-GCM encrypted on-device before upload; the server sees only ciphertext.')}</div>
+  </div>`;
+  html += `<div class="csync-box">
+    <div class="csync-box-t">${g('邮箱（可选·仅通知）','Email (optional · notifications only)')}</div>
+    <div id="csyncEmailArea"></div>
+  </div>`;
+  html += `<div class="csync-box">
+    <div class="csync-box-t">${g('好友（互看阵营）','Friends (compare camps)')}</div>
+    <div class="row"><input id="csFriendSearch" placeholder="${g('输入好友 handle','enter friend handle')}"><button class="btn ghost" onclick="csyncAddFriend()">${g('发送好友请求','Send request')}</button></div>
+    <div id="csyncFriends"></div>
+  </div>`;
+  html += `<div class="row"><button class="btn ghost" onclick="csyncSignOut()">${g('退出登录','Sign out')}</button></div>`;
+  body.innerHTML = html;
+  renderCSyncEmail();
+  await renderCSyncFriends();
+}
+
+function renderCSyncEmail(){
+  const me = CSync.me(); const el = $("csyncEmailArea"); if(!el) return;
+  if(me.email && me.email_verified){
+    el.innerHTML = `<div class="csync-note">${g('已绑定并验证：','Bound & verified: ')}<b>${me.email}</b></div><button class="btn ghost" onclick="csyncUnbindEmail()">${g('解绑','Unbind')}</button>`;
+  } else if(me.email && !me.email_verified){
+    el.innerHTML = `<div class="csync-note">${g('已绑定但未验证：','Bound but unverified: ')}${me.email}</div><button class="btn ghost" onclick="csyncSendVerify()">${g('重发验证邮件','Resend verification')}</button><button class="btn ghost" onclick="csyncUnbindEmail()">${g('解绑','Unbind')}</button>`;
+  } else {
+    el.innerHTML = `<div class="csync-note">${g('未绑定。绑定后仅用于「恢复信封重置通知」与「好友请求通知」，绝不营销，删号即清。','Not bound. If bound, used only for recovery-reset & friend-request notifications, never marketing; removed on account deletion.')}</div><div class="row"><input id="csEmailInput" placeholder="you@example.com"><button class="btn ghost" onclick="csyncBindEmail()">${g('绑定邮箱','Bind email')}</button></div>`;
+  }
+}
+
+async function csyncSignIn(provider){
+  if(provider!=='google' && provider!=='discord'){ toast(g('该登录方式暂未配置','That sign-in method is not configured yet')); return; }
+  const r = await CSync.signIn(provider);
+  if(r.error){ toast(g('登录发起失败：'+(r.error),'Sign-in failed: '+(r.error))); }
+}
+async function csyncSetup(){
+  const handle = ($("csHandle")||{}).value || "";
+  const age = ($("csAge")||{}).checked;
+  const consent = ($("csConsent")||{}).checked;
+  if(handle.length<2){ toast(g('handle 至少 2 个字符','Handle needs at least 2 chars')); return; }
+  if(!age){ toast(g('需确认已满 16 岁','Must confirm age ≥ 16')); return; }
+  if(!consent){ toast(g('需同意隐私政策','Must agree to privacy policy')); return; }
+  const pubkey = await CSync.genECDH();
+  const r = await CSync.setupProfile({ handle, region:'OTHER', consent, ageOk:age, pubkey });
+  if(r.error){ toast(g('设置失败：'+(r.error),'Setup failed: '+(r.error))); return; }
+  toast(g('设置成功','Profile saved'));
+  await renderCSync();
+}
+async function csyncUploadNow(){
+  const st = $("csyncUploadState"); if(st) st.textContent = g('上传中…','uploading…');
+  const r = await csyncDoUpload();
+  if(st) st.textContent = r.ok ? g('✓ 已上传','✓ uploaded') : g('✗ '+(r.error||'失败'),'✗ '+(r.error||'failed'));
+}
+async function csyncDoUpload(){
+  if(!LAST_RESULT) return {error:'no-result'};
+  return await CSync.uploadResult(LAST_RESULT);
+}
+async function csyncAutoUpload(){
+  if(!csyncAvailable()) return;
+  await CSync.init();
+  if(!CSync.isSignedIn()) return;
+  const me = CSync.me();
+  if(me && !me.handle) return;
+  await csyncDoUpload();
+}
+async function renderCSyncFriends(){
+  const el = $("csyncFriends"); if(!el) return;
+  const list = await CSync.listFriends();
+  if(!list.length){ el.innerHTML = `<div class="csync-note">${g('还没有好友。用上方搜索添加。','No friends yet. Search above to add.')}</div>`; return; }
+  el.innerHTML = list.map(f=>{
+    const incoming = f.incoming ? `<span class="warn">${g('待你接受','pending your accept')}</span> <button class="btn ghost" onclick="csyncAccept('${f.id}')">${g('接受','Accept')}</button>` : '';
+    const accepted = f.status==='accepted';
+    const actions = accepted
+      ? `<button class="btn ghost" onclick="csyncShare('${f.id}','${f.pubkey||''}')">${g('授权互看','Share with')}</button> <button class="btn ghost" onclick="csyncView('${f.id}')">${g('看 Ta 的结果','View theirs')}</button> <span id="csyncView_${f.id}"></span>`
+      : incoming;
+    return `<div class="friend-item">@${f.handle} ${actions}</div>`;
+  }).join("");
+}
+async function csyncAddFriend(){
+  const h = ($("csFriendSearch")||{}).value || "";
+  if(!h){ return; }
+  const r = await CSync.sendFriendRequest(h);
+  if(r.error){ toast(g('添加失败：'+(r.error),'Add failed: '+(r.error))); return; }
+  toast(g('已发送好友请求给 @'+h,'Friend request sent to @'+h));
+  await renderCSyncFriends();
+}
+async function csyncAccept(id){ const r=await CSync.acceptFriend(id); toast(r.ok?g('已接受','Accepted'):g('失败','Failed')); await renderCSyncFriends(); }
+async function csyncShare(friendId, pubkeyB64){
+  if(!pubkeyB64){ toast(g('对方公钥缺失','Missing friend public key')); return; }
+  const r = await CSync.shareWith(friendId, pubkeyB64);
+  toast(r.ok?g('已授权互看','Shared with friend'):g('授权失败：'+(r.error),'Share failed: '+(r.error)));
+}
+async function csyncView(friendId){
+  const el = $("csyncView_"+friendId); if(el) el.textContent = g('读取中…','reading…');
+  const entry = await CSync.fetchFriendResult(friendId);
+  if(!entry){ if(el) el.textContent = g('无法读取（未授权或未上传）','cannot read (not shared / not uploaded)'); return; }
+  const primary = (ARCH && ARCH.find(a=>a.name===entry.primary)) || null;
+  const name = primary ? archName(primary) : (entry.primary||'?');
+  if(el) el.innerHTML = `<span class="friend-result">→ ${g('阵营','camp')}: <b>${name}</b> · ${entry.code||''}</span>`;
+}
+async function csyncBindEmail(){
+  const v = ($("csEmailInput")||{}).value || "";
+  const r = await CSync.bindEmail(v);
+  if(r.error){ toast(g('绑定失败：'+(r.error),'Bind failed: '+(r.error))); }
+  else { toast(g('已保存，请查收验证邮件','Saved, check your verification email')); }
+  renderCSyncEmail();
+}
+async function csyncUnbindEmail(){ await CSync.unbindEmail(); renderCSyncEmail(); }
+async function csyncSendVerify(){ const r=await CSync.sendEmailVerify(); toast(r.ok?g('已发送','Sent'):g('发送失败','Failed')); }
+async function csyncSignOut(){ await CSync.signOut(); toast(g('已退出','Signed out')); await renderCSync(); }
+
+function onCSyncAuth(ev, me){
+  const c = $("csync");
+  if(c && !c.classList.contains("hidden")) renderCSync();
+}
+
+// 引导：等 DOM 就绪后初始化 C-lite（动态 import supabase-js；未配置时静默）
+if(window.CSync){
+  CSync.init().then(()=>{ CSync.onAuth(onCSyncAuth); });
+}
+</script>
+
 </body>
 </html>
