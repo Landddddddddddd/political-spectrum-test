@@ -1384,6 +1384,9 @@ function g(zh, en){ return CUR_LANG==="en" ? en : zh; }
 function dname(d){ return CUR_LANG==="en" && d.name_en ? d.name_en : d.name; }
 function plabel(p){ return (CUR_LANG==="en" && p.label_en) ? p.label_en : p.label; }
 function archName(a){ return CUR_LANG==="en" && a.name_en ? a.name_en : a.name; }
+function adesc(a){ return CUR_LANG==="en" ? (a.desc_en||a.desc) : (a.desc||a.desc_en); }
+function adetail(a){ return CUR_LANG==="en" ? (a.detail_en||a.detail) : (a.detail||a.detail_en); }
+function atenets(a){ const t = CUR_LANG==="en" ? ((a.tenets_en&&a.tenets_en.length)?a.tenets_en:a.tenets) : ((a.tenets&&a.tenets.length)?a.tenets:a.tenets_en); return Array.isArray(t)?t:[]; }
 function dispName(n){ const a=ARCH.find(x=>x.name===n); return (CUR_LANG==="en" && a && a.name_en) ? a.name_en : n; }
 // 语言感知：动态内容英文优先、中文兜底，但必须随 CUR_LANG 切换（不能中文模式也显示英文）
 function qscene(q){ return CUR_LANG==="en" ? (q.scene_en||q.scene) : q.scene; }
@@ -2011,9 +2014,9 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
     ? `<span class="warn">⚠ ${g('以下维度答题偏少、结果较初步：','Too few answers on these dimensions, results are tentative: ')}${lowDims.map(d=>dname(d)).join(g('、',', '))}。${g('继续作答可提升精度。','Answer more to improve precision.')}</span>`
     : (partial ? `<span class="hint">${g('已提前结束 · 基于 '+effN+' 题出结果；继续作答可提升精度。','Ended early · results based on '+effN+' questions; answer more to improve precision.')}</span>` : "");
   $("pName").textContent = archName(primary);
-  $("pDesc").innerHTML = `<div>${primary.desc_en||primary.desc}</div>` +
-    (primary.detail ? `<div class="pdetail">${primary.detail_en||primary.detail}</div>` : "") +
-    (primary.tenets && primary.tenets.length ? `<div class="tenets">${primary.tenets.map(t=>`<span>${t}</span>`).join("")}</div>` : (primary.tenets_en && primary.tenets_en.length ? `<div class="tenets">${primary.tenets_en.map(t=>`<span>${t}</span>`).join("")}</div>` : ""));
+  $("pDesc").innerHTML = `<div>${adesc(primary)}</div>` +
+    (adetail(primary) ? `<div class="pdetail">${adetail(primary)}</div>` : "") +
+    (atenets(primary).length ? `<div class="tenets">${atenets(primary).map(t=>`<span>${t}</span>`).join("")}</div>` : "");
 
   let dh="";
   DIMS.forEach(d=>{
@@ -2333,7 +2336,7 @@ async function downloadCard(){
   // 主阵营
   x.fillStyle="#3b6df0"; x.font="bold 46px sans-serif"; x.fillText(archName(primary), 48, 186);
   x.fillStyle="#1f2933"; x.font="17px sans-serif";
-  const used=wrapText(x, primary.desc_en||primary.desc, 48, 218, W-96, 26);
+  const used=wrapText(x, adesc(primary), 48, 218, W-96, 26);
   let y=218+used*26+24;
   // 8 维雷达
   const cx=W/2, cy=y+330, R=270;
@@ -2445,9 +2448,9 @@ function renderArchList(list){
     return `<div class="arch-card">
       <div class="ac-top"><span class="ac-idx">${String(gi).padStart(2,'0')}</span><span class="ac-name">${archName(a)}</span></div>
       <div class="ac-sig">${sig}</div>
-      <div class="ac-desc">${a.desc_en||a.desc}</div>
-      <div class="ac-detail">${a.detail_en||a.detail}</div>
-      <div class="ac-tenets">${(a.tenets_en||a.tenets).map(t=>'<span>'+t+'</span>').join('')}</div>
+      <div class="ac-desc">${adesc(a)}</div>
+      <div class="ac-detail">${adetail(a)||""}</div>
+      <div class="ac-tenets">${atenets(a).map(t=>'<span>'+t+'</span>').join('')}</div>
       ${figsHtml}
     </div>`;
   }).join("");
