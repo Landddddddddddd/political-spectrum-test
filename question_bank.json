@@ -7498,7 +7498,8 @@
         "t": "我支持多招警察、加巡逻，犯罪高发区最缺的就是看得见的警力。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support more police and patrols. What is most lacking in crime-prone areas is visible police."
       },
       {
         "t": "我认为把钱投到社会服务、从源头减少犯罪，比事后抓人更划算。",
@@ -7506,13 +7507,15 @@
           "ECO:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think it is more cost-effective to put money into social services and reduce crime from the source than to arrest people afterwards."
       },
       {
         "t": "我主张两边平衡着投，当下的安全和长远的根因都不能偏废。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate balanced casting on both sides, and the current security and long-term root causes can not be neglected."
       },
       {
         "t": "我倾向削减警察、增强社区自治和调解力量，靠邻里互助比靠警棍更可持续。",
@@ -7520,14 +7523,17 @@
           "GOV:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I tend to reduce the police, increase community autonomy and mediation, and rely on neighborhood support is more sustainable than a baton."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
         "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A public security budget in the city, whether it is more patrol police cars, or invested in youth centers and employment assistance, parliamentarians and residents are fiercely noisy: while the immediate peace, while treating the root cause.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 172,
@@ -7540,27 +7546,32 @@
           "CUL:P",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think the purpose of prisons should be to reform and reform people's hearts and minds and reintegrate into society, otherwise it will be a disaster to come out."
       },
       {
         "t": "我主张犯过错就该受罚、付出代价，惩罚本身就有正当性。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I advocate that if you make a mistake, you should be punished and pay the price, and the punishment itself is justified."
       },
       {
         "t": "我认为监狱首要是把危险的人隔开、保护社会，其他都是次要的。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I think prisons are primarily about separating dangerous people and protecting society, and everything else is secondary."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
         "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "What should a prisoner who has just been incarcerated do with him - whether to make him suffer and atone for his sins, or to teach him how to rejoin society, the battle over the concept of prison administration has been going on for a long time.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 173,
@@ -7572,21 +7583,25 @@
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I think that minors who are cruel and harmful should also be prosecuted by adults, and age should not be a gold medal for impunity."
       },
       {
         "t": "我主张未成年人走专门少审、以教育和保护为主，孩子的大脑和责任能力都未长成。",
         "tags": [
           "GOV:L",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I advocate that minors go through special low-level trials and focus on education and protection, and that the child's brain and responsibility are not developed."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
         "t_en": "I can't really take a side here — I don't know enough about this to judge.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A 16-year-old boy was involved in a serious case of violence. Whether he was prosecuted as an adult or was given special protection under trial, the court and society were weighing: punishment or salvation.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 174,
@@ -7599,14 +7614,16 @@
           "CUL:P",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the inclusion of such substances in medical supervision and use according to medical instructions, and it is more effective to reduce harm than to ban them."
       },
       {
         "t": "我认为毒品就该全面禁止，任何松动都会让更多人坠入成瘾。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I think that drugs should be completely banned, and any loosening will cause more people to fall into addiction."
       },
       {
         "t": "我倾向把成年人纯粹自用非罪化，国家管贩卖、不管个人身体选择。",
@@ -7614,27 +7631,32 @@
           "GOV:L",
           "CUL:P",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to decriminalize purely self-use by adults, with the state regulating trafficking regardless of individual physical choices."
       },
       {
         "t": "我主张对涉毒一律严刑，用最强威慑守住底线。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate harsh punishment for all drug-related incidents, and defending the bottom line with the strongest deterrence."
       },
       {
         "t": "说实话我反对任何形式的放开，毒品带来的家庭破碎我看太多了。",
         "tags": [
           "CUL:T",
           "COL:I"
-        ]
+        ],
+        "t_en": "To be honest, I'm against any kind of letting go, and the family breakdown brought about by drugs is too much for me to watch."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
         "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "After a soft drug was legalized in neighboring countries, the local debate over whether to let go was ignited: medical schools said it would reduce harm, and conservatives said it would flood.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 175,
@@ -7647,34 +7669,40 @@
           "GOV:L",
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support residents to patrol and help each other spontaneously, and the neighborhood looks at the neighborhood, and the sense of security and friendship has returned."
       },
       {
         "t": "我认为治安该交给专业警察，业余巡逻既不规范也容易出乱子。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I think that public security should be left to professional police, and amateur patrols are both irregular and prone to disorder."
       },
       {
         "t": "我主张民间巡逻可以存在，但权力要受限、并向警方备案接受监督。",
         "tags": [
           "GOV:A",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate that civilian patrols can exist, but have limited power and be supervised by the police."
       },
       {
         "t": "我反对居民私自配装备组队，民间持械巡逻太容易走火，风险大于收益。",
         "tags": [
           "GOV:A",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am opposed to residents illegally deploying equipment to form teams. Civilian armed patrols are too easy to get away with, and the risks are greater than the benefits."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
         "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The security in the community deteriorated. Several residents spontaneously set up patrols and planned to equip them. The property welcomed them, but the police were worried about the problem of \"civilian armed forces\".",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 176,
@@ -7686,13 +7714,15 @@
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I advocate the gradual aggravation of repeat offenders who repeatedly teach and do not change. Punishment that is not painful and itchy will only raise old oil bars."
       },
       {
         "t": "我认为得看他为什么反复犯，是生计所迫还是恶意，不能一刀切加重。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I think it depends on why he repeatedly committed crimes, whether it was forced by livelihood or malicious, and it can't be aggravated one-size-fits-all."
       },
       {
         "t": "我倾向依旧以改造为主，累犯往往更弱势，拉一把比压一压更能断根。",
@@ -7700,14 +7730,17 @@
           "CUL:P",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I still tend to focus on transformation, recidivism is often more vulnerable, pulling a more than pressing a root can be broken."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
         "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A person was arrested for a third time for a misdemeanor of the same kind, and the judge struggled between \"whether it should be aggravated\" and \"whether he had difficulties\". What to do with recidivism.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 177,
@@ -7719,7 +7752,8 @@
         "tags": [
           "GOV:A",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support comprehensive control in public areas. Crime is afraid of being photographed, and the sense of security comes from the visible heavenly eyes."
       },
       {
         "t": "我主张只在重点时段、重点区域装，既防罪也不把人全罩进镜头。",
@@ -7727,7 +7761,8 @@
           "GOV:A",
           "GOV:L",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I advocate installing it only in key time periods and key areas, neither preventing crimes nor covering people in the camera."
       },
       {
         "t": "我倾向少装、把自由留给人，被全天候盯着的社会让人窒息。",
@@ -7735,34 +7770,40 @@
           "GOV:L",
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to dress less, leave freedom to others, and suffocate in a society that is stared at around the clock."
       },
       {
         "t": "我支持由社区自愿决定在自家范围装不装，自下而上、不靠强制。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I support the community's voluntary decision not to dress up at home, from the bottom up, and without coercion."
       },
       {
         "t": "我认为摄像可用，但要定规矩、限留存，在安全和人权间找平衡点。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I believe that cameras are available, but there are rules, limits, and a balance between safety and human rights."
       },
       {
         "t": "我对装不装摄像头没啥感觉，只要别拍进我家就行。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "I don't feel like installing a camera, as long as I don't shoot into my house."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
         "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A commercial street should be equipped with face camera pickpockets, and the merchants shouted, and passers-by were worried about \"where to go and where to be seen\". What's the balance of security and privacy?",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 178,
@@ -7775,20 +7816,24 @@
           "GOV:L",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the use of non-custodial methods such as community service and probation for misdemeanors. Instead, imprisonment destroys the family and also costs the public money."
       },
       {
         "t": "我主张轻罪也收监，才能形成威慑，否则违法成本太低人人敢试。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate that misdemeanors are also imprisoned in order to form a deterrent, otherwise the cost of violating the law is too low. Everyone dares to try."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
         "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A mother convicted of petty theft, whether to go to jail has become a difficult problem: incarcerated children are left unattended, not confiscated and afraid of no deterrence.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 179,
@@ -7801,34 +7846,40 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think the state should pay compensation to the victims first, and then go to the criminals to recover it, and can't let the good people carry it on their own."
       },
       {
         "t": "我主张赔偿主体就是罪犯，自己作的孽自己还，公家不该兜底。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate that the subject of compensation is a criminal, and the sins he has committed should be repaid by himself, and the public should not go behind the scenes."
       },
       {
         "t": "我支持用犯罪保险来覆盖，事前投保、事后理赔，市场化的解法。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support the use of crime insurance to cover, pre-insurance, after-the-fact claims, and market-oriented solutions."
       },
       {
         "t": "我倾向用社会救助基金补一部分，靠社会互助接住受害的人。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I prefer to use the social assistance fund to supplement some of the victims, and rely on social mutual assistance to catch the victims."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
         "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A shopkeeper who was robbed, the loss was not small, and the murderer had no money to pay for it. There were differing views on who should pay and how to make up for the victims' holes.",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 180,
@@ -7841,27 +7892,32 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I believe that sentencing must have a uniform standard and not be drifted by wealth, and fairness is the bottom line of justice."
       },
       {
         "t": "我觉得请好律师本来就是优势，财富带来的影响在所难免，现实如此。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that hiring a good lawyer is an advantage, and the impact of wealth is inevitable. This is the reality."
       },
       {
         "t": "我主张把量刑逻辑公开透明，让偏差能被看见和纠正，比假装不存在强。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate making the sentencing logic open and transparent so that deviations can be seen and corrected, which is better than pretending that they do not exist."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
         "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Two defendants who committed the same crime, one who could afford a top lawyer and one who relied on an assigned lawyer, had a poor verdict. Before the law, was the money quietly divided into 369 grades?",
+    "domain_en": "Policing & Punishment"
   },
   {
     "id": 181,
@@ -7874,7 +7930,8 @@
           "NAT:C",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support more foreign aid. Helping others is also saving international credibility and influence, which is beneficial in the long run."
       },
       {
         "t": "我认为钱该先花在国内民生，自家百姓还没顾好就往外撒不合理。",
@@ -7882,7 +7939,8 @@
           "NAT:N",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that money should be spent on the people's livelihood at home first, and it is unreasonable to sprinkle it outside before the people themselves take care of it."
       },
       {
         "t": "我倾向做互利的合作援助，既帮人也能换来对等的经贸好处。",
@@ -7890,7 +7948,8 @@
           "NAT:C",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to do mutually beneficial cooperation and assistance, both helping people and exchanging reciprocal economic and trade benefits."
       },
       {
         "t": "我主张少援助、把资源留给本国，对外大方不如对内务实。",
@@ -7898,14 +7957,17 @@
           "NAT:N",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate less aid, leaving resources to the country, foreign generosity is not as pragmatic as at home."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
         "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The domestic economy is also poor, but the government intends to spend a sum of money to build infrastructure in neighboring countries. Some people say that it is a soft power investment, and some people ask, \"My own affairs are not well done.\"",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 182,
@@ -7917,27 +7979,32 @@
         "tags": [
           "NAT:C",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I think that the signed treaty should be respected, and international credit is more important than the profits and losses of the industry for a while."
       },
       {
         "t": "我主张本国主权优先，条约若伤根本利益就不该被它绑住。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate that the sovereignty of the country takes precedence, and if the treaty hurts the fundamental interests, it should not be tied by it."
       },
       {
         "t": "我倾向看条约对本国有利就守、不利就灵活，国家利益是第一标尺。",
         "tags": [
           "NAT:N"
-        ]
+        ],
+        "t_en": "I tend to be flexible when treaties are beneficial or unfavorable to my country, and national interests are the first criterion."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
         "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A new international treaty is unfavorable to some industries in the country. Whether to sign or not to sign it. Domestic disputes: whether to abide by the contract is credible, or sovereignty is preferred.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 183,
@@ -7949,21 +8016,25 @@
         "tags": [
           "NAT:C",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support active participation in multilateral alliances. It is better to fight alone than to hold a group, and the agenda will have a part."
       },
       {
         "t": "我主张保持独立、不被联盟绑住手脚，自主决策最要紧。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate maintaining independence, not being tied down by the alliance, and autonomous decision-making is the most important."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
         "t_en": "I can't really take a side here — I don't know enough about this to judge.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Several countries invited their countries to join a new multilateral alliance, with supporters saying they would have more say in the group and worries that they would lose autonomy.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 184,
@@ -7975,41 +8046,48 @@
         "tags": [
           "NAT:C",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I believe that it is an international responsibility to participate in peacekeeping to stabilize the situation and stop the bloodshed."
       },
       {
         "t": "我主张不干涉他国内政，出兵容易陷进去、也违背不干涉原则。",
         "tags": [
           "NAT:N",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate non-interference in the internal affairs of other countries. Sending troops is easy to fall into and violates the principle of non-interference."
       },
       {
         "t": "我倾向在明确授权、限期、不涉一方的条件下参与，谨慎兜底。",
         "tags": [
           "NAT:C",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I tend to participate with clear authorization, deadlines, and no one involved, and be cautious."
       },
       {
         "t": "我支持只出人道主义援助、不派作战兵力，救人可以、打仗不行。",
         "tags": [
           "NAT:C",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support only humanitarian aid and do not send combat troops. You can save people or fight wars."
       },
       {
         "t": "我认为干脆不出兵，战乱的深坑别蹚，保住自家子弟兵要紧。",
         "tags": [
           "NAT:N"
-        ]
+        ],
+        "t_en": "I think that it is important to not send troops at all, to avoid the deep pits of war, and to keep our own children and soldiers."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
         "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A country is in turmoil, the United Nations calls on member states to send troops to peacekeeping, and their parliaments are clamoring for \"no troops\": humanitarianism and risk pulling.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 185,
@@ -8021,14 +8099,16 @@
         "tags": [
           "NAT:C",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support multilateral joint sanctions. It takes a lot of people to force each other to move."
       },
       {
         "t": "我主张不单边搞制裁，容易伤己也缺合法性，要跟多边走。",
         "tags": [
           "NAT:N",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate not unilaterally engaging in sanctions, but easily injuring oneself and lacking legitimacy. We should follow the multilateral approach."
       },
       {
         "t": "我倾向慎用制裁、保住本国经贸利益，别为出气赔了里子。",
@@ -8036,21 +8116,25 @@
           "NAT:N",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to use sanctions cautiously to protect my country's economic and trade interests, and don't lose money for the sake of venting."
       },
       {
         "t": "我认为制裁要开人道豁免，不能让普通百姓为政权行为买单。",
         "tags": [
           "NAT:C",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I believe that sanctions should be humanitarian exemptions, and ordinary people should not be allowed to pay for the regime's actions."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
         "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The behavior of a country triggered public outrage, allies called for sanctions together, and the country weighed on \"not following and how to sanction\": pressure was effective, but economic and trade were also hurt.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 186,
@@ -8062,28 +8146,33 @@
         "tags": [
           "NAT:C",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support vigorously promoting cultural exchanges, so that the outside world can understand us, reduce misunderstandings, and have long-term value."
       },
       {
         "t": "我认为适度搞就好，过犹不及，钱得花在刀刃上。",
         "tags": [
           "NAT:N",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I think it's good to do it in moderation, it's too late, and the money needs to be spent on the blade."
       },
       {
         "t": "我倾向让文化交流靠市场驱动，有需求自然有人做，不必财政硬推。",
         "tags": [
           "NAT:C",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I tend to let cultural exchanges be driven by the market, and people naturally do it when there is a demand, without having to push hard financially."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
         "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The government intends to allocate a sum of money for foreign cultural exhibitions. Some people say that it is a soft business card, and some people think that money should be saved for business.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 187,
@@ -8096,7 +8185,8 @@
           "NAT:C",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I believe that rich countries should shoulder more, have more capacity and contribute more, and global issues cannot be egalitarian."
       },
       {
         "t": "我主张按各国实际能力分摊，公平也科学，谁扛得住谁多扛。",
@@ -8104,13 +8194,15 @@
           "NAT:C",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate sharing according to the actual capacity of each country, fair and scientific, who can bear who can bear who can bear how much."
       },
       {
         "t": "我倾向各国均等分摊，国家不论大小、一视同仁。",
         "tags": [
           "NAT:N"
-        ]
+        ],
+        "t_en": "I prefer to share equally among countries, no matter how big or small, without discrimination."
       },
       {
         "t": "我支持自愿承担，强扭的瓜不甜，愿意出多少由各自主张。",
@@ -8118,7 +8210,8 @@
           "NAT:C",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support voluntary commitment. Strong melons are not sweet. How much they are willing to give is up to each other."
       },
       {
         "t": "我认为本国利益优先，全球的事往后排，先顾自家人。",
@@ -8126,21 +8219,25 @@
           "NAT:N",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I believe that the interests of the country take precedence, the global affairs are in the back row, and I take care of my family first."
       },
       {
         "t": "我主张用市场机制解决，碳交易之类让价格去分配，比摊派灵活。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate using market mechanisms, such as carbon trading, to allow prices to be allocated, which is more flexible than apportionment."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
         "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A global environmental plan requires countries to share the funding, rich countries say it should be more, poor countries say it is their priority, and some people call for voluntarism. How to divide the bill, a quarrel.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 188,
@@ -8152,21 +8249,25 @@
         "tags": [
           "NAT:C",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I believe that since we have entered the Convention, we should obey the ruling, and there is trust in the international order to abide by the rules."
       },
       {
         "t": "我主张涉及核心主权的事可豁免，法庭的管辖权不该无限延伸。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate that matters involving core sovereignty can be exempted, and the jurisdiction of the court should not be extended indefinitely."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
         "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The International Tribunal ruled on a maritime dispute, to the detriment of the country, and there were differences within the government on \"obedience and disobedience\": compliance was weak, and the law was rejected.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 189,
@@ -8178,21 +8279,24 @@
         "tags": [
           "NAT:C",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support the expansion of international students. Young people read each other and understand each other, which is a long-term investment in understanding."
       },
       {
         "t": "我主张控制规模、把好安全关，敞太开容易出问题。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate controlling the scale and turning off the safety. Opening up too much is prone to problems."
       },
       {
         "t": "我认为按能力择优就好，不论来源，质量第一。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think it is good to be merit-based, regardless of source, quality first."
       },
       {
         "t": "我支持用公费做互换项目，让普通家庭的孩子也有走出去的机会。",
@@ -8200,14 +8304,17 @@
           "NAT:C",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the use of public funds for exchange projects, so that children from ordinary families have the opportunity to go out."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
         "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Colleges and universities want to expand the recruitment of foreign students and also send foreign students out. Some people see bridges of understanding, and some worry about scale and safety.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 190,
@@ -8220,14 +8327,16 @@
           "NAT:C",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that the international coordinated supervision, the enterprise global running, the rules also have to be global, or drill in the gap."
       },
       {
         "t": "我主张本国管好境内的事就行，国际协同太慢也易被绑架。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate that countries take good care of their own territory, and international cooperation is too slow and easy to be kidnapped."
       },
       {
         "t": "我倾向让企业自律、定行业准则，外部管太多会扼杀活力。",
@@ -8235,14 +8344,17 @@
           "ECO:R",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to let companies self-discipline and set industry norms. Too many external pipes will stifle vitality."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
         "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A multinational company operating in multiple countries, registered in the lowest tax place, countries want to control and can not control. Who should have the power of supervision has become a difficult question.",
+    "domain_en": "Foreign Affairs & International"
   },
   {
     "id": 191,
@@ -8255,7 +8367,8 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support an appropriate increase in the contribution rate, the pool should be continued, and the contemporary people must carry it together."
       },
       {
         "t": "我主张把部分国资收益划进养老池，这是上一代积累、本就该反哺。",
@@ -8263,14 +8376,16 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate that some of the state-owned capital gains be allocated to the pension pool, which is the accumulation of the previous generation and should be reversed."
       },
       {
         "t": "我倾向更多转入个人账户、自己存自己用，权责清晰。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to transfer more to personal accounts, save for myself, and have clear responsibilities."
       },
       {
         "t": "我认为延迟退休能减负又多缴，是一举两得的现实解。",
@@ -8278,14 +8393,17 @@
           "GOV:A",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that delayed retirement can reduce the burden and overpay, which is a realistic understanding of one-two gains."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
         "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The pension pool is about to run out, and policymakers have repeatedly weighed between \"increasing contributions, transferring state assets, transferring personal accounts, and retreating\", each of which affects a generation.",
+    "domain_en": "Social Security"
   },
   {
     "id": 192,
@@ -8297,28 +8415,33 @@
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that unemployment benefits should be enough for people to live a basic and decent life, and society must hold the bottom when it falls."
       },
       {
         "t": "我主张失业金低一点，保留找工作的动力，太高反而养懒。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate lower unemployment benefits, retain the motivation to look for work, too high but lazy."
       },
       {
         "t": "我支持按原薪资一定比例发，收入高时多缴、失业时多补，更公平。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support paying a certain proportion of the original salary, overpaying when the income is high, and supplementing when unemployed, which is more equitable."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
         "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The economy is down, the number of unemployed people has increased, and the number of unemployed blondes is still low and noisy: they are afraid of not looking for work when their life is high and they are afraid of not looking for work when their employment is low, but they can't keep up.",
+    "domain_en": "Social Security"
   },
   {
     "id": 193,
@@ -8331,21 +8454,25 @@
           "ECO:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that the disability allowance should be sufficient and inclusive, and the inconvenience is not the fault of the individual, and the society has to hold back."
       },
       {
         "t": "我主张给基本保障就行，资源有限、不能无上限，也得讲可持续。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate basic security, limited resources, not unlimited, but also sustainable."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
         "t_en": "I can't really take a side here — I don't know enough about this to judge.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A severely disabled person's monthly expenses are far more than normal, and his family is overwhelmed. How much subsidy should be given and whether it should be included triggered discussion.",
+    "domain_en": "Social Security"
   },
   {
     "id": 194,
@@ -8358,28 +8485,32 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the overall planning of the whole country. Rich provinces help poor provinces and pool risks, and the system is only stable."
       },
       {
         "t": "我主张留给地方自管，各地情况不同，自己最清楚自己。",
         "tags": [
           "NAT:N",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate leaving it to the local self-management. The situation is different in different places, and I know myself best."
       },
       {
         "t": "我倾向以个人账户为主，自己缴自己用、产权在自己手里。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to focus on personal accounts, and pay for my own use and property rights in my own hands."
       },
       {
         "t": "我认为统筹加个人账户的混合最稳，互济和激励都顾到。",
         "tags": [
           "ECO:L",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I think the mix of co-ordination plus personal accounts is the most stable, with mutual aid and incentives in mind."
       },
       {
         "t": "我支持在基本盘之外用商业保险补充，多层次才扛得住。",
@@ -8387,14 +8518,17 @@
           "ECO:R",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support supplementing with commercial insurance outside the basic market, which can be handled on multiple levels."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
         "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Whether the social security fund is integrated into the country, left to the local area, or dominated by personal accounts, the income and expenditure are uneven everywhere. Behind the dispute over the model is \"how to unify the money\".",
+    "domain_en": "Social Security"
   },
   {
     "id": 195,
@@ -8407,7 +8541,8 @@
           "ECO:L",
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the direct discovery of gold to the poor, who know best what they lack and whose dignity is in their choices."
       },
       {
         "t": "我认为上产业、造血式扶贫最持久，给人饭碗比给钱管用。",
@@ -8415,7 +8550,8 @@
           "ECO:R",
           "ENV:G",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that the upper industry and hematopoietic poverty alleviation are the most lasting, and it is more useful to give people jobs than money."
       },
       {
         "t": "我主张投教育、教技能，把人自己的能力建起来，断穷根。",
@@ -8423,7 +8559,8 @@
           "ECO:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate investing in education, teaching skills, raising people's own abilities, and eliminating the roots of poverty."
       },
       {
         "t": "我支持对最弱的一层直接兜底低保，保命的钱不能省。",
@@ -8431,14 +8568,17 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the direct protection of the weakest layer, and the money for life preservation cannot be saved."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
         "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "If a poor mountainous area needs to be lifted out of poverty, whether it is to directly send money, go to industry, teach skills, or have a low guarantee, there are fans in each of the four ways.",
+    "domain_en": "Social Security"
   },
   {
     "id": 196,
@@ -8451,14 +8591,16 @@
           "ECO:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the universal payment of child allowances. Raising children is a common thing in society, and everyone should help regardless of whether they are rich or poor."
       },
       {
         "t": "我主张按家庭收入发，钱花在真正困难的孩子身上才值。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate paying according to family income, and spending money on really difficult children is worth it."
       },
       {
         "t": "我认为不发现金、改提供托育教育等服务，更防挪用也更对症。",
@@ -8466,14 +8608,17 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that it is better to prevent misappropriation and be more symptomatic if no gold is found and services such as childcare and education are provided instead."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
         "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The government wants to give families with children money to reduce their burdens, whether it is universal, according to income, or converted into service. The dispute over the program is about fairness and efficiency.",
+    "domain_en": "Social Security"
   },
   {
     "id": 197,
@@ -8485,7 +8630,8 @@
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that the reduction rate reduces the burden on the enterprise, and the enterprise is alive, and the employment and tax base can be maintained."
       },
       {
         "t": "我主张费率稳住、先保住大家将来的待遇，降了眼前苦了老后。",
@@ -8493,14 +8639,16 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate that the rate should be stabilized and that everyone's future treatment should be preserved first, which reduces the current suffering of the elderly."
       },
       {
         "t": "我支持按收入分档、富人高费率穷人低，调节式更公平。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support income stratification, higher rates for the rich, lower rates for the poor, and fairer regulation."
       },
       {
         "t": "我倾向统一比例，简单透明、人人一个标准最不惹争议。",
@@ -8528,7 +8676,9 @@
         "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Enterprises shouted that the social insurance premiums were too heavy, employees feared that the treatment would be reduced, the payment rate would not drop, how to drop, and all parties saw that the enterprise would survive and the people would have to take care of it in their old age.",
+    "domain_en": "Social Security"
   },
   {
     "id": 198,
@@ -8685,14 +8835,16 @@
           "CUL:P",
           "GOV:L",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I think that there is no problem between the child and the mother's surname. The surname is just a symbol. Whoever brings more and how the family can discuss it, there is no need to pass on the male line."
       },
       {
         "t": "我倾向随父亲姓，这是家里一直延续的习惯，改了长辈心里不舒服，也没必要为这个较劲。",
         "tags": [
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I tend to follow my father's surname. This is a habit that has continued in my family. I have changed my elders' discomfort, and there is no need to fight for this."
       },
       {
         "t": "我觉得可以父母商量后取双姓，或者等孩子大了让他自己选，命名权本就该回归家庭本身。",
@@ -8700,9 +8852,12 @@
           "GOV:L",
           "CUL:P",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I think it is possible for parents to take a double surname after consultation, or when the child is older and let him choose for himself, the naming right should be returned to the family itself."
       }
-    ]
+    ],
+    "scene_en": "A pair of prospective parents argue about the child's surname before registering the child for birth. One side felt that the surname of the mother was also very good, and the other side was worried that elders and traditional relatives would have opinions. Tension: Is the surname a symbol of family heritage, or is it a private matter that parents can freely agree on?",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 203,
@@ -8716,21 +8871,25 @@
           "ECO:L",
           "SEC:E",
           "COL:M"
-        ]
+        ],
+        "t_en": "My partner and I arranged shifts, breastfeeding at night, and bringing children on the weekend all took turns. No one should be absent. Parenting is for two people, not for one person."
       },
       {
         "t": "我觉得妈妈带孩子更细致也更放心，爸爸在外打拼赚钱，家里的养育主要交给我也心安。",
         "tags": [
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I feel that my mother is more detailed and more assured with her children. My father is working hard to earn money outside, and I am also relieved that the main care at home is given to me."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
         "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The new parents are all at work, and the children still need to be watched. One side believes that childcare is a shared responsibility of the two, while the other side feels that mothers are naturally more careful and should bear more. The tension is whether parenting is a parental obligation or whether it can be divided according to traditional roles.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 204,
@@ -8744,13 +8903,15 @@
           "ECO:L",
           "SEC:F",
           "COL:M"
-        ]
+        ],
+        "t_en": "I took my parents to live with me. Everyday, three meals are managed by someone, and sick people are accompanied by someone. While I can still get along with them, I can be as filial as possible, and save money. It is not as good as being around people."
       },
       {
         "t": "我在同小区给父母租或买套小房子，走路几分钟能到，既能照应又互不打扰，两代人都有喘息空间。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "I rented or bought a small house for my parents in the same neighborhood. It is a few minutes' walk away, so I can take care of each other without disturbing each other. Both generations have room to breathe."
       },
       {
         "t": "如果父母愿意，我选设施专业的养老机构，有医护有同伴，比我在家手忙脚乱更靠谱，也减轻子女压力。",
@@ -8759,13 +8920,15 @@
           "GOV:A",
           "SEC:E",
           "COL:I"
-        ]
+        ],
+        "t_en": "If the parents want, I choose a professional elderly care institution with facilities, with medical care and companions, which is more reliable than my busy life at home, and also reduces the pressure on my children."
       },
       {
         "t": "我不在原则上提前定死，看父母身体和意愿随时调整，能自理就独立、需要人时就靠拢，灵活最重要。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I do not set my death in advance in principle. I look at my parents' body and wishes to adjust at any time. I can take care of myself independently, approach people when I need them, and be flexible and most important."
       },
       {
         "t": "我自己更想要独立的生活，长辈也该有他们的社交和节奏，过度捆绑对两代人都累。",
@@ -8773,14 +8936,17 @@
           "CUL:P",
           "GOV:L",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I myself prefer to live independently, and elders should also have their social and rhythmic, overbundling is tiring to both generations."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
         "t_en": "I can't really take a side here — I don't know enough about this to judge.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Parents are getting older, and their children are considering whether to come and live with them for filial piety, or let them live close but independent. The elderly not only want to take care of their children, but also are afraid to live together in conflict and lose their own space. Tension is in: whether filial piety is accompanied by morning and evening, or whether it respects each other's independence.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 205,
@@ -8793,7 +8959,8 @@
           "GOV:A",
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I think it's good to have a buffer period. How many people sign in one breath? After two weeks, they can calm down and save it and give the marriage a last chance."
       },
       {
         "t": "我反对强制冷静期，过不下去的人多拖三十天只是煎熬，离不离该由当事人自己决定，不该被代做主。",
@@ -8802,7 +8969,8 @@
           "CUL:P",
           "SEC:E",
           "COL:I"
-        ]
+        ],
+        "t_en": "I oppose the compulsory cooling-off period. Those who can't go on for more than 30 days are just suffering. It should be decided by the parties themselves and should not be taken for the boss."
       },
       {
         "t": "我认为若存在家暴，必须立刻放行、不能卡冷静期，弱势一方等不起，这种例外必须写进规则。",
@@ -8810,21 +8978,25 @@
           "GOV:A",
           "CUL:P",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I think that if there is domestic violence, it must be released immediately, the cooling-off period cannot be stuck, and the vulnerable party cannot afford to wait. Such exceptions must be written into the rules."
       },
       {
         "t": "我主张把冷静期做成可选项，想缓冲的去申请、铁了心要离的直接办，尊重每个人的实际情况。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate making the cooling-off period optional, wanting to buffer to apply, ironing out the need to do it directly, and respecting everyone's actual situation."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
         "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A couple got into a rush to get divorced, one side made an impulse application, and the other side struggled repeatedly during the cooling-off period. Some people worry that the cooling-off period can stop the impulse, and others feel that it is equivalent to forcing people who do not want to spend an extra month. The tension lies in: protecting the stability of the marriage or the freedom of the individual to withdraw.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 206,
@@ -8837,7 +9009,8 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the use of tax subsidies and universal childcare for families raising children. Children will be social workers in the future, and the cost should not be solely on the shoulders of parents."
       },
       {
         "t": "我觉得生养是自己的选择，账目自己扛，不该指望别人掏钱，量入为出就行。",
@@ -8845,21 +9018,25 @@
           "ECO:R",
           "CUL:T",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think health is my choice, the accounts should be borne by myself, and I shouldn't expect others to pay for it, just pay for it."
       },
       {
         "t": "我更看重单位给的实打实支持，比如带薪育儿假、托管班，比发钱更能帮上班族平衡工作家庭。",
         "tags": [
           "ECO:R",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I pay more attention to the solid support given by the unit, such as paid parental leave and custody classes, which can help office workers balance working families more than paying money."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
         "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Young couples settle accounts and find that raising a child spends most of their income from milk powder to tutoring. One wants society to share through subsidies, while the other sees it as the family's own business. The tension is: whether childcare is considered social reproduction, and whether it should be paid by the public.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 207,
@@ -8872,7 +9049,8 @@
           "CUL:P",
           "GOV:L",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I don't ask much about the composition of my neighbors' homes. Children should go to school, adults should go to work, and basic respect should be given when getting along."
       },
       {
         "t": "我更认同传统的一父一母家庭模式，社区活动若有示范还是以主流为先，不希望模糊了孩子认知。",
@@ -8880,7 +9058,8 @@
           "CUL:T",
           "NAT:N",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I agree with the traditional one-parent family model. If there is a demonstration or the mainstream is the first, I do not want to obscure the child's cognition."
       },
       {
         "t": "我认为只要合法登记，非传统家庭在落户、继承、就医上就该和别人完全一样，权利义务不能打折。",
@@ -8888,29 +9067,35 @@
           "GOV:L",
           "CUL:P",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I believe that as long as it is legally registered, non-traditional families should be exactly the same as others in terms of settlement, inheritance, and medical treatment, and rights and obligations cannot be discounted."
       },
       {
         "t": "别人家里怎么过是他们的事，只要不侵害他人，公权力和邻居都不该伸进卧室去评判。",
         "tags": [
           "GOV:L",
           "SEC:E"
-        ]
+        ],
+        "t_en": "What others do at home is their business. As long as they do not invade others, public power and neighbors should not reach into the bedroom to judge."
       },
       {
         "t": "我自己的观念偏传统，不反对别人那样生活，但涉及公开表彰或教材呈现我还是倾向守旧。",
         "tags": [
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "My own ideas are traditional and I am not opposed to others living like that, but I still tend to be conservative when it comes to public recognition or presentation of textbooks."
       },
       {
         "t": "这种话题离我生活挺远，谁家怎么过都行，我懒得掺和也不太关心。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "This topic is quite far from my life, no matter how anyone's family lives, I am too lazy to get involved and I don't care much."
       }
-    ]
+    ],
+    "scene_en": "There are atypical families in the community, such as single parents, reorganization, and same-sex couples, and there are neighbors who feel uncomfortable and neighbors who advocate for equal treatment. Whether the property should be treated differently when considering event notices and site use. The tension is in: traditional family outlook or equal respect for private life.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 208,
@@ -8921,20 +9106,24 @@
         "t": "我和伴侣遇到择校、报班都先聊聊，孩子的路是两个人一起铺的，单方面拍板我不放心。",
         "tags": [
           "CUL:P"
-        ]
+        ],
+        "t_en": "My partner and I talked about school selection and newspaper work first. The child's road is paved by two people, and I am not worried about unilaterally patting the board."
       },
       {
         "t": "家里谁更懂教育、谁时间多就谁主要拿主意，省得每次都扯皮，定了我配合执行就是。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "Whoever knows more about education in the family and who has more time will mainly take the idea, and save every time. I will cooperate with the implementation."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
         "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Husbands and wives have different opinions on what kind of classes their children are interested in and which primary school they choose. One party wants to arrange it at their discretion, and the other party wants to discuss it with the other. The tension lies in: whether the right to make educational decisions belongs to one party or to the other.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 209,
@@ -8948,7 +9137,8 @@
           "ECO:L",
           "SEC:E",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate abolishing the bride price altogether. Marriage should not be measured by money. Hundreds of thousands of feelings are often turned into transactions, which also crushes ordinary families."
       },
       {
         "t": "我觉得给不给、给多少看两家情愿和经济能力，别攀比也别强求，心意到了就行。",
@@ -8956,7 +9146,8 @@
           "CUL:T",
           "SEC:F",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that if you don't give and how much you give, you can see the willingness and economic ability of the two families. Don't force yourself to compete, as long as you have the intention."
       },
       {
         "t": "我支持设个上限管住天价彩礼，过高的数额逼出债务和矛盾，用规矩兜底普通人的体面。",
@@ -8965,21 +9156,25 @@
           "ECO:L",
           "SEC:E",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support setting an upper limit to control the sky-price bride price, pushing out debts and contradictions in excessively high amounts, and using rules to bolster the decency of ordinary people."
       },
       {
         "t": "我认这个老规矩，彩礼是两家结亲的礼数，按本地惯例走，图个尊重和圆满。",
         "tags": [
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I think this old rule, the dowry is the number of gifts for the two families to marry, according to local practice, respect and perfection."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
         "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The young man talked about marriage with the woman's family. The woman's family wanted a bride price according to custom. The man's family felt that it was a burden and was afraid to change it into a sale. There are people in the community who are in favor of tradition, there are people who are in favor of abolition. The tension is in: whether the bride price is the number of gifts or exploitation.",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 210,
@@ -8990,7 +9185,8 @@
         "t": "我家务做了就做了，跟自己人算钱太生分，谁多干点少干点看情况，情分比账单重要。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "I did the housework and did it. Calculating money with my own people is too much. Whoever does more and does less depends on the situation. Sentiment is more important than bills."
       },
       {
         "t": "我倾向把家务折成值或轮值表，干多的另一方补点钱或等价劳动，长期不公平我心里会堵。",
@@ -8998,21 +9194,25 @@
           "ECO:R",
           "CUL:P",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to fold the housework into a value or rotation table, and the other party who does more will supplement the money or equivalent labor. If it is unfair for a long time, my heart will be blocked."
       },
       {
         "t": "争执不下的活我直接花钱请人做，既不占我时间也不欠伴侣人情，两边清静。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I directly paid people to do the disputed work, neither taking up my time nor owing my partner's affection, and both sides were quiet."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
         "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A couple argues about whether to calculate money for housework. One party feels that the relationship between loved ones is clearly hurtful, and the other party feels that it is always a loss for one party if it does not keep an account. Tension in: Should labor in intimate relationships be priced?",
+    "domain_en": "Family & Marriage"
   },
   {
     "id": 211,
@@ -9024,35 +9224,41 @@
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I intentionally eat less meat. Animals in factory farming suffer too much. One less plate of meat is also for less torture, and the taste can make it one step."
       },
       {
         "t": "我觉得吃肉是再正常不过的饮食选择，营养均衡就行，没必要为理念委屈自己的胃口。",
         "tags": [
           "CUL:T",
           "ENV:G"
-        ]
+        ],
+        "t_en": "I think eating meat is a perfectly normal diet choice. Nutrition should be balanced. There is no need to quit your appetite for the concept."
       },
       {
         "t": "我不排斥吃肉，但会挑标榜人道养殖和屠宰的肉源，起码让动物死前少受罪。",
         "tags": [
           "ENV:S",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I do not exclude eating meat, but I will promote the source of meat that is humanely bred and slaughtered, at least to make animals suffer less before they die."
       },
       {
         "t": "我已经吃素了，看着动物被杀我下不去嘴，青菜豆腐照样吃得香，也算是自己的坚持。",
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I was already vegetarian, watching the animals get killed and I couldn't go down the mouth. The vegetable tofu still tasted good, and it was my own insistence."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
         "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "When a family gathers for a meal to order, some people propose to order more meat, some people want to eat less because of the concept of mobile protection, and others insist on eating meat on a daily basis. Tension in: Animal welfare and dietary freedom.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 212,
@@ -9064,28 +9270,33 @@
         "tags": [
           "ENV:S",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I believe that key experiments to treat patients and save people can be done to a limited extent, but they must be approved, reduced and standardized, and cannot be used casually."
       },
       {
         "t": "我主张全面停用实验动物，生命不该为人的便利牺牲，该把钱投向替代技术。",
         "tags": [
           "CUL:P",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I advocate the complete deactivation of experimental animals, and that life should not be sacrificed for human convenience, and money should be invested in alternative technologies."
       },
       {
         "t": "我支持能不用就不用，先上细胞培养、计算机模拟等替代手段，实在绕不过才考虑动物。",
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support whether you can use it or not, first go to alternative means such as cell culture and computer simulation, it is really impossible to consider animals."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
         "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A pharmaceutical company needs to use experimental animals to test the safety of new drugs. Scientific research institutions say it is indispensable, and the mobile protection group requires a stop. Regulation weighs human health gains against animal suffering.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 213,
@@ -9097,21 +9308,25 @@
         "tags": [
           "ENV:G",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I think the zoo should be kept. Children know the species here and plant nature-loving seeds here, which is much more intuitive than textbooks."
       },
       {
         "t": "我主张逐步关掉，把动物送回更适合的栖息地或保护区，圈着给人看本身就是不尊重。",
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I advocate gradually shutting down and returning animals to more suitable habitats or protected areas, which is disrespectful in itself."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
         "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The old zoo needs to be renovated in the city. Conservationists say that it should be closed down and released into nature. Parents say that their children need to see biology knowledge nearby. The tension is in: animal welfare or public education.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 214,
@@ -9123,42 +9338,49 @@
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support legislation to regulate the minimum welfare of pets. Sterilization, immunization, and no abandonment are written into the rules, and you must be responsible when you raise them."
       },
       {
         "t": "我觉得不用太多法条，关键在主人自觉，自己管好自家猫狗、不影响别人就是本分。",
         "tags": [
           "CUL:T",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I don't think there are many laws. The key lies in the owner's consciousness. It is his duty to take care of his own cats and dogs and not affect others."
       },
       {
         "t": "我的底线是禁止虐待和遗弃，至于怎么养、养几只交给主人，管太细反而添乱。",
         "tags": [
           "ENV:S",
           "GOV:A"
-        ]
+        ],
+        "t_en": "My bottom line is to prohibit abuse and abandonment. As for how to raise and raise a few to the owner, the management is too thin and messy."
       },
       {
         "t": "我认为成年人有养不养、养什么的自由，只要不伤人，规不规制由我自己定。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I believe that adults have the freedom to raise or not raise anything. As long as it does not hurt people, the rules and regulations are determined by myself."
       },
       {
         "t": "我赞成对数量和品种设限，尤其烈性犬得控住，邻里安全和安静比饲养随意重要。",
         "tags": [
           "GOV:A",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am in favor of setting limits on numbers and breeds, especially strong dogs, and neighborhood safety and quietness are more important than random breeding."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
         "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "There are more and more pets in the community. Some people are bitten and some people are noisy. The parliament discusses whether to legislate on pet welfare and breeding. The tension is: animal protection intensity or breeding freedom.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 215,
@@ -9170,14 +9392,16 @@
         "tags": [
           "ENV:S",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate a one-size-fits-all ban on wildlife trade. As long as there is trade, there will be poaching, and cutting off the source is the most convenient."
       },
       {
         "t": "我支持发许可证、可溯源的才许经营，既保野生种群又给合规商户活路。",
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support the issuance of licenses and traceable licenses, both to protect wild populations and to provide a livelihood for compliant merchants."
       },
       {
         "t": "我认为人工繁育、可持续采集的可以卖，关键是合法合规不碰野外种群，也满足需求。",
@@ -9185,21 +9409,25 @@
           "ENV:S",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that artificial breeding and sustainable collection can be sold, the key is to legally and legally do not touch wild populations, but also meet the needs."
       },
       {
         "t": "我倾向于不在公开市场摆卖任何野生动物制品，降低诱惑和灰色地带，网上线下都收紧。",
         "tags": [
           "GOV:A",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend not to sell any wildlife products on the open market, reducing temptation and grey areas, and tightening up both online and offline."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
         "t_en": "I can't really take a side here — I don't know enough about this to judge.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "There are people in the market who secretly sell rare wild animals and specimens. Environmental protection organizations require a total ban. Merchants say that legal farming should be sold. The tension is in: ecological conservation or freedom of operation.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 216,
@@ -9211,28 +9439,33 @@
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I am in favor of catching, sterilizing, vaccinating and releasing again, volunteers feeding and registering, and controlling the number from the source without exterminating."
       },
       {
         "t": "我认为失控的就送收容所，无人领养且不可控的做安乐，总比流浪传病强。",
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I think that if it gets out of control, it will be sent to a shelter, and if there is no one to adopt and it is uncontrollable, it will be better than wandering and spreading diseases."
       },
       {
         "t": "我更想推领养，劝想养的人去收容所接一只，少一只买卖就少一只漂泊的。",
         "tags": [
           "CUL:P",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I would rather push for adoption and persuade those who want to adopt to pick one up at the shelter, one less buy and sell one less drifter."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
         "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The stray cats and dogs on the street corner are in groups. Residents are afraid of epidemic prevention and noise, and protectors are anxious to save them. The street is choosing a disposal option. Tension: animal life or community order.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 217,
@@ -9244,41 +9477,49 @@
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I feel that what I raise in my own home and how much I raise is just my business, and I shouldn't be told if I don't go out and cause trouble."
       },
       {
         "t": "我赞成养前登记报备，物业知道哪家有宠物、打了针没，出问题能找着人。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I am in favor of pre-adoption registration. The property knows which family has pets and whether they have injections. If there is a problem, you can find someone."
       },
       {
         "t": "我支持限个数量，比如一户两三只封顶，免得变成无序繁殖扰邻。",
         "tags": [
           "GOV:A",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support a limited number, such as two or three caps in a household, so as not to become disorderly breeding and disturbing neighbors."
       },
       {
         "t": "我主张禁养攻击性强的品种，公共楼道里安全第一位，爱好得让位于他人安心。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate banning aggressive breeds, putting safety first in public corridors, and giving way to others' peace of mind."
       },
       {
         "t": "我倾向业主自己开会定规矩，大家共识出来的办法比上面硬塞的更容易服众。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I prefer to set the rules for the owner's own meeting, and the method agreed by everyone is easier to obey than the above."
       },
       {
         "t": "养不养宠、怎么管跟我无关，我既不养也不操这份心。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "It has nothing to do with me not raising pets and how to manage it. I neither raise nor care about this heart."
       }
-    ]
+    ],
+    "scene_en": "The new community checks in, and the property drafts pet rules. Some people want to be free and some people want to be strictly controlled. The tension lies in: breeding freedom or public safety.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 218,
@@ -9291,7 +9532,8 @@
           "ENV:S",
           "CUL:P",
           "COL:I"
-        ]
+        ],
+        "t_en": "I do not buy fur myself, the process of taking fur is too cruel, save this coat and change animals to suffer less, I am happy."
       },
       {
         "t": "我觉得买不买是各人自由，有人喜欢真皮草的质感，只要合法我就尊重，不该被道德绑架。",
@@ -9299,14 +9541,17 @@
           "GOV:L",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that buying or not buying is everyone's freedom. Some people like the texture of real fur. As long as it is legal, I respect it and should not be kidnapped by morality."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
         "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "Fur counters in shopping malls are promoted, and mobile protectors hold up their cards to discourage them. Customers have their own choices. The tension is in: dressing freely or animal suffering.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 219,
@@ -9318,7 +9563,8 @@
         "tags": [
           "CUL:P",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I take a bite of the dog at home, it accompanies me to relieve my boredom, understand my emotions, hurt it, my heart really hurt, should not just be a thing."
       },
       {
         "t": "我看法现实点，宠物再亲也是私有财物，丢了坏了按价赔，情感归情感、账得清。",
@@ -9326,27 +9572,32 @@
           "ECO:R",
           "CUL:T",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think the method is more realistic. Pets are also private property. Lost and damaged are compensated according to the price. Emotions belong to emotions and accounts are clear."
       },
       {
         "t": "我支持给伴侣动物比普通财物高一级的保护，虐待要罚，但不必和人权扯平。",
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support giving companion animals a higher level of protection than ordinary property, and punishing abuse, but it does not have to be equal to human rights."
       },
       {
         "t": "我觉得既不能当人也不能纯当物，给个介于两者间的照料底线，务实就好。",
         "tags": [
           "ENV:S"
-        ]
+        ],
+        "t_en": "I feel that I can neither be a person nor a pure object. To give a care bottom line in between, just be pragmatic."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
         "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "A court is hearing a pet injury claim, arguing whether a pet is family or property. Tension in: Legal status of animals.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 220,
@@ -9358,27 +9609,32 @@
         "tags": [
           "ENV:S",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I advocate banning animal performances, whips and cages in training I can't see, and children's laughter should not be based on animal fear."
       },
       {
         "t": "我认为不必全禁，把饲养、训练、演出条件管好，合规的马戏团也能存在。",
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I think there is no need to prohibit everything, keep the conditions for raising, training, and performing well, and a compliant circus can exist."
       },
       {
         "t": "我交给观众用脚投票，大家不爱看自然就淘汰，用不上强制禁令。",
         "tags": [
           "ECO:R"
-        ]
+        ],
+        "t_en": "I leave it to the audience to vote with their feet, everyone will be eliminated if they don't like to see nature, and there is no use for a mandatory ban."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
         "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The circus came to tour, animal fire rings led children to scream, and activists protested outside the venue. Tension: entertainment value or animal exploitation.",
+    "domain_en": "Animal Ethics"
   },
   {
     "id": 221,
@@ -9391,21 +9647,24 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that public culture The government allocates more money to allow ordinary people to watch theater and exhibitions for free or at a low price, and can not only serve rich people."
       },
       {
         "t": "我倾向让艺术自己找观众、靠票房活，纳税人的钱有更急的用处，别养闲人。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to let the art find the audience by itself, live on the box office, the taxpayer's money has a more urgent use, do not support people."
       },
       {
         "t": "我主张政府保基础场馆、市场做商业创作，两边搭着来，既托底又留活力。",
         "tags": [
           "ECO:L",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I advocate that the government protects the basic venues and markets for commercial creation, and the two sides are tied together to keep both the foundation and vitality."
       },
       {
         "t": "我更看好民间基金会和企业赞助，独立于行政也少些干预，艺术多样性能保住。",
@@ -9413,14 +9672,17 @@
           "ECO:R",
           "CUL:P",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am more optimistic about private foundations and corporate sponsorship, independent of administration and less intervention, and artistic diversity can be preserved."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
         "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The city's cultural budget is limited, independent theaters and small cinemas call it poverty, and some people think that art should make money on its own. Tension: public support or market survival.",
+    "domain_en": "Art & Culture"
   },
   {
     "id": 222,
@@ -9434,7 +9696,8 @@
           "CUL:P",
           "SEC:E",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that as long as it is legal, we should do it. It is a personal matter whether we can read it or not, and banning it is the real problem."
       },
       {
         "t": "我主张先审一遍，涉及明显冒犯或误导的调一调，自由也得有边，别伤了公众感情。",
@@ -9442,7 +9705,8 @@
           "GOV:A",
           "CUL:T",
           "SEC:F"
-        ]
+        ],
+        "t_en": "I advocate a preliminary examination, involving a tune that is obviously offensive or misleading. Freedom must also have an edge, and don't hurt public feelings."
       },
       {
         "t": "我赞成照常展，但配文字和讲解员把创作意图说清，让人看懂争议在哪，比直接撤掉好。",
@@ -9450,14 +9714,17 @@
           "GOV:L",
           "CUL:P",
           "SEC:E"
-        ]
+        ],
+        "t_en": "I am in favor of the exhibition as usual, but it is better to clarify the creative intentions with words and commentators so that people can understand where the controversy is than to remove it directly."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
         "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
         "tags": []
       }
-    ]
+    ],
+    "scene_en": "The museum should hold a group of avant-garde exhibitions with sensitive subjects. Some visitors complained that they did not understand and were offended, and the museum hesitated to open them. The tension is in: freedom of expression or public order and good customs.",
+    "domain_en": "Art & Culture"
   },
   {
     "id": 223,
@@ -21106,7 +21373,7 @@
         ]
       },
       {
-        "t": "我认为信息可信度评分本质上是一种内容审查，平台不应拥有判定「真实」的权力，应该让用户自行辨别，开放竞争而非算法干预。",
+        "t": "我不赞成平台给信息打可信度评分：由平台来判定「真实」等于让它握有筛选内容的权力，我倾向让用户自行辨别、保持开放竞争，而不是用算法预先干预。",
         "tags": [
           "GOV:L",
           "SEC:F",
@@ -21935,7 +22202,7 @@
         ]
       },
       {
-        "t": "我坚决反对，高中生三观还不成熟，接触太多争议性内容容易混淆是非；学校应该聚焦基础学科和公认的价值观，别拿孩子当思想实验品。",
+        "t": "我反对引入：高中生正处在形成判断力的阶段，我认为学校应先聚焦基础学科和稳定的价值引导，把争议性议题留到他们知识储备更充足之后再讨论。",
         "tags": [
           "GOV:A",
           "CUL:T"
@@ -23104,7 +23371,7 @@
         ]
       },
       {
-        "t": "我会主张先划清劳动者保护的边界：绩效淘汰实质上是把经营风险转嫁给员工。我会推动与工会协商，要求改进期保留培训、转岗优先权和体面的补偿方案，制度可以有竞争，但底线要写进集体合同。",
+        "t": "我会主张先划清劳动者保护的边界：绩效淘汰会把经营风险转嫁给员工。我会推动与工会协商，要求改进期保留培训、转岗优先权和体面的补偿方案，制度可以有竞争，但底线要写进集体合同。",
         "tags": [
           "ECO:L",
           "COL:M"
@@ -24170,7 +24437,7 @@
         ]
       },
       {
-        "t": "我会反对限额：房子是我的，租给谁、租多久是我的自由。短租让普通房主第一次分享到了旅游经济，限额本质上是保护酒店集团和长租中介的既得利益。真正该管的是噪音和扰民行为本身——对行为执法，别对用途设禁。",
+        "t": "我会反对限额：房子是我的，租给谁、租多久是我的自由。短租让普通房主第一次分享到了旅游经济，而限额会压缩房主的收益空间、同时保住酒店和长租中介的既有份额。我倾向管噪音和扰民行为本身——对行为执法，别对用途设禁。",
         "tags": [
           "ECO:R",
           "COL:I"
@@ -26046,7 +26313,7 @@
     "scene": "你们城市唯一一家还养着独立市政报道团队的日报，被一家投资集团收购。新东家的方案很直白：裁掉包括市政版在内的二十二名采编，内容转向可规模化的流量选题，并撤回已经排期的两篇本地大型项目环评报道。编辑部提出另一条路：转为读者会员制加新闻信托基金，采编权归理事会。但过渡资金只够撑四个月，而你是这张报的主编。",
     "options": [
       {
-        "t": "我会推动会员制与信托方案并立刻启动筹资。能够盯住开发者的本地新闻是一种公共品，交给流量逻辑，砍掉的第一刀必然是成本最高的调查报道。四个月够吗？不够，但不试就一定没有。",
+        "t": "我会推动会员制与信托方案并立刻启动筹资。能够盯住开发者的本地新闻是一种公共品，交给流量逻辑，最先被砍掉的往往是成本最高的调查报道。四个月够吗？不够，但不试就一定没有。",
         "tags": [
           "ECO:L",
           "COL:M"
@@ -28428,7 +28695,7 @@
         ]
       },
       {
-        "t": "我尊重市场信号，若行业普遍认为某岗位连续性重要，顺应共识选人也是降低风险的正常判断，硬拗着选反而对团队绩效不负责。",
+        "t": "我尊重市场信号，若业内多数企业都看重某岗位的连续性，顺着这个惯例选人也是降低风险的正常判断，硬拗着选反而可能影响团队绩效。",
         "t_en": "I respect market signals; if an industry widely values continuity in a role, following that consensus to choose is a normal risk-reducing judgment—forcing the opposite is unfair to team performance.",
         "tags": [
           "ECO:L",
@@ -32813,7 +33080,7 @@
         ]
       },
       {
-        "t": "我反对禁止，动态定价是常见商业策略，供需浮动价本就合法，禁令伤效率，把正常的市场调节也一并误伤了并不明智。",
+        "t": "我反对禁止，动态定价是常见商业策略，供需浮动价本就合法，禁令会伤及效率，连正常的市场调节也一并限制住了。",
         "t_en": "I oppose the ban; dynamic pricing is common business and floating prices by supply-demand are legal—a ban hurts efficiency and wrongly hits normal market adjustment.",
         "tags": [
           "ECO:R",
@@ -33209,7 +33476,7 @@
         ]
       },
       {
-        "t": "我反对，婚姻与家庭有传统定义，公共政策应维护主流价值，不宜松动，制度的稳定性本身也是一种被多数人信任的秩序。",
+        "t": "我反对，婚姻与家庭在我看有既定的传统定义，公共政策沿用这一定义更能保持稳定，不宜松动，制度的可预期性本身也是一种被许多人信任的秩序。",
         "t_en": "I oppose it; marriage and family have traditional definitions, and public policy should uphold mainstream values—institutional stability is itself a trusted order for many.",
         "tags": [
           "CUL:T",

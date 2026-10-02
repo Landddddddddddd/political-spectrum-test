@@ -35,7 +35,7 @@
   .counter{font-size:13px;color:var(--muted);}
   .scene{font-size:17px;font-weight:600;min-height:64px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
   .opts{display:grid;gap:10px;margin-top:12px;}
-  .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:#fff;font-size:15px;align-items:flex-start;}
+  .opt{display:flex;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;transition:all .15s;background:var(--card);color:var(--ink);font-size:15px;align-items:flex-start;}
   .opt:hover{border-color:var(--accent);background:var(--accent-soft);}
   .opt.sel{border-color:var(--accent);background:var(--accent-soft);font-weight:600;}
   .opt .key{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;transition:all .15s;}
@@ -52,7 +52,7 @@
   .kbd-hint b{color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 6px;font-family:ui-monospace,Menlo,Consolas,monospace;}
   .code{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;letter-spacing:2px;
     background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:8px;font-weight:700;}
-  .primary{border:1.5px solid var(--accent);background:linear-gradient(180deg,#f3f7ff,#fff);border-radius:14px;padding:18px;margin:8px 0 14px;}
+  .primary{border:1.5px solid var(--accent);background:linear-gradient(180deg,var(--accent-soft),var(--card));border-radius:14px;padding:18px;margin:8px 0 14px;}
   .primary .name{font-size:22px;font-weight:800;color:var(--accent);}
   .primary .desc{font-size:14px;color:var(--ink);margin-top:6px;}
   .primary .pdetail{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.7;}
@@ -77,7 +77,7 @@
   .pill{display:inline-block;font-size:12px;color:var(--accent);background:var(--accent-soft);border-radius:99px;padding:3px 10px;margin-left:6px;}
   .qc-label{font-size:13px;color:var(--muted);margin:4px 0 6px;}
   .qc-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
-  .qc-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
+  .qc-tabs button{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:14px;font-weight:600;padding:9px 18px;border-radius:10px;cursor:pointer;transition:all .15s;}
   .qc-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   .qc-preview{margin:4px 0 14px;font-size:13px;line-height:1.5;}
   .qp-head{display:flex;align-items:baseline;gap:8px;}
@@ -90,7 +90,7 @@
   .qp-band.b4{background:#fff1e0;color:#c4761a;}
   .qp-spark{display:block;width:100%;max-width:320px;height:62px;margin:6px 0 2px;}
   .qp-curve{fill:none;stroke:var(--accent);stroke-width:2;}
-  .qp-dot{fill:var(--accent);stroke:#fff;stroke-width:2;}
+  .qp-dot{fill:var(--accent);stroke:var(--card);stroke-width:2;}
   .qp-grid{stroke:var(--line);stroke-width:1;}
   .qp-grid-95{stroke:var(--muted);stroke-dasharray:3 3;opacity:.5;}
   .qp-ax{font-size:9px;fill:var(--muted);}
@@ -101,11 +101,11 @@
   .spectrum{margin:16px 0 6px;border:1px dashed var(--line);border-radius:14px;padding:16px;background:var(--panel);}
   .sp-head{font-weight:700;font-size:15px;margin-bottom:10px;display:flex;align-items:center;}
   .sp-tabs{display:flex;gap:6px;margin-bottom:10px;}
-  .sp-tabs button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--muted);font-size:13px;font-weight:600;padding:6px 16px;border-radius:9px;cursor:pointer;transition:all .15s;}
+  .sp-tabs button{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:13px;font-weight:600;padding:6px 16px;border-radius:9px;cursor:pointer;transition:all .15s;}
   .sp-tabs button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
   .sp-sels{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
   .sp-sel{display:flex;flex-direction:column;font-size:11px;color:var(--muted);gap:3px;}
-  .sp-sel select{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink);}
+  .sp-sel select{font-size:13px;padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);}
   .sp-stage{display:flex;justify-content:center;}
   .sp-stage svg{width:100%;max-width:560px;height:auto;}
   .sp-legend{font-size:12px;color:var(--muted);margin-top:8px;display:flex;flex-direction:column;gap:3px;}
@@ -115,7 +115,7 @@
   #spCanvas:active{cursor:grabbing;}
   /* ===== 新增：自定义题量 / 维度详解 / 雷达 / Top 候选 / 分享卡 ===== */
   .qc-custom{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:-4px 0 14px;}
-  .qc-custom input{width:88px;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);}
+  .qc-custom input{width:88px;font-size:14px;padding:8px 10px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--ink);}
   .qc-custom .btn{padding:8px 14px;font-size:13px;}
   .diminfo{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:4px 14px;margin:14px 0;}
   .diminfo summary{cursor:pointer;font-size:14px;font-weight:600;color:var(--accent);padding:6px 0;list-style:none;}
@@ -180,6 +180,14 @@
     --svg-accent-soft:rgba(91,140,255,.22);
   }
   :root[data-theme="dark"] body{color:var(--ink);}
+  /* 主题显式声明 color-scheme：让原生下拉框/滚动条/表单控件跟随所选主题（auto 时不设，跟随系统） */
+  :root[data-theme="light"]{color-scheme:light;}
+  :root[data-theme="dark"]{color-scheme:dark;}
+  /* 暗色下徽章改深底浅字，避免深色背景上出现亮斑 */
+  :root[data-theme="dark"] .qp-band.b1{background:#232b47;color:#a5b4ff;}
+  :root[data-theme="dark"] .qp-band.b2{background:#16302a;color:#6fd6a4;}
+  :root[data-theme="dark"] .qp-band.b3{background:#12304a;color:#7cc4f5;}
+  :root[data-theme="dark"] .qp-band.b4{background:#3a2a18;color:#f0b567;}
   .topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;}
   .topbar .brand{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:.5px;}
   .tb-actions{display:flex;gap:8px;}
