@@ -1,0 +1,7686 @@
+{
+  "keep": [
+    {
+      "id": 131,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为公立学校应保持世俗中立，不组织任何宗教仪式，确保所有孩子都不被强加信仰。",
+      "oldTags": [
+        "GOV:A",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 131,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我赞成仪式设为自愿参加，信的家庭可去、不信的不强求，彼此互不勉强。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 131,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向沿用本地多数人的传统做法，既然大多数人习惯，顺着走也天经地义。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 131,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我认为学校里任何宗教仪式都不该有，连“可选”都可能给不参加的孩子压力。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 132,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为宗教团体从事信仰活动本就非营利，免税是传统也合情理，不该和生意一样收税。",
+      "oldTags": [
+        "CUL:T",
+        "ECO:R",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 132,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我主张宗教团体只要有经营收入，就和别的组织一样照章纳税，公平比特殊待遇重要。",
+      "oldTags": [
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 132,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我支持只对真正用于慈善救助的部分免税，经营性收入该税的还是要税。",
+      "oldTags": [
+        "ECO:L",
+        "GOV:A",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "GOV:A",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 133,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为在公共场合戴什么宗教标识是个人的自由，只要不妨碍他人，旁人无权干涉。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 133,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我主张在代表公权力的公务岗位上有着装中性要求，宗教标识在那种场合宜收起，以保证中立。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 134,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为公共财政不该资助宗教学校，纳税人的钱不应流向特定信仰。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:R",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 134,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我支持只要达到教育标准就平等给资助，信仰背景不该成为被排除的理由。",
+      "oldTags": [
+        "ECO:L",
+        "NAT:C",
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "NAT:C",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 134,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向只补贴其中的数学、语文等世俗课程，宗教部分由团体自筹。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 134,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我觉得读宗教学校是家庭的选择，费用该家长自己承担，不沾公帑。",
+      "oldTags": [
+        "ECO:R",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 134,
+      "idx": 4,
+      "domain": "宗教与信仰",
+      "t": "我主张给符合条件的基础教育部分适当补贴，但宗教教学那块不补。",
+      "oldTags": [
+        "ECO:L",
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 135,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持给他调休、把班排到别的日子，尊重信仰不该以丢工作为代价。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 135,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我认为既然拿这份工资，关键节点得上，信仰安排可以错开、不能凌驾工作。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 135,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向主管和员工坐下来协商，找到双方都能接受的排班，不必非黑即白。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 135,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我觉得规章就是规章，拒绝关键日上班就该按违纪处理，否则团队没法带。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:R",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 136,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持把多个宗教的节日都纳入休假，多元社会里尊重不该只给多数人。",
+      "oldTags": [
+        "CUL:P",
+        "NAT:C",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:P",
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 136,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我认为只放大多数人都过的节日最实际，小众节日让员工用年假自己调剂。",
+      "oldTags": [
+        "CUL:T",
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 136,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向给一笔带薪假额度，员工自己选在哪天休，信仰日还是生日由个人定。",
+      "oldTags": [
+        "GOV:L",
+        "ECO:R",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 137,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为只要不违法，新团体登记应是自由的权利，信仰多元本就该被容纳。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 137,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我主张严格审查新团体，防止打着信仰旗号行骗害人的邪教钻进来。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 137,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向不强制登记，只要活动不扰民不违法，聚不聚、登不登记由他们自己。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 137,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我支持设一套合规审查标准，通过就给身份，透明可比随意否决更公平。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 137,
+      "idx": 4,
+      "domain": "宗教与信仰",
+      "t": "我认为宗教团体数量也该有个度，无限增加会带来管理和社会摩擦，需适度限制。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 138,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为和谁结婚是个人的自由，信仰不同不是障碍，长辈不该替孩子做这种决定。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 138,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我觉得父母出于关切劝一劝可以理解，信仰差异确实会带来生活习惯的摩擦，提醒不算越界。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 139,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持宗教团体多做公益，信众有热情也有资源，帮人总是好事。",
+      "oldTags": [
+        "CUL:T",
+        "ECO:L",
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:T",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 139,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我认为救灾济困该由政府统筹主导，更公平也更少夹带，宗教团体可配合。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 139,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我倾向宗教慈善由团体自己办、自己筹款自己发，不沾公权力最清净。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 140,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我认为调侃信仰不应成为犯罪，思想言论的自由空间里，冒犯本身不是罪。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 140,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我主张对明显出于仇恨、意在煽动歧视的言论设限，纯粹表达和恶意攻击要分开。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 348,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持移除，公共空间该世俗中性。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 348,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我支持保留，这是本地文化一部分。",
+      "oldTags": [
+        "SEC:F",
+        "CUL:T"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 348,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我建议改成多种符号并存更平衡。",
+      "oldTags": [
+        "SEC:E",
+        "CUL:P"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 349,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我允许办，家长有选择权。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L",
+        "CUL:P"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 349,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我限制，公立价值不能混信仰。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 349,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我允许但要求信仰课可免修。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 349,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我主张这类学校自筹经费不占公帑。",
+      "oldTags": [
+        "SEC:F",
+        "ECO:R"
+      ],
+      "newTags": [
+        "ECO:R"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 350,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持为他调休，尊重信仰该落实。",
+      "oldTags": [
+        "SEC:F",
+        "COL:M",
+        "GOV:L"
+      ],
+      "newTags": [
+        "COL:M",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 350,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我反对，排班讲统一不讲特殊。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 403,
+      "idx": 4,
+      "domain": "社区邻里",
+      "t": "我会请社区里的信仰互助小组承担探访，他们有组织也更有耐心。",
+      "oldTags": [
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 449,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持设一间完全中性的静思室，有信仰的和没信仰的人都能用。",
+      "oldTags": [
+        "SEC:E",
+        "CUL:P"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 449,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我支持按校内实际人数较多的信仰群体的需求安排专门场所。",
+      "oldTags": [
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 449,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我反对在公立校园设任何这类空间，公共教育场所应保持中立。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 450,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持给补贴，把老人照顾好是实打实的贡献，谁办的不重要。",
+      "oldTags": [
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 450,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我反对给补贴，公共资金不该流向带有信仰门槛的组织。",
+      "oldTags": [
+        "SEC:E",
+        "ECO:L"
+      ],
+      "newTags": [
+        "ECO:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 450,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我支持给补贴，但必须写明服务对象不得被要求参与任何仪式。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 451,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我支持公司灵活安排，尊重个人的重要日子成本并不高。",
+      "oldTags": [
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 451,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我认为应统一规则、谁都不开例外，否则理由会越来越多。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 451,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我认为可以调休，但必须由他自己与同事换班解决，不增加别人的负担。",
+      "oldTags": [
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 525,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我认为公立大学应该保持严格的世俗性，宗教活动属于私人领域，不应占用公共资源或获得制度化的认可，防止宗教对公共空间的渗透。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 554,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我会支持这位居民——信仰自由应通过替代验证来适应，而不是逼人违背信仰去拿一张塑料卡片。",
+      "oldTags": [
+        "SEC:F",
+        "CUL:P",
+        "GOV:L"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 554,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "我会支持办证机关——身份证件必须显示面部，没有例外。给一个群体开口子，后面会涌来无穷的特殊要求，证件的公信力就没了。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A",
+        "CUL:T"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 554,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我会提议折中方案：允许佩戴头饰，但在数据库中存一张露脸照片供官方核验，卡片上印的可以是本人满意的照片。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 554,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我认为国家根本不该要求公民随身携带带照片的身份证件，或者至少应把它设为自愿——强制身份识别本身就是一种控制手段。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 597,
+      "idx": 2,
+      "domain": "宗教与信仰",
+      "t": "我会建议允许佩戴、但保留安全例外的底线：宗教自由与校园管理并不冲突——涉及身份核验、体育课安全装备等具体场景可以有具体规",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 644,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "我会要求暂停他们的夜间探视资质，改为白天、应家属书面申请后进入。临终病床边的权力失衡是极端的：一个连抬手都困难的病人无从",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 716,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "反对，公立学校应保持世俗中立，组织祈福活动越界，可改去博物馆讲历史更妥当，别让课堂变成庙会的附庸。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 717,
+      "idx": 3,
+      "domain": "宗教与信仰",
+      "t": "我关起门来过自己的日子，邻居家信啥、挂啥与我无关，别来问我这种闲事，我连他家养几盆花都懒得记。",
+      "oldTags": [
+        "COL:I",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 718,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "生命至上，医疗以挽救为第一原则，信仰选择不能替代专业抢救，家属无权放弃，只要还有一线就該搏一搏。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 719,
+      "idx": 0,
+      "domain": "宗教与信仰",
+      "t": "支持建，公共资源应服务全体市民，信仰团体的忌讳不能否决多数人的殡葬需求，生者怎么安顿逝者不该被教义卡住。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 720,
+      "idx": 1,
+      "domain": "宗教与信仰",
+      "t": "去掉，职场是理性协作空间，掺入祈福仪式容易让不信的人被边缘，应保世俗中性，年味回家过、公司就谈干活。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 809,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我支持限流登记，人多隐患大，安全红线任何活动都要守，虔诚的心不必用人挤人的危险来证明，平安本身就是对神明最好的敬意。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    }
+  ],
+  "remove": [
+    {
+      "id": 21,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "我直接在群里说这不好笑，并把为什么让人不舒服讲清楚，冒犯的话不该被笑着带过。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 21,
+      "idx": 2,
+      "domain": "言论表达",
+      "t": "我直接向群主举报，要求把发这种内容的人踢出去，群里的底线得有人守。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 24,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "应该请，大学就该兼听则明，让学生接触不同甚至刺耳的观点才能学会思辨。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 24,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "不该请，他的某些言论可能冲击、误导学生，校园环境需要谨慎把关。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 24,
+      "idx": 4,
+      "domain": "言论表达",
+      "t": "校方直接审核把关，对演讲内容做合规审查，不合适的一律不批。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 26,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "艺术自由优先，不该因为有人不舒服就撤展，表达多元本来就是文化的活力。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 26,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "应该下架，避免对特定群体的持续伤害，公共展陈得考虑观看者的感受。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 26,
+      "idx": 2,
+      "domain": "言论表达",
+      "t": "不如加个内容说明标签，把创作背景讲清楚，让观众自己判断是否观看，既不删也不强迫。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 27,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "物业应当立刻把攻击性标语清除，公共区域不该成为攻击特定群体的地方。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 27,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "应该保留，贴标语也是表达，社区公告栏本就向所有住户开放。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 28,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "我如实、用孩子能懂的方式回答，不回避，觉得该让他早点建立正确认知。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 28,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我先把话题转开，等他再大些、心智更成熟了再聊这个，现在说太早。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 30,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "必须立法，明令禁止针对族群、身份的仇恨言论，弱势群体的尊严得有法律护着。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 61,
+      "idx": 0,
+      "domain": "学校教育",
+      "t": "应该穿校服，大家一样、不比穿戴、还显整齐，平等感重要。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 61,
+      "idx": 1,
+      "domain": "学校教育",
+      "t": "不该统一，校服把孩子的个性都压没了，穿着自由也是自我表达。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 63,
+      "idx": 0,
+      "domain": "学校教育",
+      "t": "严禁体罚，无论什么理由都不能动手打学生，身心健康底线不能破。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 63,
+      "idx": 1,
+      "domain": "学校教育",
+      "t": "适度惩戒有必要，太温吞管不住违纪的，一点威严还是得有。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 67,
+      "idx": 0,
+      "domain": "学校教育",
+      "t": "应系统教，科学的性知识进课堂，孩子才不会被误导。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 67,
+      "idx": 1,
+      "domain": "学校教育",
+      "t": "这种事家长教就行，学校别越俎代庖，家里讲更合适。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 67,
+      "idx": 2,
+      "domain": "学校教育",
+      "t": "设为选修，想学的来、不想的不强求，给选择空间。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 67,
+      "idx": 3,
+      "domain": "学校教育",
+      "t": "校方统一必修，既然重要就该人人都学，不能看家长脸色。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 67,
+      "idx": 4,
+      "domain": "学校教育",
+      "t": "我反对，这种内容不适合进校园。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 72,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "应该学当地语言，融入社会、办事沟通都方便，基本的语言门槛合理。",
+      "oldTags": [
+        "NAT:N",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 72,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "双语共存就好，母语和当地语言都保留，多元也挺好。",
+      "oldTags": [
+        "NAT:C",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 72,
+      "idx": 2,
+      "domain": "移民文化",
+      "t": "不强求，愿学不学随个人，别用语言绑住人家。",
+      "oldTags": [
+        "NAT:C",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 73,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "入乡随俗，到了别人的地方就按人家的规矩来，少惹摩擦。",
+      "oldTags": [
+        "NAT:N",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 73,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "多元共存、互相尊重，不同习俗各过各的、彼此包容就好。",
+      "oldTags": [
+        "NAT:C",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 76,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "应多办多元节庆，促进不同族群融合、互相了解。",
+      "oldTags": [
+        "CUL:P",
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 76,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "主打本土传统，节庆就该凸显自己的文化根脉。",
+      "oldTags": [
+        "CUL:T",
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 78,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "应分摊接收，人道责任大家担，不能都推给别人。",
+      "oldTags": [
+        "NAT:C",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "NAT:C",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 78,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "量力而行、少接收些，自己家底有限，先顾好本地再说。",
+      "oldTags": [
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 79,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "全纳入公办学校，和本地孩子同校同读，最平等。",
+      "oldTags": [
+        "ECO:L",
+        "NAT:C",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "NAT:C",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 79,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "另设过渡校，先集中适应再融入，管理上更顺。",
+      "oldTags": [
+        "NAT:N",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 80,
+      "idx": 2,
+      "domain": "移民文化",
+      "t": "简化流程，降低门槛让归化更顺畅，包容为上。",
+      "oldTags": [
+        "NAT:C",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 92,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "应强制接种，为群体免疫考虑，个人自由得让位于公共健康。",
+      "oldTags": [
+        "GOV:A",
+        "ENV:S",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ENV:S",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 92,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "自愿，打不打是我自己的选择和身体风险，不该被强迫。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 92,
+      "idx": 2,
+      "domain": "医疗健康",
+      "t": "仅对高危人群强制，普通人群自愿，精准些。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 95,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "由病人自己定，身体是他自己的，拒绝治疗的权利该被尊重。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 95,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "应尽力抢救，只要有一线希望就不该放弃，生命至上。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 95,
+      "idx": 2,
+      "domain": "医疗健康",
+      "t": "生前的预嘱应当有效，提前写好的意愿得被照办。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 98,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "严管、禁止临床应用，人类生殖细胞编辑风险太大、伦理底线不能破。",
+      "oldTags": [
+        "GOV:A",
+        "ENV:S",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ENV:S"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 98,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "审慎开放研究，在严格监管下探索，不能完全关上科学的大门。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 101,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我会推动公司公开同岗位薪酬区间，并支持立法要求企业定期披露性别薪资差距——透明本身就能形成压力，让不公在阳光下被看见和纠",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 101,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我主张由第三方或劳工部门对公司做性别薪资审计，并把结果向全体员工公示，用事实督促管理层把差距补平。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 102,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我会投票支持为董事会设定明确的最低女性席位比例，因为不靠硬性指标，权力结构往往自己不会向多元化松动。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 102,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我赞成公司自己定一个提升女性高管比例的软目标，用导师制和晋升通道去引导，而不是用强制名额来一刀切。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 103,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我支持把带薪育儿假均分给父母双方，并且鼓励父亲也休——孩子需要两个人，制度不该默认带娃只是母亲的事。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 103,
+      "idx": 1,
+      "domain": "性别平权",
+      "t": "我觉得以母亲休为主更自然，她要哺乳和恢复，父亲在外挣钱养家是更顺当的安排，不必强行平分。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 104,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我会直接照对方说的代词来称呼，这不需要我理解背后的全部原因，尊重一个人的自我界定是起码的礼貌。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 104,
+      "idx": 1,
+      "domain": "性别平权",
+      "t": "我倾向于按医学上出生的性别来称呼，因为那是我从小习惯也最不会出错的参照，不希望被要求违背直觉。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 104,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我认为大家不必被强制统一称呼方式，但也不该故意去刺伤对方，顺其自然、彼此留点余地就好。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 104,
+      "idx": 4,
+      "domain": "性别平权",
+      "t": "我觉得反复强调和纠正称呼反而把小事弄得很紧张，大家自然相处就好，不需要把性别标签天天挂在嘴边。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:L",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 105,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我支持招聘时隐去姓名、性别、婚育状况等无关信息，让能力在匿名中先被看到，把人为偏见挡在第一步。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 105,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我主张给求职者畅通的举报渠道，一旦查实存在基于性别的隐性歧视就重罚，用成本倒逼企业收敛。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 105,
+      "idx": 3,
+      "domain": "性别平权",
+      "t": "我更看好先把面试官和HR的偏见意识培训到位，从人的观念改起，比冷冰冰的处罚更能治本。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 106,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我认为比赛分组应按出生时的性别来定，这样在体能标准上最清楚、最不容易引发争议。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 106,
+      "idx": 1,
+      "domain": "性别平权",
+      "t": "我倾向让选手按自己认同的性别参赛，社会的包容应当延伸到赛场，身份认同值得被尊重。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 106,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我建议另设一个不限性别的公开组，既保留传统分组，也给所有人一个公平同场的机会。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 107,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我认为一旦有可信指控就应立即停职调查、严处不贷，对越界者零容忍才能保护大多数人。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 107,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我支持设立不受部门领导干预的独立投诉渠道，让受害者敢说、说了有人管，而不是被捂在内部。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 107,
+      "idx": 5,
+      "domain": "性别平权",
+      "t": "换作是我可能会先忍一忍、尽量避开那个人，毕竟撕破脸在这环境里代价太大。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 108,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我会主动鼓励她按兴趣选理工，并带她见女工程师做榜样，偏见不该替她决定人生。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 108,
+      "idx": 1,
+      "domain": "性别平权",
+      "t": "我觉得孩子喜欢什么就学什么，不用特意按性别去推，顺其自然反而最自在。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 109,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我认为公司不该强制任何人怎么化妆怎么穿，只要整洁得体，外表是个人自己的事。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 109,
+      "idx": 3,
+      "domain": "性别平权",
+      "t": "如果真要定标准，我认为男女应当用同一套尺度，不能一边要求化妆一边对男性毫无约束。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 110,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我认为只要证据成立就应立即追究刑责并签发保护令，家暴不是私事，受害者需要国家兜底保护。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 110,
+      "idx": 1,
+      "domain": "性别平权",
+      "t": "我倾向先由社区调解、给双方冷静机会，能和解就不一定非要走到处罚那一步。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 110,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我支持一边开设庇护所接走受害者、一边追究施暴者责任，保护与追责两条线都不能少。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 121,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我认为对初犯、轻微、无受害人的案子应尽量不起诉或转处，留个案底毁的是一个年轻人的一生。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 121,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我主张只要触犯法条就该起诉，法不能有弹性，否则人人都拿“轻”当借口。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 121,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我觉得得看具体情节和社会危害，不能一句话全宽、也不能一刀切全诉。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 123,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我认为只要证据是刑讯来的就必须排除、并追查责任人，靠打出来的口供只会制造冤案。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 123,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我理解在极少数重大案件里，适度突破能救命，完全不容变通会束住办案的手脚。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 124,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我认为对单纯持有自用的应走医疗戒断而非扔进监狱，成瘾是病，该治不该罚。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 124,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我主张哪怕量小也要保持重刑威慑，松一点口子吸毒的人就会多起来。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 124,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我倾向把成年人自用持有除罪化，国家不该为个人的身体选择当法官。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 124,
+      "idx": 4,
+      "domain": "司法法治",
+      "t": "我认为对毒品就该零容忍、从严打击，任何形式的松动都不可取。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 126,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我支持推广恢复性司法，让加害者直面受害者、弥补伤害，比单纯关起来更能修复关系。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 126,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我认为该判刑就判刑，刑罚的威慑和教育功能不能让位于私下和解。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 126,
+      "idx": 2,
+      "domain": "司法法治",
+      "t": "我倾向按罪行性质来定，轻微、双方愿意的用和解，严重的仍走刑罚。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 127,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我认为警察盘查必须基于具体的合理怀疑，不能凭长相和直觉随手拦人。",
+      "oldTags": [
+        "GOV:L",
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 127,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我支持在特定时段、敏感区域随机盘查以震慑犯罪，公共安全优先于个别不适。",
+      "oldTags": [
+        "GOV:A",
+        "TECH:K",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 128,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我主张不知法不能作为免责理由，否则人人都能拿“不懂”当挡箭牌，法就立不住。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 128,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我认为对确实因信息不通、非故意违规的，应普及法律并酌情减责，惩罚要讲过错程度。",
+      "oldTags": [
+        "GOV:L",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:L",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 129,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我支持对大多数非暴力被告实行普遍保释候审，没定罪前不该先剥夺自由。",
+      "oldTags": [
+        "GOV:L",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:L",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 129,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我认为保释得严格审查逃跑风险，不能轻易放，否则人跑了案子就黄了。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 129,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我看不惯有钱就能保、没钱就蹲着的现象，这把司法变成了明码标价的生意。",
+      "oldTags": [
+        "ECO:L",
+        "GOV:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "GOV:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 130,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我认为重大案件应直播庭审，阳光是最好的防腐剂，公众监督能倒逼公正。",
+      "oldTags": [
+        "GOV:L",
+        "GOV:A",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 130,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我主张涉及隐私、未成年人的案件不公开，保护当事人比满足围观更重要。",
+      "oldTags": [
+        "GOV:L",
+        "TECH:U",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 130,
+      "idx": 2,
+      "domain": "司法法治",
+      "t": "我支持把生效判决书上网公开，既接受监督又不打扰庭审现场。",
+      "oldTags": [
+        "GOV:L",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 168,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我认为讽刺恶搞该受表达自由保护，幽默和批评本就是社会的疫苗。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 168,
+      "idx": 1,
+      "domain": "媒体信息",
+      "t": "我主张对容易让人信以为真的恶搞设限，搞笑不能踩过误导的线。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 202,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我认为孩子跟妈妈姓完全没问题，姓氏只是个符号，谁带得多、家里怎么商量都行，不必非得传男系。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 202,
+      "idx": 1,
+      "domain": "家庭婚姻",
+      "t": "我倾向随父亲姓，这是家里一直延续的习惯，改了长辈心里不舒服，也没必要为这个较劲。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 202,
+      "idx": 2,
+      "domain": "家庭婚姻",
+      "t": "我觉得可以父母商量后取双姓，或者等孩子大了让他自己选，命名权本就该回归家庭本身。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 203,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我和伴侣排好班，夜里喂奶、周末带孩子都轮流来，谁也不该缺席，育儿是两个人的事不是一个人的苦差。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 203,
+      "idx": 1,
+      "domain": "家庭婚姻",
+      "t": "我觉得妈妈带孩子更细致也更放心，爸爸在外打拼赚钱，家里的养育主要交给我也心安。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 204,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我把父母接来一起住，日常三餐有人管、生病有人陪，趁还能相处多尽点孝心，钱省下不如人在身边。",
+      "oldTags": [
+        "CUL:T",
+        "ECO:L",
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:T",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 204,
+      "idx": 2,
+      "domain": "家庭婚姻",
+      "t": "如果父母愿意，我选设施专业的养老机构，有医护有同伴，比我在家手忙脚乱更靠谱，也减轻子女压力。",
+      "oldTags": [
+        "ECO:R",
+        "GOV:A",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "ECO:R",
+        "GOV:A",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 204,
+      "idx": 4,
+      "domain": "家庭婚姻",
+      "t": "我自己更想要独立的生活，长辈也该有他们的社交和节奏，过度捆绑对两代人都累。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 205,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我觉得设个缓冲期挺好，多少人是一气之下签字，过两周冷静下来还能挽回，给婚姻最后一次机会。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 205,
+      "idx": 1,
+      "domain": "家庭婚姻",
+      "t": "我反对强制冷静期，过不下去的人多拖三十天只是煎熬，离不离该由当事人自己决定，不该被代做主。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 205,
+      "idx": 2,
+      "domain": "家庭婚姻",
+      "t": "我认为若存在家暴，必须立刻放行、不能卡冷静期，弱势一方等不起，这种例外必须写进规则。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 207,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我对邻居家的组成不多问不多管，孩子一样要上学、大人一样要上班，相处时给足基本尊重就好。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 207,
+      "idx": 1,
+      "domain": "家庭婚姻",
+      "t": "我更认同传统的一父一母家庭模式，社区活动若有示范还是以主流为先，不希望模糊了孩子认知。",
+      "oldTags": [
+        "CUL:T",
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 207,
+      "idx": 2,
+      "domain": "家庭婚姻",
+      "t": "我认为只要合法登记，非传统家庭在落户、继承、就医上就该和别人完全一样，权利义务不能打折。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 207,
+      "idx": 3,
+      "domain": "家庭婚姻",
+      "t": "别人家里怎么过是他们的事，只要不侵害他人，公权力和邻居都不该伸进卧室去评判。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 209,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我主张干脆取消彩礼，婚姻不该用钱衡量，动辄几十万把感情变成交易，也压垮普通家庭。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 209,
+      "idx": 1,
+      "domain": "家庭婚姻",
+      "t": "我觉得给不给、给多少看两家情愿和经济能力，别攀比也别强求，心意到了就行。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 209,
+      "idx": 2,
+      "domain": "家庭婚姻",
+      "t": "我支持设个上限管住天价彩礼，过高的数额逼出债务和矛盾，用规矩兜底普通人的体面。",
+      "oldTags": [
+        "GOV:A",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 209,
+      "idx": 3,
+      "domain": "家庭婚姻",
+      "t": "我认这个老规矩，彩礼是两家结亲的礼数，按本地惯例走，图个尊重和圆满。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 222,
+      "idx": 0,
+      "domain": "艺术文化",
+      "t": "我觉得只要合法就该办，看不看得懂、接不接受是个人事，禁掉才是真问题。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 222,
+      "idx": 1,
+      "domain": "艺术文化",
+      "t": "我主张先审一遍，涉及明显冒犯或误导的调一调，自由也得有边，别伤了公众感情。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 222,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我赞成照常展，但配文字和讲解员把创作意图说清，让人看懂争议在哪，比直接撤掉好。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 223,
+      "idx": 0,
+      "domain": "艺术文化",
+      "t": "我舍不得老样子，雕花和老树是几代人的记忆，改得太新就丢了根。",
+      "oldTags": [
+        "CUL:T",
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 223,
+      "idx": 1,
+      "domain": "艺术文化",
+      "t": "我觉得城市要往前走，新形式、新手法才鲜活，老瓶装新酒才有生命力。",
+      "oldTags": [
+        "CUL:P",
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 226,
+      "idx": 0,
+      "domain": "艺术文化",
+      "t": "我认为小语种是文化基因，政府该扶一把、记下来教下去，断了就补不回。",
+      "oldTags": [
+        "NAT:N",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 226,
+      "idx": 1,
+      "domain": "艺术文化",
+      "t": "我顺其自然，语言随使用者减少而消失是常态，硬保不如把资源投在活用的语种。",
+      "oldTags": [
+        "NAT:C",
+        "ECO:R",
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "NAT:C",
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 229,
+      "idx": 0,
+      "domain": "艺术文化",
+      "t": "我认为拍什么、怎么拍归导演，成年人自己会挑，别替观众做减法。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 229,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我主张上线前审查把关，敏感内容先处理，免得播出后引发更大争议。",
+      "oldTags": [
+        "GOV:A",
+        "TECH:K",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 229,
+      "idx": 3,
+      "domain": "艺术文化",
+      "t": "我倾向先播，出问题上追责任，比事前一刀切更保创作空间。",
+      "oldTags": [
+        "GOV:L",
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 237,
+      "idx": 0,
+      "domain": "体育竞技",
+      "t": "我主张按出生登记的性别分组，生理差异摆在那，否则对原组别的选手不公。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 237,
+      "idx": 1,
+      "domain": "体育竞技",
+      "t": "我认为该尊重当事人自我认同，他或她觉得自己是哪个组就进哪个组。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 237,
+      "idx": 2,
+      "domain": "体育竞技",
+      "t": "我倾向单设开放组，谁都能报，不硬塞进传统两类里，各比各的。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 237,
+      "idx": 5,
+      "domain": "体育竞技",
+      "t": "我认为两类不够科学，可按激素水平等多设几档，更贴近真实差异。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 238,
+      "idx": 0,
+      "domain": "体育竞技",
+      "t": "我认为体育归体育，领奖台别带货政治，免得赛事变战场。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 238,
+      "idx": 1,
+      "domain": "体育竞技",
+      "t": "我支持选手在场上有话就说，沉默不是中立，表达也是人的权利。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 291,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为对长期弱势的群体适度留名额，补齐起点差距，机会才真平等。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 291,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我支持先给培训和内推补短，而不是直接降门槛，本事到了再上。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 291,
+      "idx": 3,
+      "domain": "少数群体",
+      "t": "我反对为群体设特别照顾，人人一样标准才叫公平，倾斜反成新不公。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 292,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为本地的少数语言也该被听见，办事能用母语是基本尊严。",
+      "oldTags": [
+        "NAT:C",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 292,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向以通用语为主，效率和社会统一重要，特殊需求个别处理。",
+      "oldTags": [
+        "NAT:N",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 292,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我支持窗口配双语，愿多用通用、需用的也能通，两头不误。",
+      "oldTags": [
+        "NAT:C",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 293,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为无障碍该铺到每处，残障朋友也是城市一员，少一段坡道就少份自由。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 294,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为得立硬法、明确罚则，歧视成本低才屡禁不止，写进条文才长记性。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 294,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我主张被歧视的能拿到实在赔偿，痛了才有人怕，比口头道歉强。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 294,
+      "idx": 3,
+      "domain": "少数群体",
+      "t": "我支持多搞培训和宣传，从观念上化偏见到根上，法只是后手。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 294,
+      "idx": 4,
+      "domain": "少数群体",
+      "t": "我反对为某群体单设特殊保护，统一标准对谁都公平，特别化反而隔阂。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 295,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为办起来挺好，让更多人看见不同活法，少见才多怪。",
+      "oldTags": [
+        "CUL:P",
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 295,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向别单独高亮，大家都是市民，混着展更自然不突兀。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 295,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我主张揉进常规节庆里，不另起炉灶，既呈现又不显隔离。",
+      "oldTags": [
+        "CUL:T",
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 295,
+      "idx": 3,
+      "domain": "少数群体",
+      "t": "我支持拨点钱扶持这类展示，弱势叙事平时难出声，扶一把才平衡。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 296,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为该进课表，孩子早懂尊重差异，校园霸凌也能少。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 296,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我支持用社团和活动体验代替说教，玩中懂比背定义深。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 297,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为该立法明确红线，煽动仇恨不是言论自由，越线就罚。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 297,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向平台按规则删和限流，谁的地盘谁清，比法律快。",
+      "oldTags": [
+        "GOV:L",
+        "ECO:R",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "ECO:R",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 297,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我主张多搞对话和科普，偏见靠理解消，光堵不长记性。",
+      "oldTags": [
+        "CUL:P",
+        "GOV:L",
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 297,
+      "idx": 5,
+      "domain": "少数群体",
+      "t": "我遇到就点举报，交给机制处理，自己不当判官。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 298,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为留配额能撬开长期关上的门，比例上来了偏见才松动。",
+      "oldTags": [
+        "ECO:L",
+        "CUL:P",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 298,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我反对按群体分名额，岗位该给最能干的人，配额伤了 merit。",
+      "oldTags": [
+        "ECO:R",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "ECO:R",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 299,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为材料该出多语、多格式，不同人都能用，便利就到位。",
+      "oldTags": [
+        "CUL:P",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "CUL:P",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 299,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向一套标准流程，简单好复制、成本低，特殊的一事一议。",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 299,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我主张按实际需求做适配，谁真不便就给谁改，不铺张不遗漏。",
+      "oldTags": [
+        "GOV:L",
+        "ECO:L",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:L",
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 300,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我认为就该像拍普通人一样拍他们，多见就不怪，偏见自然淡。",
+      "oldTags": [
+        "CUL:P",
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 300,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向别单独拿来说，越是特意越像标签，平常对待最舒服。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 300,
+      "idx": 2,
+      "domain": "少数群体",
+      "t": "我主张给同等露脸机会就行，不捧不躲，镜头前面人人一样。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 311,
+      "idx": 3,
+      "domain": "言论表达",
+      "t": "我觉得平台该管内容而非管身份。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:U"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 312,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我要求物业事先审核，禁止侮辱性内容。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 316,
+      "idx": 4,
+      "domain": "经济分配",
+      "t": "我认为税制该公开辩论而非内部定。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 326,
+      "idx": 1,
+      "domain": "学校教育",
+      "t": "我反对，这类事该由家庭自己教。",
+      "oldTags": [
+        "SEC:F",
+        "CUL:T",
+        "COL:I"
+      ],
+      "newTags": [
+        "CUL:T",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 326,
+      "idx": 2,
+      "domain": "学校教育",
+      "t": "我支持开课但允许家长申请免修。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 329,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "我支持多语标识，友好环境靠细节。",
+      "oldTags": [
+        "NAT:C",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 331,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我反对，人脸数据不该被随手采集。",
+      "oldTags": [
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 334,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我反对过度覆盖，正常生活不该被拍遍。",
+      "oldTags": [
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 335,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "我反对强制，身体决定该在自己手里。",
+      "oldTags": [
+        "SEC:E",
+        "COL:I",
+        "TECH:U"
+      ],
+      "newTags": [
+        "COL:I",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 337,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "我支持纳入，老百姓信的就该报销。",
+      "oldTags": [
+        "SEC:F",
+        "ECO:L",
+        "CUL:T"
+      ],
+      "newTags": [
+        "ECO:L",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 337,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "我反对，医保钱要花在有证据的项目。",
+      "oldTags": [
+        "SEC:E",
+        "ECO:R"
+      ],
+      "newTags": [
+        "ECO:R"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 339,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "我支持透明评审，不预设名额。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 340,
+      "idx": 0,
+      "domain": "性别平权",
+      "t": "我支持增设，照顾到被忽略的需求。",
+      "oldTags": [
+        "CUL:P",
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 343,
+      "idx": 0,
+      "domain": "科技AI",
+      "t": "我支持强制标注，读者有权知道来源。",
+      "oldTags": [
+        "TECH:U",
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "TECH:U",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 345,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我倾向社区调解，伤了邻居不好。",
+      "oldTags": [
+        "COL:M",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 345,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我坚持走法庭，规矩得靠判决立。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 346,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我支持严一点，小恶不纠会变大。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 347,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我认为该依法惩处，不能私了了事。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 354,
+      "idx": 0,
+      "domain": "农业食品",
+      "t": "我支持强制标注，选择权在先。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:U",
+        "ENV:S"
+      ],
+      "newTags": [
+        "TECH:U",
+        "ENV:S"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 357,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我支持严格审核，谣言太害人。",
+      "oldTags": [
+        "GOV:A",
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 357,
+      "idx": 1,
+      "domain": "媒体信息",
+      "t": "我反对严审，宁可乱点也别被替你删。",
+      "oldTags": [
+        "GOV:L",
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 357,
+      "idx": 4,
+      "domain": "媒体信息",
+      "t": "我建议设独立事实核查公示。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 358,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我主动加几个不同立场的源对照。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L",
+        "CUL:P"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 359,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我支持强制标注，真假必须分得清。",
+      "oldTags": [
+        "TECH:K",
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 359,
+      "idx": 2,
+      "domain": "媒体信息",
+      "t": "我支持由第三方检测后标注。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:U"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 359,
+      "idx": 3,
+      "domain": "媒体信息",
+      "t": "我主张对恶意造假追责而不是只标注。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 360,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我反对高密度巡查，正常走动也紧张。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 362,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我支持社区矫治，利于回归社会。",
+      "oldTags": [
+        "COL:M",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 362,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我倾向监禁，犯错就该隔离。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 373,
+      "idx": 0,
+      "domain": "动物伦理",
+      "t": "我支持限用并严审，必要才做。",
+      "oldTags": [
+        "ENV:S",
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ENV:S",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 380,
+      "idx": 0,
+      "domain": "体育竞技",
+      "t": "我支持零容忍，规则面前无大小。",
+      "oldTags": [
+        "GOV:A",
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 383,
+      "idx": 1,
+      "domain": "老龄化养老",
+      "t": "我不装，尊重老人不愿被看。",
+      "oldTags": [
+        "TECH:U",
+        "COL:I",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:U",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 397,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我支持实名，干净环境值得。",
+      "oldTags": [
+        "TECH:K",
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 399,
+      "idx": 3,
+      "domain": "少数群体",
+      "t": "我主张公开评审过程接受监督。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 400,
+      "idx": 0,
+      "domain": "少数群体",
+      "t": "我主动改用新称呼，少让人不舒服。",
+      "oldTags": [
+        "CUL:P",
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 504,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我会反对陪审团制度，审判是专业领域，应该由训练有素的法官依据法律条文作出理性裁决。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 504,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我认为陪审员应经过基本法律培训并签署责任书，而非随机抽取，以提高裁决质量。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 504,
+      "idx": 4,
+      "domain": "司法法治",
+      "t": "我会主张陪审团只参与事实认定，法律适用仍由法官负责，各司其职以减少错误。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 508,
+      "idx": 3,
+      "domain": "媒体信息",
+      "t": "我要求平台公开推荐算法的基本逻辑，让用户理解为何看到某些内容，透明度是信任的前提。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 509,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我会支持预防性措施，在确定威胁面前，个人自由必须让位于公共安全，监管好过后悔。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 509,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我会坚决反对，没有犯罪就不能惩罚，预防性监控是对法治原则的破坏，人人可能沦为嫌疑人。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 509,
+      "idx": 2,
+      "domain": "治安刑罚",
+      "t": "我会建议增加警力巡逻和社区干预，而非针对特定人群，用在场预防代替事后监控。",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 510,
+      "idx": 2,
+      "domain": "外交国际",
+      "t": "我会建议仅提供人道主义走廊和难民援助，不派战斗部队，军事干预的代价不可控。",
+      "oldTags": [
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 514,
+      "idx": 3,
+      "domain": "体育竞技",
+      "t": "我会推动先做长期健康与安全研究，再谈公平问题——如果技术会伤害运动员身体，那么无论成绩多惊人都不该被允许。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:U"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 516,
+      "idx": 0,
+      "domain": "消费债务",
+      "t": "我会支持严格监管：诱导性的分期营销和过度授信正在系统性地把缺乏经验的年轻人拖入债务陷阱，国家有责任设置护栏、限制高息和放",
+      "oldTags": [
+        "SEC:E",
+        "ECO:L"
+      ],
+      "newTags": [
+        "ECO:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 516,
+      "idx": 3,
+      "domain": "消费债务",
+      "t": "我会推动建立个人债务预警与免费咨询机制，由公共资源帮助负债者重组还款、走出困境，而不是只在事后惩罚或事前禁止。",
+      "oldTags": [
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 520,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "我会支持自由售卖：自己的基因信息属于自己，成年人有权了解并自主决策，限制它才是对个人健康自主权的剥夺。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 520,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "我会反对自由售卖：基因数据是高度敏感、不可更改的隐私，一旦泄露或被保险公司利用，代价无法挽回，应当严格监管甚至禁止。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 520,
+      "idx": 2,
+      "domain": "医疗健康",
+      "t": "我会建议有条件开放：要求提供遗传咨询、禁止保险公司使用检测结果定价或拒保，并立法保护基因隐私，在自主与安全间设好边界。",
+      "oldTags": [
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 524,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我会持续关注此事，要求公开完整的执法记录仪影像，程序正义和透明是法治的底线，任何一方都不该在信息不全时被定罪。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 524,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我认为街头秩序需要维护，执法人员在劝阻无效后采取强制措施是履行职责，不能因为是弱势群体就豁免违法，法律面前人人平等。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 524,
+      "idx": 2,
+      "domain": "司法法治",
+      "t": "我会质疑对视频发布者的传唤，公民监督公权力是基本权利，不应被视为制造事端，除非能证明视频经过恶意剪辑且意图煽动。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 528,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我会坚持原有风格，不向算法妥协，内容创作者的职责是提供有价值的思考，而不是制造情绪垃圾，短期的流量损失换长期的信誉积累。",
+      "oldTags": [
+        "COL:I",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:I",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 528,
+      "idx": 2,
+      "domain": "媒体信息",
+      "t": "我支持平台的信息可信度评分系统，但必须由多元独立的事实核查机构组成，而非单一平台垄断判定权，算法辅助但人工终审。",
+      "oldTags": [
+        "GOV:A",
+        "GOV:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 528,
+      "idx": 3,
+      "domain": "媒体信息",
+      "t": "我不赞成平台给信息打可信度评分：由平台来判定「真实」等于让它握有筛选内容的权力，我倾向让用户自行辨别、保持开放竞争，而不",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F",
+        "TECH:U"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 529,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我会支持加重累犯处罚，对反复危害社会的惯犯必须大幅提高刑期，法律保护守法者而不是给惯犯反复试错的机会，公共安全优先。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "NAT:N"
+      ],
+      "newTags": [
+        "GOV:A",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 529,
+      "idx": 2,
+      "domain": "治安刑罚",
+      "t": "我主张对暴力累犯设立更严格的假释和监控条件，但不必一刀切终身监禁，用电子监控和社区矫正平衡安全与权利，让数据决定风险。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "TECH:K"
+      ],
+      "newTags": [
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 529,
+      "idx": 3,
+      "domain": "治安刑罚",
+      "t": "我认为司法裁量权应该收紧，对类似情节的累犯设定更明确的最低刑期标准，减少法官主观弹性，让判决更可预期、更有威慑力。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 530,
+      "idx": 2,
+      "domain": "外交国际",
+      "t": "我会建议客户与母国政府协调，等待制裁政策明朗后再做决定，外交一致性对跨国企业很重要，单独行动可能面临法律和声誉双重风险。",
+      "oldTags": [
+        "GOV:A",
+        "NAT:N",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 533,
+      "idx": 1,
+      "domain": "动物伦理",
+      "t": "我理解抗议者的心情，但如果因此延误癌症新药的上市，那些本可以被救的病人怎么办？我会支持在监管下继续实验，但要求尽量减少动",
+      "oldTags": [
+        "ENV:S",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "ENV:S",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 537,
+      "idx": 2,
+      "domain": "消费债务",
+      "t": "我会建议他向金融监管部门举报这些平台，如果利率超过法定上限就是非法放贷，不该还；同时呼吁政府加强网贷监管，不能放任平台收",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 539,
+      "idx": 0,
+      "domain": "气候灾害",
+      "t": "我会支持强制搬迁，人命比房产重要，政府应该提供足够的安置住房和就业支持，对抗自然规律只会造成更大伤亡。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "ENV:G"
+      ],
+      "newTags": [
+        "GOV:A",
+        "ENV:G"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 543,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我支持学校审慎评估，如果这位学者的言论可能引发现场冲突甚至安全风险，学校有责任保护校园秩序，可以改为小范围闭门研讨。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 543,
+      "idx": 4,
+      "domain": "言论表达",
+      "t": "我倾向于取消，校园应该是一个让人感到安全的空间，如果某些言论会对特定群体造成实质性伤害，学术自由不应该凌驾于学生的福祉之",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 547,
+      "idx": 2,
+      "domain": "学校教育",
+      "t": "我支持开设，但应该有年龄分级和内容审核，老师要接受专门培训，确保课堂是理性讨论而不是灌输特定立场。",
+      "oldTags": [
+        "GOV:L",
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 549,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "我坚决反对在公共交通上安装人脸识别，隐私是基本权利，严格保密的承诺不可信，技术一旦部署就会被滥用，今天抓通缉犯明天就能追",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 549,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我支持安装，公共安全高于个人隐私，地铁人流密集是恐怖袭击和犯罪的高风险场所，AI监控能大大提高破案效率，保护的是所有人的",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 549,
+      "idx": 2,
+      "domain": "监控隐私",
+      "t": "我支持安装，但要求独立机构监督数据使用，设置严格的调取审批程序，并且定期公布使用报告，让权力在阳光下运行。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 549,
+      "idx": 3,
+      "domain": "监控隐私",
+      "t": "我觉得与其全面监控，不如加强地铁的人工安检和巡逻，技术手段应该作为辅助而不是替代人力，减少对隐私的系统性侵犯。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:U"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 552,
+      "idx": 0,
+      "domain": "科技AI",
+      "t": "我会支持要求任何提供心理健康建议的AI工具必须获得临床许可——不能让无照机器在脆弱人群身上练手，哪怕它便宜也不是借口。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 552,
+      "idx": 3,
+      "domain": "科技AI",
+      "t": "我对AI涉足心理健康整体持谨慎态度——对处于危机中的人来说误导的代价太高了，与其放任AI，不如把精力放在让人类护理变得可",
+      "oldTags": [
+        "TECH:U",
+        "ECO:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:U",
+        "ECO:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 553,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我会视这位吹哨人为英雄——揭露未经授权的公民监控是公共服务，任何保密协议都不应覆盖违宪项目，该追究的是监控计划本身。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L",
+        "COL:I"
+      ],
+      "newTags": [
+        "GOV:L",
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 553,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我会支持起诉——他签署了保密协议并违反了法律，动机不论多么高尚都不能凌驾于法律之上，合法的关切应通过监督渠道反映而非公开",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 553,
+      "idx": 2,
+      "domain": "司法法治",
+      "t": "我会支持在法律中设立公共利益辩护条款，允许吹哨人在独立法庭上为自己的行为辩护，由法庭权衡公共收益与安全损害。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 553,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我会把焦点放在修复监控计划本身，而不是追惩泄露者——真正的丑闻是未经授权的数据收集，起诉传信人只是转移视线。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 556,
+      "idx": 1,
+      "domain": "农业食品",
+      "t": "我会反对批准，直到长期独立安全研究完成——我们还不知道吃几十年培养肉对健康的影响，把它匆忙推向市场是鲁莽的。",
+      "oldTags": [
+        "TECH:U",
+        "SEC:E",
+        "CUL:T"
+      ],
+      "newTags": [
+        "TECH:U",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 557,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我会直接否决——当一个声音控制了一座城市80%的信息渠道，民主本身就处于危险之中，任何效率收益都不值得这个代价。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "GOV:A",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 558,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我会投赞成——在公共场所不做亏心事就没什么好怕的，抓捕罪犯和寻找失踪者的安全收益值得付出代价。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A",
+        "TECH:K"
+      ],
+      "newTags": [
+        "GOV:A",
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 558,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我会投反对——对每个人行动轨迹的持续生物识别跟踪是对自由的根本威胁，技术的偏差和滥用潜力都不可接受。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L",
+        "TECH:U"
+      ],
+      "newTags": [
+        "GOV:L",
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 558,
+      "idx": 2,
+      "domain": "治安刑罚",
+      "t": "我支持安装，但前提是严格设限：数据30天内删除除非关联到案件、接受独立审计、禁止用于匹配在逃人员以外的任何用途。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 558,
+      "idx": 3,
+      "domain": "治安刑罚",
+      "t": "我认为应该把资源投到社区警务和犯罪根源治理上，而不是建一套把每个公民当潜在嫌疑人的监控基础设施。",
+      "oldTags": [
+        "ECO:L",
+        "COL:M",
+        "SEC:F"
+      ],
+      "newTags": [
+        "ECO:L",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 559,
+      "idx": 1,
+      "domain": "外交国际",
+      "t": "我会否决出口——从可能被用于针对平民的武器中获利使我们成为共犯，不论经济效益如何，向活跃冲突区出口武器都应被禁止。",
+      "oldTags": [
+        "NAT:C",
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "NAT:C",
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 569,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我会建议支持该法案。匿名是一种舒适，孩子的安全才是利害攸关。最需要躲在未验证账号后面的那些人——骚扰者、猎食者、敲诈者—",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 569,
+      "idx": 1,
+      "domain": "数字平台",
+      "t": "我会建议明确反对。举报人、敌意家庭屋顶下的异见少年、互相辨认的受虐幸存者、暴露即危险的少数群体——对他们而言，匿名不是舒",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 569,
+      "idx": 2,
+      "domain": "数字平台",
+      "t": "我会建议把平台方的反提案写进法律：强制采用隐私保护的年龄验证——用密码学证明「已成年」而不存储身份——并资助一个独立审计",
+      "oldTags": [
+        "TECH:K",
+        "SEC:F"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 572,
+      "idx": 1,
+      "domain": "社区邻里",
+      "t": "我会支持物业的集中收容处理：城市生态系统容不下这个规模的流浪猫，雏鸟和刺猬的消失不是情绪问题而是生态事实。对猫的善意不该",
+      "oldTags": [
+        "ENV:G",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ENV:G"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 575,
+      "idx": 3,
+      "domain": "言论表达",
+      "t": "我会写：我反对邀请，但更反对取消。程序正义在于：邀请由学术委员会按既定标准作出，就应由同一程序审查是否撤销；议事会不该因",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 576,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我会劝她接受修改后出版：一部删改后仍有力量的小说，好过一部完整却无人能读的手稿。让书以任何形态进入读者的世界，记忆的线索",
+      "oldTags": [
+        "SEC:E",
+        "CUL:T"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 576,
+      "idx": 3,
+      "domain": "言论表达",
+      "t": "我会提醒她考虑更现实的层面：作者要生活，编辑要担责，出版社几十号人的生计都压在选题上。她可以坚持完整版另寻出路，但不必把",
+      "oldTags": [
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 580,
+      "idx": 2,
+      "domain": "贸易产业",
+      "t": "我会主张强硬护渔：增派海警船伴随本国船队作业，在争议水域先行划设本国执法线，把事实摆在谈判前面。资源分配从来是实力问题，",
+      "oldTags": [
+        "NAT:N",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 584,
+      "idx": 2,
+      "domain": "学校教育",
+      "t": "我会投票保留，同时把遴选规则晒出来：哪些书进馆、依据什么标准、投诉走什么程序，全部公开并邀请家长代表参与新一轮选书。让争",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 587,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "我会投票支持条例：百分之二十的犯罪率下降，意味着每年少几百起抢劫、少若干条人命，失踪儿童能早回家一天是一天。我的隐私观很",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 587,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我会投票反对：人脸是改不了密码的生物特征，一旦泄露终身作废。今天为治安收集，明天就可能被用于别的名单——技术从不问自己将",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 587,
+      "idx": 3,
+      "domain": "监控隐私",
+      "t": "我会支持建设但反对生物特征库：用智能视频做交通治理、人流预警、跌倒检测都可以，一律不做人脸比对。城市需要的是更聪明的眼睛",
+      "oldTags": [
+        "TECH:K",
+        "SEC:F"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 588,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "我会支持公司：办公设备和工时都是公司付的钱，衡量投入天经地义。远程办公模糊了边界，数据反而让评价回归客观——至少它不偏心",
+      "oldTags": [
+        "ECO:R",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ECO:R"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 588,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我会主张立法禁止侵入式监控：截屏与键盘记录的问题不在「是否公开数据」，而在人的尊严——劳动者不该在自家书房里被算法值勤。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 589,
+      "idx": 0,
+      "domain": "医疗健康",
+      "t": "我会支持继续公布完整轨迹：在传播速度面前，公民自觉是最后的防线，信息越透明，每个人的自我保护就越精准。骚扰确诊者是治安问",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 589,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "我会主张改为定向通知：轨迹不再向社会公布，由流调员精确通知同场所、同时段的密接者，配合场所级的消毒公告。公众需要的是「我",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 589,
+      "idx": 2,
+      "domain": "医疗健康",
+      "t": "我会支持公布，但重构粒度：只公布场所与时段，删除一切可拼图细节，模糊化楼层与车厢号，并立法惩处人肉与骚扰行为，确诊者身份",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 593,
+      "idx": 0,
+      "domain": "科技AI",
+      "t": "我会支持两项措施全部落地：水印解决「是什么」，先审后发解决「什么时候放」。言论自由保护的是人的表达，不是机器的量产——当",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 594,
+      "idx": 0,
+      "domain": "科技AI",
+      "t": "我会先要一条铁律：任何拒赔决定的最终署名必须是人，AI输出只能作为参考意见。算法可以计算概率，但「这个人例外」的判断需要",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 595,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我会支持建立封存制度：少年司法的全部前提就是「他还没长成」，用十八岁前的一段错处追杀二十三岁的人生，等于宣告教育矫正从头",
+      "oldTags": [
+        "CUL:P",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 596,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "我会反对引入罢免机制：法官的职责恰恰是在民意的洪水中按住法律这块礁石。今天的百万签名是义愤，明天的百万签名可能是被组织出",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 604,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我会主张平台事前拦截义务：对高度仿真的人物视频，平台在推流放大前必须核验来源与合成标记，「事后删除」在传播速度面前等于不",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 604,
+      "idx": 1,
+      "domain": "媒体信息",
+      "t": "我会主张以受害者救济为核心的司法路线：伪造视频的本质是诽谤与欺诈，应强化快速禁令、举证责任倒置、平台信息披露义务和惩罚性",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 605,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我会支持方案：把盗窃犯和暴力犯关在同一屋檐下，等于开办犯罪进修学校。监禁摧毁工作、家庭与社会关系——恰恰是防止再犯的全部",
+      "oldTags": [
+        "CUL:P",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 605,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我会反对方案：量刑的意义一半在震慑，一半在于向社会与被害人宣告罪与罚的等式。把监狱从轻罪者的账单上划掉，等于告诉潜在的违",
+      "oldTags": [
+        "SEC:E",
+        "CUL:T"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 607,
+      "idx": 1,
+      "domain": "外交国际",
+      "t": "我会投票否决：引渡是把本国居民交给他国权力处置，一旦出错没有任何回头路。当对方法庭连独立旁听都拒绝时，任何书面承诺的分量",
+      "oldTags": [
+        "SEC:F",
+        "NAT:N"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 613,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我会投票维持展出，但把评审程序公开：这次冲突暴露的真问题是——谁决定了这件作品拿公共资金？我会推动评审标准、评委构成与异",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 615,
+      "idx": 3,
+      "domain": "老龄化养老",
+      "t": "我会尊重陈婆婆本人的最终决定权，哪怕这意味着风险：成年人有权选择自己承担的风险，八十一岁不注销这个权利。我能做的是把选项",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 625,
+      "idx": 2,
+      "domain": "老龄化养老",
+      "t": "我会先做远程健康监测：独居死亡事件的最大特征是「几天没人知道」。监测设备可以一发现异常就报警——这是成本最低、效益最高的",
+      "oldTags": [
+        "SEC:E",
+        "TECH:K"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 626,
+      "idx": 2,
+      "domain": "消费债务",
+      "t": "我会劝她报警并联系金融监管局举报：这是诈骗，不是投资亏损。监管局收到投诉才有动力查处这家平台——一个老人追不回来三十六万",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 629,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我会支持强制全面开启青少年模式：算法不识别年龄就是失职。所有用户默认按年龄分级，十三至十八岁禁用算法推荐、二十二点后强制",
+      "oldTags": [
+        "GOV:A",
+        "CUL:T",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 631,
+      "idx": 1,
+      "domain": "社区邻里",
+      "t": "我会支持物业清走并限期让愿意收养的住户办手续，逾期由专业机构带走。人的居住卫生和婴儿睡眠优先，这不是残忍，是秩序。让两百",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 634,
+      "idx": 2,
+      "domain": "经济分配",
+      "t": "我会主张先做困难优先的分层：重病户与低保户加计份额，剩余部分再按人头分。补偿不只是一笔产权清算，也是一个共同体最后一次照",
+      "oldTags": [
+        "ECO:L",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ECO:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 639,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "我会支持建接口，但把约束写死：限报警后启用、须经一名以上警官审批、事后向被查询人本人发出告知、数据九十天销毁。定位老人的",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 639,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我会反对建立任何常态化接口。每一次只用于紧急情形的承诺，最后都变成了例行查询。四起走失当然沉重，但一个能实时定位全城行踪",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 639,
+      "idx": 2,
+      "domain": "监控隐私",
+      "t": "我会主张不由平台建常设接口：由警方指挥中心作为唯一窗口，平台只对单个已立案请求作一次性回复。差别不在技术上，而在设施由谁",
+      "oldTags": [
+        "SEC:F",
+        "TECH:K"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 640,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "我会要求给年轻人。医学评分算的是紧迫性，没算她还有六十年，也没算一个四岁的孩子。规则是人写的，写的时候没想过这个场面；在",
+      "oldTags": [
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 642,
+      "idx": 1,
+      "domain": "科技AI",
+      "t": "我会要求暂停扩大，先把偏差查清楚：用院内历史病例按人群分层跑一遍指标，哪家厂商拿不出分层数据就换厂商。工具在我的科室里不",
+      "oldTags": [
+        "TECH:U",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:U"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 643,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "我会主张免予刑事处罚，但附加强制医疗与看护令：责令家属落实看护并由家庭财产承担费用，定期向司法所报告。免刑不等于免责，家",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 643,
+      "idx": 2,
+      "domain": "司法法治",
+      "t": "我会反对轻纵。护理员脸上的伤是真伤，一句有病就抹掉刑事记录，所有做护工的人都会知道自己不在保护之列。判决不只是写给被告的",
+      "oldTags": [
+        "SEC:E",
+        "COL:I"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 648,
+      "idx": 2,
+      "domain": "治安刑罚",
+      "t": "我会反对。一条命换十九年，这个换算我签不下字。受害者家属年年寄那封信，说明这件事从未结束；法律留给他们的参与权就在这一张",
+      "oldTags": [
+        "SEC:E",
+        "CUL:T"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 649,
+      "idx": 1,
+      "domain": "外交国际",
+      "t": "我会主张明确反对并启动国际水道仲裁，同时申请把下游湿地列入国际保护名录。证据我们是有的；跨境水道的规则之所以存在，就是为",
+      "oldTags": [
+        "NAT:N",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 650,
+      "idx": 3,
+      "domain": "社会保障",
+      "t": "我会先要求把准入核验与补贴公式修好再谈形式：核验松散、骗租查处不到位的情形下，任何一种形式都会被人消耗掉一半。工具可以讨",
+      "oldTags": [
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 653,
+      "idx": 0,
+      "domain": "社区邻里",
+      "t": "我支持装，小区安全优先，刷脸后陌生人进不来，老年人也不用记卡，住着比现在踏实多了。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 653,
+      "idx": 1,
+      "domain": "社区邻里",
+      "t": "我反对，人脸是敏感生物信息，门禁用钥匙或密码就够了，不该为了方便让所有人都被采集肖像留底。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 653,
+      "idx": 3,
+      "domain": "社区邻里",
+      "t": "我建议改用非人脸的智能门禁卡，既能记录谁进出防尾随，又不收集面孔，兼顾安全与隐私两方。",
+      "oldTags": [
+        "TECH:K",
+        "SEC:F"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 655,
+      "idx": 2,
+      "domain": "社区邻里",
+      "t": "我反对用多数票强制低层，采光噪音是实打实的损失，少数人的财产权不能被多数人绑架。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 656,
+      "idx": 1,
+      "domain": "职场雇佣",
+      "t": "我反对强制长时间加班，劳动法保障休息权，用加班换产出是透支人，公司该守住底线。，说到底还是更合我的脾气。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 657,
+      "idx": 2,
+      "domain": "职场雇佣",
+      "t": "我认为员工必须能查看自己的评分并提起申诉，过程透明才能让人服气，不能系统说了算。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 659,
+      "idx": 1,
+      "domain": "职场雇佣",
+      "t": "我反对，家是私人空间，屏幕监控侵犯生活隐私，考核看结果就够了，别越界。，我觉得这样最说得通。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 661,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我反对限流，谣言应该让它在公开场域里自净，平台一限流反而像捂盖子、更可疑。，我觉得这样最说得通。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 662,
+      "idx": 3,
+      "domain": "言论表达",
+      "t": "我认为学生有权不选这门课或换班，用脚投票比举报更体面，也保住自己节奏。，于情于理我都站这边。",
+      "oldTags": [
+        "SEC:F",
+        "COL:I"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 663,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "我支持重点区实名，匿名太容易造谣网暴，实名能让人对自己的话负责。，这最贴合我一贯的想法。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 663,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我反对强制实名，匿名恰恰是弱势群体、举报者敢说话的护盾，不能因噎废食。，我觉得这样最说得通。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 665,
+      "idx": 0,
+      "domain": "言论表达",
+      "t": "我主张放宽审批，和平集会自由是基本权利，提前三天报批门槛太高、变相限制。，这最贴合我一贯的想法。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 665,
+      "idx": 1,
+      "domain": "言论表达",
+      "t": "我支持维持审批，广场在闹市，不报批人流一多就乱，警方得有底才能保安全。，我觉得这样最说得通。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 674,
+      "idx": 0,
+      "domain": "贸易产业",
+      "t": "我支持限制外资收购，核心科技关系国家安全，不能让命脉落到外人手里。，权衡之下也只能这么选。",
+      "oldTags": [
+        "SEC:E",
+        "NAT:N"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 674,
+      "idx": 2,
+      "domain": "贸易产业",
+      "t": "我主张对敏感行业做安全审查、一般领域放开，分门别类管。，照这个思路走最省心。，于情于理我都站这边。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 675,
+      "idx": 0,
+      "domain": "贸易产业",
+      "t": "我支持主粮高度自给，饭碗端在自己手里才踏实，战时断供就是天大的事。，这最贴合我一贯的想法。",
+      "oldTags": [
+        "NAT:N",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 689,
+      "idx": 0,
+      "domain": "移民文化",
+      "t": "我支持一律遣返，国境线是主权底线，不该谁想进就进、乱了秩序。，这最贴合我一贯的想法。",
+      "oldTags": [
+        "SEC:E",
+        "NAT:N"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 689,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "我反对一刀切，受迫害的该给庇护，个案甄别才有人道，不能全当违法者。，我觉得这样最说得通。",
+      "oldTags": [
+        "SEC:F",
+        "NAT:C"
+      ],
+      "newTags": [
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 689,
+      "idx": 3,
+      "domain": "移民文化",
+      "t": "我倾向边境城市就地设收容、由地方自治安置，中央和地方分担。，这是我更认可的出路。",
+      "oldTags": [
+        "COL:M",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 691,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "我坚决反对，办公区也是私人表达空间，偷偷转写对话侵犯基本隐私，应当立法严格限制雇主的监控边界，不能让同意条款变成空白支票",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 692,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "反对，用算法给孩子的情绪贴标签会扼杀天性，校园该保留不被监视的自由成长空间，否则童年都活在被打分的焦虑里太残忍。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F",
+        "CUL:P"
+      ],
+      "newTags": [
+        "GOV:L",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 692,
+      "idx": 2,
+      "domain": "监控隐私",
+      "t": "可以用，但必须由家长委员会共同决定使用范围，并把数据所有权和删除权牢牢握在家庭手里，学校只是受托处理而非随意调阅。",
+      "oldTags": [
+        "COL:M",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 693,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "支持，公安与物业联动用科技防盗反诈，是为了全体住户的安全，个人那点不习惯可以克服，毕竟谁都不想自家被盗或被骗走养老钱。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 693,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "反对，把正常居民的行为轨迹拿去做画像，是把守法公民当嫌疑人，过度安防侵蚀了日常自由，老人遛个弯都要被系统评判太荒唐。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 693,
+      "idx": 2,
+      "domain": "监控隐私",
+      "t": "安全重要，但轨迹数据必须本地存储、定期销毁，且由业主代表大会监督用途，不能交给第三方随意调阅，更不能拿去给商家做精准推销",
+      "oldTags": [
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 694,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "立刻卸载并举报，企业无权在后台偷跑定位，用户主权必须靠拒绝滥用产品的行动来捍卫，否则今天让一步明天就被看得精光。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 695,
+      "idx": 0,
+      "domain": "监控隐私",
+      "t": "支持，公共交通本就是公共空间，用 aggregate 数据疏导客流、保障安全是公用事业的正当职责，总比高峰期挤成照片强得",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 695,
+      "idx": 1,
+      "domain": "监控隐私",
+      "t": "反对，信令级追踪能还原个人全天轨迹，这种颗粒度的监控必须限于重大紧急状态，不能常态化，否则通勤自由成了被登记的账本。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 697,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "反对，看病是个人自由，强制首诊等于替患者做主，设备差的社区耽误病情谁负责？我可不敢拿父母的身体去试水。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 698,
+      "idx": 1,
+      "domain": "医疗健康",
+      "t": "严禁，医疗关系人命，算法黑箱不能替代医师负责制，必须由真人签字担责才算数，拿家人身体赌机器的概率我不敢。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 699,
+      "idx": 2,
+      "domain": "医疗健康",
+      "t": "应立法规范产检套餐的知情同意和价格透明，让监管挡住机构利用焦虑赚钱的空间，别让每个家庭都自己跟销售斗智斗勇。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 703,
+      "idx": 2,
+      "domain": "性别平权",
+      "t": "休不休假是个人自由，不应被宣传道德绑架，也别用「模范爸爸」的标签来压人，我用多少假是我家和公司之间的事。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 704,
+      "idx": 3,
+      "domain": "性别平权",
+      "t": "弹幕而已别当真，网络情绪过眼就忘，教女儿专注自己目标、别被陌生人的评价牵着走，键盘侠的话哪天就翻篇了。",
+      "oldTags": [
+        "COL:I",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 707,
+      "idx": 1,
+      "domain": "科技AI",
+      "t": "反对，技术不能把一部分人甩在门外，图书馆必须保留人工窗口，数字鸿沟不是淘汰弱者的理由，老人也有进馆看书的的权利。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 710,
+      "idx": 0,
+      "domain": "科技AI",
+      "t": "支持，算法影响千万人的价格和机会，公众有权知道规则，透明胜过黑箱里的任性行为，秘密不能是平台割韭菜的护身符。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 711,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "必须依法，法律面前人人平等，谅解和赔偿不能替代定罪，否则富人花钱买自由，规矩就成了给钱让道的后门。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 712,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "支持严格执法，规则就是规则，占道经营影响秩序，不处罚只会让守规矩的人吃亏，城市脸面也得有人出来维护。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 712,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我路过拍个视频发朋友圈就走，执不执法是政府的事，我一个路人不好多嘴，惹了麻烦还得自己花时间跑派出所做笔录。",
+      "oldTags": [
+        "COL:I",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 714,
+      "idx": 0,
+      "domain": "司法法治",
+      "t": "妥当，警民合作提速破案、震慑犯罪，公布线索是公共安全的合理需要，真凶落网比谁的面子更重要。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 714,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "不妥，未定罪就发画像指认容易网暴误伤，无辜者的名誉权比破案效率更重要，万一认错人这家人跳进黄河洗不清。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 714,
+      "idx": 3,
+      "domain": "司法法治",
+      "t": "我只在群里围观不转发，真认出人来再私下报官，不掺和公开指认那摊浑水，免得认错还得给人赔礼道歉。",
+      "oldTags": [
+        "COL:I",
+        "SEC:F"
+      ],
+      "newTags": [
+        "COL:I"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 715,
+      "idx": 1,
+      "domain": "司法法治",
+      "t": "该严格，未成年人也知对错，送管教学校才能立规矩，过软的处置是对受害者的不公，也让别的孩子觉得打了人没代价。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 723,
+      "idx": 1,
+      "domain": "住房城市",
+      "t": "反对强制，低层物权应被尊重，不能靠多数投票剥夺少数对共有部分的否决，得自愿达成一致，否则楼里从此结成死仇。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 725,
+      "idx": 0,
+      "domain": "住房城市",
+      "t": "硬刚，依法合同未到期就不能赶人，宁可走仲裁也要守住租客的合法居住权，退一步房东下次更敢随便撵人。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 732,
+      "idx": 2,
+      "domain": "媒体信息",
+      "t": "我建议强制所有政治类视频携带可验证的数字来源证书，无证内容不予推荐，从技术源头遏制深度伪造的流通与对民主的侵蚀。",
+      "oldTags": [
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 734,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我支持扩大审核并明确禁止煽动性仇恨内容，线上空间也该有底线，受害者群体的安全优先于绝对的、不加约束的发言自由。",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 734,
+      "idx": 1,
+      "domain": "媒体信息",
+      "t": "我担心审核越界会变成思想审查，宁可依赖用户举报和透明度报告，也不愿让平台替所有人定义什么话能说、什么话不能。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 735,
+      "idx": 0,
+      "domain": "媒体信息",
+      "t": "我坚持以官方统一通报为准，混乱时期需要权威口径避免谣言误导救援，民间片段难免以偏概全、放大局部的焦虑与误判。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 735,
+      "idx": 3,
+      "domain": "媒体信息",
+      "t": "我建议优先用卫星和无人机技术核实关键画面，再对外发布，用技术背书替代立场之争从而降低误传风险与次生灾害。",
+      "oldTags": [
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 736,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我支持三振法案，对屡教不改的惯犯必须重罚才能保护守法居民，宽容过度反倒是在纵容犯罪横行、让邻里失去安全感。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 736,
+      "idx": 3,
+      "domain": "治安刑罚",
+      "t": "我认为应区分暴力与非暴力累犯，仅对危害人身的三振重判，财产型小案交给缓刑与赔偿更为合适，避免刑罚失衡。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 737,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我力挺全面配装，摄像头能约束双方行为、减少纠纷误判，对警察和市民都是保护而非单纯的监视工具，利大于弊。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 737,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我支持但要求录像仅用于涉诉调查、严格封存，不能沦为全天候追踪警员行踪的工具，必须防住内部滥用与泄露。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 737,
+      "idx": 2,
+      "domain": "治安刑罚",
+      "t": "我反对强制配装，执法尊严与现场判断不应被镜头绑架，警员隐私和临场自主同样值得被尊重，信任不能靠监视建立。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 738,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我坚决反对去刑化，持有即违法的红线不能松，宽松只会让更多年轻人误以为吸毒毫无后果，进而放纵自己。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 739,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我认为必须依法惩处以儆效尤，太柔和的处理会让肇事者觉得代价低，对受害者来说也不够交代，也难以安抚社区。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 740,
+      "idx": 0,
+      "domain": "治安刑罚",
+      "t": "我支持加装监控网络，治安差的片区先把发案率压下来最实在，居民夜里敢出门比隐私顾虑更重要，安全是安居的前提。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 740,
+      "idx": 1,
+      "domain": "治安刑罚",
+      "t": "我反对无差别人脸识别，正常居民不该被当嫌疑人扫描，安全感不能靠牺牲所有人的自由来换取，否则人人自危。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 740,
+      "idx": 3,
+      "domain": "治安刑罚",
+      "t": "我认为与其铺监控不如多派社区民警和夜间照明、改善环境，技术监视终究治标而不治本，人与人的联结更能防犯罪。",
+      "oldTags": [
+        "COL:M",
+        "SEC:E"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 742,
+      "idx": 3,
+      "domain": "外交国际",
+      "t": "我认为根源在战乱，应把资源更多投向斡旋停火与就近难民营，而非都运到千里外的富裕国家，治本胜过治标。",
+      "oldTags": [
+        "NAT:C",
+        "SEC:E"
+      ],
+      "newTags": [
+        "NAT:C"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 743,
+      "idx": 1,
+      "domain": "外交国际",
+      "t": "我反对任何军事介入，远方的仗不关我们事，年轻人不该为别国冲突流血，应专注本土安全与民生而非远征。",
+      "oldTags": [
+        "NAT:N",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 743,
+      "idx": 2,
+      "domain": "外交国际",
+      "t": "我主张以军售与情报支持盟友，用最小本国风险换取战略伙伴，比派兵更可控也更隐蔽，不把子弟兵推上第一线。",
+      "oldTags": [
+        "ECO:R",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ECO:R"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 753,
+      "idx": 0,
+      "domain": "家庭婚姻",
+      "t": "我支持为家暴受害者开绿色通道、免冷静期，安全压倒程序，不能让制度把人困在危险里，救命比劝和更紧迫。",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 756,
+      "idx": 0,
+      "domain": "动物伦理",
+      "t": "我支持严管乃至关停违规养殖，环境与健康优先，污染不该由周边居民默默埋单，守得住清水绿地才有宜居城市。",
+      "oldTags": [
+        "ENV:S",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ENV:S"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 757,
+      "idx": 1,
+      "domain": "动物伦理",
+      "t": "我理解企业审慎，安全数据关系人命，全面禁动物测试若牺牲可靠性也不可取，应渐进推进而非一夜之间叫停。",
+      "oldTags": [
+        "SEC:E",
+        "TECH:K"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 760,
+      "idx": 0,
+      "domain": "动物伦理",
+      "t": "我支持限额狩猎调控，种群失衡已威胁农户生计安全，数量管理是当下最务实的选择，护人也算护住这片山林。",
+      "oldTags": [
+        "ENV:S",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ENV:S"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 761,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我主张设明确标识与年龄分区、不撤展，既保表达自由也尊重观展者的自主选择权，让成年人为自己决定是否走近。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 763,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我主张分级而非删剪，成人向内容标级上映，把选择权交观众而非替所有人定下调子，成年公民能为自己做主。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 766,
+      "idx": 0,
+      "domain": "体育竞技",
+      "t": "我支持按现行医学阈值审慎准入，包容不应被牺牲，但须有可核验的生理标准防不公，让规则站在科学与公道一边。",
+      "oldTags": [
+        "CUL:P",
+        "SEC:E"
+      ],
+      "newTags": [
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 766,
+      "idx": 1,
+      "domain": "体育竞技",
+      "t": "我主张按出生性别分组，生理优势难靠声明抹平，保证生理女性选手的公平竞争权利，公平是竞技不可退的底线。",
+      "oldTags": [
+        "SEC:E",
+        "CUL:T"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 768,
+      "idx": 2,
+      "domain": "体育竞技",
+      "t": "我主张赛前赛后允许、比赛中止仪式禁烟，划清表达时段保竞技纯粹也留足空间，规矩清楚大家都不委屈。",
+      "oldTags": [
+        "SEC:F",
+        "GOV:L"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 769,
+      "idx": 0,
+      "domain": "体育竞技",
+      "t": "我支持严格责任扩围，干净比赛靠强威慑，个人疏忽也该担责才能护住多数诚实的选手，姑息一次就毁掉信任。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 769,
+      "idx": 1,
+      "domain": "体育竞技",
+      "t": "我反对无过错也重罚，程序正义不能丢，被人构陷就该有自证清白的通道而非一律担罪，无辜者不该陪绑。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 769,
+      "idx": 3,
+      "domain": "体育竞技",
+      "t": "我认为应砸钱升级检测与供应链溯源技术，从源头堵住而非只事后严惩运动员本人，治本比拿选手开刀更负责任。",
+      "oldTags": [
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 776,
+      "idx": 0,
+      "domain": "老龄化养老",
+      "t": "我支持安装，科技能救命，跌倒无人知才最可怕，子女作为监护人有知情权，这份安心应当优先于老人对监控的那点心理顾虑。",
+      "oldTags": [
+        "TECH:K",
+        "SEC:E"
+      ],
+      "newTags": [
+        "TECH:K"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 776,
+      "idx": 1,
+      "domain": "老龄化养老",
+      "t": "我反对强制安装，老人有在家不被监视的权利，是否装应由本人自主决定，不能为了集体安全感就牺牲个体的隐私与自由。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 778,
+      "idx": 0,
+      "domain": "消费债务",
+      "t": "我支持严管乃至禁止面向学生的消费贷，学生无收入、易被套路，监管必须保护弱者，不能让资本把黑手伸向还没有判断力的大学生。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 781,
+      "idx": 0,
+      "domain": "消费债务",
+      "t": "我支持压降利率上限，高利贷吸血弱势群体，监管划线是底线保护，不能让急需用钱的人掉进永远还不清的债务陷阱里。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 782,
+      "idx": 0,
+      "domain": "消费债务",
+      "t": "我支持立法严管催收，禁止骚扰无关第三人、泄露隐私，讨债不能突破人格尊严底线，再正当的债权也不能践踏别人的体面。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 784,
+      "idx": 0,
+      "domain": "消费债务",
+      "t": "我支持强制资金托管与冷静期，预付费易卷款，监管兜底是对弱势消费者的保护，不能让老实交钱的人承担老板跑路的全部风险。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 785,
+      "idx": 0,
+      "domain": "能源基建",
+      "t": "我支持建核电台，核电清洁稳定、保障能源安全，技术成熟风险可控，邻避情绪不该绑架事关全局的能源规划，总要有人就近承担。",
+      "oldTags": [
+        "ENV:G",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ENV:G"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 788,
+      "idx": 3,
+      "domain": "能源基建",
+      "t": "我更担心消防风险，老旧小区先搞安全改造再谈装桩，安全优先于便利，不能为了赶时髦把整栋楼的防火底线给突破了。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 790,
+      "idx": 0,
+      "domain": "能源基建",
+      "t": "我支持拆或迁，健康无小事，即便国标达标也应尊重住户意愿，别拿健康赌概率，家门口的设施起码要征得挨着的人同意。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 790,
+      "idx": 3,
+      "domain": "能源基建",
+      "t": "我更信选址去敏感区，基站优先布在商业楼与路灯杆，避开住宅楼顶更稳妥，用空间上的避让化解多数人对家门口设施的本能排斥。",
+      "oldTags": [
+        "SEC:E",
+        "COL:M"
+      ],
+      "newTags": [
+        "COL:M"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 792,
+      "idx": 0,
+      "domain": "气候灾害",
+      "t": "我支持高温强制停工，劳动者生命健康至上，再紧的工期也大不过人命，用几天产值去赌工人的安全是彻头彻尾的本末倒置。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 794,
+      "idx": 0,
+      "domain": "气候灾害",
+      "t": "我支持优先建海堤，防灾是底线工程，淹了城什么都没了，安全投入不能省，再精明的经济账也抵不过一次灭顶之灾。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 794,
+      "idx": 3,
+      "domain": "气候灾害",
+      "t": "我更信风险共担，推巨灾保险让市场分散损失，政府不必全包硬防，用金融手段把不确定的灾害成本摊到可承受的每一年。",
+      "oldTags": [
+        "ECO:R",
+        "SEC:E"
+      ],
+      "newTags": [
+        "ECO:R"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 796,
+      "idx": 0,
+      "domain": "气候灾害",
+      "t": "我支持强制撤离，天灾面前人命第一，犹豫就会出人命，基层有权强转，紧急状态下个体的固执不能凌驾于众人的安全之上。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 796,
+      "idx": 1,
+      "domain": "气候灾害",
+      "t": "我反对强制，成年人有对自己风险自担的权利，政府应劝导而非强拖，自由不可侵，不能借救灾之名把人连人带尊严一起搬走。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 798,
+      "idx": 0,
+      "domain": "气候灾害",
+      "t": "我支持政策性巨灾险，小保费换大保障，政府补贴普惠，防灾比救灾划算，让一次天灾不至于把一辈子的积蓄连根拔起。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 799,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我支持限算法时限，骑手安全比几分钟重要，平台不能靠压榨骑手换效率，把人的性命塞进代码优化的缝隙里是本末倒置。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 801,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我支持禁差异化定价，老客被宰是失信，该用规则护消费者权益，忠诚不该换来更贵的价签，信任是平台最贵的资产。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 802,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我支持平台强制限时，未成年人自制力弱，国家兜底护成长天经地义，在算法面前孩子需要一道外力帮他们按住那根手指。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 803,
+      "idx": 2,
+      "domain": "数字平台",
+      "t": "我主张第三类身份，设类雇员享部分保障不含全社保，折中保底，既给辛苦跑单的人一张安全网又不至于压垮平台模式。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 804,
+      "idx": 0,
+      "domain": "数字平台",
+      "t": "我支持数据本地化与审批，公民数据是国家资产，安全底线不能让渡，涉及国计民生的信息必须留在自己能管的地盘上。",
+      "oldTags": [
+        "GOV:A",
+        "SEC:E"
+      ],
+      "newTags": [
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    },
+    {
+      "id": 804,
+      "idx": 3,
+      "domain": "数字平台",
+      "t": "我更信用户授权优先，数据归个人，跨境须明示同意、可撤回，权利在民，让每个人对自己那一份数字痕迹真正说了算。",
+      "oldTags": [
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 805,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我反对，传统按性别分厕关乎女性安全与隐私，不应为少数改变多数习惯，公共空间的设计还是该优先照顾大多数人的踏实感。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    }
+  ],
+  "suspect": [
+    {
+      "id": 80,
+      "idx": 1,
+      "domain": "移民文化",
+      "t": "加价值观测试，认同基本价值才给身份，筛得更严。",
+      "oldTags": [
+        "NAT:N",
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "NAT:N",
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 207,
+      "idx": 4,
+      "domain": "家庭婚姻",
+      "t": "我自己的观念偏传统，不反对别人那样生活，但涉及公开表彰或教材呈现我还是倾向守旧。",
+      "oldTags": [
+        "CUL:T",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 226,
+      "idx": 2,
+      "domain": "艺术文化",
+      "t": "我支持把它放进乡土课、录成教材，愿学的孩子能接触，留条根就好。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:A",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:A"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 296,
+      "idx": 1,
+      "domain": "少数群体",
+      "t": "我倾向这种价值观家里教就好，学校别统一灌，各家自己来。",
+      "oldTags": [
+        "CUL:T",
+        "GOV:L",
+        "SEC:F"
+      ],
+      "newTags": [
+        "CUL:T",
+        "GOV:L"
+      ],
+      "pole": [
+        "SEC:F"
+      ]
+    },
+    {
+      "id": 326,
+      "idx": 0,
+      "domain": "学校教育",
+      "t": "我支持学校系统教，专业且平等。",
+      "oldTags": [
+        "SEC:E",
+        "GOV:A",
+        "CUL:P"
+      ],
+      "newTags": [
+        "GOV:A",
+        "CUL:P"
+      ],
+      "pole": [
+        "SEC:E"
+      ]
+    }
+  ]
+}

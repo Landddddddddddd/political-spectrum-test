@@ -1933,6 +1933,8 @@ function makePortrait(seed){
 
 function renderFigures(primary, secs){
   const figs = FIGURES[primary.name] || [];
+  // 意识形态扩充至 200 类后，部分新增类别暂无代表人物收录：整块隐藏，避免渲染出「标题+说明+空白」的空区块
+  if(!figs.length){ const el=$("figures"); if(el) el.innerHTML=""; return; }
   let html = `<div class="fttl">${g('代表人物','Representative figures')} · ${archName(primary)}</div>`;
   html += `<div class="fsub">${g('以下为该思潮在思想史上有代表性的理论与行动者。点击卡片可展开查看生平简介、主要事迹与代表著作；右侧为风格化「拟形象」插画，并非真实照片。','The following are representative theorists and actors of this current in intellectual history. Click a card to expand their biography, major deeds, and key works; the stylized portrait on the right is an illustration, not a real photo.')}</div>`;
   html += `<div class="fig-grid">`;
@@ -2389,7 +2391,7 @@ function copySummary(){
   const sep = CUR_LANG==="en" ? "; " : "；";
   const fsep = CUR_LANG==="en" ? ", " : "、";
   const dimsTxt=DIMS.map(d=>`${dname(d)}: ${dimLean(d.key)} (${dimPct(d.key)}%)`).join(sep);
-  const figs=(FIGURES[primary.name]||[]).map(f=>figName(f)).join(fsep);
+  const figs=(FIGURES[primary.name]||[]).map(f=>figName(f)).join(fsep) || (CUR_LANG==="en"?"(none listed yet)":"（暂无收录）");
   const text = CUR_LANG==="en"
     ? `【My Ideological Profile】\nDimensional signature: ${sig}\nClosest camp: ${archName(primary)}\n${primary.desc_en||primary.desc}\n\nDimensional leanings:\n${dimsTxt}\nRepresentative figures: ${figs}\n—— Political Spectrum Test · Adaptive (educational use)`
     : `【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;

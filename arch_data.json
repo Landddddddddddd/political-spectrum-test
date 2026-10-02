@@ -1,1 +1,4551 @@
-[{"name":"自由意志主义","need":{"ECO":"R","GOV":"L","COL":"I","TECH":"U","SEC":"E"},"desc":"主张最小政府、绝对个人自由与市场至上，反对一切非必要干预，包括技术与信仰领域的强制。","detail":"主张最大限度地缩减国家强制力，将个人自由与自愿契约视为最高政治价值。反对政府在经济、社会与私人生活领域的广泛干预，倾向于以市场、社群与自治组织替代科层管制。强调个人对自身身体与财产的绝对支配权。","tenets":["最小化国家","自愿契约优先","个人主权"],"name_en":"Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, technological privacy autonomy, secular public life and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","technological privacy autonomy","secular public life","individual priority"]},{"name":"古典自由主义","need":{"ECO":"R","GOV":"L","CUL":"T","NAT":"C","COL":"I"},"desc":"强调自由市场、个人权利与有限政府，重视传统与自发秩序、国际开放。","detail":"以个人权利、法治与有限政府为基石，主张通过自由市场与产权秩序实现繁荣。反对重商垄断与过度管制，强调机会平等而非结果均等。倾向以宪政约束公权力、保障言论与贸易自由。","tenets":["有限政府","自由市场","产权保障","法治约束"],"name_en":"Classical Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism, internationalism and openness and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural traditionalism","internationalism and openness","individual priority"]},{"name":"右翼自由意志主义","need":{"ECO":"R","GOV":"L","COL":"I","NAT":"N"},"desc":"经济彻底自由化、个人至上，但在民族与文化边界上偏向自主设限。","detail":"在自由意志主义框架内更强调传统社会秩序、强产权与低税收，认为自由市场能最优配置资源。反对再分配型福利与国家主导的平等工程，倾向以私人保险与慈善替代公共保障。重视文化与经济层面的去管制。","tenets":["强产权低税","反再分配","市场去管制"],"name_en":"Right-Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, national priority and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","national priority","individual priority"]},{"name":"自由保守主义","need":{"ECO":"R","GOV":"L","CUL":"T","COL":"I"},"desc":"经济自由、文化保守，强调个人责任与传统价值，政府守夜人角色。","detail":"在保守的价值秩序中纳入个人自由与市场经济，主张渐进改革而非激进重构。反对乌托邦式的社会工程，强调制度连续性与责任伦理。倾向在尊重传统的同时容纳有限的公民权利扩张。","tenets":["渐进改革","市场与个人自由","制度延续"],"name_en":"Liberal Conservatism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural traditionalism","individual priority"]},{"name":"技术自由意志主义","need":{"TECH":"U","ECO":"R","GOV":"L","COL":"I","SEC":"E","CUL":"P","NAT":"C"},"desc":"以技术去中心化、隐私与开源自治为核心，反对集中式监控与管控。","detail":"相信技术与去中心化创新能够绕开国家管制，扩展个体自由。反对集中化的监管壁垒，主张用加密、自治系统与开源工具重塑社会协作。倾向将技术突破视为 liberation 的杠杆。","tenets":["技术赋能个体","反集中监管","去中心化创新"],"name_en":"Techno-Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, technological privacy autonomy, secular public life and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","technological privacy autonomy","secular public life","individual priority"]},{"name":"社会自由主义","need":{"ECO":"L","GOV":"L","CUL":"P","COL":"I"},"desc":"在自由框架下强调平等机会与社会权利，支持渐进改革与多元包容。","detail":"在市场经济的框架内承认国家有义务保障基本社会福利与平等机会。反对纯粹自由放任导致的结构性不平等，主张以公共制度矫正市场失灵。倾向平衡个人自由与社会团结。","tenets":["市场与社会并重","机会平等","公共保障"],"name_en":"Social Liberalism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and individual priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","individual priority"]},{"name":"社会民主主义","need":{"ECO":"L","GOV":"A","CUL":"P","NAT":"C","COL":"M","ENV":"S"},"desc":"市场经济加强福利与再分配，混合经济、绿色导向、国际协作。","detail":"主张在民主制度内通过累进税收与福利国家实现实质性的社会公平。反对资本不受约束的集中，强调集体供给教育、医疗与养老等公共品。倾向以议会改革而非革命改造社会。","tenets":["福利国家","累进再分配","民主改革"],"name_en":"Social Democracy","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism, internationalism and openness, ecological priority and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural progress and pluralism","internationalism and openness","ecological priority","community priority"]},{"name":"民主社会主义","need":{"ECO":"L","GOV":"L","CUL":"P","COL":"M","NAT":"C"},"desc":"在民主框架内追求经济平等与劳动者主权，反对资本集中。","detail":"主张以民主程序超越资本主义生产关系，实现生产资料的社会化控制。反对将经济权力集中于私人资本，强调 workplace 民主与公共所有制。倾向在宪政框架下推进制度转型。","tenets":["生产社会化","劳动民主","反资本集中"],"name_en":"Democratic Socialism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and community priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","community priority"]},{"name":"自由社会主义","need":{"ECO":"L","GOV":"L","COL":"I","CUL":"P","NAT":"C","ENV":"S"},"desc":"主张生产资料民主控制，但坚持基层自治与个人自由，反对国家集权。","detail":"将社会主义目标与对自由、自治的承诺结合，反对国家官僚对经济生活的统制。主张以合作社与自愿联合取代等级化的强制结构，强调自下而上的自我治理。倾向去中心化的经济民主。","tenets":["自治联合","反官僚统制","经济民主"],"name_en":"Libertarian Socialism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, ecological priority and individual priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","ecological priority","individual priority"]},{"name":"进步主义","need":{"CUL":"P","ECO":"L","COL":"M","GOV":"L","NAT":"C","TECH":"K","SEC":"E"},"desc":"以平等、多元与权利扩张为核心，支持改革、包容与跨国协作。","detail":"相信社会应随理性与科学持续推进，主张通过制度改革扩大平等、权利与包容性。反对僵化的等级与传统壁垒，强调教育、公共卫生与反歧视政策。倾向以国家能力推动实质性的社会流动。","tenets":["制度进步","扩大包容性","反歧视"],"name_en":"Progressivism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, centralized tech control, secular public life and community priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","centralized tech control","secular public life","community priority"]},{"name":"社会主义","need":{"ECO":"L","GOV":"A","CUL":"P","COL":"M"},"desc":"追求生产资料社会化与强再分配，倚重国家力量调节经济与分配。","detail":"主张生产资料的社会占有与按需或按劳的分配，以克服私有资本带来的剥削与不平等。反对以利润为唯一导向的经济秩序，强调集体对资源的民主控制。倾向以计划或混合机制协调经济。","tenets":["生产资料社会化","反私有剥削","集体控制"],"name_en":"Socialism","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural progress and pluralism","community priority"]},{"name":"无政府主义","need":{"GOV":"L","COL":"I","ECO":"L","TECH":"U"},"desc":"质疑一切等级权威，倾向自发秩序、基层自治、直接民主与去中心化。","detail":"拒绝一切强制性国家权威，主张以自愿结社与自治社群组织社会。反对等级制、科层与法律强制，强调个体自由与互助伦理。倾向以联邦式的直接民主替代代表制权力。","tenets":["反国家权威","自愿自治","互助伦理"],"name_en":"Anarchism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, technological privacy autonomy and individual priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","technological privacy autonomy","individual priority"]},{"name":"无政府共产主义","need":{"GOV":"L","ECO":"L","COL":"M","CUL":"P"},"desc":"主张废除国家与资本，以自愿协作的共同体组织生产与分配。","detail":"在无政府主义基础上主张取消货币与商品交换，以按需分配组织生产与消费。反对国家、市场与私有财产，强调公社式的自由联合。倾向以直接行动与互助网络实现无统治社会。","tenets":["取消市场","按需分配","自由联合"],"name_en":"Anarcho-Communism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and community priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","community priority"]},{"name":"生态社会主义","need":{"ENV":"S","ECO":"L","COL":"M","CUL":"P"},"desc":"将生态可持续与反资本逻辑结合，主张系统性经济与能源转型。","detail":"将生态可持续与对资本扩张逻辑的批判结合，主张以民主方式系统性改造生产与能源结构。反对把环境危机交给市场自发调节，强调代际与跨物种的责任。倾向把生态约束纳入经济规划核心。","tenets":["生态可持续","反资本扩张","民主改造生产"],"name_en":"Eco-Socialism","desc_en":"Advocates economic equality and redistribution, cultural progress and pluralism, ecological priority and community priority.","tenets_en":["economic equality and redistribution","cultural progress and pluralism","ecological priority","community priority"]},{"name":"保守主义","need":{"CUL":"T","GOV":"A","ECO":"R","COL":"M","NAT":"N"},"desc":"重视传统、秩序与制度延续，对市场与权威均持审慎态度，强调共同体。","detail":"强调传统、秩序与制度的连续性，警惕抽象理性对社会肌理的破坏。反对激进革命与乌托邦设计，主张在既有秩序中谨慎改良。倾向以社群、习俗与权威维系数位稳定。","tenets":["秩序与传统","反激进革命","审慎改良"],"name_en":"Conservatism","desc_en":"Advocates free-market economics, authoritative governance and order, cultural traditionalism, national priority and community priority.","tenets_en":["free-market economics","authoritative governance and order","cultural traditionalism","national priority","community priority"]},{"name":"民族保守主义","need":{"CUL":"T","GOV":"A","NAT":"N","COL":"M","SEC":"F"},"desc":"强调国家主权、文化边界与传统秩序，经济偏市场，信仰嵌入公共生活。","detail":"将文化认同、边界主权与传统价值视为共同体存续的基础。反对无条件的开放与普世主义同化，强调民族认同在公共政策中的优先性。倾向以移民控制与文化保护维护社群凝聚力。","tenets":["民族认同优先","边界主权","文化保护"],"name_en":"National Conservatism","desc_en":"Advocates authoritative governance and order, cultural traditionalism, national priority, faith in public life and community priority.","tenets_en":["authoritative governance and order","cultural traditionalism","national priority","faith in public life","community priority"]},{"name":"传统保守主义","need":{"GOV":"A","CUL":"T","COL":"M","SEC":"F"},"desc":"以历史传承、等级与宗教价值为锚，反对激进变革与世俗化。","detail":"以历史传承的宗教、家庭与地方性习俗为价值锚点，反对现代性的过度解构。主张以有机的社群纽带替代抽象的个人权利叙事。倾向维护既有权威与道德秩序。","tenets":["守护传统","有机社群","道德秩序"],"name_en":"Traditional Conservatism","desc_en":"Advocates authoritative governance and order, cultural traditionalism, faith in public life and community priority.","tenets_en":["authoritative governance and order","cultural traditionalism","faith in public life","community priority"]},{"name":"威权民族主义","need":{"GOV":"A","NAT":"N","CUL":"T","COL":"M"},"desc":"强国家、反建制，以民族与传统文化动员的权威取向，集体优先。","detail":"主张以集中化的强力国家捍卫并推行单一民族意志，将统一与秩序置于多元分歧之上。反对自由主义的程序约束与分权制衡，强调动员型治理。倾向以国家主导整合社会资源。","tenets":["强国家整合","民族意志优先","反多元分权"],"name_en":"Authoritarian Nationalism","desc_en":"Advocates authoritative governance and order, cultural traditionalism, national priority and community priority.","tenets_en":["authoritative governance and order","cultural traditionalism","national priority","community priority"]},{"name":"宗教保守","need":{"SEC":"F","CUL":"T","GOV":"A","COL":"M","ECO":"R","TECH":"K"},"desc":"以特定信仰传统为道德基础，主张信仰价值进入公共与法律领域。","detail":"以特定宗教教义为公共道德的根基，主张以信仰传统塑造法律与家庭秩序。反对世俗化带来的价值相对主义，强调信仰社群在教化中的角色。倾向将宗教规范嵌入制度设计。","tenets":["信仰立道德","反世俗相对","传统家庭观"],"name_en":"Religious Conservatism","desc_en":"Advocates free-market economics, authoritative governance and order, cultural traditionalism, centralized tech control, faith in public life and community priority.","tenets_en":["free-market economics","authoritative governance and order","cultural traditionalism","centralized tech control","faith in public life","community priority"]},{"name":"基督教民主","need":{"GOV":"A","CUL":"T","SEC":"F","COL":"M","ECO":"L"},"desc":"以社会教义平衡市场与福利，强调辅助原则、家庭与共同体。","detail":"以基督教社会训导为底蕴，主张在个人自由、社群团结与辅助原则之间取得平衡。反对极端的个人主义与集体主义，强调 subsidiarity 与对弱者的照护。倾向以中间道路调和市场与福利。","tenets":["辅助原则","团结与照护","反极端化"],"name_en":"Christian Democracy","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural traditionalism, faith in public life and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural traditionalism","faith in public life","community priority"]},{"name":"绿色政治","need":{"ENV":"S","CUL":"P","COL":"M"},"desc":"以生态可持续为核心，可跨越左右，强调代际责任与基层民主。","detail":"以生态可持续、基层民主与非暴力为核心，主张将环境极限视为政策硬约束。反对增长至上与集中化的技术统治，强调地方自治与代际正义。倾向以去增长或稳态经济替代无限扩张。","tenets":["生态优先","基层民主","代际正义"],"name_en":"Green Politics","desc_en":"Advocates cultural progress and pluralism, ecological priority and community priority.","tenets_en":["cultural progress and pluralism","ecological priority","community priority"]},{"name":"绿色保守主义","need":{"ENV":"S","CUL":"T","GOV":"A"},"desc":"从传统责任、审慎与 stewardship 出发重视环境与代际延续。","detail":"从保守的 stewardship 传统出发，主张以保护自然遗产与责任伦理应对生态危机。反对将自然简化为可交易资源，强调代际托管与节制。倾向以审慎监管而非革命改造维护生态秩序。","tenets":["自然托管","节制消费","责任伦理"],"name_en":"Green Conservatism","desc_en":"Advocates authoritative governance and order, cultural traditionalism and ecological priority.","tenets_en":["authoritative governance and order","cultural traditionalism","ecological priority"]},{"name":"生态自由主义","need":{"ENV":"S","GOV":"L","ECO":"R","COL":"I"},"desc":"以市场工具（如碳交易）与个人自由手段推动生态转型。","detail":"在自由市场框架中引入生态外部性定价，主张以产权、碳市场与自愿交易实现环保。反对命令式管制，强调以激励兼容机制引导绿色行为。倾向把环境问题转化为可交易的产权安排。","tenets":["生态市场定价","反命令管制","激励兼容"],"name_en":"Eco-Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, ecological priority and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","ecological priority","individual priority"]},{"name":"生态个人主义","need":{"ENV":"S","COL":"I","GOV":"L"},"desc":"把环保视为个人责任与生活方式选择，反对强制性的集体管制。","detail":"将生态责任落到个体选择与生活方式上，主张以个人消费与自治行动应对环境危机。反对把环保完全交给国家或集体指令，强调个人伦理与自愿简约。倾向以赋权而非强制推动可持续。","tenets":["个体环保责任","自愿简约","反集体指令"],"name_en":"Eco-Individualism","desc_en":"Advocates decentralized and libertarian governance, ecological priority and individual priority.","tenets_en":["decentralized and libertarian governance","ecological priority","individual priority"]},{"name":"生态技术主义","need":{"ENV":"S","TECH":"K","GOV":"A"},"desc":"相信通过集中化的技术与专家治理（如地球工程）实现可持续。","detail":"相信技术创新——如清洁能源、核能与工程化手段——是化解生态危机的主路径。反对以限制发展来应对环境压力，强调以生产力跃迁实现脱钩。倾向以大规模技术部署替代行为约束。","tenets":["技术解生态","发展脱钩","工程化方案"],"name_en":"Eco-Technocracy","desc_en":"Advocates authoritative governance and order, ecological priority and centralized tech control.","tenets_en":["authoritative governance and order","ecological priority","centralized tech control"]},{"name":"技术威权主义","need":{"TECH":"K","GOV":"A","COL":"M"},"desc":"支持以算法、数据与集中监控提升治理效率，个人服从系统。","detail":"主张以集中化的技术官僚体系主导社会运行，将效率、秩序与系统稳定置于开放争论之上。反对以民主程序拖慢重大决策，强调专家治理与数据化管控。倾向以算法与监控提升国家能力。","tenets":["专家集中治理","效率优先","系统稳定"],"name_en":"Techno-Authoritarianism","desc_en":"Advocates authoritative governance and order, centralized tech control and community priority.","tenets_en":["authoritative governance and order","centralized tech control","community priority"]},{"name":"监控国家主义","need":{"TECH":"K","GOV":"A","NAT":"N","COL":"M"},"desc":"以国家主导的 surveillance 与数据集中保障安全与秩序，边界收紧。","detail":"主张以广泛的数据采集与 Surveillance 能力维护公共安全与社会稳定。反对将隐私视为不可让渡的绝对权利，强调集体安全优先。倾向以制度化监控预防风险与失序。","tenets":["安全优先","数据化管控","风险预防"],"name_en":"Surveillance Statism","desc_en":"Advocates authoritative governance and order, national priority, centralized tech control and community priority.","tenets_en":["authoritative governance and order","national priority","centralized tech control","community priority"]},{"name":"隐私个人主义","need":{"TECH":"U","COL":"I","GOV":"L","SEC":"E"},"desc":"把数据隐私与个人自主视为基本权利，反对任何形式的强制采集。","detail":"将个人对信息的控制权视为基本自由，反对国家与企业对私人领域的过度侵扰。主张以加密与法律屏障界定不可侵犯的隐私边界。倾向以去中心化工具抵御监控集中化。","tenets":["信息自决","反过度监控","隐私边界"],"name_en":"Privacy Individualism","desc_en":"Advocates decentralized and libertarian governance, technological privacy autonomy, secular public life and individual priority.","tenets_en":["decentralized and libertarian governance","technological privacy autonomy","secular public life","individual priority"]},{"name":"数字自由意志","need":{"TECH":"U","GOV":"L","ECO":"R","COL":"I","SEC":"E","CUL":"P","ENV":"G"},"desc":"主张加密、开源与平台去中心化，技术选择自由至上。","detail":"主张在数字空间中最大化个体自由与去中心化自治，反对平台与国家的双重垄断。强调开源、加密与网络中立，倾向以协议而非法律主导虚拟社群秩序。","tenets":["数字自治","反平台垄断","加密自由"],"name_en":"Digital Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority, technological privacy autonomy, secular public life and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","development priority","technological privacy autonomy","secular public life","individual priority"]},{"name":"去中心化生态主义","need":{"ENV":"S","TECH":"U","GOV":"L","COL":"I"},"desc":"用分布式、自下而上的技术与社区行动实现生态目标，拒斥集中管控。","detail":"主张以分布式、地方性的生态治理替代集中化的技术与官僚方案。反对单一尺度的大规模干预，强调社群尺度的循环与韧性。倾向以基层网络维系人与环境的共生。","tenets":["分布式治理","地方韧性","反集中干预"],"name_en":"Decentralized Ecologism","desc_en":"Advocates decentralized and libertarian governance, ecological priority, technological privacy autonomy and individual priority.","tenets_en":["decentralized and libertarian governance","ecological priority","technological privacy autonomy","individual priority"]},{"name":"世俗自由主义","need":{"SEC":"E","GOV":"L","CUL":"P"},"desc":"主张政教分离、公共决策基于理性与普遍权利，信仰留归私人。","detail":"主张将宗教从公共权力与法律制定中剥离，以理性与个体权利作为政治基础。反对宗教对公共领域的强制介入，强调信仰自由与政教分离。倾向以中立国家保障多元价值共存。","tenets":["公共领域去宗教","个体权利","价值中立"],"name_en":"Secular Liberalism","desc_en":"Advocates decentralized and libertarian governance, cultural progress and pluralism and secular public life.","tenets_en":["decentralized and libertarian governance","cultural progress and pluralism","secular public life"]},{"name":"世俗主义","need":{"SEC":"E","GOV":"L"},"desc":"强调公共领域的世俗化与中立，反对以任何信仰划定公共政策。","detail":"主张以非宗教的理性框架组织公共生活，使国家在所有信仰间保持中立。反对任何形式的国教或宗教特权，强调公民身份的平等。倾向以世俗教育维系公共理性。","tenets":["国家中立","反宗教特权","公共理性"],"name_en":"Secularism","desc_en":"Advocates decentralized and libertarian governance and secular public life.","tenets_en":["decentralized and libertarian governance","secular public life"]},{"name":"政教分离进步主义","need":{"SEC":"E","CUL":"P","GOV":"L","ECO":"L"},"desc":"在世俗框架下推进平等与权利扩张，反对信仰对公权力的渗透。","detail":"在进步主义议程中突出政教分离，主张以世俗制度推进平等与科学导向的改革。反对宗教保守对公共政策的形塑，强调以证据与权利为本的治理。倾向把世俗化与社会进步绑定。","tenets":["世俗化改革","证据导向","反宗教干预"],"name_en":"Secularist Progressivism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and secular public life.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","secular public life"]},{"name":"信仰社群","need":{"SEC":"F","COL":"M","CUL":"T"},"desc":"以信仰为纽带组织基层互助与公益，重视共同体伦理。","detail":"以共同宗教信仰为纽带组织社会生活，强调社群内部的互助、教化与道德约束。反对以世俗个人主义消解信仰共同体，重视自愿的宗教结社。倾向以社群自治补充公共制度。","tenets":["信仰结社","社群互助","道德教化"],"name_en":"Faith Community","desc_en":"Advocates cultural traditionalism, faith in public life and community priority.","tenets_en":["cultural traditionalism","faith in public life","community priority"]},{"name":"神权倾向","need":{"SEC":"F","GOV":"A","CUL":"T"},"desc":"主张以宗教法或信仰权威主导公共与法律秩序，权威集中。","detail":"主张以宗教权威或神法作为政治合法性的根本来源，将公共秩序锚定于信仰。反对世俗主义对神圣维度的剥离，强调宗教领袖在 governance 中的角色。倾向以信仰统合法律与伦理。","tenets":["神法为本","宗教权威","反世俗剥离"],"name_en":"Theocratic Tendency","desc_en":"Advocates authoritative governance and order, cultural traditionalism and faith in public life.","tenets_en":["authoritative governance and order","cultural traditionalism","faith in public life"]},{"name":"个人主义","need":{"COL":"I","GOV":"L","ECO":"R"},"desc":"个人权利、选择自由与自我负责优先于任何集体安排。","detail":"将个体的自主、权利与选择视为价值的根本单位，反对以集体名义压制自我实现。强调自我负责与多样的生活方式，倾向以最小强制保障个体空间。","tenets":["个体自主","自我负责","反集体压制"],"name_en":"Individualism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","individual priority"]},{"name":"社群主义","need":{"COL":"M","CUL":"T","GOV":"A"},"desc":"强调共同体、公益与成员责任，认为个人嵌于社群关系之中。","detail":"强调个体身份由社群关系与共同善所构成，反对把人简化为孤立的权利持有者。主张以共同体责任平衡个人自由，重视地方性纽带与公共参与。倾向以制度培育归属与互助。","tenets":["共同善优先","关系性自我","公共参与"],"name_en":"Communitarianism","desc_en":"Advocates authoritative governance and order, cultural traditionalism and community priority.","tenets_en":["authoritative governance and order","cultural traditionalism","community priority"]},{"name":"集体主义","need":{"COL":"M","ECO":"L","GOV":"A"},"desc":"共同体或国家目标优先于个人偏好，支持必要的集体约束与互助。","detail":"主张以群体或整体的目标统摄资源配置，强调团结、协调与对公共利益的服从。反对以个人自由凌驾于集体福祉，倾向以组织化手段实现共同目标。","tenets":["集体目标优先","团结协调","公共利益"],"name_en":"Collectivism","desc_en":"Advocates economic equality and redistribution, authoritative governance and order and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","community priority"]},{"name":"世界主义","need":{"NAT":"C","CUL":"P","COL":"I"},"desc":"以人类共同体视角看待权利与责任，重视开放、流动与跨文化协作。","detail":"主张所有人均应被视为同一道德共同体的成员，反对以民族边界限定义务与权利。强调跨国团结、普遍人权与对全球弱者的责任。倾向以开放边界与普遍规范弱化国族特权。","tenets":["普遍成员资格","跨国团结","反国族特权"],"name_en":"Cosmopolitanism","desc_en":"Advocates cultural progress and pluralism, internationalism and openness and individual priority.","tenets_en":["cultural progress and pluralism","internationalism and openness","individual priority"]},{"name":"全球治理主义","need":{"NAT":"C","GOV":"A","COL":"M","ENV":"S"},"desc":"主张通过超国家机制协调气候、贸易与安全，集体高于单边。","detail":"主张以跨国制度与多边机制协调全球性议题，反对单极或孤立的国家本位。强调以国际规则、机构与协商应对共同风险。倾向把主权让渡视为解决全球问题的必要安排。","tenets":["多边机制","国际规则","主权协调"],"name_en":"Global Governance","desc_en":"Advocates authoritative governance and order, internationalism and openness, ecological priority and community priority.","tenets_en":["authoritative governance and order","internationalism and openness","ecological priority","community priority"]},{"name":"贸易自由主义","need":{"NAT":"C","ECO":"R","GOV":"L"},"desc":"支持自由贸易、资本与人员流动，反对保护主义壁垒。","detail":"主张以最低壁垒的跨国交换促进效率与繁荣，反对关税、配额与保护主义干预。强调比较优势与全球分工，倾向以自由通行的商品与资本流动增进福利。","tenets":["自由贸易","反关税壁垒","比较优势"],"name_en":"Trade Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and internationalism and openness.","tenets_en":["free-market economics","decentralized and libertarian governance","internationalism and openness"]},{"name":"贸易保护主义","need":{"NAT":"N","ECO":"R","GOV":"A"},"desc":"以关税与产业保护维护本国就业与战略自主，国家干预市场。","detail":"主张以关税、补贴与产业政策支持本国生产与就业，反对无条件的市场开放。强调经济主权与战略产业的自主性，倾向以缓冲外部冲击维护国内稳定。","tenets":["产业保护","经济主权","反盲目开放"],"name_en":"Trade Protectionism","desc_en":"Advocates free-market economics, authoritative governance and order and national priority.","tenets_en":["free-market economics","authoritative governance and order","national priority"]},{"name":"民族主义","need":{"NAT":"N","COL":"M"},"desc":"以国家主权与民族认同为先，强调集体利益、边界与文化延续。","detail":"主张以民族共同体为政治忠诚的核心，强调自决、文化认同与对本国利益的优先考量。反对将民族利益从属于超国家安排，倾向以国家边界界定权利与义务。","tenets":["民族自决","文化认同","本国利益优先"],"name_en":"Nationalism","desc_en":"Advocates national priority and community priority.","tenets_en":["national priority","community priority"]},{"name":"发展主义","need":{"ENV":"G","GOV":"A","ECO":"R","NAT":"N"},"desc":"把经济增长与工业化置于优先，倚重国家主导的基建与产业政策。","detail":"将经济增长与现代化视为国家首要目标，主张以集中动员推动工业化与基础设施跃迁。反对以生态或分配议题拖慢积累，强调产出扩张与技术进步。倾向以国家主导的追赶战略。","tenets":["增长优先","现代化动员","国家主导"],"name_en":"Developmentalism","desc_en":"Advocates free-market economics, authoritative governance and order, national priority and development priority.","tenets_en":["free-market economics","authoritative governance and order","national priority","development priority"]},{"name":"自由发展主义","need":{"ENV":"G","GOV":"L","ECO":"R","NAT":"C"},"desc":"以市场开放与自由贸易驱动发展，弱化环保约束。","detail":"在开放市场的前提下强调国家应主动塑造发展能力，主张以制度与人力资本投资培育竞争力。反对纯粹放任或纯粹指令的二元对立，倾向以市场友好型干预促进结构升级。","tenets":["市场友好干预","能力建设","结构升级"],"name_en":"Liberal Developmentalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, internationalism and openness and development priority.","tenets_en":["free-market economics","decentralized and libertarian governance","internationalism and openness","development priority"]},{"name":"市场原教旨","need":{"ECO":"R","GOV":"L","COL":"I","ENV":"G"},"desc":"坚信市场能解决一切，反对管制、再分配与环保干预。","detail":"主张市场是配置资源的唯一最优机制，反对政府对价格、生产与分配的任意干预。强调自发秩序与竞争出清，倾向以全面私有化与去管制释放效率。","tenets":["市场唯一最优","全面私有化","反政府干预"],"name_en":"Market Fundamentalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, development priority and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","development priority","individual priority"]},{"name":"社会市场模式","need":{"ECO":"L","GOV":"A","COL":"M","NAT":"C"},"desc":"以秩序与共识为基础，兼顾市场效率与社会团结的协调型体制。","detail":"主张在有效竞争的市场之外，以制度化的社会政策对冲其分配后果。反对自由放任与计划经济的极端，强调竞争秩序与团结机制的并存。倾向以共识式协调维系社会和平。","tenets":["竞争加团结","反两极极端","制度对冲"],"name_en":"Social Market Model","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, internationalism and openness and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","internationalism and openness","community priority"]},{"name":"第三条道路","need":{"ECO":"L","GOV":"A","CUL":"P","NAT":"C"},"desc":"在左右之间寻求务实平衡，市场与福利、改革与稳定并重。","detail":"主张在古典社会民主与新自由主义之间寻找折中，强调责任、机会与积极的福利。反对国家统制与市场原教旨，倾向以投资于人替代单纯救济。","tenets":["左右折中","积极福利","责任与机会"],"name_en":"Third Way","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and internationalism and openness.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural progress and pluralism","internationalism and openness"]},{"name":"自由多元主义","need":{"GOV":"L","CUL":"P","COL":"I","NAT":"C","SEC":"E"},"desc":"以个人自由、文化多元与开放社会为底色的温和立场。","detail":"主张以制度保障多元价值、群体与生活方式的共存，反对任何单一正统垄断公共领域。强调宽容、程序公正与对分歧的容纳，倾向以分权防止权力集中。","tenets":["价值多元","制度宽容","分权防垄断"],"name_en":"Liberal Pluralism","desc_en":"Advocates decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, secular public life and individual priority.","tenets_en":["decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","secular public life","individual priority"]},{"name":"温和混合派","need":{"ECO":"R","GOV":"L","CUL":"P","COL":"I"},"desc":"各维度无明显主导倾向，取向混合或平衡，难以归入单一阵营。","detail":"主张在自由与秩序、市场与福利之间保持审慎平衡，反对任何教条式的极端立场。强调务实调整与可治理性，倾向以经验而非意识形态指导政策。","tenets":["务实平衡","反教条极端","经验导向"],"name_en":"Moderate Mixed","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","individual priority"]},{"name":"新古典自由","need":{"ECO":"R","GOV":"L","CUL":"T","NAT":"N"},"desc":"以自发秩序与市场协调为核心的新古典自由主义立场。","detail":"强调价格信号在资源配置中的基础作用，主张最小化的强制干预。认为个体在自由交换中能自发形成稳定的社会秩序。","tenets":["自发秩序","价格协调","有限干预"],"name_en":"Neoclassical Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and national priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural traditionalism","national priority"]},{"name":"自由意志女权","need":{"ECO":"R","GOV":"L","COL":"I","CUL":"P","SEC":"E"},"desc":"从个体自主出发的女性权利与市场赋权立场。","detail":"主张将身体权、契约自由与财产权交还个体，反对以群体身份进行强制分配。认为经济自主是实现性别平等的根本前提。","tenets":["个体自主","财产赋权","反强制分配"],"name_en":"Libertarian Feminism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, secular public life and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","secular public life","individual priority"]},{"name":"市场生态主义","need":{"ECO":"R","ENV":"S"},"desc":"借市场机制引导资源配置的生态优先立场。","detail":"主张以产权界定、污染定价与交易激励替代命令式管制。认为清晰的权利边界能使私人利益与生态保育自然趋同。","tenets":["产权界定","污染定价","激励相容"],"name_en":"Market Ecologism","desc_en":"Advocates free-market economics and ecological priority.","tenets_en":["free-market economics","ecological priority"]},{"name":"海盗自由","need":{"ECO":"R","GOV":"L","TECH":"U","CUL":"P","ENV":"S"},"desc":"以数字公民自由为核心的反垄断与信息开放立场。","detail":"主张知识共享、加密权利与网络中立，反对集中的信息平台垄断。强调信息流动中的个体隐私权与表达自由不可让渡。","tenets":["信息开放","加密权利","反平台垄断"],"name_en":"Pirate Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, ecological priority and technological privacy autonomy.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","ecological priority","technological privacy autonomy"]},{"name":"货币自由意志","need":{"ECO":"R","GOV":"L","CUL":"P","NAT":"C"},"desc":"主张货币与金融自由的去管制自由意志立场。","detail":"主张自由银行、货币竞争与资本自由流动，反对中央信用垄断。认为货币发行的竞争性能约束权力并保护储蓄价值。","tenets":["自由银行","货币竞争","资本自由"],"name_en":"Monetary Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism and internationalism and openness.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness"]},{"name":"贵族自由派","need":{"ECO":"R","GOV":"L","CUL":"T","ENV":"G"},"desc":"以德行与责任为基底的精英式自由秩序立场。","detail":"主张在保障个体自由的同时，强调公民德行、自我约束与精英责任。认为自由须以成熟的自律与公共担当为前提方能持久。","tenets":["公民德行","自我约束","责任精英"],"name_en":"Aristocratic Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and development priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural traditionalism","development priority"]},{"name":"地方自由意志","need":{"ECO":"R","GOV":"L","CUL":"T","ENV":"S"},"desc":"以辅佐原则与在地自治为核心的分权自由立场。","detail":"主张将决策权下沉至最小可行的共同体，反对远程中心化管控。认为在地化的自愿协作比统一规划更贴近个体差异与真实偏好。","tenets":["辅佐原则","在地自治","自愿协作"],"name_en":"Local Libertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and ecological priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural traditionalism","ecological priority"]},{"name":"后物质自由","need":{"ECO":"R","GOV":"L","CUL":"P"},"desc":"超越物质分配的个体表达与生活方式自由立场。","detail":"主张将政治焦点从经济再分配转向自我实现、文化多元与生态关怀。认为个体自由应在身份、信仰与生活方式的多元选择中展开。","tenets":["自我实现","文化多元","生活方式自由"],"name_en":"Post-Materialist Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and cultural progress and pluralism.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism"]},{"name":"自由意志环保","need":{"ECO":"R","GOV":"L","ENV":"S"},"desc":"以个体权利为前提的非强制型生态保育立场。","detail":"主张通过自愿保育、生态产权与社区契约保护自然，反对行政命令式环保。认为尊重个体权利的环境伦理更具可持续的内生动力。","tenets":["自愿保育","生态产权","非强制环保"],"name_en":"Libertarian Environmentalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and ecological priority.","tenets_en":["free-market economics","decentralized and libertarian governance","ecological priority"]},{"name":"认知自由","need":{"GOV":"L","TECH":"U"},"desc":"保障思想、信念与信息获取自由的中立立场。","detail":"主张个体对自身认知过程与信息环境拥有主权，反对思想强制与审查。认为开放而多元的认知空间是理性公共生活的基础。","tenets":["思想主权","信息自由","反审查"],"name_en":"Cognitive Liberty","desc_en":"Advocates decentralized and libertarian governance and technological privacy autonomy.","tenets_en":["decentralized and libertarian governance","technological privacy autonomy"]},{"name":"自由意志和平","need":{"ECO":"R","GOV":"L","CUL":"P","ENV":"S","NAT":"C"},"desc":"以非侵犯原则为基础的去军事化自由立场。","detail":"主张以不侵犯原则约束国家间与个体间关系，反对强制征役与扩张性干预。认为自愿交往与贸易能替代武力成为秩序的主要来源。","tenets":["非侵犯原则","反征役","贸易代武力"],"name_en":"Libertarian Pacifism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and ecological priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","ecological priority"]},{"name":"市场女权","need":{"ECO":"R","GOV":"L","COL":"I","CUL":"P","NAT":"C"},"desc":"借市场参与与经济独立推进性别平等的自由立场。","detail":"主张消除职业与创业壁垒，以契约自由取代身份性保护。认为女性通过平等的市场参与获得的独立比再分配更为根本。","tenets":["职业自由","创业平等","契约自主"],"name_en":"Market Feminism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","individual priority"]},{"name":"数字自由市场","need":{"ECO":"R","GOV":"L","TECH":"U","CUL":"P","SEC":"E"},"desc":"主张线上交换与数据流动不受强制干预的立场。","detail":"主张数据可携、平台互操作与跨境数字贸易自由，反对数字壁垒。认为开放的数据与算力市场能释放个体创造力与协作潜力。","tenets":["数据可携","平台互操作","跨境数字自由"],"name_en":"Digital Free Market","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, technological privacy autonomy and secular public life.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","technological privacy autonomy","secular public life"]},{"name":"地缘自由主义","need":{"ECO":"R","GOV":"L","NAT":"C","ENV":"G","SEC":"E"},"desc":"以区位价值与开放流动为核心的地权自由立场。","detail":"主张对土地与区位租金课以统一税赋并开放迁徙，反对地缘排他。认为对不可移动资源的公允定价可支撑开放的自由社会。","tenets":["地租单一税","开放迁徙","区位公允"],"name_en":"Geolibertarianism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, internationalism and openness, development priority and secular public life.","tenets_en":["free-market economics","decentralized and libertarian governance","internationalism and openness","development priority","secular public life"]},{"name":"右翼民粹","need":{"ECO":"R","GOV":"L","NAT":"N"},"desc":"强调本土个体与去管制相融的平民自由立场。","detail":"主张削减远程精英管控、强化在地身份认同与个体经济自由。认为权力应从中心化建制回流至普通个体的日常选择之中。","tenets":["去精英化","本土认同","个体经济自由"],"name_en":"Right-Wing Populism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and national priority.","tenets_en":["free-market economics","decentralized and libertarian governance","national priority"]},{"name":"新民粹自由","need":{"ECO":"R","GOV":"L","COL":"I","CUL":"P","NAT":"N"},"desc":"以普通人个体权利为本的抗建制自由立场。","detail":"主张削弱建制化中介对个体选择的代理，强化直接而分散的权利。认为自由的真谛在于个体对自我事务的切实掌控而非抽象代表。","tenets":["抗建制","分散权利","个体掌控"],"name_en":"Neo-Populist Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, national priority and individual priority.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","national priority","individual priority"]},{"name":"实验主义自由","need":{"ECO":"R","GOV":"L","CUL":"P","ENV":"G","TECH":"U"},"desc":"以多元政策实验与去中心试错为核心的自由立场。","detail":"主张允许不同共同体并行试验制度与规则，以结果反馈而非统一指令择优。认为分散试错比集中设计更能逼近适配个体的秩序。","tenets":["制度实验","分散试错","结果择优"],"name_en":"Experimental Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority and technological privacy autonomy.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","development priority","technological privacy autonomy"]},{"name":"启蒙自由派","need":{"ECO":"R","GOV":"L","SEC":"E"},"desc":"以理性、世俗与公开论证为基底的自由立场。","detail":"主张公共领域以理性论证与世俗语言沟通，反对信仰强制进入公域。认为普遍理性与个体良知自由是开放社会的共同地基。","tenets":["普遍理性","世俗公共","良知自由"],"name_en":"Enlightenment Liberalism","desc_en":"Advocates free-market economics, decentralized and libertarian governance and secular public life.","tenets_en":["free-market economics","decentralized and libertarian governance","secular public life"]},{"name":"生态威权主义","need":{"ENV":"S","GOV":"A"},"desc":"以集中权威推动生态保护的威权型绿色治理取向","detail":"主张通过自上而下的强制规制约束资源消耗与污染排放，认为个体自由应当让位于生态存续所要求的整体秩序，以集中权威保障长期环境稳定。","tenets":["生态优先","集中管制","存续秩序"],"name_en":"Eco-Authoritarianism","desc_en":"Advocates authoritative governance and order and ecological priority.","tenets_en":["authoritative governance and order","ecological priority"]},{"name":"技术社会主义","need":{"TECH":"K","ECO":"L"},"desc":"以公共集中掌控技术资产推动平等分配的社会主义取向","detail":"主张关键技术基础设施由公共部门统筹运营，以集体决策替代资本逻辑，使技术创新服务于普遍福利目标而非私人积累，并防范技术权力向少数主体集中。","tenets":["公营技术","平等分配","集体决策"],"name_en":"Technological Socialism","desc_en":"Advocates economic equality and redistribution and centralized tech control.","tenets_en":["economic equality and redistribution","centralized tech control"]},{"name":"算法社会主义","need":{"TECH":"K","ECO":"L","CUL":"P","SEC":"E"},"desc":"借助集中算法调度实现资源公平配置的社会主义构想","detail":"设想以公共算法系统协调生产与分配，减少市场波动与结构性不平等，强调算力应服务于共同体福祉而非逐利目标，使分配更趋透明与均衡。","tenets":["算法调度","公平配置","公器算力"],"name_en":"Algorithmic Socialism","desc_en":"Advocates economic equality and redistribution, cultural progress and pluralism, centralized tech control and secular public life.","tenets_en":["economic equality and redistribution","cultural progress and pluralism","centralized tech control","secular public life"]},{"name":"监测生态主义","need":{"ENV":"S","TECH":"K"},"desc":"以全域监测与数据调控维系生态平衡的技术治理观","detail":"主张部署广域传感与集中分析以实时管理环境负荷，认为精确监控是协调人类活动与自然承载力的必要手段，将量化治理视为生态保护的基石。","tenets":["全域监测","数据调控","生态协调"],"name_en":"Surveillance Ecologism","desc_en":"Advocates ecological priority and centralized tech control.","tenets_en":["ecological priority","centralized tech control"]},{"name":"生物保守主义","need":{"CUL":"T","COL":"M"},"desc":"谨慎对待生物技术改造、守护自然与人性边界的保守立场","detail":"主张对基因编辑与人体增强设限，认为生命秩序具有内在价值，技术介入须服从传统伦理与自然限度的约束，反对以功利逻辑重塑人性。","tenets":["守护自然","技术设限","伦理优先"],"name_en":"Bioconservatism","desc_en":"Advocates cultural traditionalism and community priority.","tenets_en":["cultural traditionalism","community priority"]},{"name":"超人类主义","need":{"TECH":"U","COL":"I"},"desc":"以技术拓展人类能力、追求超越既有生理局限的取向","detail":"主张通过生物与信息技术改造提升认知、寿命与感官，视技术为个体自我超越的手段，强调自主选择与身体主权，将进化视为可规划的目标。","tenets":["能力拓展","自我超越","身体主权"],"name_en":"Transhumanism","desc_en":"Advocates technological privacy autonomy and individual priority.","tenets_en":["technological privacy autonomy","individual priority"]},{"name":"后人类主义","need":{"TECH":"U"},"desc":"反思人类中心地位、接纳技术重构主体边界的哲学立场","detail":"认为意识与身份可超越生物载体，主张以去中心化视角看待智能与生命，弱化人类物种的独尊地位，将主体性理解为流动而非固定的构造。","tenets":["去中心主体","超越物种","技术重构"],"name_en":"Posthumanism","desc_en":"Advocates technological privacy autonomy.","tenets_en":["technological privacy autonomy"]},{"name":"技术封建主义","need":{"TECH":"K","GOV":"A"},"desc":"以平台与算法垄断形成新型依附关系的权威技术秩序","detail":"描绘由少数技术权力通过数据与基础设施构筑等级化依附结构的趋势，主张警惕数字领主对公共生活的支配，将平台权力类比于传统的领主权威。","tenets":["平台垄断","依附结构","数字等级"],"name_en":"Tech-Feudalism","desc_en":"Advocates authoritative governance and order and centralized tech control.","tenets_en":["authoritative governance and order","centralized tech control"]},{"name":"数字社会主义","need":{"TECH":"K","ECO":"L","CUL":"P","NAT":"C"},"desc":"在信息领域推行公共资源化与平等接入的社会主义观","detail":"主张将数据、网络与算力视为公共品，由集体治理防止私人垄断，使数字红利普惠而非集中于少数节点，将信息平等视为新型分配正义的核心。","tenets":["数据公品","平等接入","集体治理"],"name_en":"Digital Socialism","desc_en":"Advocates economic equality and redistribution, cultural progress and pluralism, internationalism and openness and centralized tech control.","tenets_en":["economic equality and redistribution","cultural progress and pluralism","internationalism and openness","centralized tech control"]},{"name":"太阳能主义","need":{"ENV":"S"},"desc":"以太阳能为核心的去碳能源转型与生态可持续取向","detail":"主张将能源系统全面转向可再生光照采集，视分散式清洁能源为生态秩序与长期存续的基础条件，以去碳化为文明可持续的前提。","tenets":["去碳转型","清洁能源","存续基础"],"name_en":"Solarpunk","desc_en":"Advocates ecological priority.","tenets_en":["ecological priority"]},{"name":"循环主义","need":{"ENV":"S","ECO":"L","GOV":"L"},"desc":"以物质闭环循环替代线性消耗的资源伦理取向","detail":"主张生产消费须回归循环再生逻辑，最大限度减少废弃与外排，将生态承载力视为经济活动的硬约束，以闭环取代取用即弃的线性模式。","tenets":["闭环循环","减废再生","生态约束"],"name_en":"Circularism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance and ecological priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","ecological priority"]},{"name":"深生态主义","need":{"ENV":"S","CUL":"T"},"desc":"视自然具内在价值、反对人类中心化的深层生态立场","detail":"主张消解人对自然的支配逻辑，认为所有生命形态拥有平等存在资格，倡导以谦抑姿态重构人与环境的伦理关系，将生态危机溯源于世界观层面。","tenets":["内在价值","反人类中心","谦抑共生"],"name_en":"Deep Ecology","desc_en":"Advocates cultural traditionalism and ecological priority.","tenets_en":["cultural traditionalism","ecological priority"]},{"name":"生态女权主义","need":{"ENV":"S","COL":"M"},"desc":"关联自然剥削与支配逻辑、主张互依共生的生态立场","detail":"认为对自然的宰制与压迫性权力结构同源，主张以关怀与互依替代支配，将生态正义视为整体解放的组成部分，强调关系性而非等级性秩序。","tenets":["互依共生","反支配","关怀伦理"],"name_en":"Eco-Feminism","desc_en":"Advocates ecological priority and community priority.","tenets_en":["ecological priority","community priority"]},{"name":"技术无政府","need":{"TECH":"U","GOV":"L","ECO":"L","CUL":"P","NAT":"C"},"desc":"拒绝层级权威、以去中心技术自组织社会的取向","detail":"主张消解强制性的集中权力机器，依托分布式网络与自治协议实现自愿协作，认为技术应为自由联合而非控制服务，以协议替代命令。","tenets":["去中心化","自愿协作","自治协议"],"name_en":"Technological Anarchism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and technological privacy autonomy.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","technological privacy autonomy"]},{"name":"赛博自由主义","need":{"TECH":"U","GOV":"L","ECO":"L","NAT":"C"},"desc":"在数字空间捍卫个体自由与开放市场的自由立场","detail":"主张网络应为无许可的创新与表达场域，反对集中审查与管控，强调加密与自治架构保障个体数字主权，将开放协议视为自由的前提。","tenets":["数字自由","开放市场","加密自治"],"name_en":"Cyber-Liberalism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, internationalism and openness and technological privacy autonomy.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","internationalism and openness","technological privacy autonomy"]},{"name":"神经自由意志","need":{"TECH":"U","COL":"I","ECO":"R","CUL":"P"},"desc":"捍卫心智自主与精神隐私的个体主义技术立场","detail":"主张个体对自身神经数据与意识状态享有排他控制权，反对外部读取或干预，将精神边界视为自由的核心场域，强调认知主权的不可让渡。","tenets":["心智自主","精神隐私","神经主权"],"name_en":"Neuro-Libertarianism","desc_en":"Advocates free-market economics, cultural progress and pluralism, technological privacy autonomy and individual priority.","tenets_en":["free-market economics","cultural progress and pluralism","technological privacy autonomy","individual priority"]},{"name":"人工智能治理","need":{"TECH":"K","GOV":"A","ECO":"L","CUL":"P"},"desc":"以集中权威统筹算法系统、防范技术风险的治理观","detail":"主张由公共权威设定人工智能的发展边界与责任框架，以统一规制平衡创新与安全，避免分散失序的技术后果，将算法问责视为公共秩序的一部分。","tenets":["统一规制","风险防范","责任框架"],"name_en":"AI Governance","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and centralized tech control.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural progress and pluralism","centralized tech control"]},{"name":"去中心化监控批判","need":{"TECH":"U","ECO":"L","GOV":"L"},"desc":"反对集中监视、主张分散化与个体数据自主的立场","detail":"批判由单一权力集中采集行为数据的趋势，主张以分布式架构与加密手段归还个体对监控边界的决定权，将数据自主视为抵御支配的首要防线。","tenets":["反集中监视","数据自主","分布架构"],"name_en":"Decentralized Surveillance Critique","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance and technological privacy autonomy.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","technological privacy autonomy"]},{"name":"世俗民族融合","need":{"NAT":"N","SEC":"E"},"desc":"主张民族身份与世俗公共秩序相融合的温和立场。","detail":"该立场认为民族共同体可在世俗框架内维系认同，反对将信仰纳入公共裁决。它强调公民平等而非血缘归属，寻求文化与政治的分离协调。","tenets":["世俗公共","民族认同","公民平等"],"name_en":"Secular-Ethnic Integration","desc_en":"Advocates national priority and secular public life.","tenets_en":["national priority","secular public life"]},{"name":"信仰跨国团结","need":{"NAT":"C","SEC":"F"},"desc":"倡导以信仰纽带联结不同地域共同体的抽象理念。","detail":"该理念将信仰视为超越领土边界的伦理资源，主张跨地域的精神协作与互助。它回避具体教派归属，强调普遍关怀而非排他性忠诚。","tenets":["信仰联结","跨国互助","普遍关怀"],"name_en":"Faith Transnational Solidarity","desc_en":"Advocates internationalism and openness and faith in public life.","tenets_en":["internationalism and openness","faith in public life"]},{"name":"后殖民平等论","need":{"NAT":"C","COL":"M"},"desc":"反思历史权力结构并追求跨文化交流对等的主张。","detail":"该主张关注不同文化间不对等关系的观念根源，倡导在相互尊重中重建对话。它强调共同体自主与文化多样性，反对单一中心的普遍化预设。","tenets":["对等交流","文化自主","多元共存"],"name_en":"Post-Colonial Egalitarianism","desc_en":"Advocates internationalism and openness and community priority.","tenets_en":["internationalism and openness","community priority"]},{"name":"文明守成主义","need":{"CUL":"T","NAT":"N"},"desc":"强调文明传承与民族本位相协调的保守取向。","detail":"该取向重视历史延续性与文化根基，主张在民族框架内守护传统价值。它警惕外部冲击对文化完整性的侵蚀，寻求稳定而非急剧变迁。","tenets":["文化传承","民族根基","稳健守成"],"name_en":"Civilizational Retentionism","desc_en":"Advocates cultural traditionalism and national priority.","tenets_en":["cultural traditionalism","national priority"]},{"name":"区域协作主义","need":{"NAT":"C","GOV":"L"},"desc":"主张邻近地域自愿协作与分权共治的中间立场。","detail":"该立场鼓励地缘相近的共同体以平等方式开展合作，避免集中式支配。它重视地方自主与灵活协调，寻求在开放中维护各单元的差异。","tenets":["邻近协作","分权共治","差异共存"],"name_en":"Regional Cooperationism","desc_en":"Advocates decentralized and libertarian governance and internationalism and openness.","tenets_en":["decentralized and libertarian governance","internationalism and openness"]},{"name":"世界联邦构想","need":{"NAT":"C","COL":"M","ECO":"L","GOV":"L","CUL":"T"},"desc":"设想以松散联邦形式统合人类共同体的远景。","detail":"该构想将人类视为可协调的总体，主张以自愿契约约束跨地域行为。它兼顾普遍规则与地方自治，强调共同福祉高于单一单元利益。","tenets":["联邦协调","共同福祉","自愿契约"],"name_en":"World Federalist Vision","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural traditionalism, internationalism and openness and community priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural traditionalism","internationalism and openness","community priority"]},{"name":"跨文化汇通","need":{"NAT":"C","CUL":"P"},"desc":"倡导不同文化传统在平等基础上相互融通。","detail":"该理念认为文化边界可被对话与互鉴所软化，主张以开放态度吸收异质经验。它反对文化封闭，强调在多元交汇中生成新的公共理解。","tenets":["文化互鉴","开放融通","平等对话"],"name_en":"Cross-Cultural Syncretism","desc_en":"Advocates cultural progress and pluralism and internationalism and openness.","tenets_en":["cultural progress and pluralism","internationalism and openness"]},{"name":"宗教进步主义","need":{"SEC":"F","CUL":"P"},"desc":"主张以信仰伦理推动社会前行与制度革新。","detail":"该立场视信仰为变革动力，主张将精神关怀转化为对公平与自由的追求。它既维护信仰入公的参与，也坚持面向未来的开放取向。","tenets":["信仰入公","社会革新","公平导向"],"name_en":"Religious Progressivism","desc_en":"Advocates cultural progress and pluralism and faith in public life.","tenets_en":["cultural progress and pluralism","faith in public life"]},{"name":"世俗社群主义","need":{"SEC":"E","COL":"M"},"desc":"在世俗框架内强调共同体纽带与公共善。","detail":"该立场将共同体视为非信仰性的伦理单位，主张以公共协商凝聚共识。它兼顾个人自主与社群归属，反对纯粹原子化的社会想象。","tenets":["公共善","世俗纽带","协商共识"],"name_en":"Secular Communitarianism","desc_en":"Advocates secular public life and community priority.","tenets_en":["secular public life","community priority"]},{"name":"跨国联合主义","need":{"NAT":"C","COL":"M","ECO":"L","CUL":"P"},"desc":"主张跨越边界的共同体联合与资源共享。","detail":"该主张将联合视为化解地域隔阂的途径，倡导以协作替代孤立。它强调人类相互依赖，主张在开放结构中平衡各共同体的自主与连带。","tenets":["跨国联合","资源共享","相互依赖"],"name_en":"Transnational Unionism","desc_en":"Advocates economic equality and redistribution, cultural progress and pluralism, internationalism and openness and community priority.","tenets_en":["economic equality and redistribution","cultural progress and pluralism","internationalism and openness","community priority"]},{"name":"边界开放论","need":{"NAT":"C"},"desc":"主张弱化固定边界以促进人员与观念的流动。","detail":"该立场认为流动有助于消解排他性认同，倡导以开放替代封闭。它强调普遍交往权利，同时承认过渡中需协调地方承载与整体秩序。","tenets":["开放流动","普遍交往","去边界化"],"name_en":"Open Borders","desc_en":"Advocates internationalism and openness.","tenets_en":["internationalism and openness"]},{"name":"多元民族共治","need":{"NAT":"N","CUL":"P"},"desc":"倡导单一政治体内多民族平等共处与协商。","detail":"该主张承认民族多样性并主张以制度保障各群体平等地位。它强调共治而非同化，寻求在共同框架下协调差异与整体稳定。","tenets":["多族平等","制度共治","差异协调"],"name_en":"Plural-National Co-Governance","desc_en":"Advocates cultural progress and pluralism and national priority.","tenets_en":["cultural progress and pluralism","national priority"]},{"name":"文化多元守成","need":{"CUL":"T","COL":"M","ECO":"R","NAT":"N"},"desc":"主张在守护传统的同时容纳多元文化表达。","detail":"该立场试图调和守成与开放，主张以稳定根基容纳差异表达。它强调共同体延续，同时承认文化内部的多样性需被包容对待。","tenets":["传统守护","多元包容","共同体延续"],"name_en":"Cultural Pluralist Retention","desc_en":"Advocates free-market economics, cultural traditionalism, national priority and community priority.","tenets_en":["free-market economics","cultural traditionalism","national priority","community priority"]},{"name":"普遍人本主义","need":{"NAT":"C","SEC":"E","COL":"I"},"desc":"以普遍人性为基、超越信仰与边界的伦理立场。","detail":"该立场将人本身置于价值中心，主张以理性与同情构建公共秩序。它超越特定信仰与地域，强调个体尊严与跨共同体的平等对待。","tenets":["人性为本","个体尊严","普遍平等"],"name_en":"Universal Humanism","desc_en":"Advocates internationalism and openness, secular public life and individual priority.","tenets_en":["internationalism and openness","secular public life","individual priority"]},{"name":"信仰和平主义","need":{"SEC":"F"},"desc":"以信仰资源倡导非暴力与跨群体和解。","detail":"该立场将和平视为信仰核心义务，主张以精神修习化解对立。它强调宽恕与克制，反对以任何名义正当化仇恨与冲突。","tenets":["非暴力","信仰和解","克制宽容"],"name_en":"Faith Pacifism","desc_en":"Advocates faith in public life.","tenets_en":["faith in public life"]},{"name":"跨信仰共融","need":{"SEC":"F","NAT":"C","ECO":"L","GOV":"L","CUL":"P"},"desc":"主张不同信仰传统在公共生活中彼此交融。","detail":"该理念视信仰差异为可对话的资源，主张以互信消解隔阂。它避免独断真理宣称，强调在共同伦理基础上寻求跨信仰协作。","tenets":["跨信对话","互信协作","共同伦理"],"name_en":"Interfaith Concord","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and faith in public life.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","faith in public life"]},{"name":"主权国际协作","need":{"NAT":"N","COL":"M","ECO":"R","GOV":"A"},"desc":"承认各单元自主并主张自愿开展跨边界协作。","detail":"该立场承认各政治单元的自主地位，主张以平等协商开展跨边界合作。它强调自愿协调而非强制统合，在维护单元自主的同时寻求共同事务的协同处理。","tenets":["单元自主","自愿协作","平等协商"],"name_en":"Sovereign International Cooperation","desc_en":"Advocates free-market economics, authoritative governance and order, national priority and community priority.","tenets_en":["free-market economics","authoritative governance and order","national priority","community priority"]},{"name":"全球公民主义","need":{"NAT":"C","COL":"I"},"desc":"主张个体以世界尺度认同并承担普遍义务。","detail":"该立场将个体身份延伸至人类整体，主张以普遍权利与义务超越地域。它强调全球层面的责任共担，同时尊重地方生活的多样性。","tenets":["世界认同","普遍义务","责任共担"],"name_en":"Global Citizenship","desc_en":"Advocates internationalism and openness and individual priority.","tenets_en":["internationalism and openness","individual priority"]},{"name":"中左社会自由","need":{"ECO":"L","GOV":"L","CUL":"P"},"desc":"在社会公平与个体自由间取中左平衡的进步取向。","detail":"主张以再分配缓解不平等，同时守持公民自由与多元包容。在文化议题上倾向进步，在经济上支持适度干预而非彻底国有化。","tenets":["社会公平","公民自由","渐进改革"],"name_en":"Center-Left Social Liberalism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance and cultural progress and pluralism.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism"]},{"name":"中右自由进步","need":{"ECO":"R","GOV":"L","CUL":"P","ENV":"G","SEC":"E"},"desc":"融市场自由与开放价值的温和右派中间立场。","detail":"强调自由市场作为效率基础，同时在文化上接纳多元与变革。反对过度集中权力，主张以法治保障个体选择空间。","tenets":["市场效率","文化开放","有限政府"],"name_en":"Center-Right Liberal Progressivism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority and secular public life.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","development priority","secular public life"]},{"name":"自由意志中间派","need":{"GOV":"L","ECO":"R","TECH":"U","CUL":"P","NAT":"C"},"desc":"弱化左右之争、以个人自主为核心的中间立场。","detail":"将个体自由置于首要位置，对市场与福利不作绝对承诺。在技术与隐私上坚持自主，反对国家过度介入私人领域。","tenets":["个人自主","隐私保护","去集中化"],"name_en":"Libertarian Centrism","desc_en":"Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and technological privacy autonomy.","tenets_en":["free-market economics","decentralized and libertarian governance","cultural progress and pluralism","internationalism and openness","technological privacy autonomy"]},{"name":"务实进步主义","need":{"CUL":"P"},"desc":"以可行改良替代教条化的渐进进步立场。","detail":"反对意识形态化的刚性方案，主张依情境调整政策工具。在价值上倾向进步多元，在手段上强调实证与渐进。","tenets":["问题导向","渐进改良","证据决策"],"name_en":"Pragmatic Progressivism","desc_en":"Advocates cultural progress and pluralism.","tenets_en":["cultural progress and pluralism"]},{"name":"制度自由主义","need":{"GOV":"L"},"desc":"以制度约束权力、保障自由的程序性自由主义。","detail":"强调通过分权、制衡与法治限制强制力，维护个体权利。相对淡化经济立场，聚焦制度设计对自由的可信保障。","tenets":["权力制衡","程序正义","法治保障"],"name_en":"Institutional Liberalism","desc_en":"Advocates decentralized and libertarian governance.","tenets_en":["decentralized and libertarian governance"]},{"name":"协商民主","need":{"GOV":"L","COL":"M"},"desc":"以公共说理与共识形成为核心的民主治理模式。","detail":"主张公民通过平等对话而非单纯票决来决定公共事务。重视理性沟通与相互理解，以审慎共识弥补聚合式民主的缺陷。","tenets":["公共说理","平等对话","共识形成"],"name_en":"Deliberative Democracy","desc_en":"Advocates decentralized and libertarian governance and community priority.","tenets_en":["decentralized and libertarian governance","community priority"]},{"name":"参与式民主","need":{"GOV":"L","COL":"M","CUL":"P"},"desc":"扩大公民直接参与的基层民主取向。","detail":"批评代议制下公民疏离，主张在日常生活中广泛赋权自治。结合进步文化价值，强调共同体中的主动政治行动。","tenets":["公民赋权","基层自治","持续参与"],"name_en":"Participatory Democracy","desc_en":"Advocates decentralized and libertarian governance, cultural progress and pluralism and community priority.","tenets_en":["decentralized and libertarian governance","cultural progress and pluralism","community priority"]},{"name":"基进民主","need":{"GOV":"L","CUL":"P"},"desc":"将民主逻辑延伸至全部社会领域的深化取向。","detail":"主张民主不应局限于选举，而应渗透于经济与文化关系。强调去中心化的自我治理，以平等参与消解等级支配。","tenets":["深度平等","自我治理","反等级化"],"name_en":"Radical Democracy","desc_en":"Advocates decentralized and libertarian governance and cultural progress and pluralism.","tenets_en":["decentralized and libertarian governance","cultural progress and pluralism"]},{"name":"合作主义","need":{"ECO":"L","COL":"M"},"desc":"以社团协调与利益统合化解冲突的中间立场。","detail":"主张通过有组织群体间的制度化协商分配资源。在经济上倾向协作与再分配，在社会上重视共同体纽带。","tenets":["利益协调","社团协商","社会团结"],"name_en":"Corporatism","desc_en":"Advocates economic equality and redistribution and community priority.","tenets_en":["economic equality and redistribution","community priority"]},{"name":"社团主义","need":{"ECO":"R","COL":"M","GOV":"A","CUL":"T","ENV":"G"},"desc":"以有序组织统合社会的权威性中间模式。","detail":"强调由代表性团体在秩序框架内组织社会利益。较合作主义更重层级与稳定，主张以制度化的团体代表实现治理。","tenets":["组织统合","秩序稳定","团体代表"],"name_en":"Associationalism","desc_en":"Advocates free-market economics, authoritative governance and order, cultural traditionalism, development priority and community priority.","tenets_en":["free-market economics","authoritative governance and order","cultural traditionalism","development priority","community priority"]},{"name":"基尔特社会主义","need":{"ECO":"L","COL":"M","GOV":"L"},"desc":"以行业自治工会组织生产的分散社会主义。","detail":"主张按行业组成自治团体管理经济生产，替代国家集中控制。在共同体取向下保留分权自治，强调生产者民主。","tenets":["行业自治","生产者民主","分散管理"],"name_en":"Guild Socialism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance and community priority.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","community priority"]},{"name":"共识民主","need":{"COL":"M"},"desc":"以广泛包容与妥协取代多数决的治理取向。","detail":"主张决策应寻求跨群体最大同意，而非简单多数压倒。重视少数权利与制度包容，以共同体和谐舒缓对抗。","tenets":["包容妥协","少数保护","共同体和谐"],"name_en":"Consensus Democracy","desc_en":"Advocates community priority.","tenets_en":["community priority"]},{"name":"审慎自由主义","need":{"GOV":"L","ECO":"L","CUL":"P","TECH":"U"},"desc":"以节制与怀疑态度守护自由的保守式自由主义。","detail":"反对激进变革，主张在既有制度内稳妥扩展自由。强调个体权利边界与责任，警惕乌托邦式总体方案。","tenets":["审慎变革","权利边界","责任个体"],"name_en":"Prudential Liberalism","desc_en":"Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and technological privacy autonomy.","tenets_en":["economic equality and redistribution","decentralized and libertarian governance","cultural progress and pluralism","technological privacy autonomy"]},{"name":"渐进社会主义","need":{"ECO":"L","CUL":"P"},"desc":"经由民主改良逐步实现平等的非革命立场。","detail":"主张通过选举与制度改革逐步扩大经济平等，拒绝暴力断裂。结合进步价值，以制度内化再分配为目标。","tenets":["民主改良","经济平等","制度内变革"],"name_en":"Gradual Socialism","desc_en":"Advocates economic equality and redistribution and cultural progress and pluralism.","tenets_en":["economic equality and redistribution","cultural progress and pluralism"]},{"name":"社会生态中间派","need":{"ECO":"L","ENV":"S"},"desc":"在公平与生态间寻平衡的温和绿派立场。","detail":"主张以再分配缓解社会不公，同时优先生态可持续。反对极端增长主义与极端去增长，寻求二者调和路径。","tenets":["生态优先","社会公正","可持续发展"],"name_en":"Socio-Ecological Centrism","desc_en":"Advocates economic equality and redistribution and ecological priority.","tenets_en":["economic equality and redistribution","ecological priority"]},{"name":"稳健中间主义","need":{"ECO":"L","GOV":"A","CUL":"T","COL":"M"},"desc":"拒斥极化、在诸维度保持平衡的折中治理立场。","detail":"刻意避免对任何单一极向的强烈承诺，主张依具体问题权衡取舍。强调稳定、妥协与跨立场对话，抵制意识形态极端化。","tenets":["反极化","务实权衡","稳定发展"],"name_en":"Stable Centrism","desc_en":"Advocates economic equality and redistribution, authoritative governance and order, cultural traditionalism and community priority.","tenets_en":["economic equality and redistribution","authoritative governance and order","cultural traditionalism","community priority"]}]
+[
+  {
+    "name": "自由意志主义",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "TECH": "U",
+      "SEC": "E"
+    },
+    "desc": "主张最小政府、绝对个人自由与市场至上，反对一切非必要干预，包括技术与信仰领域的强制。",
+    "detail": "主张最大限度地缩减国家强制力，将个人自由与自愿契约视为最高政治价值。反对政府在经济、社会与私人生活领域的广泛干预，倾向于以市场、社群与自治组织替代科层管制。强调个人对自身身体与财产的绝对支配权。",
+    "tenets": [
+      "最小化国家",
+      "自愿契约优先",
+      "个人主权"
+    ],
+    "name_en": "Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, technological privacy autonomy, secular public life and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "technological privacy autonomy",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "古典自由主义",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "T",
+      "NAT": "C",
+      "COL": "I"
+    },
+    "desc": "强调自由市场、个人权利与有限政府，重视传统与自发秩序、国际开放。",
+    "detail": "以个人权利、法治与有限政府为基石，主张通过自由市场与产权秩序实现繁荣。反对重商垄断与过度管制，强调机会平等而非结果均等。倾向以宪政约束公权力、保障言论与贸易自由。",
+    "tenets": [
+      "有限政府",
+      "自由市场",
+      "产权保障",
+      "法治约束"
+    ],
+    "name_en": "Classical Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism, internationalism and openness and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "internationalism and openness",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "右翼自由意志主义",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "NAT": "N"
+    },
+    "desc": "经济彻底自由化、个人至上，但在民族与文化边界上偏向自主设限。",
+    "detail": "在自由意志主义框架内更强调传统社会秩序、强产权与低税收，认为自由市场能最优配置资源。反对再分配型福利与国家主导的平等工程，倾向以私人保险与慈善替代公共保障。重视文化与经济层面的去管制。",
+    "tenets": [
+      "强产权低税",
+      "反再分配",
+      "市场去管制"
+    ],
+    "name_en": "Right-Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, national priority and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "national priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "自由保守主义",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "T",
+      "COL": "I"
+    },
+    "desc": "经济自由、文化保守，强调个人责任与传统价值，政府守夜人角色。",
+    "detail": "在保守的价值秩序中纳入个人自由与市场经济，主张渐进改革而非激进重构。反对乌托邦式的社会工程，强调制度连续性与责任伦理。倾向在尊重传统的同时容纳有限的公民权利扩张。",
+    "tenets": [
+      "渐进改革",
+      "市场与个人自由",
+      "制度延续"
+    ],
+    "name_en": "Liberal Conservatism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "技术自由意志主义",
+    "need": {
+      "TECH": "U",
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "SEC": "E",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "以技术去中心化、隐私与开源自治为核心，反对集中式监控与管控。",
+    "detail": "相信技术与去中心化创新能够绕开国家管制，扩展个体自由。反对集中化的监管壁垒，主张用加密、自治系统与开源工具重塑社会协作。倾向将技术突破视为 liberation 的杠杆。",
+    "tenets": [
+      "技术赋能个体",
+      "反集中监管",
+      "去中心化创新"
+    ],
+    "name_en": "Techno-Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, technological privacy autonomy, secular public life and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "technological privacy autonomy",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "社会自由主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "CUL": "P",
+      "COL": "I"
+    },
+    "desc": "在自由框架下强调平等机会与社会权利，支持渐进改革与多元包容。",
+    "detail": "在市场经济的框架内承认国家有义务保障基本社会福利与平等机会。反对纯粹自由放任导致的结构性不平等，主张以公共制度矫正市场失灵。倾向平衡个人自由与社会团结。",
+    "tenets": [
+      "市场与社会并重",
+      "机会平等",
+      "公共保障"
+    ],
+    "name_en": "Social Liberalism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and individual priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "社会民主主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "CUL": "P",
+      "NAT": "C",
+      "COL": "M",
+      "ENV": "S"
+    },
+    "desc": "市场经济加强福利与再分配，混合经济、绿色导向、国际协作。",
+    "detail": "主张在民主制度内通过累进税收与福利国家实现实质性的社会公平。反对资本不受约束的集中，强调集体供给教育、医疗与养老等公共品。倾向以议会改革而非革命改造社会。",
+    "tenets": [
+      "福利国家",
+      "累进再分配",
+      "民主改革"
+    ],
+    "name_en": "Social Democracy",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism, internationalism and openness, ecological priority and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "ecological priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "民主社会主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "CUL": "P",
+      "COL": "M",
+      "NAT": "C"
+    },
+    "desc": "在民主框架内追求经济平等与劳动者主权，反对资本集中。",
+    "detail": "主张以民主程序超越资本主义生产关系，实现生产资料的社会化控制。反对将经济权力集中于私人资本，强调 workplace 民主与公共所有制。倾向在宪政框架下推进制度转型。",
+    "tenets": [
+      "生产社会化",
+      "劳动民主",
+      "反资本集中"
+    ],
+    "name_en": "Democratic Socialism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "community priority"
+    ]
+  },
+  {
+    "name": "自由社会主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "NAT": "C",
+      "ENV": "S"
+    },
+    "desc": "主张生产资料民主控制，但坚持基层自治与个人自由，反对国家集权。",
+    "detail": "将社会主义目标与对自由、自治的承诺结合，反对国家官僚对经济生活的统制。主张以合作社与自愿联合取代等级化的强制结构，强调自下而上的自我治理。倾向去中心化的经济民主。",
+    "tenets": [
+      "自治联合",
+      "反官僚统制",
+      "经济民主"
+    ],
+    "name_en": "Libertarian Socialism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, ecological priority and individual priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "ecological priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "进步主义",
+    "need": {
+      "CUL": "P",
+      "ECO": "L",
+      "COL": "M",
+      "GOV": "L",
+      "NAT": "C",
+      "TECH": "K",
+      "SEC": "E"
+    },
+    "desc": "以平等、多元与权利扩张为核心，支持改革、包容与跨国协作。",
+    "detail": "相信社会应随理性与科学持续推进，主张通过制度改革扩大平等、权利与包容性。反对僵化的等级与传统壁垒，强调教育、公共卫生与反歧视政策。倾向以国家能力推动实质性的社会流动。",
+    "tenets": [
+      "制度进步",
+      "扩大包容性",
+      "反歧视"
+    ],
+    "name_en": "Progressivism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, centralized tech control, secular public life and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "centralized tech control",
+      "secular public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "社会主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "CUL": "P",
+      "COL": "M"
+    },
+    "desc": "追求生产资料社会化与强再分配，倚重国家力量调节经济与分配。",
+    "detail": "主张生产资料的社会占有与按需或按劳的分配，以克服私有资本带来的剥削与不平等。反对以利润为唯一导向的经济秩序，强调集体对资源的民主控制。倾向以计划或混合机制协调经济。",
+    "tenets": [
+      "生产资料社会化",
+      "反私有剥削",
+      "集体控制"
+    ],
+    "name_en": "Socialism",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural progress and pluralism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "无政府主义",
+    "need": {
+      "GOV": "L",
+      "COL": "I",
+      "ECO": "L",
+      "TECH": "U"
+    },
+    "desc": "质疑一切等级权威，倾向自发秩序、基层自治、直接民主与去中心化。",
+    "detail": "拒绝一切强制性国家权威，主张以自愿结社与自治社群组织社会。反对等级制、科层与法律强制，强调个体自由与互助伦理。倾向以联邦式的直接民主替代代表制权力。",
+    "tenets": [
+      "反国家权威",
+      "自愿自治",
+      "互助伦理"
+    ],
+    "name_en": "Anarchism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, technological privacy autonomy and individual priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "technological privacy autonomy",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "无政府共产主义",
+    "need": {
+      "GOV": "L",
+      "ECO": "L",
+      "COL": "M",
+      "CUL": "P"
+    },
+    "desc": "主张废除国家与资本，以自愿协作的共同体组织生产与分配。",
+    "detail": "在无政府主义基础上主张取消货币与商品交换，以按需分配组织生产与消费。反对国家、市场与私有财产，强调公社式的自由联合。倾向以直接行动与互助网络实现无统治社会。",
+    "tenets": [
+      "取消市场",
+      "按需分配",
+      "自由联合"
+    ],
+    "name_en": "Anarcho-Communism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "生态社会主义",
+    "need": {
+      "ENV": "S",
+      "ECO": "L",
+      "COL": "M",
+      "CUL": "P"
+    },
+    "desc": "将生态可持续与反资本逻辑结合，主张系统性经济与能源转型。",
+    "detail": "将生态可持续与对资本扩张逻辑的批判结合，主张以民主方式系统性改造生产与能源结构。反对把环境危机交给市场自发调节，强调代际与跨物种的责任。倾向把生态约束纳入经济规划核心。",
+    "tenets": [
+      "生态可持续",
+      "反资本扩张",
+      "民主改造生产"
+    ],
+    "name_en": "Eco-Socialism",
+    "desc_en": "Advocates economic equality and redistribution, cultural progress and pluralism, ecological priority and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "cultural progress and pluralism",
+      "ecological priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "保守主义",
+    "need": {
+      "CUL": "T",
+      "GOV": "A",
+      "ECO": "R",
+      "COL": "M",
+      "NAT": "N"
+    },
+    "desc": "重视传统、秩序与制度延续，对市场与权威均持审慎态度，强调共同体。",
+    "detail": "强调传统、秩序与制度的连续性，警惕抽象理性对社会肌理的破坏。反对激进革命与乌托邦设计，主张在既有秩序中谨慎改良。倾向以社群、习俗与权威维系数位稳定。",
+    "tenets": [
+      "秩序与传统",
+      "反激进革命",
+      "审慎改良"
+    ],
+    "name_en": "Conservatism",
+    "desc_en": "Advocates free-market economics, authoritative governance and order, cultural traditionalism, national priority and community priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "national priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "民族保守主义",
+    "need": {
+      "CUL": "T",
+      "GOV": "A",
+      "NAT": "N",
+      "COL": "M",
+      "SEC": "F"
+    },
+    "desc": "强调国家主权、文化边界与传统秩序，经济偏市场，信仰嵌入公共生活。",
+    "detail": "将文化认同、边界主权与传统价值视为共同体存续的基础。反对无条件的开放与普世主义同化，强调民族认同在公共政策中的优先性。倾向以移民控制与文化保护维护社群凝聚力。",
+    "tenets": [
+      "民族认同优先",
+      "边界主权",
+      "文化保护"
+    ],
+    "name_en": "National Conservatism",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism, national priority, faith in public life and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "national priority",
+      "faith in public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "传统保守主义",
+    "need": {
+      "GOV": "A",
+      "CUL": "T",
+      "COL": "M",
+      "SEC": "F"
+    },
+    "desc": "以历史传承、等级与宗教价值为锚，反对激进变革与世俗化。",
+    "detail": "以历史传承的宗教、家庭与地方性习俗为价值锚点，反对现代性的过度解构。主张以有机的社群纽带替代抽象的个人权利叙事。倾向维护既有权威与道德秩序。",
+    "tenets": [
+      "守护传统",
+      "有机社群",
+      "道德秩序"
+    ],
+    "name_en": "Traditional Conservatism",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism, faith in public life and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "faith in public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "威权民族主义",
+    "need": {
+      "GOV": "A",
+      "NAT": "N",
+      "CUL": "T",
+      "COL": "M"
+    },
+    "desc": "强国家、反建制，以民族与传统文化动员的权威取向，集体优先。",
+    "detail": "主张以集中化的强力国家捍卫并推行单一民族意志，将统一与秩序置于多元分歧之上。反对自由主义的程序约束与分权制衡，强调动员型治理。倾向以国家主导整合社会资源。",
+    "tenets": [
+      "强国家整合",
+      "民族意志优先",
+      "反多元分权"
+    ],
+    "name_en": "Authoritarian Nationalism",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism, national priority and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "national priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "宗教保守",
+    "need": {
+      "SEC": "F",
+      "CUL": "T",
+      "GOV": "A",
+      "COL": "M",
+      "ECO": "R",
+      "TECH": "K"
+    },
+    "desc": "以特定信仰传统为道德基础，主张信仰价值进入公共与法律领域。",
+    "detail": "以特定宗教教义为公共道德的根基，主张以信仰传统塑造法律与家庭秩序。反对世俗化带来的价值相对主义，强调信仰社群在教化中的角色。倾向将宗教规范嵌入制度设计。",
+    "tenets": [
+      "信仰立道德",
+      "反世俗相对",
+      "传统家庭观"
+    ],
+    "name_en": "Religious Conservatism",
+    "desc_en": "Advocates free-market economics, authoritative governance and order, cultural traditionalism, centralized tech control, faith in public life and community priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "centralized tech control",
+      "faith in public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "基督教民主",
+    "need": {
+      "GOV": "A",
+      "CUL": "T",
+      "SEC": "F",
+      "COL": "M",
+      "ECO": "L"
+    },
+    "desc": "以社会教义平衡市场与福利，强调辅助原则、家庭与共同体。",
+    "detail": "以基督教社会训导为底蕴，主张在个人自由、社群团结与辅助原则之间取得平衡。反对极端的个人主义与集体主义，强调 subsidiarity 与对弱者的照护。倾向以中间道路调和市场与福利。",
+    "tenets": [
+      "辅助原则",
+      "团结与照护",
+      "反极端化"
+    ],
+    "name_en": "Christian Democracy",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural traditionalism, faith in public life and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "faith in public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "绿色政治",
+    "need": {
+      "ENV": "S",
+      "CUL": "P",
+      "COL": "M"
+    },
+    "desc": "以生态可持续为核心，可跨越左右，强调代际责任与基层民主。",
+    "detail": "以生态可持续、基层民主与非暴力为核心，主张将环境极限视为政策硬约束。反对增长至上与集中化的技术统治，强调地方自治与代际正义。倾向以去增长或稳态经济替代无限扩张。",
+    "tenets": [
+      "生态优先",
+      "基层民主",
+      "代际正义"
+    ],
+    "name_en": "Green Politics",
+    "desc_en": "Advocates cultural progress and pluralism, ecological priority and community priority.",
+    "tenets_en": [
+      "cultural progress and pluralism",
+      "ecological priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "绿色保守主义",
+    "need": {
+      "ENV": "S",
+      "CUL": "T",
+      "GOV": "A"
+    },
+    "desc": "从传统责任、审慎与 stewardship 出发重视环境与代际延续。",
+    "detail": "从保守的 stewardship 传统出发，主张以保护自然遗产与责任伦理应对生态危机。反对将自然简化为可交易资源，强调代际托管与节制。倾向以审慎监管而非革命改造维护生态秩序。",
+    "tenets": [
+      "自然托管",
+      "节制消费",
+      "责任伦理"
+    ],
+    "name_en": "Green Conservatism",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism and ecological priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "生态自由主义",
+    "need": {
+      "ENV": "S",
+      "GOV": "L",
+      "ECO": "R",
+      "COL": "I"
+    },
+    "desc": "以市场工具（如碳交易）与个人自由手段推动生态转型。",
+    "detail": "在自由市场框架中引入生态外部性定价，主张以产权、碳市场与自愿交易实现环保。反对命令式管制，强调以激励兼容机制引导绿色行为。倾向把环境问题转化为可交易的产权安排。",
+    "tenets": [
+      "生态市场定价",
+      "反命令管制",
+      "激励兼容"
+    ],
+    "name_en": "Eco-Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, ecological priority and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "ecological priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "生态个人主义",
+    "need": {
+      "ENV": "S",
+      "COL": "I",
+      "GOV": "L"
+    },
+    "desc": "把环保视为个人责任与生活方式选择，反对强制性的集体管制。",
+    "detail": "将生态责任落到个体选择与生活方式上，主张以个人消费与自治行动应对环境危机。反对把环保完全交给国家或集体指令，强调个人伦理与自愿简约。倾向以赋权而非强制推动可持续。",
+    "tenets": [
+      "个体环保责任",
+      "自愿简约",
+      "反集体指令"
+    ],
+    "name_en": "Eco-Individualism",
+    "desc_en": "Advocates decentralized and libertarian governance, ecological priority and individual priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "ecological priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "生态技术主义",
+    "need": {
+      "ENV": "S",
+      "TECH": "K",
+      "GOV": "A"
+    },
+    "desc": "相信通过集中化的技术与专家治理（如地球工程）实现可持续。",
+    "detail": "相信技术创新——如清洁能源、核能与工程化手段——是化解生态危机的主路径。反对以限制发展来应对环境压力，强调以生产力跃迁实现脱钩。倾向以大规模技术部署替代行为约束。",
+    "tenets": [
+      "技术解生态",
+      "发展脱钩",
+      "工程化方案"
+    ],
+    "name_en": "Eco-Technocracy",
+    "desc_en": "Advocates authoritative governance and order, ecological priority and centralized tech control.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "ecological priority",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "技术威权主义",
+    "need": {
+      "TECH": "K",
+      "GOV": "A",
+      "COL": "M"
+    },
+    "desc": "支持以算法、数据与集中监控提升治理效率，个人服从系统。",
+    "detail": "主张以集中化的技术官僚体系主导社会运行，将效率、秩序与系统稳定置于开放争论之上。反对以民主程序拖慢重大决策，强调专家治理与数据化管控。倾向以算法与监控提升国家能力。",
+    "tenets": [
+      "专家集中治理",
+      "效率优先",
+      "系统稳定"
+    ],
+    "name_en": "Techno-Authoritarianism",
+    "desc_en": "Advocates authoritative governance and order, centralized tech control and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "centralized tech control",
+      "community priority"
+    ]
+  },
+  {
+    "name": "监控国家主义",
+    "need": {
+      "TECH": "K",
+      "GOV": "A",
+      "NAT": "N",
+      "COL": "M"
+    },
+    "desc": "以国家主导的 surveillance 与数据集中保障安全与秩序，边界收紧。",
+    "detail": "主张以广泛的数据采集与 Surveillance 能力维护公共安全与社会稳定。反对将隐私视为不可让渡的绝对权利，强调集体安全优先。倾向以制度化监控预防风险与失序。",
+    "tenets": [
+      "安全优先",
+      "数据化管控",
+      "风险预防"
+    ],
+    "name_en": "Surveillance Statism",
+    "desc_en": "Advocates authoritative governance and order, national priority, centralized tech control and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "national priority",
+      "centralized tech control",
+      "community priority"
+    ]
+  },
+  {
+    "name": "隐私个人主义",
+    "need": {
+      "TECH": "U",
+      "COL": "I",
+      "GOV": "L",
+      "SEC": "E"
+    },
+    "desc": "把数据隐私与个人自主视为基本权利，反对任何形式的强制采集。",
+    "detail": "将个人对信息的控制权视为基本自由，反对国家与企业对私人领域的过度侵扰。主张以加密与法律屏障界定不可侵犯的隐私边界。倾向以去中心化工具抵御监控集中化。",
+    "tenets": [
+      "信息自决",
+      "反过度监控",
+      "隐私边界"
+    ],
+    "name_en": "Privacy Individualism",
+    "desc_en": "Advocates decentralized and libertarian governance, technological privacy autonomy, secular public life and individual priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "technological privacy autonomy",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "数字自由意志",
+    "need": {
+      "TECH": "U",
+      "GOV": "L",
+      "ECO": "R",
+      "COL": "I",
+      "SEC": "E",
+      "CUL": "P",
+      "ENV": "G"
+    },
+    "desc": "主张加密、开源与平台去中心化，技术选择自由至上。",
+    "detail": "主张在数字空间中最大化个体自由与去中心化自治，反对平台与国家的双重垄断。强调开源、加密与网络中立，倾向以协议而非法律主导虚拟社群秩序。",
+    "tenets": [
+      "数字自治",
+      "反平台垄断",
+      "加密自由"
+    ],
+    "name_en": "Digital Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority, technological privacy autonomy, secular public life and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "development priority",
+      "technological privacy autonomy",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "去中心化生态主义",
+    "need": {
+      "ENV": "S",
+      "TECH": "U",
+      "GOV": "L",
+      "COL": "I"
+    },
+    "desc": "用分布式、自下而上的技术与社区行动实现生态目标，拒斥集中管控。",
+    "detail": "主张以分布式、地方性的生态治理替代集中化的技术与官僚方案。反对单一尺度的大规模干预，强调社群尺度的循环与韧性。倾向以基层网络维系人与环境的共生。",
+    "tenets": [
+      "分布式治理",
+      "地方韧性",
+      "反集中干预"
+    ],
+    "name_en": "Decentralized Ecologism",
+    "desc_en": "Advocates decentralized and libertarian governance, ecological priority, technological privacy autonomy and individual priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "ecological priority",
+      "technological privacy autonomy",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "世俗自由主义",
+    "need": {
+      "SEC": "E",
+      "GOV": "L",
+      "CUL": "P"
+    },
+    "desc": "主张政教分离、公共决策基于理性与普遍权利，信仰留归私人。",
+    "detail": "主张将宗教从公共权力与法律制定中剥离，以理性与个体权利作为政治基础。反对宗教对公共领域的强制介入，强调信仰自由与政教分离。倾向以中立国家保障多元价值共存。",
+    "tenets": [
+      "公共领域去宗教",
+      "个体权利",
+      "价值中立"
+    ],
+    "name_en": "Secular Liberalism",
+    "desc_en": "Advocates decentralized and libertarian governance, cultural progress and pluralism and secular public life.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "世俗主义",
+    "need": {
+      "SEC": "E",
+      "GOV": "L"
+    },
+    "desc": "强调公共领域的世俗化与中立，反对以任何信仰划定公共政策。",
+    "detail": "主张以非宗教的理性框架组织公共生活，使国家在所有信仰间保持中立。反对任何形式的国教或宗教特权，强调公民身份的平等。倾向以世俗教育维系公共理性。",
+    "tenets": [
+      "国家中立",
+      "反宗教特权",
+      "公共理性"
+    ],
+    "name_en": "Secularism",
+    "desc_en": "Advocates decentralized and libertarian governance and secular public life.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "政教分离进步主义",
+    "need": {
+      "SEC": "E",
+      "CUL": "P",
+      "GOV": "L",
+      "ECO": "L"
+    },
+    "desc": "在世俗框架下推进平等与权利扩张，反对信仰对公权力的渗透。",
+    "detail": "在进步主义议程中突出政教分离，主张以世俗制度推进平等与科学导向的改革。反对宗教保守对公共政策的形塑，强调以证据与权利为本的治理。倾向把世俗化与社会进步绑定。",
+    "tenets": [
+      "世俗化改革",
+      "证据导向",
+      "反宗教干预"
+    ],
+    "name_en": "Secularist Progressivism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and secular public life.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "信仰社群",
+    "need": {
+      "SEC": "F",
+      "COL": "M",
+      "CUL": "T"
+    },
+    "desc": "以信仰为纽带组织基层互助与公益，重视共同体伦理。",
+    "detail": "以共同宗教信仰为纽带组织社会生活，强调社群内部的互助、教化与道德约束。反对以世俗个人主义消解信仰共同体，重视自愿的宗教结社。倾向以社群自治补充公共制度。",
+    "tenets": [
+      "信仰结社",
+      "社群互助",
+      "道德教化"
+    ],
+    "name_en": "Faith Community",
+    "desc_en": "Advocates cultural traditionalism, faith in public life and community priority.",
+    "tenets_en": [
+      "cultural traditionalism",
+      "faith in public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "神权倾向",
+    "need": {
+      "SEC": "F",
+      "GOV": "A",
+      "CUL": "T"
+    },
+    "desc": "主张以宗教法或信仰权威主导公共与法律秩序，权威集中。",
+    "detail": "主张以宗教权威或神法作为政治合法性的根本来源，将公共秩序锚定于信仰。反对世俗主义对神圣维度的剥离，强调宗教领袖在 governance 中的角色。倾向以信仰统合法律与伦理。",
+    "tenets": [
+      "神法为本",
+      "宗教权威",
+      "反世俗剥离"
+    ],
+    "name_en": "Theocratic Tendency",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism and faith in public life.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "faith in public life"
+    ]
+  },
+  {
+    "name": "个人主义",
+    "need": {
+      "COL": "I",
+      "GOV": "L",
+      "ECO": "R"
+    },
+    "desc": "个人权利、选择自由与自我负责优先于任何集体安排。",
+    "detail": "将个体的自主、权利与选择视为价值的根本单位，反对以集体名义压制自我实现。强调自我负责与多样的生活方式，倾向以最小强制保障个体空间。",
+    "tenets": [
+      "个体自主",
+      "自我负责",
+      "反集体压制"
+    ],
+    "name_en": "Individualism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "社群主义",
+    "need": {
+      "COL": "M",
+      "CUL": "T",
+      "GOV": "A"
+    },
+    "desc": "强调共同体、公益与成员责任，认为个人嵌于社群关系之中。",
+    "detail": "强调个体身份由社群关系与共同善所构成，反对把人简化为孤立的权利持有者。主张以共同体责任平衡个人自由，重视地方性纽带与公共参与。倾向以制度培育归属与互助。",
+    "tenets": [
+      "共同善优先",
+      "关系性自我",
+      "公共参与"
+    ],
+    "name_en": "Communitarianism",
+    "desc_en": "Advocates authoritative governance and order, cultural traditionalism and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "集体主义",
+    "need": {
+      "COL": "M",
+      "ECO": "L",
+      "GOV": "A"
+    },
+    "desc": "共同体或国家目标优先于个人偏好，支持必要的集体约束与互助。",
+    "detail": "主张以群体或整体的目标统摄资源配置，强调团结、协调与对公共利益的服从。反对以个人自由凌驾于集体福祉，倾向以组织化手段实现共同目标。",
+    "tenets": [
+      "集体目标优先",
+      "团结协调",
+      "公共利益"
+    ],
+    "name_en": "Collectivism",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "community priority"
+    ]
+  },
+  {
+    "name": "世界主义",
+    "need": {
+      "NAT": "C",
+      "CUL": "P",
+      "COL": "I"
+    },
+    "desc": "以人类共同体视角看待权利与责任，重视开放、流动与跨文化协作。",
+    "detail": "主张所有人均应被视为同一道德共同体的成员，反对以民族边界限定义务与权利。强调跨国团结、普遍人权与对全球弱者的责任。倾向以开放边界与普遍规范弱化国族特权。",
+    "tenets": [
+      "普遍成员资格",
+      "跨国团结",
+      "反国族特权"
+    ],
+    "name_en": "Cosmopolitanism",
+    "desc_en": "Advocates cultural progress and pluralism, internationalism and openness and individual priority.",
+    "tenets_en": [
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "全球治理主义",
+    "need": {
+      "NAT": "C",
+      "GOV": "A",
+      "COL": "M",
+      "ENV": "S"
+    },
+    "desc": "主张通过超国家机制协调气候、贸易与安全，集体高于单边。",
+    "detail": "主张以跨国制度与多边机制协调全球性议题，反对单极或孤立的国家本位。强调以国际规则、机构与协商应对共同风险。倾向把主权让渡视为解决全球问题的必要安排。",
+    "tenets": [
+      "多边机制",
+      "国际规则",
+      "主权协调"
+    ],
+    "name_en": "Global Governance",
+    "desc_en": "Advocates authoritative governance and order, internationalism and openness, ecological priority and community priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "internationalism and openness",
+      "ecological priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "贸易自由主义",
+    "need": {
+      "NAT": "C",
+      "ECO": "R",
+      "GOV": "L"
+    },
+    "desc": "支持自由贸易、资本与人员流动，反对保护主义壁垒。",
+    "detail": "主张以最低壁垒的跨国交换促进效率与繁荣，反对关税、配额与保护主义干预。强调比较优势与全球分工，倾向以自由通行的商品与资本流动增进福利。",
+    "tenets": [
+      "自由贸易",
+      "反关税壁垒",
+      "比较优势"
+    ],
+    "name_en": "Trade Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and internationalism and openness.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "贸易保护主义",
+    "need": {
+      "NAT": "N",
+      "ECO": "R",
+      "GOV": "A"
+    },
+    "desc": "以关税与产业保护维护本国就业与战略自主，国家干预市场。",
+    "detail": "主张以关税、补贴与产业政策支持本国生产与就业，反对无条件的市场开放。强调经济主权与战略产业的自主性，倾向以缓冲外部冲击维护国内稳定。",
+    "tenets": [
+      "产业保护",
+      "经济主权",
+      "反盲目开放"
+    ],
+    "name_en": "Trade Protectionism",
+    "desc_en": "Advocates free-market economics, authoritative governance and order and national priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "national priority"
+    ]
+  },
+  {
+    "name": "民族主义",
+    "need": {
+      "NAT": "N",
+      "COL": "M"
+    },
+    "desc": "以国家主权与民族认同为先，强调集体利益、边界与文化延续。",
+    "detail": "主张以民族共同体为政治忠诚的核心，强调自决、文化认同与对本国利益的优先考量。反对将民族利益从属于超国家安排，倾向以国家边界界定权利与义务。",
+    "tenets": [
+      "民族自决",
+      "文化认同",
+      "本国利益优先"
+    ],
+    "name_en": "Nationalism",
+    "desc_en": "Advocates national priority and community priority.",
+    "tenets_en": [
+      "national priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "发展主义",
+    "need": {
+      "ENV": "G",
+      "GOV": "A",
+      "ECO": "R",
+      "NAT": "N"
+    },
+    "desc": "把经济增长与工业化置于优先，倚重国家主导的基建与产业政策。",
+    "detail": "将经济增长与现代化视为国家首要目标，主张以集中动员推动工业化与基础设施跃迁。反对以生态或分配议题拖慢积累，强调产出扩张与技术进步。倾向以国家主导的追赶战略。",
+    "tenets": [
+      "增长优先",
+      "现代化动员",
+      "国家主导"
+    ],
+    "name_en": "Developmentalism",
+    "desc_en": "Advocates free-market economics, authoritative governance and order, national priority and development priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "national priority",
+      "development priority"
+    ]
+  },
+  {
+    "name": "自由发展主义",
+    "need": {
+      "ENV": "G",
+      "GOV": "L",
+      "ECO": "R",
+      "NAT": "C"
+    },
+    "desc": "以市场开放与自由贸易驱动发展，弱化环保约束。",
+    "detail": "在开放市场的前提下强调国家应主动塑造发展能力，主张以制度与人力资本投资培育竞争力。反对纯粹放任或纯粹指令的二元对立，倾向以市场友好型干预促进结构升级。",
+    "tenets": [
+      "市场友好干预",
+      "能力建设",
+      "结构升级"
+    ],
+    "name_en": "Liberal Developmentalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, internationalism and openness and development priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "internationalism and openness",
+      "development priority"
+    ]
+  },
+  {
+    "name": "市场原教旨",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "ENV": "G"
+    },
+    "desc": "坚信市场能解决一切，反对管制、再分配与环保干预。",
+    "detail": "主张市场是配置资源的唯一最优机制，反对政府对价格、生产与分配的任意干预。强调自发秩序与竞争出清，倾向以全面私有化与去管制释放效率。",
+    "tenets": [
+      "市场唯一最优",
+      "全面私有化",
+      "反政府干预"
+    ],
+    "name_en": "Market Fundamentalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, development priority and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "development priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "社会市场模式",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "COL": "M",
+      "NAT": "C"
+    },
+    "desc": "以秩序与共识为基础，兼顾市场效率与社会团结的协调型体制。",
+    "detail": "主张在有效竞争的市场之外，以制度化的社会政策对冲其分配后果。反对自由放任与计划经济的极端，强调竞争秩序与团结机制的并存。倾向以共识式协调维系社会和平。",
+    "tenets": [
+      "竞争加团结",
+      "反两极极端",
+      "制度对冲"
+    ],
+    "name_en": "Social Market Model",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, internationalism and openness and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "internationalism and openness",
+      "community priority"
+    ]
+  },
+  {
+    "name": "第三条道路",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "在左右之间寻求务实平衡，市场与福利、改革与稳定并重。",
+    "detail": "主张在古典社会民主与新自由主义之间寻找折中，强调责任、机会与积极的福利。反对国家统制与市场原教旨，倾向以投资于人替代单纯救济。",
+    "tenets": [
+      "左右折中",
+      "积极福利",
+      "责任与机会"
+    ],
+    "name_en": "Third Way",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and internationalism and openness.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural progress and pluralism",
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "自由多元主义",
+    "need": {
+      "GOV": "L",
+      "CUL": "P",
+      "COL": "I",
+      "NAT": "C",
+      "SEC": "E"
+    },
+    "desc": "以个人自由、文化多元与开放社会为底色的温和立场。",
+    "detail": "主张以制度保障多元价值、群体与生活方式的共存，反对任何单一正统垄断公共领域。强调宽容、程序公正与对分歧的容纳，倾向以分权防止权力集中。",
+    "tenets": [
+      "价值多元",
+      "制度宽容",
+      "分权防垄断"
+    ],
+    "name_en": "Liberal Pluralism",
+    "desc_en": "Advocates decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness, secular public life and individual priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "温和混合派",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P",
+      "COL": "I"
+    },
+    "desc": "各维度无明显主导倾向，取向混合或平衡，难以归入单一阵营。",
+    "detail": "主张在自由与秩序、市场与福利之间保持审慎平衡，反对任何教条式的极端立场。强调务实调整与可治理性，倾向以经验而非意识形态指导政策。",
+    "tenets": [
+      "务实平衡",
+      "反教条极端",
+      "经验导向"
+    ],
+    "name_en": "Moderate Mixed",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "新古典自由",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "T",
+      "NAT": "N"
+    },
+    "desc": "以自发秩序与市场协调为核心的新古典自由主义立场。",
+    "detail": "强调价格信号在资源配置中的基础作用，主张最小化的强制干预。认为个体在自由交换中能自发形成稳定的社会秩序。",
+    "tenets": [
+      "自发秩序",
+      "价格协调",
+      "有限干预"
+    ],
+    "name_en": "Neoclassical Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and national priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "national priority"
+    ]
+  },
+  {
+    "name": "自由意志女权",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "SEC": "E"
+    },
+    "desc": "从个体自主出发的女性权利与市场赋权立场。",
+    "detail": "主张将身体权、契约自由与财产权交还个体，反对以群体身份进行强制分配。认为经济自主是实现性别平等的根本前提。",
+    "tenets": [
+      "个体自主",
+      "财产赋权",
+      "反强制分配"
+    ],
+    "name_en": "Libertarian Feminism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, secular public life and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "市场生态主义",
+    "need": {
+      "ECO": "R",
+      "ENV": "S"
+    },
+    "desc": "借市场机制引导资源配置的生态优先立场。",
+    "detail": "主张以产权界定、污染定价与交易激励替代命令式管制。认为清晰的权利边界能使私人利益与生态保育自然趋同。",
+    "tenets": [
+      "产权界定",
+      "污染定价",
+      "激励相容"
+    ],
+    "name_en": "Market Ecologism",
+    "desc_en": "Advocates free-market economics and ecological priority.",
+    "tenets_en": [
+      "free-market economics",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "海盗自由",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "TECH": "U",
+      "CUL": "P",
+      "ENV": "S"
+    },
+    "desc": "以数字公民自由为核心的反垄断与信息开放立场。",
+    "detail": "主张知识共享、加密权利与网络中立，反对集中的信息平台垄断。强调信息流动中的个体隐私权与表达自由不可让渡。",
+    "tenets": [
+      "信息开放",
+      "加密权利",
+      "反平台垄断"
+    ],
+    "name_en": "Pirate Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, ecological priority and technological privacy autonomy.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "ecological priority",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "货币自由意志",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "主张货币与金融自由的去管制自由意志立场。",
+    "detail": "主张自由银行、货币竞争与资本自由流动，反对中央信用垄断。认为货币发行的竞争性能约束权力并保护储蓄价值。",
+    "tenets": [
+      "自由银行",
+      "货币竞争",
+      "资本自由"
+    ],
+    "name_en": "Monetary Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism and internationalism and openness.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "贵族自由派",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "T",
+      "ENV": "G"
+    },
+    "desc": "以德行与责任为基底的精英式自由秩序立场。",
+    "detail": "主张在保障个体自由的同时，强调公民德行、自我约束与精英责任。认为自由须以成熟的自律与公共担当为前提方能持久。",
+    "tenets": [
+      "公民德行",
+      "自我约束",
+      "责任精英"
+    ],
+    "name_en": "Aristocratic Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and development priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "development priority"
+    ]
+  },
+  {
+    "name": "地方自由意志",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "T",
+      "ENV": "S"
+    },
+    "desc": "以辅佐原则与在地自治为核心的分权自由立场。",
+    "detail": "主张将决策权下沉至最小可行的共同体，反对远程中心化管控。认为在地化的自愿协作比统一规划更贴近个体差异与真实偏好。",
+    "tenets": [
+      "辅佐原则",
+      "在地自治",
+      "自愿协作"
+    ],
+    "name_en": "Local Libertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural traditionalism and ecological priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "后物质自由",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P"
+    },
+    "desc": "超越物质分配的个体表达与生活方式自由立场。",
+    "detail": "主张将政治焦点从经济再分配转向自我实现、文化多元与生态关怀。认为个体自由应在身份、信仰与生活方式的多元选择中展开。",
+    "tenets": [
+      "自我实现",
+      "文化多元",
+      "生活方式自由"
+    ],
+    "name_en": "Post-Materialist Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and cultural progress and pluralism.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism"
+    ]
+  },
+  {
+    "name": "自由意志环保",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "ENV": "S"
+    },
+    "desc": "以个体权利为前提的非强制型生态保育立场。",
+    "detail": "主张通过自愿保育、生态产权与社区契约保护自然，反对行政命令式环保。认为尊重个体权利的环境伦理更具可持续的内生动力。",
+    "tenets": [
+      "自愿保育",
+      "生态产权",
+      "非强制环保"
+    ],
+    "name_en": "Libertarian Environmentalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and ecological priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "认知自由",
+    "need": {
+      "GOV": "L",
+      "TECH": "U"
+    },
+    "desc": "保障思想、信念与信息获取自由的中立立场。",
+    "detail": "主张个体对自身认知过程与信息环境拥有主权，反对思想强制与审查。认为开放而多元的认知空间是理性公共生活的基础。",
+    "tenets": [
+      "思想主权",
+      "信息自由",
+      "反审查"
+    ],
+    "name_en": "Cognitive Liberty",
+    "desc_en": "Advocates decentralized and libertarian governance and technological privacy autonomy.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "自由意志和平",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P",
+      "ENV": "S",
+      "NAT": "C"
+    },
+    "desc": "以非侵犯原则为基础的去军事化自由立场。",
+    "detail": "主张以不侵犯原则约束国家间与个体间关系，反对强制征役与扩张性干预。认为自愿交往与贸易能替代武力成为秩序的主要来源。",
+    "tenets": [
+      "非侵犯原则",
+      "反征役",
+      "贸易代武力"
+    ],
+    "name_en": "Libertarian Pacifism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and ecological priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "市场女权",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "借市场参与与经济独立推进性别平等的自由立场。",
+    "detail": "主张消除职业与创业壁垒，以契约自由取代身份性保护。认为女性通过平等的市场参与获得的独立比再分配更为根本。",
+    "tenets": [
+      "职业自由",
+      "创业平等",
+      "契约自主"
+    ],
+    "name_en": "Market Feminism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "数字自由市场",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "TECH": "U",
+      "CUL": "P",
+      "SEC": "E"
+    },
+    "desc": "主张线上交换与数据流动不受强制干预的立场。",
+    "detail": "主张数据可携、平台互操作与跨境数字贸易自由，反对数字壁垒。认为开放的数据与算力市场能释放个体创造力与协作潜力。",
+    "tenets": [
+      "数据可携",
+      "平台互操作",
+      "跨境数字自由"
+    ],
+    "name_en": "Digital Free Market",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, technological privacy autonomy and secular public life.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "technological privacy autonomy",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "地缘自由主义",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "NAT": "C",
+      "ENV": "G",
+      "SEC": "E"
+    },
+    "desc": "以区位价值与开放流动为核心的地权自由立场。",
+    "detail": "主张对土地与区位租金课以统一税赋并开放迁徙，反对地缘排他。认为对不可移动资源的公允定价可支撑开放的自由社会。",
+    "tenets": [
+      "地租单一税",
+      "开放迁徙",
+      "区位公允"
+    ],
+    "name_en": "Geolibertarianism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, internationalism and openness, development priority and secular public life.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "internationalism and openness",
+      "development priority",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "右翼民粹",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "NAT": "N"
+    },
+    "desc": "强调本土个体与去管制相融的平民自由立场。",
+    "detail": "主张削减远程精英管控、强化在地身份认同与个体经济自由。认为权力应从中心化建制回流至普通个体的日常选择之中。",
+    "tenets": [
+      "去精英化",
+      "本土认同",
+      "个体经济自由"
+    ],
+    "name_en": "Right-Wing Populism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and national priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "national priority"
+    ]
+  },
+  {
+    "name": "新民粹自由",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "NAT": "N"
+    },
+    "desc": "以普通人个体权利为本的抗建制自由立场。",
+    "detail": "主张削弱建制化中介对个体选择的代理，强化直接而分散的权利。认为自由的真谛在于个体对自我事务的切实掌控而非抽象代表。",
+    "tenets": [
+      "抗建制",
+      "分散权利",
+      "个体掌控"
+    ],
+    "name_en": "Neo-Populist Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, national priority and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "national priority",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "实验主义自由",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P",
+      "ENV": "G",
+      "TECH": "U"
+    },
+    "desc": "以多元政策实验与去中心试错为核心的自由立场。",
+    "detail": "主张允许不同共同体并行试验制度与规则，以结果反馈而非统一指令择优。认为分散试错比集中设计更能逼近适配个体的秩序。",
+    "tenets": [
+      "制度实验",
+      "分散试错",
+      "结果择优"
+    ],
+    "name_en": "Experimental Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority and technological privacy autonomy.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "development priority",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "启蒙自由派",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "SEC": "E"
+    },
+    "desc": "以理性、世俗与公开论证为基底的自由立场。",
+    "detail": "主张公共领域以理性论证与世俗语言沟通，反对信仰强制进入公域。认为普遍理性与个体良知自由是开放社会的共同地基。",
+    "tenets": [
+      "普遍理性",
+      "世俗公共",
+      "良知自由"
+    ],
+    "name_en": "Enlightenment Liberalism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance and secular public life.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "生态威权主义",
+    "need": {
+      "ENV": "S",
+      "GOV": "A"
+    },
+    "desc": "以集中权威推动生态保护的威权型绿色治理取向",
+    "detail": "主张通过自上而下的强制规制约束资源消耗与污染排放，认为个体自由应当让位于生态存续所要求的整体秩序，以集中权威保障长期环境稳定。",
+    "tenets": [
+      "生态优先",
+      "集中管制",
+      "存续秩序"
+    ],
+    "name_en": "Eco-Authoritarianism",
+    "desc_en": "Advocates authoritative governance and order and ecological priority.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "技术社会主义",
+    "need": {
+      "TECH": "K",
+      "ECO": "L"
+    },
+    "desc": "以公共集中掌控技术资产推动平等分配的社会主义取向",
+    "detail": "主张关键技术基础设施由公共部门统筹运营，以集体决策替代资本逻辑，使技术创新服务于普遍福利目标而非私人积累，并防范技术权力向少数主体集中。",
+    "tenets": [
+      "公营技术",
+      "平等分配",
+      "集体决策"
+    ],
+    "name_en": "Technological Socialism",
+    "desc_en": "Advocates economic equality and redistribution and centralized tech control.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "算法社会主义",
+    "need": {
+      "TECH": "K",
+      "ECO": "L",
+      "CUL": "P",
+      "SEC": "E"
+    },
+    "desc": "借助集中算法调度实现资源公平配置的社会主义构想",
+    "detail": "设想以公共算法系统协调生产与分配，减少市场波动与结构性不平等，强调算力应服务于共同体福祉而非逐利目标，使分配更趋透明与均衡。",
+    "tenets": [
+      "算法调度",
+      "公平配置",
+      "公器算力"
+    ],
+    "name_en": "Algorithmic Socialism",
+    "desc_en": "Advocates economic equality and redistribution, cultural progress and pluralism, centralized tech control and secular public life.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "cultural progress and pluralism",
+      "centralized tech control",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "监测生态主义",
+    "need": {
+      "ENV": "S",
+      "TECH": "K"
+    },
+    "desc": "以全域监测与数据调控维系生态平衡的技术治理观",
+    "detail": "主张部署广域传感与集中分析以实时管理环境负荷，认为精确监控是协调人类活动与自然承载力的必要手段，将量化治理视为生态保护的基石。",
+    "tenets": [
+      "全域监测",
+      "数据调控",
+      "生态协调"
+    ],
+    "name_en": "Surveillance Ecologism",
+    "desc_en": "Advocates ecological priority and centralized tech control.",
+    "tenets_en": [
+      "ecological priority",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "生物保守主义",
+    "need": {
+      "CUL": "T",
+      "COL": "M"
+    },
+    "desc": "谨慎对待生物技术改造、守护自然与人性边界的保守立场",
+    "detail": "主张对基因编辑与人体增强设限，认为生命秩序具有内在价值，技术介入须服从传统伦理与自然限度的约束，反对以功利逻辑重塑人性。",
+    "tenets": [
+      "守护自然",
+      "技术设限",
+      "伦理优先"
+    ],
+    "name_en": "Bioconservatism",
+    "desc_en": "Advocates cultural traditionalism and community priority.",
+    "tenets_en": [
+      "cultural traditionalism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "超人类主义",
+    "need": {
+      "TECH": "U",
+      "COL": "I"
+    },
+    "desc": "以技术拓展人类能力、追求超越既有生理局限的取向",
+    "detail": "主张通过生物与信息技术改造提升认知、寿命与感官，视技术为个体自我超越的手段，强调自主选择与身体主权，将进化视为可规划的目标。",
+    "tenets": [
+      "能力拓展",
+      "自我超越",
+      "身体主权"
+    ],
+    "name_en": "Transhumanism",
+    "desc_en": "Advocates technological privacy autonomy and individual priority.",
+    "tenets_en": [
+      "technological privacy autonomy",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "后人类主义",
+    "need": {
+      "TECH": "U"
+    },
+    "desc": "反思人类中心地位、接纳技术重构主体边界的哲学立场",
+    "detail": "认为意识与身份可超越生物载体，主张以去中心化视角看待智能与生命，弱化人类物种的独尊地位，将主体性理解为流动而非固定的构造。",
+    "tenets": [
+      "去中心主体",
+      "超越物种",
+      "技术重构"
+    ],
+    "name_en": "Posthumanism",
+    "desc_en": "Advocates technological privacy autonomy.",
+    "tenets_en": [
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "技术封建主义",
+    "need": {
+      "TECH": "K",
+      "GOV": "A"
+    },
+    "desc": "以平台与算法垄断形成新型依附关系的权威技术秩序",
+    "detail": "描绘由少数技术权力通过数据与基础设施构筑等级化依附结构的趋势，主张警惕数字领主对公共生活的支配，将平台权力类比于传统的领主权威。",
+    "tenets": [
+      "平台垄断",
+      "依附结构",
+      "数字等级"
+    ],
+    "name_en": "Tech-Feudalism",
+    "desc_en": "Advocates authoritative governance and order and centralized tech control.",
+    "tenets_en": [
+      "authoritative governance and order",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "数字社会主义",
+    "need": {
+      "TECH": "K",
+      "ECO": "L",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "在信息领域推行公共资源化与平等接入的社会主义观",
+    "detail": "主张将数据、网络与算力视为公共品，由集体治理防止私人垄断，使数字红利普惠而非集中于少数节点，将信息平等视为新型分配正义的核心。",
+    "tenets": [
+      "数据公品",
+      "平等接入",
+      "集体治理"
+    ],
+    "name_en": "Digital Socialism",
+    "desc_en": "Advocates economic equality and redistribution, cultural progress and pluralism, internationalism and openness and centralized tech control.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "太阳能主义",
+    "need": {
+      "ENV": "S"
+    },
+    "desc": "以太阳能为核心的去碳能源转型与生态可持续取向",
+    "detail": "主张将能源系统全面转向可再生光照采集，视分散式清洁能源为生态秩序与长期存续的基础条件，以去碳化为文明可持续的前提。",
+    "tenets": [
+      "去碳转型",
+      "清洁能源",
+      "存续基础"
+    ],
+    "name_en": "Solarpunk",
+    "desc_en": "Advocates ecological priority.",
+    "tenets_en": [
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "循环主义",
+    "need": {
+      "ENV": "S",
+      "ECO": "L",
+      "GOV": "L"
+    },
+    "desc": "以物质闭环循环替代线性消耗的资源伦理取向",
+    "detail": "主张生产消费须回归循环再生逻辑，最大限度减少废弃与外排，将生态承载力视为经济活动的硬约束，以闭环取代取用即弃的线性模式。",
+    "tenets": [
+      "闭环循环",
+      "减废再生",
+      "生态约束"
+    ],
+    "name_en": "Circularism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance and ecological priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "深生态主义",
+    "need": {
+      "ENV": "S",
+      "CUL": "T"
+    },
+    "desc": "视自然具内在价值、反对人类中心化的深层生态立场",
+    "detail": "主张消解人对自然的支配逻辑，认为所有生命形态拥有平等存在资格，倡导以谦抑姿态重构人与环境的伦理关系，将生态危机溯源于世界观层面。",
+    "tenets": [
+      "内在价值",
+      "反人类中心",
+      "谦抑共生"
+    ],
+    "name_en": "Deep Ecology",
+    "desc_en": "Advocates cultural traditionalism and ecological priority.",
+    "tenets_en": [
+      "cultural traditionalism",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "生态女权主义",
+    "need": {
+      "ENV": "S",
+      "COL": "M"
+    },
+    "desc": "关联自然剥削与支配逻辑、主张互依共生的生态立场",
+    "detail": "认为对自然的宰制与压迫性权力结构同源，主张以关怀与互依替代支配，将生态正义视为整体解放的组成部分，强调关系性而非等级性秩序。",
+    "tenets": [
+      "互依共生",
+      "反支配",
+      "关怀伦理"
+    ],
+    "name_en": "Eco-Feminism",
+    "desc_en": "Advocates ecological priority and community priority.",
+    "tenets_en": [
+      "ecological priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "技术无政府",
+    "need": {
+      "TECH": "U",
+      "GOV": "L",
+      "ECO": "L",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "拒绝层级权威、以去中心技术自组织社会的取向",
+    "detail": "主张消解强制性的集中权力机器，依托分布式网络与自治协议实现自愿协作，认为技术应为自由联合而非控制服务，以协议替代命令。",
+    "tenets": [
+      "去中心化",
+      "自愿协作",
+      "自治协议"
+    ],
+    "name_en": "Technological Anarchism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and technological privacy autonomy.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "赛博自由主义",
+    "need": {
+      "TECH": "U",
+      "GOV": "L",
+      "ECO": "L",
+      "NAT": "C"
+    },
+    "desc": "在数字空间捍卫个体自由与开放市场的自由立场",
+    "detail": "主张网络应为无许可的创新与表达场域，反对集中审查与管控，强调加密与自治架构保障个体数字主权，将开放协议视为自由的前提。",
+    "tenets": [
+      "数字自由",
+      "开放市场",
+      "加密自治"
+    ],
+    "name_en": "Cyber-Liberalism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, internationalism and openness and technological privacy autonomy.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "internationalism and openness",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "神经自由意志",
+    "need": {
+      "TECH": "U",
+      "COL": "I",
+      "ECO": "R",
+      "CUL": "P"
+    },
+    "desc": "捍卫心智自主与精神隐私的个体主义技术立场",
+    "detail": "主张个体对自身神经数据与意识状态享有排他控制权，反对外部读取或干预，将精神边界视为自由的核心场域，强调认知主权的不可让渡。",
+    "tenets": [
+      "心智自主",
+      "精神隐私",
+      "神经主权"
+    ],
+    "name_en": "Neuro-Libertarianism",
+    "desc_en": "Advocates free-market economics, cultural progress and pluralism, technological privacy autonomy and individual priority.",
+    "tenets_en": [
+      "free-market economics",
+      "cultural progress and pluralism",
+      "technological privacy autonomy",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "人工智能治理",
+    "need": {
+      "TECH": "K",
+      "GOV": "A",
+      "ECO": "L",
+      "CUL": "P"
+    },
+    "desc": "以集中权威统筹算法系统、防范技术风险的治理观",
+    "detail": "主张由公共权威设定人工智能的发展边界与责任框架，以统一规制平衡创新与安全，避免分散失序的技术后果，将算法问责视为公共秩序的一部分。",
+    "tenets": [
+      "统一规制",
+      "风险防范",
+      "责任框架"
+    ],
+    "name_en": "AI Governance",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural progress and pluralism and centralized tech control.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural progress and pluralism",
+      "centralized tech control"
+    ]
+  },
+  {
+    "name": "去中心化监控批判",
+    "need": {
+      "TECH": "U",
+      "ECO": "L",
+      "GOV": "L"
+    },
+    "desc": "反对集中监视、主张分散化与个体数据自主的立场",
+    "detail": "批判由单一权力集中采集行为数据的趋势，主张以分布式架构与加密手段归还个体对监控边界的决定权，将数据自主视为抵御支配的首要防线。",
+    "tenets": [
+      "反集中监视",
+      "数据自主",
+      "分布架构"
+    ],
+    "name_en": "Decentralized Surveillance Critique",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance and technological privacy autonomy.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "世俗民族融合",
+    "need": {
+      "NAT": "N",
+      "SEC": "E"
+    },
+    "desc": "主张民族身份与世俗公共秩序相融合的温和立场。",
+    "detail": "该立场认为民族共同体可在世俗框架内维系认同，反对将信仰纳入公共裁决。它强调公民平等而非血缘归属，寻求文化与政治的分离协调。",
+    "tenets": [
+      "世俗公共",
+      "民族认同",
+      "公民平等"
+    ],
+    "name_en": "Secular-Ethnic Integration",
+    "desc_en": "Advocates national priority and secular public life.",
+    "tenets_en": [
+      "national priority",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "信仰跨国团结",
+    "need": {
+      "NAT": "C",
+      "SEC": "F"
+    },
+    "desc": "倡导以信仰纽带联结不同地域共同体的抽象理念。",
+    "detail": "该理念将信仰视为超越领土边界的伦理资源，主张跨地域的精神协作与互助。它回避具体教派归属，强调普遍关怀而非排他性忠诚。",
+    "tenets": [
+      "信仰联结",
+      "跨国互助",
+      "普遍关怀"
+    ],
+    "name_en": "Faith Transnational Solidarity",
+    "desc_en": "Advocates internationalism and openness and faith in public life.",
+    "tenets_en": [
+      "internationalism and openness",
+      "faith in public life"
+    ]
+  },
+  {
+    "name": "后殖民平等论",
+    "need": {
+      "NAT": "C",
+      "COL": "M"
+    },
+    "desc": "反思历史权力结构并追求跨文化交流对等的主张。",
+    "detail": "该主张关注不同文化间不对等关系的观念根源，倡导在相互尊重中重建对话。它强调共同体自主与文化多样性，反对单一中心的普遍化预设。",
+    "tenets": [
+      "对等交流",
+      "文化自主",
+      "多元共存"
+    ],
+    "name_en": "Post-Colonial Egalitarianism",
+    "desc_en": "Advocates internationalism and openness and community priority.",
+    "tenets_en": [
+      "internationalism and openness",
+      "community priority"
+    ]
+  },
+  {
+    "name": "文明守成主义",
+    "need": {
+      "CUL": "T",
+      "NAT": "N"
+    },
+    "desc": "强调文明传承与民族本位相协调的保守取向。",
+    "detail": "该取向重视历史延续性与文化根基，主张在民族框架内守护传统价值。它警惕外部冲击对文化完整性的侵蚀，寻求稳定而非急剧变迁。",
+    "tenets": [
+      "文化传承",
+      "民族根基",
+      "稳健守成"
+    ],
+    "name_en": "Civilizational Retentionism",
+    "desc_en": "Advocates cultural traditionalism and national priority.",
+    "tenets_en": [
+      "cultural traditionalism",
+      "national priority"
+    ]
+  },
+  {
+    "name": "区域协作主义",
+    "need": {
+      "NAT": "C",
+      "GOV": "L"
+    },
+    "desc": "主张邻近地域自愿协作与分权共治的中间立场。",
+    "detail": "该立场鼓励地缘相近的共同体以平等方式开展合作，避免集中式支配。它重视地方自主与灵活协调，寻求在开放中维护各单元的差异。",
+    "tenets": [
+      "邻近协作",
+      "分权共治",
+      "差异共存"
+    ],
+    "name_en": "Regional Cooperationism",
+    "desc_en": "Advocates decentralized and libertarian governance and internationalism and openness.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "世界联邦构想",
+    "need": {
+      "NAT": "C",
+      "COL": "M",
+      "ECO": "L",
+      "GOV": "L",
+      "CUL": "T"
+    },
+    "desc": "设想以松散联邦形式统合人类共同体的远景。",
+    "detail": "该构想将人类视为可协调的总体，主张以自愿契约约束跨地域行为。它兼顾普遍规则与地方自治，强调共同福祉高于单一单元利益。",
+    "tenets": [
+      "联邦协调",
+      "共同福祉",
+      "自愿契约"
+    ],
+    "name_en": "World Federalist Vision",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural traditionalism, internationalism and openness and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural traditionalism",
+      "internationalism and openness",
+      "community priority"
+    ]
+  },
+  {
+    "name": "跨文化汇通",
+    "need": {
+      "NAT": "C",
+      "CUL": "P"
+    },
+    "desc": "倡导不同文化传统在平等基础上相互融通。",
+    "detail": "该理念认为文化边界可被对话与互鉴所软化，主张以开放态度吸收异质经验。它反对文化封闭，强调在多元交汇中生成新的公共理解。",
+    "tenets": [
+      "文化互鉴",
+      "开放融通",
+      "平等对话"
+    ],
+    "name_en": "Cross-Cultural Syncretism",
+    "desc_en": "Advocates cultural progress and pluralism and internationalism and openness.",
+    "tenets_en": [
+      "cultural progress and pluralism",
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "宗教进步主义",
+    "need": {
+      "SEC": "F",
+      "CUL": "P"
+    },
+    "desc": "主张以信仰伦理推动社会前行与制度革新。",
+    "detail": "该立场视信仰为变革动力，主张将精神关怀转化为对公平与自由的追求。它既维护信仰入公的参与，也坚持面向未来的开放取向。",
+    "tenets": [
+      "信仰入公",
+      "社会革新",
+      "公平导向"
+    ],
+    "name_en": "Religious Progressivism",
+    "desc_en": "Advocates cultural progress and pluralism and faith in public life.",
+    "tenets_en": [
+      "cultural progress and pluralism",
+      "faith in public life"
+    ]
+  },
+  {
+    "name": "世俗社群主义",
+    "need": {
+      "SEC": "E",
+      "COL": "M"
+    },
+    "desc": "在世俗框架内强调共同体纽带与公共善。",
+    "detail": "该立场将共同体视为非信仰性的伦理单位，主张以公共协商凝聚共识。它兼顾个人自主与社群归属，反对纯粹原子化的社会想象。",
+    "tenets": [
+      "公共善",
+      "世俗纽带",
+      "协商共识"
+    ],
+    "name_en": "Secular Communitarianism",
+    "desc_en": "Advocates secular public life and community priority.",
+    "tenets_en": [
+      "secular public life",
+      "community priority"
+    ]
+  },
+  {
+    "name": "跨国联合主义",
+    "need": {
+      "NAT": "C",
+      "COL": "M",
+      "ECO": "L",
+      "CUL": "P"
+    },
+    "desc": "主张跨越边界的共同体联合与资源共享。",
+    "detail": "该主张将联合视为化解地域隔阂的途径，倡导以协作替代孤立。它强调人类相互依赖，主张在开放结构中平衡各共同体的自主与连带。",
+    "tenets": [
+      "跨国联合",
+      "资源共享",
+      "相互依赖"
+    ],
+    "name_en": "Transnational Unionism",
+    "desc_en": "Advocates economic equality and redistribution, cultural progress and pluralism, internationalism and openness and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "community priority"
+    ]
+  },
+  {
+    "name": "边界开放论",
+    "need": {
+      "NAT": "C"
+    },
+    "desc": "主张弱化固定边界以促进人员与观念的流动。",
+    "detail": "该立场认为流动有助于消解排他性认同，倡导以开放替代封闭。它强调普遍交往权利，同时承认过渡中需协调地方承载与整体秩序。",
+    "tenets": [
+      "开放流动",
+      "普遍交往",
+      "去边界化"
+    ],
+    "name_en": "Open Borders",
+    "desc_en": "Advocates internationalism and openness.",
+    "tenets_en": [
+      "internationalism and openness"
+    ]
+  },
+  {
+    "name": "多元民族共治",
+    "need": {
+      "NAT": "N",
+      "CUL": "P"
+    },
+    "desc": "倡导单一政治体内多民族平等共处与协商。",
+    "detail": "该主张承认民族多样性并主张以制度保障各群体平等地位。它强调共治而非同化，寻求在共同框架下协调差异与整体稳定。",
+    "tenets": [
+      "多族平等",
+      "制度共治",
+      "差异协调"
+    ],
+    "name_en": "Plural-National Co-Governance",
+    "desc_en": "Advocates cultural progress and pluralism and national priority.",
+    "tenets_en": [
+      "cultural progress and pluralism",
+      "national priority"
+    ]
+  },
+  {
+    "name": "文化多元守成",
+    "need": {
+      "CUL": "T",
+      "COL": "M",
+      "ECO": "R",
+      "NAT": "N"
+    },
+    "desc": "主张在守护传统的同时容纳多元文化表达。",
+    "detail": "该立场试图调和守成与开放，主张以稳定根基容纳差异表达。它强调共同体延续，同时承认文化内部的多样性需被包容对待。",
+    "tenets": [
+      "传统守护",
+      "多元包容",
+      "共同体延续"
+    ],
+    "name_en": "Cultural Pluralist Retention",
+    "desc_en": "Advocates free-market economics, cultural traditionalism, national priority and community priority.",
+    "tenets_en": [
+      "free-market economics",
+      "cultural traditionalism",
+      "national priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "普遍人本主义",
+    "need": {
+      "NAT": "C",
+      "SEC": "E",
+      "COL": "I"
+    },
+    "desc": "以普遍人性为基、超越信仰与边界的伦理立场。",
+    "detail": "该立场将人本身置于价值中心，主张以理性与同情构建公共秩序。它超越特定信仰与地域，强调个体尊严与跨共同体的平等对待。",
+    "tenets": [
+      "人性为本",
+      "个体尊严",
+      "普遍平等"
+    ],
+    "name_en": "Universal Humanism",
+    "desc_en": "Advocates internationalism and openness, secular public life and individual priority.",
+    "tenets_en": [
+      "internationalism and openness",
+      "secular public life",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "信仰和平主义",
+    "need": {
+      "SEC": "F"
+    },
+    "desc": "以信仰资源倡导非暴力与跨群体和解。",
+    "detail": "该立场将和平视为信仰核心义务，主张以精神修习化解对立。它强调宽恕与克制，反对以任何名义正当化仇恨与冲突。",
+    "tenets": [
+      "非暴力",
+      "信仰和解",
+      "克制宽容"
+    ],
+    "name_en": "Faith Pacifism",
+    "desc_en": "Advocates faith in public life.",
+    "tenets_en": [
+      "faith in public life"
+    ]
+  },
+  {
+    "name": "跨信仰共融",
+    "need": {
+      "SEC": "F",
+      "NAT": "C",
+      "ECO": "L",
+      "GOV": "L",
+      "CUL": "P"
+    },
+    "desc": "主张不同信仰传统在公共生活中彼此交融。",
+    "detail": "该理念视信仰差异为可对话的资源，主张以互信消解隔阂。它避免独断真理宣称，强调在共同伦理基础上寻求跨信仰协作。",
+    "tenets": [
+      "跨信对话",
+      "互信协作",
+      "共同伦理"
+    ],
+    "name_en": "Interfaith Concord",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and faith in public life.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "faith in public life"
+    ]
+  },
+  {
+    "name": "主权国际协作",
+    "need": {
+      "NAT": "N",
+      "COL": "M",
+      "ECO": "R",
+      "GOV": "A"
+    },
+    "desc": "承认各单元自主并主张自愿开展跨边界协作。",
+    "detail": "该立场承认各政治单元的自主地位，主张以平等协商开展跨边界合作。它强调自愿协调而非强制统合，在维护单元自主的同时寻求共同事务的协同处理。",
+    "tenets": [
+      "单元自主",
+      "自愿协作",
+      "平等协商"
+    ],
+    "name_en": "Sovereign International Cooperation",
+    "desc_en": "Advocates free-market economics, authoritative governance and order, national priority and community priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "national priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "全球公民主义",
+    "need": {
+      "NAT": "C",
+      "COL": "I"
+    },
+    "desc": "主张个体以世界尺度认同并承担普遍义务。",
+    "detail": "该立场将个体身份延伸至人类整体，主张以普遍权利与义务超越地域。它强调全球层面的责任共担，同时尊重地方生活的多样性。",
+    "tenets": [
+      "世界认同",
+      "普遍义务",
+      "责任共担"
+    ],
+    "name_en": "Global Citizenship",
+    "desc_en": "Advocates internationalism and openness and individual priority.",
+    "tenets_en": [
+      "internationalism and openness",
+      "individual priority"
+    ]
+  },
+  {
+    "name": "中左社会自由",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "CUL": "P"
+    },
+    "desc": "在社会公平与个体自由间取中左平衡的进步取向。",
+    "detail": "主张以再分配缓解不平等，同时守持公民自由与多元包容。在文化议题上倾向进步，在经济上支持适度干预而非彻底国有化。",
+    "tenets": [
+      "社会公平",
+      "公民自由",
+      "渐进改革"
+    ],
+    "name_en": "Center-Left Social Liberalism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance and cultural progress and pluralism.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism"
+    ]
+  },
+  {
+    "name": "中右自由进步",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "CUL": "P",
+      "ENV": "G",
+      "SEC": "E"
+    },
+    "desc": "融市场自由与开放价值的温和右派中间立场。",
+    "detail": "强调自由市场作为效率基础，同时在文化上接纳多元与变革。反对过度集中权力，主张以法治保障个体选择空间。",
+    "tenets": [
+      "市场效率",
+      "文化开放",
+      "有限政府"
+    ],
+    "name_en": "Center-Right Liberal Progressivism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, development priority and secular public life.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "development priority",
+      "secular public life"
+    ]
+  },
+  {
+    "name": "自由意志中间派",
+    "need": {
+      "GOV": "L",
+      "ECO": "R",
+      "TECH": "U",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "弱化左右之争、以个人自主为核心的中间立场。",
+    "detail": "将个体自由置于首要位置，对市场与福利不作绝对承诺。在技术与隐私上坚持自主，反对国家过度介入私人领域。",
+    "tenets": [
+      "个人自主",
+      "隐私保护",
+      "去集中化"
+    ],
+    "name_en": "Libertarian Centrism",
+    "desc_en": "Advocates free-market economics, decentralized and libertarian governance, cultural progress and pluralism, internationalism and openness and technological privacy autonomy.",
+    "tenets_en": [
+      "free-market economics",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "internationalism and openness",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "务实进步主义",
+    "need": {
+      "CUL": "P"
+    },
+    "desc": "以可行改良替代教条化的渐进进步立场。",
+    "detail": "反对意识形态化的刚性方案，主张依情境调整政策工具。在价值上倾向进步多元，在手段上强调实证与渐进。",
+    "tenets": [
+      "问题导向",
+      "渐进改良",
+      "证据决策"
+    ],
+    "name_en": "Pragmatic Progressivism",
+    "desc_en": "Advocates cultural progress and pluralism.",
+    "tenets_en": [
+      "cultural progress and pluralism"
+    ]
+  },
+  {
+    "name": "制度自由主义",
+    "need": {
+      "GOV": "L"
+    },
+    "desc": "以制度约束权力、保障自由的程序性自由主义。",
+    "detail": "强调通过分权、制衡与法治限制强制力，维护个体权利。相对淡化经济立场，聚焦制度设计对自由的可信保障。",
+    "tenets": [
+      "权力制衡",
+      "程序正义",
+      "法治保障"
+    ],
+    "name_en": "Institutional Liberalism",
+    "desc_en": "Advocates decentralized and libertarian governance.",
+    "tenets_en": [
+      "decentralized and libertarian governance"
+    ]
+  },
+  {
+    "name": "协商民主",
+    "need": {
+      "GOV": "L",
+      "COL": "M"
+    },
+    "desc": "以公共说理与共识形成为核心的民主治理模式。",
+    "detail": "主张公民通过平等对话而非单纯票决来决定公共事务。重视理性沟通与相互理解，以审慎共识弥补聚合式民主的缺陷。",
+    "tenets": [
+      "公共说理",
+      "平等对话",
+      "共识形成"
+    ],
+    "name_en": "Deliberative Democracy",
+    "desc_en": "Advocates decentralized and libertarian governance and community priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "community priority"
+    ]
+  },
+  {
+    "name": "参与式民主",
+    "need": {
+      "GOV": "L",
+      "COL": "M",
+      "CUL": "P"
+    },
+    "desc": "扩大公民直接参与的基层民主取向。",
+    "detail": "批评代议制下公民疏离，主张在日常生活中广泛赋权自治。结合进步文化价值，强调共同体中的主动政治行动。",
+    "tenets": [
+      "公民赋权",
+      "基层自治",
+      "持续参与"
+    ],
+    "name_en": "Participatory Democracy",
+    "desc_en": "Advocates decentralized and libertarian governance, cultural progress and pluralism and community priority.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "基进民主",
+    "need": {
+      "GOV": "L",
+      "CUL": "P"
+    },
+    "desc": "将民主逻辑延伸至全部社会领域的深化取向。",
+    "detail": "主张民主不应局限于选举，而应渗透于经济与文化关系。强调去中心化的自我治理，以平等参与消解等级支配。",
+    "tenets": [
+      "深度平等",
+      "自我治理",
+      "反等级化"
+    ],
+    "name_en": "Radical Democracy",
+    "desc_en": "Advocates decentralized and libertarian governance and cultural progress and pluralism.",
+    "tenets_en": [
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism"
+    ]
+  },
+  {
+    "name": "合作主义",
+    "need": {
+      "ECO": "L",
+      "COL": "M"
+    },
+    "desc": "以社团协调与利益统合化解冲突的中间立场。",
+    "detail": "主张通过有组织群体间的制度化协商分配资源。在经济上倾向协作与再分配，在社会上重视共同体纽带。",
+    "tenets": [
+      "利益协调",
+      "社团协商",
+      "社会团结"
+    ],
+    "name_en": "Corporatism",
+    "desc_en": "Advocates economic equality and redistribution and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "community priority"
+    ]
+  },
+  {
+    "name": "社团主义",
+    "need": {
+      "ECO": "R",
+      "COL": "M",
+      "GOV": "A",
+      "CUL": "T",
+      "ENV": "G"
+    },
+    "desc": "以有序组织统合社会的权威性中间模式。",
+    "detail": "强调由代表性团体在秩序框架内组织社会利益。较合作主义更重层级与稳定，主张以制度化的团体代表实现治理。",
+    "tenets": [
+      "组织统合",
+      "秩序稳定",
+      "团体代表"
+    ],
+    "name_en": "Associationalism",
+    "desc_en": "Advocates free-market economics, authoritative governance and order, cultural traditionalism, development priority and community priority.",
+    "tenets_en": [
+      "free-market economics",
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "development priority",
+      "community priority"
+    ]
+  },
+  {
+    "name": "基尔特社会主义",
+    "need": {
+      "ECO": "L",
+      "COL": "M",
+      "GOV": "L"
+    },
+    "desc": "以行业自治工会组织生产的分散社会主义。",
+    "detail": "主张按行业组成自治团体管理经济生产，替代国家集中控制。在共同体取向下保留分权自治，强调生产者民主。",
+    "tenets": [
+      "行业自治",
+      "生产者民主",
+      "分散管理"
+    ],
+    "name_en": "Guild Socialism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "community priority"
+    ]
+  },
+  {
+    "name": "共识民主",
+    "need": {
+      "COL": "M"
+    },
+    "desc": "以广泛包容与妥协取代多数决的治理取向。",
+    "detail": "主张决策应寻求跨群体最大同意，而非简单多数压倒。重视少数权利与制度包容，以共同体和谐舒缓对抗。",
+    "tenets": [
+      "包容妥协",
+      "少数保护",
+      "共同体和谐"
+    ],
+    "name_en": "Consensus Democracy",
+    "desc_en": "Advocates community priority.",
+    "tenets_en": [
+      "community priority"
+    ]
+  },
+  {
+    "name": "审慎自由主义",
+    "need": {
+      "GOV": "L",
+      "ECO": "L",
+      "CUL": "P",
+      "TECH": "U"
+    },
+    "desc": "以节制与怀疑态度守护自由的保守式自由主义。",
+    "detail": "反对激进变革，主张在既有制度内稳妥扩展自由。强调个体权利边界与责任，警惕乌托邦式总体方案。",
+    "tenets": [
+      "审慎变革",
+      "权利边界",
+      "责任个体"
+    ],
+    "name_en": "Prudential Liberalism",
+    "desc_en": "Advocates economic equality and redistribution, decentralized and libertarian governance, cultural progress and pluralism and technological privacy autonomy.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "decentralized and libertarian governance",
+      "cultural progress and pluralism",
+      "technological privacy autonomy"
+    ]
+  },
+  {
+    "name": "渐进社会主义",
+    "need": {
+      "ECO": "L",
+      "CUL": "P"
+    },
+    "desc": "经由民主改良逐步实现平等的非革命立场。",
+    "detail": "主张通过选举与制度改革逐步扩大经济平等，拒绝暴力断裂。结合进步价值，以制度内化再分配为目标。",
+    "tenets": [
+      "民主改良",
+      "经济平等",
+      "制度内变革"
+    ],
+    "name_en": "Gradual Socialism",
+    "desc_en": "Advocates economic equality and redistribution and cultural progress and pluralism.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "cultural progress and pluralism"
+    ]
+  },
+  {
+    "name": "社会生态中间派",
+    "need": {
+      "ECO": "L",
+      "ENV": "S"
+    },
+    "desc": "在公平与生态间寻平衡的温和绿派立场。",
+    "detail": "主张以再分配缓解社会不公，同时优先生态可持续。反对极端增长主义与极端去增长，寻求二者调和路径。",
+    "tenets": [
+      "生态优先",
+      "社会公正",
+      "可持续发展"
+    ],
+    "name_en": "Socio-Ecological Centrism",
+    "desc_en": "Advocates economic equality and redistribution and ecological priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "ecological priority"
+    ]
+  },
+  {
+    "name": "稳健中间主义",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "CUL": "T",
+      "COL": "M"
+    },
+    "desc": "拒斥极化、在诸维度保持平衡的折中治理立场。",
+    "detail": "刻意避免对任何单一极向的强烈承诺，主张依具体问题权衡取舍。强调稳定、妥协与跨立场对话，抵制意识形态极端化。",
+    "tenets": [
+      "反极化",
+      "务实权衡",
+      "稳定发展"
+    ],
+    "name_en": "Stable Centrism",
+    "desc_en": "Advocates economic equality and redistribution, authoritative governance and order, cultural traditionalism and community priority.",
+    "tenets_en": [
+      "economic equality and redistribution",
+      "authoritative governance and order",
+      "cultural traditionalism",
+      "community priority"
+    ]
+  },
+  {
+    "name": "分配主义",
+    "name_en": "Distributism",
+    "need": {
+      "ECO": "R",
+      "COL": "M",
+      "CUL": "T",
+      "SEC": "F"
+    },
+    "desc": "主张把财产广泛分散到家庭与小生产者手中，反对资本与国家的双重集中。",
+    "detail": "认为大规模资本集中与国家垄断同样危害人的自主性，理想状态是让生产资料归众多小所有者掌握。强调家庭经济、手工业与地方合作社的基础地位，主张以制度引导财产分散而非依靠再分配。",
+    "tenets": [
+      "财产广泛分散",
+      "家庭经济优先",
+      "反对双重垄断"
+    ],
+    "tenets_en": [
+      "wide distribution of property",
+      "household economy first",
+      "against dual monopoly"
+    ],
+    "desc_en": "Advocates free-market economics, traditional cultural values, faith in public life, community priority."
+  },
+  {
+    "name": "互助主义",
+    "name_en": "Mutualism",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "COL": "I"
+    },
+    "desc": "主张以互助信贷与自由结社替代雇佣关系，保留市场但去除剥削性租金。",
+    "detail": "认为利润、地租与利息来自制度性特权而非劳动，应通过互助银行与自由契约让劳动者获得全部产出。反对国家强制，也反对资本集中，倾向以自愿联合的信用与交换网络组织经济。",
+    "tenets": [
+      "互助信贷",
+      "自由契约结社",
+      "劳动者获全产"
+    ],
+    "tenets_en": [
+      "mutual credit",
+      "free contractual association",
+      "workers receive full product"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, individual priority."
+  },
+  {
+    "name": "合作社主义",
+    "name_en": "Cooperatism",
+    "need": {
+      "ECO": "L",
+      "COL": "M",
+      "GOV": "L",
+      "ENV": "S"
+    },
+    "desc": "主张以成员共同所有的合作社作为经济组织的基本形式。",
+    "detail": "认为企业应由劳动者或消费者共同所有、民主管理，盈余按贡献或成员需要分配。强调合作社之间的横向联合可以形成替代性经济网络，同时保持地方自主与生态约束。",
+    "tenets": [
+      "成员共同所有",
+      "民主管理",
+      "合作社横向联合"
+    ],
+    "tenets_en": [
+      "member co-ownership",
+      "democratic management",
+      "horizontal cooperative federation"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, ecology-first stewardship, community priority."
+  },
+  {
+    "name": "参与型经济",
+    "name_en": "Participatory Economics",
+    "need": {
+      "ECO": "L",
+      "COL": "M",
+      "GOV": "L",
+      "TECH": "U"
+    },
+    "desc": "主张由生产者与消费者委员会协商决策，按努力与牺牲分配报酬。",
+    "detail": "提出以自我管理的议事机构替代市场与中央计划，由受影响各方按影响程度参与决策。报酬依据工作付出的努力与艰辛而非产出或议价能力，力求兼顾公平、多样性与团结。",
+    "tenets": [
+      "自我管理议事",
+      "按努力分配",
+      "影响决定参与权"
+    ],
+    "tenets_en": [
+      "self-managed councils",
+      "reward by effort",
+      "participation by affectedness"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "市场社会主义",
+    "name_en": "Market Socialism",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "TECH": "K"
+    },
+    "desc": "主张生产资料社会所有，同时保留市场竞争作为资源配置机制。",
+    "detail": "认为公有制可以与市场机制结合，企业由社会或劳动者所有但在市场中竞争，利润用于公共目的。强调通过税收与分红把资本收益社会化，避免计划经济的低效与资本主义的分配失衡。",
+    "tenets": [
+      "社会所有",
+      "市场竞争机制",
+      "资本收益社会化"
+    ],
+    "tenets_en": [
+      "social ownership",
+      "market competition",
+      "socialized capital returns"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, centralized authority and order, centralized technological control."
+  },
+  {
+    "name": "经济计划主义",
+    "name_en": "Economic Planning",
+    "need": {
+      "ECO": "L",
+      "GOV": "A",
+      "TECH": "K",
+      "COL": "M"
+    },
+    "desc": "主张以中央计划替代市场自发调节，按社会需要配置资源。",
+    "detail": "认为市场波动与逐利动机导致资源错配与周期失衡，应由计划机构依据社会需求统筹投资与产出。强调关键产业与长期目标需集中协调，并以数据系统支撑计划编制。",
+    "tenets": [
+      "中央计划配置",
+      "社会需求导向",
+      "关键产业统筹"
+    ],
+    "tenets_en": [
+      "central planned allocation",
+      "social need orientation",
+      "coordination of key industries"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, centralized authority and order, centralized technological control, community priority."
+  },
+  {
+    "name": "秩序自由主义",
+    "name_en": "Ordoliberalism",
+    "need": {
+      "ECO": "R",
+      "GOV": "A",
+      "COL": "M"
+    },
+    "desc": "主张国家建立并维护竞争秩序，让市场在规则框架内运行。",
+    "detail": "认为自由市场不会自发维持，需要强有力的法律与制度框架防止垄断与权力滥用。强调国家应当制定规则而非直接干预价格与产量，同时以社会政策缓冲市场结果。",
+    "tenets": [
+      "国家维护竞争秩序",
+      "反垄断制度框架",
+      "规则优先于干预"
+    ],
+    "tenets_en": [
+      "state-upheld competitive order",
+      "anti-monopoly framework",
+      "rules over discretionary intervention"
+    ],
+    "desc_en": "Advocates free-market economics, centralized authority and order, community priority."
+  },
+  {
+    "name": "新自由主义",
+    "name_en": "Neoliberalism",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "NAT": "C",
+      "TECH": "K"
+    },
+    "desc": "主张市场化、去管制与开放贸易，以竞争机制提升效率。",
+    "detail": "认为价格信号与竞争优于行政配置，主张放松管制、开放资本与贸易、压缩公共部门。强调以技术官僚手段维持宏观稳定与开放秩序，反对产业保护与价格管制。",
+    "tenets": [
+      "市场化去管制",
+      "开放贸易",
+      "技术官僚稳宏观"
+    ],
+    "tenets_en": [
+      "marketization and deregulation",
+      "open trade",
+      "technocratic macro stability"
+    ],
+    "desc_en": "Advocates free-market economics, liberty and decentralized governance, international openness, centralized technological control."
+  },
+  {
+    "name": "供给学派",
+    "name_en": "Supply-Side Economics",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "ENV": "G"
+    },
+    "desc": "主张通过降低税负与放宽约束来激励生产与投资，以扩大供给带动增长。",
+    "detail": "认为高税率与过度管制抑制生产积极性，减税与简化规则能扩大产出与税基。强调增长本身是解决公共问题的前提，对环境的约束应服从发展弹性。",
+    "tenets": [
+      "减税激励生产",
+      "简化管制",
+      "增长优先"
+    ],
+    "tenets_en": [
+      "tax cuts to incentivize production",
+      "simplified regulation",
+      "growth first"
+    ],
+    "desc_en": "Advocates free-market economics, liberty and decentralized governance, development-first pragmatism."
+  },
+  {
+    "name": "货币主义",
+    "name_en": "Monetarism",
+    "need": {
+      "ECO": "R",
+      "GOV": "L",
+      "TECH": "K"
+    },
+    "desc": "主张以稳定货币供给为宏观政策核心，抑制通胀优先于短期刺激。",
+    "detail": "认为通胀本质上是货币现象，应由规则化的货币供给控制取代相机抉择的财政刺激。强调中央机构的技术独立性与可预期性，反对频繁干预价格与工资。",
+    "tenets": [
+      "货币供给规则化",
+      "通胀优先治理",
+      "机构技术独立"
+    ],
+    "tenets_en": [
+      "rule-based money supply",
+      "inflation control priority",
+      "institutional technical independence"
+    ],
+    "desc_en": "Advocates free-market economics, liberty and decentralized governance, centralized technological control."
+  },
+  {
+    "name": "重商主义",
+    "name_en": "Mercantilism",
+    "need": {
+      "ECO": "R",
+      "GOV": "A",
+      "NAT": "N",
+      "TECH": "K"
+    },
+    "desc": "主张以国家力量扶持本国产业与贸易顺差，把经济实力视为国力基础。",
+    "detail": "认为财富与国力相互支撑，国家应通过关税、补贴与特许经营培育本国产能。强调出口导向与对外竞争，把贸易顺差与产业自主作为政策目标。",
+    "tenets": [
+      "国家扶持产业",
+      "贸易顺差目标",
+      "产业自主"
+    ],
+    "tenets_en": [
+      "state support for industry",
+      "trade surplus goal",
+      "industrial self-reliance"
+    ],
+    "desc_en": "Advocates free-market economics, centralized authority and order, national priority, centralized technological control."
+  },
+  {
+    "name": "全民基本收入论",
+    "name_en": "Universal Basic Income",
+    "need": {
+      "ECO": "L",
+      "COL": "M",
+      "GOV": "A",
+      "CUL": "P",
+      "TECH": "K"
+    },
+    "desc": "主张由公共财政向全体成员定期发放无条件现金，作为保障底线。",
+    "detail": "认为技术变革与就业不稳定使传统救助失效，无条件的现金给付能同时保障尊严与自由。强调以统一给付替代层层资格审查，降低行政成本与污名效应，资金来源靠税收与公共资源收益。",
+    "tenets": [
+      "无条件现金给付",
+      "统一替代审查",
+      "公共资源筹资"
+    ],
+    "tenets_en": [
+      "unconditional cash grant",
+      "uniformity over means-testing",
+      "funded by common resources"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, centralized authority and order, culturally progressive pluralism, centralized technological control, community priority."
+  },
+  {
+    "name": "反消费主义",
+    "name_en": "Anti-Consumerism",
+    "need": {
+      "ECO": "L",
+      "ENV": "S",
+      "CUL": "P"
+    },
+    "desc": "主张抑制过度消费与商业符号扩张，把生活重心从购买转向其他价值。",
+    "detail": "认为消费驱动的增长既不可持续也削弱人的自主，应通过缩短工时、共享使用与公共供给降低对购买的依赖。强调物品耐用与可修复，反对以消费界定身份与地位。",
+    "tenets": [
+      "抑制过度消费",
+      "共享与耐用优先",
+      "身份去商品化"
+    ],
+    "tenets_en": [
+      "curb overconsumption",
+      "sharing and durability first",
+      "de-commodified identity"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, culturally progressive pluralism, ecology-first stewardship."
+  },
+  {
+    "name": "去增长主义",
+    "name_en": "Degrowth",
+    "need": {
+      "ECO": "L",
+      "ENV": "S",
+      "GOV": "L",
+      "COL": "M",
+      "TECH": "U"
+    },
+    "desc": "主张主动缩减高收入社会的物质吞吐，以换取生态可持续与公平。",
+    "detail": "认为在生态边界内持续增长不可行，应有计划地压缩高消耗部门、扩大照护与公共供给。强调缩减不等于衰退，而是通过再分配与工时缩短维持福祉。",
+    "tenets": [
+      "主动缩减吞吐",
+      "生态边界约束",
+      "再分配维持福祉"
+    ],
+    "tenets_en": [
+      "planned reduction of throughput",
+      "ecological boundary limits",
+      "redistribution sustains wellbeing"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, ecology-first stewardship, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "稳态经济",
+    "name_en": "Steady-State Economy",
+    "need": {
+      "ENV": "S",
+      "ECO": "L",
+      "TECH": "U"
+    },
+    "desc": "主张把经济规模维持在生态可承载的恒定水平，以质量替代数量增长。",
+    "detail": "认为物质存量与人口应稳定在可持续水平，技术进步应服务于效率与耐用而非扩张。强调以配额、折旧与资源税约束吞吐规模，对数据的采集应受隐私约束。",
+    "tenets": [
+      "恒定物质规模",
+      "效率替代扩张",
+      "资源税约束"
+    ],
+    "tenets_en": [
+      "constant physical scale",
+      "efficiency over expansion",
+      "resource throughput caps"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, ecology-first stewardship, privacy autonomy in technology."
+  },
+  {
+    "name": "技术官僚主义",
+    "name_en": "Technocracy",
+    "need": {
+      "TECH": "K",
+      "GOV": "A",
+      "NAT": "C"
+    },
+    "desc": "主张由专业与技术领域的人员依据数据与规程治理公共事务。",
+    "detail": "认为公共决策复杂度超出一般民意机构的认知负荷，应由具备专业训练者依技术与证据制定方案。强调可量化的指标与流程化管理，并倾向在国际层面统一技术标准。",
+    "tenets": [
+      "专家依证据决策",
+      "指标化治理",
+      "国际技术标准统一"
+    ],
+    "tenets_en": [
+      "expert evidence-based decision",
+      "indicator-driven governance",
+      "harmonized technical standards"
+    ],
+    "desc_en": "Advocates centralized authority and order, international openness, centralized technological control."
+  },
+  {
+    "name": "精英主义",
+    "name_en": "Elitism",
+    "need": {
+      "GOV": "A",
+      "COL": "I",
+      "CUL": "T"
+    },
+    "desc": "认为社会应由少数具备能力与教养者主导，大众参与需受节制。",
+    "detail": "主张治理质量依赖少数人的判断与责任，过度民主化会削弱远见与专业。强调教育与文化的阶梯性，认为传统与权威保障了文明的延续。",
+    "tenets": [
+      "能者主导",
+      "节制大众参与",
+      "传统保障延续"
+    ],
+    "tenets_en": [
+      "rule by the capable",
+      "restrained mass participation",
+      "tradition sustains continuity"
+    ],
+    "desc_en": "Advocates centralized authority and order, traditional cultural values, individual priority."
+  },
+  {
+    "name": "左翼民粹",
+    "name_en": "Left-Wing Populism",
+    "need": {
+      "ECO": "L",
+      "GOV": "L",
+      "NAT": "N",
+      "COL": "M"
+    },
+    "desc": "主张以普通民众对抗经济精英，同时强调民族共同体的团结。",
+    "detail": "认为经济不平等源于少数精英对公共资源的攫取，应通过再分配与公众动员予以纠正。强调共同体利益高于个体博弈，对外部力量保持警惕，主张权力下沉与直接表达。",
+    "tenets": [
+      "反精英动员",
+      "再分配优先",
+      "共同体利益优先"
+    ],
+    "tenets_en": [
+      "anti-elite mobilization",
+      "redistribution priority",
+      "community interest first"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, national priority, community priority."
+  },
+  {
+    "name": "直接民主",
+    "name_en": "Direct Democracy",
+    "need": {
+      "GOV": "L",
+      "COL": "I"
+    },
+    "desc": "主张重大决策由公民直接表决，而非长期委托给代表。",
+    "detail": "认为代表制稀释了个人判断与责任，公投与议事会能让决策更贴近当事人意愿。强调个人自主优先于集体程序正义，以频繁表决替代授权代理。",
+    "tenets": [
+      "公民直接表决",
+      "减少代表代理",
+      "个人自主优先"
+    ],
+    "tenets_en": [
+      "direct citizen voting",
+      "minimal representation",
+      "individual autonomy first"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, individual priority."
+  },
+  {
+    "name": "公民共和主义",
+    "name_en": "Civic Republicanism",
+    "need": {
+      "GOV": "L",
+      "COL": "M",
+      "CUL": "T",
+      "NAT": "C"
+    },
+    "desc": "主张公民以公共德性参与自治，自由存在于不受支配的共同生活之中。",
+    "detail": "认为自由意味着不依附于他人意志，需要制度保障与公民德性共同支撑。强调公共义务、审慎传统与法治框架，同时支持在国际层面以规则协调共处。",
+    "tenets": [
+      "公民德性自治",
+      "免于支配的自由",
+      "公共义务优先"
+    ],
+    "tenets_en": [
+      "civic virtue self-rule",
+      "freedom as non-domination",
+      "public duty first"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, traditional cultural values, international openness, community priority."
+  },
+  {
+    "name": "宪政主义",
+    "name_en": "Constitutionalism",
+    "need": {
+      "GOV": "L",
+      "SEC": "E",
+      "CUL": "T"
+    },
+    "desc": "主张以成文宪法与分权结构限定权力，任何权威都受文本约束。",
+    "detail": "认为权力的正当性来自程序与文本，司法审查与分权制衡是防止滥权的关键。强调公共生活保持世俗中立，同时承认既有制度传统的稳定作用。",
+    "tenets": [
+      "文本限权",
+      "司法审查",
+      "世俗公共秩序"
+    ],
+    "tenets_en": [
+      "text-bound power",
+      "judicial review",
+      "secular public order"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, traditional cultural values, secular public life."
+  },
+  {
+    "name": "法治至上",
+    "name_en": "Rule of Law Primacy",
+    "need": {
+      "GOV": "L",
+      "SEC": "E",
+      "COL": "I"
+    },
+    "desc": "主张法律面前平等且可预期，程序正义优先于结果正义。",
+    "detail": "认为规则的可预期性是个人规划自由的前提，任何个案权衡都不得破坏普遍规则。强调世俗法源的统一性与对个人权利的同等保护，反对以身份或信仰差别适用法律。",
+    "tenets": [
+      "规则可预期",
+      "程序正义优先",
+      "世俗统一法源"
+    ],
+    "tenets_en": [
+      "predictable rules",
+      "procedural justice first",
+      "uniform secular law"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, secular public life, individual priority."
+  },
+  {
+    "name": "联邦主义",
+    "name_en": "Federalism",
+    "need": {
+      "GOV": "L",
+      "NAT": "C",
+      "COL": "M",
+      "SEC": "E"
+    },
+    "desc": "主张多层级的权力分配，地方保留自治同时共享更高层规则。",
+    "detail": "认为决策应尽可能贴近受影响者，但跨域事务需要共同机构协调。强调地方共同体与中央框架之间的契约关系，并支持在国际层面以联邦式安排处理共同问题。",
+    "tenets": [
+      "多层级分权",
+      "地方自治保留",
+      "跨域共同机构"
+    ],
+    "tenets_en": [
+      "multi-level power sharing",
+      "reserved local autonomy",
+      "joint bodies for shared matters"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, international openness, secular public life, community priority."
+  },
+  {
+    "name": "邦联主义",
+    "name_en": "Confederalism",
+    "need": {
+      "GOV": "L",
+      "COL": "I",
+      "NAT": "N"
+    },
+    "desc": "主张各共同体以松散盟约联合，权力主要保留在成员一方。",
+    "detail": "认为任何高于成员单位的权威都易侵蚀自主，联合应出于具体事务的可撤销授权。强调成员单位的退出权与个人自主，对超国家机构保持警惕。",
+    "tenets": [
+      "松散盟约联合",
+      "授权可撤销",
+      "成员退出权"
+    ],
+    "tenets_en": [
+      "loose confederal pact",
+      "revocable delegation",
+      "right of secession"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, national priority, individual priority."
+  },
+  {
+    "name": "自治主义",
+    "name_en": "Autonomism",
+    "need": {
+      "GOV": "L",
+      "COL": "I",
+      "ECO": "L",
+      "TECH": "U",
+      "CUL": "P"
+    },
+    "desc": "主张由劳动者与社群自我组织，从既有结构中分离出自主空间。",
+    "detail": "认为权力与价值来自基层的自我活动，而非政党或国家的授予。强调拒绝被代表、以直接行动构建替代性协作网络，并对监控与数据采集保持高度警惕。",
+    "tenets": [
+      "基层自我组织",
+      "拒绝被代表",
+      "警惕数据监控"
+    ],
+    "tenets_en": [
+      "grassroots self-organization",
+      "refusal of representation",
+      "vigilance against data surveillance"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, culturally progressive pluralism, privacy autonomy in technology, individual priority."
+  },
+  {
+    "name": "多元文化主义",
+    "name_en": "Multiculturalism",
+    "need": {
+      "CUL": "P",
+      "NAT": "C",
+      "COL": "M"
+    },
+    "desc": "主张承认并制度性支持不同文化群体的平等共存。",
+    "detail": "认为形式平等不足以纠正结构性劣势，应通过承认差异与群体权利实现实质平等。强调跨文化对话与国际规范，同时重视共同体归属对个体的支撑作用。",
+    "tenets": [
+      "承认群体差异",
+      "实质平等",
+      "跨文化对话"
+    ],
+    "tenets_en": [
+      "recognition of group difference",
+      "substantive equality",
+      "cross-cultural dialogue"
+    ],
+    "desc_en": "Advocates culturally progressive pluralism, international openness, community priority."
+  },
+  {
+    "name": "传统主义",
+    "name_en": "Traditionalism",
+    "need": {
+      "CUL": "T",
+      "SEC": "F",
+      "TECH": "U"
+    },
+    "desc": "主张以历史积淀的秩序与信仰作为社会根基，对快速变革保持警惕。",
+    "detail": "认为既有的习俗、宗教与制度承载着代际检验的智慧，激进改造会破坏社会纽带。强调信仰在公共生活中的正当位置，对技术加速带来的生活方式断裂持审慎态度。",
+    "tenets": [
+      "历史秩序为根基",
+      "信仰的公共位置",
+      "审慎对待技术变革"
+    ],
+    "tenets_en": [
+      "historic order as foundation",
+      "public role of faith",
+      "caution toward technological change"
+    ],
+    "desc_en": "Advocates traditional cultural values, privacy autonomy in technology, faith in public life."
+  },
+  {
+    "name": "现代主义",
+    "name_en": "Modernism",
+    "need": {
+      "CUL": "P",
+      "TECH": "K",
+      "ENV": "G"
+    },
+    "desc": "主张以理性规划与技术手段推进社会改造，相信进步可通过设计达成。",
+    "detail": "认为传统束缚应让位于科学理性与普遍标准，大规模技术方案能解决社会问题。强调文化上的开放与更新，以工程化思维组织生产与城市生活。",
+    "tenets": [
+      "理性规划改造",
+      "普遍标准",
+      "工程化组织"
+    ],
+    "tenets_en": [
+      "rational planning",
+      "universal standards",
+      "engineered organization"
+    ],
+    "desc_en": "Advocates culturally progressive pluralism, development-first pragmatism, centralized technological control."
+  },
+  {
+    "name": "后现代主义",
+    "name_en": "Postmodernism",
+    "need": {
+      "CUL": "P",
+      "COL": "I",
+      "GOV": "L",
+      "TECH": "U"
+    },
+    "desc": "质疑普遍叙事与统一标准，主张多元局部知识与差异的正当性。",
+    "detail": "认为任何总体性方案都隐含支配，应拆解宏大叙事并让局部经验获得发声。强调个人身份的流动性与自主建构，反对以统一规划取代差异共存。",
+    "tenets": [
+      "质疑宏大叙事",
+      "局部知识正当",
+      "身份自主建构"
+    ],
+    "tenets_en": [
+      "suspicion of grand narratives",
+      "legitimacy of local knowledge",
+      "self-constructed identity"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, privacy autonomy in technology, individual priority."
+  },
+  {
+    "name": "社会主义女性主义",
+    "name_en": "Socialist Feminism",
+    "need": {
+      "CUL": "P",
+      "ECO": "L",
+      "COL": "M"
+    },
+    "desc": "认为性别压迫与资本结构相互支撑，须同时改造生产关系与家庭分工。",
+    "detail": "主张把无偿照护劳动纳入经济分析，以公共服务与再分配减轻家庭内的性别负担。强调文化观念变革与经济结构改造缺一不可，共同体承担照护责任。",
+    "tenets": [
+      "照护劳动计价",
+      "经济与文化双改造",
+      "共同体分担照护"
+    ],
+    "tenets_en": [
+      "valuing care labor",
+      "dual economic and cultural change",
+      "community-shared care"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, culturally progressive pluralism, community priority."
+  },
+  {
+    "name": "交叉女性主义",
+    "name_en": "Intersectional Feminism",
+    "need": {
+      "CUL": "P",
+      "COL": "M",
+      "NAT": "C",
+      "GOV": "A"
+    },
+    "desc": "主张性别、阶层与族裔等压迫维度交织，需以制度手段综合应对。",
+    "detail": "认为单一维度的平等政策会遗漏最弱势者，应识别交叉位置并设计针对性干预。强调需要权威性的制度保障落实反歧视规范，并在国际层面形成共同标准。",
+    "tenets": [
+      "交叉位置识别",
+      "制度性反歧视",
+      "国际标准协同"
+    ],
+    "tenets_en": [
+      "intersectional position analysis",
+      "institutional anti-discrimination",
+      "international standard coordination"
+    ],
+    "desc_en": "Advocates centralized authority and order, culturally progressive pluralism, international openness, community priority."
+  },
+  {
+    "name": "酷儿解放论",
+    "name_en": "Queer Liberationism",
+    "need": {
+      "CUL": "P",
+      "COL": "I",
+      "GOV": "L",
+      "SEC": "E"
+    },
+    "desc": "主张拆解性别与性倾向的固定分类，以个体自我界定为原则。",
+    "detail": "认为身份不应由制度或医学分类固定，自我界定本身就是自由的一部分。强调去除强制性规范与登记要求，让个体在不同场景中自由呈现。",
+    "tenets": [
+      "自我界定身份",
+      "拆解固定分类",
+      "去除强制规范"
+    ],
+    "tenets_en": [
+      "self-defined identity",
+      "undoing fixed categories",
+      "removal of compulsory norms"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, secular public life, individual priority."
+  },
+  {
+    "name": "世代公平论",
+    "name_en": "Generational Equity",
+    "need": {
+      "ENV": "S",
+      "COL": "M",
+      "GOV": "A"
+    },
+    "desc": "主张当代决策须为后代保留资源与生态空间，长期责任优先于当下偏好。",
+    "detail": "认为短周期的选择会不可逆地压缩后代机会，应以制度化的长期代表机制约束当下决策。强调共同体对代际延续的责任，必要时以权威手段设定生态与资源底线。",
+    "tenets": [
+      "后代机会保留",
+      "长期代表机制",
+      "资源底线约束"
+    ],
+    "tenets_en": [
+      "preserving future opportunities",
+      "long-term representation",
+      "binding resource floors"
+    ],
+    "desc_en": "Advocates centralized authority and order, ecology-first stewardship, community priority."
+  },
+  {
+    "name": "教育自由论",
+    "name_en": "Educational Liberalism",
+    "need": {
+      "CUL": "P",
+      "GOV": "L",
+      "COL": "I"
+    },
+    "desc": "主张教育内容与方法多元开放，学习者自主选择优先于统一标准。",
+    "detail": "认为统一课程与考试削弱了个体差异与创造性，应让家庭与学习者在多元供给中选择。强调文化内容的开放更新，反对以单一意识形态主导教材。",
+    "tenets": [
+      "教育供给多元",
+      "学习者自主选择",
+      "反对单一教材主导"
+    ],
+    "tenets_en": [
+      "plural educational provision",
+      "learner autonomy",
+      "against single-ideology curricula"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, individual priority."
+  },
+  {
+    "name": "学术自由主义",
+    "name_en": "Academic Libertarianism",
+    "need": {
+      "GOV": "L",
+      "CUL": "P",
+      "TECH": "U"
+    },
+    "desc": "主张研究不受政治与资助方干预，知识生产需保持独立与开放。",
+    "detail": "认为学术判断只能服从同行检验，行政或资本介入会扭曲研究议程。强调数据与研究过程的自治，反对以监控手段约束学术交流与发表。",
+    "tenets": [
+      "研究免于干预",
+      "同行检验为准",
+      "学术数据自治"
+    ],
+    "tenets_en": [
+      "research free from interference",
+      "peer review as sole standard",
+      "autonomous scholarly data"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, privacy autonomy in technology."
+  },
+  {
+    "name": "公民民族主义",
+    "name_en": "Civic Nationalism",
+    "need": {
+      "NAT": "N",
+      "CUL": "P",
+      "GOV": "L"
+    },
+    "desc": "主张共同体成员资格基于对共同制度的认同，而非血缘或文化同源。",
+    "detail": "认为政治共同体由共享的公民身份与规则维系，任何接受者皆可加入。强调在保持共同体边界的同时坚持文化开放与自由治理，反对以族裔界定成员。",
+    "tenets": [
+      "制度认同定成员",
+      "开放的文化立场",
+      "反对血缘界定"
+    ],
+    "tenets_en": [
+      "membership by civic identity",
+      "culturally open stance",
+      "against descent-based membership"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, national priority."
+  },
+  {
+    "name": "族群民族主义",
+    "name_en": "Ethnic Nationalism",
+    "need": {
+      "NAT": "N",
+      "CUL": "T",
+      "COL": "M"
+    },
+    "desc": "主张共同体以共同血缘、语言与文化为基础，成员资格具有继承性。",
+    "detail": "认为历史文化共同体的延续需要以族裔纽带维系，文化同质有助于内部信任与互助。强调共同体整体优先于个体选择，对跨文化融合持谨慎态度。",
+    "tenets": [
+      "族裔纽带定成员",
+      "文化同质凝聚",
+      "共同体整体优先"
+    ],
+    "tenets_en": [
+      "membership by kinship bonds",
+      "cultural homogeneity as cohesion",
+      "community over individual choice"
+    ],
+    "desc_en": "Advocates traditional cultural values, national priority, community priority."
+  },
+  {
+    "name": "泛民族主义",
+    "name_en": "Pan-Nationalism",
+    "need": {
+      "NAT": "N",
+      "COL": "M",
+      "GOV": "A"
+    },
+    "desc": "主张把语言文化相近的多个群体整合为更大的政治共同体。",
+    "detail": "认为分散状态削弱了共同体的存续能力，应通过统一动员整合相近群体。强调集体目标高于局部差异，必要时以集中权威推进整合进程。",
+    "tenets": [
+      "跨群体整合",
+      "集体目标优先",
+      "集中动员推进"
+    ],
+    "tenets_en": [
+      "cross-group integration",
+      "collective goal priority",
+      "centralized mobilization"
+    ],
+    "desc_en": "Advocates centralized authority and order, national priority, community priority."
+  },
+  {
+    "name": "乡土地方主义",
+    "name_en": "Localism",
+    "need": {
+      "NAT": "N",
+      "COL": "I",
+      "ENV": "S"
+    },
+    "desc": "主张以本地尺度组织生产与生活，优先本地资源与本地决策。",
+    "detail": "认为本地化的小规模单元更能维持生态承载与人际责任，远距离调配掩盖了真实成本。强调个人与小共同体就近解决事务，对外部依赖保持节制。",
+    "tenets": [
+      "本地尺度组织",
+      "就近决策",
+      "低外部依赖"
+    ],
+    "tenets_en": [
+      "organize at local scale",
+      "decisions close to home",
+      "low external dependency"
+    ],
+    "desc_en": "Advocates national priority, ecology-first stewardship, individual priority."
+  },
+  {
+    "name": "区域主义",
+    "name_en": "Regionalism",
+    "need": {
+      "NAT": "N",
+      "GOV": "L",
+      "COL": "M"
+    },
+    "desc": "主张在次国家层面强化区域自治与文化特性，权力向区域下移。",
+    "detail": "认为区域在语言、经济结构与生态条件上的差异需要差别化的制度安排。强调区域共同体的自我管理能力，同时保留在更广层面的民族共同体认同。",
+    "tenets": [
+      "区域自治",
+      "差别化制度",
+      "共同体自我管理"
+    ],
+    "tenets_en": [
+      "regional autonomy",
+      "differentiated institutions",
+      "community self-management"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, national priority, community priority."
+  },
+  {
+    "name": "分离主义",
+    "name_en": "Separatism",
+    "need": {
+      "NAT": "N",
+      "GOV": "L",
+      "CUL": "T"
+    },
+    "desc": "主张特定共同体脱离现有政治框架，建立独立的自我治理单位。",
+    "detail": "认为在既有框架内无法保障共同体利益与文化延续，独立是恢复自主的必要步骤。强调权力下沉与个人自主，主张以和平程序实现边界与制度重构。",
+    "tenets": [
+      "共同体独立",
+      "权力下沉",
+      "和平程序优先"
+    ],
+    "tenets_en": [
+      "community independence",
+      "devolution of power",
+      "peaceful procedure first"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, traditional cultural values, national priority."
+  },
+  {
+    "name": "国际主义",
+    "name_en": "Internationalism",
+    "need": {
+      "NAT": "C",
+      "COL": "M",
+      "ECO": "L"
+    },
+    "desc": "主张跨越边界的劳动者团结与共同利益优先于各自共同体的竞争。",
+    "detail": "认为资本与生产已跨越国界，相应的政治组织也应在跨国层面联合。强调集体行动与经济平等目标的一致性，反对以民族竞争逻辑处理共同问题。",
+    "tenets": [
+      "跨国团结",
+      "共同利益优先",
+      "反对民族竞争逻辑"
+    ],
+    "tenets_en": [
+      "cross-border solidarity",
+      "common interest first",
+      "against national rivalry logic"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, international openness, community priority."
+  },
+  {
+    "name": "反帝国主义",
+    "name_en": "Anti-Imperialism",
+    "need": {
+      "NAT": "C",
+      "ECO": "L",
+      "GOV": "L"
+    },
+    "desc": "主张反对强权对外部的支配与干预，支持各共同体的自决。",
+    "detail": "认为不平等的国际分工源自强权支配，纠正它需要同时改变结构并尊重自决。强调去中心化的秩序构想，反对以安全或发展为名的外部介入。",
+    "tenets": [
+      "反对外部支配",
+      "支持自决",
+      "去中心秩序"
+    ],
+    "tenets_en": [
+      "oppose external domination",
+      "support self-determination",
+      "decentralized order"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, international openness."
+  },
+  {
+    "name": "不结盟主义",
+    "name_en": "Non-Alignment",
+    "need": {
+      "NAT": "C",
+      "GOV": "L",
+      "SEC": "E"
+    },
+    "desc": "主张在竞争性集团之间保持独立判断，不预先绑定阵营。",
+    "detail": "认为加入集团会丧失自主并放大冲突风险，应就事论事地形成立场。强调世俗与中立的公共立场，避免以信仰或文明划线处理国际事务。",
+    "tenets": [
+      "独立判断",
+      "拒绝阵营绑定",
+      "世俗中立立场"
+    ],
+    "tenets_en": [
+      "independent judgment",
+      "refusal of bloc alignment",
+      "secular neutral stance"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, international openness, secular public life."
+  },
+  {
+    "name": "全球正义论",
+    "name_en": "Global Justice",
+    "need": {
+      "NAT": "C",
+      "ECO": "L",
+      "COL": "M",
+      "ENV": "S"
+    },
+    "desc": "主张以全球尺度审视分配与生态责任，义务不因边界而终止。",
+    "detail": "认为历史积累的不平等与生态负担跨越国界，相应的义务也应跨境承担。强调集体行动机制与再分配安排，把生态承载视为共同约束条件。",
+    "tenets": [
+      "跨境分配义务",
+      "历史责任追溯",
+      "生态共同约束"
+    ],
+    "tenets_en": [
+      "transboundary distributive duties",
+      "historical responsibility",
+      "shared ecological limits"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, international openness, ecology-first stewardship, community priority."
+  },
+  {
+    "name": "技术加速主义",
+    "name_en": "Accelerationism",
+    "need": {
+      "TECH": "K",
+      "GOV": "L",
+      "ECO": "R",
+      "ENV": "G"
+    },
+    "desc": "主张推进技术与资本的解域化进程，以加速穿越既有秩序的瓶颈。",
+    "detail": "认为既有制度已成为技术潜能的桎梏，应释放市场与技术的自发动能。强调以集中化的技术能力突破限制，同时保持去中心化的组织形态。",
+    "tenets": [
+      "释放技术动能",
+      "突破制度瓶颈",
+      "市场自发驱动"
+    ],
+    "tenets_en": [
+      "unleash technological momentum",
+      "break institutional bottlenecks",
+      "spontaneous market drive"
+    ],
+    "desc_en": "Advocates free-market economics, liberty and decentralized governance, development-first pragmatism, centralized technological control."
+  },
+  {
+    "name": "有效加速主义",
+    "name_en": "Effective Accelerationism",
+    "need": {
+      "TECH": "K",
+      "COL": "I",
+      "ECO": "R",
+      "GOV": "L"
+    },
+    "desc": "主张最大化技术创新速率，把个体能动与市场机制视为加速引擎。",
+    "detail": "认为技术进步的停滞是多数社会问题的根源，应移除约束以拉高创新速率。强调个人创造力与自由市场的作用，同时依赖集中化的算力与基础设施支撑。",
+    "tenets": [
+      "最大化创新速率",
+      "个体能动优先",
+      "算力基础设施集中"
+    ],
+    "tenets_en": [
+      "maximize innovation rate",
+      "individual agency first",
+      "centralized compute infrastructure"
+    ],
+    "desc_en": "Advocates free-market economics, liberty and decentralized governance, centralized technological control, individual priority."
+  },
+  {
+    "name": "技术怀疑论",
+    "name_en": "Techno-Skepticism",
+    "need": {
+      "TECH": "U",
+      "COL": "M",
+      "GOV": "A"
+    },
+    "desc": "主张对大规模技术系统保持警惕，必要时以权威手段设限。",
+    "detail": "认为复杂技术系统的风险难以由个体识别，需要集体性的审慎与制度约束。强调共同体对技术后果的连带责任，支持以监管手段限制数据采集与部署范围。",
+    "tenets": [
+      "集体审慎设限",
+      "技术后果连带",
+      "监管限制部署"
+    ],
+    "tenets_en": [
+      "collective precautionary limits",
+      "shared liability for tech effects",
+      "regulatory deployment limits"
+    ],
+    "desc_en": "Advocates centralized authority and order, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "新勒德主义",
+    "name_en": "Neo-Luddism",
+    "need": {
+      "TECH": "U",
+      "COL": "M",
+      "ECO": "L"
+    },
+    "desc": "主张抵制以效率为名替代人的技术与组织方式，维护劳动与生活的完整性。",
+    "detail": "认为自动化与集中化削弱了劳动者的议价能力与技艺传承，抵抗具有正当性。强调共同体层面的互助替代方案，反对以技术替代作为唯一进步标准。",
+    "tenets": [
+      "抵制替代性技术",
+      "维护技艺传承",
+      "共同体互助替代"
+    ],
+    "tenets_en": [
+      "resist labor-displacing tech",
+      "preserve craft transmission",
+      "community mutual-aid alternatives"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "适当技术论",
+    "name_en": "Appropriate Technology",
+    "need": {
+      "TECH": "U",
+      "ENV": "S",
+      "COL": "I"
+    },
+    "desc": "主张采用小规模、可理解、可自主维护的技术，而非依赖集中系统。",
+    "detail": "认为技术应与本地生态承载与维护能力匹配，复杂度超出掌控即构成依附。强调个人与小共同体能自行掌握与修理，同时降低对生态的负荷。",
+    "tenets": [
+      "小规模可维护",
+      "本地匹配生态",
+      "降低技术依附"
+    ],
+    "tenets_en": [
+      "small-scale maintainable",
+      "locally matched to ecology",
+      "reduce technological dependency"
+    ],
+    "desc_en": "Advocates ecology-first stewardship, privacy autonomy in technology, individual priority."
+  },
+  {
+    "name": "开源协作主义",
+    "name_en": "Open Source Cooperatism",
+    "need": {
+      "TECH": "U",
+      "COL": "M",
+      "GOV": "L",
+      "ECO": "L",
+      "CUL": "P"
+    },
+    "desc": "主张知识与生产资料以开源方式共同持有，协作过程向参与者开放。",
+    "detail": "认为封闭产权与集中平台阻碍了知识的累积与共享，应以开放许可与共同治理替代。强调参与者共同决定方向，成果按需分配而非按资本分配。",
+    "tenets": [
+      "开放许可共享",
+      "共同治理",
+      "按需分配成果"
+    ],
+    "tenets_en": [
+      "open licensing",
+      "shared governance",
+      "distribution by need"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, culturally progressive pluralism, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "密码朋克",
+    "name_en": "Cypherpunk",
+    "need": {
+      "TECH": "U",
+      "GOV": "L",
+      "COL": "I",
+      "SEC": "E",
+      "ECO": "L"
+    },
+    "desc": "主张以密码学工具保障个人隐私与通信自由，代码即自由的防线。",
+    "detail": "认为监控能力的不对称增长威胁个人自主，应以强加密与去中心协议对抗。强调世俗、无身份差别的开放网络，反对以实名与许可作为使用前提。",
+    "tenets": [
+      "强加密保障隐私",
+      "去中心协议",
+      "反对实名许可"
+    ],
+    "tenets_en": [
+      "strong encryption for privacy",
+      "decentralized protocols",
+      "against identity-gated access"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, liberty and decentralized governance, privacy autonomy in technology, secular public life, individual priority."
+  },
+  {
+    "name": "数据主权论",
+    "name_en": "Data Sovereignty",
+    "need": {
+      "TECH": "U",
+      "NAT": "N",
+      "GOV": "A"
+    },
+    "desc": "主张共同体对其成员数据的收集与流向拥有控制权，对外限制流出。",
+    "detail": "认为数据已成为关键资源，其跨境流动构成依附与风险。强调以权威手段确立本地存储与访问规则，同时限制平台对个人的过度采集。",
+    "tenets": [
+      "数据本地控制",
+      "限制跨境流出",
+      "约束平台采集"
+    ],
+    "tenets_en": [
+      "local data control",
+      "restrict cross-border flows",
+      "constrain platform collection"
+    ],
+    "desc_en": "Advocates centralized authority and order, national priority, privacy autonomy in technology."
+  },
+  {
+    "name": "数字主权主义",
+    "name_en": "Digital Sovereignty",
+    "need": {
+      "TECH": "K",
+      "NAT": "N",
+      "GOV": "A"
+    },
+    "desc": "主张以集中化的数字基础设施与管控能力保障共同体的自主。",
+    "detail": "认为数字基础设施与算力是新的主权要素，须由权威机构统筹建设与监管。强调对跨境平台与信息流动的集中管控，把技术能力视为共同体竞争力的基础。",
+    "tenets": [
+      "基础设施自主",
+      "集中统筹监管",
+      "跨境平台管控"
+    ],
+    "tenets_en": [
+      "infrastructural autonomy",
+      "centralized oversight",
+      "control of cross-border platforms"
+    ],
+    "desc_en": "Advocates centralized authority and order, national priority, centralized technological control."
+  },
+  {
+    "name": "人工智能审慎论",
+    "name_en": "AI Skepticism",
+    "need": {
+      "TECH": "U",
+      "COL": "M",
+      "ENV": "S"
+    },
+    "desc": "主张对智能系统的部署速度与规模设限，先评估社会与生态后果。",
+    "detail": "认为能力跃迁快于治理能力，应优先建立责任归属与后果评估机制。强调共同体承担连带后果，并关注大规模算力对能源与生态的压力。",
+    "tenets": [
+      "部署速度设限",
+      "责任归属明确",
+      "算力生态成本"
+    ],
+    "tenets_en": [
+      "cap deployment pace",
+      "clear liability attribution",
+      "ecological cost of compute"
+    ],
+    "desc_en": "Advocates ecology-first stewardship, privacy autonomy in technology, community priority."
+  },
+  {
+    "name": "太空开拓主义",
+    "name_en": "Space Expansionism",
+    "need": {
+      "TECH": "K",
+      "ENV": "G",
+      "NAT": "C"
+    },
+    "desc": "主张以大规模技术投入推进太空开发，把扩张视为化解资源约束的路径。",
+    "detail": "认为地球承载存在上限，向外拓展能同时获得资源与发展空间。强调集中化的工程组织与国际协作框架，对生态约束持乐观的技术替代立场。",
+    "tenets": [
+      "向外拓展资源",
+      "大型工程组织",
+      "国际协作框架"
+    ],
+    "tenets_en": [
+      "expand outward for resources",
+      "large-scale engineering",
+      "international coordination"
+    ],
+    "desc_en": "Advocates international openness, development-first pragmatism, centralized technological control."
+  },
+  {
+    "name": "生态现代主义",
+    "name_en": "Ecomodernism",
+    "need": {
+      "ENV": "G",
+      "TECH": "K",
+      "GOV": "A"
+    },
+    "desc": "主张以技术集约化 decoupling 人类活动与自然，用发展解决生态问题。",
+    "detail": "认为生态压力可通过能源与技术替代缓解，无需压缩发展规模。强调核能、集约化农业与城市化的生态效益，需要权威机构推动大规模部署。",
+    "tenets": [
+      "技术解耦生态",
+      "集约化替代",
+      "权威推动部署"
+    ],
+    "tenets_en": [
+      "technological decoupling",
+      "intensification as substitute",
+      "state-driven deployment"
+    ],
+    "desc_en": "Advocates centralized authority and order, development-first pragmatism, centralized technological control."
+  },
+  {
+    "name": "荒野保护主义",
+    "name_en": "Wilderness Preservation",
+    "need": {
+      "ENV": "S",
+      "CUL": "T",
+      "GOV": "A",
+      "TECH": "U"
+    },
+    "desc": "主张划定大面积无开发区域，以严格管制保护自然本底状态。",
+    "detail": "认为自然的价值不取决于其可利用性，应保留未经改造的空间。强调以权威手段强制设限，并借助传统中与自然共处的生活方式作为伦理资源。",
+    "tenets": [
+      "划定无开发区",
+      "强制管制保护",
+      "传统共处伦理"
+    ],
+    "tenets_en": [
+      "designate no-development zones",
+      "enforced protection",
+      "traditional coexistence ethics"
+    ],
+    "desc_en": "Advocates centralized authority and order, traditional cultural values, ecology-first stewardship, privacy autonomy in technology."
+  },
+  {
+    "name": "动物权利论",
+    "name_en": "Animal Rights",
+    "need": {
+      "ENV": "S",
+      "CUL": "P",
+      "COL": "I"
+    },
+    "desc": "主张把有感受能力的动物纳入道德考量，反对将其仅作为资源。",
+    "detail": "认为感知痛苦的能力构成道德地位的基础，不应因物种差异被排除。强调个体层面的伤害最小化，并以文化观念的更新推动制度改变。",
+    "tenets": [
+      "感受能力即道德地位",
+      "个体伤害最小化",
+      "推动制度更新"
+    ],
+    "tenets_en": [
+      "sentience as moral standing",
+      "minimize individual harm",
+      "drive institutional change"
+    ],
+    "desc_en": "Advocates culturally progressive pluralism, ecology-first stewardship, individual priority."
+  },
+  {
+    "name": "气候紧急论",
+    "name_en": "Climate Emergency Politics",
+    "need": {
+      "ENV": "S",
+      "GOV": "A",
+      "COL": "M",
+      "TECH": "K"
+    },
+    "desc": "主张以紧急状态级别的集中动员应对气候变化，压缩常规程序。",
+    "detail": "认为气候变化的时滞与不可逆性使渐进路径失效，需要快速、大规模的集中干预。强调共同体分摊转型成本，并依赖监测与数据系统评估执行。",
+    "tenets": [
+      "紧急级别动员",
+      "成本共同体分摊",
+      "数据系统评估"
+    ],
+    "tenets_en": [
+      "emergency-level mobilization",
+      "shared transition costs",
+      "data-driven monitoring"
+    ],
+    "desc_en": "Advocates centralized authority and order, ecology-first stewardship, centralized technological control, community priority."
+  },
+  {
+    "name": "环境正义论",
+    "name_en": "Environmental Justice",
+    "need": {
+      "ENV": "S",
+      "ECO": "L",
+      "COL": "M",
+      "NAT": "C",
+      "GOV": "A"
+    },
+    "desc": "主张环境负担与收益的分配不公须被纠正，弱势群体不应承担代价。",
+    "detail": "认为污染与资源开采的负担系统性地落在弱势群体身上，属于分配不公。强调共同体承担照护责任、经济层面的补偿机制，以及跨境责任的认定。",
+    "tenets": [
+      "负担分配纠偏",
+      "补偿机制",
+      "跨境责任认定"
+    ],
+    "tenets_en": [
+      "correct burden distribution",
+      "compensation mechanisms",
+      "transboundary liability"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, centralized authority and order, international openness, ecology-first stewardship, community priority."
+  },
+  {
+    "name": "可持续发展论",
+    "name_en": "Sustainable Development",
+    "need": {
+      "ENV": "G",
+      "ECO": "L",
+      "GOV": "A",
+      "COL": "M"
+    },
+    "desc": "主张在满足当代需要的同时不损害后代能力，增长与保护可兼容。",
+    "detail": "认为发展与保护并非零和，通过制度设计与技术改进可实现兼顾。强调权威机构的长期规划能力与共同体层面的责任分担，并以再分配缓冲转型冲击。",
+    "tenets": [
+      "代际兼顾",
+      "长期规划",
+      "转型冲击缓冲"
+    ],
+    "tenets_en": [
+      "intergenerational balance",
+      "long-term planning",
+      "buffering transition shocks"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, centralized authority and order, development-first pragmatism, community priority."
+  },
+  {
+    "name": "世俗人文主义",
+    "name_en": "Secular Humanism",
+    "need": {
+      "SEC": "E",
+      "COL": "I",
+      "NAT": "C",
+      "GOV": "L"
+    },
+    "desc": "主张以人的理性与经验为伦理基础，公共生活不依赖宗教权威。",
+    "detail": "认为道德判断可源于人的福祉与反思，无需诉诸超越性权威。强调个人自主与开放的文化交流，支持在国际层面以世俗人本框架讨论共同议题。",
+    "tenets": [
+      "理性为伦理基础",
+      "公共生活世俗",
+      "个人自主"
+    ],
+    "tenets_en": [
+      "reason as ethical basis",
+      "secular public life",
+      "individual autonomy"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, international openness, secular public life, individual priority."
+  },
+  {
+    "name": "严格政教分离",
+    "name_en": "Strict Secularism",
+    "need": {
+      "SEC": "E",
+      "GOV": "A",
+      "CUL": "P"
+    },
+    "desc": "主张以强制规范把宗教排除出公共领域，包括公共场合的表达。",
+    "detail": "认为公共空间的宗教表达会构成对他人的压力，须以权威规则加以限制。强调世俗性是公共制度的属性而非个人信仰的选择，同时保障文化多元。",
+    "tenets": [
+      "公共领域排除宗教",
+      "强制规范保障",
+      "信仰为私人事务"
+    ],
+    "tenets_en": [
+      "exclude religion from public sphere",
+      "enforced norms",
+      "faith as private matter"
+    ],
+    "desc_en": "Advocates centralized authority and order, culturally progressive pluralism, secular public life."
+  },
+  {
+    "name": "宗教多元论",
+    "name_en": "Religious Pluralism",
+    "need": {
+      "SEC": "F",
+      "CUL": "P",
+      "GOV": "L"
+    },
+    "desc": "主张多种信仰在公共领域平等共存，信仰表达受同等保护。",
+    "detail": "认为信仰多样性本身具有价值，制度应在各传统间保持中立并给予同等空间。强调自由治理下的自愿结社，反对以单一世俗标准压制宗教表达。",
+    "tenets": [
+      "多信仰平等共存",
+      "制度中立",
+      "信仰表达自由"
+    ],
+    "tenets_en": [
+      "equal coexistence of faiths",
+      "institutional neutrality",
+      "freedom of religious expression"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, faith in public life."
+  },
+  {
+    "name": "灵性个人主义",
+    "name_en": "Spiritual Individualism",
+    "need": {
+      "SEC": "F",
+      "COL": "I",
+      "GOV": "L"
+    },
+    "desc": "主张信仰是个人的内在事务，不受制度或共同体权威的约束。",
+    "detail": "认为灵性体验的真实性来自个人直接体认，组织化的中介会削弱其本意。强调个人自主优先于集体教条，反对以权威强制统一信仰实践。",
+    "tenets": [
+      "信仰个人体认",
+      "拒绝组织中介",
+      "自主优先于教条"
+    ],
+    "tenets_en": [
+      "personal spiritual experience",
+      "reject institutional mediation",
+      "autonomy over dogma"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, faith in public life, individual priority."
+  },
+  {
+    "name": "宗教社会主义",
+    "name_en": "Religious Socialism",
+    "need": {
+      "SEC": "F",
+      "ECO": "L",
+      "COL": "M"
+    },
+    "desc": "把信仰中的互助与公义要求落实为对经济结构的改造主张。",
+    "detail": "认为信仰伦理要求对弱势者的实际关怀，而非仅止于个人德行。强调共同体成员间的互助义务与财富的共享责任，主张制度应体现对穷人的优先。",
+    "tenets": [
+      "信仰落实为结构",
+      "互助义务",
+      "穷人优先"
+    ],
+    "tenets_en": [
+      "faith enacted structurally",
+      "mutual aid duty",
+      "preferential option for the poor"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, faith in public life, community priority."
+  },
+  {
+    "name": "宗教自由论",
+    "name_en": "Religious Liberty",
+    "need": {
+      "SEC": "F",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "T"
+    },
+    "desc": "主张信仰与实践免于国家干预，良心自由是不可让渡的个人权利。",
+    "detail": "认为信仰判断属于个人良知领域，任何强制统一都构成侵犯。强调信仰共同体自治与分权治理，反对以行政手段规定信仰内容与仪式。",
+    "tenets": [
+      "良心自由",
+      "信仰共同体自治",
+      "反对强制统一"
+    ],
+    "tenets_en": [
+      "freedom of conscience",
+      "faith community autonomy",
+      "against imposed uniformity"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, traditional cultural values, faith in public life, individual priority."
+  },
+  {
+    "name": "世俗女权主义",
+    "name_en": "Secular Feminism",
+    "need": {
+      "SEC": "E",
+      "CUL": "P",
+      "COL": "M"
+    },
+    "desc": "主张以世俗框架推进性别平等，避免以宗教传统界定角色。",
+    "detail": "认为性别角色的历史辩护多借助宗教权威，平等推进需要世俗的公共理由。强调共同体层面的制度支持与文化观念的更新并重。",
+    "tenets": [
+      "世俗公共理由",
+      "制度支持平等",
+      "文化观念更新"
+    ],
+    "tenets_en": [
+      "secular public reasoning",
+      "institutional support for equality",
+      "cultural norm change"
+    ],
+    "desc_en": "Advocates culturally progressive pluralism, secular public life, community priority."
+  },
+  {
+    "name": "信仰环保主义",
+    "name_en": "Faith-Based Environmentalism",
+    "need": {
+      "SEC": "F",
+      "ENV": "S",
+      "COL": "M"
+    },
+    "desc": "把守护自然视为信仰义务，以共同体行动落实生态责任。",
+    "detail": "认为受托守护的观念赋予生态保护以伦理动机，超越效用计算。强调信仰共同体的集体行动与地方层面的实际保育实践。",
+    "tenets": [
+      "守护为信仰义务",
+      "共同体保育行动",
+      "超越效用计算"
+    ],
+    "tenets_en": [
+      "stewardship as religious duty",
+      "community conservation action",
+      "beyond utility calculation"
+    ],
+    "desc_en": "Advocates ecology-first stewardship, faith in public life, community priority."
+  },
+  {
+    "name": "信仰社会正义论",
+    "name_en": "Faith-Based Social Justice",
+    "need": {
+      "SEC": "F",
+      "ECO": "L",
+      "NAT": "C"
+    },
+    "desc": "以信仰伦理要求推动分配正义，关注跨境的贫困与不平等。",
+    "detail": "认为信仰传统中的济贫与公义要求须转化为结构性主张。强调再分配与国际层面的援助义务，把弱势者的处境视为共同体的道德议题。",
+    "tenets": [
+      "济贫伦理结构化",
+      "再分配主张",
+      "跨境援助义务"
+    ],
+    "tenets_en": [
+      "structured charity ethics",
+      "redistributive claims",
+      "transboundary aid duties"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, international openness, faith in public life."
+  },
+  {
+    "name": "世俗技术治理",
+    "name_en": "Secular Technocracy",
+    "need": {
+      "SEC": "E",
+      "TECH": "K",
+      "GOV": "A"
+    },
+    "desc": "主张以世俗、基于证据的技术官僚体系处理公共事务。",
+    "detail": "认为政策应依据可检验的证据而非信仰权威或民意波动。强调集中化的专业能力建设与世俗公共框架下的统一标准。",
+    "tenets": [
+      "证据优先于权威",
+      "专业能力集中",
+      "世俗统一标准"
+    ],
+    "tenets_en": [
+      "evidence over authority",
+      "centralized expertise",
+      "uniform secular standards"
+    ],
+    "desc_en": "Advocates centralized authority and order, centralized technological control, secular public life."
+  },
+  {
+    "name": "信仰传统主义",
+    "name_en": "Faith Traditionalism",
+    "need": {
+      "SEC": "F",
+      "CUL": "T",
+      "NAT": "N"
+    },
+    "desc": "主张以既有信仰传统作为共同体秩序与文化延续的根基。",
+    "detail": "认为信仰传统承载了代际检验的生活方式，是社会凝聚的必要条件。强调共同体本位的认同与对既有秩序的维护，对快速世俗化持批评态度。",
+    "tenets": [
+      "信仰为秩序根基",
+      "维护既有秩序",
+      "共同体本位认同"
+    ],
+    "tenets_en": [
+      "faith as order's foundation",
+      "preserve established order",
+      "community-centered identity"
+    ],
+    "desc_en": "Advocates traditional cultural values, national priority, faith in public life."
+  },
+  {
+    "name": "和平主义",
+    "name_en": "Pacifism",
+    "need": {
+      "NAT": "C",
+      "GOV": "L",
+      "COL": "M"
+    },
+    "desc": "主张以非暴力方式解决冲突，反对以武力作为政策工具。",
+    "detail": "认为暴力的代价与不可逆后果使其难以正当化，冲突应经由协商与调解处理。强调共同体层面的和解机制与跨国合作，反对强制性手段。",
+    "tenets": [
+      "非暴力解决冲突",
+      "协商替代强制",
+      "跨国和解机制"
+    ],
+    "tenets_en": [
+      "nonviolent conflict resolution",
+      "negotiation over coercion",
+      "transnational reconciliation"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, international openness, community priority."
+  },
+  {
+    "name": "反军国主义",
+    "name_en": "Anti-Militarism",
+    "need": {
+      "NAT": "C",
+      "ECO": "L",
+      "COL": "I"
+    },
+    "desc": "主张压缩军事力量与军事开支，把资源转向民生用途。",
+    "detail": "认为常备军事结构会自我强化并挤占公共支出，应优先保障民生与个人自由。强调国际合作替代军备竞争，反对以安全名义扩张强制机构。",
+    "tenets": [
+      "压缩军事开支",
+      "民生优先",
+      "国际合作替代军备"
+    ],
+    "tenets_en": [
+      "cut military spending",
+      "welfare priority",
+      "cooperation over arms rivalry"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, international openness, individual priority."
+  },
+  {
+    "name": "公民自由论",
+    "name_en": "Civil Libertarianism",
+    "need": {
+      "SEC": "E",
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "TECH": "U"
+    },
+    "desc": "主张个人自由权利优先于集体目标，公共权力不得干预私人生活。",
+    "detail": "认为良心、言论与生活方式的多样性需要严格限权来保障。强调世俗框架下的平等保护与个人自主，反对以多数偏好或共同体利益压缩自由。",
+    "tenets": [
+      "自由优先于集体",
+      "严格限权",
+      "世俗平等保护"
+    ],
+    "tenets_en": [
+      "liberty over collective goals",
+      "strict limits on power",
+      "secular equal protection"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, privacy autonomy in technology, secular public life, individual priority."
+  },
+  {
+    "name": "隐私权优先",
+    "name_en": "Privacy Primacy",
+    "need": {
+      "SEC": "E",
+      "TECH": "U",
+      "COL": "I"
+    },
+    "desc": "主张把个人隐私作为基本权利，对数据采集设定严格默认禁止。",
+    "detail": "认为隐私是个人自主与人格发展的前提，不能以便利或效率交换。强调技术设计应默认最小化采集，个人对自身数据保有排他控制。",
+    "tenets": [
+      "隐私为基本权利",
+      "默认禁止采集",
+      "个人排他控制"
+    ],
+    "tenets_en": [
+      "privacy as fundamental right",
+      "opt-in collection by default",
+      "exclusive personal control"
+    ],
+    "desc_en": "Advocates privacy autonomy in technology, secular public life, individual priority."
+  },
+  {
+    "name": "言论自由绝对论",
+    "name_en": "Free Speech Absolutism",
+    "need": {
+      "GOV": "L",
+      "COL": "I",
+      "CUL": "P",
+      "NAT": "C"
+    },
+    "desc": "主张表达不受内容审查，错误的回应方式是更多表达而非限制。",
+    "detail": "认为判断表达正当性的权力一旦交给机构就会被滥用，应容忍冒犯性内容。强调个人自主与文化多元的自我纠错能力，反对以秩序名义设限。",
+    "tenets": [
+      "表达不受审查",
+      "更多表达替代限制",
+      "容忍冒犯内容"
+    ],
+    "tenets_en": [
+      "no content-based censorship",
+      "counter-speech over restriction",
+      "tolerate offensive content"
+    ],
+    "desc_en": "Advocates liberty and decentralized governance, culturally progressive pluralism, international openness, individual priority."
+  },
+  {
+    "name": "数据最小化论",
+    "name_en": "Data Minimalism",
+    "need": {
+      "TECH": "U",
+      "GOV": "A"
+    },
+    "desc": "主张以制度强制限制数据采集范围与留存期限，只收集必要项。",
+    "detail": "认为过量采集本身构成风险，无论用途善意与否都应先设上限。强调由权威机构设定采集白名单与最短留存期，并对违反者施加责任。",
+    "tenets": [
+      "采集范围法定",
+      "最短留存期限",
+      "违规责任追究"
+    ],
+    "tenets_en": [
+      "statutory collection scope",
+      "minimum retention period",
+      "enforced liability"
+    ],
+    "desc_en": "Advocates centralized authority and order, privacy autonomy in technology."
+  },
+  {
+    "name": "公共资源治理论",
+    "name_en": "Commons Governance",
+    "need": {
+      "ECO": "L",
+      "COL": "M",
+      "ENV": "S",
+      "TECH": "U"
+    },
+    "desc": "主张对共享资源由使用者共同制定规则，而非交由国家或市场独占。",
+    "detail": "认为公共资源可由使用者自组织地长期维护，需要的是清晰的边界与协商机制。强调共同体成员的规则制定权、生态约束，以及治理过程对参与者的透明。",
+    "tenets": [
+      "使用者共同立规",
+      "清晰边界与协商",
+      "治理过程透明"
+    ],
+    "tenets_en": [
+      "user-made rules",
+      "clear boundaries with deliberation",
+      "transparent governance"
+    ],
+    "desc_en": "Advocates economic equality and redistribution, ecology-first stewardship, privacy autonomy in technology, community priority."
+  }
+]

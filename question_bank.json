@@ -887,8 +887,7 @@
         "t": "我直接在群里说这不好笑，并把为什么让人不舒服讲清楚，冒犯的话不该被笑着带过。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I said directly in the group that it was not funny, and explained clearly why it made people uncomfortable, and offensive words should not be laughed at and brought."
       },
@@ -902,8 +901,7 @@
       {
         "t": "我直接向群主举报，要求把发这种内容的人踢出去，群里的底线得有人守。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I directly reported to the group owner and asked that the person who sent this content be kicked out, and the bottom line in the group must be observed."
       },
@@ -1002,8 +1000,7 @@
         "t": "应该请，大学就该兼听则明，让学生接触不同甚至刺耳的观点才能学会思辨。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "It should be requested that the university should listen to it at the same time, so that students can be exposed to different and even harsh perspectives to learn to think."
       },
@@ -1011,8 +1008,7 @@
         "t": "不该请，他的某些言论可能冲击、误导学生，校园环境需要谨慎把关。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "No, some of his remarks may shock and mislead students, and the campus environment needs to be carefully controlled."
       },
@@ -1033,8 +1029,7 @@
       {
         "t": "校方直接审核把关，对演讲内容做合规审查，不合适的一律不批。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "The school directly reviews and checks the compliance of the speech content, and does not approve any inappropriate speech content."
       },
@@ -1104,7 +1099,6 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "Artistic freedom is a priority. It should not be withdrawn because someone is uncomfortable. Expressing diversity is the vitality of culture."
@@ -1113,8 +1107,7 @@
         "t": "应该下架，避免对特定群体的持续伤害，公共展陈得考虑观看者的感受。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "Shelves should be removed to avoid sustained harm to specific groups, and public displays should take into account the viewer's feelings."
       },
@@ -1122,8 +1115,7 @@
         "t": "不如加个内容说明标签，把创作背景讲清楚，让观众自己判断是否观看，既不删也不强迫。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "It is better to add a content description label, explain the creative background clearly, and let the audience judge for themselves whether to watch, without deleting or forcing."
       },
@@ -1144,8 +1136,7 @@
       {
         "t": "物业应当立刻把攻击性标语清除，公共区域不该成为攻击特定群体的地方。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "Property should remove offensive slogans immediately and common areas should not be a place to target specific groups."
       },
@@ -1153,7 +1144,6 @@
         "t": "应该保留，贴标语也是表达，社区公告栏本就向所有住户开放。",
         "tags": [
           "GOV:L",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "It should be kept, the tagline is also an expression, and the community bulletin board is open to all residents."
@@ -1206,16 +1196,14 @@
         "t": "我如实、用孩子能懂的方式回答，不回避，觉得该让他早点建立正确认知。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I answered truthfully and in a way that my child could understand. I did not avoid it, and I felt that it was time for him to establish a correct cognition sooner."
       },
       {
         "t": "我先把话题转开，等他再大些、心智更成熟了再聊这个，现在说太早。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I will turn the subject away first, and then talk about this when he is older and his mind is more mature, it is too early to say."
       },
@@ -1283,8 +1271,7 @@
         "tags": [
           "GOV:A",
           "CUL:P",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ],
         "t_en": "Legislation must be enacted to explicitly prohibit hate speech against ethnic groups and identities, and the dignity of vulnerable groups must be protected by law."
       },
@@ -2600,8 +2587,7 @@
         "t": "应该穿校服，大家一样、不比穿戴、还显整齐，平等感重要。",
         "tags": [
           "CUL:T",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "School uniforms should be worn, everyone is the same, no more than wearing, but also neat, the sense of equality is important."
       },
@@ -2610,7 +2596,6 @@
         "tags": [
           "CUL:P",
           "GOV:L",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "They should not be unified. School uniforms depress the child's personality. Wearing freedom is also self-expression."
@@ -2685,8 +2670,7 @@
         "t": "严禁体罚，无论什么理由都不能动手打学生，身心健康底线不能破。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "Corporal punishment is strictly prohibited, students cannot be beaten for any reason, and the bottom line of physical and mental health cannot be broken."
       },
@@ -2694,8 +2678,7 @@
         "t": "适度惩戒有必要，太温吞管不住违纪的，一点威严还是得有。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "Moderate discipline is necessary. If you are too warm to control the discipline, you still need to have a little majesty."
       },
@@ -2854,8 +2837,7 @@
         "t": "应系统教，科学的性知识进课堂，孩子才不会被误导。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "Should be taught systematically, scientific sexual knowledge into the classroom, so that children will not be misled."
       },
@@ -2863,16 +2845,14 @@
         "t": "这种事家长教就行，学校别越俎代庖，家里讲更合适。",
         "tags": [
           "CUL:T",
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ],
         "t_en": "This kind of thing can be taught by parents, the school should not be more vigorous, and it is more appropriate to talk at home."
       },
       {
         "t": "设为选修，想学的来、不想的不强求，给选择空间。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "Set it as an elective. If you want to learn and don't want to force, give it space to choose."
       },
@@ -2880,16 +2860,14 @@
         "t": "校方统一必修，既然重要就该人人都学，不能看家长脸色。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "The school is unified and compulsory. Since it is important, everyone should learn, not see the parents' faces."
       },
       {
         "t": "我反对，这种内容不适合进校园。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I object that this kind of content is not suitable for entering the campus."
       },
@@ -3075,8 +3053,7 @@
         "t": "应该学当地语言，融入社会、办事沟通都方便，基本的语言门槛合理。",
         "tags": [
           "NAT:N",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "You should learn the local language, it is convenient to integrate into society and communicate with others, and the basic language threshold is reasonable."
       },
@@ -3084,8 +3061,7 @@
         "t": "双语共存就好，母语和当地语言都保留，多元也挺好。",
         "tags": [
           "NAT:C",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "Bilingualism is good, mother tongue and local language are retained, and diversity is also good."
       },
@@ -3093,8 +3069,7 @@
         "t": "不强求，愿学不学随个人，别用语言绑住人家。",
         "tags": [
           "NAT:C",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "Do not force, willing to learn, do not learn with the individual, do not use language to tie people."
       },
@@ -3116,8 +3091,7 @@
         "t": "入乡随俗，到了别人的地方就按人家的规矩来，少惹摩擦。",
         "tags": [
           "NAT:N",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "Enter the hometown and follow the customs. When you go to someone else's place, follow their rules and avoid friction."
       },
@@ -3125,8 +3099,7 @@
         "t": "多元共存、互相尊重，不同习俗各过各的、彼此包容就好。",
         "tags": [
           "NAT:C",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "It is good to live in pluralism, respect each other, have different customs, and be tolerant of each other."
       },
@@ -3255,8 +3228,7 @@
         "t": "应多办多元节庆，促进不同族群融合、互相了解。",
         "tags": [
           "CUL:P",
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ],
         "t_en": "Multiple festivals should be held to promote the integration and mutual understanding of different ethnic groups."
       },
@@ -3264,8 +3236,7 @@
         "t": "主打本土传统，节庆就该凸显自己的文化根脉。",
         "tags": [
           "CUL:T",
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ],
         "t_en": "Focusing on local traditions, the festival should highlight its cultural roots."
       },
@@ -3357,7 +3328,6 @@
         "tags": [
           "NAT:C",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "It should be shared and accepted, and the responsibility for humanity should be borne by everyone, not all of which should be pushed to others."
@@ -3365,8 +3335,7 @@
       {
         "t": "量力而行、少接收些，自己家底有限，先顾好本地再说。",
         "tags": [
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ],
         "t_en": "Do your best and receive less. Your home base is limited. Take care of the local area first."
       },
@@ -3389,7 +3358,6 @@
         "tags": [
           "ECO:L",
           "NAT:C",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "All are included in public schools, and local children go to school together, which is the most equal."
@@ -3398,8 +3366,7 @@
         "t": "另设过渡校，先集中适应再融入，管理上更顺。",
         "tags": [
           "NAT:N",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "Another transitional school is set up, which is centrally adapted and integrated first, and is more smooth in management."
       },
@@ -3454,8 +3421,7 @@
         "t": "简化流程，降低门槛让归化更顺畅，包容为上。",
         "tags": [
           "NAT:C",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "Simplify the process, lower the barrier, and make naturalization smoother and more inclusive."
       },
@@ -3972,7 +3938,6 @@
         "tags": [
           "GOV:A",
           "ENV:S",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "Vaccination should be compulsory, for the sake of mass immunization, and individual freedom should give way to public health."
@@ -3982,7 +3947,6 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "SEC:F",
           "COL:I"
         ],
         "t_en": "Voluntarily, beating or not beating is my own choice and physical risk, and should not be forced."
@@ -3990,8 +3954,7 @@
       {
         "t": "仅对高危人群强制，普通人群自愿，精准些。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ],
         "t_en": "Compulsory only for high-risk groups, voluntary and accurate for the general population."
       },
@@ -4101,7 +4064,6 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "The patient decides for himself, the body is his own, and the right to refuse treatment should be respected."
@@ -4110,16 +4072,14 @@
         "t": "应尽力抢救，只要有一线希望就不该放弃，生命至上。",
         "tags": [
           "CUL:T",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "We should do our best to rescue, as long as there is a glimmer of hope, we should not give up, and life is supreme."
       },
       {
         "t": "生前的预嘱应当有效，提前写好的意愿得被照办。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "The precepts before death should be valid, and the will to write in advance must be fulfilled."
       },
@@ -4252,8 +4212,7 @@
         "t": "严管、禁止临床应用，人类生殖细胞编辑风险太大、伦理底线不能破。",
         "tags": [
           "GOV:A",
-          "ENV:S",
-          "SEC:F"
+          "ENV:S"
         ],
         "t_en": "Strictly control and prohibit clinical application, human germ cell editing is too risky, and the ethical bottom line cannot be broken."
       },
@@ -4261,8 +4220,7 @@
         "t": "审慎开放研究，在严格监管下探索，不能完全关上科学的大门。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "Carefully open research and exploration under strict supervision cannot completely close the door to science."
       },
@@ -4375,8 +4333,7 @@
         "tags": [
           "GOV:A",
           "ECO:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I will push companies to disclose salary ranges for the same position, and support legislation that requires companies to regularly disclose gender pay gaps - transparency itself can create pressure to allow injustices to be seen and corrected in the sun."
       },
@@ -4393,7 +4350,6 @@
         "tags": [
           "GOV:A",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I advocate that a third party or labor department conduct a gender pay audit on the company, and publicize the results to all employees, and use the facts to urge management to close the gap."
@@ -4424,8 +4380,7 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ],
         "t_en": "I would vote for a clear minimum percentage of female seats on the board, because without hard targets, power structures tend not to loosen themselves towards diversity."
       },
@@ -4441,8 +4396,7 @@
         "t": "我赞成公司自己定一个提升女性高管比例的软目标，用导师制和晋升通道去引导，而不是用强制名额来一刀切。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I agree that the company itself has set a soft goal to increase the proportion of female executives, using mentorship and promotion channels to guide them, rather than using mandatory quotas to be one-size-fits-all."
       },
@@ -4465,7 +4419,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I support the splitting of paid parental leave to both parents and encourage fathers to take it too - children need two people and the system should not assume that bringing a child is only a matter for the mother."
@@ -4473,8 +4426,7 @@
       {
         "t": "我觉得以母亲休为主更自然，她要哺乳和恢复，父亲在外挣钱养家是更顺当的安排，不必强行平分。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I think it is more natural to focus on the mother Hugh, she needs to breastfeed and recover, and it is more appropriate for her father to earn money and support the family outside, so there is no need to force an equal division."
       },
@@ -4497,7 +4449,6 @@
         "tags": [
           "CUL:P",
           "GOV:L",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "I will call people by their pronouns directly, which does not require me to understand all the reasons behind it, and respecting one's self-definition is a minimum of politeness."
@@ -4505,16 +4456,14 @@
       {
         "t": "我倾向于按医学上出生的性别来称呼，因为那是我从小习惯也最不会出错的参照，不希望被要求违背直觉。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I tend to call it by medically-born sex because that's the reference I grew up with the least amount of mistakes and don't want to be asked to go against my instincts."
       },
       {
         "t": "我认为大家不必被强制统一称呼方式，但也不该故意去刺伤对方，顺其自然、彼此留点余地就好。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I don't think people need to be forced to unify the way they are called, but they shouldn't intentionally stab each other, just let it happen naturally and leave room for each other."
       },
@@ -4530,7 +4479,6 @@
         "tags": [
           "CUL:T",
           "GOV:L",
-          "SEC:F",
           "COL:I"
         ],
         "t_en": "I think repeatedly emphasizing and correcting the name makes the small things very tense, everyone gets along naturally, and there is no need to hang the gender label every day."
@@ -4554,7 +4502,6 @@
         "tags": [
           "GOV:A",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I support hiring to hide irrelevant information such as name, gender, marital status, etc., so that abilities can be seen in anonymity first, and artificial bias can be blocked in the first step."
@@ -4571,16 +4518,14 @@
         "t": "我主张给求职者畅通的举报渠道，一旦查实存在基于性别的隐性歧视就重罚，用成本倒逼企业收敛。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I advocate for unimpeded reporting channels for job seekers. Once it is confirmed that there is hidden discrimination based on gender, severe penalties will be imposed, and companies will be forced to converge with costs."
       },
       {
         "t": "我更看好先把面试官和HR的偏见意识培训到位，从人的观念改起，比冷冰冰的处罚更能治本。",
         "tags": [
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I prefer to train the bias awareness of the interviewer and HR first. From the perspective of people, it is more effective than cold punishment to cure the root cause."
       }
@@ -4597,16 +4542,14 @@
         "t": "我认为比赛分组应按出生时的性别来定，这样在体能标准上最清楚、最不容易引发争议。",
         "tags": [
           "CUL:T",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I think that the grouping of the competition should be based on the sex at birth, which is the clearest and least controversial in terms of physical standards."
       },
       {
         "t": "我倾向让选手按自己认同的性别参赛，社会的包容应当延伸到赛场，身份认同值得被尊重。",
         "tags": [
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I tend to let players compete according to their gender identity, and social inclusion should extend to the arena, and identity should be respected."
       },
@@ -4614,8 +4557,7 @@
         "t": "我建议另设一个不限性别的公开组，既保留传统分组，也给所有人一个公平同场的机会。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I recommend creating a separate, gender-neutral, open group that preserves the traditional grouping and gives everyone a fair chance to participate."
       },
@@ -4637,8 +4579,7 @@
         "t": "我认为一旦有可信指控就应立即停职调查、严处不贷，对越界者零容忍才能保护大多数人。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I believe that if there are credible allegations, the investigation should be suspended immediately, strictly enforced, and there should be zero tolerance for cross-border people to protect the majority of people."
       },
@@ -4653,8 +4594,7 @@
         "t": "我支持设立不受部门领导干预的独立投诉渠道，让受害者敢说、说了有人管，而不是被捂在内部。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I support the establishment of an independent complaint channel free from the intervention of department leaders, so that victims can speak up and say that someone is in charge, rather than being covered up internally."
       },
@@ -4676,7 +4616,6 @@
         "t": "换作是我可能会先忍一忍、尽量避开那个人，毕竟撕破脸在这环境里代价太大。",
         "tags": [
           "CUL:T",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "In other words, I may put up with it first and try to avoid the person, after all, tearing my face is too costly in this environment."
@@ -4700,7 +4639,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I would take the initiative to encourage her to choose science and engineering according to her interests, and take her to see a female engineer as an example. Prejudice should not decide her life for her."
@@ -4708,8 +4646,7 @@
       {
         "t": "我觉得孩子喜欢什么就学什么，不用特意按性别去推，顺其自然反而最自在。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I think that children like to learn what they like, do not need to push according to gender, and are naturally the most comfortable."
       },
@@ -4731,8 +4668,7 @@
         "t": "我认为公司不该强制任何人怎么化妆怎么穿，只要整洁得体，外表是个人自己的事。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I think that the company should not force anyone how to wear makeup. As long as it is neat and tidy, the appearance is a personal matter."
       },
@@ -4756,7 +4692,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "If you really want to set the standard, I think that men and women should use the same set of scales, and you can't ask for makeup without restricting men."
@@ -4779,8 +4714,7 @@
         "t": "我认为只要证据成立就应立即追究刑责并签发保护令，家暴不是私事，受害者需要国家兜底保护。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I believe that as long as the evidence is established, criminal responsibility should be immediately investigated and a protection order should be issued. Domestic violence is not a private matter, and victims need the protection of the state."
       },
@@ -4788,8 +4722,7 @@
         "t": "我倾向先由社区调解、给双方冷静机会，能和解就不一定非要走到处罚那一步。",
         "tags": [
           "CUL:T",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I tend to mediate with the community first, giving both parties a chance to calm down, and being able to reconcile doesn't have to be a punitive step."
       },
@@ -4798,7 +4731,6 @@
         "tags": [
           "GOV:A",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I support the establishment of shelters to pick up victims and hold perpetrators accountable, and the two lines of protection and accountability are no less."
@@ -5293,16 +5225,14 @@
         "t": "我认为对初犯、轻微、无受害人的案子应尽量不起诉或转处，留个案底毁的是一个年轻人的一生。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I think we should try not to prosecute or divert cases that are first-time offenders, minor, and victimless. It is a young person's life that is ruined at the end of each case."
       },
       {
         "t": "我主张只要触犯法条就该起诉，法不能有弹性，否则人人都拿“轻”当借口。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I advocate that as long as the law is violated, the law should be prosecuted, and the law must not be flexible, otherwise everyone will use \"light\" as an excuse."
       },
@@ -5316,8 +5246,7 @@
       {
         "t": "我觉得得看具体情节和社会危害，不能一句话全宽、也不能一刀切全诉。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ],
         "t_en": "I think it depends on the specific plot and social harm. It can't be a full sentence, nor can it be a one-size-fits-all complaint."
       },
@@ -5374,16 +5303,14 @@
       {
         "t": "我认为只要证据是刑讯来的就必须排除、并追查责任人，靠打出来的口供只会制造冤案。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I think that as long as the evidence comes from torture, the person responsible must be excluded and investigated, and confessions will only create an unjust case."
       },
       {
         "t": "我理解在极少数重大案件里，适度突破能救命，完全不容变通会束住办案的手脚。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I understand that in a very few major cases, a moderate breakthrough can save lives, and it is completely unchangeable that it will constrain the handling of the case."
       },
@@ -5406,7 +5333,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I think that medical abstinence should be taken instead of being thrown into prison for purely holding self-use. Addiction is a disease and should not be punished."
@@ -5415,8 +5341,7 @@
         "t": "我主张哪怕量小也要保持重刑威慑，松一点口子吸毒的人就会多起来。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I advocate that even if the amount is small, the deterrence of heavy punishment should be maintained, and the number of people who take drugs with a relaxed mouth will increase."
       },
@@ -5431,16 +5356,14 @@
         "t": "我倾向把成年人自用持有除罪化，国家不该为个人的身体选择当法官。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I tend to decriminalize adult self-use possession, and the state should not choose to be a judge for an individual's body."
       },
       {
         "t": "我认为对毒品就该零容忍、从严打击，任何形式的松动都不可取。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I think that there should be zero tolerance and severe crackdown on drugs, and any kind of loosening is not desirable."
       },
@@ -5507,8 +5430,7 @@
         "t": "我支持推广恢复性司法，让加害者直面受害者、弥补伤害，比单纯关起来更能修复关系。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I support the promotion of restorative justice, so that the perpetrator can face the victim, repair the harm, and repair the relationship more than just locking up."
       },
@@ -5516,16 +5438,14 @@
         "t": "我认为该判刑就判刑，刑罚的威慑和教育功能不能让位于私下和解。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I believe that the sentence is the sentence, and the deterrent and educational functions of the sentence cannot give way to private reconciliation."
       },
       {
         "t": "我倾向按罪行性质来定，轻微、双方愿意的用和解，严重的仍走刑罚。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I tend to decide according to the nature of the crime, minor, both sides are willing to use reconciliation, serious still go to punishment."
       },
@@ -5547,8 +5467,7 @@
         "t": "我认为警察盘查必须基于具体的合理怀疑，不能凭长相和直觉随手拦人。",
         "tags": [
           "GOV:L",
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ],
         "t_en": "I believe that the police investigation must be based on specific and reasonable suspicions, and should not be based on appearance and intuition."
       },
@@ -5556,8 +5475,7 @@
         "t": "我支持在特定时段、敏感区域随机盘查以震慑犯罪，公共安全优先于个别不适。",
         "tags": [
           "GOV:A",
-          "TECH:K",
-          "SEC:F"
+          "TECH:K"
         ],
         "t_en": "I support random checks at specific times and sensitive areas to deter crime, and public safety takes precedence over individual discomfort."
       },
@@ -5613,8 +5531,7 @@
       {
         "t": "我主张不知法不能作为免责理由，否则人人都能拿“不懂”当挡箭牌，法就立不住。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I advocate that ignorance of the law cannot be used as a reason for exemption, otherwise everyone can use \"don't understand\" as a shield, and the law cannot stand."
       },
@@ -5623,7 +5540,6 @@
         "tags": [
           "GOV:L",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I believe that the law should be popularized and the liability should be reduced as appropriate if the violation is really due to lack of information or unintentional violation, and the punishment should be described as the degree of fault."
@@ -5647,7 +5563,6 @@
         "tags": [
           "GOV:L",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I support universal bail on remand for most non-violent defendants, who should not be deprived of their liberty before conviction."
@@ -5655,8 +5570,7 @@
       {
         "t": "我认为保释得严格审查逃跑风险，不能轻易放，否则人跑了案子就黄了。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I think that bail must be strictly reviewed for the risk of escape, and it cannot be released easily, otherwise the case will be yellow if the person runs away."
       },
@@ -5672,7 +5586,6 @@
         "tags": [
           "ECO:L",
           "GOV:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I am not accustomed to the phenomenon of having money to protect and squatting without money, which has turned justice into a clearly priced business."
@@ -5696,8 +5609,7 @@
         "tags": [
           "GOV:L",
           "GOV:A",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ],
         "t_en": "I believe that major cases should be heard live, sunshine is the best preservative, and public supervision can force justice."
       },
@@ -5706,7 +5618,6 @@
         "tags": [
           "GOV:L",
           "TECH:U",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "I advocate that cases involving privacy, minors are not public, and it is more important to protect the parties than to meet the onlookers."
@@ -5715,8 +5626,7 @@
         "t": "我支持把生效判决书上网公开，既接受监督又不打扰庭审现场。",
         "tags": [
           "GOV:L",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ],
         "t_en": "I support the publication of the effective judgment on the Internet, both under supervision and without disturbing the scene of the trial."
       },
@@ -7378,16 +7288,14 @@
         "t": "我认为讽刺恶搞该受表达自由保护，幽默和批评本就是社会的疫苗。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I think satire should be protected by freedom of expression, and humor and criticism are the vaccines of society."
       },
       {
         "t": "我主张对容易让人信以为真的恶搞设限，搞笑不能踩过误导的线。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ],
         "t_en": "I advocate setting limits on spoofing that is easy to believe, and funny people can't step on misleading lines."
       },
@@ -8833,16 +8741,14 @@
         "t": "我认为孩子跟妈妈姓完全没问题，姓氏只是个符号，谁带得多、家里怎么商量都行，不必非得传男系。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I think that there is no problem between the child and the mother's surname. The surname is just a symbol. Whoever brings more and how the family can discuss it, there is no need to pass on the male line."
       },
       {
         "t": "我倾向随父亲姓，这是家里一直延续的习惯，改了长辈心里不舒服，也没必要为这个较劲。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I tend to follow my father's surname. This is a habit that has continued in my family. I have changed my elders' discomfort, and there is no need to fight for this."
       },
@@ -8850,8 +8756,7 @@
         "t": "我觉得可以父母商量后取双姓，或者等孩子大了让他自己选，命名权本就该回归家庭本身。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I think it is possible for parents to take a double surname after consultation, or when the child is older and let him choose for himself, the naming right should be returned to the family itself."
       }
@@ -8869,7 +8774,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "My partner and I arranged shifts, breastfeeding at night, and bringing children on the weekend all took turns. No one should be absent. Parenting is for two people, not for one person."
@@ -8877,8 +8781,7 @@
       {
         "t": "我觉得妈妈带孩子更细致也更放心，爸爸在外打拼赚钱，家里的养育主要交给我也心安。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I feel that my mother is more detailed and more assured with her children. My father is working hard to earn money outside, and I am also relieved that the main care at home is given to me."
       },
@@ -8901,7 +8804,6 @@
         "tags": [
           "CUL:T",
           "ECO:L",
-          "SEC:F",
           "COL:M"
         ],
         "t_en": "I took my parents to live with me. Everyday, three meals are managed by someone, and sick people are accompanied by someone. While I can still get along with them, I can be as filial as possible, and save money. It is not as good as being around people."
@@ -8918,7 +8820,6 @@
         "tags": [
           "ECO:R",
           "GOV:A",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "If the parents want, I choose a professional elderly care institution with facilities, with medical care and companions, which is more reliable than my busy life at home, and also reduces the pressure on my children."
@@ -8934,8 +8835,7 @@
         "t": "我自己更想要独立的生活，长辈也该有他们的社交和节奏，过度捆绑对两代人都累。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I myself prefer to live independently, and elders should also have their social and rhythmic, overbundling is tiring to both generations."
       },
@@ -8957,8 +8857,7 @@
         "t": "我觉得设个缓冲期挺好，多少人是一气之下签字，过两周冷静下来还能挽回，给婚姻最后一次机会。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I think it's good to have a buffer period. How many people sign in one breath? After two weeks, they can calm down and save it and give the marriage a last chance."
       },
@@ -8967,7 +8866,6 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "I oppose the compulsory cooling-off period. Those who can't go on for more than 30 days are just suffering. It should be decided by the parties themselves and should not be taken for the boss."
@@ -8976,8 +8874,7 @@
         "t": "我认为若存在家暴，必须立刻放行、不能卡冷静期，弱势一方等不起，这种例外必须写进规则。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I think that if there is domestic violence, it must be released immediately, the cooling-off period cannot be stuck, and the vulnerable party cannot afford to wait. Such exceptions must be written into the rules."
       },
@@ -9047,8 +8944,7 @@
         "t": "我对邻居家的组成不多问不多管，孩子一样要上学、大人一样要上班，相处时给足基本尊重就好。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "I don't ask much about the composition of my neighbors' homes. Children should go to school, adults should go to work, and basic respect should be given when getting along."
       },
@@ -9056,8 +8952,7 @@
         "t": "我更认同传统的一父一母家庭模式，社区活动若有示范还是以主流为先，不希望模糊了孩子认知。",
         "tags": [
           "CUL:T",
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ],
         "t_en": "I agree with the traditional one-parent family model. If there is a demonstration or the mainstream is the first, I do not want to obscure the child's cognition."
       },
@@ -9065,16 +8960,14 @@
         "t": "我认为只要合法登记，非传统家庭在落户、继承、就医上就该和别人完全一样，权利义务不能打折。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I believe that as long as it is legally registered, non-traditional families should be exactly the same as others in terms of settlement, inheritance, and medical treatment, and rights and obligations cannot be discounted."
       },
       {
         "t": "别人家里怎么过是他们的事，只要不侵害他人，公权力和邻居都不该伸进卧室去评判。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ],
         "t_en": "What others do at home is their business. As long as they do not invade others, public power and neighbors should not reach into the bedroom to judge."
       },
@@ -9135,7 +9028,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I advocate abolishing the bride price altogether. Marriage should not be measured by money. Hundreds of thousands of feelings are often turned into transactions, which also crushes ordinary families."
@@ -9144,7 +9036,6 @@
         "t": "我觉得给不给、给多少看两家情愿和经济能力，别攀比也别强求，心意到了就行。",
         "tags": [
           "CUL:T",
-          "SEC:F",
           "COL:I"
         ],
         "t_en": "I think that if you don't give and how much you give, you can see the willingness and economic ability of the two families. Don't force yourself to compete, as long as you have the intention."
@@ -9154,7 +9045,6 @@
         "tags": [
           "GOV:A",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ],
         "t_en": "I support setting an upper limit to control the sky-price bride price, pushing out debts and contradictions in excessively high amounts, and using rules to bolster the decency of ordinary people."
@@ -9162,8 +9052,7 @@
       {
         "t": "我认这个老规矩，彩礼是两家结亲的礼数，按本地惯例走，图个尊重和圆满。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I think this old rule, the dowry is the number of gifts for the two families to marry, according to local practice, respect and perfection."
       },
@@ -9694,7 +9583,6 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "SEC:E",
           "COL:I"
         ],
         "t_en": "I think that as long as it is legal, we should do it. It is a personal matter whether we can read it or not, and banning it is the real problem."
@@ -9703,8 +9591,7 @@
         "t": "我主张先审一遍，涉及明显冒犯或误导的调一调，自由也得有边，别伤了公众感情。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ],
         "t_en": "I advocate a preliminary examination, involving a tune that is obviously offensive or misleading. Freedom must also have an edge, and don't hurt public feelings."
       },
@@ -9712,8 +9599,7 @@
         "t": "我赞成照常展，但配文字和讲解员把创作意图说清，让人看懂争议在哪，比直接撤掉好。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ],
         "t_en": "I am in favor of the exhibition as usual, but it is better to clarify the creative intentions with words and commentators so that people can understand where the controversy is than to remove it directly."
       },
@@ -9735,16 +9621,14 @@
         "t": "我舍不得老样子，雕花和老树是几代人的记忆，改得太新就丢了根。",
         "tags": [
           "CUL:T",
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ]
       },
       {
         "t": "我觉得城市要往前走，新形式、新手法才鲜活，老瓶装新酒才有生命力。",
         "tags": [
           "CUL:P",
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ]
       },
       {
@@ -9855,8 +9739,7 @@
         "t": "我认为小语种是文化基因，政府该扶一把、记下来教下去，断了就补不回。",
         "tags": [
           "NAT:N",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
@@ -9864,7 +9747,6 @@
         "tags": [
           "NAT:C",
           "ECO:R",
-          "SEC:E",
           "COL:I"
         ]
       },
@@ -9966,8 +9848,7 @@
         "tags": [
           "GOV:L",
           "CUL:P",
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -9982,16 +9863,14 @@
         "t": "我主张上线前审查把关，敏感内容先处理，免得播出后引发更大争议。",
         "tags": [
           "GOV:A",
-          "TECH:K",
-          "SEC:F"
+          "TECH:K"
         ]
       },
       {
         "t": "我倾向先播，出问题上追责任，比事前一刀切更保创作空间。",
         "tags": [
           "GOV:L",
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -10270,23 +10149,20 @@
         "t": "我主张按出生登记的性别分组，生理差异摆在那，否则对原组别的选手不公。",
         "tags": [
           "CUL:T",
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
         "t": "我认为该尊重当事人自我认同，他或她觉得自己是哪个组就进哪个组。",
         "tags": [
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
         "t": "我倾向单设开放组，谁都能报，不硬塞进传统两类里，各比各的。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -10305,8 +10181,7 @@
         "t": "我认为两类不够科学，可按激素水平等多设几档，更贴近真实差异。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -10325,16 +10200,14 @@
         "t": "我认为体育归体育，领奖台别带货政治，免得赛事变战场。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
         "t": "我支持选手在场上有话就说，沉默不是中立，表达也是人的权利。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -12402,7 +12275,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12418,7 +12290,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12426,7 +12297,6 @@
         "t": "我反对为群体设特别照顾，人人一样标准才叫公平，倾斜反成新不公。",
         "tags": [
           "CUL:T",
-          "SEC:F",
           "COL:I"
         ]
       },
@@ -12446,24 +12316,21 @@
         "t": "我认为本地的少数语言也该被听见，办事能用母语是基本尊严。",
         "tags": [
           "NAT:C",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
         "t": "我倾向以通用语为主，效率和社会统一重要，特殊需求个别处理。",
         "tags": [
           "NAT:N",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
         "t": "我支持窗口配双语，愿多用通用、需用的也能通，两头不误。",
         "tags": [
           "NAT:C",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -12483,7 +12350,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12511,8 +12377,7 @@
         "t": "我认为得立硬法、明确罚则，歧视成本低才屡禁不止，写进条文才长记性。",
         "tags": [
           "GOV:A",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -12526,7 +12391,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12534,15 +12398,13 @@
         "t": "我支持多搞培训和宣传，从观念上化偏见到根上，法只是后手。",
         "tags": [
           "CUL:P",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
         "t": "我反对为某群体单设特殊保护，统一标准对谁都公平，特别化反而隔阂。",
         "tags": [
           "CUL:T",
-          "SEC:F",
           "COL:I"
         ]
       },
@@ -12562,23 +12424,20 @@
         "t": "我认为办起来挺好，让更多人看见不同活法，少见才多怪。",
         "tags": [
           "CUL:P",
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ]
       },
       {
         "t": "我倾向别单独高亮，大家都是市民，混着展更自然不突兀。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
         "t": "我主张揉进常规节庆里，不另起炉灶，既呈现又不显隔离。",
         "tags": [
           "CUL:T",
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ]
       },
       {
@@ -12586,7 +12445,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12606,8 +12464,7 @@
         "t": "我认为该进课表，孩子早懂尊重差异，校园霸凌也能少。",
         "tags": [
           "CUL:P",
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -12621,8 +12478,7 @@
       {
         "t": "我支持用社团和活动体验代替说教，玩中懂比背定义深。",
         "tags": [
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -12642,8 +12498,7 @@
         "tags": [
           "GOV:A",
           "CUL:P",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -12651,8 +12506,7 @@
         "tags": [
           "GOV:L",
           "ECO:R",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -12660,8 +12514,7 @@
         "tags": [
           "CUL:P",
           "GOV:L",
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -12683,8 +12536,7 @@
         "tags": [
           "GOV:A",
           "CUL:P",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -12704,7 +12556,6 @@
         "tags": [
           "ECO:L",
           "CUL:P",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12712,7 +12563,6 @@
         "t": "我反对按群体分名额，岗位该给最能干的人，配额伤了 merit。",
         "tags": [
           "ECO:R",
-          "SEC:F",
           "COL:I"
         ]
       },
@@ -12733,7 +12583,6 @@
         "tags": [
           "CUL:P",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12741,8 +12590,7 @@
         "t": "我倾向一套标准流程，简单好复制、成本低，特殊的一事一议。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
@@ -12750,7 +12598,6 @@
         "tags": [
           "GOV:L",
           "ECO:L",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -12777,22 +12624,19 @@
         "t": "我认为就该像拍普通人一样拍他们，多见就不怪，偏见自然淡。",
         "tags": [
           "CUL:P",
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ]
       },
       {
         "t": "我倾向别单独拿来说，越是特意越像标签，平常对待最舒服。",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
         "t": "我主张给同等露脸机会就行，不捧不躲，镜头前面人人一样。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -13191,7 +13035,6 @@
       {
         "t": "我觉得平台该管内容而非管身份。",
         "tags": [
-          "SEC:E",
           "TECH:U"
         ]
       },
@@ -13217,8 +13060,7 @@
       {
         "t": "我要求物业事先审核，禁止侮辱性内容。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -13392,8 +13234,7 @@
       {
         "t": "我认为税制该公开辩论而非内部定。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -13753,7 +13594,6 @@
       {
         "t": "我反对，这类事该由家庭自己教。",
         "tags": [
-          "SEC:F",
           "CUL:T",
           "COL:I"
         ]
@@ -13761,8 +13601,7 @@
       {
         "t": "我支持开课但允许家长申请免修。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -13855,8 +13694,7 @@
         "t": "我支持多语标识，友好环境靠细节。",
         "tags": [
           "NAT:C",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -13928,8 +13766,7 @@
       {
         "t": "我反对，人脸数据不该被随手采集。",
         "tags": [
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -14050,8 +13887,7 @@
       {
         "t": "我反对过度覆盖，正常生活不该被拍遍。",
         "tags": [
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -14076,7 +13912,6 @@
       {
         "t": "我反对强制，身体决定该在自己手里。",
         "tags": [
-          "SEC:E",
           "COL:I",
           "TECH:U"
         ]
@@ -14143,7 +13978,6 @@
       {
         "t": "我支持纳入，老百姓信的就该报销。",
         "tags": [
-          "SEC:F",
           "ECO:L",
           "CUL:T"
         ]
@@ -14151,7 +13985,6 @@
       {
         "t": "我反对，医保钱要花在有证据的项目。",
         "tags": [
-          "SEC:E",
           "ECO:R"
         ]
       },
@@ -14233,8 +14066,7 @@
       {
         "t": "我支持透明评审，不预设名额。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -14253,8 +14085,7 @@
         "t": "我支持增设，照顾到被忽略的需求。",
         "tags": [
           "CUL:P",
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -14375,7 +14206,6 @@
         "t": "我支持强制标注，读者有权知道来源。",
         "tags": [
           "TECH:U",
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -14451,15 +14281,13 @@
         "t": "我倾向社区调解，伤了邻居不好。",
         "tags": [
           "COL:M",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
         "t": "我坚持走法庭，规矩得靠判决立。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -14484,8 +14312,7 @@
       {
         "t": "我支持严一点，小恶不纠会变大。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -14517,8 +14344,7 @@
       {
         "t": "我认为该依法惩处，不能私了了事。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -14779,7 +14605,6 @@
       {
         "t": "我支持强制标注，选择权在先。",
         "tags": [
-          "SEC:E",
           "TECH:U",
           "ENV:S"
         ]
@@ -14883,16 +14708,14 @@
         "t": "我支持严格审核，谣言太害人。",
         "tags": [
           "GOV:A",
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
         "t": "我反对严审，宁可乱点也别被替你删。",
         "tags": [
           "GOV:L",
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -14912,7 +14735,6 @@
       {
         "t": "我建议设独立事实核查公示。",
         "tags": [
-          "SEC:E",
           "GOV:L"
         ]
       },
@@ -14931,7 +14753,6 @@
       {
         "t": "我主动加几个不同立场的源对照。",
         "tags": [
-          "SEC:E",
           "GOV:L",
           "CUL:P"
         ]
@@ -14966,8 +14787,7 @@
         "t": "我支持强制标注，真假必须分得清。",
         "tags": [
           "TECH:K",
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -14980,15 +14800,13 @@
       {
         "t": "我支持由第三方检测后标注。",
         "tags": [
-          "SEC:E",
           "TECH:U"
         ]
       },
       {
         "t": "我主张对恶意造假追责而不是只标注。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -15013,8 +14831,7 @@
       {
         "t": "我反对高密度巡查，正常走动也紧张。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -15066,15 +14883,13 @@
         "t": "我支持社区矫治，利于回归社会。",
         "tags": [
           "COL:M",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
         "t": "我倾向监禁，犯错就该隔离。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -15495,8 +15310,7 @@
         "t": "我支持限用并严审，必要才做。",
         "tags": [
           "ENV:S",
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -15752,8 +15566,7 @@
         "t": "我支持零容忍，规则面前无大小。",
         "tags": [
           "GOV:A",
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -15869,8 +15682,7 @@
         "t": "我不装，尊重老人不愿被看。",
         "tags": [
           "TECH:U",
-          "COL:I",
-          "SEC:E"
+          "COL:I"
         ]
       },
       {
@@ -16422,8 +16234,7 @@
         "t": "我支持实名，干净环境值得。",
         "tags": [
           "TECH:K",
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -16504,7 +16315,6 @@
       {
         "t": "我主张公开评审过程接受监督。",
         "tags": [
-          "SEC:E",
           "GOV:L"
         ]
       },
@@ -16524,8 +16334,7 @@
         "t": "我主动改用新称呼，少让人不舒服。",
         "tags": [
           "CUL:P",
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -20269,8 +20078,7 @@
       {
         "t": "我会反对陪审团制度，审判是专业领域，应该由训练有素的法官依据法律条文作出理性裁决。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -20283,15 +20091,13 @@
       {
         "t": "我认为陪审员应经过基本法律培训并签署责任书，而非随机抽取，以提高裁决质量。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我会主张陪审团只参与事实认定，法律适用仍由法官负责，各司其职以减少错误。",
         "tags": [
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
@@ -20471,8 +20277,7 @@
       {
         "t": "我要求平台公开推荐算法的基本逻辑，让用户理解为何看到某些内容，透明度是信任的前提。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -20497,21 +20302,18 @@
       {
         "t": "我会支持预防性措施，在确定威胁面前，个人自由必须让位于公共安全，监管好过后悔。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
       {
         "t": "我会坚决反对，没有犯罪就不能惩罚，预防性监控是对法治原则的破坏，人人可能沦为嫌疑人。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
       {
         "t": "我会建议增加警力巡逻和社区干预，而非针对特定人群，用在场预防代替事后监控。",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -20558,8 +20360,7 @@
       {
         "t": "我会建议仅提供人道主义走廊和难民援助，不派战斗部队，军事干预的代价不可控。",
         "tags": [
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ]
       },
       {
@@ -20760,7 +20561,6 @@
         "t": "我会推动先做长期健康与安全研究，再谈公平问题——如果技术会伤害运动员身体，那么无论成绩多惊人都不该被允许。",
         "t_en": "I will push for long-term health and safety research first, before the fairness question—if the technology harms athletes' bodies, it should not be allowed no matter how impressive the results.",
         "tags": [
-          "SEC:E",
           "TECH:U"
         ]
       },
@@ -20828,7 +20628,6 @@
         "t": "我会支持严格监管：诱导性的分期营销和过度授信正在系统性地把缺乏经验的年轻人拖入债务陷阱，国家有责任设置护栏、限制高息和放贷额度。",
         "t_en": "I will support strict regulation: inducement marketing and over-extension of credit are systematically dragging inexperienced young people into debt traps. The state has a duty to set guardrails, cap high interest rates and lending limits.",
         "tags": [
-          "SEC:E",
           "ECO:L"
         ]
       },
@@ -20852,8 +20651,7 @@
         "t": "我会推动建立个人债务预警与免费咨询机制，由公共资源帮助负债者重组还款、走出困境，而不是只在事后惩罚或事前禁止。",
         "t_en": "I will push to build a personal debt early-warning and free counseling mechanism, using public resources to help debtors restructure repayments and recover, rather than only punishing after the fact or banning beforehand.",
         "tags": [
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -21012,15 +20810,13 @@
         "t": "我会支持自由售卖：自己的基因信息属于自己，成年人有权了解并自主决策，限制它才是对个人健康自主权的剥夺。",
         "t_en": "I will support free sale: one's genetic information belongs to oneself, adults have the right to know and decide autonomously, and restricting it would strip personal health autonomy.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
         "t": "我会反对自由售卖：基因数据是高度敏感、不可更改的隐私，一旦泄露或被保险公司利用，代价无法挽回，应当严格监管甚至禁止。",
         "t_en": "I will oppose free sale: genetic data is highly sensitive, immutable privacy; once leaked or exploited by insurers, the cost is irreversible. It should be strictly regulated or even prohibited.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -21028,7 +20824,6 @@
         "t": "我会建议有条件开放：要求提供遗传咨询、禁止保险公司使用检测结果定价或拒保，并立法保护基因隐私，在自主与安全间设好边界。",
         "t_en": "I will suggest conditional access: require genetic counseling, prohibit insurers from using results for pricing or denial, and legislate genetic privacy—drawing a boundary between autonomy and safety.",
         "tags": [
-          "SEC:E",
           "COL:I"
         ]
       },
@@ -21180,22 +20975,19 @@
       {
         "t": "我会持续关注此事，要求公开完整的执法记录仪影像，程序正义和透明是法治的底线，任何一方都不该在信息不全时被定罪。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
         "t": "我认为街头秩序需要维护，执法人员在劝阻无效后采取强制措施是履行职责，不能因为是弱势群体就豁免违法，法律面前人人平等。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我会质疑对视频发布者的传唤，公民监督公权力是基本权利，不应被视为制造事端，除非能证明视频经过恶意剪辑且意图煽动。",
         "tags": [
           "GOV:L",
-          "SEC:F",
           "COL:I"
         ]
       },
@@ -21353,8 +21145,7 @@
         "t": "我会坚持原有风格，不向算法妥协，内容创作者的职责是提供有价值的思考，而不是制造情绪垃圾，短期的流量损失换长期的信誉积累。",
         "tags": [
           "COL:I",
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
@@ -21368,15 +21159,13 @@
         "t": "我支持平台的信息可信度评分系统，但必须由多元独立的事实核查机构组成，而非单一平台垄断判定权，算法辅助但人工终审。",
         "tags": [
           "GOV:A",
-          "GOV:L",
-          "SEC:E"
+          "GOV:L"
         ]
       },
       {
         "t": "我不赞成平台给信息打可信度评分：由平台来判定「真实」等于让它握有筛选内容的权力，我倾向让用户自行辨别、保持开放竞争，而不是用算法预先干预。",
         "tags": [
           "GOV:L",
-          "SEC:F",
           "TECH:U"
         ]
       },
@@ -21396,7 +21185,6 @@
         "t": "我会支持加重累犯处罚，对反复危害社会的惯犯必须大幅提高刑期，法律保护守法者而不是给惯犯反复试错的机会，公共安全优先。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "NAT:N"
         ]
       },
@@ -21412,15 +21200,13 @@
         "t": "我主张对暴力累犯设立更严格的假释和监控条件，但不必一刀切终身监禁，用电子监控和社区矫正平衡安全与权利，让数据决定风险。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "TECH:K"
         ]
       },
       {
         "t": "我认为司法裁量权应该收紧，对类似情节的累犯设定更明确的最低刑期标准，减少法官主观弹性，让判决更可预期、更有威慑力。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -21455,8 +21241,7 @@
         "t": "我会建议客户与母国政府协调，等待制裁政策明朗后再做决定，外交一致性对跨国企业很重要，单独行动可能面临法律和声誉双重风险。",
         "tags": [
           "GOV:A",
-          "NAT:N",
-          "SEC:E"
+          "NAT:N"
         ]
       },
       {
@@ -21577,7 +21362,6 @@
         "t": "我理解抗议者的心情，但如果因此延误癌症新药的上市，那些本可以被救的病人怎么办？我会支持在监管下继续实验，但要求尽量减少动物痛苦。",
         "tags": [
           "ENV:S",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -21760,7 +21544,6 @@
         "t": "我会建议他向金融监管部门举报这些平台，如果利率超过法定上限就是非法放贷，不该还；同时呼吁政府加强网贷监管，不能放任平台收割年轻人。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -21832,7 +21615,6 @@
         "t": "我会支持强制搬迁，人命比房产重要，政府应该提供足够的安置住房和就业支持，对抗自然规律只会造成更大伤亡。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "ENV:G"
         ]
       },
@@ -22014,8 +21796,7 @@
       {
         "t": "我支持学校审慎评估，如果这位学者的言论可能引发现场冲突甚至安全风险，学校有责任保护校园秩序，可以改为小范围闭门研讨。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -22035,7 +21816,6 @@
       {
         "t": "我倾向于取消，校园应该是一个让人感到安全的空间，如果某些言论会对特定群体造成实质性伤害，学术自由不应该凌驾于学生的福祉之上。",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -22212,8 +21992,7 @@
         "t": "我支持开设，但应该有年龄分级和内容审核，老师要接受专门培训，确保课堂是理性讨论而不是灌输特定立场。",
         "tags": [
           "GOV:L",
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
@@ -22292,28 +22071,24 @@
       {
         "t": "我坚决反对在公共交通上安装人脸识别，隐私是基本权利，严格保密的承诺不可信，技术一旦部署就会被滥用，今天抓通缉犯明天就能追踪异见者。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
       {
         "t": "我支持安装，公共安全高于个人隐私，地铁人流密集是恐怖袭击和犯罪的高风险场所，AI监控能大大提高破案效率，保护的是所有人的安全。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
       {
         "t": "我支持安装，但要求独立机构监督数据使用，设置严格的调取审批程序，并且定期公布使用报告，让权力在阳光下运行。",
         "tags": [
-          "SEC:E",
           "GOV:L"
         ]
       },
       {
         "t": "我觉得与其全面监控，不如加强地铁的人工安检和巡逻，技术手段应该作为辅助而不是替代人力，减少对隐私的系统性侵犯。",
         "tags": [
-          "SEC:E",
           "TECH:U"
         ]
       },
@@ -22428,7 +22203,6 @@
         "t": "我会支持要求任何提供心理健康建议的AI工具必须获得临床许可——不能让无照机器在脆弱人群身上练手，哪怕它便宜也不是借口。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -22451,8 +22225,7 @@
         "t": "我对AI涉足心理健康整体持谨慎态度——对处于危机中的人来说误导的代价太高了，与其放任AI，不如把精力放在让人类护理变得可负担上。",
         "tags": [
           "TECH:U",
-          "ECO:L",
-          "SEC:E"
+          "ECO:L"
         ]
       },
       {
@@ -22470,7 +22243,6 @@
       {
         "t": "我会视这位吹哨人为英雄——揭露未经授权的公民监控是公共服务，任何保密协议都不应覆盖违宪项目，该追究的是监控计划本身。",
         "tags": [
-          "SEC:F",
           "GOV:L",
           "COL:I"
         ]
@@ -22478,22 +22250,19 @@
       {
         "t": "我会支持起诉——他签署了保密协议并违反了法律，动机不论多么高尚都不能凌驾于法律之上，合法的关切应通过监督渠道反映而非公开泄露。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我会支持在法律中设立公共利益辩护条款，允许吹哨人在独立法庭上为自己的行为辩护，由法庭权衡公共收益与安全损害。",
         "tags": [
           "GOV:L",
-          "SEC:F",
           "COL:M"
         ]
       },
       {
         "t": "我会把焦点放在修复监控计划本身，而不是追惩泄露者——真正的丑闻是未经授权的数据收集，起诉传信人只是转移视线。",
         "tags": [
-          "SEC:F",
           "GOV:A"
         ]
       },
@@ -22607,7 +22376,6 @@
         "t": "我会反对批准，直到长期独立安全研究完成——我们还不知道吃几十年培养肉对健康的影响，把它匆忙推向市场是鲁莽的。",
         "tags": [
           "TECH:U",
-          "SEC:E",
           "CUL:T"
         ]
       },
@@ -22642,7 +22410,6 @@
         "t": "我会直接否决——当一个声音控制了一座城市80%的信息渠道，民主本身就处于危险之中，任何效率收益都不值得这个代价。",
         "tags": [
           "GOV:A",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -22683,7 +22450,6 @@
       {
         "t": "我会投赞成——在公共场所不做亏心事就没什么好怕的，抓捕罪犯和寻找失踪者的安全收益值得付出代价。",
         "tags": [
-          "SEC:E",
           "GOV:A",
           "TECH:K"
         ]
@@ -22691,7 +22457,6 @@
       {
         "t": "我会投反对——对每个人行动轨迹的持续生物识别跟踪是对自由的根本威胁，技术的偏差和滥用潜力都不可接受。",
         "tags": [
-          "SEC:F",
           "GOV:L",
           "TECH:U"
         ]
@@ -22699,16 +22464,14 @@
       {
         "t": "我支持安装，但前提是严格设限：数据30天内删除除非关联到案件、接受独立审计、禁止用于匹配在逃人员以外的任何用途。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
         "t": "我认为应该把资源投到社区警务和犯罪根源治理上，而不是建一套把每个公民当潜在嫌疑人的监控基础设施。",
         "tags": [
           "ECO:L",
-          "COL:M",
-          "SEC:F"
+          "COL:M"
         ]
       },
       {
@@ -22735,7 +22498,6 @@
         "t": "我会否决出口——从可能被用于针对平民的武器中获利使我们成为共犯，不论经济效益如何，向活跃冲突区出口武器都应被禁止。",
         "tags": [
           "NAT:C",
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -23183,7 +22945,6 @@
         "t": "我会建议支持该法案。匿名是一种舒适，孩子的安全才是利害攸关。最需要躲在未验证账号后面的那些人——骚扰者、猎食者、敲诈者——恰恰是这块面具最不该保护的人。数据库的风险是待解决的工程问题，而「国家可能滥用」这种论证，一旦同样套用到我们早已信任的其他登记系统上，就不攻自破。",
         "t_en": "I would recommend supporting the bill. Anonymity is a comfort; a child's safety is a stake. The people who most need to hide behind unverified accounts — harassers, predators, blackmailers — are precisely the ones the mask serves worst to protect us from. The database risks are engineering problems to be managed, and 'the state might misuse it' is an argument that dissolves the moment it is applied to every other registry we already trust with far more.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -23191,7 +22952,6 @@
         "t": "我会建议明确反对。举报人、敌意家庭屋顶下的异见少年、互相辨认的受虐幸存者、暴露即危险的少数群体——对他们而言，匿名不是舒适，而是活命的基础设施。而且把每个公民映射到每个账号的单一数据库，不是可以「缓解」的风险，而是抽屉里上膛的武器，等着一届意图更坏的政府。对孩子的伤害有些是真的；但没有哪一条，足以成为造这个抽屉的理由。",
         "t_en": "I would recommend opposing it flatly. Whistleblowers, dissident teenagers under hostile roofs, abuse survivors finding each other, minorities for whom visibility means danger — for all of them, anonymity is not comfort but survival infrastructure. And a single database mapping every citizen to every account is not a risk to be mitigated; it is a loaded weapon in a drawer, waiting for a future government with worse intentions. Some harms to children are real; none of them justifies building that drawer.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -23199,8 +22959,7 @@
         "t": "我会建议把平台方的反提案写进法律：强制采用隐私保护的年龄验证——用密码学证明「已成年」而不存储身份——并资助一个独立审计机构为各方案认证。当然会有边缘个案漏网，青少年年龄估计也不完美；那就定好责任、逐步迭代。但设计原则必须守住：国家应当能核实「关于我们的事实」，而不是就此为我们建档。",
         "t_en": "I would recommend writing the platforms' counter-proposal into law: mandate privacy-preserving age verification — cryptographic proofs that establish adulthood without storing identity — and fund an independent audit body to certify the schemes. Edge cases will slip through, and estimating teenagers' ages is imperfect; set liability and iterate. But the design principle holds: the state should be able to verify facts about us without compiling files on us.",
         "tags": [
-          "TECH:K",
-          "SEC:F"
+          "TECH:K"
         ]
       },
       {
@@ -23319,8 +23078,7 @@
       {
         "t": "我会支持物业的集中收容处理：城市生态系统容不下这个规模的流浪猫，雏鸟和刺猬的消失不是情绪问题而是生态事实。对猫的善意不该以本地野生动物的消亡为代价，收容后限期领养、无人认领的妥善处置才是负责任。",
         "tags": [
-          "ENV:G",
-          "SEC:E"
+          "ENV:G"
         ]
       },
       {
@@ -23453,8 +23211,7 @@
       {
         "t": "我会写：我反对邀请，但更反对取消。程序正义在于：邀请由学术委员会按既定标准作出，就应由同一程序审查是否撤销；议事会不该因联署人数多少改写规则。这一次忍住不破例，将来才保护得住不受欢迎的少数。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -23479,7 +23236,6 @@
       {
         "t": "我会劝她接受修改后出版：一部删改后仍有力量的小说，好过一部完整却无人能读的手稿。让书以任何形态进入读者的世界，记忆的线索就断不了；完全的诚实可以留在日记和档案里，等后人去拼。",
         "tags": [
-          "SEC:E",
           "CUL:T"
         ]
       },
@@ -23493,8 +23249,7 @@
       {
         "t": "我会提醒她考虑更现实的层面：作者要生活，编辑要担责，出版社几十号人的生计都压在选题上。她可以坚持完整版另寻出路，但不必把同意修改的同行钉上耻辱柱——表达自由的成本，不该只由最弱的一环承担。",
         "tags": [
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -23646,8 +23401,7 @@
       {
         "t": "我会主张强硬护渔：增派海警船伴随本国船队作业，在争议水域先行划设本国执法线，把事实摆在谈判前面。资源分配从来是实力问题，单方面守约只会让守法者出局——先确立存在，再谈共享。",
         "tags": [
-          "NAT:N",
-          "SEC:E"
+          "NAT:N"
         ]
       },
       {
@@ -23806,8 +23560,7 @@
       {
         "t": "我会投票保留，同时把遴选规则晒出来：哪些书进馆、依据什么标准、投诉走什么程序，全部公开并邀请家长代表参与新一轮选书。让争论回到规则层面，而不是每次都在具体某一本书上肉搏。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -23912,14 +23665,12 @@
       {
         "t": "我会投票支持条例：百分之二十的犯罪率下降，意味着每年少几百起抢劫、少若干条人命，失踪儿童能早回家一天是一天。我的隐私观很朴素——守法的普通人，并没有那么多需要向街角摄像头隐瞒的东西。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
       {
         "t": "我会投票反对：人脸是改不了密码的生物特征，一旦泄露终身作废。今天为治安收集，明天就可能被用于别的名单——技术从不问自己将来的用途。宁可容忍一部分犯罪率，也要守住不被随手扫描的公共空间。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -23933,8 +23684,7 @@
       {
         "t": "我会支持建设但反对生物特征库：用智能视频做交通治理、人流预警、跌倒检测都可以，一律不做人脸比对。城市需要的是更聪明的眼睛，不是更长久的记性——把「看得见」和「认得出」分开，安全与隐私并非只能二选一。",
         "tags": [
-          "TECH:K",
-          "SEC:F"
+          "TECH:K"
         ]
       },
       {
@@ -23952,15 +23702,13 @@
       {
         "t": "我会支持公司：办公设备和工时都是公司付的钱，衡量投入天经地义。远程办公模糊了边界，数据反而让评价回归客观——至少它不偏心，不像旧式管理靠谁在老板眼前晃。觉得不被信任的人，可以选回办公室或换个东家。",
         "tags": [
-          "ECO:R",
-          "SEC:E"
+          "ECO:R"
         ]
       },
       {
         "t": "我会主张立法禁止侵入式监控：截屏与键盘记录的问题不在「是否公开数据」，而在人的尊严——劳动者不该在自家书房里被算法值勤。监管应明确负面清单：可以看结果，不许拍过程。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -23992,22 +23740,19 @@
       {
         "t": "我会支持继续公布完整轨迹：在传播速度面前，公民自觉是最后的防线，信息越透明，每个人的自我保护就越精准。骚扰确诊者是治安问题，该用治安手段处理，不能因噎废食地砍掉最有效的公众知情工具。",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
       {
         "t": "我会主张改为定向通知：轨迹不再向社会公布，由流调员精确通知同场所、同时段的密接者，配合场所级的消毒公告。公众需要的是「我有没有风险」，不是「谁病了」——精准投递信息，同样能阻断传播，却不必展览患者。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
       {
         "t": "我会支持公布，但重构粒度：只公布场所与时段，删除一切可拼图细节，模糊化楼层与车厢号，并立法惩处人肉与骚扰行为，确诊者身份信息单独立法保护。透明和隐私各有其界，两条线都该由法律画清楚。",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -24152,8 +23897,7 @@
       {
         "t": "我会支持两项措施全部落地：水印解决「是什么」，先审后发解决「什么时候放」。言论自由保护的是人的表达，不是机器的量产——当一条谣言的制造成本趋近于零而辟谣成本恒定，平台的事前义务就是新的必要成本。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -24192,8 +23936,7 @@
       {
         "t": "我会先要一条铁律：任何拒赔决定的最终署名必须是人，AI输出只能作为参考意见。算法可以计算概率，但「这个人例外」的判断需要能被恳求、能被说服的主体。百分之九十四的准确率，意味着每年数万个具体的人被统计平均数碾过。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -24232,8 +23975,7 @@
       {
         "t": "我会支持建立封存制度：少年司法的全部前提就是「他还没长成」，用十八岁前的一段错处追杀二十三岁的人生，等于宣告教育矫正从头就是谎言。封存不等于销毁——司法机关依然可查，只是不再跟着他进每一次面试。",
         "tags": [
-          "CUL:P",
-          "SEC:F"
+          "CUL:P"
         ]
       },
       {
@@ -24272,7 +24014,6 @@
       {
         "t": "我会反对引入罢免机制：法官的职责恰恰是在民意的洪水中按住法律这块礁石。今天的百万签名是义愤，明天的百万签名可能是被组织出来的声浪——机制一旦建立，两种情况都会冲击法槌。司法独立不是法官的特权，是少数者的保险柜。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -24592,15 +24333,13 @@
       {
         "t": "我会主张平台事前拦截义务：对高度仿真的人物视频，平台在推流放大前必须核验来源与合成标记，「事后删除」在传播速度面前等于不作为。你既然靠算法赚取了传播的收益，就要承担算法踩油门前的查验责任。",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我会主张以受害者救济为核心的司法路线：伪造视频的本质是诽谤与欺诈，应强化快速禁令、举证责任倒置、平台信息披露义务和惩罚性赔偿。把「造假的成本」抬到高于「造假的收益」，比要求平台当全知裁判更可执行。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -24632,14 +24371,12 @@
       {
         "t": "我会支持方案：把盗窃犯和暴力犯关在同一屋檐下，等于开办犯罪进修学校。监禁摧毁工作、家庭与社会关系——恰恰是防止再犯的全部要素。社区矫正附带强制就业与赔偿，让被害人直接得到补偿，比单纯的岁月折抵更接近正义。",
         "tags": [
-          "CUL:P",
-          "SEC:F"
+          "CUL:P"
         ]
       },
       {
         "t": "我会反对方案：量刑的意义一半在震慑，一半在于向社会与被害人宣告罪与罚的等式。把监狱从轻罪者的账单上划掉，等于告诉潜在的违法者门槛降了。被害人的痛感不是「落后的报应观」，是正义直觉本身。",
         "tags": [
-          "SEC:E",
           "CUL:T"
         ]
       },
@@ -24719,7 +24456,6 @@
       {
         "t": "我会投票否决：引渡是把本国居民交给他国权力处置，一旦出错没有任何回头路。当对方法庭连独立旁听都拒绝时，任何书面承诺的分量都要打折——司法合作的门永远可以再谈，交出去的人要不回来。",
         "tags": [
-          "SEC:F",
           "NAT:N"
         ]
       },
@@ -24966,8 +24702,7 @@
       {
         "t": "我会投票维持展出，但把评审程序公开：这次冲突暴露的真问题是——谁决定了这件作品拿公共资金？我会推动评审标准、评委构成与异议程序的全面透明，让下一件争议作品面对的是看得见的规则，而不是几个委员的品味。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -25053,8 +24788,7 @@
       {
         "t": "我会尊重陈婆婆本人的最终决定权，哪怕这意味着风险：成年人有权选择自己承担的风险，八十一岁不注销这个权利。我能做的是把选项摆全——陪她试住一周、见见用过的老人、听听社区的上门频次——然后让她自己做决定。",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -25447,7 +25181,6 @@
       {
         "t": "我会先做远程健康监测：独居死亡事件的最大特征是「几天没人知道」。监测设备可以一发现异常就报警——这是成本最低、效益最高的生命守护。社交和送餐可以在装好监测后逐项叠加。",
         "tags": [
-          "SEC:E",
           "TECH:K"
         ]
       },
@@ -25487,7 +25220,6 @@
       {
         "t": "我会劝她报警并联系金融监管局举报：这是诈骗，不是投资亏损。监管局收到投诉才有动力查处这家平台——一个老人追不回来三十六万，但能让千万老人不再被骗。先公后私。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -25595,8 +25327,7 @@
         "t": "我会支持强制全面开启青少年模式：算法不识别年龄就是失职。所有用户默认按年龄分级，十三至十八岁禁用算法推荐、二十二点后强制下线。家长「知情同意」的设计是故意给逃避留口子。",
         "tags": [
           "GOV:A",
-          "CUL:T",
-          "SEC:E"
+          "CUL:T"
         ]
       },
       {
@@ -25682,7 +25413,6 @@
       {
         "t": "我会支持物业清走并限期让愿意收养的住户办手续，逾期由专业机构带走。人的居住卫生和婴儿睡眠优先，这不是残忍，是秩序。让两百户人家为一个微小的善意长期让渡生活品质，这份善意就太贵了。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -25809,8 +25539,7 @@
       {
         "t": "我会主张先做困难优先的分层：重病户与低保户加计份额，剩余部分再按人头分。补偿不只是一笔产权清算，也是一个共同体最后一次照顾自己最弱成员的机会，这个顺序不该被票数推翻。",
         "tags": [
-          "ECO:L",
-          "SEC:E"
+          "ECO:L"
         ]
       },
       {
@@ -25995,21 +25724,18 @@
       {
         "t": "我会支持建接口，但把约束写死：限报警后启用、须经一名以上警官审批、事后向被查询人本人发出告知、数据九十天销毁。定位老人的效率是真的；正因为是真的，才更需要一个可被审计的形式。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
       {
         "t": "我会反对建立任何常态化接口。每一次只用于紧急情形的承诺，最后都变成了例行查询。四起走失当然沉重，但一个能实时定位全城行踪的系统，一旦被别的目的动用，没有人能替你反对。",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
       {
         "t": "我会主张不由平台建常设接口：由警方指挥中心作为唯一窗口，平台只对单个已立案请求作一次性回复。差别不在技术上，而在设施由谁持有——随时能查和逐案申请，完全不是一回事。",
         "tags": [
-          "SEC:F",
           "TECH:K"
         ]
       },
@@ -26042,8 +25768,7 @@
       {
         "t": "我会要求给年轻人。医学评分算的是紧迫性，没算她还有六十年，也没算一个四岁的孩子。规则是人写的，写的时候没想过这个场面；在它没想到的场合里，沉默的规则不该替我们说话。",
         "tags": [
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -26122,8 +25847,7 @@
       {
         "t": "我会要求暂停扩大，先把偏差查清楚：用院内历史病例按人群分层跑一遍指标，哪家厂商拿不出分层数据就换厂商。工具在我的科室里不能有偏心，否则我签的每一份报告都不干净。",
         "tags": [
-          "TECH:U",
-          "SEC:E"
+          "TECH:U"
         ]
       },
       {
@@ -26162,14 +25886,12 @@
       {
         "t": "我会主张免予刑事处罚，但附加强制医疗与看护令：责令家属落实看护并由家庭财产承担费用，定期向司法所报告。免刑不等于免责，家人不能把病人推出家门就算完事。",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
       {
         "t": "我会反对轻纵。护理员脸上的伤是真伤，一句有病就抹掉刑事记录，所有做护工的人都会知道自己不在保护之列。判决不只是写给被告的，也是说给下一个可能被推倒的人听的。",
         "tags": [
-          "SEC:E",
           "COL:I"
         ]
       },
@@ -26369,7 +26091,6 @@
       {
         "t": "我会反对。一条命换十九年，这个换算我签不下字。受害者家属年年寄那封信，说明这件事从未结束；法律留给他们的参与权就在这一张纸上，其余一切都是我们在自我原谅。",
         "tags": [
-          "SEC:E",
           "CUL:T"
         ]
       },
@@ -26402,8 +26123,7 @@
       {
         "t": "我会主张明确反对并启动国际水道仲裁，同时申请把下游湿地列入国际保护名录。证据我们是有的；跨境水道的规则之所以存在，就是为了让上游在这种时候付出代价。",
         "tags": [
-          "NAT:N",
-          "SEC:E"
+          "NAT:N"
         ]
       },
       {
@@ -26456,8 +26176,7 @@
       {
         "t": "我会先要求把准入核验与补贴公式修好再谈形式：核验松散、骗租查处不到位的情形下，任何一种形式都会被人消耗掉一半。工具可以讨论，但当篮子漏了，装什么都一样。",
         "tags": [
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -26561,7 +26280,6 @@
         "t": "我支持装，小区安全优先，刷脸后陌生人进不来，老年人也不用记卡，住着比现在踏实多了。",
         "t_en": "I support it — security first. Face recognition keeps strangers out and spares the elderly from carrying cards. Much safer.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -26569,7 +26287,6 @@
         "t": "我反对，人脸是敏感生物信息，门禁用钥匙或密码就够了，不该为了方便让所有人都被采集肖像留底。",
         "t_en": "I oppose it. Faces are sensitive biometrics; keys or codes suffice. We shouldn't be scanned just for convenience.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -26585,8 +26302,7 @@
         "t": "我建议改用非人脸的智能门禁卡，既能记录谁进出防尾随，又不收集面孔，兼顾安全与隐私两方。",
         "t_en": "I'd use non-facial smart cards — they log entries to prevent tailgating yet collect no faces, balancing safety and privacy.",
         "tags": [
-          "TECH:K",
-          "SEC:F"
+          "TECH:K"
         ]
       },
       {
@@ -26665,8 +26381,7 @@
         "t": "我反对用多数票强制低层，采光噪音是实打实的损失，少数人的财产权不能被多数人绑架。",
         "t_en": "I oppose forcing lower floors by majority vote. Lost light and noise are real; minorities' property rights shouldn't be overridden.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -26701,8 +26416,7 @@
         "t": "我反对强制长时间加班，劳动法保障休息权，用加班换产出是透支人，公司该守住底线。，说到底还是更合我的脾气。",
         "t_en": "I oppose forced long hours. Labor law protects rest; trading hours for output burns people out. Firms must hold the line.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -26753,7 +26467,6 @@
         "t": "我认为员工必须能查看自己的评分并提起申诉，过程透明才能让人服气，不能系统说了算。",
         "t_en": "Workers must see their scores and appeal. Transparency earns trust; the system alone can't be final.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -26833,7 +26546,6 @@
         "t": "我反对，家是私人空间，屏幕监控侵犯生活隐私，考核看结果就够了，别越界。，我觉得这样最说得通。",
         "t_en": "I oppose it. Home is private; screen monitoring invades life. Judge by results, not by surveillance.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -26921,7 +26633,6 @@
         "t": "我反对限流，谣言应该让它在公开场域里自净，平台一限流反而像捂盖子、更可疑。，我觉得这样最说得通。",
         "t_en": "I oppose throttling. Rumors self-correct in the open; limiting reach looks like a cover-up and fuels suspicion.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -26981,7 +26692,6 @@
         "t": "我认为学生有权不选这门课或换班，用脚投票比举报更体面，也保住自己节奏。，于情于理我都站这边。",
         "t_en": "Students can simply drop or switch sections — voting with their feet beats reporting and keeps their own peace.",
         "tags": [
-          "SEC:F",
           "COL:I"
         ]
       },
@@ -27001,15 +26711,13 @@
         "t": "我支持重点区实名，匿名太容易造谣网暴，实名能让人对自己的话负责。，这最贴合我一贯的想法。",
         "t_en": "I support real-name in key zones. Anonymity breeds libel and mobbing; real names make people accountable.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我反对强制实名，匿名恰恰是弱势群体、举报者敢说话的护盾，不能因噎废食。，我觉得这样最说得通。",
         "t_en": "I oppose mandatory real-names. Anonymity shields the vulnerable and whistleblowers; don't throw it out.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -27089,7 +26797,6 @@
         "t": "我主张放宽审批，和平集会自由是基本权利，提前三天报批门槛太高、变相限制。，这最贴合我一贯的想法。",
         "t_en": "Loosen approval. Peaceful assembly is basic; a three-day pre-approval is a hidden barrier that limits it.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -27097,7 +26804,6 @@
         "t": "我支持维持审批，广场在闹市，不报批人流一多就乱，警方得有底才能保安全。，我觉得这样最说得通。",
         "t_en": "Keep approval. The square is downtown; without it crowds spiral and police can't plan for safety.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -27485,7 +27191,6 @@
         "t": "我支持限制外资收购，核心科技关系国家安全，不能让命脉落到外人手里。，权衡之下也只能这么选。",
         "t_en": "Restrict foreign buys. Core tech touches national security; the lifeline can't fall to outsiders.",
         "tags": [
-          "SEC:E",
           "NAT:N"
         ]
       },
@@ -27501,8 +27206,7 @@
         "t": "我主张对敏感行业做安全审查、一般领域放开，分门别类管。，照这个思路走最省心。，于情于理我都站这边。",
         "t_en": "Run security reviews on sensitive sectors, open the rest — manage by category.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -27529,8 +27233,7 @@
         "t": "我支持主粮高度自给，饭碗端在自己手里才踏实，战时断供就是天大的事。，这最贴合我一贯的想法。",
         "t_en": "Keep staple food self-sufficient. Our bowl in our own hands is safe; supply cuts in crisis are catastrophic.",
         "tags": [
-          "NAT:N",
-          "SEC:E"
+          "NAT:N"
         ]
       },
       {
@@ -28145,7 +27848,6 @@
         "t": "我支持一律遣返，国境线是主权底线，不该谁想进就进、乱了秩序。，这最贴合我一贯的想法。",
         "t_en": "Deport all. Borders are sovereign bottom lines; no one enters at will and disrupts order.",
         "tags": [
-          "SEC:E",
           "NAT:N"
         ]
       },
@@ -28153,7 +27855,6 @@
         "t": "我反对一刀切，受迫害的该给庇护，个案甄别才有人道，不能全当违法者。，我觉得这样最说得通。",
         "t_en": "Oppose blanket deportation. The persecuted deserve asylum; case-by-case review is humane.",
         "tags": [
-          "SEC:F",
           "NAT:C"
         ]
       },
@@ -28169,8 +27870,7 @@
         "t": "我倾向边境城市就地设收容、由地方自治安置，中央和地方分担。，这是我更认可的出路。",
         "t_en": "Border cities set up local shelters with autonomous placement; central and local share the load.",
         "tags": [
-          "COL:M",
-          "SEC:F"
+          "COL:M"
         ]
       },
       {
@@ -28241,8 +27941,7 @@
         "t": "我坚决反对，办公区也是私人表达空间，偷偷转写对话侵犯基本隐私，应当立法严格限制雇主的监控边界，不能让同意条款变成空白支票。",
         "t_en": "I firmly oppose this; the office is also a space for private expression, and covertly transcribing conversations violates basic privacy. Law should tightly limit employers' surveillance powers, not let consent clauses become blank checks.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -28286,7 +27985,6 @@
         "t_en": "I oppose it; labeling children's emotions with algorithms crushes their nature, and schools should preserve a free space to grow without constant surveillance, or childhood becomes anxious score-watching.",
         "tags": [
           "GOV:L",
-          "SEC:F",
           "CUL:P"
         ]
       },
@@ -28294,8 +27992,7 @@
         "t": "可以用，但必须由家长委员会共同决定使用范围，并把数据所有权和删除权牢牢握在家庭手里，学校只是受托处理而非随意调阅。",
         "t_en": "It may be used, but the parents' committee must jointly decide its scope, and data ownership and deletion rights must stay firmly in the family's hands; the school only processes, not browses freely.",
         "tags": [
-          "COL:M",
-          "SEC:F"
+          "COL:M"
         ]
       },
       {
@@ -28322,24 +28019,21 @@
         "t": "支持，公安与物业联动用科技防盗反诈，是为了全体住户的安全，个人那点不习惯可以克服，毕竟谁都不想自家被盗或被骗走养老钱。",
         "t_en": "I support it; police and property using tech against theft and fraud serves everyone's safety, and individual discomfort is something one can live with—no one wants to be robbed or scammed.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "反对，把正常居民的行为轨迹拿去做画像，是把守法公民当嫌疑人，过度安防侵蚀了日常自由，老人遛个弯都要被系统评判太荒唐。",
         "t_en": "I oppose it; profiling law-abiding residents' movements treats innocent citizens as suspects, and excessive security erodes everyday freedom—absurd that an elder's walk gets judged by a system.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
         "t": "安全重要，但轨迹数据必须本地存储、定期销毁，且由业主代表大会监督用途，不能交给第三方随意调阅，更不能拿去给商家做精准推销。",
         "t_en": "Safety matters, but trajectory data must be stored locally and purged periodically, with the owners' congress overseeing its use—not handed to third parties or used by merchants for targeted ads.",
         "tags": [
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -28374,8 +28068,7 @@
         "t": "立刻卸载并举报，企业无权在后台偷跑定位，用户主权必须靠拒绝滥用产品的行动来捍卫，否则今天让一步明天就被看得精光。",
         "t_en": "I'll uninstall and report it immediately; a company has no right to stealthily track location, and user sovereignty must be defended by refusing abusive products—give an inch today and you're fully exposed tomorrow.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -28410,16 +28103,14 @@
         "t": "支持，公共交通本就是公共空间，用 aggregate 数据疏导客流、保障安全是公用事业的正当职责，总比高峰期挤成照片强得多。",
         "t_en": "I support it; public transit is a public space, and using aggregate data to route crowds and ensure safety is a proper duty of the public utility—far better than rush-hour crush.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "反对，信令级追踪能还原个人全天轨迹，这种颗粒度的监控必须限于重大紧急状态，不能常态化，否则通勤自由成了被登记的账本。",
         "t_en": "I oppose it; signaling-level tracking can reconstruct a person's whole-day path, and such granular monitoring must be reserved for major emergencies, not normalized—or commutes become a logged ledger.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -28506,8 +28197,7 @@
         "t": "反对，看病是个人自由，强制首诊等于替患者做主，设备差的社区耽误病情谁负责？我可不敢拿父母的身体去试水。",
         "t_en": "I oppose it; seeing a doctor is a personal freedom, and mandatory triage decides for the patient—if an under-equipped clinic delays diagnosis, who's accountable? I won't risk my parents' health.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -28550,8 +28240,7 @@
         "t": "严禁，医疗关系人命，算法黑箱不能替代医师负责制，必须由真人签字担责才算数，拿家人身体赌机器的概率我不敢。",
         "t_en": "Ban it; medicine concerns lives, and an opaque algorithm can't replace physician accountability—only a real doctor's signed responsibility counts. I won't bet my family's health on a machine's odds.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -28602,8 +28291,7 @@
         "t": "应立法规范产检套餐的知情同意和价格透明，让监管挡住机构利用焦虑赚钱的空间，别让每个家庭都自己跟销售斗智斗勇。",
         "t_en": "Law should mandate informed consent and price transparency for prenatal packages, letting regulation block institutions from profiting off anxiety, instead of each family dueling salespeople.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -28778,8 +28466,7 @@
         "t": "休不休假是个人自由，不应被宣传道德绑架，也别用「模范爸爸」的标签来压人，我用多少假是我家和公司之间的事。",
         "t_en": "Whether to take leave is personal freedom; it shouldn't be morally coerced by campaigns, nor should people be pressured with 'model dad' labels. How much leave I take is between my family and firm.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -28830,8 +28517,7 @@
         "t": "弹幕而已别当真，网络情绪过眼就忘，教女儿专注自己目标、别被陌生人的评价牵着走，键盘侠的话哪天就翻篇了。",
         "t_en": "It's just barrage comments—don't take them seriously; online noise fades fast. Teach my daughter to focus on her own goals and not be led by strangers' opinions; keyboard warriors move on tomorrow.",
         "tags": [
-          "COL:I",
-          "SEC:F"
+          "COL:I"
         ]
       },
       {
@@ -28946,8 +28632,7 @@
         "t": "反对，技术不能把一部分人甩在门外，图书馆必须保留人工窗口，数字鸿沟不是淘汰弱者的理由，老人也有进馆看书的的权利。",
         "t_en": "I oppose it; tech must not shut anyone out. Libraries must keep a human desk—the digital divide is no reason to discard the vulnerable; elders too have the right to enter and read.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -29070,8 +28755,7 @@
         "t": "支持，算法影响千万人的价格和机会，公众有权知道规则，透明胜过黑箱里的任性行为，秘密不能是平台割韭菜的护身符。",
         "t_en": "I support it; algorithms affect millions' prices and opportunities, the public has a right to know the rules, and transparency beats capricious behavior inside black boxes—secrecy isn't a shield for fleecing users.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -29122,8 +28806,7 @@
         "t": "必须依法，法律面前人人平等，谅解和赔偿不能替代定罪，否则富人花钱买自由，规矩就成了给钱让道的后门。",
         "t_en": "It must follow the law; all are equal before it, and forgiveness or compensation can't replace conviction, or the rich simply buy freedom and rules become a paid side door.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -29158,8 +28841,7 @@
         "t": "支持严格执法，规则就是规则，占道经营影响秩序，不处罚只会让守规矩的人吃亏，城市脸面也得有人出来维护。",
         "t_en": "I support strict enforcement; rules are rules, and vending on the road disrupts order—without penalties, those who comply lose out, and the city's face needs someone to uphold.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -29182,8 +28864,7 @@
         "t": "我路过拍个视频发朋友圈就走，执不执法是政府的事，我一个路人不好多嘴，惹了麻烦还得自己花时间跑派出所做笔录。",
         "t_en": "I'll film a clip for my feed and move on; enforcing or not is the government's business, and as a passerby I won't meddle—getting involved means time at the station giving statements.",
         "tags": [
-          "COL:I",
-          "SEC:F"
+          "COL:I"
         ]
       },
       {
@@ -29246,16 +28927,14 @@
         "t": "妥当，警民合作提速破案、震慑犯罪，公布线索是公共安全的合理需要，真凶落网比谁的面子更重要。",
         "t_en": "It's proper; police-public cooperation speeds up solving cases and deters crime, and publishing leads is a reasonable need for public safety—catching the real thief outweighs anyone's face.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "不妥，未定罪就发画像指认容易网暴误伤，无辜者的名誉权比破案效率更重要，万一认错人这家人跳进黄河洗不清。",
         "t_en": "It's improper; identifying suspects before conviction easily triggers online mobbing and wrongful harm—an innocent's reputation matters more than case speed; a mis-ID ruins a family irreparably.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -29270,8 +28949,7 @@
         "t": "我只在群里围观不转发，真认出人来再私下报官，不掺和公开指认那摊浑水，免得认错还得给人赔礼道歉。",
         "t_en": "I'll just watch in the group without forwarding; if I recognize someone I'll privately report to police, not wade into public identification—lest I mis-identify and owe someone an apology.",
         "tags": [
-          "COL:I",
-          "SEC:F"
+          "COL:I"
         ]
       },
       {
@@ -29298,8 +28976,7 @@
         "t": "该严格，未成年人也知对错，送管教学校才能立规矩，过软的处置是对受害者的不公，也让别的孩子觉得打了人没代价。",
         "t_en": "It should be strict; minors know right from wrong, and a discipline school sets boundaries—too-soft handling is unfair to the victim and tells other kids that hitting has no price.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -29650,8 +29327,7 @@
         "t": "反对强制，低层物权应被尊重，不能靠多数投票剥夺少数对共有部分的否决，得自愿达成一致，否则楼里从此结成死仇。",
         "t_en": "Oppose coercion; lower-floor property rights deserve respect, and a majority vote can't strip a minority's veto over common parts—consensus must be voluntary, or the building turns to feud.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -29730,8 +29406,7 @@
         "t": "硬刚，依法合同未到期就不能赶人，宁可走仲裁也要守住租客的合法居住权，退一步房东下次更敢随便撵人。",
         "t_en": "I'll stand firm; by law a lease can't be terminated early, and I'd rather arbitrate than surrender a tenant's legal right to housing—give in and the landlord dares evict at will next time.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -30054,8 +29729,7 @@
         "t": "我建议强制所有政治类视频携带可验证的数字来源证书，无证内容不予推荐，从技术源头遏制深度伪造的流通与对民主的侵蚀。",
         "t_en": "I propose mandating verifiable digital source certificates for all political videos; unverified content won't be recommended, curbing deepfakes at the technical source.",
         "tags": [
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -30126,7 +29800,6 @@
         "t": "我支持扩大审核并明确禁止煽动性仇恨内容，线上空间也该有底线，受害者群体的安全优先于绝对的、不加约束的发言自由。",
         "t_en": "I support broader moderation with clear bans on inciteful hate content; online spaces need red lines, and the safety of targeted groups comes before absolute speech freedom.",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -30134,8 +29807,7 @@
         "t": "我担心审核越界会变成思想审查，宁可依赖用户举报和透明度报告，也不愿让平台替所有人定义什么话能说、什么话不能。",
         "t_en": "I worry expanded moderation becomes thought censorship; I'd rather rely on user reports and transparency reports than let the platform define for everyone what can be said.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -30170,8 +29842,7 @@
         "t": "我坚持以官方统一通报为准，混乱时期需要权威口径避免谣言误导救援，民间片段难免以偏概全、放大局部的焦虑与误判。",
         "t_en": "I insist on official unified bulletins; in chaos we need an authoritative voice to avoid rumor-driven rescue mistakes, and civilian clips are inevitably partial.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -30194,8 +29865,7 @@
         "t": "我建议优先用卫星和无人机技术核实关键画面，再对外发布，用技术背书替代立场之争从而降低误传风险与次生灾害。",
         "t_en": "I suggest verifying key footage first with satellites and drones, then publishing—letting technical evidence replace position-fighting and cut misreporting.",
         "tags": [
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -30214,8 +29884,7 @@
         "t": "我支持三振法案，对屡教不改的惯犯必须重罚才能保护守法居民，宽容过度反倒是在纵容犯罪横行、让邻里失去安全感。",
         "t_en": "I support three-strikes laws; repeat offenders must face harsh penalties to protect law-abiding residents—too much leniency just enables crime.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -30238,7 +29907,6 @@
         "t": "我认为应区分暴力与非暴力累犯，仅对危害人身的三振重判，财产型小案交给缓刑与赔偿更为合适，避免刑罚失衡。",
         "t_en": "I'd distinguish violent from non-violent recidivists—only strike hard on those harming persons, while property petty crimes fit probation and restitution.",
         "tags": [
-          "SEC:E",
           "GOV:L"
         ]
       },
@@ -30258,7 +29926,6 @@
         "t": "我力挺全面配装，摄像头能约束双方行为、减少纠纷误判，对警察和市民都是保护而非单纯的监视工具，利大于弊。",
         "t_en": "I strongly back full deployment; cameras constrain both sides and cut disputes, protecting officers and citizens alike rather than surveilling them.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -30266,7 +29933,6 @@
         "t": "我支持但要求录像仅用于涉诉调查、严格封存，不能沦为全天候追踪警员行踪的工具，必须防住内部滥用与泄露。",
         "t_en": "I support it but require footage only for investigations and strict sealing—not a tool for tracking officers around the clock, guarding against abuse.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -30274,7 +29940,6 @@
         "t": "我反对强制配装，执法尊严与现场判断不应被镜头绑架，警员隐私和临场自主同样值得被尊重，信任不能靠监视建立。",
         "t_en": "I oppose mandating cameras; dignity of policing and on-the-spot judgment shouldn't be held hostage by lenses—officers' privacy and autonomy matter too.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -30310,8 +29975,7 @@
         "t": "我坚决反对去刑化，持有即违法的红线不能松，宽松只会让更多年轻人误以为吸毒毫无后果，进而放纵自己。",
         "t_en": "I firmly oppose decriminalization; the 'possession is illegal' red line must hold, or youth will think drugs carry no consequence.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -30354,8 +30018,7 @@
         "t": "我认为必须依法惩处以儆效尤，太柔和的处理会让肇事者觉得代价低，对受害者来说也不够交代，也难以安抚社区。",
         "t_en": "I think they must be punished by law as a warning; too-soft handling makes offenders feel the cost is low and fails the victims.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -30390,7 +30053,6 @@
         "t": "我支持加装监控网络，治安差的片区先把发案率压下来最实在，居民夜里敢出门比隐私顾虑更重要，安全是安居的前提。",
         "t_en": "I support the surveillance network; in high-crime areas cutting incidents matters most, and residents walking safely at night beats privacy worries.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -30398,7 +30060,6 @@
         "t": "我反对无差别人脸识别，正常居民不该被当嫌疑人扫描，安全感不能靠牺牲所有人的自由来换取，否则人人自危。",
         "t_en": "I oppose indiscriminate facial recognition; law-abiding residents shouldn't be scanned like suspects—security can't cost everyone their freedom.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -30414,8 +30075,7 @@
         "t": "我认为与其铺监控不如多派社区民警和夜间照明、改善环境，技术监视终究治标而不治本，人与人的联结更能防犯罪。",
         "t_en": "I think more officers and night lighting beat blanket surveillance; environmental improvement addresses causes, not just symptoms.",
         "tags": [
-          "COL:M",
-          "SEC:E"
+          "COL:M"
         ]
       },
       {
@@ -30502,8 +30162,7 @@
         "t": "我认为根源在战乱，应把资源更多投向斡旋停火与就近难民营，而非都运到千里外的富裕国家，治本胜过治标。",
         "t_en": "I think the root is war; more resources should go to brokering ceasefires and nearby camps, not shipping everyone to distant rich states.",
         "tags": [
-          "NAT:C",
-          "SEC:E"
+          "NAT:C"
         ]
       },
       {
@@ -30530,16 +30189,14 @@
         "t": "我反对任何军事介入，远方的仗不关我们事，年轻人不该为别国冲突流血，应专注本土安全与民生而非远征。",
         "t_en": "I oppose any military involvement; their war isn't ours, our youth shouldn't bleed for foreign conflicts—focus at home.",
         "tags": [
-          "NAT:N",
-          "SEC:F"
+          "NAT:N"
         ]
       },
       {
         "t": "我主张以军售与情报支持盟友，用最小本国风险换取战略伙伴，比派兵更可控也更隐蔽，不把子弟兵推上第一线。",
         "t_en": "I favor arms sales and intelligence support to allies—securing strategic partners at minimal domestic risk, more controllable than troops.",
         "tags": [
-          "ECO:R",
-          "SEC:E"
+          "ECO:R"
         ]
       },
       {
@@ -30962,7 +30619,6 @@
         "t": "我支持为家暴受害者开绿色通道、免冷静期，安全压倒程序，不能让制度把人困在危险里，救命比劝和更紧迫。",
         "t_en": "I support a fast lane waiving the cooling-off period for abuse victims; safety trumps procedure, the system mustn't trap people in danger.",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -31094,8 +30750,7 @@
         "t": "我支持严管乃至关停违规养殖，环境与健康优先，污染不该由周边居民默默埋单，守得住清水绿地才有宜居城市。",
         "t_en": "I support strict control or closure of violators; environment and health come first, and neighbors shouldn't pay for the pollution.",
         "tags": [
-          "ENV:S",
-          "SEC:E"
+          "ENV:S"
         ]
       },
       {
@@ -31146,7 +30801,6 @@
         "t": "我理解企业审慎，安全数据关系人命，全面禁动物测试若牺牲可靠性也不可取，应渐进推进而非一夜之间叫停。",
         "t_en": "I understand corporate caution; safety data bear on human life, and banning all animal tests at the cost of reliability is unwise—go gradual.",
         "tags": [
-          "SEC:E",
           "TECH:K"
         ]
       },
@@ -31270,8 +30924,7 @@
         "t": "我支持限额狩猎调控，种群失衡已威胁农户生计安全，数量管理是当下最务实的选择，护人也算护住这片山林。",
         "t_en": "I support quota hunting; the imbalance now threatens farmers' livelihoods and safety, and population control is the pragmatic pick.",
         "tags": [
-          "ENV:S",
-          "SEC:E"
+          "ENV:S"
         ]
       },
       {
@@ -31330,8 +30983,7 @@
         "t": "我主张设明确标识与年龄分区、不撤展，既保表达自由也尊重观展者的自主选择权，让成年人为自己决定是否走近。",
         "t_en": "I favor clear labeling and age zoning without removal—protecting free expression while respecting viewers' own choices.",
         "tags": [
-          "CUL:P",
-          "SEC:F"
+          "CUL:P"
         ]
       },
       {
@@ -31418,8 +31070,7 @@
         "t": "我主张分级而非删剪，成人向内容标级上映，把选择权交观众而非替所有人定下调子，成年公民能为自己做主。",
         "t_en": "I favor rating over cutting; release adult content with a rating, handing choice to viewers rather than setting the tone for all.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -31534,15 +31185,13 @@
         "t": "我支持按现行医学阈值审慎准入，包容不应被牺牲，但须有可核验的生理标准防不公，让规则站在科学与公道一边。",
         "t_en": "I support careful entry by current medical thresholds; inclusion shouldn't be sacrificed, but verifiable physiological standards prevent unfairness.",
         "tags": [
-          "CUL:P",
-          "SEC:E"
+          "CUL:P"
         ]
       },
       {
         "t": "我主张按出生性别分组，生理优势难靠声明抹平，保证生理女性选手的公平竞争权利，公平是竞技不可退的底线。",
         "t_en": "I favor grouping by birth sex; physiological advantage isn't erased by declaration, protecting cis-female athletes' fair-competition right.",
         "tags": [
-          "SEC:E",
           "CUL:T"
         ]
       },
@@ -31638,7 +31287,6 @@
         "t": "我主张赛前赛后允许、比赛中止仪式禁烟，划清表达时段保竞技纯粹也留足空间，规矩清楚大家都不委屈。",
         "t_en": "I favor allowing expression before/after but not during play or anthems—marking times that keep competition pure yet leave room.",
         "tags": [
-          "SEC:F",
           "GOV:L"
         ]
       },
@@ -31666,7 +31314,6 @@
         "t": "我支持严格责任扩围，干净比赛靠强威慑，个人疏忽也该担责才能护住多数诚实的选手，姑息一次就毁掉信任。",
         "t_en": "I support expanding strict liability; clean sport needs strong deterrence, and personal negligence must answer to protect honest athletes.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -31674,8 +31321,7 @@
         "t": "我反对无过错也重罚，程序正义不能丢，被人构陷就该有自证清白的通道而非一律担罪，无辜者不该陪绑。",
         "t_en": "I oppose punishing the faultless; procedural justice matters, and the framed must have a path to prove innocence, not blanket guilt.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -31690,8 +31336,7 @@
         "t": "我认为应砸钱升级检测与供应链溯源技术，从源头堵住而非只事后严惩运动员本人，治本比拿选手开刀更负责任。",
         "t_en": "I think we should fund better testing and supply-chain tracing tech, blocking at the source rather than only punishing athletes after.",
         "tags": [
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
@@ -31974,16 +31619,14 @@
         "t": "我支持安装，科技能救命，跌倒无人知才最可怕，子女作为监护人有知情权，这份安心应当优先于老人对监控的那点心理顾虑。",
         "t_en": "I support installing it; technology saves lives and undetected falls are the real danger—children as guardians have a right to know, which outweighs elders' unease about monitoring.",
         "tags": [
-          "TECH:K",
-          "SEC:E"
+          "TECH:K"
         ]
       },
       {
         "t": "我反对强制安装，老人有在家不被监视的权利，是否装应由本人自主决定，不能为了集体安全感就牺牲个体的隐私与自由。",
         "t_en": "I oppose forced installation; elders have a right to be unmonitored at home, and the choice should be theirs—collective safety can't come at the cost of individual liberty.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -32063,8 +31706,7 @@
         "t": "我支持严管乃至禁止面向学生的消费贷，学生无收入、易被套路，监管必须保护弱者，不能让资本把黑手伸向还没有判断力的大学生。",
         "t_en": "I support strict control or banning student consumer loans; students have no income and are easily trapped, so regulators must protect the vulnerable from capital's reach.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -32195,8 +31837,7 @@
         "t": "我支持压降利率上限，高利贷吸血弱势群体，监管划线是底线保护，不能让急需用钱的人掉进永远还不清的债务陷阱里。",
         "t_en": "I support lowering the rate cap; usury bleeds the vulnerable, and a regulatory line is baseline protection against debt traps for those in urgent need.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -32239,8 +31880,7 @@
         "t": "我支持立法严管催收，禁止骚扰无关第三人、泄露隐私，讨债不能突破人格尊严底线，再正当的债权也不能践踏别人的体面。",
         "t_en": "I support strict debt-collection law: no harassing unrelated third parties or leaking privacy—debt recovery can't breach human dignity, however valid the claim.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -32327,8 +31967,7 @@
         "t": "我支持强制资金托管与冷静期，预付费易卷款，监管兜底是对弱势消费者的保护，不能让老实交钱的人承担老板跑路的全部风险。",
         "t_en": "I support mandatory escrow and cooling-off periods; prepaid fees are easily embezzled, so regulatory backstop protects weak consumers from bearing all runaway-boss risk.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -32371,8 +32010,7 @@
         "t": "我支持建核电台，核电清洁稳定、保障能源安全，技术成熟风险可控，邻避情绪不该绑架事关全局的能源规划，总要有人就近承担。",
         "t_en": "I support building the nuclear plant; it's clean, stable, secures energy supply, and with mature tech the risk is manageable—NIMBY sentiment shouldn't hijack planning.",
         "tags": [
-          "ENV:G",
-          "SEC:E"
+          "ENV:G"
         ]
       },
       {
@@ -32527,7 +32165,6 @@
         "t": "我更担心消防风险，老旧小区先搞安全改造再谈装桩，安全优先于便利，不能为了赶时髦把整栋楼的防火底线给突破了。",
         "t_en": "I worry about fire risk; old communities should upgrade safety first, then discuss piles—safety before convenience, not breaching the building's fire bottom line for trendiness.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -32591,8 +32228,7 @@
         "t": "我支持拆或迁，健康无小事，即便国标达标也应尊重住户意愿，别拿健康赌概率，家门口的设施起码要征得挨着的人同意。",
         "t_en": "I support removing or relocating it; health is no small matter, and even within national standards residents' wishes should be respected—don't gamble with health or ignore neighbors.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -32615,7 +32251,6 @@
         "t": "我更信选址去敏感区，基站优先布在商业楼与路灯杆，避开住宅楼顶更稳妥，用空间上的避让化解多数人对家门口设施的本能排斥。",
         "t_en": "I trust keeping siting away from sensitive areas; prioritize commercial buildings and lampposts over residential rooftops—spatial avoidance eases instinctive resistance.",
         "tags": [
-          "SEC:E",
           "COL:M"
         ]
       },
@@ -32679,8 +32314,7 @@
         "t": "我支持高温强制停工，劳动者生命健康至上，再紧的工期也大不过人命，用几天产值去赌工人的安全是彻头彻尾的本末倒置。",
         "t_en": "I support mandatory heat stops; workers' life and health come first, and no schedule beats human life—betting worker safety for output is a total inversion of priorities.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -32767,7 +32401,6 @@
         "t": "我支持优先建海堤，防灾是底线工程，淹了城什么都没了，安全投入不能省，再精明的经济账也抵不过一次灭顶之灾。",
         "t_en": "I support prioritizing seawalls; disaster defense is baseline infrastructure—if the city floods everything's lost, so safety spending can't be spared before any clever calculus.",
         "tags": [
-          "SEC:E",
           "GOV:A"
         ]
       },
@@ -32791,8 +32424,7 @@
         "t": "我更信风险共担，推巨灾保险让市场分散损失，政府不必全包硬防，用金融手段把不确定的灾害成本摊到可承受的每一年。",
         "t_en": "I trust risk-sharing: promote catastrophe insurance so markets spread losses, and government needn't fully fund hard defense—smear disaster cost across affordable years.",
         "tags": [
-          "ECO:R",
-          "SEC:E"
+          "ECO:R"
         ]
       },
       {
@@ -32855,16 +32487,14 @@
         "t": "我支持强制撤离，天灾面前人命第一，犹豫就会出人命，基层有权强转，紧急状态下个体的固执不能凌驾于众人的安全之上。",
         "t_en": "I support mandatory evacuation; before natural disaster life is first, hesitation costs lives, and grassroots authorities have the right to move people—stubbornness can't override safety.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
         "t": "我反对强制，成年人有对自己风险自担的权利，政府应劝导而非强拖，自由不可侵，不能借救灾之名把人连人带尊严一起搬走。",
         "t_en": "I oppose compulsion; adults may bear their own risk, and government should persuade not drag—liberty can't be violated even under the name of disaster relief.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -32943,8 +32573,7 @@
         "t": "我支持政策性巨灾险，小保费换大保障，政府补贴普惠，防灾比救灾划算，让一次天灾不至于把一辈子的积蓄连根拔起。",
         "t_en": "I support policy catastrophe insurance; small premiums buy big coverage, government-subsidized and universal—prevention beats relief, so one disaster can't uproot a lifetime's savings.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -32987,8 +32616,7 @@
         "t": "我支持限算法时限，骑手安全比几分钟重要，平台不能靠压榨骑手换效率，把人的性命塞进代码优化的缝隙里是本末倒置。",
         "t_en": "I support capping algorithm time; rider safety beats a few minutes, and platforms can't squeeze riders for efficiency—burying lives in code optimization is inverted priorities.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -33075,8 +32703,7 @@
         "t": "我支持禁差异化定价，老客被宰是失信，该用规则护消费者权益，忠诚不该换来更贵的价签，信任是平台最贵的资产。",
         "t_en": "I support banning differential pricing; fleecing loyal customers is a breach of trust, and rules should protect consumer rights—loyalty shouldn't cost more, trust is pricey.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -33119,8 +32746,7 @@
         "t": "我支持平台强制限时，未成年人自制力弱，国家兜底护成长天经地义，在算法面前孩子需要一道外力帮他们按住那根手指。",
         "t_en": "I support mandatory platform time-limits; minors lack self-control, and the state backstopping their growth is only right—kids need external help against the algorithm's pull.",
         "tags": [
-          "GOV:A",
-          "SEC:F"
+          "GOV:A"
         ]
       },
       {
@@ -33179,8 +32805,7 @@
         "t": "我主张第三类身份，设类雇员享部分保障不含全社保，折中保底，既给辛苦跑单的人一张安全网又不至于压垮平台模式。",
         "t_en": "I'd create a third status: 'employee-like' workers get partial protection without full social insurance—a compromise floor that doesn't crush the platform model.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -33207,8 +32832,7 @@
         "t": "我支持数据本地化与审批，公民数据是国家资产，安全底线不能让渡，涉及国计民生的信息必须留在自己能管的地盘上。",
         "t_en": "I support data localization and approval; citizens' data is national asset and the security baseline can't be surrendered—vital information must stay where we can govern it.",
         "tags": [
-          "GOV:A",
-          "SEC:E"
+          "GOV:A"
         ]
       },
       {
@@ -33231,8 +32855,7 @@
         "t": "我更信用户授权优先，数据归个人，跨境须明示同意、可撤回，权利在民，让每个人对自己那一份数字痕迹真正说了算。",
         "t_en": "I trust user authorization first; data belongs to individuals, and cross-border transfer needs explicit, revocable consent—rights to the people over their own digital traces.",
         "tags": [
-          "GOV:L",
-          "SEC:F"
+          "GOV:L"
         ]
       },
       {
@@ -33259,8 +32882,7 @@
         "t": "我反对，传统按性别分厕关乎女性安全与隐私，不应为少数改变多数习惯，公共空间的设计还是该优先照顾大多数人的踏实感。",
         "t_en": "I oppose it; traditional sex-separated restrooms protect women's safety and privacy, and the majority's habits shouldn't change for a few—public design should reassure most.",
         "tags": [
-          "CUL:T",
-          "SEC:F"
+          "CUL:T"
         ]
       },
       {
