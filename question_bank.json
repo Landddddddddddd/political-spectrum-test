@@ -15199,28 +15199,32 @@
           "SEC:F",
           "GOV:L",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I allow it, parents have the choice."
       },
       {
         "t": "我限制，公立价值不能混信仰。",
         "tags": [
           "SEC:E",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I limit that public values cannot be mixed with beliefs."
       },
       {
         "t": "我允许但要求信仰课可免修。",
         "tags": [
           "SEC:E",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I allow but require faith classes to be exempt."
       },
       {
         "t": "我主张这类学校自筹经费不占公帑。",
         "tags": [
           "SEC:F",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I advocate that self-financing of such schools does not account for public funds."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -15228,7 +15232,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Religion & Belief"
+    "domain_en": "Religion & Belief",
+    "scene_en": "A faith group applies for a school with a value education, and the curriculum contains its faith content. Supporters say diversity, opponents fear infiltration."
   },
   {
     "id": 350,
@@ -15241,14 +15246,16 @@
           "SEC:F",
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support his suspension and respect for the implementation of the faith."
       },
       {
         "t": "我反对，排班讲统一不讲特殊。",
         "tags": [
           "SEC:E",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I object. Uniformity in scheduling does not mean special."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -15256,7 +15263,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Religion & Belief"
+    "domain_en": "Religion & Belief",
+    "scene_en": "The work schedule arranged a colleague's faith rest day, and he applied for a rest break. The supervisor was afraid to open his mouth, and everyone asked for special requirements."
   },
   {
     "id": 351,
@@ -15268,21 +15276,24 @@
         "tags": [
           "ECO:L",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support regulation, rent can not be shouted."
       },
       {
         "t": "我反对管制，房东有权定自己的价。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am against regulation and hosts have the right to set their own prices."
       },
       {
         "t": "我支持只管涨幅不管绝对价。",
         "tags": [
           "ECO:L",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support an increase regardless of the absolute price."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -15290,7 +15301,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Housing & Urban"
+    "domain_en": "Housing & Urban",
+    "scene_en": "Your city is brewing rent guidance prices. The landlord said that he would evacuate the house to reduce supply, and the tenant said that he can finally breathe. You are renting and understand the landlord's account."
   },
   {
     "id": 352,
@@ -15302,42 +15314,48 @@
         "tags": [
           "COL:M",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I voted yes, it was too difficult for the old man to go up and down the stairs."
       },
       {
         "t": "我投反对，低层权益不能牺牲。",
         "tags": [
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I vote no, low-level rights and interests cannot be sacrificed."
       },
       {
         "t": "我提议高层补偿低层再装。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I propose to compensate the upper floor for the lower floor refit."
       },
       {
         "t": "我主张政府出钱补低层损失。",
         "tags": [
           "GOV:A",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I advocate that the government pay for the low-level losses."
       },
       {
         "t": "我建议先装外挂梯试运行。",
         "tags": [
           "GOV:L",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I recommend first installing a hanging ladder for trial operation."
       },
       {
         "t": "我弃权，让直接利益相关方定。",
         "tags": [
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I abstain and let the direct stakeholder decide."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -15345,7 +15363,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Housing & Urban"
+    "domain_en": "Housing & Urban",
+    "scene_en": "The old building was voted on by installing elevators, and high-rise residents pushed hard. The first and second floors were firmly opposed to the lighting noise and damage to house prices. You live in the middle floor, take care of both sides."
   },
   {
     "id": 353,
@@ -15358,28 +15377,32 @@
           "GOV:L",
           "COL:M",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I asked for a residents' meeting from the design stage."
       },
       {
         "t": "我信任专业设计，公示够了。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I trust professional design, enough publicity."
       },
       {
         "t": "我建议做线上征集让更多人发声。",
         "tags": [
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I recommend doing an online call for more voices."
       },
       {
         "t": "我主张按多数住户票决方案。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate a majority vote solution."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -15387,7 +15410,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Housing & Urban"
+    "domain_en": "Housing & Urban",
+    "scene_en": "The street needs to be transformed into a commercial street. The plan is out of the design institute above, and residents can only give their opinions during the publicity period. You want to get involved earlier."
   },
   {
     "id": 354,
@@ -15399,14 +15423,16 @@
         "tags": [
           "TECH:U",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support mandatory labeling, with the option first."
       },
       {
         "t": "我反对强制标，增加成本转嫁消费者。",
         "tags": [
           "ENV:G",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I am opposed to mandatory standards, increasing costs and passing them on to consumers."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -15414,7 +15440,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Agriculture & Food"
+    "domain_en": "Agriculture & Food",
+    "scene_en": "Supermarket shelves are marked with whether or not the food contains the new breeding technology, and the prices are similar. Some people insist on seeing clearly, some people think that there is no need to distinguish."
   },
   {
     "id": 355,
@@ -15427,21 +15454,24 @@
           "ENV:S",
           "NAT:N",
           "COL:M"
-        ]
+        ],
+        "t_en": "I buy more local organic for the environment and rural values."
       },
       {
         "t": "我买便宜的外地菜，过日子要算账。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I buy cheap foreign food, and I have to pay for my life."
       },
       {
         "t": "我折中，贵菜偶尔买。",
         "tags": [
           "ECO:R",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I compromise, and I buy delicacies occasionally."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -15449,7 +15479,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Agriculture & Food"
+    "domain_en": "Agriculture & Food",
+    "scene_en": "Local organic dishes are twice as expensive as ordinary dishes in the field. You want to support local farmers, transport less, and love your wallet."
   },
   {
     "id": 356,
@@ -15462,21 +15493,24 @@
           "ENV:G",
           "ECO:R",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support big venues, and cheap meat benefits ordinary people."
       },
       {
         "t": "我支持小场散养，环境动物都更好。",
         "tags": [
           "ENV:S",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support small farm free-range breeding, and environmental animals are better."
       },
       {
         "t": "我主张限规模并补周边住户。",
         "tags": [
           "GOV:A",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I advocate limiting the size and replenishing the surrounding households."
       },
       {
         "t": "我愿为福利肉多付钱。",
@@ -15484,7 +15518,8 @@
           "ECO:R",
           "ENV:S",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am willing to pay more for welfare meat."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -15492,7 +15527,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Agriculture & Food"
+    "domain_en": "Agriculture & Food",
+    "scene_en": "Animal welfare organizations also pay attention to the fact that a farm is more efficient and cheaper when it is scaled, but the neighborhood is not smelly."
   },
   {
     "id": 357,
@@ -15504,34 +15540,39 @@
         "tags": [
           "GOV:A",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support strict scrutiny, and rumors are too harmful."
       },
       {
         "t": "我反对严审，宁可乱点也别被替你删。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I oppose strict scrutiny, I would rather not be deleted for you."
       },
       {
         "t": "我支持算法降权而非删除。",
         "tags": [
           "TECH:K",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support algorithm reduction rather than deletion."
       },
       {
         "t": "我主张用户可自助屏蔽并标注存疑。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate that users can self-block and flag suspicions."
       },
       {
         "t": "我建议设独立事实核查公示。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I recommend setting up an independent fact-checking publicity."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -15539,7 +15580,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Media & Information"
+    "domain_en": "Media & Information",
+    "scene_en": "The local information platform was accused of being full of headline parties and rumors, and the operator said that it should be manually reviewed. The user is concerned that the moderation will result in a post deletion."
   },
   {
     "id": 358,
@@ -15551,21 +15593,24 @@
         "tags": [
           "GOV:L",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I proactively added a few source controls for different positions."
       },
       {
         "t": "我懒得换，顺手就好。",
         "tags": [
           "COL:I",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I'm too lazy to change, just do it."
       },
       {
         "t": "我支持平台强制混入异见内容。",
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support platforms that force dissent."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -15573,7 +15618,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Media & Information"
+    "domain_en": "Media & Information",
+    "scene_en": "You usually only look at one or two common sources, and a friend reminds you that the information is too single. You acknowledge but feel secure."
   },
   {
     "id": 359,
@@ -15585,26 +15631,30 @@
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support mandatory labeling, and true and false must be clearly divided."
       },
       {
         "t": "我反对强制，标不标由发布者定。",
         "tags": [
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I oppose compulsion, and the label is not determined by the publisher."
       },
       {
         "t": "我支持由第三方检测后标注。",
         "tags": [
           "TECH:U"
-        ]
+        ],
+        "t_en": "I support labeling after inspection by a third party."
       },
       {
         "t": "我主张对恶意造假追责而不是只标注。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I advocate accountability for malicious counterfeiting and not just labeling."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -15612,7 +15662,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Media & Information"
+    "domain_en": "Media & Information",
+    "scene_en": "There is a fake and scrambled real composite video on the Internet, and some people take it seriously and forward it. The platform discusses whether to impose a composite marker."
   },
   {
     "id": 360,
@@ -15624,13 +15675,15 @@
         "tags": [
           "GOV:A",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support the patrol and stay steady at night."
       },
       {
         "t": "我反对高密度巡查，正常走动也紧张。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am opposed to high-density patrols, and I am nervous about walking normally."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -15638,7 +15691,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Policing & Punishment"
+    "domain_en": "Policing & Punishment",
+    "scene_en": "The night road you often walked has recently added fixed-point inspections and mobile searching, which has given you a sense of security, and some people feel like they are being followed."
   },
   {
     "id": 361,
@@ -15650,21 +15704,24 @@
         "tags": [
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support incarceration, and small chaos will spread."
       },
       {
         "t": "我反对入刑，轻微该以罚代刑。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I oppose imprisonment, and a slight punishment should be substituted for punishment."
       },
       {
         "t": "我支持累犯才入刑，初犯免。",
         "tags": [
           "GOV:A",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support recidivism before being sentenced, and first-time offenders are exempted."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -15672,7 +15729,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Policing & Punishment"
+    "domain_en": "Policing & Punishment",
+    "scene_en": "Some people propose to jail for repeated acts of slightly disrupting order, in order to follow suit; others say that punishing people with a little money is enough to educate them, and do not easily save the case."
   },
   {
     "id": 362,
@@ -15684,27 +15742,31 @@
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support community-based remediation for social reintegration."
       },
       {
         "t": "我倾向监禁，犯错就该隔离。",
         "tags": [
           "GOV:A"
-        ]
+        ],
+        "t_en": "I tend to be incarcerated and should be isolated if I make a mistake."
       },
       {
         "t": "我支持严管下的社区服役。",
         "tags": [
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support community service under strict control."
       },
       {
         "t": "我主张让受害社区参与监督。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate for the involvement of victimized communities in surveillance."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -15712,7 +15774,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Policing & Punishment"
+    "domain_en": "Policing & Punishment",
+    "scene_en": "A young first-time offender was sentenced to community service instead of short-term imprisonment, and the neighbors argued that some were afraid that it would be unsafe to release him, and some felt that it would be more humane to give him a chance."
   },
   {
     "id": 363,
@@ -15747,7 +15810,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Foreign Affairs & International"
+    "domain_en": "Foreign Affairs & International",
+    "scene_en": "The local community must provide a certain amount of money to support the affected communities in the field, and there are still sections of roads in the city that are in disrepair. Some people advocate taking care of themselves first."
   },
   {
     "id": 364,
@@ -34382,5 +34446,465 @@
     ],
     "id": 810,
     "domain_en": "Minority Groups"
+  },
+  {
+    "id": 811,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "你的一位同事正在经历一场激烈的离婚，双方都争取对八岁孩子的主要监护权。母亲一直是主要照顾者，但收入明显较低；父亲收入稳定且高，但工作需要经常出差。孩子似乎对双方都有情感依恋。你所在地区的家庭法院默认共同监护，但双方都在争取单独监护权，并请求共同的朋友——包括你——写品格陈述。你被卷入了一场将经济稳定与日常情感陪伴对立起来的冲突中，而孩子自己的声音在法律程序中几乎听不到。",
+    "scene_en": "A colleague at work is going through a bitter divorce, and both parents are fighting for primary custody of their eight-year-old child. The mother has been the primary caregiver but earns significantly less; the father has a stable high income but travels constantly for work. The child seems emotionally attached to both. Family courts in your region default to joint custody, but both parents are pushing for sole custody and have asked mutual friends—including you—to write character statements. You are being drawn into a conflict that pits financial stability against daily emotional presence, and the child's own voice is barely heard in the legal process.",
+    "options": [
+      {
+        "t": "我会在陈述中强调母亲作为主要照顾者的角色；成长阶段的日常情感陪伴比收入更重要，打断这种纽带可能对孩子造成持久影响。",
+        "t_en": "I would emphasize the mother's role as primary caregiver in my statement; daily emotional presence during formative years matters more than income, and disrupting that bond could leave lasting effects on the child.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会强调父亲的经济稳定和提供教育机会的能力；稳固的物质基础给孩子更多长远选择，比不可预测的家庭预算更重要。",
+        "t_en": "I would highlight the father's financial stability and ability to provide educational opportunities; a secure material foundation gives the child more long-term options than unpredictable household budgets.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会敦促法院真正私下听取孩子的意见并认真权衡其偏好；最适合决定与谁同住的人，是那个必须承受这个决定的人。",
+        "t_en": "I would urge the court to actually interview the child privately and weigh their preference seriously; the person best suited to decide who they live with is the one who has to live with the decision.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会主张共同监护并制定详细时间表；父母双方贡献不同但必要的东西，强迫二选一的选择会伤害所有相关的人。",
+        "t_en": "I would advocate for joint custody with a detailed schedule; both parents contribute different but necessary things, and forcing an either-or choice hurts everyone involved.",
+        "tags": [
+          "GOV:A",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我对这两位父母都不够了解，写不出有意义的陈述，所以会礼貌地拒绝卷入。",
+        "t_en": "I don't know either parent well enough to write a meaningful statement, so I would politely decline to get involved.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 812,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "你所在地区一家颇受欢迎的野生动物园几十年来一直保留海豚和海狮表演，吸引着家庭和游客。动物福利团体发起运动要求终止表演，认为圈养的海洋哺乳动物承受着压力、空间受限和不自然训练的痛苦。园方反驳说表演为保育教育提供资金，而且圈养几十年的动物放归后无法生存。地方立法者正在考虑禁止所有表演用海洋哺乳动物，这将迫使园方重组或关闭。居民们在童年怀旧与日益增长的伦理不安之间产生了分歧。",
+    "scene_en": "A popular wildlife park in your region has kept its dolphin and sea lion shows for decades, drawing families and tourists. Animal welfare groups have launched a campaign to end the performances, arguing that captive marine mammals suffer from stress, restricted space, and unnatural training. The park counters that the shows fund conservation education and that the animals would not survive release after decades in captivity. Local lawmakers are considering a ban on all performing marine mammals, which would force the park to restructure or close. Residents are divided between childhood nostalgia and growing ethical unease.",
+    "options": [
+      {
+        "t": "我会支持禁令；利用高智力动物娱乐使圈养正常化，公众教育可以在不强迫生物为掌声表演把戏的情况下进行。",
+        "t_en": "I would support the ban; using cognitively complex animals for entertainment normalizes captivity, and public education can be delivered without forcing creatures to perform tricks for applause.",
+        "tags": [
+          "ENV:S",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会反对禁令；这些动物无法放归，关闭表演将消除喂养它们和资助繁殖项目的收入——实际福利比象征性纯洁更重要。",
+        "t_en": "I would oppose the ban; these animals cannot be released, and closing the shows would eliminate the revenue that feeds them and funds breeding programs—practical welfare matters more than symbolic purity.",
+        "tags": [
+          "GOV:L",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会推动分阶段过渡：停止繁殖新表演者、改善圈养环境、十年内转向观察式展览，在动物福利与经济现实之间取得平衡。",
+        "t_en": "I would push for a phased transition: stop breeding new performers, improve enclosures, and shift to observational exhibits over ten years, balancing animal welfare with economic realities.",
+        "tags": [
+          "GOV:A",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会让游客用钱包决定；如果出席率因人们觉得不道德而下降，市场会自然淘汰它，无需政府干预。",
+        "t_en": "I would let visitors decide with their wallets; if attendance drops because people find it unethical, the market will phase it out naturally without government intervention.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我对此没有强烈感觉；我看到双方的观点，可能会跳过这场辩论。",
+        "t_en": "I don't have a strong feeling either way; I see points on both sides and would probably skip this debate.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 813,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "你所在城市一个显眼的公共广场上矗立着一座大型青铜雕像，纪念一位历史人物——他创办了当地主要产业，但也执行过驱逐原住民社区的政策。在新的历史研究之后，活动人士要求拆除或迁移这座雕像到博物馆，称其持续存在是对被驱逐者后代日复一日的冒犯。文物保护者则认为这座雕像具有重要的艺术价值，是城市视觉标识的一部分。市议会必须决定是拆除、添加背景说明牌，还是保持原状。",
+    "scene_en": "A prominent public square in your city features a large bronze statue of a historical figure who founded a major local industry but also enforced policies that displaced indigenous communities. After renewed historical research, activists are demanding the statue be removed or relocated to a museum, calling its continued presence a daily affront to descendants of the displaced. Preservationists argue the statue is a work of significant artistic merit and part of the city's visual identity. The city council must decide whether to remove it, add a contextual plaque, or leave it unchanged.",
+    "options": [
+      {
+        "t": "我会支持将雕像移至博物馆并附完整历史背景；公共空间不应纪念那些遗产包括系统性伤害的人物，无论其经济贡献如何。",
+        "t_en": "I would support removing the statue to a museum with full historical context; public squares should not honor figures whose legacy includes systemic harm, regardless of their economic contributions.",
+        "tags": [
+          "CUL:P",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会保留雕像并添加详细铭牌解释完整历史，包括驱逐事件；抹除可见的历史不会抹除其后果，而且艺术本身有独立价值。",
+        "t_en": "I would keep the statue and add a detailed plaque explaining the full history, including the displacement; erasing visible history does not erase its consequences, and the art itself has independent value.",
+        "tags": [
+          "CUL:T",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会在附近委托建造一座新的反纪念碑，纪念被驱逐的社区，让两种叙事在同一空间共存，而不摧毁任何一方。",
+        "t_en": "I would commission a new counter-memorial nearby to honor the displaced communities, letting both narratives coexist in the same space without destroying either.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保持原状；用今天的价值观回溯地评判历史人物会树立一个可能针对几乎所有纪念碑的先例，城市的身份值得延续。",
+        "t_en": "I would leave it unchanged; retroactively judging historical figures by today's values sets a precedent that could target almost any monument, and the city's identity deserves continuity.",
+        "tags": [
+          "CUL:T",
+          "NAT:N"
+        ]
+      },
+      {
+        "t": "我不觉得自己有资格决定历史的哪些部分值得公共空间，哪些不值得。",
+        "t_en": "I don't feel qualified to decide which parts of history deserve public space and which don't.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 814,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "一家全国性体育联合会正在重写参赛资格规则，此前一名跨性别女性赢得了重大举重比赛，引发一些女运动员抗议，认为青春期形成的生理优势造成了不公平竞争。LGBTQ+倡导者反驳说排斥违反了反歧视原则，而且激素治疗要求已经缓解了优势。联合会必须在开放包容（设激素门槛）、单独设类、或严格维持基于性别的分类之间做出选择。无论他们决定什么，都将决定谁能在最高水平竞争、谁感到被排除在自己热爱的运动之外。",
+    "scene_en": "A national sports federation is rewriting its eligibility rules after a transgender woman won a major weightlifting competition, prompting protests from some female athletes who argue that puberty-developed physiological advantages create unfair competition. LGBTQ+ advocates counter that exclusion violates anti-discrimination principles and that hormone therapy requirements already mitigate advantages. The federation must choose between open inclusion with hormone thresholds, a separate category, or maintaining sex-based categories strictly. Whatever they decide will shape who gets to compete at the highest levels and who feels pushed out of the sport they love.",
+    "options": [
+      {
+        "t": "我会支持在激素治疗要求下的开放包容；将跨性别女性排除在女子体育之外重复了历史上的边缘化模式，监测的激素水平可以平衡公平。",
+        "t_en": "I would support open inclusion with hormone therapy requirements; excluding transgender women from women's sports repeats historical patterns of marginalization, and monitored hormone levels can balance fairness.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会维持基于性别的分类参加精英比赛；男性青春期产生的生理差异不会被激素完全逆转，女运动员值得她们奋力争取的公平竞争环境。",
+        "t_en": "I would maintain sex-based categories for elite competition; the physiological differences from male puberty are not fully reversed by hormones, and female athletes deserve a level playing field they have fought hard for.",
+        "tags": [
+          "CUL:T",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会创建一个额外的开放或混合类别，与男子和女子组别并列，给每个人一个竞争的地方，而不强迫任何一方接受他们认为不公平的融合。",
+        "t_en": "I would create an additional open or mixed category alongside men's and women's divisions, giving everyone a place to compete without forcing either group to accept what they see as unfair integration.",
+        "tags": [
+          "GOV:A",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会让每个体育联合会根据该运动的具体生理需求设定自己的标准，而不是强加一刀切的国家规则。",
+        "t_en": "I would let each sport federation set its own standards based on the specific physiological demands of that sport, rather than imposing a one-size-fits-all national rule.",
+        "tags": [
+          "GOV:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我不怎么关注竞技体育，对此事没有足够了解的意见。",
+        "t_en": "I don't follow competitive sports closely enough to have an informed opinion on this.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 815,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "你家附近一块空地多年来被非正式用作社区花园，居民们一起种植蔬菜、香草和花卉。土地所有者继承了这块地，现在想把它卖给计划建小型公寓楼的开发商。长期园丁们争辩说绿地改善心理健康、减少热岛效应、增进社会凝聚力，并发起请愿要求市政府购买这块地作为永久公共用地。土地所有者反驳说这是私有财产，住房短缺比保留一个非正式花园更紧迫。邻居们分成了两派：那些在那里种番茄的人，和那些需要可负担住房的人。",
+    "scene_en": "A vacant lot in your neighborhood has been used informally for years as a community garden where residents grow vegetables, herbs, and flowers together. The landowner, who inherited the property, now wants to sell it to a developer planning a small apartment complex. Long-time gardeners argue that the green space improves mental health, reduces heat, and builds social cohesion, and they have launched a petition to have the city purchase the lot as permanent public land. The landowner counters that it is private property and that housing scarcity is a more urgent problem than preserving an informal garden. Neighbors are splitting between those who tend tomatoes there and those who need affordable places to live.",
+    "options": [
+      {
+        "t": "我会支持市政府购买这块地作为永久社区花园；绿色社交空间是私人开发无法替代的公共物品，社区的特色很重要。",
+        "t_en": "I would support the city buying the lot for a permanent community garden; green social spaces are public goods that private development cannot replace, and the neighborhood's character matters.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会站在土地所有者一边；住房短缺影响的人比花园使用多，用征用权或公共资金阻止合法交易会树立令人担忧的产权先例。",
+        "t_en": "I would side with the landowner; housing scarcity affects more people than garden access, and using eminent domain or public funds to block a legal sale sets a troubling property-rights precedent.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会推动混合用途妥协：底层社区花园加楼上公寓，要求开发商将土地永久留作花园作为获得建筑许可的条件。",
+        "t_en": "I would push for a mixed-use compromise: ground-floor community garden with apartments above, requiring the developer to set aside the land in perpetuity as a condition of building permits.",
+        "tags": [
+          "GOV:A",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会为园艺团体组织众筹让他们自己购买这块地；如果社区真的重视它，他们应该把真金白银放在请愿书后面。",
+        "t_en": "I would organize a crowdfunding effort for the gardening group to buy the lot themselves; if the community truly values it, they should put their own money where their petitions are.",
+        "tags": [
+          "ECO:R",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我不住在那块地附近，所以感觉不够强烈，不会选边站。",
+        "t_en": "I don't live near that lot, so I don't feel strongly enough to pick a side.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 816,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "你所在公司宣布下个月起将在所有远程员工的电脑上安装键盘记录和定期截屏软件，理由是远程工作后产出指标下降。一些同事认为这是在家工作的代价；其他人感觉这把他们的家庭办公室变成了监控区，摧毁了信任。管理层说数据只在绩效出现警示时才会审查，但政策平等适用于所有人。你可以选择回办公室全职工作以避开监控，但那意味着更长的通勤和更少的家庭时间。做出选择的截止日期是周五。",
+    "scene_en": "Your company has announced it will install keystroke-logging and periodic screenshot software on all remote employees' computers starting next month, citing productivity concerns after a drop in output metrics. Some colleagues accept it as the price of working from home; others feel it turns their home offices into surveillance zones and destroys trust. Management says the data will only be reviewed if performance flags appear, but the policy applies to everyone equally. You have the option to return to the office full-time to avoid monitoring, but that would mean a longer commute and less family time. The deadline to choose is Friday.",
+    "options": [
+      {
+        "t": "我会接受监控并继续远程工作；公司为我的时间付费，有权核实生产力，如果我勤奋工作就没什么可隐藏的。",
+        "t_en": "I would accept the monitoring and stay remote; the company pays for my time and has a right to verify productivity, and I have nothing to hide if I am working diligently.",
+        "tags": [
+          "TECH:K",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会拒绝安装软件并回办公室；在我自己家里进行监控跨越了我不愿接受的界限，即使这意味着通勤时间和灵活性减少。",
+        "t_en": "I would refuse the software and return to the office; surveillance in my own home crosses a line I am not willing to accept, even if it costs me commute time and flexibility.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会推动集体协商方式：团队协商基于成果的指标而非监控，衡量交付物而不是按键。",
+        "t_en": "I would push for a collective bargaining approach: the team negotiates outcome-based metrics instead of surveillance, measuring deliverables rather than keystrokes.",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我会寻找另一份基于信任的远程工作政策；市场提供替代选择，我宁愿用脚投票，也不愿接受我觉得有损尊严的条件。",
+        "t_en": "I would look for another job with a more trust-based remote policy; the market offers alternatives, and I would rather vote with my feet than accept conditions I find demeaning.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我还没决定；两个选项都有实际的代价，我还在权衡。",
+        "t_en": "I haven't decided yet; both options have real trade-offs and I am still weighing them.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 817,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "一位大学客座讲师受邀讲授经济政策，但利用讲台批评校方管理层并呼吁学生抵制某些课程。大学取消了讲座系列的剩余场次，理由是违反了约定的主题。学生言论自由团体抗议取消是审查；管理层则认为受邀演讲者必须遵守约定，利用大学资源组织抵制破坏了教育运作。学生报纸正在做民调，调查大学是否反应过度或在权限内行事。",
+    "scene_en": "A visiting lecturer at a university was invited to speak on economic policy but used the platform to criticize the institution's administration and call for student boycotts of certain classes. The university cancelled the remaining dates of the lecture series, citing breach of the agreed topic. Student free-speech groups are protesting the cancellation as censorship, while the administration argues that invited speakers must stick to their brief and that using university resources to organize boycotts undermines educational operations. The student newspaper is running a poll on whether the university overreacted or acted within its rights.",
+    "options": [
+      {
+        "t": "我会支持大学的决定；受邀演讲者在话题和语气上运作于隐性契约之下，利用讲台组织抵制超出了受邀演讲的合理范围。",
+        "t_en": "I would support the university's decision; invited speakers operate under an implicit contract about topic and tone, and using the podium to organize boycotts goes beyond the scope of an invited lecture.",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会反对取消；大学应该是挑战权威被期待的地方，因批评管理层而关闭演讲者会冷却开放探究。",
+        "t_en": "I would oppose the cancellation; a university should be a place where challenging authority is expected, and shutting down a speaker for criticizing administration chills open inquiry.",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会允许演讲继续，但要求为管理层代表提供反驳时段，让双方都能发表论点，而不是压制任何一方。",
+        "t_en": "I would allow the speech to continue but require a rebuttal slot for administration representatives, letting both sides air their arguments rather than silencing either.",
+        "tags": [
+          "GOV:A",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会让学生购票和出席率决定；如果足够多的学生想听到批评声音，他们会资助和组织独立活动，无需大学赞助。",
+        "t_en": "I would let student ticket sales and attendance decide; if enough students want to hear critical voices, they will fund and organize independent events without university sponsorship.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "如果不了解具体说了什么以及原始协议是什么，我很难判断。",
+        "t_en": "I find it hard to judge without knowing exactly what was said and what the original agreement looked like.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 818,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "你所在国家立法机构正在辩论大幅提高遗产税，提议从对超过一定门槛的遗产适度提高，到高额征收将吞没大部分多代财富。支持者认为继承财富固化了不平等，税收收入可用于资助教育和医疗，造福那些生来没有优势的人。反对者反驳说人们有权将劳动成果传给子女，高额遗产税迫使家族企业和农场出售。公众舆论在将继承视为不劳而获的特权，和视为父母牺牲的自然结果之间分裂。",
+    "scene_en": "Your national legislature is debating a significant increase in inheritance tax, with proposals ranging from a modest hike on estates over a certain threshold to a steep levy that would capture most of multi-generational wealth. Proponents argue that inherited wealth entrenches inequality and that the revenue could fund education and healthcare for those born without advantage. Opponents counter that people have a right to pass the fruits of their labor to their children, and that high estate taxes force the sale of family businesses and farms. Public opinion is split between seeing inheritance as unearned privilege and as the natural outcome of parental sacrifice.",
+    "options": [
+      {
+        "t": "我会支持对高门槛以上征收高额遗产税；大规模的代际转移创造了世袭贵族，税收可以资助实质性的机会平等项目。",
+        "t_en": "I would support a steep inheritance tax above a high threshold; large intergenerational transfers create a hereditary aristocracy, and the revenue can fund substantive equal-opportunity programs.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对任何增加；父母工作部分是为了给孩子更好的起点，对这种转移征税惩罚了远见和牺牲，同时迫使以不利价格出售资产。",
+        "t_en": "I would oppose any increase; parents work partly to give their children a better start, and taxing that transfer punishes foresight and sacrifice while forcing asset sales at distressed prices.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会支持适度税收，家庭农场和小企业免税，只针对流动性金融财富，这样生产企业不会被拆分。",
+        "t_en": "I would support a moderate tax with exemptions for family farms and small businesses, targeting only liquid financial wealth so that productive enterprises are not broken up.",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会倡导用终身财富赠与额度取代遗产税；让父母在有生之年免税转移固定金额，减少单次死亡税事件的冲击。",
+        "t_en": "I would advocate replacing inheritance tax with a lifetime wealth-gift allowance; let parents transfer a fixed amount tax-free during their lifetime, reducing the shock of a single death-tax event.",
+        "tags": [
+          "GOV:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我不怎么考虑税收政策，对此没有确定的观点。",
+        "t_en": "I don't think about tax policy much and don't have a settled view on this.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 819,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "一家大型本土钢铁和机械制造商请求对进口商品征收紧急关税，认为外国竞争对手受益于更宽松的环境和劳工标准，使公平竞争不可能。他们警告说没有保护，数千个本地岗位将消失，工业产能将永久丧失。消费者团体反对关税，指出受保护的国内价格已经高出20-30%，保住的工作是以每个家庭的购买力为代价的。经济学家们意见分歧：一些人看到战略性工业保留，另一些人则看到对过时生产模式的昂贵怀旧。",
+    "scene_en": "A major domestic manufacturer of steel and machinery has requested emergency tariffs on imported goods, arguing that foreign competitors benefit from weaker environmental and labor standards, making fair competition impossible. Without protection, they warn, thousands of local jobs will vanish and industrial capacity will be lost permanently. Consumer groups oppose the tariffs, pointing out that protected domestic prices are already 20-30% higher and that the saved jobs come at the expense of every household's purchasing power. Economists are divided between those who see strategic industrial preservation and those who see costly nostalgia for obsolete production models.",
+    "options": [
+      {
+        "t": "我会支持关税；工业产能是国家韧性问题，与标准更弱的国家竞争不是自由贸易，而是监管套利。",
+        "t_en": "I would support the tariffs; industrial capacity is a matter of national resilience, and competing against countries with weaker standards is not free trade but regulatory arbitrage.",
+        "tags": [
+          "NAT:N",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会反对关税；消费者不应支付更高价格来支撑缺乏竞争力的产业，长期繁荣来自专业化而非保护。",
+        "t_en": "I would oppose the tariffs; consumers should not pay higher prices to prop up uncompetitive industries, and long-term prosperity comes from specialization, not protection.",
+        "tags": [
+          "NAT:C",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会支持以对等环境和劳工标准为条件的关税；只在推动贸易伙伴提高规则以匹配的同时保护国内生产者。",
+        "t_en": "I would support conditional tariffs tied to reciprocal environmental and labor standards; protect domestic producers only while pushing trading partners to raise their rules to match.",
+        "tags": [
+          "NAT:N",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会将同样的公共资金转向对受影响工人的再培训和过渡支持，帮助他们转向增长中的行业，而不是冻结工业结构。",
+        "t_en": "I would redirect the same public money into retraining and transition support for affected workers, helping them move to growing sectors rather than freezing the industrial structure in place.",
+        "tags": [
+          "ECO:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我不够了解这个行业的具体情况，无法采取坚定立场。",
+        "t_en": "I don't know enough about this industry's specifics to take a firm position.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 820,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "一座快速增长的城市正在耗尽当前边界内可开发的土地。最明显的扩张路线是填平一片沿海湿地，该湿地是商业重要鱼类物种的育苗场和候鸟的中途停歇地。开发商认为湿地边缘且不重要，住房短缺正在让年轻家庭和必要工作者负担不起。环保人士反驳说一旦铺设路面，湿地生态无法恢复，而且鱼类育苗场支撑的区域渔业经济价值超过开发本身。市议会必须在发放填埋许可、指定湿地保护区、或寻求妥协之间做出选择。",
+    "scene_en": "A rapidly growing city is running out of developable land within its current boundaries. The most obvious expansion route would fill in a coastal wetland that serves as a nursery for commercially important fish species and a stopover for migratory birds. Developers argue the wetland is marginal and that housing shortages are pricing out young families and essential workers. Conservationists counter that once paved, wetland ecology cannot be restored, and that the fish nursery supports a regional fishing economy worth more than the development. The city council must choose between issuing fill permits, designating the wetland protected, or seeking a compromise.",
+    "options": [
+      {
+        "t": "我会反对填埋许可；湿地是不可逆转的生态基础设施，其损失通过食物链和渔业产生连锁反应，开发收入无法修复。",
+        "t_en": "I would oppose the fill permits; wetlands are irreversible ecological infrastructure, and their loss cascades through food chains and fisheries in ways that development revenue cannot repair.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持可控开发加强制缓解银行；允许部分填埋但要求开发商在其他地方恢复同等湿地，在增长与生态核算之间取得平衡。",
+        "t_en": "I would support controlled development with mandatory mitigation banking; allow some fill but require developers to restore equivalent wetland elsewhere, balancing growth with ecological accounting.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持开发；住房可负担性是紧迫的人类需求，延迟建设意味着更多家庭被推往更长通勤和消耗更多土地的郊区扩张。",
+        "t_en": "I would support the development; housing affordability is a pressing human need, and delaying construction means more families pushed to longer commutes and sprawl that consumes even more land.",
+        "tags": [
+          "ENV:G",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会推动垂直密度而非水平扩张；在现有边界内建更高并投资交通，保留湿地同时仍然增加住房存量。",
+        "t_en": "I would push for vertical density instead of horizontal expansion; build taller within existing boundaries and invest in transit, preserving the wetland while still adding housing stock.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我不觉得自己对湿地生态有足够了解，无法对这种权衡发表意见。",
+        "t_en": "I don't feel informed enough about wetland ecology to weigh in on this trade-off.",
+        "tags": []
+      }
+    ]
   }
 ]
