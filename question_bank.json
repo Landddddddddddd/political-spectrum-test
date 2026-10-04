@@ -35153,5 +35153,417 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 821,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene_en": "A city transit authority is weighing a request to let police query fare-card travel records when investigating suspected fare evasion. Officials argue that having verifiable travel history would let officers confirm identities quickly and cut down confrontations on crowded platforms. Riders' representatives counter that a month of tap-in and tap-out data reveals commutes to a clinic, attendance at union meetings, and which neighborhood someone sleeps in, and that any access without an individual warrant turns everyday movement into a searchable dossier. As a member of the transit board, you must vote on whether this access is granted and under what limits.",
+    "scene": "某市交通运营方正就一项请求进行表决：是否允许警方在调查疑似逃票时查询乘客的乘车卡出行记录。运营方认为，可核验的出行轨迹能让执法人员快速确认身份，减少拥挤站台上的当面冲突。乘客代表则反驳，一个月的进出站数据能还原某人去诊所的就诊行程、参加工会集会的记录，以及晚上常住在哪个街区；若不设逐案令状就开放这类数据，日常出行就等于被做成了可检索的档案。你是交通董事会成员，须就该请求是否批准以及设何种限制投票。",
+    "options": [
+      {
+        "t_en": "I would grant access only against a case-specific judicial order; fare records then travel through a familiar evidentiary chain, and riders are not left to an officer's hunch about whose commute is worth pulling.",
+        "t": "我会支持在逐案司法令状批准后才开放查询；票务记录由此纳入熟悉的证据链条，乘客也不必听任某位执法人员凭直觉决定翻阅谁的出行记录。",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t_en": "I would refuse routine access and limit any query to a serious-emergency exception; batch travel histories reconstruct a life in close detail, and that granularity should not become a standard enforcement tool.",
+        "t": "我会拒绝常态化调取，把查询限定在严重紧急例外；批量出行记录能精细地拼出一个人的生活，这种颗粒度不应成为常规执法工具。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would allow a blinded match instead: police submit a route and a time window, the system answers only whether anything matches, and the raw itinerary never leaves the transit operator.",
+        "t": "我会允许改为「盲匹配」：警方提交线路和时间窗，系统只回答是否命中，原始行程记录始终不离开运营方。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would keep travel data out of enforcement altogether and put the money into gate maintenance and platform staff; most evasion I have seen comes from broken equipment, not calculated fraud.",
+        "t": "我会把出行数据完全排除在执法之外，把预算投向闸机维护与站台人员配备；我见过的多数逃票来自设备故障，而非蓄意欺诈。",
+        "tags": [
+          "GOV:L",
+          "ECO:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 822,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene_en": "A mid-sized company has begun using a screening model that scores short recorded interviews and ranks applicants before any human reads a file. An applicants' advocacy group obtained a sample audit suggesting the model systematically downgrades candidates who speak with a regional accent and those who took career breaks for caregiving. The company replies that the model substantially reduced time-to-hire at its understaffed plants and points to internal figures showing longer average tenure among applicants it ranked highest. You are advising the regulator drafting rules for this class of system.",
+    "scene": "一家中型公司开始使用评分模型处理应聘者的短时长录制面试，在任何人阅读简历之前就排出名次。一个求职权益组织取得了一份抽样审计，指出该模型系统性地压低了带地方口音者、以及因照护家人而中断职业者的评分。公司回应说，模型大幅缩短了人手不足工厂的招聘周期，并援引内部数据称排名靠前的员工平均留任期更长。你正在为起草这类系统规则的监管机构提供咨询。",
+    "options": [
+      {
+        "t_en": "I would prohibit unexplained ranking in hiring decisions; when a system cannot state which factors drove a rejection, the person rejected has no starting point from which to ask anyone to reconsider.",
+        "t": "我会禁止在人事决策中使用不可解释的排序；当一个系统说不出是哪些因素导致拒绝，被拒者连请求复议的起点都没有。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would require annual independent bias audits with retained records while allowing continued use; a flat ban pushes screening back toward informal networks, which an outside body can examine far less easily.",
+        "t": "我会要求年度独立偏见审计并留存记录，同时允许继续使用；一律禁止会把筛选推回非正式的熟人网络，而后者更难被外部机构检视。",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would mandate disclosure rather than prior review: tell every applicant that a model was involved, publish the factors it weighs, and provide a human reconsideration path with a stated deadline.",
+        "t": "我会强制要求披露而非事前审查：告知每位应聘者决策有模型参与，公布其权衡的因素，并提供有明确时限的人工复议通道。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would leave this to market pressure; employers competing for scarce staff have reasons to drop tools that filter out qualified people, while mandated audits tend to become paperwork recording whatever the vendor chose to measure.",
+        "t": "我会把这交给市场压力：争抢人手的雇主有理由弃用会滤掉合格者的工具，而强制审计往往变成文档作业，只记录厂商选择度量的那部分。",
+        "tags": [
+          "ECO:R",
+          "TECH:U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 823,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene_en": "A regulator is drafting rules for minors' accounts on short-video platforms, and three mutually exclusive proposals are on the table: default restrictions for everyone under eighteen, verified through a shared age-credential service; on-device age estimation that transmits no identity documents but concedes it misclassifies some teenagers and some adults; or no age gate at all, with mandatory design limits such as no autoplay and no infinite scroll applied to every account. Parent associations, digital-rights groups, and the platforms each back a different option. You have to recommend one.",
+    "scene": "监管机构正为短视频平台上的未成年人账户起草规则，桌面上摆着三个互斥方案：一是通过统一的年龄凭证服务核验未满十八岁的用户，并默认启用限制设置；二是采用不上传任何身份证件、只在本机完成年龄估算的方案，但它承认会把部分青少年误判为成年人、也会把部分成年人误判为青少年；三是不设年龄门槛，改为对所有账户统一施加关闭自动播放、禁止无限下滑等设计限制。家长团体、数字权利团体与平台方各自支持不同方案。你须推荐其中一种。",
+    "options": [
+      {
+        "t_en": "I would choose on-device estimation over a shared credential service; once a reusable identity-check infrastructure exists for this purpose, extending it to unrelated services is a far shorter step than building local safeguards in the first place.",
+        "t": "我会选本机年龄估算而非统一凭证服务；一旦为这一目的建成了可复用的身份核验基础设施，把它延伸到不相关的服务，比从一开始就做本地保护要短得多。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would choose the shared credential; estimation errors leave a measurable share of teenagers outside every protection on offer, and one standard is what makes compliance auditable rather than a claim each platform grades for itself.",
+        "t": "我会选统一凭证方案；估算误差会让相当比例的青少年完全落在任何保护之外，而统一标准才能让合规可被审计，而不是由各平台自行打分宣称。",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would choose design limits instead of an age gate; what harms younger users about these feeds is the autoplay and infinite-scroll mechanics, and fixing the mechanics avoids having to decide who must prove their identity in order to read or post online.",
+        "t": "我会选择设计限制而非年龄门槛；这类信息流对年轻用户的伤害来自自动播放与无限下滑的机制，修好机制就不必去裁决谁为了在线阅读和发言而必须自证身份。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would let households set this and require only that platforms ship usable tools; tolerance for what adolescents watch varies enormously between families, and I would rather accounts be configured by the people who answer for it at home.",
+        "t": "我会把设置权交给家庭、只要求平台提供可用的工具；不同家庭对青少年观看内容的接受度差异极大，我更希望账户由在家里为此负责的人来配置。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would oppose all three and instead require a chronological, unrecommended feed that any user can switch on; filtering minors out of these spaces also cuts off routes where they look for health and crisis information that no one else answers.",
+        "t": "我会三者都反对，改为要求平台提供用户可自行开启的时间序列表单；把未成年人筛出这些空间，也切断了他们查询健康与危机信息、而别处无人回应的路径。",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 824,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene_en": "A publicly funded broadcaster is settling its election coverage plan. A movement polling near the qualifying threshold has repeatedly made claims that the national statistics office has documented as false, and it answers that those corrections come from institutions it does not recognise. The newsroom is split three ways: airtime allocated by poll standing with on-screen fact-checks; editorial curation that limits uncorroborated claims; or unedited long-form interviews so viewers hear the claims in their full context. You must choose the rule the broadcaster publishes in advance.",
+    "scene": "一家公共资助的广播机构正在敲定选举报道方案。一个民调逼近入门门槛的运动反复发表国家统计部门已证伪的说法，并回应称这些更正来自它所不承认的机构。编辑部分为三派：按民调得票分配时段并配字幕核查；行使编辑裁量、限制未经证实的说法；或者播出未经剪辑的长访谈，让观众在完整语境中听到这些主张。你须选定该机构将预先公开发布的规则。",
+    "options": [
+      {
+        "t_en": "I would allocate by poll standing with on-screen fact-checks; viewers can then see the forces that actually exist in the country, and nobody in the newsroom has to rule case by case on whose claims count as evidence.",
+        "t": "我会按民调得票分配时段并配字幕核查；观众由此能看到该国真实存在的政治力量，编辑室也不必逐案裁决谁的说法算得上证据。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would adopt editorial curation; funding drawn from a compulsory levy carries an obligation not to spend the public spectrum repeating claims already documented as false, even if that brings complaints from the movement's supporters.",
+        "t": "我会支持编辑裁量；取自强制性收费的资金负有义务，不用公共频道反复播出已被证伪的说法，即便这会招来该运动支持者的投诉。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would publish unedited long interviews instead; short clips detach claims from whatever reasoning surrounded them, whereas a long exchange lets the interviewer press on the spot rather than leaving spliced footage to argue for itself.",
+        "t": "我会改为播出未经剪辑的长访谈；短片断会把说法从其周围的论证中剥离出来，而长对话让采访者当场追问，不必让剪辑画面自行立论。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would adopt one fixed block that every qualifying group receives identically, with no edits and no anchors; whichever format wins, publishing the rule before the campaign starts is what stops the losing side from calling the coverage rigged.",
+        "t": "我会采用统一的固定时段，所有达标团体获得完全相同的时长，不剪辑、不设主持人；无论选哪种形式，规则在竞选开始前公布，才让失利方无法宣称报道被动了手脚。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 825,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene_en": "In a closely watched case, investigators searching for documents about financial fraud exceeded their warrant and copied the contents of an entire office, which surfaced evidence of a separate and far more serious offence. The defence has moved to exclude everything recovered. The prosecution argues that one procedural mistake should not place violent conduct beyond the reach of the courts. The legal community is split between a strict exclusionary rule, a good-faith exception, and a middle path. You sit on the bench that has to set the standard.",
+    "scene": "在一桩广受关注的案件中，调查人员持证搜查财务欺诈文件时超出了令状范围，复制了整间办公室的内容，其中浮现出另一桩性质严重得多的违法行为的证据。辩护方请求排除由此取得的一切材料。检方主张，一次程序上的失误不应让暴力行为脱离法院的管辖。法律界在严格排除规则、善意例外与折中路径之间分裂。你所在审判席须确立适用标准。",
+    "options": [
+      {
+        "t_en": "I would keep exclusion strict; a rule that still delivers a usable result after it is breached stops constraining anyone, and the next warrant will be drafted with the same carelessness that produced this one.",
+        "t": "我会维持严格排除；一条被违反后仍能换来可用结果的规则，就再也约束不了任何人，下一份令状也会以同样的草率起草。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would adopt the good-faith exception; excluding proof of serious harm because an officer misread a boundary is a remedy whose whole cost falls on the people harmed, none of whom chose how the search was carried out.",
+        "t": "我会认可善意例外；因某位执法人员误读了范围而排除严重伤害行为的证据，其代价完全落在受害者头上，而他们之中无人参与过搜查方式的选择。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would exclude the evidence but attach consequences elsewhere: personal liability for the officer who exceeded the warrant, and state compensation for the person searched, so the cost lands on whoever made the choice.",
+        "t": "我会排除证据，但把后果放到别处：由越界取证的执法人员承担个人责任，同时由国家向被搜查者支付赔偿，让代价落在做出那个选择的人身上。",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would put the question to a jury rather than settle it on the bench; whether a search crossed the line is a judgment about what ordinary people accept from state power, and I am uneasy deciding that alone.",
+        "t": "我会把这个问题交给陪审团而非由审判席单独裁断；一次搜查是否越界，关涉普通人能容忍国家权力走到哪一步，由我独自判定令我难安。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 826,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene_en": "Nearly a third of the people held in the county jail have not been convicted of anything; they remain detained because they cannot post bail amounts that would be trivial to a middle-income household. A reform package proposes ending cash bail and replacing it with a risk score that decides who is released before trial. The public defender's office says the score feeds today's arrest patterns, including their skew, into tomorrow's decisions about liberty. The prosecutor's office says that without some filter, defendants accused of violence are released automatically. You have to take a position.",
+    "scene": "县监狱里近三分之一的人尚未被定罪；他们仍被羁押，只是因为拿不出对中等收入家庭而言微不足道的保释金。一项改革方案提出取消现金保释，改用风险评分来决定谁在审判前获释。公设辩护人办公室指出，该评分是在把今天的逮捕模式连同其中的倾斜喂进去，变成明天关押与否的决定。检方则说，缺少某种过滤机制，被控暴力的被告就会自动获释。你须表明立场。",
+    "options": [
+      {
+        "t_en": "I would end cash bail; whether someone sleeps at home pending trial should turn on their record of appearing and on public safety, not on how much their relatives can assemble before Friday.",
+        "t": "我会取消现金保释；一个人在候审期间能否睡在自己家里，应取决于其到庭记录和公共安全考量，而不是亲属能在周五前凑出多少钱。",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would reject the risk score; training a release model on past arrest data takes a pattern that already reflects policing choices and returns it as a number nobody can cross-examine.",
+        "t": "我会拒绝采用风险评分；用过去的逮捕数据训练释放模型，是把一个本已反映执法选择的模式，变成一个无人可以交叉询问的数字。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep cash bail and fund a public bail office for low-income defendants; a guarantee posted by the state keeps a hearing date in front of people who otherwise lose jobs and housing within a fortnight of being held.",
+        "t": "我会保留现金保释，同时由公共资金支持设立保释办公室为低收入被告提供担保；公权力出具的担保能把听证日留在一群人面前，否则他们会在被羁押的两周内失去工作和住所。",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would end cash bail and adopt the score, but require published error rates broken down by group and a review panel including defence lawyers and people who have served time.",
+        "t": "我会取消现金保释并采用评分，但要求公布按群体拆分的错误率，并设立含辩护律师与曾服刑者在内的复核委员会。",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 827,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene_en": "A school district is revising its core reading list after a wave of complaints from parents who say several long-standing titles expose younger students to material they are not ready for. Teachers answer that removing the books removes the only structured setting in which students meet historical violence and moral ambiguity with an adult present. Some parents ask instead for an opt-out letting their child read an approved substitute. Others want a standing committee to handle titles case by case. The board will adopt exactly one rule.",
+    "scene": "在一波家长投诉之后，某学区正在修订核心阅读书目。家长称，几本长期列在书单上的作品让低年级学生过早接触了他们尚未准备好面对的内容。教师回应，撤掉这些书也就撤掉了唯一的成人在场的结构化情境——学生本可在其中接触历史暴力与道德含混。也有家长请求改为「替代读物」豁免，让自己的孩子读经批准的替换篇目；还有人希望设立常设委员会逐案处理。董事会只采纳其中一条规则。",
+    "options": [
+      {
+        "t_en": "I would keep the titles and add contextual introductions; for a fourteen-year-old the alternative is meeting the same material alone on a phone, without a teacher able to explain how it was written and why.",
+        "t": "我会保留这些篇目并补充背景导读；对一个十四岁的孩子来说，另一种可能是独自在手机上遇到同样的内容，身边没有能说明它是如何写成、为何存在的老师。",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would grant an opt-out with an approved substitute; parents carry the daily consequences of what their child brings home, and redirecting one reading for one child does not take the text out of anyone else's classroom.",
+        "t": "我会允许以经批准的替代篇目申请豁免；家长日常承担着孩子把什么带回家的后果，而为这一个孩子调整一次阅读，并不会把这篇文本从别人的课堂上撤走。",
+        "tags": [
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I would hand this to a standing committee of teachers, parents, and older students operating under a published procedure; whoever decides alone is replaced the moment the next election changes the board.",
+        "t": "我会交给由教师、家长和高年级学生组成的常设委员会，并公开其程序；任何单方裁决者，都会在下一届董事会改组时被换掉。",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would leave the list unchanged and record every challenge publicly; once removal is possible, teachers start excluding anything that might draw one complaint, and the list narrows toward whatever offends nobody.",
+        "t": "我会保持书单不变并公开记录每一次异议；一旦下架成为可能，教师就会开始剔掉任何可能招来一次投诉的内容，书单将收窄到不冒犯任何人的那一小片。",
+        "tags": [
+          "CUL:P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 828,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene_en": "A mid-sized city's employer association has asked the council to back an expansion of seasonal work visas, pointing to unharvested crops, unfilled care shifts, and kitchens closing at midday. A union federation opposes it, citing years of flat wages in exactly those sectors and a rental market where newcomers compete for the same units. Migrant-advocacy groups warn that a worker tied to a single employer cannot report abuse without losing status. Four mutually exclusive proposals are on the table, and the council wants your recommendation.",
+    "scene": "某中型城市的雇主协会请求议会支持扩大季节性工作签证，理由是作物无人采收、照护班次空置、餐厅中午就歇业。工会联合会反对，指出恰恰是这些行业的工资连年停滞，而租房市场中新来者会争夺同一批房源。移民权益团体警告，与单一雇主绑定的劳工若不放弃身份就无法举报虐待。桌上摆着四个互斥方案，议会需要你的推荐。",
+    "options": [
+      {
+        "t_en": "I would expand visas with a binding wage floor and portable permits; if a worker can leave an abusive employer without leaving the country, the balance on those worksites shifts in a way that inspection visits never manage.",
+        "t": "我支持在绑定工资下限与可携带签证的前提下扩大；如果一名劳工能离开虐待他的雇主而不必离境，这些工作场所的力量对比会发生巡查从未达成的改变。",
+        "tags": [
+          "NAT:C",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would oppose expansion; adding labour supply to sectors whose pay has not moved in years affects the bargaining position of the people already working those shifts, among them migrants who arrived earlier.",
+        "t": "我会反对扩大；向薪酬多年未动的行业追加劳动力供给，会影响已经在做这些班次的人的议价地位，其中也包括早些年到来的移民。",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would back expansion only alongside a route to permanent residence; the current arrangement rotates people through for a season and then sends away whoever has learned the language and the job.",
+        "t": "我只在同时提供永居路径的前提下支持扩大；现行安排让人进来干一季就轮换出去，然后把刚学会语言、熟悉了手艺的人送走。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would support expansion with a mandatory employer levy funding housing and language classes; if a firm's staffing model depends on workers who cannot afford local rent, that cost belongs in the firm's accounts.",
+        "t": "我支持在征收雇主专项附加、用于住房与语言课程的前提下扩大；如果一家公司的人手配置依赖那些付不起本地租金的劳工，这笔成本就该计入公司账。",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 829,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene_en": "A publicly funded hospital is redesigning the floor where end-of-life care is provided. Chaplains from several religious communities have offered to staff a room on rotation, funded jointly by their organisations. A group of clinical staff proposes instead a single quiet space with no religious symbols, staffed by counsellors trained in non-religious support, arguing that a public institution should not have to decide which traditions are given a key and which a waiting slot. Families have written in both directions. As the hospital's ethics adviser, you must recommend one course.",
+    "scene": "一家公立医院正在重新设计安宁疗护所在的楼层。数个宗教团体的牧灵人员提出由其团体共同出资、轮值负责一间祈祷室。一批临床工作人员则建议改为单一的无宗教符号安静空间，由受过非宗教性生命意义支持训练的辅导员值守，理由是公共机构不必裁定哪些传统拿到钥匙、哪些只能排在后面。患者家属的书面意见两边都有。作为医院伦理顾问，你须给出推荐。",
+    "options": [
+      {
+        "t_en": "I would accept the multi-faith room organised on rotation; secularism in a public hospital should mean the state takes no position on belief, not that belief is removed from the bedside of people who are dying.",
+        "t": "我会接受由轮值方式运营的多信仰祈祷室；公立医院的世俗性应意味着国家对信仰不持立场，而不是把信仰从临终者的床边移走。",
+        "tags": [
+          "SEC:F",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would build the neutral quiet room with non-religious counsellors; deciding which traditions get the rota and how many hours each receives puts the hospital in the position of ranking faiths it is not supposed to rank.",
+        "t": "我会建中性安静空间并配非宗教辅导员；裁定哪些传统排入轮值班表、各占多少小时，等于把医院放到了排序信仰的位置上，而这本不该由它来排序。",
+        "tags": [
+          "SEC:E",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would fund the neutral space and also let any patient summon a representative of their own tradition on request; what matters most is who chooses, and I would keep that choice with the patient rather than the rota.",
+        "t": "我会为中性空间提供经费，同时允许任何患者在请求时召唤自己信仰传统的代表；关键在于由谁来选择，而我更希望这个选择权留在患者手里，而不是排班表手里。",
+        "tags": [
+          "SEC:F",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would allocate no budget to a dedicated space either way and would put the money into pain management and overnight family accommodation; those answer needs that every patient on the ward reports, whatever they believe.",
+        "t": "我不会给任何一种专属空间拨预算，而是把这笔钱投入疼痛控制与家属夜间留宿；这些回应的是病房里每位患者都会提出的需要，无论其信仰如何。",
+        "tags": [
+          "SEC:E"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 830,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene_en": "The national statistics office plans to add far more granular ethnic and disability categories to the next census, arguing that services cannot be shown to reach groups that are never counted separately. Several minority organisations support this; others oppose it, noting that categories are written by whoever holds office, that past counts were used to locate and punish communities, and that once a register exists its later uses are not controlled by the people listed in it. You are advising on whether to adopt the new categories and how.",
+    "scene": "国家统计署计划在下一轮人口普查中加入细得多的族裔与残障类别，理由是若某个群体从未被单独计数，就无法证明公共服务抵达了他们。若干少数群体组织支持这一做法，另一些则反对：他们指出类别由执掌权力者书写，历史上的人口统计曾被用以定位和惩罚某些社群，而一旦名册存在，其后续用途就不再由被列名的人掌控。你要就是否采用新类别以及如何采用提供建议。",
+    "options": [
+      {
+        "t_en": "I would adopt the granular categories; interpreters, accessible housing, and targeted screening can only be argued with numbers, and without them every group is told that its disadvantage is anecdotal.",
+        "t": "我会采用细分类别；翻译、无障碍住房和定向筛查的需求只能用数字来论证，没有这些计数，每个群体都会被回以其劣势只是零星个案的说法。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the categories optional and let people write their own description; the frame is drafted by whoever holds office, and being placed in a box someone else designed is not the same thing as being counted.",
+        "t": "我会让类别保持自填、允许人们写下自己的表述；分类框架由执掌权力者起草，而被放进别人设计的格子里，与被统计并不是同一回事。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would adopt them with group representatives designing the labels and holding a veto over how they are described, plus a statutory bar on any law-enforcement or immigration use of the responses.",
+        "t": "我会采用，但由群体代表设计类目名称并对表述方式握有否决权，同时以成文法禁止答复被用于任何执法或移民用途。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would not add ethnic categories and would instead publish area-level measures of deprivation, housing conditions, and waiting times; allocating by need reaches poor people in every group without listing who belongs to which.",
+        "t": "我不会增加族裔类别，改为公布地区层面的贫困程度、居住条件与等待时间指标；按需分配覆盖了每个群体中的贫困者，且不需要先列出谁属于哪个类别。",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      }
+    ]
   }
 ]
