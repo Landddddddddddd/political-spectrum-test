@@ -11442,7 +11442,8 @@
           "ENV:S",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think green electricity is still in its infancy, subsidies have grown up with it, and the long-term value of environmental accounts."
       },
       {
         "t": "我倾向让绿电进场竞价，能便宜就留、不能就出，别永远靠喂奶。",
@@ -11450,7 +11451,8 @@
           "ECO:R",
           "ENV:S",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to let green electricity into the market bidding, can be cheap to stay, can not go out, do not always rely on breastfeeding."
       },
       {
         "t": "我主张设时间表慢慢退，逼行业降本，也别一下抽干把厂子搞垮。",
@@ -11458,7 +11460,8 @@
           "ECO:R",
           "ENV:S",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate setting a timetable to slowly retreat, forcing the industry to reduce costs, and don't drain the factory."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -11480,7 +11483,8 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think the power grid is the lifeblood, the state-owned centralized management is stable, and it cannot be handed over to capital for profit."
       },
       {
         "t": "我支持引入竞争和民营，打破一家独大，效率和价格都能好。",
@@ -11488,7 +11492,8 @@
           "ECO:R",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support the introduction of competition and the private sector, breaking the family apart, efficiency and price can be good."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -11496,7 +11501,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "Whether the power grid should be split and introduced into the private sector has been discussed. The tension is in: controlling public welfare or market-oriented efficiency."
   },
   {
     "id": 264,
@@ -11508,7 +11514,8 @@
         "tags": [
           "GOV:A",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support the suspension of sales of fuel vehicles for a set period of time, and give clear expectations before the transformation is pushed forward."
       },
       {
         "t": "我认为让电动车自己卷赢就行，强禁反而伤刚买油车的人。",
@@ -11516,7 +11523,8 @@
           "ECO:R",
           "ENV:S",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think it's ok to let the electric car win on its own, forcing a ban on people who have just bought a gasoline car."
       },
       {
         "t": "我主张发补贴鼓励以旧换新，老百姓少掏、减排也快，两头甜。",
@@ -11524,13 +11532,15 @@
           "ENV:S",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate issuing subsidies to encourage exchanging the old for the new. The common people pay less and reduce emissions quickly, and the two ends are sweet."
       },
       {
         "t": "我倾向别下死命令，愿换换、不愿换开到报废，个人节奏自己定。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I tend not to give dead orders, willing to change, unwilling to change to scrap, personal rhythm."
       },
       {
         "t": "我支持对油车收碳税，用价格慢慢引导，比禁令柔和。",
@@ -11538,7 +11548,8 @@
           "ENV:S",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support a carbon tax on gasoline cars, guided slowly by price, softer than a ban."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -11546,7 +11557,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "The city has set a timetable for banning fuel vehicles, and car owners and car companies have reacted differently. The tension is in: environmental compulsion or transition freedom."
   },
   {
     "id": 265,
@@ -11559,7 +11571,8 @@
           "ENV:S",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that people can live only if the environment is good by investing in green space, pollution control, and sponge city first."
       },
       {
         "t": "我倾向投产业园和交通，先把经济和就业拉起来，钱包鼓了再说别的。",
@@ -11567,7 +11580,8 @@
           "ENV:G",
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to invest in industrial parks and transportation, pulling up the economy and employment first, and the wallet is bulging before saying anything else."
       },
       {
         "t": "我主张补学校、医院、老旧小区这些短板，老百姓天天用得着。",
@@ -11575,14 +11589,16 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate making up for the shortcomings of schools, hospitals, and old neighborhoods, which are used by ordinary people every day."
       },
       {
         "t": "我觉得三者都得沾，单押一边都偏，分配匀一点最稳。",
         "tags": [
           "ECO:L",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I think that all three have to be dipped in. Single presses are biased on one side, and it is most stable to distribute them evenly."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -11590,7 +11606,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "An infrastructure fund, investment in ecological projects or investment in industrial parks, endless noise. The tension is in: ecology, growth or people's livelihood."
   },
   {
     "id": 266,
@@ -11603,14 +11620,16 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I believe that basic energy must be regulated, the elderly and poor cannot withstand the soaring price, and the people's livelihood cannot go with the flow."
       },
       {
         "t": "我倾向价格随供需走，信号对了才省得浪费，补贴不如用在刀刃。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to go with the supply and demand, the signal is right to save waste, subsidies are better used on the blade."
       },
       {
         "t": "我主张用多少、什么价分档，基本用量便宜、浪费的贵，公平又节能。",
@@ -11618,7 +11637,8 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate how much and what price to use, the basic amount is cheap, wasteful and expensive, fair and energy-saving."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -11626,7 +11646,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "If the price of gas rises in winter, should it be regulated? Tension in: People's livelihood insurance supply or market price."
   },
   {
     "id": 267,
@@ -11640,7 +11661,8 @@
           "ECO:L",
           "TECH:K",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that the Internet is the infrastructure, and the government has to let the villages connect without leaving a digital divide."
       },
       {
         "t": "我倾向让运营商按收益自己铺，亏的地方它不来，市场说了算。",
@@ -11648,7 +11670,8 @@
           "ECO:R",
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I tend to let the operator shop according to the revenue. Where it loses money, it does not come, and the market is in control."
       },
       {
         "t": "我主张城乡差异大的农村由政府专项兜底，城市交给市场。",
@@ -11657,7 +11680,8 @@
           "NAT:N",
           "TECH:K",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate that the rural areas with large differences between urban and rural areas should be specially backed by the government, and the cities should be handed over to the market."
       },
       {
         "t": "我支持政府补贴、企业出网，PPP 模式分摊，谁也别全扛。",
@@ -11665,7 +11689,8 @@
           "ECO:L",
           "ECO:R",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support government subsidies, enterprise out of the net, PPP mode sharing, who do not bear all."
       },
       {
         "t": "我认为愿用卫星或自购设备的自己装，不强求统一覆盖。",
@@ -11673,13 +11698,15 @@
           "ECO:R",
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that I am willing to use the satellite or self-purchased equipment, and do not insist on uniform coverage."
       },
       {
         "t": "通不通宽带跟我住的地儿无关，我不操这份心。",
         "tags": [
           "CUL:T"
-        ]
+        ],
+        "t_en": "The broadband connection has nothing to do with where I live, I don't care about that."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -11687,7 +11714,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "There was no optical fiber in the remote villages, and the operators were reluctant to pull back. The tension is: universal service or market coverage."
   },
   {
     "id": 268,
@@ -15788,21 +15816,24 @@
           "NAT:C",
           "COL:M",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I support outward support, and mutual help is not far away."
       },
       {
         "t": "我反对，自家路都没修先管别人。",
         "tags": [
           "NAT:N",
           "COL:I"
-        ]
+        ],
+        "t_en": "I object, my own road has not been repaired to care about others first."
       },
       {
         "t": "我主张内外都做，但先保基本。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate doing it internally and externally, but first keep it basic."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -15823,14 +15854,16 @@
         "tags": [
           "NAT:C",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support joining, and collaboration is the big market."
       },
       {
         "t": "我反对，关键事得自己说了算。",
         "tags": [
           "NAT:N",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I object, the key matter is up to you."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -15838,7 +15871,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Foreign Affairs & International"
+    "domain_en": "Foreign Affairs & International",
+    "scene_en": "Your region is joining a cross-regional collaboration agreement that commits to standards and mutual assistance. Supporters are optimistic about the long run, and cautious people are afraid of being tied up."
   },
   {
     "id": 365,
@@ -15851,28 +15885,32 @@
           "NAT:C",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support multiple moves and broaden my horizons."
       },
       {
         "t": "我反对扩招，先满足本地需求。",
         "tags": [
           "NAT:N",
           "COL:I"
-        ]
+        ],
+        "t_en": "I oppose the enrollment expansion to meet local needs first."
       },
       {
         "t": "我支持但要求单独筹资不占公费。",
         "tags": [
           "NAT:C",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I support but ask that separate fundraising do not account for public fees."
       },
       {
         "t": "我主张限额开放保持平衡。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate for open quotas to be balanced."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -15880,7 +15918,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Foreign Affairs & International"
+    "domain_en": "Foreign Affairs & International",
+    "scene_en": "Community colleges want to recruit more exchange students from overseas, with additional beds and language support. Some residents welcomed, and some feared that resources would be diverted."
   },
   {
     "id": 366,
@@ -15893,7 +15932,8 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support distribution, and bottom-line safety makes people dare to try and make mistakes."
       },
       {
         "t": "我反对，白给会削弱干活动力。",
@@ -15901,35 +15941,40 @@
           "ECO:R",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I object. White giving will weaken stem activity."
       },
       {
         "t": "我支持只给真正困难者而非人人有。",
         "tags": [
           "ECO:L",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support giving only to those who are truly in need, not everyone."
       },
       {
         "t": "我主张先小范围试点再扩。",
         "tags": [
           "GOV:L",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I advocate a small-scale pilot before expanding."
       },
       {
         "t": "我认为该由社区评议发放对象。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I think it's up to the community to decide who to send it to."
       },
       {
         "t": "我担心税收转嫁最终还是普通人扛。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am worried that the tax transfer will eventually be borne by ordinary people."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -15937,7 +15982,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Social Security"
+    "domain_en": "Social Security",
+    "scene_en": "Some experts propose to give each resident an unconditional basic living money, which comes from a unified tax. Supporters say Teddy, opponents say lazy."
   },
   {
     "id": 367,
@@ -15950,7 +15996,8 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the city's overall planning, rich areas and poor areas."
       },
       {
         "t": "我支持各区自管，自己的钱自己定。",
@@ -15958,14 +16005,16 @@
           "GOV:L",
           "COL:I",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I support the autonomy of each district, and I decide my own money."
       },
       {
         "t": "我主张设最低统一、之上可自选。",
         "tags": [
           "ECO:L",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate for a minimum unity, above which you can choose."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -15973,7 +16022,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Social Security"
+    "domain_en": "Social Security",
+    "scene_en": "Pension discussions are governed by the city's revenue collection and expenditure, or remain under the control of each district. The system is balanced, the rules are flexible, and each of the two types of residents has an abacus."
   },
   {
     "id": 368,
@@ -15986,28 +16036,32 @@
           "ECO:L",
           "COL:M",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support lengthening so that people find the right one, not the right one."
       },
       {
         "t": "我支持缩短，久领易生依赖。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support shortening, and I can rely on it for a long time."
       },
       {
         "t": "我主张按缴费年限长短浮动。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate fluctuating according to the length of the payment period."
       },
       {
         "t": "我支持配职业培训而非纯发钱。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support vocational training rather than pure money."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -16015,7 +16069,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Social Security"
+    "domain_en": "Social Security",
+    "scene_en": "How long unemployment relief should be caused by the debate: longer to give people a cushion, shorter to promote people to find work, but also to save public spending."
   },
   {
     "id": 369,
@@ -16027,35 +16082,40 @@
         "tags": [
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I act according to the wishes of my elders, and it is important for the elderly to be happy."
       },
       {
         "t": "我坚持简办，自己的事自己定。",
         "tags": [
           "CUL:P",
           "COL:I"
-        ]
+        ],
+        "t_en": "I insist on brevity and decide my own affairs."
       },
       {
         "t": "我折中，小办仪式加旅行。",
         "tags": [
           "CUL:T",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I compromise, small ceremony plus travel."
       },
       {
         "t": "我把预算省下做共同储蓄。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I save my budget for co-saving."
       },
       {
         "t": "我让双方家庭各出代表协商。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I asked both families to negotiate on behalf of each other."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -16063,7 +16123,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Family & Marriage"
+    "domain_en": "Family & Marriage",
+    "scene_en": "You and your partner are planning a wedding, the elders have to perform lively traditional ceremonies, and you want a simple trip to get married. The two generations understood the meaning of the ritual differently."
   },
   {
     "id": 370,
@@ -16075,28 +16136,32 @@
         "tags": [
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate asking elders to help, and family to support each other."
       },
       {
         "t": "我主张自己带，亲子不能被替代。",
         "tags": [
           "COL:I",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I advocate that I bring my own, and that parents and children cannot be replaced."
       },
       {
         "t": "我支持一方降工时，收入换陪伴。",
         "tags": [
           "ECO:R",
           "COL:M"
-        ]
+        ],
+        "t_en": "When I support one side to reduce work, the income is exchanged for companionship."
       },
       {
         "t": "我主张送托幼机构更专业。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate sending kindergartens more professionally."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -16104,7 +16169,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Family & Marriage"
+    "domain_en": "Family & Marriage",
+    "scene_en": "You have children, who will bring the main contradiction. One side wants to ask the elders to help, and the other side wants to bring and adjust the work themselves."
   },
   {
     "id": 371,
@@ -16117,28 +16183,32 @@
           "COL:M",
           "CUL:T",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I picked up my parents to live with them, as close as possible to filial piety."
       },
       {
         "t": "我倾向机构，专业照顾更稳妥。",
         "tags": [
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I prefer institutions and professional care is more secure."
       },
       {
         "t": "我主张姐妹轮住分摊。",
         "tags": [
           "COL:M",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I advocate sister-sharing."
       },
       {
         "t": "我按出钱多少定照料分工。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I set the division of care according to how much I pay."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -16146,7 +16216,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Family & Marriage"
+    "domain_en": "Family & Marriage",
+    "scene_en": "Your parents are old, and your siblings are discussing support: whether to live in the same care or send to the nearest care institution, how to share the cost is also a problem."
   },
   {
     "id": 372,
@@ -16159,14 +16230,16 @@
           "ECO:R",
           "COL:I",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I'll sign it and clear the account first."
       },
       {
         "t": "我不签，算计钱伤了信任。",
         "tags": [
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I don't sign, calculating money hurts trust."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -16174,7 +16247,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Family & Marriage"
+    "domain_en": "Family & Marriage",
+    "scene_en": "When you and your partner buy a house, one party proposes to sign a prenuptial property agreement to clarify the ownership, and the other party feels sad and distrustful."
   },
   {
     "id": 373,
@@ -16186,21 +16260,24 @@
         "tags": [
           "ENV:S",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support restriction and scrutiny, only if necessary."
       },
       {
         "t": "我支持严格禁用于教学。",
         "tags": [
           "ENV:S",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support a strict ban on teaching."
       },
       {
         "t": "我认为教学价值大于个体牺牲。",
         "tags": [
           "ENV:G",
           "COL:I"
-        ]
+        ],
+        "t_en": "I believe that teaching value outweighs individual sacrifice."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -16208,7 +16285,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Animal Ethics"
+    "domain_en": "Animal Ethics",
+    "scene_en": "A school wants to do basic observation experiments with small animals, saying it helps to understand life. The activist asked to switch to video and modeling."
   },
   {
     "id": 374,
@@ -16220,14 +16298,16 @@
         "tags": [
           "COL:M",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I take it with me and it's good for it and for the population in the long run."
       },
       {
         "t": "我不做，身体完整该由它自己。",
         "tags": [
           "COL:I",
           "ENV:G"
-        ]
+        ],
+        "t_en": "I don't do it, the integrity of the body should be its own."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -16235,7 +16315,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Animal Ethics"
+    "domain_en": "Animal Ethics",
+    "scene_en": "When your cat reaches the age of sterilization, the veterinarian recommends doing it, saying that it is beneficial to health and also controls the number. You're a little reluctant to put up with it for a while."
   },
   {
     "id": 375,
@@ -16248,28 +16329,32 @@
           "ENV:S",
           "COL:M",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support the relocation of Daejeon, and animal welfare is a priority."
       },
       {
         "t": "我支持保留，城市记忆不能丢。",
         "tags": [
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support preservation, and the memory of the city cannot be lost."
       },
       {
         "t": "我主张改造展区而非关停。",
         "tags": [
           "ENV:S",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate the renovation of the exhibit area rather than closure."
       },
       {
         "t": "我认为该由公众票决去留。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think it should be decided by public vote to stay."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -16277,7 +16362,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Animal Ethics"
+    "domain_en": "Animal Ethics",
+    "scene_en": "An old zoo in the city is difficult to operate, and the animal space is cramped. Some people suggest shutting down or moving the venue, and some people feel that children need to be able to see animals."
   },
   {
     "id": 376,
@@ -16290,28 +16376,32 @@
           "ECO:L",
           "GOV:A",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I support the government to continue funding, culture can not be pure accounting."
       },
       {
         "t": "我反对补贴，艺术该自己找观众。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I oppose subsidies, and art should find an audience on its own."
       },
       {
         "t": "我支持只补公益类演出。",
         "tags": [
           "ECO:L",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support only charity performances."
       },
       {
         "t": "我主张设文化基金由众人捐。",
         "tags": [
           "COL:M",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I advocate the establishment of a cultural fund to be donated by everyone."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -16319,7 +16409,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Art & Culture"
+    "domain_en": "Art & Culture",
+    "scene_en": "The city wants to cut public subsidies for small theaters, saying the market should be allowed to nurture the arts. Practitioners say they can't live without subsidies."
   },
   {
     "id": 377,
@@ -16331,21 +16422,24 @@
         "tags": [
           "CUL:T",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support the transfer of funds for protection, which is difficult to continue."
       },
       {
         "t": "我反对专款，顺其自然别硬保。",
         "tags": [
           "CUL:P",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am opposed to special funds, please do not insure them."
       },
       {
         "t": "我支持进校园让年轻人接触。",
         "tags": [
           "CUL:T",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support access to young people on campus."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -16353,7 +16447,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Art & Culture"
+    "domain_en": "Art & Culture",
+    "scene_en": "A local old craftsman applied for special protection funds. Young people don't see it very well, and elders are afraid of losing it. Money is limited, and there are many people fighting."
   },
   {
     "id": 378,
@@ -16366,35 +16461,40 @@
           "GOV:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support letting go, and street culture is alive."
       },
       {
         "t": "我支持划区，免得扰民乱糟糟。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I support zoning so as not to disturb the people."
       },
       {
         "t": "我主张只在非居住区放开。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate only in non-residential areas."
       },
       {
         "t": "我让居民投票定开放范围。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I asked the residents to vote for an open area."
       },
       {
         "t": "我建议发许可取代禁止。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I recommend issuing permits instead of prohibitions."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -16402,7 +16502,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Art & Culture"
+    "domain_en": "Art & Culture",
+    "scene_en": "People often sang and painted stalls on the square. The management wanted to divide the area for a limited time, and the artists said that there was no free atmosphere."
   },
   {
     "id": 379,
@@ -16415,21 +16516,24 @@
           "CUL:P",
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support heavy involvement, and every child deserves to be on the court."
       },
       {
         "t": "我支持保排名，竞争出成绩。",
         "tags": [
           "CUL:T",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support the ranking and compete for results."
       },
       {
         "t": "我主张分组别，强弱分开比。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate grouping, and the ratio of strength to weakness."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -16437,7 +16541,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Sports & Competition"
+    "domain_en": "Sports & Competition",
+    "scene_en": "School sports will turn into class competition first, and weak children will be excluded. The teacher wanted to dilute the ranking, and the parents were afraid of losing their efforts."
   },
   {
     "id": 380,
@@ -16449,21 +16554,24 @@
         "tags": [
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support zero tolerance and no size in front of the rules."
       },
       {
         "t": "我主张教育为主，业余别上纲。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate education as the mainstay and amateur class."
       },
       {
         "t": "我支持禁赛但留改过通道。",
         "tags": [
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the ban but leave the aisle open."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -16471,7 +16579,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Sports & Competition"
+    "domain_en": "Sports & Competition",
+    "scene_en": "The amateur league found that some people used banned supplements, and the severity of the penalty was controversial: some people had to punish Li Wei heavily, and some people thought that amateurs were too real."
   },
   {
     "id": 381,
@@ -16484,28 +16593,32 @@
           "ECO:L",
           "COL:M",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I am opposed to commercialization and the public course should be shared."
       },
       {
         "t": "我支持收费，有人维护才长久。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support charging, and it takes a long time for someone to maintain it."
       },
       {
         "t": "我主张分时段，居民优先。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate time-sharing, with residents first."
       },
       {
         "t": "我建议居民众筹养场地免收费。",
         "tags": [
           "COL:M",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I recommend residents to crowdfund their farms free of charge."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -16513,7 +16626,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Sports & Competition"
+    "domain_en": "Sports & Competition",
+    "scene_en": "The community stadium was contracted by an agency for fee-based training, and residents' free kick time was squeezed. The residents were dissatisfied, and the agency said that the farm needed money."
   },
   {
     "id": 382,
@@ -16526,7 +16640,8 @@
           "ECO:R",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support retreat, and if you are in good health, you should contribute more."
       },
       {
         "t": "我反对延退，早退给年轻人腾位。",
@@ -16534,14 +16649,16 @@
           "ECO:L",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I oppose postponement and early retirement for young people to vacate their seats."
       },
       {
         "t": "我主张弹性，愿退愿留自选。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate flexibility, and I am willing to leave my choice."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -16549,7 +16666,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Aging & Elderly Care"
+    "domain_en": "Aging & Elderly Care",
+    "scene_en": "Discuss whether the retirement age should be postponed. Young people are afraid of occupying their jobs, and their elders say they are still capable and unwilling to withdraw from thin money early."
   },
   {
     "id": 383,
@@ -16561,35 +16679,40 @@
         "tags": [
           "TECH:K",
           "COL:M"
-        ]
+        ],
+        "t_en": "I pretend that safety is more important than that concern."
       },
       {
         "t": "我不装，尊重老人不愿被看。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I don't pretend to respect the elderly and don't want to be seen."
       },
       {
         "t": "我装但数据只家人可见。",
         "tags": [
           "TECH:K",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I pretend but the data is only visible to the family."
       },
       {
         "t": "我先问老人意愿再定。",
         "tags": [
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I'll ask the old man's wishes before I make a decision."
       },
       {
         "t": "我用按铃替代持续监测。",
         "tags": [
           "TECH:U",
           "COL:M"
-        ]
+        ],
+        "t_en": "I use the bell instead of continuous monitoring."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -16597,7 +16720,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Aging & Elderly Care"
+    "domain_en": "Aging & Elderly Care",
+    "scene_en": "Intelligent monitoring for elderly people living alone, automatic alarm for falls. The children said they were reassured, the elderly said they felt stared at, and their privacy was uncomfortable."
   },
   {
     "id": 384,
@@ -16610,14 +16734,16 @@
           "COL:M",
           "CUL:P",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support intergenerational mixed living, which benefits both of us."
       },
       {
         "t": "我反对，两代人最好分开清静。",
         "tags": [
           "COL:I",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I object, it is better for two generations to be separate and quiet."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -16625,7 +16751,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Aging & Elderly Care"
+    "domain_en": "Aging & Elderly Care",
+    "scene_en": "The planned new community wants to put the elderly apartment and kindergarten together, which is called intergenerational mutual aid. Some people shouted, some people were afraid that the two generations would bother each other."
   },
   {
     "id": 385,
@@ -16638,21 +16765,24 @@
           "GOV:A",
           "ECO:L",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support restrictions and do not induce people to borrow excessively."
       },
       {
         "t": "我反对限制，成年人该自己掂量。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am against restrictions, adults should decide for themselves."
       },
       {
         "t": "我支持标注真实成本提醒。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I support flagging real cost reminders."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -16660,7 +16790,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Consumption & Debt"
+    "domain_en": "Consumption & Debt",
+    "scene_en": "All kinds of advertisements that are spent first and then returned are overwhelming, targeting young people. Some advocate limiting this type of marketing, others say adults are responsible for themselves."
   },
   {
     "id": 386,
@@ -16673,7 +16804,8 @@
           "ECO:L",
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support strong protection and give people the opportunity to turn around."
       },
       {
         "t": "我支持弱保护，借了就该还。",
@@ -16681,14 +16813,16 @@
           "ECO:R",
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support weak protection, it should be repaid when borrowed."
       },
       {
         "t": "我主张分恶意与否区别对待。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate a distinction between malice and non-malice."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -16696,7 +16830,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Consumption & Debt"
+    "domain_en": "Consumption & Debt",
+    "scene_en": "A neighbor is chased home because he can't pay his debts unexpectedly. Discuss whether personal bankruptcy protection should be strict or broad."
   },
   {
     "id": 387,
@@ -16709,14 +16844,16 @@
           "GOV:A",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support guidance, less impulsive debt is better."
       },
       {
         "t": "我反对，怎么花是个人的事。",
         "tags": [
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I object. How to spend it is a personal matter."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -16724,7 +16861,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Consumption & Debt"
+    "domain_en": "Consumption & Debt",
+    "scene_en": "The community wants to engage in rational consumption propaganda, and some people welcome it. Some people think that the government does not teach people how to spend money."
   },
   {
     "id": 388,
@@ -16737,7 +16875,8 @@
           "ENV:G",
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I object to being built here, don't come near my house."
       },
       {
         "t": "我接受，全市用电总得有地方。",
@@ -16745,14 +16884,16 @@
           "ENV:G",
           "COL:M",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I accept that there must be a place for electricity in the city."
       },
       {
         "t": "我支持但要求透明环评和补偿。",
         "tags": [
           "GOV:L",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support but demand transparency and reimbursement."
       },
       {
         "t": "我主张分布式小站代替大站。",
@@ -16760,21 +16901,24 @@
           "ENV:S",
           "TECH:U",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate distributed small stations instead of large stations."
       },
       {
         "t": "我要求周边居民投票定址。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I asked the surrounding residents to vote on the address."
       },
       {
         "t": "我支持远程供电少建本地站。",
         "tags": [
           "ENV:G",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support remote power supply with fewer local stations."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -16782,7 +16926,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "To build a new power station in front of your house for the whole city, the site selection party said that it was safe and up to standard, but no one in the neighborhood wanted it to be next to them."
   },
   {
     "id": 389,
@@ -16795,21 +16940,24 @@
           "ECO:L",
           "ENV:S",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support subsidies and encourage saving electricity."
       },
       {
         "t": "我反对，用电多交税是惩罚。",
         "tags": [
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I object that paying more taxes on electricity is a penalty."
       },
       {
         "t": "我支持只保基本额度免费。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support free basic limits only."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -16817,7 +16965,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "Residents' electricity bills are planned to be subsidized by stairs, and those that use less are underpaid and much more overpaid. The big family said it was unfair, and the energy-saving family said it was the prize."
   },
   {
     "id": 390,
@@ -16830,28 +16979,32 @@
           "TECH:K",
           "ENV:S",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support sharing, saving electricity for everyone."
       },
       {
         "t": "我反对共享，用电细节是隐私。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I am against sharing, electricity details are private."
       },
       {
         "t": "我支持匿名汇总不关联个人。",
         "tags": [
           "TECH:U",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support anonymous aggregation that does not associate individuals."
       },
       {
         "t": "我主张本地储能少依赖电网。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I advocate less reliance on the grid for local energy storage."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -16859,7 +17012,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Energy & Infrastructure"
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "The smart grid should collect each household's electricity habits to adjust the peak, saying that it saves energy and saves money. When you think of your own life, you are clearly touched."
   },
   {
     "id": 391,
@@ -16872,7 +17026,8 @@
           "GOV:A",
           "ENV:S",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support forced relocation, life is more important than the old house."
       },
       {
         "t": "我反对强搬，根在这里不愿离。",
@@ -16880,7 +17035,8 @@
           "COL:I",
           "CUL:T",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am opposed to forced relocation, and Root is reluctant to leave here."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -16888,7 +17044,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Climate & Disasters"
+    "domain_en": "Climate & Disasters",
+    "scene_en": "The low-lying areas along the river are soaking in water every year, and the government wants to relocate residents to the highlands as a whole, compensating them but leaving their ancestors. Residents went to stay in the dilemma."
   },
   {
     "id": 392,
@@ -16901,21 +17058,24 @@
           "TECH:K",
           "ENV:S",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I drive and push, and I can save my life at critical moments."
       },
       {
         "t": "我关掉，太吵自己看天就行。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I turn it off, it's okay if I make too much noise and look at the sky."
       },
       {
         "t": "我只开严重级别提醒。",
         "tags": [
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I only want severity level reminders."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -16923,7 +17083,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Climate & Disasters"
+    "domain_en": "Climate & Disasters",
+    "scene_en": "Weather launched a disaster warning applet, which will be pushed by location. Some people felt at ease, and some people were annoyed by the popping of windows every day."
   },
   {
     "id": 393,
@@ -16936,7 +17097,8 @@
           "ENV:S",
           "ECO:L",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support a carbon tax, who gets more and who gets more."
       },
       {
         "t": "我反对，税只会越加越多。",
@@ -16944,35 +17106,40 @@
           "ENV:G",
           "ECO:R",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I object, taxes will only increase."
       },
       {
         "t": "我支持税但全额返弱势群体。",
         "tags": [
           "ENV:S",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I support taxes but return the full amount to the vulnerable."
       },
       {
         "t": "我主张用奖励减排代替收税。",
         "tags": [
           "ENV:S",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate for incentive emission reductions instead of taxes."
       },
       {
         "t": "我支持先试点看效果。",
         "tags": [
           "GOV:L",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support piloting the results first."
       },
       {
         "t": "我认为该大企业先担，不先压个人。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I think that the big company should shoulder the responsibility first, and not press the individual first."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -16980,7 +17147,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Climate & Disasters"
+    "domain_en": "Climate & Disasters",
+    "scene_en": "To mitigate extreme weather, it has been proposed to tax high-emission behaviour and return it to the vulnerable affected. Supporters say it's a long-term deal, opponents say it's a tax."
   },
   {
     "id": 394,
@@ -16993,28 +17161,32 @@
           "TECH:U",
           "COL:I",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I turned off the recommendation and searched on my own."
       },
       {
         "t": "我留着推荐，省得自己找。",
         "tags": [
           "TECH:K",
           "COL:I"
-        ]
+        ],
+        "t_en": "I keep the recommendations, so I don't have to look for them myself."
       },
       {
         "t": "我支持默认关、需主动开。",
         "tags": [
           "TECH:U",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support default off and active on."
       },
       {
         "t": "我主张可调控频宽而非全关。",
         "tags": [
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate adjustable bandwidth instead of full off."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -17022,7 +17194,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Digital Platforms"
+    "domain_en": "Digital Platforms",
+    "scene_en": "The content platform you commonly use presumes that you like to push all the time according to the algorithm, and the more you look at it, the narrower it is. You can turn off the recommendation, but the default is on."
   },
   {
     "id": 395,
@@ -17035,14 +17208,16 @@
           "TECH:U",
           "COL:M",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I looked for the platform to defend my rights and demanded that it be stopped and deleted."
       },
       {
         "t": "我默默卸载，懒得纠缠。",
         "tags": [
           "COL:I",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I unloaded in silence and was too lazy to entangle."
       },
       {
         "t": "我支持立法重罚这类转卖。",
@@ -17072,7 +17247,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Digital Platforms"
+    "domain_en": "Digital Platforms",
+    "scene_en": "You find that a registered platform sells your browsing habits to advertisers. You've never noticed that line before."
   },
   {
     "id": 396,
@@ -17085,7 +17261,8 @@
           "ECO:L",
           "GOV:A",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I support splitting, monopolizing wound selection and vitality."
       },
       {
         "t": "我反对拆分，好用是用户用脚投的。",
@@ -17093,28 +17270,32 @@
           "ECO:R",
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am opposed to splitting, easy to use is thrown by the user with his feet."
       },
       {
         "t": "我支持设互通规则而非拆实体。",
         "tags": [
           "GOV:L",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I support having interoperability rules rather than disassembling entities."
       },
       {
         "t": "我主张扶持小平台平衡。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate supporting the balance of small platforms."
       },
       {
         "t": "我主张用户数据可携带。",
         "tags": [
           "TECH:U",
           "COL:M"
-        ]
+        ],
+        "t_en": "I advocate for the portability of user data."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -17122,7 +17303,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Digital Platforms"
+    "domain_en": "Digital Platforms",
+    "scene_en": "A platform accounts for most of your online life, and small competitors are hard to live. Some people call for splitting, some people say that if it works well, it should be made big."
   },
   {
     "id": 397,
@@ -17134,14 +17316,16 @@
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support real name, clean environment is worth it."
       },
       {
         "t": "我反对实名，匿名才有真话。",
         "tags": [
           "TECH:U",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I oppose real names, anonymity is the truth."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -17149,7 +17333,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Digital Platforms"
+    "domain_en": "Digital Platforms",
+    "scene_en": "The forum intends to use a comprehensive real-name system, saying that it can suppress the water army. You're used to spitting anonymously and bothering with rhythmic numbers."
   },
   {
     "id": 398,
@@ -17162,21 +17347,24 @@
           "COL:M",
           "GOV:A",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I support engagement, and accessibility is fairness at the bottom line."
       },
       {
         "t": "我勉强同意但希望少摊点。",
         "tags": [
           "COL:I",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I reluctantly agree but hope to stall less."
       },
       {
         "t": "我支持政府出钱不由住户摊。",
         "tags": [
           "GOV:A",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I support the government's contribution that is not shared by households."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -17184,7 +17372,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Minority Groups"
+    "domain_en": "Minority Groups",
+    "scene_en": "The old building should be equipped with ramps and armrests for wheelchair-accessible neighbors, and the cost should be shared among all households. Some people feel that the number of people who use it is not worth it."
   },
   {
     "id": 399,
@@ -17197,27 +17386,31 @@
           "ECO:L",
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support quotas, and the structure should take the initiative to correct deviations."
       },
       {
         "t": "我反对名额，机会该纯粹看能力。",
         "tags": [
           "ECO:R",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I am against the quota, the opportunity should be purely based on ability."
       },
       {
         "t": "我支持培训衔接而非直接保岗。",
         "tags": [
           "ECO:L",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support training bridging rather than direct job protection."
       },
       {
         "t": "我主张公开评审过程接受监督。",
         "tags": [
           "GOV:L"
-        ]
+        ],
+        "t_en": "I advocate that the public review process be supervised."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -17225,7 +17418,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Minority Groups"
+    "domain_en": "Minority Groups",
+    "scene_en": "One store hired a special place for a category of often overlooked job seekers, and other candidates felt they were squeezing their own opportunities."
   },
   {
     "id": 400,
@@ -17237,21 +17431,24 @@
         "tags": [
           "CUL:P",
           "COL:M"
-        ]
+        ],
+        "t_en": "I took the initiative to use a new name, which was less uncomfortable."
       },
       {
         "t": "我顺其自然，不强制就好。",
         "tags": [
           "CUL:T",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I leave it to nature, just don't force it."
       },
       {
         "t": "我反对规范用语，怎么叫是自由。",
         "tags": [
           "CUL:P",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I am opposed to normative language, how to call it freedom."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -17259,7 +17456,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Minority Groups"
+    "domain_en": "Minority Groups",
+    "scene_en": "Community initiatives People use more neutral terms to refer to neighbors in different situations, avoiding misunderstandings caused by old words. Some people feel warm, some people feel sentimental."
   },
   {
     "id": 401,
@@ -17271,28 +17469,32 @@
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I will go directly to him and talk to him about a practice period that is acceptable to both parties, and the neighborhood will solve it by itself in advance."
       },
       {
         "t": "我会把情况反映给物业，让管理方出面制定统一的作息规定并执行。",
         "tags": [
           "GOV:A",
           "COL:M"
-        ]
+        ],
+        "t_en": "I will reflect the situation to the property and let the management come forward to formulate uniform working and rest regulations and implement them."
       },
       {
         "t": "我会自己买隔音耳塞和窗帘，别人在自己家里做什么本来就是他的自由。",
         "tags": [
           "COL:I",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I buy my own soundproof earplugs and curtains, and what others do in their own homes is his freedom."
       },
       {
         "t": "我会在自家墙边放一台分贝记录仪连续取证，超标就走正式投诉流程。",
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I will put a decibel recorder next to my wall to continuously collect evidence, and if it exceeds the standard, I will go through the formal complaint process."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -17300,7 +17502,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Community & Neighborhood"
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "The neighbor who lives upstairs practices percussion after ten o'clock every night, and downstairs lives a high school student who is preparing for his entrance exams. Parents complained twice in the owner group, and the upstairs responded that they could only practice at night during the day. Both parties felt that the other was uncomfortable."
   },
   {
     "id": 402,
@@ -17312,21 +17515,24 @@
         "tags": [
           "COL:M",
           "ENV:S"
-        ]
+        ],
+        "t_en": "I support sharing vegetable gardens, everyone schedules and maintains, and the public open space should serve co-living first rather than earning money first."
       },
       {
         "t": "我支持改成收费停车位，停车的人付费、不停车的人不掏钱，谁受益谁承担最清楚。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support switching to paid parking spaces. Those who park pay, those who don't park don't pay, and those who benefit are the clearest."
       },
       {
         "t": "我会提议全体业主投票表决，无论哪个方案都要公开账目和后续维护责任人。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I will propose that all owners vote, no matter which option, to open the accounts and the person responsible for follow-up maintenance."
       },
       {
         "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
@@ -17334,7 +17540,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Community & Neighborhood"
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "There is a vacant lot at the entrance of the community. Some residents want to change it to a shared vegetable garden, taking turns to take care of the vegetables; others want to change it to a paid parking space, and the income will go to the owners' meeting. Both options require access to the same public maintenance fund."
   },
   {
     "id": 403,
@@ -17346,35 +17553,40 @@
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I would sign up as a visiting volunteer, the neighbors should have taken care of each other, and I couldn't wait for something to happen before I remembered."
       },
       {
         "t": "我认为应由社区统一建立台账并定期核查，靠自愿排班迟早会断档。",
         "tags": [
           "GOV:A",
           "TECH:K"
-        ]
+        ],
+        "t_en": "I think that the community should establish a unified account and check it regularly, and the voluntary scheduling will be disconnected sooner or later."
       },
       {
         "t": "我觉得必须先征得老人本人书面同意，不愿意被登记的就不该被登记。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I feel that it is necessary to obtain the written consent of the elderly first, and those who do not want to be registered should not be registered."
       },
       {
         "t": "我会建议引入收费的专业上门服务，责任和质量都比志愿者更稳定。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I would recommend the introduction of paid professional onsite service, with more consistent responsibilities and quality than volunteers."
       },
       {
         "t": "我会请社区里的信仰互助小组承担探访，他们有组织也更有耐心。",
         "tags": [
           "SEC:F",
           "COL:M"
-        ]
+        ],
+        "t_en": "I ask for visits from faith-based support groups in my community, who are more organized and patient."
       },
       {
         "t": "我确实无所谓，这事对生活影响不大。",
@@ -17382,7 +17594,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Community & Neighborhood"
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "An elderly man who lived alone in the same building hadn't been seen for days. If the community wants to establish a regular knocking visit system, they need to register the door number, contact information, and general information of the solitary resident. Some people think that this is a life-saving measure, and some people think that this is archived."
   },
   {
     "id": 404,
@@ -17394,14 +17607,16 @@
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I will vote yes to identify fast, outsiders can't get in, and safety is ahead of convenience and concerns."
       },
       {
         "t": "我会投反对票，刷卡加访客登记已经够用，面部数据一旦流出就永远收不回来。",
         "tags": [
           "TECH:U",
           "COL:I"
-        ]
+        ],
+        "t_en": "I will vote no. Swiping the card and registering visitors is enough. Once the facial data flows out, it will never be collected again."
       },
       {
         "t": "这题我反复摇摆，哪个方向都觉得不太对。",
@@ -17409,7 +17624,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Community & Neighborhood"
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "There is a proposal in the owner group to install facial recognition access gates to all entrances and exits of the community, on the grounds that strangers have recently followed them into the building. Expenses come from public revenue, which requires collecting facial information from all residents."
   },
   {
     "id": 405,
@@ -17421,7 +17637,8 @@
         "tags": [
           "TECH:K",
           "ECO:R"
-        ]
+        ],
+        "t_en": "I will install it as usual. The equipment is company-owned, the time is purchased, and the records are within a reasonable range."
       },
       {
         "t": "我会和几位同事一起要求公司书面说明采集范围、用途和删除时间。",
@@ -17429,21 +17646,24 @@
           "TECH:U",
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "Together with several colleagues, I will ask the company to state in writing the scope of the collection, the purpose and the time of deletion."
       },
       {
         "t": "我会把私人事务全部挪到自己的手机上，公私分开就不必和公司较劲。",
         "tags": [
           "COL:I",
           "TECH:U"
-        ]
+        ],
+        "t_en": "I will move all my private affairs to my mobile phone, and there is no need to compete with the company by separating public and private."
       },
       {
         "t": "我会去劳动权益咨询窗口问清楚这种监控是否越界，必要时走正式渠道。",
         "tags": [
           "ECO:L",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I will go to the labor rights inquiry window to ask if this monitoring is beyond the boundaries, and if necessary, go to the formal channel."
       },
       {
         "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
@@ -17451,7 +17671,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Workplace & Employment"
+    "domain_en": "Workplace & Employment",
+    "scene_en": "The company has notified that the behavior management software will be installed on all office computers, and screenshots, keyboard activity, and software usage time will be recorded, and the data retention period is not explained. Some colleagues feel indifferent, some colleagues feel offended."
   },
   {
     "id": 406,
@@ -17463,21 +17684,24 @@
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I would recommend sorting by quantifiable performance data, who produces the highest output and who takes it, and fuzzy standards are the most hurtful."
       },
       {
         "t": "我会建议把奖金平摊，项目成果本来就分不清是谁一个人的功劳。",
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I would recommend splitting the prize money evenly, because the results of the project could not be attributed to anyone else."
       },
       {
         "t": "我会建议先给他一段带辅导的改进期，评价之前得先给成长的机会。",
         "tags": [
           "COL:M",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I would recommend that he be given a period of improvement with coaching, and that he be given the opportunity to grow before commenting."
       },
       {
         "t": "这说不上和我有关，让当事各方自己去定就好。",
@@ -17485,7 +17709,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Workplace & Employment"
+    "domain_en": "Workplace & Employment",
+    "scene_en": "There are only two outstanding places at the end of the year for a group of six. One of the co-workers had a significantly lower output, but was sincere and often helped others with their chores. The team leader asked everyone to give their opinion in private."
   },
   {
     "id": 407,
@@ -17497,35 +17722,40 @@
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I support full remote, only reviewing the delivery results, and how to arrange the day is up to everyone."
       },
       {
         "t": "我支持混合制，每周固定两天到岗做需要面对面的事，其余远程。",
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I support the hybrid system, coming to work two days a week to do things that need to be face-to-face, and the rest are remote."
       },
       {
         "t": "我支持恢复统一坐班并严格打卡，纪律是协作效率的前提。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I support the restoration of unified shift attendance and strict clocking, and discipline is a prerequisite for collaborative efficiency."
       },
       {
         "t": "我支持上线在线时长与活跃度统计，用数据来判断远程到底有没有效。",
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I support online time and activity statistics, and use data to determine whether the remote is effective."
       },
       {
         "t": "我支持让每个小组按自己的业务节奏定规则，总部不该一刀切。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support having each group set the rules at their own pace of business, and headquarters should not be one-size-fits-all."
       },
       {
         "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
@@ -17533,7 +17763,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Workplace & Employment"
+    "domain_en": "Workplace & Employment",
+    "scene_en": "A medium-sized company is discussing whether to keep telecommuting for a long time. Management is concerned about collaborative efficiency and discipline, and young employees are counting their commute times and definitely don't want to go back to work every day."
   },
   {
     "id": 408,
@@ -17545,21 +17776,24 @@
         "tags": [
           "ECO:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I support the establishment of autonomous groups, where one party sets the price separately and the other party can only accept it, which is not equivalent in itself."
       },
       {
         "t": "我认为接单是自愿的，觉得价钱低可以换平台或换行当，这就是选择。",
         "tags": [
           "ECO:R",
           "COL:I"
-        ]
+        ],
+        "t_en": "I think that accepting orders is voluntary, and I think that the price is low enough to change the platform or change the line, this is the choice."
       },
       {
         "t": "我认为应该由行业统一规则划定最低单价和连续工作时长上限。",
         "tags": [
           "GOV:A",
           "ECO:L"
-        ]
+        ],
+        "t_en": "I believe that the minimum unit price and the maximum continuous working hours should be set by the uniform rules of the industry."
       },
       {
         "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
@@ -17567,7 +17801,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Workplace & Employment"
+    "domain_en": "Workplace & Employment",
+    "scene_en": "Local delivery riders want to set up an autonomous group to negotiate with the platform on unit prices, bad weather subsidies, and the appeals process. The platform party indicates that accepting orders is completely voluntary and does not accept collective bargaining."
   },
   {
     "id": 409,
@@ -17579,28 +17814,32 @@
         "tags": [
           "CUL:P",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I will publicly contradict him one by one under the post, and silence will be taken as a default."
       },
       {
         "t": "我会举报要求平台删帖封号，平台有义务维护社区氛围。",
         "tags": [
           "TECH:K",
           "GOV:A"
-        ]
+        ],
+        "t_en": "I will report that I asked the platform to remove the ban, and the platform is obligated to maintain the atmosphere of the community."
       },
       {
         "t": "我会直接拉黑不看，别人说什么是他的事，我没义务被打扰也没权力让他闭嘴。",
         "tags": [
           "GOV:L",
           "COL:I"
-        ]
+        ],
+        "t_en": "I will directly black out, what others say is his business, I am not obligated to be disturbed and have no right to shut him up."
       },
       {
         "t": "我会推动论坛成员自己起草发言公约，由用户投票通过后再执行。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I will push Forum members to draft their own speaking conventions, which will be voted on by users before implementation."
       },
       {
         "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
@@ -17608,7 +17847,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Speech & Expression"
+    "domain_en": "Speech & Expression",
+    "scene_en": "There is an old user in an interest forum who has long expressed opinions that make some members feel offended, and the content is not illegal or threatening. Someone asked the administrator for a seal, and someone thought that it would prove that he could not be said."
   },
   {
     "id": 410,
@@ -17620,21 +17860,24 @@
         "tags": [
           "GOV:L",
           "CUL:P"
-        ]
+        ],
+        "t_en": "I think it should be held as usual, hearing different opinions and learning to dismantle it is part of education."
       },
       {
         "t": "我认为应取消，讲台是稀缺资源，不该分配给撕裂性的观点。",
         "tags": [
           "GOV:A",
           "CUL:T"
-        ]
+        ],
+        "t_en": "I think it should be canceled, the podium is a scarce resource and should not be allocated to tearful perspectives."
       },
       {
         "t": "我会争取同场安排一位持相反立场的对谈人和开放提问，让争议在现场被检验。",
         "tags": [
           "GOV:L",
           "COL:M"
-        ]
+        ],
+        "t_en": "I will try to arrange for an opposing interlocutor and open questions for the dispute to be examined on site."
       },
       {
         "t": "这事我没啥代入感，哪种结果我都能接受。",
@@ -17642,7 +17885,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Speech & Expression"
+    "domain_en": "Speech & Expression",
+    "scene_en": "A college community invited a researcher with a very controversial viewpoint to give a lecture. One group of students signed a petition to cancel, while another argued that to cancel was to make a decision for everyone."
   },
   {
     "id": 411,
@@ -17654,14 +17898,16 @@
         "tags": [
           "COL:M",
           "GOV:L"
-        ]
+        ],
+        "t_en": "I will point out the problem directly in the group and attach the verification method, and the misinformation will be more expensive to spread."
       },
       {
         "t": "我会私聊提醒他自己撤回，当众纠错会让人下不来台。",
         "tags": [
           "CUL:T",
           "COL:I"
-        ]
+        ],
+        "t_en": "I will privately remind him to withdraw, and correcting mistakes in public will make people unable to come down to the stage."
       },
       {
         "t": "这题我站不了边，了解得不够，判断不了。",
@@ -17669,7 +17915,8 @@
         "tags": []
       }
     ],
-    "domain_en": "Speech & Expression"
+    "domain_en": "Speech & Expression",
+    "scene_en": "A colleague forwarded an unverified industry rumor in a work group of dozens of people, and someone has begun to follow. You happen to know that the original provenance is not reliable."
   },
   {
     "id": 412,
