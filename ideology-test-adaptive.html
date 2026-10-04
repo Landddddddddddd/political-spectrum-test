@@ -25,10 +25,12 @@
   h1{font-size:24px;margin:0 0 6px;letter-spacing:.5px;}
   h2{font-size:19px;margin:0 0 14px;}
   .sub{color:var(--muted);font-size:14px;margin:0 0 16px;}
-  .btn{appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;transition:transform .08s,opacity .2s;}
-  .btn:hover{opacity:.92;} .btn:active{transform:scale(.98);}
-  .btn.ghost{background:var(--accent-soft);color:var(--accent);}
-  .btn:disabled{opacity:.4;cursor:not-allowed;}
+  .btn{appearance:none;border:none;cursor:pointer;font-size:15px;font-weight:600;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;transition:transform .12s ease,box-shadow .2s,opacity .2s;box-shadow:0 2px 8px rgba(31,41,51,.10);}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(40,70,150,.22);opacity:.97;}
+  .btn:active{transform:translateY(0) scale(.98);box-shadow:0 2px 8px rgba(31,41,51,.10);}
+  .btn.ghost{background:var(--accent-soft);color:var(--accent);box-shadow:none;}
+  .btn.ghost:hover{box-shadow:0 4px 14px rgba(40,70,150,.14);}
+  .btn:disabled{opacity:.4;cursor:not-allowed;box-shadow:none;}
   .row{display:flex;gap:10px;justify-content:space-between;align-items:center;margin-top:22px;}
   .bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 18px;}
   .bar>span{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease;}
@@ -172,12 +174,12 @@
   .fig-chip span{color:var(--muted);font-size:11px;}
   /* ===== 新增：主题（亮/暗/跟随系统） + 顶栏 + 账户弹窗 ===== */
   :root[data-theme="dark"]{
-    --bg:#0e1320; --card:#161c2b; --ink:#e6ebf2; --muted:#93a1b5;
-    --line:#283042; --accent:#5b8cff; --accent-soft:#1b2740;
-    --shadow:0 8px 30px rgba(0,0,0,.45);
-    --panel:#11161f; --chip:#1c2433; --avatar-bg:#0f1420;
-    --svg-ink:#e6ebf2; --svg-muted:#93a1b5; --svg-line:#36425a; --svg-grid:#283042; --svg-accent:#5b8cff;
-    --svg-accent-soft:rgba(91,140,255,.22);
+    --bg:#0e1320; --card:#1c2433; --ink:#ebf0f7; --muted:#9fb0c6;
+    --line:#2e3850; --accent:#6c97ff; --accent-soft:#1d2a45; --accent-soft2:#2a3a5e;
+    --shadow:0 8px 30px rgba(0,0,0,.5);
+    --panel:#141b29; --chip:#222c40; --avatar-bg:#121826;
+    --svg-ink:#ebf0f7; --svg-muted:#9fb0c6; --svg-line:#3a4660; --svg-grid:#2e3850; --svg-accent:#6c97ff;
+    --svg-accent-soft:rgba(108,151,255,.28);
   }
   :root[data-theme="dark"] body{color:var(--ink);}
   /* 主题显式声明 color-scheme：让原生下拉框/滚动条/表单控件跟随所选主题（auto 时不设，跟随系统） */
@@ -287,6 +289,78 @@
     animation-duration:.001ms!important; animation-iteration-count:1!important;
     transition-duration:.001ms!important; scroll-behavior:auto!important;
   }
+
+  /* ====== 精致打磨：过渡与微交互 ====== */
+  @keyframes qEnter{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+  .q-enter{animation:qEnter .34s cubic-bezier(.22,.61,.36,1);}
+  @keyframes optPop{0%{transform:scale(.965);}55%{transform:scale(1.02);}100%{transform:scale(1);}}
+  .opt.just-sel{animation:optPop .3s cubic-bezier(.34,1.56,.64,1);}
+  @keyframes checkPop{from{opacity:0;transform:scale(.3);}60%{transform:scale(1.15);}to{opacity:1;transform:scale(1);}}
+  .opt.sel .key .check{animation:checkPop .26s cubic-bezier(.34,1.56,.64,1);}
+  @keyframes resIn{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+  .res-anim>*{animation:resIn .55s cubic-bezier(.22,.61,.36,1) both;}
+  .res-anim>*:nth-child(1){animation-delay:.02s}
+  .res-anim>*:nth-child(2){animation-delay:.07s}
+  .res-anim>*:nth-child(3){animation-delay:.12s}
+  .res-anim>*:nth-child(4){animation-delay:.17s}
+  .res-anim>*:nth-child(5){animation-delay:.22s}
+  .res-anim>*:nth-child(6){animation-delay:.27s}
+  .res-anim>*:nth-child(7){animation-delay:.32s}
+  .res-anim>*:nth-child(8){animation-delay:.37s}
+  .res-anim>*:nth-child(n+9){animation-delay:.42s}
+  @keyframes modalIn{from{opacity:0;transform:translateY(8px) scale(.98);}to{opacity:1;transform:none;}}
+  .modal-box{animation:modalIn .26s cubic-bezier(.22,.61,.36,1);}
+  /* 进度条微光 */
+  .bar>span{position:relative;overflow:hidden;}
+  .bar>span::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:translateX(-100%);animation:shimmer 2.6s ease-in-out infinite;}
+  @keyframes shimmer{0%{transform:translateX(-100%)}55%,100%{transform:translateX(120%)}}
+  /* 起始页标题渐变 */
+  #start h1{background:linear-gradient(120deg,var(--accent),#8a5cf6 55%,#e2554f);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  /* 主阵营卡柔光 */
+  .primary{box-shadow:0 6px 24px rgba(40,70,150,.10);}
+  /* 选项悬停浮起 */
+  .opt:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-1px);box-shadow:0 3px 12px rgba(40,70,150,.08);}
+  /* 页面背景极淡光晕，增强层次 */
+  body{background:
+    radial-gradient(1100px 560px at 50% -12%, rgba(59,109,240,.07), transparent 60%),
+    linear-gradient(180deg,#f7f9fc,#eef2f8);}
+  :root[data-theme="dark"] body{background:
+    radial-gradient(1100px 560px at 50% -12%, rgba(91,140,255,.12), transparent 60%),
+    linear-gradient(180deg,#0e1320,#0a0e18);}
+
+  /* ====== 第二轮精致打磨：结果页雷达/迷你条、选中强调、焦点呼吸、暗色提亮 ====== */
+  /* 主阵营卡：左文右雷达 布局 */
+  .primary{display:flex;align-items:flex-start;gap:14px;}
+  .primary .p-main{flex:1;min-width:0;}
+  .primary .p-radar{flex:0 0 176px;width:176px;align-self:center;}
+  .primary .p-radar .radar{display:block;width:176px;height:176px;}
+  .radar-area{transition:all .4s cubic-bezier(.22,.61,.36,1);}
+  /* 维度分布迷你条（分歧条） */
+  .mini-bars{margin-top:12px;display:flex;flex-direction:column;gap:5px;}
+  .mb{display:flex;align-items:center;gap:7px;font-size:11px;}
+  .mb-l,.mb-r{flex:0 0 58px;color:var(--muted);line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .mb-r{text-align:right;}
+  .mb-track{position:relative;flex:1;height:7px;border-radius:5px;background:var(--chip);overflow:hidden;}
+  .mb-lbar{position:absolute;left:0;top:0;height:100%;background:var(--accent-soft2,var(--accent-soft));}
+  .mb-rbar{position:absolute;right:0;top:0;height:100%;background:var(--accent);}
+  @media(max-width:560px){ .primary{flex-direction:column;align-items:stretch;} .primary .p-radar{align-self:center;margin:4px auto 0;} }
+
+  /* 选项选中态：左侧强调色条 */
+  .opt.sel{box-shadow:inset 4px 0 0 var(--accent);}
+  .opt.sel:hover{box-shadow:inset 4px 0 0 var(--accent),0 3px 12px rgba(40,70,150,.10);}
+  /* 键盘焦点环：主题色呼吸 */
+  @keyframes breathe{0%,100%{box-shadow:0 0 0 3px var(--accent-soft),0 0 0 3px var(--accent);}50%{box-shadow:0 0 0 5px var(--accent-soft),0 0 0 5px var(--accent);}}
+  .opt.focus{outline:none;box-shadow:0 0 0 3px var(--accent-soft),0 0 0 3px var(--accent);animation:breathe 1.6s ease-in-out infinite;}
+  /* 选中 + 键盘聚焦同时成立时，呼吸环保留左侧强调条 */
+  @keyframes breatheSel{0%,100%{box-shadow:inset 4px 0 0 var(--accent),0 0 0 3px var(--accent-soft),0 0 0 3px var(--accent);}50%{box-shadow:inset 4px 0 0 var(--accent),0 0 0 5px var(--accent-soft),0 0 0 5px var(--accent);}}
+  .opt.sel.focus{animation:breatheSel 1.6s ease-in-out infinite;}
+
+  /* 代表人物头像圆角描边发光 */
+  .fig-avatar{border:2px solid var(--accent);box-shadow:0 0 0 3px var(--accent-soft),0 2px 10px rgba(40,70,150,.18);transition:transform .2s,box-shadow .2s;}
+  .fig-card:hover .fig-avatar{transform:scale(1.04);box-shadow:0 0 0 4px var(--accent-soft),0 4px 16px var(--svg-accent-soft);}
+  .fig-chip .cav{border:1.5px solid var(--accent);box-shadow:0 0 0 2px var(--accent-soft),0 1px 5px rgba(31,41,51,.18);}
+  :root[data-theme="dark"] .fig-avatar{box-shadow:0 0 0 3px var(--accent-soft),0 2px 10px rgba(0,0,0,.5);}
+  :root[data-theme="dark"] .fig-chip .cav{box-shadow:0 0 0 2px var(--accent-soft),0 1px 5px rgba(0,0,0,.5);}
 
   /* ====== 测试前概览 ====== */
   .overview{margin:14px 0 6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:12px 16px;}
@@ -407,7 +481,8 @@
     .counter{font-size:12px;}
     .bar{margin:5px 0 14px;}
     .scene{font-size:15px;padding:12px 13px;border-radius:10px;min-height:auto;}
-    .opts{gap:8px;margin-top:10px;}
+    .opts{gap:9px;margin-top:11px;}
+    .opt{font-size:14px;line-height:1.55;padding:12px 13px;}
     .opt{padding:11px 12px;font-size:14px;gap:9px;border-radius:10px;}
     .opt .key{width:22px;height:22px;font-size:12px;}
     .kbd-hint{display:none;}
@@ -869,8 +944,12 @@
     <div class="cov-note" id="covNote"></div>
     <div class="family-box" id="familyBox"></div>
     <div class="primary">
-      <div class="name" id="pName"></div>
-      <div class="desc" id="pDesc"></div>
+      <div class="p-main">
+        <div class="name" id="pName"></div>
+        <div class="desc" id="pDesc"></div>
+        <div class="mini-bars" id="miniBars"></div>
+      </div>
+      <div class="p-radar" id="pRadar"></div>
     </div>
     <div class="sec" id="secLine"></div>
     <div class="figures" id="figures"></div>
@@ -1582,7 +1661,9 @@ function getSel(qid){
   if(Array.isArray(a)) return a;
   return [a];   // 旧版单选数据自动转单元素数组
 }
+let pendingPopIdx=null;
 function toggleOpt(qid, idx){
+  pendingPopIdx = idx;
   let sel = getSel(qid);
   const i = sel.indexOf(idx);
   if(i >= 0) sel = sel.filter(x=>x!==idx);
@@ -1663,6 +1744,7 @@ function ensureCurrent(){
   $("quiz").classList.remove("hidden");
   showQuestion();
 }
+function reAnim(el, cls){ if(!el) return; el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
 function showQuestion(){
   const q = BYID[seq[pos]];
   const sel = getSel(q.id);
@@ -1675,11 +1757,12 @@ function showQuestion(){
   q.options.forEach((o,i)=>{
     const d=document.createElement("div");
     const isSel = sel.includes(i);
-    d.className="opt"+(isSel?" sel":"")+(i===focusIdx?" focus":"");
+    d.className="opt"+(isSel?" sel":"")+(i===focusIdx?" focus":"")+((isSel && i===pendingPopIdx)?" just-sel":"");
     d.innerHTML=`<span class="key"><span class="letter">${keys[i]}</span><span class="check">✓</span></span><span>${qopt(o)}</span>`;
     d.onclick=()=>{ toggleOpt(q.id, i); };
     opts.appendChild(d);
   });
+  pendingPopIdx = null;
   applyFocus();
   // 更新选择提示
   const sh = $("selHint");
@@ -1691,6 +1774,8 @@ function showQuestion(){
   $("nextBtn").disabled=(sel.length===0);
   $("nextBtn").textContent=(pos===TOTAL-1)?g("查看结果 →","View Result →"):g("下一题 →","Next →");
   const eb=$("earlyBtn"); if(eb){ eb.disabled=!canEarlyExit(); eb.title=g(`至少答 ${MIN_EARLY_EXIT} 题后可随时结束并直接出结果（已答 ${answeredCount()} 题）`, "You can finish early after "+MIN_EARLY_EXIT+" questions (answered "+answeredCount()+")"); }
+  // 翻题入场过渡（淡入 + 轻微上滑）
+  reAnim($("scene"),"q-enter"); reAnim($("opts"),"q-enter"); reAnim($("counter"),"q-enter");
 }
 function applyFocus(){
   const opts=$("opts"); if(!opts) return;
@@ -1931,6 +2016,31 @@ function makePortrait(seed){
   </svg>`;
 }
 
+function buildMiniBars(counts, res){
+  const el=$("miniBars"); if(!el) return;
+  let h="";
+  DIMS.forEach(d=>{
+    const c=counts[d.key]; const l=c[d.poles[0].k]||0, r=c[d.poles[1].k]||0;
+    const tot=l+r; const lp = tot<=0?0:l/tot*100, rp = tot<=0?0:r/tot*100;
+    h+=`<div class="mb" title="${dname(d)}">`+
+      `<span class="mb-l">${plabel(d.poles[0])}</span>`+
+      `<span class="mb-track"><span class="mb-lbar" style="width:${lp.toFixed(1)}%"></span><span class="mb-rbar" style="width:${rp.toFixed(1)}%"></span></span>`+
+      `<span class="mb-r">${plabel(d.poles[1])}</span></div>`;
+  });
+  el.innerHTML=h;
+}
+function buildRadar(counts, res){
+  const el=$("pRadar"); if(!el) return;
+  const N=DIMS.length, R=52, C=100;   // 画布 200×200：留足边距，避免轴标签被裁切
+  const rlab=(d)=> CUR_LANG==="en" ? d.key : d.name;   // 轴标签用紧凑短名，英文取维度键避免超宽
+  const nets=DIMS.map(d=>{ const c=counts[d.key]; const l=c[d.poles[0].k]||0, r=c[d.poles[1].k]||0; const t=l+r; return t<=0?0:(r-l)/t; });
+  const ang=i=>-Math.PI/2 + i*2*Math.PI/N;
+  const rings=[0.25,0.5,0.75,1].map(f=>DIMS.map((_,i)=>`${(C+f*R*Math.cos(ang(i))).toFixed(1)},${(C+f*R*Math.sin(ang(i))).toFixed(1)}`).join(" ")).map(p=>`<polygon points="${p}" fill="none" stroke="var(--svg-grid)" stroke-width="1"/>`).join("");
+  const axes=DIMS.map((d,i)=>{ const x=(C+R*Math.cos(ang(i))).toFixed(1), y=(C+R*Math.sin(ang(i))).toFixed(1); return `<line x1="${C}" y1="${C}" x2="${x}" y2="${y}" stroke="var(--svg-line)" stroke-width="1"/>`; }).join("");
+  const poly=nets.map((v,i)=>{ const rr=(v+1)/2*R; return `${(C+rr*Math.cos(ang(i))).toFixed(1)},${(C+rr*Math.sin(ang(i))).toFixed(1)}`; }).join(" ");
+  const labels=DIMS.map((d,i)=>{ const a=ang(i); const lr=R+9; const x=(C+lr*Math.cos(a)).toFixed(1); const y=(C+lr*Math.sin(a)).toFixed(1); const anc=Math.abs(Math.cos(a))<0.3?"middle":(Math.cos(a)>0?"start":"end"); const dy=Math.sin(a)>0.5?9:(Math.sin(a)<-0.5?-3:3); return `<text x="${x}" y="${(+y+dy).toFixed(1)}" font-size="9.5" fill="var(--svg-muted)" text-anchor="${anc}">${rlab(d)}</text>`; }).join("");
+  el.innerHTML=`<svg viewBox="0 0 ${C*2} ${C*2}" class="radar" aria-hidden="true">${axes}${rings}<polygon class="radar-area" points="${poly}" fill="var(--svg-accent-soft)" stroke="var(--svg-accent)" stroke-width="1.8"/><circle cx="${C}" cy="${C}" r="2" fill="var(--svg-accent)"/>${labels}</svg>`;
+}
 function renderFigures(primary, secs){
   const figs = FIGURES[primary.name] || [];
   // 意识形态扩充至 200 类后，部分新增类别暂无代表人物收录：整块隐藏，避免渲染出「标题+说明+空白」的空区块
@@ -2011,6 +2121,7 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   if(!isHistory) persist();   // 回看历史时不把旧测试状态写回进行中的存档
   $("quiz").classList.add("hidden");
   $("result").classList.remove("hidden");
+  reAnim($("result"),"res-anim");
 
   $("code").textContent = DIMS.map(d=> res[d.key]==="混合"?"·":res[d.key]).join("");
   const pm = precisionMode();
@@ -2027,6 +2138,8 @@ function renderResultFromData(counts, forcePrimaryName, isHistory, partial){
   $("pDesc").innerHTML = `<div>${adesc(primary)}</div>` +
     (adetail(primary) ? `<div class="pdetail">${adetail(primary)}</div>` : "") +
     (atenets(primary).length ? `<div class="tenets">${atenets(primary).map(t=>`<span>${t}</span>`).join("")}</div>` : "");
+  buildMiniBars(counts, res);
+  buildRadar(counts, res);
 
   let dh="";
   DIMS.forEach(d=>{

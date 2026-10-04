@@ -20,6 +20,9 @@ deploy/
 # 项目私有数据 / 记忆
 .workbuddy/
 
+# 本地邮箱配置（MyMemory 配额提速用，不入库）
+backfill_email.txt
+
 # 系统
 .DS_Store
 *.log
