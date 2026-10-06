@@ -35565,5 +35565,826 @@
         ]
       }
     ]
+  },
+  {
+    "id": 831,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene_en": "A regional hospital has one intensive care bed left and two patients who need it tonight: a 34-year-old with a high expected recovery rate, and a 78-year-old with several chronic conditions. The board is writing a standing triage rule so that nurses are not left to improvise at three in the morning. Some staff want a clinical score, some want to rank by remaining life years, some want a lottery, and some want to weigh who has fewer resources beyond the hospital. One rule will be adopted.",
+    "scene": "某地区医院只剩一张重症监护床位，今晚有两位患者需要：一位 34 岁，预期恢复率较高；一位 78 岁，患有多种慢性病。院方正在起草一份长期有效的分诊规则，避免凌晨三点由护士临场决断。部分医护主张用临床评分，部分主张按剩余寿命年数排序，部分主张抽签，也有人主张把患者院外资源的多寡纳入权重。最终只会采纳其中一条。",
+    "options": [
+      {
+        "t_en": "I would rank by expected treatment outcome; a bed given to the person most likely to walk out of the ward produces more life than the same bed given elsewhere.",
+        "t": "我会按预期治疗效果排序：同一张床位给最可能走出病房的人，比给别处能换来更多的生命。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would draw lots among patients who meet the clinical criteria; I am not willing to place a committee in the position of deciding whose years count for more.",
+        "t": "我会在符合临床指征的患者之间抽签：我不愿意让某个委员会去裁定谁的岁月更值钱。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would have the administration issue a fixed scoring table that staff must follow; leaving it to whoever is on shift produces a different answer on a different night.",
+        "t": "我会由管理层下发一份必须照执行的固定评分表：把决定推给当班的人，不同夜晚会给出不同答案。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would give weight to who has fewer resources outside the hospital; the same illness costs an uninsured patient far more of what they have than it costs someone with savings.",
+        "t": "我会把院外资源更少的一方纳入权重：同一种病，没有保险的患者要付出的，远多于有积蓄的人。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would keep the public bed out of ranking altogether and let families arrange transfer to private facilities themselves; a public ward should not be in the business of comparing people.",
+        "t": "我会让公共床位完全退出排序，由家属自行安排转往私营机构：公立病房不该从事比较人的业务。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 832,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene_en": "A professional association is rewriting its conference rules after a year of complaints about who gets invited to speak. Its own data from the last five conferences shows that panels assembled by a single chair drew about four fifths of their speakers from one gender, while slots filled through open calls came out close to even. Some members want a quota on invited slots. Others want invitations left entirely to the chair. A third group proposes publishing the figures every year and leaving the decision open. The council will adopt one approach.",
+    "scene": "某专业协会在经历一年的投诉后正在重写会议规则，争议焦点是谁被邀请发言。协会自己的数据显示，过去五届会议中由单一主席召集的分论坛，约五分之四的讲者来自同一性别；而通过公开征集产生的席位则接近均衡。部分会员主张对邀请席位设配额，另一些人主张邀请权完全交给主席，还有一派建议每年公布构成数据但不设硬性规则。理事会只会采纳其中一种做法。",
+    "options": [
+      {
+        "t_en": "I would set a quota on invited slots; the numbers from five conferences did not move while selection rested with one person's address book.",
+        "t": "我会对邀请席位设配额：选择权放在一个人的通讯录里时，五届会议的数据没有发生过变化。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would leave invitations to the chair; a convenor who follows the field closely can judge whose work matters this year, and a quota assigns slots by category rather than by contribution.",
+        "t": "我会把邀请权留给主席：紧跟领域的召集人能判断今年谁的工作重要，而配额是按类别而非按贡献分配席位。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would publish the composition figures every year and leave the choice open; transparency changes what convenors are willing to defend in front of their peers.",
+        "t": "我会每年公布构成数据但不强制：公开会改变召集人在同行面前愿意为之辩护的东西。",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would abolish invitations and fill every slot through open call without counting gender; open calls in our own data already produced the balanced outcome.",
+        "t": "我会取消邀请制，所有席位改为公开征集且不按性别计数：我们自己的数据里，公开征集已经产出了均衡结果。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 833,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene_en": "A city of 400,000 has 3,000 households on its social housing wait and 11,000 empty units held by owners who live elsewhere. The council is weighing four instruments: a charge that rises with each year a unit sits empty; a cap on what a landlord may ask; a fast-track permitting office for any project that includes below-market units; and a rule obliging large projects to reserve a share of units at controlled rents. Housing economists on the panel disagree about which one changes behaviour rather than paperwork.",
+    "scene": "一座 40 万人口的城市里，有 3000 户家庭排在保障房队列上，同时有 11000 套空置房产业主并不在本地居住。议会正在权衡四项工具：随空置年限递增的收费；对房东要价的封顶；为任何包含低于市场价房源的项目开设快速审批通道；以及要求大型项目预留一定比例租金受控房源。专家组内的住房经济学家对哪一项会改变行为、哪一项只增加文书，意见并不一致。",
+    "options": [
+      {
+        "t_en": "I would introduce the charge that rises each year a unit sits empty; a holding cost that grows with time changes the arithmetic of leaving a flat unused.",
+        "t": "我会引入随空置年限递增的收费：随持有时间增长的持有成本，会改变把房子空着的算式。",
+        "tags": [
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would cap what a landlord may ask; the households on the wait are already renting, and their rent is what decides whether they can stay in the city at all.",
+        "t": "我会对房东要价设上限：排队的那 3000 户本来就在租房，而租金决定了他们能否留在城里。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would open the fast-track permitting office and drop other controls; the wait exists because not enough units were built, and approval delays are what the builders cite first.",
+        "t": "我会开设快速审批通道并取消其他管控：队列的存在是因为房源盖得不够，而开发商最先提到的就是审批周期。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would oblige large projects to reserve a share of controlled-rent units; otherwise the below-market stock never appears in the buildings where most units are added at once.",
+        "t": "我会要求大型项目预留租金受控房源：否则低价房源永远不会出现在那种一次就新增几百套的楼里。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 834,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene_en": "A valley that grows much of a region's vegetables has drawn down its aquifer faster than it refills for thirty years. Four proposals are before the basin authority: pay growers to leave a share of land fallow; auction a shrinking number of pumping permits that holders may trade; subsidise drip irrigation and drought-tolerant seed; or secure new supply so that production continues at current levels. Almond and leafy-vegetable growers are affected very differently, and the valley's packing houses employ most of the town.",
+    "scene": "某山谷供应着一个地区的大部分蔬菜，三十年来其地下含水层的抽取速度一直快于补给。流域管理机构面前有四项方案：向种植者付费让其休耕部分土地；拍卖数量逐年递减、且可交易的抽水许可；为滴灌与耐旱种子提供补贴；或者开辟新水源，使产量维持在当前水平。杏仁种植户与叶菜种植户受到的影响差别很大，而山谷里的包装厂雇着镇上大部分人。",
+    "options": [
+      {
+        "t_en": "I would pay growers to leave a share of land fallow; paying for water left in the ground costs the public budget directly and keeps the land farmable afterwards.",
+        "t": "我会付费让种植者休耕部分土地：为留在地下的水付费，直接计入公共预算，且土地之后仍可耕作。",
+        "tags": [
+          "ECO:L",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I would auction a shrinking number of tradeable pumping permits; a cap that falls on a schedule lets the grower who can produce most per litre buy from the one who cannot.",
+        "t": "我会拍卖数量递减且可交易的抽水许可：按时间表下降的总量上限，能让每升水产出更高的种植者向产出低者购买额度。",
+        "tags": [
+          "ECO:R",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I would subsidise drip irrigation and drought-tolerant seed; the same crop then needs less water per tonne, and no field has to come out of production.",
+        "t": "我会为滴灌和耐旱种子提供补贴：这样每吨作物的耗水下降，而不必让任何一块地退出生产。",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would secure new supply so production continues at current levels; the packing houses employ most of the town, and vegetables would otherwise come from somewhere with weaker rules.",
+        "t": "我会开辟新水源以维持当前产量：包装厂雇着镇上大部分人，否则这些蔬菜会来自规则更宽松的地方。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 835,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene_en": "A regional bloc is negotiating a treaty that would let member states pool procurement of medicines and hold a joint pandemic stockpile. Smaller members support it, saying they cannot negotiate prices alone against manufacturers. Two larger members want an opt-out so their own agencies can move faster, and one member argues the pool should also be open to non-members meeting the same standards. The final text must state how binding the common stockpile is and who may draw on it.",
+    "scene": "某区域集团正在谈判一项条约，允许成员国集中采购药品并共同持有疫情物资储备。较小的成员支持，理由是自己无法单独与厂商议价；两个较大的成员要求保留退出权，以便本国机构行动更快；还有一个成员主张储备池也应向符合同样标准的非成员国开放。最终文本必须写明共同储备的约束力有多强、谁有权动用。",
+    "options": [
+      {
+        "t_en": "I would make the pool binding with members drawing first; a reserve that any member may raid at will is not a reserve during the month it is needed.",
+        "t": "我会设成有约束力且成员国优先动用：任何成员都可随意支取的储备，在真正需要的那个月里就不是储备。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep an opt-out for members running their own agencies; their stock is larger than what they would draw, and the delay is in their own approval process, not in the treaty.",
+        "t": "我会为自行运营机构的成员保留退出权：它们的存量大于自己会动用的量，延迟来自本国审批流程而非条约。",
+        "tags": [
+          "NAT:N",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would open the pool to non-members meeting the same standards; a pathogen does not check membership, and a neighbouring outbreak reaches us either way.",
+        "t": "我会向符合同样标准的非成员国开放储备池：病原体不检查成员身份，邻国的疫情无论怎样都会传到我们这里。",
+        "tags": [
+          "NAT:C",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep stockpiles national and cooperate only on sharing information; the draw decision is the one a government cannot outsource in the week it has to explain itself to voters.",
+        "t": "我会保持储备为国别所有、只在信息共享上合作：动用决策是政府无法外包的那一件事，就在它要向选民交代的那一周。",
+        "tags": [
+          "NAT:N",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 836,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene_en": "A pay-as-you-go pension system is projected to run short in twelve years. The reform office has costed four changes: raise the retirement age by two years; raise contribution rates on current workers by 1.5 points; reduce indexation so that pensions grow more slowly than wages; or shift part of the system into funded accounts that workers own individually and can pass on. Union and employer representatives have each rejected two of the four, and the gap between them has not closed in three rounds.",
+    "scene": "某现收现付制养老金体系预计将在十二年后出现缺口。改革办公室已测算出四项调整：退休年龄提高两岁；在职者缴费率提高 1.5 个百分点；降低指数化幅度，使养老金增速低于工资增速；或者把体系的一部分转为由个人持有、可继承的积累制账户。工会与雇主代表各自否决了其中两项，三轮谈判下来分歧并未缩小。",
+    "options": [
+      {
+        "t_en": "I would raise the retirement age by two years; each cohort then funds its own longer contribution period rather than drawing it from the next one's wages.",
+        "t": "我会把退休年龄提高两岁：这样每一代人用自己更长的缴费期来供款，而不是从下一代人的工资里支取。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would raise contribution rates on current workers by 1.5 points; the shortfall is a system-wide one, and a rate change spreads it across everyone in work today.",
+        "t": "我会把在职者缴费率提高 1.5 个百分点：缺口属于整个体系，费率调整把它摊到今天所有在职者身上。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would reduce indexation so pensions grow more slowly than wages; the gap between pensioners and workers then closes gradually instead of through a single cut.",
+        "t": "我会降低指数化幅度使养老金增速低于工资：退休者与在职者的差距会逐步收窄，而不是通过一次性削减实现。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would move part of the system into funded accounts workers own and can pass on; what a person has paid in then stays theirs, and the state's exposure to longevity stops growing.",
+        "t": "我会把体系的一部分转为个人持有且可继承的积累制账户：一个人缴进去的钱仍然是他的，国家承担的长寿风险也不再增长。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 837,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene_en": "A legislature is updating the rules that decide who may make medical decisions for an adult who cannot speak for themselves and has written nothing down. Under the current law the order is spouse, adult children, parents, siblings. Advocacy groups for unmarried partners, close friends, and stepfamilies say the fixed order frequently skips the person who actually knows the patient's wishes. Some legislators want to keep the list for predictability; others want the adult to be able to nominate anyone in advance; a third proposal is a case-by-case decision by a committee.",
+    "scene": "某立法机构正在修订这样一条规则：当一位成年人无法表达、且事先未留下任何书面安排时，谁可以替他做医疗决定。现行法律的顺位是配偶、成年子女、父母、兄弟姐妹。为未婚伴侣、密友与继亲家庭发声的团体指出，这个固定顺位经常跳过真正了解患者意愿的那个人。部分议员主张保留名单以维持可预期性，另一些人主张允许成年人事先指定任何人，第三种方案则是由委员会逐案裁定。",
+    "options": [
+      {
+        "t_en": "I would keep the fixed statutory order; clinicians can then act the same evening without checking who claims to be closest, and the list is the one families expect.",
+        "t": "我会保留法定固定顺位：临床医生当晚就能行动，不必核查谁自称关系最近，而这份名单也符合家庭的预期。",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I would let any adult nominate whoever they choose in advance; the person who knows my wishes is not always the person the statute ranks first.",
+        "t": "我会允许任何成年人事先指定他选择的任何人：了解我意愿的人，并不总是法律排在第一位的那个人。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep the list but let relatives apply to a committee to substitute someone; families where the order fits will never notice, and the others get a route out.",
+        "t": "我会保留名单，但允许亲属向委员会申请替换人选：顺位合适的家庭根本不会察觉，其余家庭则多了一条出路。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would default to whoever has been in regular contact over the past two years, whatever the relation; contact is observable, and a category like stepchild or friend is not.",
+        "t": "我会默认交给过去两年保持经常联系的人，不论何种关系：联系是可查证的，而继子女或朋友这类身份不是。",
+        "tags": [
+          "COL:I",
+          "CUL:P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 838,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene_en": "A district council is deciding whether to continue a licensed cull of a protected bird of prey that has been taking lambs and, increasingly, the nests of ground-nesting birds on nearby reserves. Hill farmers report losses they say threaten the viability of their flocks and of the grazing that keeps the moor open. Conservation groups propose compensation payments and non-lethal deterrents instead. A local food campaign notes that if local flocks contract, cheaper imports replace them under rules the district does not control.",
+    "scene": "某地区议会正在决定是否继续一项持照捕杀：一种受保护的猛禽一直在捕食羊羔，并且越来越多地捕食附近保护区地面营巢鸟类的巢。山地农户报告了损失，称其威胁到羊群以及维持荒原开阔状态的放牧本身。保育团体主张改为支付补偿与使用非致死性驱避装置。一个本地食物团体指出，如果本地羊群收缩，更便宜的进口羊肉会在该地区无法掌控的规则下取而代之。",
+    "options": [
+      {
+        "t_en": "I would continue the licensed cull; the flocks and the grazing that keeps the moor open are what the ground-nesting birds there depend on as well.",
+        "t": "我会继续持照捕杀：维持荒原开阔的羊群与放牧，也正是那些地面营巢鸟类所依赖的东西。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would end the cull and fund compensation plus non-lethal deterrents; the losses then sit with the public that wants the bird protected, not with one farm's accounts.",
+        "t": "我会终止捕杀，改为资助补偿与非致死性驱避：损失就落在主张保护这种鸟的公众身上，而不是某一家农场的账上。",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would end the cull without compensation and let holdings adapt; a flock that cannot absorb predation on this scale is also exposed to feed prices it cannot control.",
+        "t": "我会终止捕杀且不提供补偿，让农场自行调整：无法承受这种规模捕食的羊群，同样暴露在它无法控制的饲料价格之下。",
+        "tags": [
+          "ENV:S",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would hand licensing to a committee of farmers, conservation groups and residents deciding case by case, with every vote recorded publicly.",
+        "t": "我会把许可权交给由农场主、保育团体与居民组成的委员会逐案裁定，并公开每一次表决记录。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 839,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene_en": "A national museum has been offered a collection of ceremonial objects held abroad since the nineteenth century, on condition that it displays them for at least ten years and lends nothing back. Source communities have asked for some objects to be returned outright, and for restrictions on displaying human remains and items made for restricted ceremonial use. The museum's curators argue that one display permits comparative study and public access that dispersed custody cannot. The offer expires at the end of the year.",
+    "scene": "一家国家博物馆收到一份要约：一批自十九世纪起流散海外的仪式用品将归其收藏，条件是至少展出十年且不得外借。来源社群要求其中部分物件直接归还，并限制展出人类遗骸以及专为受限仪式制作的物品。馆方策展人主张，集中展出能实现分散保管无法提供的比较研究与公众接触。这份要约年底到期。",
+    "options": [
+      {
+        "t_en": "I would accept on the stated terms and display everything; a single collection lets a visitor compare objects made three valleys apart, and dispersed custody has not delivered that.",
+        "t": "我会按条件接受并全部展出：集中收藏能让观众比较相隔三座山谷制作的器物，而分散保管至今没有做到这一点。",
+        "tags": [
+          "NAT:N",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would return the human remains and restricted objects outright and accept the rest; what was taken under coercion is not a loan that expired quietly in a foreign store.",
+        "t": "我会直接归还人类遗骸与受限物件、接受其余部分：在胁迫下被取走的东西，并不是一份在国外库房里悄悄到期的借展。",
+        "tags": [
+          "NAT:C",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would accept but display restricted items only with the source community's consent and labels they co-write; the description next to the object is part of what the visitor reads.",
+        "t": "我会接受，但受限物品只在来源社群同意、且展签由他们共同撰写的前提下展出：物件旁边的说明文字，本身就是观众读到的一部分。",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would seal the restricted items and human remains permanently under the ceremonial requirements of their communities, neither displaying nor lending them, whatever the offer requires.",
+        "t": "我会按其社群的仪式要求把受限物品与人类遗骸永久封存，既不展出也不外借，无论这份要约的条件如何。",
+        "tags": [
+          "SEC:F",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 840,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene_en": "A national federation must write its rule on athletes whose testosterone levels fall outside the range set for the female category. Its science committee reports that the performance differences attributed to the measure overlap substantially with differences produced by training volume, altitude upbringing and diet, and that no threshold separates two clean groups. Some clubs want eligibility decided by a medical panel, others want the current hormone rule kept, and one proposal is to define categories by the event's format rather than by sex.",
+    "scene": "某全国性体育协会必须为这样一类运动员制定规则：其睾酮水平落在为女子组设定的区间之外。协会科学委员会报告称，被归因于该指标的竞技表现差异，与训练量、海拔成长环境和饮食造成的差异大幅重叠，且没有任何阈值能把人群干净地分成两组。部分俱乐部主张由医学小组逐案裁定参赛资格，另一些人主张保留现行的激素规则，还有一种方案是按项目本身的赛制而非性别来划分组别。",
+    "options": [
+      {
+        "t_en": "I would let a medical panel decide eligibility case by case; when the science committee says no threshold separates the groups, a single number cannot carry the whole rule.",
+        "t": "我会由医学小组逐案裁定资格：当科学委员会说没有阈值能把人群分开，一个数字就承担不起整条规则。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the current hormone rule; a line that is imperfect still gives clubs and athletes something to plan a season around before entries close.",
+        "t": "我会保留现行激素规则：一条不完美的界线，至少让俱乐部和运动员在报名截止前有一件可据以规划赛季的东西。",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I would define categories by the event's format, such as weight or distance brackets; that puts the contested measure aside and asks what the competition is actually testing.",
+        "t": "我会按赛制划分组别，例如体重或距离区间：这样就把争议的指标放到一边，转而问这项比赛究竟在测什么。",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would leave eligibility to each club and let national rules stop at safety; a federation rule on this question carries a compliance cost that small clubs cannot fund.",
+        "t": "我会把资格判定交给各俱乐部，全国性规则只管安全：在这个问题上的协会规则，带着小型俱乐部无力承担的合规成本。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 841,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "A neighbourhood of 2,000 households has one late-night bus route, used mainly by hospitality workers going home and by patrons of a bar street. Residents on the street above report sleepless nights; the workers say the bus is how they get home. Four options are before the council: move the route two blocks and cut the last three services; keep the route and fund a night-time noise team; keep the route and require venues to pay into a resident compensation fund; or leave it to households to handle with their own money.",
+    "scene": "一个有 2000 户的街区只有一条夜间公交线路，主要使用者是下班的餐饮从业者与一条酒吧街的顾客。临街楼上的住户反映长期失眠，而从业者说这班车是他们回家的唯一方式。议会面前有四个选项：线路外移两个街区并砍掉最后三班；保留线路并出资组建夜间噪音小组；保留线路但要求场所向住户补偿基金缴费；或者由住户自己出钱处理。",
+    "options": [
+      {
+        "t_en": "I would move the route and cut the last three services; the households above the street have to sleep there every night, and the late services carry a handful of passengers.",
+        "t": "我会让线路外移并砍掉最后三班：临街住户每晚都要在那里睡觉，而深夜班次只载着为数不多的几个人。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the route and fund a night-time noise team from the city budget; the bus serves people who did not choose their shift times and cannot afford the alternative.",
+        "t": "我会保留线路并用市级预算组建夜间噪音小组：这班车服务的是无法选择班次时间、也负担不起其他方案的人。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the route and require venues to pay into a resident compensation fund; the businesses generating the late-night traffic then carry its cost in their own accounts.",
+        "t": "我会保留线路并要求场所向住户补偿基金缴费：制造夜间流量的商家，其成本就计入它们自己的账上。",
+        "tags": [
+          "ECO:R",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would leave it to households to fit their own soundproofing; the public budget then does not settle a dispute between two groups of neighbours over one street.",
+        "t": "我会由住户自行加装隔音设施：公共预算就不必去裁决同一条街上两组邻里之间的争执。",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 842,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene_en": "A university has been asked to cancel a lecture series after past writings by three of the invited speakers were circulated online. The student union wants the invitations withdrawn; the department says each session is a seminar where the speaker is questioned by two appointed respondents and then by the audience. The university's own rules permit cancellation only where there is a credible threat of disruption, which security has not identified. A committee must now apply one stated principle.",
+    "scene": "某大学被要求取消一个系列讲座，起因是三位受邀讲者过去的文章在网络上被大量转发。学生会要求撤回邀请；主办院系则指出，每一场都是研讨形式，讲者先由两位指定回应人提问，再接受听众提问。学校自身的规定只允许在存在可信的扰乱威胁时取消，而安保部门并未发现此类威胁。现在，一个委员会必须适用某一条明确表述的原则。",
+    "options": [
+      {
+        "t_en": "I would withdraw the invitations; the department's own seminar format does not undo the fact that the university is the one putting these speakers in front of an audience.",
+        "t": "我会撤回邀请：院系的研讨形式并不能改变一个事实——把这些讲者带到观众面前的是学校自己。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would proceed as planned and publish the recordings; a cancellation rule that fires without a security finding gives the loudest complaint a veto over the timetable.",
+        "t": "我会按计划举行并公开录像：在没有安保结论时就触发的取消规则，等于让声音最大的投诉对课程表拥有否决权。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would proceed but appoint two respondents and publish a written rebuttal alongside each talk; the criticism then reaches the same audience as the talk rather than a separate room.",
+        "t": "我会照常举行，但指定两位回应人并在每场讲座旁发布书面反驳：这样批评能触达与讲座相同的听众，而不是另一个房间。",
+        "tags": [
+          "COL:M",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would seat the student union and the department together on the review panel with no single-party veto; whichever side decides alone will be replaced at the next election.",
+        "t": "我会让学生会与院系共同进入评审小组，任何一方都无单独否决权：任何单方裁决方，都会在下一届选举后被换掉。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 843,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene_en": "A government is deciding whether to extend tariff protection to a domestic battery industry whose cells cost about 40 percent more than imports. The industry association says it needs five years to reach scale, and cites employment in two regions. A consumer group points to the cost passed on to electric vehicle buyers and to grid storage projects already tendered. A third proposal would replace tariffs with a subsidy tied to verified output; a fourth would let the industry contract while funding retraining. One instrument will be chosen.",
+    "scene": "某国政府正在决定是否对本土电池产业延长关税保护，该产业电芯成本比进口高出约 40%。产业协会称需要五年达到规模，并提到两个地区的就业。消费者团体则指出成本会转嫁给电动车买家，以及已经招标的电网储能项目。第三种方案是用与核定产量挂钩的补贴替代关税；第四种方案是让该产业收缩，同时出资转岗培训。最终只会选择其中一项工具。",
+    "options": [
+      {
+        "t_en": "I would extend tariffs for five years; the two regions' plants will not survive long enough to reach scale against a price gap that large and a clock that short.",
+        "t": "我会把关税延长五年：面对这么大的价差和这么短的期限，那两个地区的工厂撑不到形成规模的那一天。",
+        "tags": [
+          "NAT:N",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would let the industry contract and fund retraining; the 40 percent gap is carried by vehicle buyers and grid projects, and tenders already signed cannot be re-priced.",
+        "t": "我会让该产业收缩并出资转岗培训：40% 的价差由购车者和电网项目承担，而已经签下的标书无法重新定价。",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t_en": "I would replace tariffs with a subsidy tied to verified output; payment then follows cells actually produced, and the buyer's price stays at the import level.",
+        "t": "我会用与核定产量挂钩的补贴替代关税：款项随实际产出的电芯走，而买家面对的价格仍维持在进口水平。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep imports free but only from plants meeting stated labour and environmental standards; protection then has to be argued for on the factory floor rather than at the border.",
+        "t": "我会保持进口自由，但只开放给符合既定劳工与环境标准的工厂：这样保护就必须在车间里被论证，而不是在边境上。",
+        "tags": [
+          "NAT:C",
+          "ENV:S"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 844,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene_en": "A river supplying drinking water to 1.2 million people has seen its sediment load triple after upstream logging. Four proposals are before the basin authority: buy out and retire logging concessions; impose a binding sediment cap with continuous turbidity monitoring; pay landowners per hectare for riparian buffer strips; or licence logging while requiring roads to be removed and slopes replanted after each harvest. Timber companies warn of job losses, and the municipal water utility notes that its filtration costs have doubled.",
+    "scene": "为 120 万人提供饮用水的一条河流，在上游采伐之后泥沙负荷增加了两倍。流域管理机构面前有四项方案：买断并终止采伐特许权；设定有约束力的泥沙上限并持续监测浊度；按公顷向土地所有者支付沿岸缓冲带费用；或者继续发放采伐许可，但要求每次收获后拆除便道并重新植被。木材公司警告会造成失业，而市政水务公司指出其过滤成本已经翻倍。",
+    "options": [
+      {
+        "t_en": "I would buy out and retire the concessions; filtration costs that have already doubled are paid by every ratepayer, while the sediment originates on a handful of titles.",
+        "t": "我会买断并终止特许权：已经翻倍的过滤成本由每一位自来水用户承担，而泥沙来自少数几处产权地。",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would impose a binding sediment cap with continuous monitoring; a number measured in the water is what the utility can actually plan a plant around.",
+        "t": "我会设定有约束力的泥沙上限并持续监测：水里测出来的数字，才是水厂真正能据以规划的数字。",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would pay landowners per hectare for buffer strips; the strips stay in private ownership, and the payment goes where the bank actually is rather than to the cheapest bidder.",
+        "t": "我会按公顷向土地所有者支付缓冲带费用：缓冲带仍归私人所有，款项落在河岸真正所在的地方，而不是给出价最低者。",
+        "tags": [
+          "ENV:S",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would licence logging with mandatory road removal and replanting; the town's mills then keep working, and the sediment reductions come from how the harvest is done.",
+        "t": "我会继续发放许可，但强制拆除便道并重新植被：镇上的锯木厂得以继续运转，而减沙来自采伐方式本身。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 845,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene_en": "A city has run a language and civics programme for new arrivals for eight years. An evaluation finds attendance is high but that participants' employment outcomes two years later are no different from those who did not attend. Three redesigns are proposed: make completion a condition for renewing a residence permit; replace classes with workplace placements paired with part-time language teaching; or close the programme and fund interpretation in clinics and schools instead. Providers warn the first option would push the least confident learners out of the system entirely.",
+    "scene": "某市为新来者开设语言与公民常识课程已有八年。一份评估发现出勤率很高，但参与者两年后的就业结果与未参加者没有差别。现有三种改版方案：把结业设为居留许可续期的条件；用配套兼职语言教学的岗位实习取代课堂；或者关停课程，把经费改投诊所与学校的口译服务。课程提供方警告，第一种方案会把最缺乏信心的学习者整个挤出体系。",
+    "options": [
+      {
+        "t_en": "I would make completion a condition for permit renewal; two years of high attendance with no change in outcomes means the classroom is not reaching the people who need it.",
+        "t": "我会把结业设为续期条件：出勤率高却两年无变化，说明课堂没有触达真正需要它的人。",
+        "tags": [
+          "NAT:N",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would replace classes with workplace placements plus part-time language teaching; the skill that moves employment outcomes is used at work, and it is learned there.",
+        "t": "我会用岗位实习加兼职语言教学取代课堂：能改变就业结果的技能是在工作中使用的，也就在那里学会。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would close the programme and fund interpretation in clinics and schools; the point where language actually blocks someone is a consultation or a parent meeting, not a classroom.",
+        "t": "我会关停课程、把经费投向诊所与学校口译：语言真正卡住人的地方是问诊或家长会，而不是教室。",
+        "tags": [
+          "ECO:L",
+          "NAT:C"
+        ]
+      },
+      {
+        "t_en": "I would keep classes voluntary and let participants choose among tracks; the people who show up without being required are also the ones who finish.",
+        "t": "我会保持课程自愿并让参与者自选方向：没有被要求也来上课的人，也正是能读完的人。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 846,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene_en": "A city transit authority wants to link fare cards, phone location data and camera footage into one operations platform to predict crowding and detect fare evasion. Its privacy office reports that the linkage would let staff reconstruct an individual's movements over months, and that the camera feed was installed for safety, not enforcement. Proposals are: run the platform but purge identifiers after 24 hours; run it only on aggregated counts with no individual records; run it fully with an opt-out at a higher fare; or drop it and station staff at the gates instead.",
+    "scene": "某市交通管理局希望把交通卡、手机位置数据与摄像头画面接入同一个运营平台，用于预测拥挤与识别逃票。其隐私办公室报告称，这种关联会让工作人员回溯一个人数月内的行动轨迹，而摄像头最初是为安全而非执法安装的。现有方案：运行平台但 24 小时后清除标识符；只基于聚合计数运行、不保留个人记录；完整运行但允许支付更高票价者退出；或者放弃平台，改为在闸机口加派人员。",
+    "options": [
+      {
+        "t_en": "I would run the platform and purge identifiers after 24 hours; crowding prediction needs a day of movement data, and a 24-hour window is what the use actually requires.",
+        "t": "我会运行平台并在 24 小时后清除标识符：预测拥挤需要一天的移动数据，而这个用途实际所需的也就是 24 小时。",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would run it on aggregated counts only, with no individual records; a reconstruction of one person's movements over months is a capability, and capabilities get used.",
+        "t": "我会只基于聚合计数运行、不保留个人记录：回溯一个人数月轨迹是一种能力，而能力总会被用上。",
+        "tags": [
+          "TECH:U"
+        ]
+      },
+      {
+        "t_en": "I would run it fully with an opt-out at a higher fare; the price difference then reflects what the data is worth to the authority, and riders can see that figure.",
+        "t": "我会完整运行，但允许支付更高票价者退出：价差就反映出这些数据对管理局值多少，乘客也能看到这个数字。",
+        "tags": [
+          "TECH:K",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would drop the platform and station staff at the gates; fare evasion is a loss the authority can price, and months of movement history is not something it can give back.",
+        "t": "我会放弃平台、改为在闸机口加派人员：逃票是管理局能核算清楚的一笔损失，而数月的行动轨迹是它无法归还的东西。",
+        "tags": [
+          "TECH:U",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 847,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene_en": "A jurisdiction is reviewing a rule that lets prosecutors offer substantially reduced charges to defendants who plead early, before the full evidence file has been disclosed. Ministry data shows 94 percent of cases resolve by plea and that the average discount is roughly half the sentence. Defence lawyers report clients pleading to avoid pre-trial detention rather than on the evidence. Proposals are: require full disclosure before any plea offer; cap the discount; abolish discounts and let courts sentence; or keep the system and expand legal aid.",
+    "scene": "某法域正在检讨这样一条规则：检察官可在完整证据材料披露之前，向早早认罪的被告人提供大幅降格指控。司法部门数据显示 94% 的案件以认罪方式结案，平均降幅约为刑期的一半。辩护律师反映，当事人认罪是为了避免审前羁押，而非基于证据。现有方案：要求在任何认罪提议前完整披露证据；为降幅设上限；取消降幅、由法院量刑；或者保留制度并扩大法律援助。",
+    "options": [
+      {
+        "t_en": "I would require full disclosure before any plea offer; a choice made without the file is a choice between two risks, not a choice about what happened.",
+        "t": "我会要求在任何认罪提议前完整披露证据：没有卷宗就做出的选择，是在两种风险之间选，而不是在就事实作出选择。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would cap the discount; at roughly half the sentence, declining an offer costs a defendant more than the trial is worth, guilty or not.",
+        "t": "我会为降幅设上限：在接近一半刑期的水平上，拒绝提议的代价超过开庭本身的价值，无论是否有罪。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would abolish discounts and let courts sentence; a reduction set by the same office that brings the charge is a sentencing power the prosecutor already holds twice over.",
+        "t": "我会取消降幅、改由法院量刑：由提出指控的同一机关设定的减让，等于检察官已经握了两遍的量刑权。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the system and expand legal aid; the way to make an offer assessable is to put a lawyer next to the person deciding, not to remove the option.",
+        "t": "我会保留制度并扩大法律援助：让提议变得可评估的方式，是在做决定的人身边放一位律师，而不是去掉这个选项。",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 848,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene_en": "A public broadcaster's charter is up for renewal. Its news reach is the highest in the country, and the regulator found its coverage met impartiality standards in 96 percent of sampled items. A parliamentary committee has proposed four funding and governance models: convert it to a subscription service with a publicly funded news core; keep the licence fee but add board members appointed by the legislature; keep the current arm's-length board and index the fee; or fund it from general taxation with five-year fixed budgets. One model will be adopted for ten years.",
+    "scene": "一家公共广播机构的章程到期待续。它的新闻触达率全国最高，监管机构发现其报道在 96% 的抽样条目中符合公正性标准。一个议会委员会提出了四种经费与治理模式：转为订阅制，同时保留一个公共资助的新闻核心；保留牌照费但增设立法机关任命的董事；维持现有保持距离的董事会并把费用与通胀挂钩；或改由一般税收供款、配以五年固定预算。有一种模式将被采用十年。",
+    "options": [
+      {
+        "t_en": "I would convert it to subscription with a publicly funded news core; those who watch the entertainment catalogue pay for it, and the news does not depend on that revenue.",
+        "t": "我会转为订阅制并保留公共资助的新闻核心：看娱乐内容的人为其付费，而新闻不依赖这笔收入。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would add legislature-appointed board members; a body spending compulsory fees reaches 96 percent on impartiality but still answers to no one elected.",
+        "t": "我会增设由立法机关任命的董事：一个花着强制收费的机构，公正性达到 96%，却不必对任何当选者负责。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the arm's-length board and index the fee; governance that survived renewal unchallenged is what produced the figures the regulator sampled.",
+        "t": "我会维持保持距离的董事会并把费用与通胀挂钩：正是这套在续期时无人质疑的治理，产出了监管抽样的那些数字。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would fund it from general taxation on five-year fixed budgets; a settlement that outlasts one parliament removes the annual vote as an instrument over coverage.",
+        "t": "我会改由一般税收供款、配五年固定预算：跨过一届议会任期才到期的安排，取消了把年度表决当作报道杠杆的可能。",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 849,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene_en": "A coastal county has been offered a national grant covering 70 percent of the cost of either a seawall protecting the town centre or a managed-retreat programme buying out the 340 homes in the flood zone over ten years. An engineering assessment gives the seawall a design life of about 40 years; the retreat option moves residents inland, where rents run about 25 percent higher. The county must commit this year or lose the grant, and the homes in the zone are its largest single source of property tax.",
+    "scene": "某沿海县获得一笔国家补助，可承担两项方案之一 70% 的成本：一是保护镇中心的海堤，二是用十年时间买下洪水区内 340 户住宅的搬迁计划。工程评估给出海堤约 40 年的设计使用年限；搬迁方案把居民迁往内陆，那里租金高出约 25%。该县必须在今年内决定，否则失去补助，而洪水区内的住宅是它最大的单一房产税来源。",
+    "options": [
+      {
+        "t_en": "I would build the seawall; 40 years of design life is long enough for the town centre and its tax base to exist as it is, and the grant covers most of it.",
+        "t": "我会修建海堤：40 年的设计年限足以让镇中心及其税基维持原样，而补助承担了大部分成本。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would take the buyout and cover the rent gap as well; households moved inland at 25 percent higher rent with no top-up end up paying for the retreat themselves.",
+        "t": "我会选择买断并同时补足租金差额：被迁往租金高 25% 的地区却没有补贴的住户，等于自己为搬迁买单。",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would build the seawall now and pre-fund a retreat for the year it reaches design life; the decision then does not fall on whichever council is sitting in year 40.",
+        "t": "我会现在修海堤，并为它到达设计年限的那一年预先备好搬迁资金：这样决定就不必落到第四十年在任的那届议会头上。",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would make buyout offers voluntary household by household; a family decides whether to stay with a known flood risk, and the grant goes to whoever takes it.",
+        "t": "我会按户自愿提供买断：由每个家庭自己决定是否留在已知的风险里，补助给接受的人。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 850,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene_en": "A messaging platform with 30 million users in the country is deciding whether to scan private messages for known child-abuse imagery using client-side matching. Its engineers report that the matcher can be extended to any pattern the company or a government supplies, and that scanning breaks the end-to-end encryption guarantee the product markets. Proposals are: deploy scanning and withdraw the encryption claim; deploy only for accounts flagged by other signals and publish annual counts; keep encryption and invest in non-message signals such as account behaviour; or deploy and offer a no-scan version that loses some features.",
+    "scene": "某即时通讯平台在本国有 3000 万用户，正在决定是否用客户端匹配技术扫描私人消息中的已知儿童性剥削影像。其工程团队报告称，这个匹配器可以被扩展到公司或政府提供的任何模式，而扫描会打破该产品对外宣称的端到端加密保证。现有方案：部署扫描并撤回加密声明；只对被其他信号标记的账户部署并公布年度次数；保持加密并投资账户行为等非消息信号；或者部署扫描，同时提供一个功能有所削减的无扫描版本。",
+    "options": [
+      {
+        "t_en": "I would deploy scanning and withdraw the encryption claim; a guarantee the product no longer provides should not stay in the marketing, whatever the cost to sign-ups.",
+        "t": "我会部署扫描并撤回加密声明：产品已经不再提供的保证就不该留在宣传里，无论这对新增用户有多大代价。",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would deploy it for flagged accounts only and publish annual counts; a number published every year is the only thing that tells users whether the scope stayed where it was set.",
+        "t": "我会只对被标记的账户部署并公布年度次数：每年公布的数字，是唯一能告诉用户范围有没有超出设定线的东西。",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep encryption intact and invest in account-behaviour signals; a matcher that accepts any supplied pattern is a general search capability, and the first pattern is not the last.",
+        "t": "我会保持加密完整并投资账户行为信号：接受任何所提供模式的匹配器是一项通用检索能力，而第一个模式不会是最后一个。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would deploy scanning and offer a no-scan version with reduced features; users then choose which guarantee they hold, and the choice is visible at sign-up.",
+        "t": "我会部署扫描，同时提供功能削减的无扫描版本：用户于是自行选择持有哪一种保证，而这个选择在注册时可见。",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      }
+    ]
   }
 ]
