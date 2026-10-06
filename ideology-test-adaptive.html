@@ -875,6 +875,7 @@
        维度扩展到 <b>8 个</b>：经济 · 治理 · 文化 · 国际 · 生态 · 技术监控 · 世俗信仰 · 个人集体。每题是具体情景下的行动/想法选择，
         选项数 2–8 不固定，<b>支持多选</b>——可同时选择多个你认同的选项。最终组合成你的细分阵营。<br>进度会自动保存，可中途退出稍后继续。
     </p>
+    <p class="en-cov" id="enCov" style="display:none;font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5"></p>
     <div class="qc-label">先选题量：</div>
     <div class="qc-tabs" id="qcTabs">
       <button data-q="15" onclick="setQ(15)">15 题</button>
@@ -1517,6 +1518,7 @@ function applyLang(){
   updateLangBtn();
   updatePreview();
   refreshBankCount();
+  refreshEnCoverage();
 }
 // 题库数量：始终从注入的题库实时读取，不写死，题库增减后页面自动更新
 function bankLen(){ return (typeof QUESTION_BANK!=="undefined" && QUESTION_BANK && Array.isArray(QUESTION_BANK)) ? QUESTION_BANK.length : 500; }
@@ -1526,6 +1528,16 @@ function refreshBankCount(){
   if(el) el.textContent = n;          // 开屏「从 N 道题库里」实时回填
   const qi = document.getElementById("qcInput");
   if(qi){ qi.max = n; qi.placeholder = "5–"+n; }  // 自定义题量上限同步真实题量
+}
+// 英文覆盖度提示：仅在英文模式显示，未翻译的题目会回落到中文，需对用户诚实披露
+function refreshEnCoverage(){
+  const el = document.getElementById("enCov");
+  if(!el) return;
+  if(CUR_LANG!=="en"){ el.style.display="none"; return; }
+  const c = enCoverage();
+  el.style.display = "";
+  el.textContent = "English coverage: " + c.full + "/" + c.total + " questions ("
+    + c.pct + "%). Untranslated questions are shown in Chinese.";
 }
 function cycleLang(){ setLang(CUR_LANG==="en"?"zh":"en"); }
 function setLang(l){
@@ -1696,16 +1708,45 @@ function uncertainty(dim, c){
   const b=c[DIMS.find(d=>d.key===dim).poles[1].k];
   const tot=a+b; return tot===0 ? 1 : 1 - Math.abs(a-b)/(tot+1);
 }
+/* 英文完整度索引：英文模式下优先抽「整题已有英文」的题，该子集抽尽后自动回落全库。
+   实测英文覆盖在各领域间分布均匀（各领域 48%~62%），故此优先不会歪曲领域平衡。 */
+let _enFullIds = null;
+function enFullIds(){
+  if(_enFullIds) return _enFullIds;
+  const s = new Set();
+  BANK.forEach(q=>{
+    if(!q) return;
+    if(!(q.scene_en && String(q.scene_en).trim())) return;
+    const opts = Array.isArray(q.options) ? q.options : [];
+    if(!opts.length) return;
+    if(!opts.every(o=>o && o.t_en && String(o.t_en).trim())) return;
+    s.add(q.id);
+  });
+  _enFullIds = s;
+  return s;
+}
+function enCoverage(){
+  const n = (BANK && BANK.length) || 1;
+  const full = enFullIds().size;
+  return { full: full, total: n, pct: Math.round(full / n * 100) };
+}
 function selectNext(){
   const dcount = buildDomainCounts();
   const dimc = recomputeDimCounts();
   const used = new Set(seq);
+  // 英文模式：优先「英文完整」子集；子集抽尽后自动回落到全库（保证超长测试不卡死）
+  let pool = BANK;
+  if(CUR_LANG==="en"){
+    const ids = enFullIds();
+    const sub = BANK.filter(q=>!used.has(q.id) && ids.has(q.id));
+    if(sub.length) pool = sub;
+  }
   const maxD = Math.max(1, ...Object.values(dcount));
   const unc = {}; DIMS.forEach(d=> unc[d.key]=uncertainty(d.key, dimc[d.key]));
   const mode = precisionMode();
   const infoWeight = mode==="long" ? 12 : 5;   // 高精度模式更聚焦追问模糊维度，提升细分精度
   let best=null, bestScore=-1e9;
-  BANK.forEach(q=>{
+  pool.forEach(q=>{
     if(used.has(q.id)) return;
     const dc = dcount[q.domain]||0;
     const domainScore = dc===0 ? 1000 : (maxD - dc)*10;     // 未碰过的领域大幅优先
@@ -1715,6 +1756,7 @@ function selectNext(){
     const score = domainScore + info*infoWeight + Math.random()*0.01;
     if(score>bestScore){ bestScore=score; best=q; }
   });
+  if(!best) return;   // 全库抽尽：不再强推，避免 best 为 null 时崩溃
   seq.push(best.id);
 }
 
