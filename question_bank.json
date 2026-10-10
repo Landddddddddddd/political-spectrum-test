@@ -36386,5 +36386,1627 @@
         ]
       }
     ]
+  },
+  {
+    "id": 851,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "你是一家软件公司人事委员会的成员。上季度生产力下滑，首席运营官提议为全体 2000 名员工部署一套分析工具，记录键盘活动、会议发言时长和日程执行情况，并生成团队排名仪表盘。团队主管们意见分歧：有人认为数据能暴露员工一直隐瞒的超负荷问题，也有人认为这会成为毒化信任的监控层。你必须在表决前表态。",
+    "scene_en": "You sit on a software company's people committee. Productivity dipped last quarter, and the COO proposes deploying an analytics tool that logs keyboard activity, meeting speaking time, and calendar discipline for all 2,000 employees, with a dashboard ranking teams. Team leads are split: some argue the data would expose overload that workers have been hiding; others say the tool will become a surveillance layer that poisons trust. You must state your position before the vote.",
+    "options": [
+      {
+        "t": "我会全面部署这套工具：跨团队可比的数据是弄清谁真正超负荷、谁在搭便车的唯一办法，公平要靠量化来维持。",
+        "t_en": "I would deploy the tool in full: comparable data across teams is the only way to find out who is genuinely overloaded and who is coasting, and fairness runs on measurement.",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我支持部署，但前提是原始活动数据只由员工本人掌握，管理者只能看到聚合的负荷指标，而非个人排名。",
+        "t_en": "I would support it only if raw activity stays with the employee and managers see aggregated load indicators instead of individual rankings.",
+        "tags": [
+          "TECH:U",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会否决这个方案，改为让各团队自定产出目标并在公开复盘会上检视进展，用结果而非按键来评价。",
+        "t_en": "I would vote it down and instead ask each team to set its own output goals and review progress in open retrospectives, keeping judgment on results rather than keystrokes.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会推动全体员工投票决定，并先公开该工具的完整说明文档：被衡量的人应当自己定规则。",
+        "t_en": "I would push the decision to a staff-wide vote with the tool's full documentation published first: the people being measured should set the terms.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 852,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "某市议会正在审议一项新税：对净资产超过一千万本币的个人每年征收 2%。预计税收将足以全额覆盖免费公共托育和牙科保健扩容。反对者警告受影响家庭会迁走、侵蚀税基，支持者则指出本地财富集中度已非常高。作为议员，你必须投票并说明理由。",
+    "scene_en": "A city council is weighing a new annual levy of 2% on personal net assets above ten million in local currency. The projected revenue would fully fund free public childcare and a dental-care expansion. Critics warn that affected households will relocate, cutting the tax base, while supporters point to how concentrated local wealth has become. As a council member, you must vote and explain.",
+    "options": [
+      {
+        "t": "我会投赞成票：公共托育和牙科保健在一代人内就能收回成本，且只触及最顶层的一小部分家庭。",
+        "t_en": "I would vote for the levy: public childcare and dental care pay for themselves in a generation, and only the top sliver of households is touched.",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会投反对票：流动的财富会直接搬走，税基变薄后项目无钱可依，缺口最终压到中产头上。",
+        "t_en": "I would vote against it: mobile wealth simply moves, and a thinner tax base would leave the programs unfunded and the middle class carrying the gap.",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会支持一个区域统一版本，这样任何一座城市都不会把居民推向邻城，收入在整个都市圈统筹。",
+        "t_en": "I would support a regional version instead, so no single city loses residents to its neighbor and the revenue is pooled across the metro area.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会提议把这笔预计收入改成向全体居民发放一次性育儿金，让每个家庭自己决定怎么用。",
+        "t_en": "I would propose spending the projected revenue on a lump-sum baby bonus to all residents instead, letting each family decide what it needs.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 853,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene": "某学区正在修订七至九年级阅读书单。一派主张保留经典：古典史诗、建国时期文献和传统诗歌，认为共同文本能把代际维系在一起。另一派主张把一半书目换成当代移民题材小说和图像小说，认为贴近生活才有阅读动力。委员会请你起草折中方案或直接表态。",
+    "scene_en": "A school district is revising its grade 7-9 reading list. One faction wants the canon kept: classical epics, founding-era texts, and traditional poetry, arguing shared texts bind generations together. Another faction wants half the list replaced with contemporary immigrant-authored fiction and graphic novels, arguing relevance drives reading. The board asks you to draft the compromise or take a side.",
+    "options": [
+      {
+        "t": "我会原样保留经典书单：一代人若没有共同文本，就失去了共同讨论的基础，而经典承载着语言的全部积淀。",
+        "t_en": "I would keep the canon intact: a generation that shares no common texts has nothing left to argue about together, and the classics carry the accumulated weight of the language.",
+        "tags": [
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会采纳一半对一半的替换方案：能在书中看到自己家庭的学生读得更多，而旧文本仍可通过选修课读到。",
+        "t_en": "I would adopt the half-and-half replacement: students who see their own families in the books read more, and older texts remain available in electives.",
+        "tags": [
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会保留经典作为必修核心，同时把当代作品加入为第二条必修线，接受阅读量增加的代价。",
+        "t_en": "I would keep the canon as the required core and add the contemporary works as a second required strand, accepting the longer reading load.",
+        "tags": [
+          "CUL:T",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会把选择权交给各校教师和家长会在固定书单内自行决定，因为一个全区统一书目无法适配每个社区。",
+        "t_en": "I would hand the choice to each school's teachers and parent council within a fixed list of options, since one district-wide canon cannot fit every neighborhood.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 854,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "在中心交通枢纽附近发生连环袭击案后，市政府提议安装人脸识别摄像头，将每个过往人脸与在逃 warrants（逮捕令）名单比对。供应商称试点城市街头犯罪下降了 30%。公民自由团体回应称，所有人的行踪都会变成可检索的数据，而名单上的错误记录将缠着当事人多年。市长请你给出建议。",
+    "scene_en": "After a series of assaults near the central transit hub, the city government proposes installing facial-recognition cameras that match every passing face against a watchlist of outstanding warrants. The vendor claims a 30% reduction in street crime in pilot cities. Civil-liberties groups answer that everyone's movements become searchable data, and mistakes in the watchlist would follow people for years. The mayor asks for your recommendation.",
+    "options": [
+      {
+        "t": "我会安装摄像头：袭击案下降 30% 是每位乘客共享的收益，名单事后还可以审计。",
+        "t_en": "I would install the cameras: a 30% drop in assaults is a benefit every rider shares, and the watchlist can be audited afterward.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我支持只在限定时段内装在站台入口，名单数据 48 小时内删除，并由独立监督委员会掌管密钥。",
+        "t_en": "I would install them only at platform entrances during limited hours, with the watchlist data deleted within 48 hours and an independent oversight board holding the keys.",
+        "tags": [
+          "TECH:U",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会拒绝该系统，把资金用于三倍数量的制服巡逻和更好的站台照明：一名可见的警员不会被改造成追踪所有人的工具。",
+        "t_en": "I would refuse the system and fund three times as many uniformed patrols and better platform lighting instead: a visible officer cannot be repurposed into a tracker of everyone.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会把决定交给实际使用该枢纽的居民公投，无论结果如何都照办。",
+        "t_en": "I would put it to a neighborhood referendum of the people who actually use the hub, and abide by the result either way.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 855,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "某地区卫生局的预算固定，面临一项新决策：一种新获批的抗癌药可将中位生存期延长五个月，但每名患者的费用相当于 400 名居民一年的预防保健预算。肿瘤学会出于人道立场敦促纳入报销，公共卫生学院则主张同样资金投向筛查和疫苗能挽救更多生命年。你握有决定性一票。",
+    "scene_en": "A regional health authority has a fixed budget and one new decision: a newly approved cancer drug extends median survival by five months at a cost per patient equal to the yearly preventive-care budget of 400 residents. The oncology society urges coverage on compassionate grounds; the public-health school argues the same money, spent on screening and vaccination, saves far more life-years. You hold the deciding vote.",
+    "options": [
+      {
+        "t": "我会资助该药：一位多活五个月的具体患者不是抽象数字，一个抛弃可见病人的体系会失去正当性。",
+        "t_en": "I would fund the drug: a named patient with five more months is not an abstraction, and a system that abandons the visibly sick loses its legitimacy.",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会资助筛查和疫苗项目：单位资金挽救的生命账必须说了算，哪怕这笔交换令人痛苦。",
+        "t_en": "I would fund the screening and vaccination programs: the arithmetic of lives saved per unit of money has to govern, even when the trade is painful.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会通过区域联合采购压低药价，把剩余预算在两者间平分，接受各自推进都变慢的结果。",
+        "t_en": "I would negotiate the drug price down with a regional bulk purchase and split the remaining budget between the two, accepting a slower rollout of each.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会报销该药，但让各医院肿瘤委员会结合本地资源逐案权衡，把决定权留给离患者最近的人。",
+        "t_en": "I would cover the drug but make each hospital's oncology board weigh it case by case against local capacity, keeping the decision close to the patients.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 856,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "一家拥有 4000 名员工的物流公司必须重写育儿假政策。现行方案给产妇 52 周全薪假，父亲只有 10 天。新任人事总监提议改为每位家长一份不可转让的 40 周性别中立账户。财务部警告成本，一些女性高管私下担心这会侵蚀来之不易的与生育挂钩的保障，年轻父亲们则非常欢迎。你向董事会提供咨询意见。",
+    "scene_en": "A logistics firm with 4,000 employees must rewrite its parental-leave policy. The current scheme gives birth mothers 52 weeks fully paid, fathers 10 days. The new HR director proposes a single gender-neutral account of 40 weeks per parent, non-transferable. Finance warns of costs; some female managers privately worry the change will erode hard-won protections tied to maternity; younger fathers are delighted. You advise the board.",
+    "options": [
+      {
+        "t": "我会采纳中立方案：把长假只绑在产妇身上，等于让职业代价全部集中在一种性别上，父亲居家的时间会改变这笔账。",
+        "t_en": "I would adopt the neutral scheme: tying long leave only to birth mothers keeps every career penalty concentrated on one gender, and fathers' time at home changes that arithmetic.",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会保留仅限产妇的结构并直接延长：产后恢复和哺乳在父母之间并不对称，假装对称只是变相削减成本。",
+        "t_en": "I would keep the mothers-only structure and simply extend it: physical recovery and nursing are not symmetrical between parents, and pretending otherwise is a cost cut in disguise.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会设定 26 周性别中立基础假，再加 26 周可转让份额，由每个家庭自己决定谁留在家里，而不是公司替他们决定。",
+        "t_en": "I would make the base neutral at 26 weeks and add 26 transferable weeks, so each family decides who stays home without the company deciding for them.",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "只有公司同时出资建共享的内部托儿所，我才会支持中立方案，因为只有假期等于把成本转嫁给家庭而非消除它。",
+        "t_en": "I would go neutral only if the company funds a shared on-site nursery as well, since leave alone shifts costs onto households rather than removing them.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 857,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene": "某市政厅前广场每年十二月轮换展示。今年申请包括大型耶稣诞生场景、犹太烛台展和一座 12 米高的世俗灯光装置。佛教团体和世俗人文团体也提交了申请，但最初以场地为由被拒。议会必须为公共场地上的宗教与象征性展示制定长期规则，起草工作由你负责。",
+    "scene_en": "The plaza in front of a city hall hosts a rotating December display. This year, applications include a large nativity scene, a menorah display, and a 12-meter secular light installation. A Buddhist group and a humanist group applied too and were initially refused on space grounds. The council must set a standing rule for religious and symbolic displays on public ground, and you are drafting it.",
+    "options": [
+      {
+        "t": "我会把广场对所有申请者按先到先得平等开放，宗教团体与世俗团体一视同仁：国家不应给信仰排序。",
+        "t_en": "I would open the plaza to all applicants on equal first-come terms, faith groups and secular groups alike: the state should not rank beliefs.",
+        "tags": [
+          "SEC:F",
+          "SEC:E"
+        ]
+      },
+      {
+        "t": "我会保持公共场地的世俗性，把所有展示移到市政府租用的私人展馆：广场要属于所有人，就不能为任何人背书。",
+        "t_en": "I would keep public ground secular and move all displays to a nearby private pavilion the city rents: a shared square belongs to everyone only when it endorses no one.",
+        "tags": [
+          "SEC:E"
+        ]
+      },
+      {
+        "t": "我会按各团体本地成员数量比例分配广场空间，让展示反映社区的真实构成。",
+        "t_en": "I would allot plaza space proportional to each group's local membership, so the display reflects the actual composition of the community.",
+        "tags": [
+          "SEC:F",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会把广场限定为一个由各申请者自行策展、融合所有传统的联合展览，而非由市政府设计。",
+        "t_en": "I would restrict the plaza to one jointly curated exhibit combining all traditions, designed by the applicants themselves rather than the city.",
+        "tags": [
+          "SEC:F",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 858,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "一座中型城市预计十年内新增 6 万居民，但区划仍将 70% 的住宅用地保留给独栋住宅。一项法规草案允许在距公交站 800 米内的任何街道建造六层公寓，推翻现有社区的反对意见。业主协会称这是对社区风貌的征收，租户工会称这是通往可负担住房的唯一现实路径。你投出决定性一票。",
+    "scene_en": "A mid-sized city projects 60,000 new residents in a decade but its zoning still reserves 70% of residential land for detached houses. A draft bylaw would allow six-story apartment buildings on any street within 800 meters of a transit stop, overriding existing neighborhood opposition. Homeowners' associations call it an expropriation of neighborhood character; tenant unions call it the only realistic path to affordability. You cast the deciding vote.",
+    "options": [
+      {
+        "t": "我会按草案通过：公交沿线的供给是城市真正可控的主要杠杆，既有业主的偏好不应把其他人挡在门外。",
+        "t_en": "I would pass the bylaw as drafted: supply near transit is the main lever the city actually controls, and existing owners' preferences should not freeze everyone else out.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会否决草案，改为先提高闲置商业走廊的密度，让成熟街区循序渐进地变化。",
+        "t_en": "I would vote it down and instead upzone only underused commercial corridors first, letting established streets change gradually.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会通过草案，同时对调性地块征收土地增值税，为新密度所需的公交和公园筹资。",
+        "t_en": "I would pass it but pair it with a land-value capture levy on rezoned plots, funding the transit and parks the new density requires.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会让每个邻近公交的社区逐街投票决定该法规，由当地居民为变化的节奏定调。",
+        "t_en": "I would let each transit-adjacent neighborhood vote on the bylaw street by street, so the people who live there set the pace of change.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 859,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "农业部必须重新设计旗舰补贴方案。现行按公顷发放的补贴主要流向大型机械化粮田，这些农场生产成本低。改革提案会把一半预算转给小家庭农场和转向低投入种植方式的农户，并接受总产量可测的下降。食品加工企业警告会出现进口依赖，乡镇则恳求保住家庭农场。",
+    "scene_en": "The agriculture ministry must redesign its flagship subsidy. Under the current scheme, per-hectare payments flow mostly to large mechanized grain farms, which produce cheaply. A reform proposal would shift half the budget to small family holdings and to farmers converting to low-input methods, accepting a measurable fall in aggregate output. Food-processors warn of import dependence; rural towns plead for the survival of family farms.",
+    "options": [
+      {
+        "t": "我会把钱转给小农场：让家庭留在土地上才能维系村庄本身，廉价的粮食并非乡村唯一产出。",
+        "t_en": "I would shift the money to small farms: keeping families on the land sustains the villages themselves, and cheap grain is not the only thing a countryside produces.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会维持与产量和效率挂钩：主粮的进口依赖是战略脆弱点，大农场能规模化地解决它。",
+        "t_en": "I would keep payments tied to output and efficiency: import dependence on staple foods is a strategic vulnerability, and large farms deliver it at scale.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会专门资助低投入转型，因为土壤和水是长期资本，按公顷的补贴对此视而不见。",
+        "t_en": "I would fund the low-input conversions specifically, since soil and water are long-term capital that per-hectare grants ignore.",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会把补贴改为不设生产条件的统一按人发放，让每个农场自己选择经营模式。",
+        "t_en": "I would convert the subsidy into a flat per-farmer payment with no production conditions, letting each farm choose its own model.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 860,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene": "一名 15 岁且无前科的少年在街头骚乱中砸碎商店橱窗并偷走商品。检察官给出两条路径：附带犯罪记录的缓刑 detention 判决，或修复式方案——少年与店主会面、劳动偿还损失，并在一年内定期见导师。受害者意见分裂：一位店主要求判刑，另一位希望修复。你所在的少年司法委员会要为此类案件定政策。",
+    "scene_en": "A 15-year-old with no prior record smashed shop windows and stole goods during a street disturbance. The prosecutor offers two tracks: a suspended detention sentence with a criminal record, or a restorative program in which the teen meets the shop owners, works to repay damages, and reports to a mentor for a year. The victims are divided: one owner wants the sentence, another wants restoration. You sit on the youth-justice board that sets policy for such cases.",
+    "options": [
+      {
+        "t": "我会把修复式路径定为标准：15 岁的犯罪记录会跟人进入每一次求职，对店主而言偿还损失比缓刑更有价值。",
+        "t_en": "I would standardize the restorative track: a criminal record at fifteen follows a person into every job application, and repayment does more for the shop owners than a suspended sentence.",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保留财产犯罪的默认拘留：第一次就给出可见的后果，才是对第二次的威慑。",
+        "t_en": "I would keep detention as the default for property offenses: a visible consequence at the first offense is what deters the second one.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会让每位受害者为自己的案件选择路径，因为被回应的是他们的损失。",
+        "t_en": "I would let each victim choose the track for their own case, since it is their loss being answered.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会选择修复式方案，但附加司法强制执行的还款计划，让问责落到实处而不只是谈话。",
+        "t_en": "I would order the restorative program but with judicially enforced repayment schedules, so accountability is real and not just a conversation.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 861,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene": "某国拥有一家实力雄厚的本土电子组装企业，须决定是否加入一个取消关税的区域贸易集团。集团的规模将提振整体出口，但模型预测显示，随着竞争对手进入，该企业国内市场份额将从 40% 跌至 25%，某工业城市将出现 3 万个集中的岗位流失。谈判代表警告，以后不可能以同样条件重新加入。",
+    "scene_en": "A country with a strong national electronics assembler must decide whether to join a regional trade bloc that eliminates tariffs. The bloc's scale would boost overall exports, but model forecasts show the assembler's domestic market share falling from 40% to 25% as competitors enter, with 30,000 concentrated job losses in one industrial city. Negotiators warn there is no option to join later on the same terms.",
+    "options": [
+      {
+        "t": "我会加入该集团：通过再培训和迁岗支持来消化整体收益的成本，对国家而言比留在这个规模的市场之外更划算。",
+        "t_en": "I would join the bloc: spreading the overall gains through retraining and relocation support is cheaper for the country than staying outside a market this size.",
+        "tags": [
+          "NAT:C",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会选择不加入：失去这家企业会掏空整座工业城市，任何贸易统计数据都补偿不了一个社区。",
+        "t_en": "I would stay out: losing the assembler would hollow out a whole industrial city, and no trade statistic compensates a community for that.",
+        "tags": [
+          "NAT:N",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会以谈成十年保护期让本土企业留在本土市场为前提加入，用一部分集团红利换调整时间。",
+        "t_en": "I would join only with a negotiated ten-year carve-out protecting the assembler's home market, trading some of the bloc's benefits for adjustment time.",
+        "tags": [
+          "NAT:C",
+          "NAT:N"
+        ]
+      },
+      {
+        "t": "我会选择加入，并把预计节省的关税转化为直接发给受影响城市居民的公民红利。",
+        "t_en": "I would join and put the projected tariff savings into a citizens' dividend paid to the affected city's residents directly.",
+        "tags": [
+          "NAT:C",
+          "ECO:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 862,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene": "某国福利部的资金只够推进一项旗舰改革：要么向每位成年居民发放普惠月度现金，要么把最底层 20% 收入者的定向补助翻倍。精算模型显示，普惠方案能降低 8% 的极端贫困并大幅缓解中产焦虑；定向翻倍能削减 19% 的极端贫困，但会带来污名化和官僚审查。你为部长提供建议。",
+    "scene_en": "A national welfare ministry has funding for one flagship reform: a universal monthly payment to every adult resident, or a doubling of targeted benefits for the bottom 20% of earners. Actuaries model that the universal payment reduces extreme poverty by 8% and middle-class anxiety substantially; the targeted doubling cuts extreme poverty by 19% but adds stigma and bureaucratic screening. You advise the minister.",
+    "options": [
+      {
+        "t": "我会选普惠发放：没有财产审查的机器，没有窗口前的羞辱，每位公民在体系中持有同样的份额。",
+        "t_en": "I would pick the universal payment: no means-testing machinery, no stigma at the counter, and every citizen holds the same stake in the system.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会选定向翻倍：钱是固定的，就要先救最深的贫困，哪怕要填表排队。",
+        "t_en": "I would pick the targeted doubling: with fixed money, the deepest poverty first, even at the cost of forms and queues.",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会在两个省做五年随机对照试点，两者并行，让实测结果来决定全国推广。",
+        "t_en": "I would run both as a five-year randomized pilot in two provinces and let the measured outcomes decide the national rollout.",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会选普惠发放，但对中位收入以上部分渐进征税回收，既保住底线又不建官僚机器。",
+        "t_en": "I would pick the universal payment but tax it back progressively above the median income, keeping the floor without the bureaucracy.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 863,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "银行拒绝了两兄妹的房贷申请——他们轮班全职照顾卧床的母亲，因为两人都没有工资收入。目前的立法提案是设立照护工作积分，让无薪的家庭照护在社保体系中计为可累积养老金的应税收入。保险公司警告道德风险与造假，照护者协会则称这是对早已存在的工作的迟到认可。你是立法委员会成员。",
+    "scene_en": "A bank refuses a mortgage application from two siblings who care for their bedridden mother full-time in shifts, because neither has payroll income. The proposal on the table: legislate care-work credits that make unpaid family caregiving count as pensionable, taxed income for social-insurance purposes. Insurers warn of moral hazard and fraud; caregiver associations call it the overdue recognition of work that already exists. You sit on the legislative committee.",
+    "options": [
+      {
+        "t": "我会立法设立积分：养老金体系是围绕工资岗位设计的，把全职照护者排除在外，等于无声地惩罚一种完整的家庭形态。",
+        "t_en": "I would legislate the credits: pension systems were built around payroll jobs, and excluding full-time caregivers quietly punishes an entire form of family.",
+        "tags": [
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会反对提案，改为扩大现金照护津贴：用固定津贴承认照护是诚实的，伪造工资类别只会招来造假。",
+        "t_en": "I would oppose it and expand the cash care allowance instead: valuing care through a flat allowance is honest, while fake payroll categories invite fraud.",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会立法设积分，但上限按兼职费率封顶并要求定期入户评估，把成本控制在范围内。",
+        "t_en": "I would legislate the credits but cap them at part-time rates and require periodic home assessments, keeping the cost bounded.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把同样的钱用于资助专业上门照护服务，让家人保住工作、把护理部分委托出去。",
+        "t_en": "I would fund professional home-care services with the same money instead, so families can keep jobs and delegate the nursing part.",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 864,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "某国仅存的三家海豚馆面临一项禁令提案：禁止圈养大型海洋哺乳动物，设十年过渡期——动物迁往海岸庇护所，员工转岗，国家补偿运营方。客流数据显示这些场馆每年让数百万儿童接触海洋生物；兽医团体指出部分物种的圈养寿命短于野外。你为委员会起草建议。",
+    "scene_en": "A country's last three dolphinaria face a proposed ban on keeping large marine mammals, with a ten-year transition: animals move to coastal sanctuaries, staff retrain, and the state compensates the operators. Attendance data show the parks introduce millions of children to marine biology annually; vet groups note captive lifespans for some species are shorter than in the wild. You draft the committee recommendation.",
+    "options": [
+      {
+        "t": "我会支持禁令及过渡安排：为了公众教育而把大范围活动的动物留在水池里，是把新奇感置于福利之上。",
+        "t_en": "I would back the ban with the transition: keeping wide-ranging animals in tanks for the sake of public education prices wonder over welfare.",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会反对禁令：教育覆盖面是真实收益，福利可以通过强制执行的池体面积标准来提高。",
+        "t_en": "I would oppose the ban: the educational reach is real, and welfare can be raised through enforced enclosure-size standards instead.",
+        "tags": [
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会立即禁止繁育和新捕捞，同时让现有动物在升级后的设施中安度余生，让场馆逐步关闭。",
+        "t_en": "I would ban breeding and new captures immediately while letting existing animals live out their lives in upgraded facilities, closing the parks gradually.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把补贴转投免费的沿海庇护所和虚拟现实项目，保留教育、终结圈养。",
+        "t_en": "I would redirect the subsidies to free coastal sanctuaries and virtual-reality programs, keeping the education and ending the captivity.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 865,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "国家艺术委员会的预算是固定的。现行公式把 70% 拨给两家旗舰机构：歌剧院和国家博物馆——票房远不能覆盖成本，但访客量最大。改革提案会把旗舰拨款上限压到 40%，其余以小额资助分发给社区剧团、合唱团和独立艺术家，单笔资助的监管相应减少。",
+    "scene_en": "The national arts council's budget is fixed. Under the current formula, 70% goes to the two flagship institutions: the opera house and the national museum, whose ticket sales cover little of their costs but whose visitor numbers are the largest. A reform proposal would cap flagship funding at 40% and distribute the rest through small grants to neighborhood troupes, community choirs, and independent artists, with far less oversight per grant.",
+    "options": [
+      {
+        "t": "我会维持旗舰份额：承载经典、吸引大众的机构才是公共艺术资助正当性的来源。",
+        "t_en": "I would keep the flagship share: institutions that carry the canon and draw the crowds are what justify public arts funding at all.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会采纳再分配方案：一千个小舞台比两座殿堂培养出更多实践中的艺术家，文化就活在人们创造它的地方。",
+        "t_en": "I would adopt the redistribution: a thousand small stages produce more practicing artists than two temples, and culture lives where people make it.",
+        "tags": [
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会把旗舰上限设为 40%，但要求小额资助经过公开的艺术评审，既守住质量标准又不搞中央计划。",
+        "t_en": "I would cap flagships at 40% but require the small grants to pass a published artistic-jury review, keeping quality standards without central planning.",
+        "tags": [
+          "CUL:P",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把整个委员会转为配比资助模式：公共资金只用来放大私人捐款，让市场约束每一笔拨款。",
+        "t_en": "I would move the whole council to matching-grant mode: public money only multiplies private donations, so the market disciplines every grant.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 866,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "某国际田径联合会须为女子 400 米定规则。其科学小组报告：某一类运动员因一种先天特征，平均保有约 3 秒的优势，任何训练都无法消除。可选方案：保持该组别开放、设定明确的激素或测量阈值，或增设一个所有人皆可参加的公开组。律师警告任何阈值都会引发诉讼，中游运动员则追问这对他们的公平意味着什么。",
+    "scene_en": "An international athletics federation must set a rule for its women's 400m after its science panel reports that one category of athletes, by a natural trait, holds an average advantage of about 3 seconds that no training removes. The options: leave the category open, require a defined hormone or measurement threshold, or create an additional open category in which everyone may compete. Lawyers warn any threshold will be litigated; athletes from the middle of the pack ask what fairness means for them.",
+    "options": [
+      {
+        "t": "我会保持组别开放：身体本就有差异，围绕先天特征画法律界线，等于让体育联合会的业务变成审查女性身体。",
+        "t_en": "I would leave the category open: bodies vary, and drawing legal lines around natural traits puts sports federations in the business of policing women's bodies.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会采纳一个连同底层数据一起公开的明确阈值：组别存在的意义是让竞争成立，透明的界线胜过无边的优势。",
+        "t_en": "I would adopt a defined threshold published with the underlying data: categories exist to keep competition meaningful, and a transparent line beats open-ended advantage.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会增设公开组并保留女子组，让每位运动员都有赛道，也无人被排除在纪录之外。",
+        "t_en": "I would add the open category and keep the women's category as is, giving every athlete a lane without excluding anyone from the record books.",
+        "tags": [
+          "COL:I",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会不改变参赛资格，把联合会资金转投到实测优势最小的项目上，让参与度自行调整。",
+        "t_en": "I would leave eligibility alone and shift the federation's money into the events where measured advantages are smallest, letting participation respond on its own.",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 867,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "某地区 65 岁以上居民占 22%，必须扩大养老服务。方案 A：认证并补贴用于搬抬、监测和陪伴的护理机器人，成本为人工照护时薪的一半。方案 B：用公共资金培训并雇佣 8000 名新增人类照护员。家庭反映的最大问题是孤独感，工会则反驳称老年照护的机器人化会开一个蔓延开来的先例。你负责撰写地区规划。",
+    "scene_en": "A region with 22% of residents over 65 must scale up elder care. Option A: certify and subsidize care robots for lifting, monitoring, and companionship, at half the cost of human care hours. Option B: train and employ 8,000 additional human caregivers with public funds. Families report loneliness as the top complaint; unions counter that a robot workforce in eldercare sets a precedent that spreads. You write the regional plan.",
+    "options": [
+      {
+        "t": "我会推广机器人：一半的成本让覆盖的老人翻倍，持续监测也能发现每日两次家访发现不了的跌倒。",
+        "t_en": "I would scale the robots: half-cost coverage doubles the number of elders reached, and monitoring catches falls a twice-daily visit cannot.",
+        "tags": [
+          "ENV:G",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会雇佣照护员：这里最难治疗的状况是孤独，只有愿意留下来聊天的人能治它。",
+        "t_en": "I would hire the caregivers: loneliness is the condition hardest to treat here, and only a person who stays to talk treats it.",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会资助机器人做搬抬和监测，但要求饮食与陪伴必须由人来完成，按各自擅长分工。",
+        "t_en": "I would fund robots for lifting and monitoring but require human hours for meals and companionship, splitting the tasks by what each does well.",
+        "tags": [
+          "COL:M",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会把资金直接发给家庭作为照护预算，由每个家庭自己购买机器人、服务和工时的组合。",
+        "t_en": "I would give families the money directly as a care budget and let each household buy the mix of robots, services, and hours it prefers.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 868,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "某州议会辩论将小额消费贷款利率上限设为年化 12%，而目前市场边缘利率从 30% 到 400% 不等。限利支持者举出每年落入催收的 4 万户家庭；放贷方和一些经济学家回应称，有约束力的上限会恰好切断银行拒贷人群的正规信贷，把他们推向非正规渠道。你握有委员会的决定性一票。",
+    "scene_en": "A state parliament debates capping interest on small consumer loans at 12% APR, where the current market runs from 30% to 400% at the fringe. The cap's supporters cite the 40,000 households that fall into collections each year; lenders and some economists respond that a binding cap removes credit from exactly the borrowers banks refuse, pushing them to informal lenders. You hold the committee's deciding vote.",
+    "options": [
+      {
+        "t": "我会投赞成票：靠借款人失败赚钱的产品不是值得保护的市场结果，非正规放贷的担忧可以用发照和执法来应对。",
+        "t_en": "I would vote for the cap: a product that profits when borrowers fail is not a market outcome to protect, and the informal-lender fear can be met with licensing and enforcement.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会投反对票：成年人应当有为自己的风险定价的自由，取缔合法供给并不会消灭需求。",
+        "t_en": "I would vote against the cap: adults must be free to price their own risk, and banning the legal supply does not delete the demand.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把上限设在 36% 并配套发照制度，在边缘市场与全面禁止之间取道。",
+        "t_en": "I would set the cap at 36% with a licensing regime, threading between the fringe market and full exclusion.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我不设上限，改为出资建立按成本放贷的州立信用社，用竞争而非禁令挤压边缘市场。",
+        "t_en": "I would skip the cap and fund a state credit union offering small loans at cost, competing the fringe down instead of banning it.",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 869,
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene": "河谷建坝提案：一座水电站将为全国提供 9% 的电力，运行零排放、寿命 80 年，但将淹没 60 平方公里森林、两座村庄，以及一条滋养下游渔业的洄游鱼道。建模的替代方案：四倍土地面积的光伏和风电加储能，成本 1.6 倍，建设期多十年。能源部请你给出建议。",
+    "scene_en": "A river valley proposal: a hydro dam that would supply 9% of the country's electricity with zero operating emissions for 80 years, but submerge 60 square kilometers of forest, two villages, and a fish migration route that feeds downstream fisheries. Alternatives modeled: four times the land covered in solar and wind plus storage, at 1.6 times the cost and a decade longer to build. The energy ministry asks your recommendation.",
+    "options": [
+      {
+        "t": "我会支持建坝：80 年稳定的零排放电力重于土地损失，村庄可以通过补偿搬迁解决。",
+        "t_en": "I would build the dam: firm zero-emission power for 80 years outweighs the land loss, and the villages can be relocated with compensation.",
+        "tags": [
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会否决大坝并资助光伏-风电-储能路径：被淹没的河谷无法复原，差价就是保住它的真实成本。",
+        "t_en": "I would reject the dam and fund the solar-wind-storage path: a flooded valley cannot be un-flooded, and the price difference is the real cost of keeping it.",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会把大坝缩小为无大型水库的径流式设计，接受更低的出力以保住河谷与村庄。",
+        "t_en": "I would downsize the dam to a run-of-river design without a large reservoir, accepting lower output to keep the valley and villages.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会建坝，并从第一天起就把下游渔业和搬迁家庭的补偿作为其收入的永久性 levy（专项税）列支。",
+        "t_en": "I would build the dam and earmark a permanent levy on its revenue for the downstream fisheries and the displaced families, priced in from day one.",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 870,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "某地区 15% 居民的母语是少数民族语言，正辩论一项语言法案：官方双语标识、贯穿十二年级的少数民族语言学校教育，以及面向流利使用者的公务员招录加分。预算部门标出成本，使用者的祖辈还记得学校里曾全面禁用该语言的年代。反对者质问为何他们的税款要为一种自己不会说的语言买单。你为起草委员会提供咨询。",
+    "scene_en": "A region where 15% of residents speak a minority language as their mother tongue debates a language act: official bilingual signage, minority-language schooling through grade 12, and civil-service hiring preferences for fluent speakers. Budget offices flag the cost; speakers' grandparents recall a period when the language was banned outright in schools. Opponents ask why their taxes fund a language they do not speak. You advise the drafting committee.",
+    "options": [
+      {
+        "t": "我会全案通过：一门语言失去学校就失去一代人，事后再补救的成本远高于双语标识。",
+        "t_en": "I would pass the act in full: a language that loses its schools loses a generation, and repairing that later costs far more than signage does.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会资助学校但不设招录加分：语言传承需要的是教育，而招聘配额是按语言而非能力分配岗位。",
+        "t_en": "I would fund the schools but not the hiring preferences: education is what transmission needs, while hiring quotas hand out positions by language rather than merit.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会把法案限定为由使用该语言的市镇自费提供的自愿双语服务，把选择权和账单都留在当地。",
+        "t_en": "I would limit the act to voluntary bilingual services funded by the minority-language municipalities themselves, keeping the choice and the bill local.",
+        "tags": [
+          "CUL:T",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会通过法案，并附加年度公开报告跟踪学校注册与公务员录用数据，让政策的真实效果被测出来而非被假设。",
+        "t_en": "I would pass the act and add an annual public report on school enrollment and civil-service uptake, so the policy's real effect is measured, not assumed.",
+        "tags": [
+          "CUL:P",
+          "GOV:A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 871,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "一家 1200 人的会计师事务所收到员工理事会请求：全薪试行四天工作制。合伙人模型的预测两极分化——要么营收下滑 4%，要么生产率提升 10%，完全取决于会议与交接流程如何重构。两家各占营收五分之一的客户已放话：响应变慢就转移账户。你是董事会成员，必须做出决定。",
+    "scene_en": "A 1,200-person accountancy firm is asked by its staff council to trial a four-day week at full pay. The partners' model predicts either a 4% revenue dip or a 10% productivity gain, depending entirely on how meetings and handovers are redesigned. Two clients, each a fifth of revenue, have already said they will move accounts if response times slip. You sit on the board and must decide.",
+    "options": [
+      {
+        "t": "我会批准为期一年的试行并配套流程重构项目：如果生产率机制是真的，数据会证明，而人才争夺的成本已经计入。",
+        "t_en": "I would approve the one-year trial with the redesign program attached: if the productivity mechanism is real, the data will show it, and the war for staff is already priced in.",
+        "tags": [
+          "COL:M",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会婉拒并改提四天压缩 40 小时方案：同样的工时、同样的客户覆盖，不拿公司五分之一的营收做实验。",
+        "t_en": "I would decline and offer a compressed 40-hour four-day option instead: same hours, same client coverage, no revenue experiment with a fifth of the firm at stake.",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会只在一家 150 人的办公室试行，按实测结果扩面，让两家锚定客户完全不受实验影响。",
+        "t_en": "I would run the trial in one 150-person office only and expand by measured results, protecting the two anchor clients from any experiment.",
+        "tags": [
+          "COL:I",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会不试验直接永久推行：知识工作者实际的有效工作日本就不足四天，假装不是这样只是让日历虚胖。",
+        "t_en": "I would approve it permanently without a trial: knowledge workers already average fewer than four productive days, and pretending otherwise just pads calendars.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 872,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "一家拥有 2.5 万名骑手的外卖平台将所有人归为独立承包商。一项法案草案将强制改为雇员身份，配送成本增加 19%：平台模型预测骑手名额减少 4000 个，但余下的人获得最低工资保障、病假和工伤覆盖。骑手自己的调查也分裂：55% 最看重灵活自由，45% 报告扣除车辆成本后收入低于最低工资。你是上议院议员。",
+    "scene_en": "A delivery platform with 25,000 couriers classifies them all as independent contractors. A draft law would force reclassification as employees, adding 19% to delivery costs: platform modeling predicts 4,000 fewer courier slots but guaranteed minimum pay, sick leave, and injury coverage for the rest. Couriers themselves split in surveys: 55% value the flexibility above all, 45% report earnings below minimum wage after vehicle costs. You sit in the upper house.",
+    "options": [
+      {
+        "t": "我会投改籍赞成票：一种把工伤成本留给骑手的利润模式，等于用身体支付的补贴。",
+        "t_en": "I would vote for reclassification: a business model whose margin exists because injury costs sit with the courier is a subsidy paid by bodies.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会投反对票：强制雇员身份会删掉一半骑手为它而来的随叫随到的自由。",
+        "t_en": "I would vote against it: forcing employment status deletes the on-demand schedule that half the couriers chose this work for.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会立法设立第三种身份：按平台工时累积的可携带保障，但不设固定班次、不赋予雇主排班权。",
+        "t_en": "I would legislate a third status: portable benefits accruing per platform hour worked, without fixed shifts or an employer's scheduling power.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会强制规定每单最低收入和工伤保险，但保留承包商身份，修补最坏的后果而不重组整个行业。",
+        "t_en": "I would mandate minimum per-delivery earnings and injury insurance while leaving the contractor status untouched, fixing the worst outcomes without reorganizing the industry.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 873,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene": "在某国家庭补习成风，调查显示最高收入十分位家庭在补习上的支出是最低十分位家庭的 9 倍，持续扩大考试分数差距，政府起草法案禁止营利性学科补习。执法难题摆在眼前：在可比司法辖区，家长和补习老师几周内就找到了变通办法。教育部长问：国家是否应当限制家庭的消费选择。",
+    "scene_en": "A country where private tutoring is a national obsession drafts a law banning for-profit tutoring of the school curriculum, after surveys show top-decile-income families outspend bottom-decile families on tutoring by a ratio of 9 to 1, feeding exam-score gaps. Enforcement questions loom: parents and tutors draft workarounds within weeks in comparable jurisdictions. The education minister asks whether the state should restrict what families buy.",
+    "options": [
+      {
+        "t": "我会通过禁令：当财富可以直接兑换成考试排名，考试衡量的就是家庭财力，国家必须保护它赖以运行的信号。",
+        "t_en": "I would pass the ban: when wealth converts directly into exam rank, the exam measures family money, and the state must protect the signal it relies on.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对禁令：为孩子购买机会是最古老的家长本能，禁令只会把钱赶进更隐蔽的渠道。",
+        "t_en": "I would oppose the ban: parents purchasing opportunities for their children is the oldest instinct there is, and a ban just reroutes the money to less visible channels.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我不设禁令，改为为低收入学生扩免费公立补习，用增加供给而非禁止来缩小差距。",
+        "t_en": "I would skip the ban and expand free state tutoring to low-income students instead, attacking the gap by supply rather than prohibition.",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会用登记制度限制每个学生的补习时长而非取缔行业，托高底线的同时不把市场赶入地下。",
+        "t_en": "I would cap tutoring hours per student by registry rather than banning the industry, so the floor rises without driving the market underground.",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 874,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "政府提议为每位居民发放强制数字身份，用于开户、购酒、在线投票和调阅健康档案。试点地区欺诈率大幅下降，原本数周的流程缩短到几分钟。隐私团体指出，该身份会把每一笔交易都汇入国家持有的单一可检索档案。法案进入委员会，你必须给出建议。",
+    "scene_en": "A government proposes a mandatory digital identity for every resident, required for opening bank accounts, buying alcohol, voting online, and accessing health records. Fraud falls sharply in pilot regions, and services that took weeks move to minutes. Privacy groups note the ID links every transaction into one searchable profile held by the state. The bill reaches committee and you must recommend.",
+    "options": [
+      {
+        "t": "我会支持法案：一个经过验证的身份能终结大部分身份欺诈，档案关联的风险可以用数据最小化规则来控制。",
+        "t_en": "I would support the bill: one verified identity ends most identity fraud, and the profile-linking risk can be contained by data-minimization rules.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对法案：一把能打开公民全部生活的钥匙正是那种不该存在的架构，无论欺诈数据多好看。",
+        "t_en": "I would oppose the bill: a single key to every citizen's life is the one architecture that should not exist, whatever the fraud numbers.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我只支持凭证存于公民自己的设备、不建中央数据库的版本，让验证发生而国家看不到谁做了什么。",
+        "t_en": "I would support it only with the credentials held in citizens' own wallets and zero central database, so verification happens without the state seeing who did what.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把它设为自愿制并配法律激励：服务保持快捷开放，但不强制任何人注册。",
+        "t_en": "I would make it voluntary with legal incentives: services stay fast and open to all, but no resident is compelled to enroll.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 875,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "卫生部辩论建立集中式疫苗接种登记系统，整合全部居民的免疫记录，并通过药房系统标记漏种常规疫苗的人。 uptake 模型显示漏种率可下降三分之一。反对者认为国家给每位公民挂健康标记会让健康监控常态化；医学会则支持，指出疫情暴发的死亡本就超过登记系统可能造成的代价。你撰写内阁备忘录。",
+    "scene_en": "A ministry debates a centralized vaccination registry that merges every resident's immunization records and flags, via pharmacy systems, anyone overdue for routine vaccines. Uptake modeling shows missed-dose rates falling by a third. Opponents object that the state keeping a health flag on every citizen normalizes health surveillance; the medical association supports it, noting outbreaks already cost more lives than the registry could. You write the cabinet note.",
+    "options": [
+      {
+        "t": "我会推荐该系统：可预防的死亡是具体的，而监控滑坡是推测，被挽救的生命却是每年可数的。",
+        "t_en": "I would recommend the registry: preventable deaths are concrete and the surveillance slippery-slope is a prediction, while the lives saved are annual and countable.",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会建议反对：国家给每位公民的身体挂永久标记，越过了只应属于紧急权力的界线，接种率可以用提醒机制来提升。",
+        "t_en": "I would recommend against it: a permanent state flag on every citizen's body crosses a line that emergency powers were supposed to be for, and uptake can be raised by reminders instead.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会推荐该系统，但记录 24 个月后转为匿名汇总，让标记在设计上就是临时的。",
+        "t_en": "I would recommend the registry with records expiring into anonymized aggregates after 24 months, so the flag is temporary by design.",
+        "tags": [
+          "TECH:U",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会推荐默认加入、可登记退出的版本：不提交表格即入册，在覆盖率与拒绝权之间取得平衡。",
+        "t_en": "I would recommend an opt-out registry: everyone is included unless they file a form, balancing coverage against the right to refuse.",
+        "tags": [
+          "TECH:K",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 876,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "某证券交易所监管机构提议：上市公司须在四年内让董事会的弱势性别比例不低于 40%，否则除牌。反对者称董事会应只凭能力就座；支持者引用了十年自愿目标——比例从 9% 升到 17% 后陷入停滞。征求意见期临近截止，你必须提交立场。",
+    "scene_en": "A stock exchange regulator proposes that listed companies fill at least 40% of board seats with the underrepresented gender within four years, with delisting as the sanction. Opponents argue boards should be seated on competence alone; supporters cite a decade of voluntary targets that moved the ratio from 9% to 17% and stalled. The consultation closes soon and you must file a position.",
+    "options": [
+      {
+        "t": "我会提交支持：十年客气地劝说只挪动了 8 个百分点，只有可执行的底线才能改变候选名单本身。",
+        "t_en": "I would file in support: ten years of asking politely moved the needle 8 points, and only an enforceable floor changes who is even considered.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会提交反对：董事席位是所有者的信义抉择，国家规定其构成等于用配额替代判断。",
+        "t_en": "I would file against: a board seat is an owner's fiduciary choice, and the state dictating its composition substitutes quota for judgment.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会提议仅强制披露：每家上市公司逐年公开董事会构成与继任管道，其余交给投资者。",
+        "t_en": "I would propose a disclosure-only rule: every listed firm publishes its board composition and pipeline annually, and investors do the rest.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持该底线，但把它绑定在候选人池要求而非结果上，让企业必须公平面试，而国家不替任何人安排席位。",
+        "t_en": "I would support the floor but tie it to candidate-pool requirements rather than outcomes, so firms must interview fairly without the state seating anyone.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 877,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene": "某州教育当局必须裁定一所宗教学校网络的拨款申请：其学业成绩位列前 10%，候补名单常年爆满。其章程要求每日集体礼拜，并在两门课程中把本教经典作为史实讲授。督学确认其招生无歧视。世俗运动者要求拒绝拨款；学校方则称家长是自由选择的。裁决之笔在你手中。",
+    "scene_en": "A state education authority must rule on funding applications from a network of faith schools whose academic results rank in the top decile and whose waiting lists stretch for years. Their charter requires daily collective worship and teaches their scripture as historical fact in two subjects. Inspectors confirm no discrimination in admissions. Secular campaigners want the funding refused; the schools argue parents choose them freely. You hold the ruling pen.",
+    "options": [
+      {
+        "t": "我会批准拨款：家长自由排队争取这些成绩，而一个只因学校不认同自身世界观就断供的国家，等于把信仰变成了忠诚测试。",
+        "t_en": "I would approve the funding: parents freely queue for these results, and a state that funds schools only when they share its own worldview has made belief a loyalty test.",
+        "tags": [
+          "SEC:F",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会以'经典作为史实'条款为由拒绝拨款：公共资助的教学不能把一种信仰的文本当作事实讲授，无论考试分数多高。",
+        "t_en": "I would refuse funding for the scripture-as-history clauses: publicly funded teaching must not present one faith's text as fact, whatever the exam scores.",
+        "tags": [
+          "SEC:E",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会附带条件批准：增设比较宗教模块，并把那些课程改写为传统叙事而非史实。",
+        "t_en": "I would fund the school conditionally on adding a comparative religion module and recasting those lessons as tradition rather than fact.",
+        "tags": [
+          "SEC:E",
+          "SEC:F"
+        ]
+      },
+      {
+        "t": "我会把拨款转为可在任何学校使用的按生学费券，宗教与否不限，让家庭而非教育局来裁决这个问题。",
+        "t_en": "I would convert the funding to per-student vouchers usable at any school, religious or not, letting families and not the ministry settle the question.",
+        "tags": [
+          "SEC:F",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 878,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "某市公屋轮候名单长达 12 年，正辩论覆盖全部私人租赁的租金管制：租金冻结在现价加通胀，且取消空置期解冻。房东协会预测维护崩塌、房源撤市；租户工会引用了几十年来管制成功稳住房租的城市案例。该市空置率为 1.1%。议会请你提交分析。",
+    "scene_en": "A city with a 12-year waiting list for public housing debates rent control covering all private rentals: rents frozen at current levels plus inflation, with vacancy decontrol removed. Landlord associations predict maintenance collapse and listings withdrawn from the market; tenant unions cite cities where controls held rents for decades. Vacancy in the city is 1.1%. The council asks your analysis.",
+    "options": [
+      {
+        "t": "我会支持全面管制：1.1% 的空置率下租户毫无市场议价能力，紧急状态足以证成冻结。",
+        "t_en": "I would support full control: at 1.1% vacancy tenants have no market power at all, and the emergency justifies the freeze.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会反对：成本上涨的同时封顶租金，等于把每位房东变成卖家，轮候名单赖以存在的房源只会收缩。",
+        "t_en": "I would oppose it: capping rent while costs rise converts every landlord into a seller, shrinking the stock the waiting list depends on.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会只对 30 年以上楼龄的建筑管制，新建项目豁免，让供给激励得以保留。",
+        "t_en": "I would support control on buildings older than 30 years only, leaving new construction exempt so supply incentives survive.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我不搞管制，改为每年以城市预算的 3% 直接兴建公屋，用房子而不是价格规则来消减轮候名单。",
+        "t_en": "I would skip control and build public housing directly at 3% of city budget annually, attacking the waiting list with units rather than price rules.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 879,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "生物安全监管机构审评首个氮高效小麦品种：经基因编辑，需肥量降低 30%，同时削减农场成本与水域缺氧带。环保团体内部分裂：一派称其为真正的减排工具，另一派要求基因编辑生物先做十年田间试验再谈批准，并引用一次早年的转基因失败案例。种植者希望本季就拿到种植权。你为监管机构起草决定。",
+    "scene_en": "A biosafety regulator reviews the first nitrogen-efficient wheat variety, gene-edited to need 30% less fertilizer, cutting both farm costs and waterway dead zones. Environmental groups split: some call it a genuine emissions tool, others demand a decade of field trials on gene-edited organisms before any approval, noting one earlier transgenic failure. Growers want planting rights this season. You draft the regulator's decision.",
+    "options": [
+      {
+        "t": "我会本季批准：肥料削减 30% 对水域和气候是可测的收益，且这种编辑不留任何可追溯的外源基因。",
+        "t_en": "I would approve this season: a 30% fertilizer cut is a measurable win for waterways and climate, and the edit leaves no foreign genes to trace.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会要求完整试验期：一次生态系统的意外就抵得过一季的收益，土壤生物学上的可逆性并未被证实。",
+        "t_en": "I would require the full trial period: one ecosystem surprise outweighs a season's gains, and reversibility in soil biology is not established.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会限定区域批准，配套强制缓冲区和独立监测，逐季按实测结果扩面。",
+        "t_en": "I would approve for a limited area with mandatory buffer zones and independent monitoring, expanding by measured results each season.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把决定权交给各省自己的生物安全规则，因为生态条件和公众态度本就因地区而异。",
+        "t_en": "I would leave the decision to each province's own biosafety rules, since ecological conditions and public attitudes differ across regions.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 880,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene": "某市警察局提议部署预测警务系统：用十年案件数据每日为街区计算抢劫风险分值，并据此调配巡逻时长。试点显示覆盖区街头抢劫下降 18%。审计团体发现，由于历史上的报案偏差，模型给两个少数族裔聚居区派驻的巡逻密度是其他地区的 2.3 倍。警察委员会必须表决。",
+    "scene_en": "A metropolitan police force proposes a predictive-policing system that scores city blocks daily by robbery risk from a decade of incident data and shifts patrol hours accordingly. Its pilot cut street robbery 18% in covered zones. Audit groups find the model sends 2.3 times the patrol density to two majority-minority districts, driven by historic over-reporting there. The police board must vote.",
+    "options": [
+      {
+        "t": "我会投扩大部署票：抢劫下降 18% 首先保护的正是这些街区的居民，而模型出现之前巡逻分配也从未平等过。",
+        "t_en": "I would vote to expand the system: an 18% robbery cut protects residents of exactly those districts first, and patrol allocation was never equal before the model.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会投取消票：把历史偏差喂给算法等于给它洗成客观，那 18% 是在不公正的基线上量出来的。",
+        "t_en": "I would vote to cancel it: feeding historic bias into an algorithm launders it into apparent objectivity, and the 18% was measured on an unjust baseline.",
+        "tags": [
+          "TECH:U",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会投继续运行票，但强制季度偏差审计和公开仪表盘，只在差距指数下降的区域扩面。",
+        "t_en": "I would vote to continue with a mandatory quarterly bias audit and public dashboards, expanding only in zones where the disparity index falls.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会投支持票，但把社区自报的犯罪数据作为并列输入，让模型向居民自己的报告学习，而非只依赖警方文书。",
+        "t_en": "I would vote to fund community-reported crime data as a parallel input, so the model learns from residents' own reports rather than police paperwork alone.",
+        "tags": [
+          "TECH:U",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 881,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene": "一个 1100 万人口的富裕国家面临年度安置配额决策。联合国难民署的区域请求是 4 万个名额；内政部预测，住房与语言吸纳系统能承受的是 1 万，再多就会在庇护申请者之间引发插队。民意五五开，护理和建筑业的雇主则以劳动力短缺为由游说提高配额。你为内阁提供咨询。",
+    "scene_en": "A wealthy country of 11 million faces an annual resettlement quota decision. UNHCR's regional ask is 40,000 places; the interior ministry's projection says 10,000 is what housing and language systems absorb without queue-jumping among asylum seekers. Public opinion splits evenly; employers in care and construction lobby for higher quotas citing labor shortages. You advise the cabinet.",
+    "options": [
+      {
+        "t": "我会建议按难民署数字执行：需求不会收缩迁就接收系统，而系统建成的速度可以快过危机本身。",
+        "t_en": "I would recommend the UNHCR figure: need does not shrink to fit intake systems, and systems can be built faster than a crisis passes.",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会建议按内政部的 1 万执行：超出吸纳能力的承诺只会产出帐篷营地而非融入，那种失败反而喂养关门的政治。",
+        "t_en": "I would recommend the ministry's 10,000: a promise beyond absorption capacity produces tent camps, not integration, and that failure feeds the politics of closure.",
+        "tags": [
+          "NAT:N",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会建议 2.5 万并绑定已拨款的住房项目和区域安置规则，用书面答复消化能力问题，取道折中。",
+        "t_en": "I would recommend 25,000 tied to a funded housing program and regional placement rules, meeting the need halfway with the capacity question answered in writing.",
+        "tags": [
+          "NAT:C",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会建议担保人模式：由社区团体为个别家庭的住房和语言成本兜底，在不增加中央预算的情况下提高名额。",
+        "t_en": "I would recommend a sponsorship model: community groups underwrite individual families' housing and language costs, raising numbers without central budgets.",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 882,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene": "养老金部预测：法定退休年龄固定在 65 岁，而 65 岁时预期寿命已提高 7 岁，体系将在 11 年内陷入赤字。可选方案：逐步提高至 68 岁；工资税加征 2 个百分点；或全面削减 9% 的待遇。体力劳动者 65 岁时的预期寿命比办公室职员低 4 岁。你是改革委员会主席。",
+    "scene_en": "The pensions ministry projects that the state retirement age, fixed at 65 while life expectancy at 65 has risen seven years, will push the system into deficit within 11 years. Options: raise the age to 68 gradually; raise payroll contributions 2 points; or cut benefits 9% across the board. Manual workers' life expectancy at 65 is four years lower than office workers'. You chair the reform commission.",
+    "options": [
+      {
+        "t": "我会逐步提高退休年龄：寿命的增益是真实的，多工作两年能让每一代人的待遇原封不动。",
+        "t_en": "I would raise the age gradually: longevity gains are real, and working two more years keeps every cohort's benefit intact.",
+        "tags": [
+          "CUL:P",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会加征缴费：削待遇或延工龄，惩罚的是身体早已透支的劳动者，而工资税本就是这个体系的立身之本。",
+        "t_en": "I would raise contributions: cutting benefits or extending work years taxes the workers whose bodies already gave out, and payroll funding is how the system was built.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会提高年龄但按职业设置例外：20 岁前就参加体力工作的劳动者 66 岁退休，办公室职员 68 岁。",
+        "t_en": "I would raise the age with an occupation-based exception: manual workers who started before 20 retire at 66, office workers at 68.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把退休年龄设为 62 到 70 岁之间按月精算调整的弹性区间，让每个人给自己的取舍定价。",
+        "t_en": "I would make the age flexible between 62 and 70 with actuarial adjustment per month, letting each person price their own trade-off.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 883,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "一位遗嘱人把全部财产留给慈善机构，剥夺了十年前与他断绝往来的两名成年子女的继承权。法律规定直系血亲享有三分之二的特留份，除非存在'重大事由'。子女援引该条；慈善方以断绝往来抗辩。可比辖区的判例对'断绝往来是否构成重大事由'分裂。你是审查特留份制度的法律改革机构成员。",
+    "scene_en": "A testator leaves everything to charity, disinheriting his two adult children who had stopped contact with him a decade earlier. The statute reserves a compulsory share of two-thirds for direct descendants unless 'weighty grounds' exist. The children invoke it; the charity cites the estrangement. Courts in comparable jurisdictions split on whether estrangement alone qualifies. You sit on the law-reform body reviewing the compulsory-share rule.",
+    "options": [
+      {
+        "t": "我会维持特留份制度：财产经由家庭传递，允许一代人用一个签名斩断下一代，会侵蚀这个制度本身。",
+        "t_en": "I would keep the compulsory share as is: property passes through families, and letting one generation cut the next off with a signature corrodes the institution itself.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会废除特留份：赠与如何安排是所有者的权利，把已断绝关系的子女强行塞回遗产，对谁都不是奖赏。",
+        "t_en": "I would abolish the compulsory share: a gift is the owner's to direct, and forcing severed children onto the estate rewards neither side.",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会保留制度，但立法明确'重大事由'的定义，把断绝往来列为法官权衡的因素之一，用公开标准取代判例的不确定性。",
+        "t_en": "I would keep it but define 'weighty grounds' by statute with estrangement as a factor a judge weighs, replacing judge-made uncertainty with published criteria.",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会把特留份从三分之二降到三分之一，在保留直系血亲底线的同时给遗嘱人更多自由。",
+        "t_en": "I would cap the compulsory share at one-third rather than two-thirds, leaving the testator freer while keeping a floor for descendants.",
+        "tags": [
+          "CUL:T",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 884,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "食品创新署提议把 2 亿资金从畜牧业营销补贴转投培育肉和精密发酵初创企业，目标是在十年内让成本与绞肉持平。农场工会预测两个农业省将集中流失 1.5 万个岗位；气候模型测算这一转变可减少全国 4% 的排放。消费者测试显示接受度上升但尚不足 40%。你为该署撰写建议。",
+    "scene_en": "A food-innovation agency proposes redirecting 200 million from livestock marketing subsidies to cultivated-meat and precision-fermentation startups, aiming for cost parity with ground meat within a decade. Farm unions project 15,000 livestock job losses concentrated in two rural provinces; climate models credit the switch with 4% of national emissions. Consumer testing shows acceptance rising but below 40%. You write the agency's recommendation.",
+    "options": [
+      {
+        "t": "我会支持转投：一项能削减全国 4% 排放的技术值得资助，哪怕市场到来的速度慢于预测。",
+        "t_en": "I would back the redirection: a technology that cuts 4% of national emissions is worth funding even if the market arrives slower than projected.",
+        "tags": [
+          "ENV:S",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会继续资助畜牧业：在接受度不足 40% 时，用一场实验室押注替换运转中的乡村经济，岗位和公款都有风险。",
+        "t_en": "I would keep funding livestock: replacing a functioning rural economy with a laboratory bet, while acceptance sits below 40%, risks both jobs and public money.",
+        "tags": [
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会把资金对半：一半给初创企业，一半用于两省的转岗培训与过渡支持，让押注与调整同行。",
+        "t_en": "I would split the fund: half to the startups, half to retraining and transition support for the two provinces, so the bets and the adjustment travel together.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会把资金与消费者接受度里程碑挂钩，实测接受度过 40%、50%、60% 才逐档释放。",
+        "t_en": "I would condition the money on consumer uptake milestones, releasing tranches only as measured acceptance passes 40%, 50%, and 60%.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 885,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "国家图书馆获得一笔一次性经费，须数字化 5 万件藏品。馆员团队分裂为两派：一派主张数字化经典馆藏——阅览室里借阅量最大的作品，确保世界对遗产核心的最大访问量；另一派主张优先处理濒危的地方档案、方言报纸和口述历史，它们在物理上正在朽坏，且不会有任何其他机构代为复制。你撰写建议书。",
+    "scene_en": "A national library must digitize 50,000 items with a one-off grant. The curatorial staff split: one proposal digitizes the canonical collection, the most-viewed works in reading rooms, ensuring maximum global access to the heritage core; the other prioritizes endangered regional archives, dialect newspapers, and oral histories, which decay physically and which no other institution will ever copy. You write the recommendation.",
+    "options": [
+      {
+        "t": "我会数字化核心馆藏：让全世界访问经典才是图书馆的本职，而 popular（大众熟知的）作品也是这笔经费对公众的交代。",
+        "t_en": "I would digitize the core collection: global access to the canon is the library's actual mission, and popular works justify the grant to the public.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会数字化濒危档案：经典有纸质和其他副本留存，而朽坏中的方言报纸档案是世上仅此一份的存在。",
+        "t_en": "I would digitize the endangered archives: the canon survives in print and in other copies, but a rotting dialect newspaper archive is the only copy that will ever exist.",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会按 60-40 倾向濒危档案分配，并对剩余的经典清单开放公众投票，把馆员的判断与公众的参与结合起来。",
+        "t_en": "I would split 60-40 toward the endangered archives but publish a public vote on the remaining core list, mixing curatorial judgment with ownership.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会把选择权拍卖给最高额的私人联合出资方，数字化双倍数量的藏品，接受出资方的优先级影响馆藏。",
+        "t_en": "I would auction the choice to the highest private co-funder and digitize twice as many items, accepting that the donor's priorities shape the collection.",
+        "tags": [
+          "CUL:T",
+          "ECO:R"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 886,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "一座 200 万人口的城市入围大陆级运动会的候选主办地。申办要求一座 14 亿的体育场和运动员村；预计运营亏损 1.8 亿，而模型测算的旅游和基建收益，在多数针对同类赛事的学术研究中被证实并未兑现。基层体育俱乐部追问这 14 亿能给他们建多少设施。市长征求你的立场。",
+    "scene_en": "A city of 2 million is shortlisted to host a continental games. The bid requires a 1.4 billion stadium and athletes' village; the projected operating loss is 180 million, against modeled tourism and infrastructure benefits that most academic studies of comparable events find fail to materialize. Grassroots clubs ask what 1.4 billion would build in their facilities. The mayor asks for your position.",
+    "options": [
+      {
+        "t": "我会支持申办：全球舞台对城市轨迹的改变不是单项赛事研究能捕捉的，而且基础设施的寿命长于赛事本身。",
+        "t_en": "I would support the bid: a global stage changes a city's trajectory in ways studies of single events do not capture, and the infrastructure outlives the games.",
+        "tags": [
+          "NAT:N",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会反对：遗产收益的证据一贯为负，而 14 亿投进社区设施，触达的运动员远多于两周赛事。",
+        "t_en": "I would oppose it: the evidence on legacy benefits is consistently negative, and 1.4 billion in neighborhood facilities would reach more athletes than two weeks of games ever will.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我只支持附带约束性遗产方案的申办：体育场缩至 2.5 万座，闭幕次日即转交俱乐部使用。",
+        "t_en": "I would support the bid only with a binding legacy plan: the stadium downsized to 25,000 seats and converted to club use on day one after closing.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把决定交给全市公投，并公开两版预算账本，让居民自己决定这 14 亿公款怎么花。",
+        "t_en": "I would put it to a citywide referendum with both budget books published, letting residents choose how 1.4 billion of their money is spent.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 887,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "某省辩论如何支持 30 万名无薪家庭照护者，有两个方案：直接向照护者发放月度照护津贴；或发放照护积分，让家庭购买专业喘息服务。照护者调查显示 60% 会把现金用于家庭开支；社工警告不与服务挂钩的现金会加深被照护者的孤立。财政部测算两案成本相同。你为省长提供建议。",
+    "scene_en": "A province debating how to support 300,000 unpaid family caregivers considers two schemes: a monthly care stipend paid to the caregiver directly, or a care credit that lets families purchase professional respite hours instead. Caregiver surveys show 60% would keep the cash for household costs; social workers warn that cash without service ties deepens isolation for the cared-for person. The finance ministry prices the schemes identically. You advise the premier.",
+    "options": [
+      {
+        "t": "我会发现金津贴：照护者最清楚自家的缺口，以钱的形式抵达的补贴尊重他们每天都在做的选择。",
+        "t_en": "I would pay the cash stipend: caregivers know their own households' shortfalls, and a subsidy that arrives as money respects the choice they already make daily.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会发服务积分：现金补偿的是照护者，喘息小时触及的才是被照护的人，而孤立才是致命的结局。",
+        "t_en": "I would pay the service credit: cash compensates the caregiver while respite hours reach the person being cared for, and isolation is the outcome that kills.",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会两案并行，让每个家庭在同一个额度内自行分配现金与服务小时。",
+        "t_en": "I would offer both and let each family split its allocation between cash and service hours within one envelope.",
+        "tags": [
+          "COL:I",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会发现金津贴，但要求区域护士每年做一次福祉探访，钱留给家庭，监督交给国家。",
+        "t_en": "I would pay the cash stipend but require an annual well-being check by a district nurse, keeping the money with the family and the oversight with the state.",
+        "tags": [
+          "COL:I",
+          "GOV:A"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 888,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "某国毕业生的人均学生贷款是起薪的 130%，还款按中位收入以上部分的 9% 计收，余额 25 年后核销。一项改革提案以相当于一年 GDP 6% 的成本核销所有未偿余额的 50%，但对造成债务的借贷规则不作任何修改。未来的学生仍将以相同条款借款。你是财政委员会成员。",
+    "scene_en": "A country's graduates carry student loans averaging 130% of starting salary, with repayment rates set at 9% of income above the median and balances written off after 25 years. A reform proposal cancels 50% of all outstanding balances at a cost of 6% of one year's GDP, with no change to the borrowing rules that created them. Future students would borrow on identical terms. You sit on the treasury committee.",
+    "options": [
+      {
+        "t": "我会投核销赞成票：那 9% 的扣缴本就是对毕业生的额外征税，减掉一半余额是对一个把教育当消费品定价的体系的修正。",
+        "t_en": "I would vote for the cancellation: the 9% levy already functions as an extra tax on graduates, and clearing half the balance corrects a system that priced education as if it were consumption.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会投反对票：规则不变的核销是把从未上过大学的纳税人的钱转移给这一代毕业生，还会诱使下一届照旧借款、坐等同样待遇。",
+        "t_en": "I would vote against it: a one-time write-off with unchanged rules is a transfer to today's graduates paid by taxpayers who never attended, and it invites the next cohort to borrow expecting the same.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把核销与面向未来学生的收入挂钩学费资助捆绑，让修法同时覆盖存量债务和补充进来的流量。",
+        "t_en": "I would pair the cancellation with income-contingent tuition funding for future students, so the fix covers both the stock of debt and the flow that replaces it.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会只对中位收入以下的毕业生核销、以上者全额保留，让核销落在实际困难所在的地方。",
+        "t_en": "I would cancel balances only for graduates below the median income and fully repayable ones above it, targeting the write-off where the hardship actually sits.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 889,
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene": "电网运营商须为一座 800 万人口的地区在两条脱碳路径间做决定。路径一：一座新核电站，全天候稳定电力，建设期 14 年，造价 32 亿。路径二：风电、光伏加储能组合达到同等年发电量，5 年内可部署，造价 26 亿，过渡期的季节性缺口由燃气调峰机组覆盖。两者资金全部来自用电者。你撰写监管机构意见书。",
+    "scene_en": "A grid operator must decide between two decarbonization paths for a region of 8 million. Path one: one new nuclear plant, firm 24/7 power, 14 years to build, 3.2 billion. Path two: wind, solar, and storage buildout reaching the same annual output, deployable in 5 years, 2.6 billion, with seasonal shortfalls covered by gas peakers during the transition. Both are fully financed by ratepayers. You write the regulator's opinion.",
+    "options": [
+      {
+        "t": "我会支持核电路径：六十年的稳定清洁电力值得等待，而路径二里的燃气调峰是比转型活得更久的化石承诺。",
+        "t_en": "I would back the nuclear path: firm clean power for sixty years justifies the wait, and gas peakers in path two are a fossil commitment that outlives the transition.",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持可再生路径：核电等待期第 5 到 14 年里避免的排放是永久性 avoided（避免）的，造价差正好投给储能研发。",
+        "t_en": "I would back the renewables path: emissions avoided in years 5 through 14 of the nuclear wait are emissions that never return, and the cost gap funds storage research.",
+        "tags": [
+          "ENV:S",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会先启动可再生建设，同时保留核电选址许可，到第六年再判断季节缺口数据是否足以支撑建站。",
+        "t_en": "I would start the renewables buildout now and hold the nuclear site license open, deciding year six whether the seasonal-gap data justify the plant.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会让零售用户在账单上自选路径：核电订阅者锁定 20 年合同，可再生订阅者签灵活合同。",
+        "t_en": "I would let retail customers choose their path on their own bill, with nuclear subscribers locked into 20-year contracts and renewables subscribers into flexible ones.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 890,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "某国 40 万人的公务员队伍，招录考试按人口比例大体选人，但晋升持续存在差距：管理层 82% 来自多数族群。一项法令草案设定内部晋升目标：各部委管理层新增必须在八年内与人口构成匹配，部长担责。反对者称之为制度化的偏袒，支持者称这是唯一真正改变过构成的杠杆。你是公职委员会成员。",
+    "scene_en": "A national civil service of 400,000, whose recruitment exams select candidates from groups in rough proportion to population, shows a persistent gap in promotion: management grades are 82% from the majority group. A draft decree sets internal promotion targets: each ministry's management intake must match population composition within eight years, with department heads accountable. Opponents call it institutionalized preference; supporters call it the only lever that has ever moved composition. You sit on the public-service commission.",
+    "options": [
+      {
+        "t": "我会支持该法令：中立的考试带来中立的新人，晋升却依然聚在 82%，说明过滤器在管道中段，必须在它起作用的地方回应。",
+        "t_en": "I would support the decree: neutral exams got neutral intakes yet the promotions still pooled at 82%, so the filter sits in the middle of the pipeline and must be answered where it acts.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对该法令：规定结果颠倒了考试赖以建立的原则，晋升池应当用导师制和轮岗政策来拓宽，而不是规定结果。",
+        "t_en": "I would oppose the decree: mandating outcomes reverses the principle the exams were built on, and promotion pools should be widened by mentoring and posting policy instead.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会附带豁免阀支持：部委可申请两年延期，但须公开晋升标准审计，让目标只为有据可查的障碍让步。",
+        "t_en": "I would support it with an exemption valve: ministries may apply for two-year extensions with published promotion-criteria audits, so the target bends only for documented barriers.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先强制匿名评审小组和结构化评分，五年后重新测量，再考虑是否设定构成目标。",
+        "t_en": "I would mandate blind promotion panels and structured scoring first, then re-measure in five years before considering any composition target.",
+        "tags": [
+          "GOV:L",
+          "GOV:A"
+        ]
+      }
+    ]
   }
 ]
