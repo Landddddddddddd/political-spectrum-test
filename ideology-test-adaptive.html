@@ -194,6 +194,7 @@
   .topbar .brand{font-size:15px;font-weight:800;color:var(--ink);letter-spacing:.5px;}
   .tb-actions{display:flex;gap:8px;}
   .tb-btn{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:13px;font-weight:600;padding:7px 12px;border-radius:10px;cursor:pointer;transition:all .15s;}
+  .lang-sel{font-family:inherit;max-width:108px;}
   .tb-btn:hover{border-color:var(--accent);color:var(--accent);}
   .tb-btn .dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;margin-right:5px;background:var(--accent);}
   /* 弹窗 */
@@ -710,12 +711,19 @@
 <div class="wrap" id="app">
 
   <div class="topbar">
-    <div class="brand">意识形态测试</div>
+    <div class="brand" data-i18n="brand">意识形态测试</div>
     <div class="tb-actions">
       <button class="tb-btn" id="themeBtn" onclick="cycleTheme()" title="切换外观：亮 / 暗 / 跟随系统">☀️ 亮色</button>
       <button class="tb-btn" id="setBtn" onclick="openSettings()" title="设置：音效、动效">⚙️ 设置</button>
       <button class="tb-btn" id="clBtn" onclick="openChangelog()" title="更新日志">📋 日志</button>
-      <button class="tb-btn" id="langBtn" onclick="cycleLang()" title="切换语言">🌐 中文</button>
+      <select class="tb-btn lang-sel" id="langBtn" onchange="setLang(this.value)" title="切换语言">
+        <option value="zh">中文</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+      </select>
       <button class="tb-btn" id="accBtn" onclick="openAcc()" title="账户与历史"><span class="dot" id="accDot"></span><span id="accLabel">本地访客</span> ▾</button>
     </div>
   </div>
@@ -804,8 +812,14 @@
       <div class="set-row">
         <div class="set-label"><b>语言</b><small>界面与结果使用的语言</small></div>
         <div class="lang-btns">
-          <button class="btn ghost" id="langZh" onclick="setLang('zh')">中文</button>
-          <button class="btn ghost" id="langEn" onclick="setLang('en')">English</button>
+          <select class="btn ghost" id="langSet" onchange="setLang(this.value)">
+            <option value="zh">中文</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+          </select>
         </div>
       </div>
 
@@ -1357,14 +1371,7 @@ function doPasteImport(){
 }
 
 function toast(msg){
-  let m = msg;
-  if(CUR_LANG==="en" && TOAST_EN[msg]!=null) m = TOAST_EN[msg];
-  else if(CUR_LANG==="en" && typeof msg==="string"){
-    // 兼容「已创建并切换到 X」「已切换到 X」「已导入 X 个账户」这类带后缀的提示
-    for(const k in TOAST_EN){
-      if(msg.indexOf(k)===0 && msg.length>k.length) m = TOAST_EN[k] + msg.slice(k.length);
-    }
-  }
+  let m = toastText(msg);
   let t=$("toast");
   if(!t){ t=document.createElement("div"); t.id="toast"; t.className="toast"; document.body.appendChild(t); }
   t.textContent=m; t.classList.add("show"); clearTimeout(t._tm); t._tm=setTimeout(()=>t.classList.remove("show"),1800);
@@ -1389,14 +1396,25 @@ const ARCH = __ARCH__;
 
 /* ====== 多语言（i18n） ====== */
 const LANG_KEY = "ideo_lang";
+// 支持的语言注册表；新增语言只需在此登记 + 在 i18n_extra.json 提供翻译，框架自动生效
+const LANGS = [
+  {code:"zh", label:"中文"},
+  {code:"en", label:"English"},
+  {code:"ja", label:"日本語"},
+  {code:"es", label:"Español"},
+  {code:"fr", label:"Français"},
+  {code:"de", label:"Deutsch"},
+];
 let CUR_LANG = (function(){
-  try{ const saved=localStorage.getItem(LANG_KEY); if(saved==="zh"||saved==="en") return saved; }catch(e){}
+  try{ const saved=localStorage.getItem(LANG_KEY); if(saved && LANGS.some(x=>x.code===saved)) return saved; }catch(e){}
   try{ const navLang=(typeof navigator!=="undefined"&&navigator.language)?navigator.language:""; if(navLang&&/^zh/i.test(navLang)) return "zh"; }catch(e){}
   return "en";
 })();
 let _suppressHistory = false;
-// 整段静态文本（含混合块）的英文映射；data-i18n 与全文档整节点自动翻译共用此表
-const UI_EN = {
+// 静态 UI 文案多语言表：en 子表已完整译出；ja/es/fr/de 由 i18n_extra.json 运行时合并注入。
+// data-i18n 与全文档整节点自动翻译共用；回退链：当前语言 → en → zh(原文)
+const UI_I18N = { en: {
+  "意识形态测试":"Political Spectrum Test",
   // 顶栏
   "⚙️ 设置":"⚙️ Settings","📋 日志":"📋 Changelog","本地访客":"Guest",
   // 设置弹窗
@@ -1453,8 +1471,8 @@ const UI_EN = {
   "ovActions":`📚 View all detectable ideologies (<span id="ovArchCount">…</span>)`,
   "archHead":`Detectable ideologies · <b id="archTotal">50</b> in total`,
   "spHead":`Political spectrum position <span class="pill">Switchable dimensions</span><button class="btn ghost sp-mini" onclick="downloadCard()">Save as Image</button><button class="btn ghost sp-mini" onclick="copySummary()">Copy Summary</button>`
-};
-const TOAST_EN = {
+}};
+const TOAST_I18N = { en: {
   "已复制到剪贴板":"Copied to clipboard","已复制":"Copied","复制失败，请手动选择":"Copy failed, please select manually",
   "暂无可分享的结果，先完成一次测试吧":"No result to share yet—finish a test first.",
   "已创建并切换到 ":"Account created and switched to ",
@@ -1467,33 +1485,75 @@ const TOAST_EN = {
   "导入好友结果成功":"Friend result imported","该结果已存在":"This result already exists",
   "分享码无效或格式不正确":"Invalid or malformed share code","已复制结果摘要":"Result summary copied",
   "外观：":"Appearance: "
-};
-function g(zh, en){ return CUR_LANG==="en" ? en : zh; }
-function dname(d){ return CUR_LANG==="en" && d.name_en ? d.name_en : d.name; }
-function plabel(p){ return (CUR_LANG==="en" && p.label_en) ? p.label_en : p.label; }
-function archName(a){ return CUR_LANG==="en" && a.name_en ? a.name_en : a.name; }
-function adesc(a){ return CUR_LANG==="en" ? (a.desc_en||a.desc) : (a.desc||a.desc_en); }
-function adetail(a){ return CUR_LANG==="en" ? (a.detail_en||a.detail) : (a.detail||a.detail_en); }
-function atenets(a){ const t = CUR_LANG==="en" ? ((a.tenets_en&&a.tenets_en.length)?a.tenets_en:a.tenets) : ((a.tenets&&a.tenets.length)?a.tenets:a.tenets_en); return Array.isArray(t)?t:[]; }
-function dispName(n){ const a=ARCH.find(x=>x.name===n); return (CUR_LANG==="en" && a && a.name_en) ? a.name_en : n; }
-// 语言感知：动态内容英文优先、中文兜底，但必须随 CUR_LANG 切换（不能中文模式也显示英文）
-function qscene(q){ return CUR_LANG==="en" ? (q.scene_en||q.scene) : q.scene; }
-function qopt(o){ return CUR_LANG==="en" ? (o.t_en||o.t) : o.t; }
-function qdomain(q){ return CUR_LANG==="en" ? (q.domain_en||q.domain) : q.domain; }
-function fen(o,k){ return CUR_LANG==="en" ? ((o[k+"_en"]!=null)?o[k+"_en"]:o[k]) : o[k]; }
-function figName(f){ return CUR_LANG==="en" ? (f.en||f.name) : f.name; }
+}};
+// 取当前语言下的 UI 文案：当前语言子表优先，非中文回退 en，最后回落 null（调用方用原文）
+function uiEntry(key){
+  const sub = UI_I18N[CUR_LANG];
+  if(sub && sub[key]!=null) return sub[key];
+  if(CUR_LANG!=="en"){ const en=UI_I18N.en; if(en && en[key]!=null) return en[key]; }
+  return null;
+}
+// 数据字段回退链：当前语言(_xx) → en(_en) → 基础(zh)。zh 模式直接用基础字段。
+function pick(o, key){
+  if(!o) return undefined;
+  const l=CUR_LANG;
+  if(l==="zh") return o[key]!=null ? o[key] : (o[key+"_en"]!=null ? o[key+"_en"] : undefined);
+  const cur=o[key+"_"+l]; if(cur!=null) return cur;
+  if(l!=="en"){ const en=o[key+"_en"]; if(en!=null) return en; }
+  return o[key];
+}
+// 数组型字段回退（tenets/works 等），空数组视为缺失
+function pickArr(o, key){
+  if(!o) return [];
+  const l=CUR_LANG;
+  const get=(suf)=>{ const v=o[key+suf]; return (Array.isArray(v)&&v.length)?v:null; };
+  if(l!=="zh"){ const a=get("_"+l); if(a) return a; }
+  if(l!=="en"){ const a=get("_en"); if(a) return a; }
+  return get("")||[];
+}
+function g(zh, en){ const v=uiEntry(zh); return v!=null ? v : (CUR_LANG==="en" ? en : zh); }
+function dname(d){ return pick(d,"name"); }
+function plabel(p){ return pick(p,"label"); }
+function archName(a){ return pick(a,"name"); }
+function adesc(a){ return pick(a,"desc"); }
+function adetail(a){ return pick(a,"detail"); }
+function atenets(a){ return pickArr(a,"tenets"); }
+function dispName(n){ const a=ARCH.find(x=>x.name===n); return a ? pick(a,"name") : n; }
+// 语言感知：动态内容按当前语言优先、en 兜底、最后中文，且必须随 CUR_LANG 切换
+function qscene(q){ return pick(q,"scene"); }
+function qopt(o){ return pick(o,"t"); }
+function qdomain(q){
+  const zh=q.domain;
+  if(CUR_LANG==="zh") return zh;
+  const map=(typeof DOMAIN_I18N!=="undefined" && DOMAIN_I18N[CUR_LANG])||{};
+  const enMap=(typeof DOMAIN_I18N!=="undefined" && DOMAIN_I18N.en)||{};
+  return map[zh] || enMap[zh] || q.domain_en || zh;
+}
+function fen(o,k){ return pick(o,k); }
+function figName(f){
+  if(!f) return "";
+  if(CUR_LANG==="zh") return f.name;
+  if(CUR_LANG!=="en" && f["name_"+CUR_LANG]) return f["name_"+CUR_LANG];
+  return f.en || f.name;
+}
+function famName(fam){
+  if(!fam) return "";
+  if(CUR_LANG==="zh") return fam.zh;
+  if(CUR_LANG!=="en" && fam["name_"+CUR_LANG]) return fam["name_"+CUR_LANG];
+  return fam.en || fam.zh;
+}
 function applyLang(){
   document.querySelectorAll("[data-i18n]").forEach(el=>{
     const key=el.getAttribute("data-i18n");
     if(el._zhHTML===undefined) el._zhHTML=el.innerHTML;
-    const en=UI_EN[key];
-    el.innerHTML=(CUR_LANG==="en" && en!=null) ? en : el._zhHTML;
+    const v=uiEntry(key);
+    el.innerHTML=(v!=null) ? v : el._zhHTML;
   });
   document.querySelectorAll("[data-i18n-ph]").forEach(el=>{
     const key=el.getAttribute("data-i18n-ph");
     if(el._zhPH===undefined) el._zhPH=el.placeholder;
-    const en=UI_EN[key];
-    el.placeholder=(CUR_LANG==="en" && en!=null) ? en : el._zhPH;
+    const v=uiEntry(key);
+    el.placeholder=(v!=null) ? v : el._zhPH;
   });
   if(document.body){
     const walker=document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
@@ -1508,17 +1568,20 @@ function applyLang(){
     let n;
     while(n=walker.nextNode()){
       const txt=n.nodeValue.trim();
-      if(UI_EN[txt]!=null){
+      const v=uiEntry(txt);
+      if(v!=null){
         if(n._zh===undefined) n._zh=n.nodeValue;
-        n.nodeValue = (CUR_LANG==="en") ? UI_EN[txt] : n._zh;
+        n.nodeValue = v;
+      } else if(n._zh!==undefined){
+        n.nodeValue = n._zh;
       }
     }
   }
-  document.title = CUR_LANG==="en" ? "Political Spectrum Test · Adaptive" : "意识形态测试 · 自适应 "+bankLen()+" 题版";
+  document.title = CUR_LANG==="zh" ? ("意识形态测试 · 自适应 "+bankLen()+" 题版") : "Political Spectrum Test · Adaptive";
   updateLangBtn();
   updatePreview();
   refreshBankCount();
-  refreshEnCoverage();
+  refreshLangCoverage();
 }
 // 题库数量：始终从注入的题库实时读取，不写死，题库增减后页面自动更新
 function bankLen(){ return (typeof QUESTION_BANK!=="undefined" && QUESTION_BANK && Array.isArray(QUESTION_BANK)) ? QUESTION_BANK.length : 500; }
@@ -1530,18 +1593,19 @@ function refreshBankCount(){
   if(qi){ qi.max = n; qi.placeholder = "5–"+n; }  // 自定义题量上限同步真实题量
 }
 // 英文覆盖度提示：仅在英文模式显示，未翻译的题目会回落到中文，需对用户诚实披露
-function refreshEnCoverage(){
+function refreshLangCoverage(){
   const el = document.getElementById("enCov");
   if(!el) return;
-  if(CUR_LANG!=="en"){ el.style.display="none"; return; }
-  const c = enCoverage();
+  if(CUR_LANG==="zh"){ el.style.display="none"; return; }
+  const c = langCoverage(CUR_LANG);
+  const lab = (LANGS.find(x=>x.code===CUR_LANG)||{}).label || CUR_LANG;
   el.style.display = "";
-  el.textContent = "English coverage: " + c.full + "/" + c.total + " questions ("
-    + c.pct + "%). Untranslated questions are shown in Chinese.";
+  el.textContent = lab + " coverage: " + c.full + "/" + c.total + " questions ("
+    + c.pct + "%). Untranslated questions fall back to English.";
 }
-function cycleLang(){ setLang(CUR_LANG==="en"?"zh":"en"); }
+function cycleLang(){ const i=LANGS.findIndex(x=>x.code===CUR_LANG); setLang(LANGS[(i+1)%LANGS.length].code); }
 function setLang(l){
-  CUR_LANG = (l==="en") ? "en" : "zh";
+  CUR_LANG = (LANGS.some(x=>x.code===l)) ? l : "zh";
   try{ localStorage.setItem(LANG_KEY, CUR_LANG); }catch(e){}
   applyLang();
   rerenderForLang();
@@ -1563,10 +1627,59 @@ function rerenderForLang(){
   }catch(e){ /* 语言切换不应中断交互 */ }
 }
 function updateLangBtn(){
-  const b=$("langBtn"); if(b) b.textContent = "🌐 " + (CUR_LANG==="en"?"English":"中文");
-  const zh=$("langZh"), en=$("langEn");
-  if(zh) zh.classList.toggle("active", CUR_LANG==="zh");
-  if(en) en.classList.toggle("active", CUR_LANG==="en");
+  const b=$("langBtn"); if(b) b.value = CUR_LANG;
+  const s=$("langSet"); if(s) s.value = CUR_LANG;
+}
+
+/* ====== i18n 运行时注入合并（由 build 注入 i18n_extra.json） ====== */
+let DOMAIN_I18N = null;
+let I18N_EXTRA = null;
+try { I18N_EXTRA = __I18N_EXTRA__; } catch(e) { I18N_EXTRA = null; }
+(function applyI18nExtra(){
+  if(!I18N_EXTRA) return;
+  if(I18N_EXTRA.ui){ ["ja","es","fr","de"].forEach(l=>{ if(I18N_EXTRA.ui[l]) UI_I18N[l] = Object.assign({}, I18N_EXTRA.ui[l]); }); }
+  if(I18N_EXTRA.toast){ ["ja","es","fr","de"].forEach(l=>{ if(I18N_EXTRA.toast[l]) TOAST_I18N[l] = Object.assign({}, I18N_EXTRA.toast[l]); }); }
+  if(I18N_EXTRA.dims){ DIMS.forEach(d=>{ const t=I18N_EXTRA.dims[d.key]; if(!t) return;
+    ["ja","es","fr","de"].forEach(l=>{ if(t[l] && t[l].name){ d["name_"+l]=t[l].name; d.poles.forEach(p=>{ if(t[l].poles && t[l].poles[p.k]!=null) p["label_"+l]=t[l].poles[p.k]; }); } }); }); }
+  if(I18N_EXTRA.domains){ DOMAIN_I18N = I18N_EXTRA.domains; }
+})();
+// 语言完整度索引：某语言「整题已有翻译」的子集；抽题优先该子集，抽尽后回落英文、再回落全库
+let _langFullCache = {};
+function langFullIds(lang){
+  if(_langFullCache[lang]) return _langFullCache[lang];
+  let s;
+  if(lang==="zh"){ s=new Set((BANK||[]).map(q=>q.id)); }
+  else {
+    const sk = lang==="en" ? "scene_en" : "scene_"+lang;
+    const tk = lang==="en" ? "t_en" : "t_"+lang;
+    s=new Set();
+    (BANK||[]).forEach(q=>{
+      if(!q) return;
+      if(!(q[sk] && String(q[sk]).trim())) return;
+      const opts=Array.isArray(q.options)?q.options:[];
+      if(!opts.length) return;
+      if(!opts.every(o=>o && o[tk] && String(o[tk]).trim())) return;
+      s.add(q.id);
+    });
+  }
+  _langFullCache[lang]=s; return s;
+}
+function enFullIds(){ return langFullIds("en"); }   // 兼容旧引用
+function langCoverage(lang){
+  const n=(BANK&&BANK.length)||1;
+  const full=langFullIds(lang).size;
+  return { full:full, total:n, pct:Math.round(full/n*100) };
+}
+function enCoverage(){ return langCoverage("en"); }  // 兼容旧引用
+// toast 多语言：当前语言子表优先（含带后缀提示），非中文回退 en，最后回落原文
+function toastText(msg){
+  if(typeof msg!=="string") return msg;
+  const findIn=(map)=>{ if(!map) return null; if(map[msg]!=null) return map[msg];
+    for(const k in map){ if(msg.indexOf(k)===0 && msg.length>k.length) return map[k]+msg.slice(k.length); } return null; };
+  const sub=TOAST_I18N[CUR_LANG];
+  if(sub){ const r=findIn(sub); if(r!=null) return r; }
+  if(CUR_LANG!=="en"){ const r=findIn(TOAST_I18N.en); if(r!=null) return r; }
+  return msg;
 }
 
 let TOTAL = 50;
@@ -1734,12 +1847,15 @@ function selectNext(){
   const dcount = buildDomainCounts();
   const dimc = recomputeDimCounts();
   const used = new Set(seq);
-  // 英文模式：优先「英文完整」子集；子集抽尽后自动回落到全库（保证超长测试不卡死）
+  // 优先按当前语言完整子集抽题；当前语言子集抽尽则回落英文子集；再回落全库（保证超长测试不卡死）
   let pool = BANK;
-  if(CUR_LANG==="en"){
-    const ids = enFullIds();
-    const sub = BANK.filter(q=>!used.has(q.id) && ids.has(q.id));
-    if(sub.length) pool = sub;
+  const curIds = langFullIds(CUR_LANG);
+  const curSub = BANK.filter(q=>!used.has(q.id) && curIds.has(q.id));
+  if(curSub.length){ pool = curSub; }
+  else if(CUR_LANG!=="en"){
+    const enIds = langFullIds("en");
+    const enSub = BANK.filter(q=>!used.has(q.id) && enIds.has(q.id));
+    if(enSub.length) pool = enSub;
   }
   const maxD = Math.max(1, ...Object.values(dcount));
   const unc = {}; DIMS.forEach(d=> unc[d.key]=uncertainty(d.key, dimc[d.key]));
@@ -1993,13 +2109,13 @@ function archFamilyKey(a){
 }
 // 2x2 罗盘：上行=治理自由(L)，下行=治理威权(A)；左列=经济左(L)，右列=经济右(R)
 function renderFamilyBox(){
-  const fk=userFamilyKey(), fam=FAMILIES[fk], cur=CUR_LANG==="en";
-  const title = fam ? (cur?fam.en:fam.zh) : (cur?"Mixed / Undetermined":"混合 / 未定");
+  const fk=userFamilyKey(), fam=FAMILIES[fk];
+  const title = fam ? famName(fam) : g("混合 / 未定","Mixed / Undetermined");
   const cells=[
-    {k:"L_L",label:cur?"Lib-Left":"自由左派"},
-    {k:"R_L",label:cur?"Lib-Right":"自由右派"},
-    {k:"L_A",label:cur?"Auth-Left":"威权左派"},
-    {k:"R_A",label:cur?"Auth-Right":"威权右派"},
+    {k:"L_L",label:g("自由左派","Lib-Left")},
+    {k:"R_L",label:g("自由右派","Lib-Right")},
+    {k:"L_A",label:g("威权左派","Auth-Left")},
+    {k:"R_A",label:g("威权右派","Auth-Right")},
   ];
   const grid=cells.map(c=>`<div style="padding:9px 6px;border-radius:10px;font-size:12px;text-align:center;${c.k===fk?'background:var(--accent,#4f7cff);color:#fff;font-weight:700;':'background:rgba(127,127,127,.12);color:var(--muted,#888);'}">${c.label}</div>`).join("");
   const note = cur
@@ -2074,7 +2190,7 @@ function buildMiniBars(counts, res){
 function buildRadar(counts, res){
   const el=$("pRadar"); if(!el) return;
   const N=DIMS.length, R=52, C=100;   // 画布 200×200：留足边距，避免轴标签被裁切
-  const rlab=(d)=> CUR_LANG==="en" ? d.key : d.name;   // 轴标签用紧凑短名，英文取维度键避免超宽
+  const rlab=(d)=> CUR_LANG==="zh" ? d.name : d.key;   // 轴标签：中文用全名，其它语言用紧凑维度键避免超宽
   const nets=DIMS.map(d=>{ const c=counts[d.key]; const l=c[d.poles[0].k]||0, r=c[d.poles[1].k]||0; const t=l+r; return t<=0?0:(r-l)/t; });
   const ang=i=>-Math.PI/2 + i*2*Math.PI/N;
   const rings=[0.25,0.5,0.75,1].map(f=>DIMS.map((_,i)=>`${(C+f*R*Math.cos(ang(i))).toFixed(1)},${(C+f*R*Math.sin(ang(i))).toFixed(1)}`).join(" ")).map(p=>`<polygon points="${p}" fill="none" stroke="var(--svg-grid)" stroke-width="1"/>`).join("");
@@ -2103,7 +2219,7 @@ function renderFigures(primary, secs){
         detailHtml += '<h4>'+g('主要事迹','Major deeds')+'</h4>';
         detailHtml += '<div class="fig-deeds">';
         f.deeds.forEach(d=>{
-          detailHtml += `<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">${CUR_LANG==='en'?(d.t_en||d.t):d.t}</div><div class="fig-deed-d">${CUR_LANG==='en'?(d.d_en||d.d):d.d}</div></div></div>`;
+          detailHtml += `<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">${pick(d,'t')}</div><div class="fig-deed-d">${pick(d,'d')}</div></div></div>`;
         });
         detailHtml += '</div>';
       }
@@ -2120,7 +2236,7 @@ function renderFigures(primary, secs){
     html += `<div class="fig-card" onclick="this.classList.toggle('expanded')">
       <div class="fig-avatar" title="${f.name}">${makePortrait(f.name+'|'+f.en)}</div>
       <div class="fig-body">
-        <div class="fig-name">${figName(f)}<span class="en">${CUR_LANG==='en'?(f.name):(f.en||'')}</span></div>
+        <div class="fig-name">${figName(f)}<span class="en">${CUR_LANG==='zh'?(f.en||''):(f['name_'+CUR_LANG]||f.en||'')}</span></div>
         <div class="fig-meta">${f.years||''}${fen(f,'role')?(' · '+fen(f,'role')):''}</div>
         <div class="fig-note">${fen(f,'note')}</div>
         ${hasDetail ? '<div class="fig-toggle">'+g('查看详细事迹','View details')+'</div>' : ''}
@@ -2497,7 +2613,7 @@ async function downloadCard(){
   // 标题 + 签名 + 家族徽标
   x.fillStyle="#1f2933"; x.font="bold 42px sans-serif"; x.fillText(g("我的价值观光谱画像","My Values Spectrum Profile"), 48, 84);
   x.fillStyle="#3b6df0"; x.font="bold 20px monospace"; x.fillText(g("签名 ","Signature ")+sig, 48, 122);
-  if(fam){ x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.textAlign="right"; x.fillText("· "+(CUR_LANG==="en"?fam.en:fam.zh), W-48, 122); x.textAlign="left"; }
+  if(fam){ x.fillStyle="#3b6df0"; x.font="bold 15px sans-serif"; x.textAlign="right"; x.fillText("· "+famName(fam), W-48, 122); x.textAlign="left"; }
   // 主阵营
   x.fillStyle="#3b6df0"; x.font="bold 46px sans-serif"; x.fillText(archName(primary), 48, 186);
   x.fillStyle="#1f2933"; x.font="17px sans-serif";
@@ -2543,11 +2659,11 @@ function copySummary(){
   const res=dominantPoles(RESULT_COUNTS);
   const primary=matchPrimary(RESULT_COUNTS);
   const sig=DIMS.map(d=>res[d.key]==="混合"?"·":res[d.key]).join("");
-  const sep = CUR_LANG==="en" ? "; " : "；";
-  const fsep = CUR_LANG==="en" ? ", " : "、";
+  const sep = CUR_LANG==="zh" ? "；" : "; ";
+  const fsep = CUR_LANG==="zh" ? "、" : ", ";
   const dimsTxt=DIMS.map(d=>`${dname(d)}: ${dimLean(d.key)} (${dimPct(d.key)}%)`).join(sep);
-  const figs=(FIGURES[primary.name]||[]).map(f=>figName(f)).join(fsep) || (CUR_LANG==="en"?"(none listed yet)":"（暂无收录）");
-  const text = CUR_LANG==="en"
+  const figs=(FIGURES[primary.name]||[]).map(f=>figName(f)).join(fsep) || g("（暂无收录）","(none listed yet)");
+  const text = CUR_LANG!=="zh"
     ? `【My Ideological Profile】\nDimensional signature: ${sig}\nClosest camp: ${archName(primary)}\n${primary.desc_en||primary.desc}\n\nDimensional leanings:\n${dimsTxt}\nRepresentative figures: ${figs}\n—— Political Spectrum Test · Adaptive (educational use)`
     : `【我的意识形态画像】\n维度签名：${sig}\n最契合阵营：${primary.name}\n${primary.desc}\n\n各维度倾向：\n${dimsTxt}\n代表人物：${figs}\n—— 意识形态测试 · 自适应版（教育用途）`;
   const done=()=>toast(g("已复制结果摘要","Result summary copied"));
@@ -2591,7 +2707,7 @@ function renderArchList(list){
         if(f.bio) detail += '<div class="fig-bio" style="font-size:12px;margin-bottom:8px;">'+fen(f,'bio')+'</div>';
         if(f.deeds && f.deeds.length){
           detail += '<div class="fig-deeds">';
-          f.deeds.forEach(d=>{ detail += '<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">'+(CUR_LANG==='en'?(d.t_en||d.t):d.t)+'</div><div class="fig-deed-d">'+(CUR_LANG==='en'?(d.d_en||d.d):d.d)+'</div></div></div>'; });
+          f.deeds.forEach(d=>{ detail += '<div class="fig-deed"><div class="fig-deed-body"><div class="fig-deed-t">'+pick(d,'t')+'</div><div class="fig-deed-d">'+pick(d,'d')+'</div></div></div>'; });
           detail += '</div>';
         }
         if(f.works && f.works.length){
@@ -2602,7 +2718,7 @@ function renderArchList(list){
         figsHtml += '<div class="ac-fig-mini">'+
           '<div class="fig-avatar" title="'+f.name+'">'+makePortrait(f.name+'|'+(f.en||''))+'</div>'+
           '<div class="fig-body">'+
-          '<div class="fig-name">'+figName(f)+(CUR_LANG==='en'?('<span class="en">'+f.name+'</span>'):(f.en?'<span class="en">'+f.en+'</span>':''))+'</div>'+
+          '<div class="fig-name">'+figName(f)+(CUR_LANG==='zh'?(f.en?'<span class="en">'+f.en+'</span>':''):((f['name_'+CUR_LANG]||f.en)?'<span class="en">'+(f['name_'+CUR_LANG]||f.en)+'</span>':''))+'</div>'+
           '<div class="fig-meta">'+(f.years||'')+(fen(f,'role')?(' · '+fen(f,'role')):'')+'</div>'+
           '<div class="fig-note">'+fen(f,'note')+'</div>'+
           detail+
