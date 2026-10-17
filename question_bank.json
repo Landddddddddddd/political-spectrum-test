@@ -38008,9 +38008,7 @@
         ]
       }
     ]
-  }
-
-,
+  },
   {
     "id": 891,
     "domain": "社区邻里",
@@ -40770,5 +40768,484 @@
     ],
     "scene_en": "At your child's school a transgender classmate prompts some parents to petition for separate restrooms and dorms; the school hesitates.",
     "domain_en": "Minority Groups"
+  },
+  {
+    "id": 951,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "楼下新开的深夜厨房常营业到凌晨三点，油烟机和客人说话声穿过窗户，几户邻居在群里吵成两派，物业约大家当面谈一次。",
+    "scene_en": "A late-night kitchen downstairs stays open until 3 a.m.; exhaust noise and customer chatter drift through windows. Neighbors are feuding in the group chat, and property management has called everyone for a face-to-face talk.",
+    "options": [
+      {
+        "t": "我提请物业和市场监管设噪音与营业时间上限，公共楼栋里的作息冲突得有明确规矩兜底。",
+        "t_en": "I'd ask management and market regulators to set noise and operating-hour limits; routine conflicts in shared buildings need clear rules as a backstop.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我先登门跟店主商量错峰排风和加装隔音棉，多数矛盾在撕破脸之前都谈得拢。",
+        "t_en": "I'd first knock on the owner's door to work out staggered ventilation and soundproofing; most disputes can be settled before they turn ugly.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我反对一刀切限制营业时间，做小生意的不容易，受不了的住户可以自己加装隔音窗。",
+        "t_en": "I oppose blanket limits on operating hours — small businesses struggle enough; residents bothered by noise can install soundproof windows themselves.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我建议由业主和商户共同出资建公共隔音改造基金，成本和受益放在一起摊。",
+        "t_en": "I'd propose a shared soundproofing fund co-financed by residents and the shop, splitting costs where the benefits land.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我睡得沉不太受影响，两边吵架我懒得掺和，谁也别拿我当票数。",
+        "t_en": "I sleep through it and barely notice; I can't be bothered to pick a side, and neither camp should count me as a vote.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 952,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "你所在的读书俱乐部里，有位成员持续分享阴谋论书单并组织线下讨论，另有成员要求俱乐部把他除名，会长把决定权交给全体会员。",
+    "scene_en": "In your book club, one member keeps sharing conspiracy-theory reading lists and hosting meetups. Others demand his removal; the chair puts the decision to a full member vote.",
+    "options": [
+      {
+        "t": "我投留任，除非他煽动伤害具体的人，俱乐部没资格给书单划正误。",
+        "t_en": "I'd vote to keep him — unless he incites harm against specific people, a book club has no business ruling reading lists right or wrong.",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我投除名，俱乐部是小共同体，守住共同底线比收留任何观点都重要。",
+        "t_en": "I'd vote him out — a club is a small community, and keeping a shared bottom line matters more than accommodating every viewpoint.",
+        "tags": [
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我提议平行办辩论专场，请他和质疑者同台，比投票除名更有意思。",
+        "t_en": "I'd propose a debate night where he faces his critics on stage — more interesting than a removal vote.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我建议俱乐部设内容分级标签，他继续办他的专场，不感兴趣的会员可屏蔽推送。",
+        "t_en": "I'd suggest content labels: he keeps his own track, and uninterested members can simply filter it out.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这种撕扯太消耗了，我打算退会省心，书去哪儿读不行。",
+        "t_en": "This infighting drains me; I'd rather just quit the club — I can read books anywhere.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 953,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "你所在城市的老牌纺织厂因海外订单转移而半停产，工会、厂方和市政府开会讨论出路，员工拿到三份差别很大的方案。",
+    "scene_en": "Your city's legacy textile mill is half-shut after overseas orders moved away. The union, management, and city government meet to chart a way out, and workers hold three very different proposals.",
+    "options": [
+      {
+        "t": "我支持政府给转型补贴并强制再培训计划，把工人送进自动化产线是新订单的前提。",
+        "t_en": "I back government transition subsidies with mandatory retraining — moving workers onto automated lines is the precondition for new orders.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我反对拿公共财政续命夕阳产能，该关就关，遣散费谈判交给劳资双方。",
+        "t_en": "I oppose public money propping up sunset capacity — if it must close, let it; severance is between labor and management.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我想推动工人持股接管，把厂子改成合作社接小批量定制单，自己当家。",
+        "t_en": "I'd push a worker buyout — turn the mill into a cooperative taking small custom orders, with workers as owners.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我主张把厂房改造成物流仓储园区出租，租金养人，纺织这块就让它过去。",
+        "t_en": "I'd convert the plant into a leased logistics park — rent sustains the workers, and textiles can be left behind.",
+        "tags": [
+          "ECO:R",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我年近退休不太在乎方案细节，谁能保证我这几年的工资和社保我就跟谁。",
+        "t_en": "Nearing retirement, I care little for the plans' details — I'll back whoever guarantees my wages and benefits for the years left.",
+        "tags": [
+          "COL:I",
+          "ECO:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 954,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "你老家县城要上一个稀土提炼项目，税收和两千个岗位随之而来，但环评显示尾矿库距水源保护区只有八公里，县里正在听证。",
+    "scene_en": "Your home county is weighing a rare-earth refining project promising tax revenue and two thousand jobs — but the environmental assessment puts its tailings pond just eight kilometers from a water-source protection zone, and a public hearing is underway.",
+    "options": [
+      {
+        "t": "我支持项目落地，脱贫机会等不起，环保措施写进合同盯紧执行就行。",
+        "t_en": "I support the project — an escape from poverty can't wait; write the safeguards into the contract and enforce them closely.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我反对选址，水源一旦污染没有回头路，这个账怎么算都不划算。",
+        "t_en": "I oppose the site — once the water is contaminated there is no undoing it; by any accounting the deal fails.",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我建议先补做流域风险模型和第三方监测，数据齐了再投票。",
+        "t_en": "I'd call for a watershed risk model and third-party monitoring first — vote once the data is in.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我主张照常上马但提高环境税和押金比例，用钱把潜在治理成本先锁住。",
+        "t_en": "I'd proceed but raise the environmental levy and deposit share, locking in funds for potential cleanup up front.",
+        "tags": [
+          "ENV:G",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我不在县城住了，就业和水源都不直接轮到我，听证会我就不去了。",
+        "t_en": "I no longer live in the county; neither jobs nor the water table affect me directly, so I'd skip the hearing.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 955,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene": "你所在的医院打算引入 AI 分诊系统，初诊准确率略高于值班医生，但系统是黑盒，出错时医生要花额外时间复核并承担签字责任。",
+    "scene_en": "Your hospital plans to roll out an AI triage system whose initial-assessment accuracy slightly exceeds on-duty doctors' — but the model is a black box, and when it errs, doctors spend extra time reviewing and bear signature liability.",
+    "options": [
+      {
+        "t": "我欢迎上线，整体准确率更高就是更少人被误判，黑盒不是理由。",
+        "t_en": "I welcome the rollout — higher overall accuracy means fewer misjudged patients; a black box is no objection.",
+        "tags": [
+          "TECH:K",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我要求可解释版本或先做影子运行，签字责任落在我头上，我就得看得懂它为什么这么判。",
+        "t_en": "I'd demand an explainable version or a shadow run first — if the liability lands on my signature, I must understand why it decides as it does.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我建议人机双轨并行一年，用真实病例对账后再决定谁主导。",
+        "t_en": "I'd run human and AI tracks in parallel for a year, reconciling real cases before deciding who leads.",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我担心医院借机压缩医生编制，要求合同写明 AI 只辅助不替代。",
+        "t_en": "I suspect the hospital will use this to cut doctor headcount, so I'd require contract language that AI assists but never replaces.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "轮到谁签字谁操心，反正系统好用我就用，不好用我照样按老办法来。",
+        "t_en": "Whoever signs takes the worry; I'll use the system if it works and fall back on old habits if it doesn't.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 956,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene": "你作为陪审团候选人在一桩小额债务案旁听资格筛选中，法官问：如果被告出示了微信转账记录但拒收传票缺席审理，你是否能接受缺席判决。另一位候选人当场表示绝不接受。",
+    "scene_en": "You are a jury-pool candidate in small-claims screening. The judge asks whether you could accept a default judgment against a defendant who showed WeChat transfer records but refused service and skipped the hearing. Another candidate flatly says he never could.",
+    "options": [
+      {
+        "t": "我能接受，程序规则对双方一体适用，逃避传票不该换来无限延期。",
+        "t_en": "I could accept it — procedural rules bind both sides alike, and dodging service shouldn't buy endless delays.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我不能接受，缺席裁判容易漏掉关键抗辩，宁可多传唤几次也要人到场。",
+        "t_en": "I couldn't accept it — default rulings can miss key defenses; summons again and again until the person shows up.",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我建议设定严格前置条件，平台交易记录经公证后缺席判决才生效。",
+        "t_en": "I'd set strict preconditions: a default judgment takes effect only if the platform's transaction records are notarized.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我倾向给被告一次线上出庭的补救机会，公平感比效率更影响人守不守法。",
+        "t_en": "I'd give the defendant one chance to appear online — perceived fairness matters more than efficiency for compliance.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "几千块钱的案子走什么程序我无所谓，别叫我再来陪审就行。",
+        "t_en": "For a case of a few thousand yuan I don't much care about procedure — just don't call me for jury duty again.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 957,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene": "你关注的调查记者账号发文指认某供应链存在造假，涉事企业发律师函否认并要求平台下架，文章被限流，粉丝群在争论该信谁。",
+    "scene_en": "An investigative journalist you follow publishes evidence of fraud in a supply chain. The implicated company sends lawyer letters denying it and demands the platform take the article down; the post's reach is throttled, and your fan group is arguing over whom to believe.",
+    "options": [
+      {
+        "t": "我要求平台公开限流和下架的具体依据，暗箱处置比错误报道更伤信任。",
+        "t_en": "I'd demand the platform publish the exact grounds for throttling and takedown — opaque handling corrodes trust more than a mistaken report.",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我倾向等司法或监管结论再站队，律师函和爆料都只是各自的秤。",
+        "t_en": "I'd wait for a court or regulator's finding before picking sides — lawyer letters and exposés each carry their own weight.",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我自己动手核查原始单据和报关数据，证据链看得见我才转。",
+        "t_en": "I'd dig into the original documents and customs data myself — I share only what I can trace.",
+        "tags": [
+          "COL:I",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我支持平台对未证实的指控加显著标记并限流，谣言跑得比核实快。",
+        "t_en": "I support prominent unverified-claim labels and throttling — rumors outrun fact-checks.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我建议读者众筹设独立核查基金，请第三方机构逐条验证双方说法。",
+        "t_en": "I'd pitch a reader-funded independent verification fund, having a third party test each side's claims item by item.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 958,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "台风季前，你所在的沿海街道要决定是否把一段年久失修的海堤加高两米，工程款需要沿街住户按受益面积分摊三成，地势高的住户质疑自己凭什么掏钱。",
+    "scene_en": "Before typhoon season, your coastal district must decide whether to raise a crumbling seawall by two meters. Households along the street would cover thirty percent of the cost by benefited floor area, and residents on higher ground question why they should pay at all.",
+    "options": [
+      {
+        "t": "我支持按受益面积分摊，堤防是整体，高处的住户也别想搭便车白保护。",
+        "t_en": "I support cost-sharing by benefited area — the seawall works as a whole, and high-ground residents shouldn't ride free on its protection.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我反对强制分摊，应由财政全额承担防灾工程，防灾本来就是公共品。",
+        "t_en": "I oppose mandatory cost-sharing — disaster works should be fully publicly funded; protection is a public good by nature.",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我提议只加高地势低街段的堤段并配挡水板，把钱花在刀刃上。",
+        "t_en": "I'd raise only the low-lying segments and add flood boards — spend the money where it cuts risk most.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我想先要一份海平面与风暴潮的十年预测模型，再决定加多高、摊多少。",
+        "t_en": "I'd first request a ten-year sea-level and storm-surge model, then decide how high to build and how to split the cost.",
+        "tags": [
+          "ENV:S",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我家在三层从没淹过，摊派名单里有我我就投反对。",
+        "t_en": "My third-floor home has never flooded; if the assessment list includes me, I'll vote no.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 959,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene": "你常用的短视频平台上线了自动个性化推送总开关，默认开启且藏在四级菜单里，用户组织发起「一键关闭」联署，平台回应说算法推荐提升了大家的使用满意度。",
+    "scene_en": "Your short-video platform launches a master switch for personalized recommendations — on by default and buried four menus deep. A user group starts a petition for one-tap opt-out; the platform replies that algorithmic feeds raise user satisfaction.",
+    "options": [
+      {
+        "t": "我支持立法要求个性化推送默认关闭，想开的人自己去开，选择权不该被菜单深度吃掉。",
+        "t_en": "I back legislation making personalized feeds opt-in — those who want them can turn them on; choice shouldn't die in a menu's depth.",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我觉得无所谓，推送合我口味我用着挺顺手，深不深菜单不碍事。",
+        "t_en": "I don't mind — the feed suits my taste and works smoothly; menu depth is no trouble.",
+        "tags": [
+          "COL:I",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我建议平台提供推荐理由说明功能，看到它为什么推这条，我自己决定关不关。",
+        "t_en": "I'd push for recommendation explanations — once I see why a video was served, I'll decide myself whether to switch off.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我担心未成年人被动沉迷，支持对未成年账户强制默认关闭并限制夜间推送。",
+        "t_en": "I worry minors get hooked passively; I support forced opt-out defaults and night-time feed limits for minors' accounts.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "联署我签了个名，但我不指望平台让步，真嫌烦我早卸载了。",
+        "t_en": "I signed the petition, but I don't expect the platform to budge — had it truly bothered me, I'd have uninstalled already.",
+        "tags": [
+          "COL:I",
+          "CUL:P"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 960,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "你所在的业余足球联赛引入了半自动越位识别系统，判罚精度上升但比赛被频繁打断，队员和观众都抱怨节奏没了，联赛委员会让大家投票决定保留、取消还是限时使用。",
+    "scene_en": "Your amateur football league has introduced semi-automated offside detection. Calls are more accurate, but matches are interrupted constantly, and players and fans grumble that the rhythm is gone. The league committee puts it to a vote: keep it, scrap it, or use it only in select situations.",
+    "options": [
+      {
+        "t": "我投保留，误判引发的争吵比暂停多耗十分钟更毁比赛。",
+        "t_en": "I vote keep — arguments over a bad call ruin a match more than a ten-minute pause does.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我投取消，业余联赛图的是流畅和友情，差半米的越位没人真在乎。",
+        "t_en": "I vote scrap — amateur leagues are about flow and camaraderie; nobody truly cares about an offside by half a meter.",
+        "tags": [
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我投只在进球和争议时段启用，平时让比赛自己呼吸。",
+        "t_en": "I vote to use it only for goals and disputed moments, letting the match breathe the rest of the time.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我提议由各队队长协商每场是否启用，把决定权留在场上的人手里。",
+        "t_en": "I'd let the teams' captains negotiate per match whether to use it — leave the call to those on the pitch.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我是替补常坐冷板凳，系统在不在都行，能多踢几分钟比什么都强。",
+        "t_en": "I'm a substitute warming the bench — system or not, a few extra minutes on the pitch beat anything else.",
+        "tags": [
+          "COL:I"
+        ]
+      }
+    ]
   }
 ]

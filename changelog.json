@@ -548,9 +548,7 @@
       "ideologies": 200,
       "domains": 30
     }
-  }
-
-,
+  },
   {
     "date": "2026-10-16",
     "title": "每日题库扩展 +60 题（补跑 2026-10-11~10-16）",
@@ -563,6 +561,20 @@
     ],
     "stats": {
       "questions": 950,
+      "ideologies": 200,
+      "domains": 30
+    }
+  },
+  {
+    "date": "2026-10-17",
+    "title": "每日题库扩展 +10 题",
+    "items": [
+      "新增领域：社区邻里、言论表达、贸易产业、环境生态、科技AI、司法法治、媒体信息、气候灾害、数字平台、体育竞技（各 1 题）",
+      "全部新题含完整英文源（scene_en/domain_en/options.t_en）",
+      "选项预设立场扫描 0 命中；ENV/TECH/SEC 维度语义已复核"
+    ],
+    "stats": {
+      "questions": 960,
       "ideologies": 200,
       "domains": 30
     }
