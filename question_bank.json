@@ -41294,6 +41294,11 @@
           "COL:M",
           "NAT:N"
         ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
       }
     ]
   },
@@ -41335,6 +41340,11 @@
           "COL:I",
           "GOV:A"
         ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
       }
     ]
   },
@@ -41384,6 +41394,11 @@
           "ECO:R",
           "NAT:C"
         ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
       }
     ]
   },
@@ -41425,6 +41440,11 @@
           "CUL:T",
           "COL:M"
         ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
       }
     ]
   },
@@ -41466,6 +41486,11 @@
           "COL:M",
           "GOV:A"
         ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
       }
     ]
   },
@@ -41507,6 +41532,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
       }
     ]
   },
@@ -41556,6 +41586,11 @@
           "COL:M",
           "CUL:T"
         ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
       }
     ]
   },
@@ -41597,6 +41632,11 @@
           "COL:I",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
       }
     ]
   },
@@ -41638,6 +41678,11 @@
           "GOV:L",
           "ECO:R"
         ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
       }
     ]
   },
@@ -41679,6 +41724,11 @@
           "ENV:S",
           "TECH:U"
         ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
       }
     ]
   },
@@ -41728,6 +41778,11 @@
           "ECO:L",
           "GOV:A"
         ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
       }
     ]
   },
@@ -41769,6 +41824,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
       }
     ]
   },
@@ -41818,6 +41878,11 @@
           "COL:I",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
       }
     ]
   },
@@ -41867,6 +41932,11 @@
           "ECO:R",
           "GOV:A"
         ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
       }
     ]
   },
@@ -41908,6 +41978,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
       }
     ]
   },
@@ -41949,6 +42024,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
       }
     ]
   },
@@ -41998,6 +42078,11 @@
           "NAT:N",
           "GOV:A"
         ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
       }
     ]
   },
@@ -42039,6 +42124,11 @@
           "ENV:G",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
       }
     ]
   },
@@ -42080,6 +42170,11 @@
           "GOV:L",
           "CUL:P"
         ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
       }
     ]
   },
@@ -42129,6 +42224,11 @@
           "COL:I",
           "SEC:E"
         ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
       }
     ]
   },
@@ -42170,6 +42270,11 @@
           "ECO:L",
           "GOV:A"
         ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
       }
     ]
   },
@@ -42211,6 +42316,11 @@
           "GOV:L",
           "ENV:S"
         ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
       }
     ]
   },
@@ -42252,6 +42362,11 @@
           "GOV:A",
           "COL:I"
         ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
       }
     ]
   },
@@ -42293,6 +42408,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
       }
     ]
   },
@@ -42334,6 +42454,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
       }
     ]
   },
@@ -42375,6 +42500,11 @@
           "COL:M",
           "ECO:L"
         ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
       }
     ]
   },
@@ -42416,6 +42546,11 @@
           "ENV:S",
           "COL:M"
         ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
       }
     ]
   },
@@ -42465,6 +42600,11 @@
           "TECH:U",
           "COL:I"
         ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
       }
     ]
   },
@@ -42506,6 +42646,11 @@
           "COL:M",
           "GOV:A"
         ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
       }
     ]
   },
@@ -42547,6 +42692,11 @@
           "COL:I",
           "CUL:P"
         ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
       }
     ]
   },
@@ -42588,6 +42738,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
       }
     ]
   },
@@ -42629,6 +42784,11 @@
           "ECO:L",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
       }
     ]
   },
@@ -42670,6 +42830,11 @@
           "GOV:A",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
       }
     ]
   },
@@ -42711,6 +42876,11 @@
           "ECO:R",
           "GOV:L"
         ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
       }
     ]
   },
@@ -42760,6 +42930,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
       }
     ]
   },
@@ -42801,6 +42976,11 @@
           "GOV:A",
           "COL:I"
         ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
       }
     ]
   },
@@ -42842,6 +43022,11 @@
           "COL:I",
           "GOV:L"
         ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
       }
     ]
   },
@@ -42883,6 +43068,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
       }
     ]
   },
@@ -42924,6 +43114,11 @@
           "GOV:L",
           "COL:I"
         ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
       }
     ]
   },
@@ -42965,6 +43160,11 @@
           "ECO:R",
           "COL:M"
         ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
       }
     ]
   }
