@@ -608,5 +608,19 @@
       "ideologies": 200,
       "domains": 30
     }
+  },
+  {
+    "date": "2026-10-24",
+    "title": "每日题库扩展 +10题",
+    "items": [
+      "新增领域：移民文化、贸易产业、环境生态、监控隐私、性别平权、科技AI、司法法治、宗教与信仰、住房城市、农业食品（各 1 题，ID 1001-1010）",
+      "全部新题含英文源（scene_en/domain_en/options.t_en）",
+      "每题含 1 个中立跳过选项（tags:[]）"
+    ],
+    "stats": {
+      "questions": 1010,
+      "ideologies": 200,
+      "domains": 30
+    }
   }
 ]

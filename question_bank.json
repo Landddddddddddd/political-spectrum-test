@@ -43167,5 +43167,459 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1001,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene": "我们镇的议会在重新设计老城区的街道指示牌。过去十年里，约有三分之一的居民来自海外，议会同时收到了两份请愿：一份要求在本地语言的地名下方加注第二语言，另一份要求路牌保持原样。还有一个折中方案：只在一小部分街道上加注较小的第二语言文字，前提是该街道四分之一的商户联名同意。预算只够实施其中一种方案，表决就定在下个月的会议上。作为每天都要走这些街道的居民，你会支持哪一种？",
+    "scene_en": "Our town council is redesigning the street signs in the old district. Over the past decade, about a third of residents have arrived from abroad, and the council has received petitions both for adding a second language under the local-language place names and for keeping the signs exactly as they are. A compromise proposal would add smaller second-language text only on streets where a quarter of shop owners sign on. The budget covers only one approach, and the vote is at next month's meeting. As a resident who walks these streets daily, which would you support?",
+    "options": [
+      {
+        "t": "我会投票支持在整个老城区都加注第二语言。新来的居民看到和自己语言相通的路牌，找路会容易得多，而且双语路牌能让人们感到这个镇欢迎他们留下来、扎下根。",
+        "t_en": "I would vote to add the second-language text across the whole old district. Newcomers navigate more easily when signs speak to them, and visible multilingualism signals that the town expects people to stay and put down roots.",
+        "tags": [
+          "NAT:C",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会投票支持路牌只用本地语言。地名是小镇共同历史的一部分，一条街一条街地替换，会慢慢消解大家共同学过的那套地名参照；新来的居民可以像更早的移民一样，把本地语言学会。",
+        "t_en": "I would vote to keep the signs in the local language only. Place names are part of the town's shared history, and swapping them street by street erodes a common reference that everyone learned; newcomers can pick up the local language the way earlier arrivals did.",
+        "tags": [
+          "NAT:N",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会支持按四分之一商户联署门槛的折中方案。预算花在确实有需求的地段，不给从未提出要求的街道强加改变，同时人口集中的社区也能得到看得见的认可。",
+        "t_en": "I would back the quarter-threshold compromise. It spends the budget where demand is real, avoids a town-wide decision imposed on streets that never asked for it, and still gives the concentrated communities visible recognition.",
+        "tags": [
+          "COL:M",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会提议用同一笔预算，把固定路牌换成行人可自行切换显示语言的电子路牌。这样一来，实体路牌本身不偏向任何一种语言，选择权留在每个看牌的人手里。",
+        "t_en": "I would propose replacing the static signs with displays that let pedestrians switch languages, funded by the same budget. Then no language is privileged on the physical sign, and the choice stays with each reader.",
+        "tags": [
+          "COL:I",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1002,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "你所在地区的一家国产太阳能板工厂雇有 1400 名员工，是一座中等城镇最大的雇主。如今品质相近的进口板便宜了三成，当地安装商反映，选进口板的客户越来越多。一个行业协会正在游说对进口板征收临时关税；主张自由贸易的人则反驳说，更便宜的板材能加速能源转型，而保护措施会抬高每一次安装的成本。议会一个专门委员会即将举行听证会，并接受公民提交意见书。",
+    "scene_en": "A domestic solar panel factory in your region employs 1,400 people and is the largest employer in a mid-sized town. Imported panels of similar quality now sell for 30% less, and local installers report that customers increasingly choose imports. An industry group is lobbying for a temporary tariff on imported panels; free-trade advocates counter that cheaper panels speed up the energy transition and that protection would raise costs for every installation. A parliamentary committee will hold hearings soon and accepts submissions from citizens.",
+    "options": [
+      {
+        "t": "我会在听证会上支持临时关税。工厂一旦关闭，小镇一夜之间失去最大雇主，而重新培训 1400 名工人要花好几年；有限期的关税能给工厂争取到追平成本差距的时间。",
+        "t_en": "I would submit in favor of the temporary tariff. If the factory closes, the town loses its main employer overnight, and retraining 1,400 workers takes years; a time-limited tariff gives the plant room to close the cost gap.",
+        "tags": [
+          "NAT:N",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会在听证会上反对征收关税。关税每多收一年，太阳能安装成本就高一分，减排也就慢一步；扶持一家工厂的代价被摊到所有能源消费者头上，工人的安置应该靠再培训预算，而不是贸易壁垒。",
+        "t_en": "I would submit against the tariff. Every year of it adds cost to solar installations and slows down emissions cuts, and propping up one plant shifts the burden onto all energy consumers; support for the workers should come from retraining budgets, not trade barriers.",
+        "tags": [
+          "NAT:C",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会反对关税，但支持设立配套基金，帮工厂转向进口产品难以替代的部件生产，同时立刻提供再培训机会。竞争应该保留，但转型成本应当由公共财政分摊，而不是全部砸在一个镇头上。",
+        "t_en": "I would oppose the tariff but back a matching fund for the factory to retool toward components imports cannot substitute, plus immediate retraining offers. Competition should stand, but the adjustment costs should be shared publicly rather than dumped on one town.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会推动用强制的产地与全生命周期标签替代关税，让购买者自己权衡价格与板材的产地、生产方式。比起一刀切的进口税，我更相信知情之后的市场选择。",
+        "t_en": "I would push for mandatory origin and lifecycle labeling instead of a tariff, so buyers can weigh price against where and how panels are made. I trust an informed market more than a blanket tax on imports.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1003,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "你所在城市边缘有一片 60 公顷的湿地，是候鸟的栖息地，也承担着吸纳河流洪水的功能。市住房部门提出在其中一半土地上建 3000 套住宅，理由是全市有 2 万户家庭在排队等房；生态学家则警告，剩下的一半湿地既养活不了现有的鸟类种群，也无法独自应对洪峰。目前桌面上还有两个备选：在最不敏感的三分之一地块上建 1200 套的缩减方案；或者全部否决，把建设推到更远处的一片洪泛区。议会下月表决。",
+    "scene_en": "A 60-hectare wetland on the edge of your city shelters migratory birds and absorbs floodwater from the river. The city housing authority proposes building 3,000 apartments on half of it, citing a waiting list of 20,000 households; ecologists warn the remaining half cannot sustain the current bird populations or handle peak floods alone. A scaled-down plan of 1,200 apartments on the least sensitive third is on the table, as is a full rejection that pushes construction to a floodplain farther out. The council votes next month.",
+    "options": [
+      {
+        "t": "我会投票否决整个项目。湿地一旦被铺上水泥，洪水风险就转移进了沿河城区，鸟群也不会再回来；住宅可以另找地方建，但这片栖息地毁掉之后就重建不回来了。",
+        "t_en": "I would vote to reject the project outright. Once the wetland is paved, the flood risk moves into the river district and the birds do not come back; housing can be built elsewhere, but this habitat cannot be rebuilt.",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会投票支持完整的 3000 套方案。两万户家庭还在排队，把开发推到远处的洪泛区，不过是把别处的环境铺掉而已；在紧邻现有交通的市有土地上集中建设，对住房需求和城市紧凑发展都更有利。",
+        "t_en": "I would vote for the full 3,000 apartments. Twenty thousand households are waiting, and pushing development to a distant floodplain only paves over someone else's environment; a compact project on city-owned land next to existing transit serves both goals better.",
+        "tags": [
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会支持在最不敏感地块上建 1200 套的缩减方案。它能在不触碰核心栖息地的前提下交付实实在在的住房，我会要求开工前做独立生态评审，并把一部分收益专门用于湿地修复。",
+        "t_en": "I would back the 1,200-apartment plan on the least sensitive third. It delivers real housing without touching the core habitat, and I would require an independent ecological review before construction and ring-fence part of the revenue for wetland restoration.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持完整项目，但前提是开发商出资在上游建一块同等规模的人工湿地，并为此缴纳保证金。如果补偿确实有效，城市两头都能得到；如果无效，保证金就用来支付修复费用。",
+        "t_en": "I would support the full project only if the developer funds an equal-size constructed wetland upstream and posts a bond for it. If the offset genuinely works, the city gets both; if it does not, the bond pays for restoration.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1004,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "由于扒窃和自行车盗窃案增多，公共交通运营方提议在所属 200 座车站全面安装带人工智能的摄像头。系统会实时标记可疑行为模式，录像保留 30 天。一个公民自由组织要求要么不部署，要么把保存期缩短为 72 小时自动删除；运营方回应说 72 小时太短，因为受害者往往很晚才报案。公开征求意见正在进行中，你提交的意见会被记录在案。",
+    "scene_en": "After a rise in pickpocketing and bicycle theft, the transit operator proposes installing AI-enabled cameras across its 200 stations. The system would flag suspicious behavior patterns in real time and keep footage for 30 days. A civil liberties group demands either no deployment or a 72-hour auto-delete window; the operator responds that 72 hours is too short because victims often report crimes late. A public consultation is open, and your input will be recorded.",
+    "options": [
+      {
+        "t": "我会支持按原方案部署。三十天的录像破获过不少证人毫无印象的案件，对正常出行的人来说，公共交通空间里的摄像头并不可怕。",
+        "t_en": "I would support the rollout as proposed. Thirty days of footage has solved cases where witnesses remembered nothing, and people going about their day have little to fear from cameras in public transit spaces.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对这次部署。行为预测系统会把普通人的小动作标记成可疑，而且对某些群体的盘查远多于其他群体；我宁愿把钱花在增加站台工作人员上，也不想为了财产犯罪就让大规模录像成为常态。",
+        "t_en": "I would object to the deployment. Behavior-prediction systems flag ordinary quirks as suspicious and stop some groups far more than others; I would rather fund more staff on the platforms than normalize mass recording for property crime.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我只接受配上 72 小时自动删除、且延长保存必须严格凭司法令状的摄像头方案。如果证明 72 小时确实不够，运营方应该拿证据回来申请，而不是默认就拿到 30 天。",
+        "t_en": "I would accept the cameras only with the 72-hour auto-delete and a strict warrant rule for any extension. If that window proves too short, the operator can come back with evidence rather than getting 30 days by default.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会建议先在盗窃案最多的 20 座车站试点一年，每季度公开审计每一次系统标记和比对结果，让城市根据实测准确率和投诉数据做决定，而不是听任何一方的说法。",
+        "t_en": "I would suggest a one-year pilot at the twenty stations with the most thefts, with quarterly public audits of every flag and match, so the city decides on measured accuracy and complaint numbers instead of either side's assertions.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1005,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "你所在国家的议会正在重新设计育儿假。目前九成的带薪休假由母亲休掉，雇主们把这当作招聘年轻女性时犹豫的理由。方案一：每孩 12 个月带薪假在父母之间不可转让，谁不休就作废；方案二：维持现有灵活共享的假期池，另加一笔统一数额的生育补助金；方案三：假期总额更高，但完全由每个家庭自行分配。雇主担心成本，工会担心僵化，财政部门则想要一个能进预算的确切数字。",
+    "scene_en": "Your country's parliament is redesigning parental leave. Today, mothers take 90% of paid leave, which employers cite as a reason to hesitate before hiring young women. One proposal makes 12 months of paid leave per child strictly non-transferable between parents; another keeps the current flexible pool and adds a flat birth grant instead; a third offers generous leave but lets each family split it however it wants. Employers warn about costs, unions warn about rigidity, and the finance ministry wants a number it can budget.",
+    "options": [
+      {
+        "t": "我会支持不可转让的 12 个月方案。假期不休就作废，父亲就会去休；等招聘主管看到男性和女性离职休假的可能性一样大，他们犹豫要不要招年轻女性的借口就站不住脚了。",
+        "t_en": "I would support the non-transferable twelve months. If leave lapses when unused, fathers take it, and once hiring managers see both sexes as equally likely to leave, the excuse for hesitating over young women loses its footing.",
+        "tags": [
+          "CUL:P",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持保留灵活共享的假期池。每个家庭情况不同，护士和倒班工人组成的家庭，与两个自由职业者的安排完全不一样；我宁愿相信父母自己分配时间，也不想让一部法律替他们做决定。",
+        "t_en": "I would support keeping the flexible pool. Families differ — a nurse married to a shift worker plans differently from two freelancers — and I would rather trust parents to divide the time than have a statute decide for them.",
+        "tags": [
+          "COL:I",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会支持统一数额的生育补助金。现金对任何家庭形态都管用，又不规定谁必须留在家里，还避免给雇主提供一个预测应聘者将来休不休假的新由头。",
+        "t_en": "I would back the flat birth grant. Cash supports every family shape without dictating who stays home, and it avoids handing employers any fresh reason to guess at a candidate's future leave.",
+        "tags": [
+          "COL:I",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会让育儿假成本由雇主和国家分摊，不让任何一家企业独自承担全额账单。否则假期池只是纸面上还在，招聘主管早就悄悄把这份风险算进了女性的职业发展里。",
+        "t_en": "I would split the cost of leave between employers and the state so no single firm bears the full bill. Otherwise the flexible pool survives on paper while hiring managers quietly price the risk into women's careers.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene": "你所在城市的交通管理中心目前仍由人工调控信号灯。一家供应商推出了号称能把平均通勤时间缩短 18% 的人工智能系统，它靠预测拥堵来调灯，但系统是个黑箱，供应商拒绝公开源代码。另有一个开源替代方案，预测精度稍逊，但任何人都能逐行审查其代码。议会必须在预算内二选一，两套系统都配有紧急情况的人工接管开关。",
+    "scene_en": "Your city's traffic management center still relies on human operators adjusting signals. A vendor offers an AI system that claims to cut average commute time by 18% by predicting congestion, but it operates as a black box and the vendor refuses to open the code. An open-source alternative is less accurate in its predictions but can be audited line by line by anyone. The council must pick one within budget, and both come with an emergency manual override.",
+    "options": [
+      {
+        "t": "我会选供应商系统，要那 18%。堵车每天都在消耗城市的钱并制造排放，人工接管开关加上写进合同的追责条款，能覆盖主要的故障情形。交通路网的存在意义就是通行效率。",
+        "t_en": "I would take the vendor system and its 18%. Gridlock costs the city money and emissions every day, and the manual override plus a contract-backed liability clause covers the main failure modes. Performance is what a traffic network exists for.",
+        "tags": [
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会选开源系统。当公共路网由一份不许任何人查看的代码来操控时，市民就无从追问为什么自己家门口的街道被降低了通行优先级；收益小一点，换来一套城市真正能掌控、能核验的系统，这个代价我接受。",
+        "t_en": "I would choose the open-source system. When a public road network is run by code no one may inspect, citizens cannot check why their street was deprioritized; a smaller gain is an acceptable price for a system the city can actually own and verify.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我只会在城市拥有全部数据、保留人工接管权、并在合同里拿到对模型决策的审计权的情况下签约。只要结果能被独立核验，供应商的代码可以继续保密。",
+        "t_en": "I would sign only if the city owns all the data, keeps the override, and gets contractual audit rights over the model's decisions. The vendor's code can stay closed as long as outcomes can be verified independently.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会继续用人工调控。交通管理是公共服务，自动化程度越深，出了问题越难说清责任；而且那个 18% 是卖方给的数字，不是从这座城市自己的街道上测出来的。",
+        "t_en": "I would keep the human operators. Traffic control is a public function where responsibility gets hard to attribute once automation deepens, and the 18% figure comes from the seller, not from this city's own streets.",
+        "tags": [
+          "CUL:T",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1007,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene": "一名 19 岁、无前科的年轻人夜间撬门进入一家店铺，偷走了现金和电子产品；店主当时不在场，损失约合两个月的收入。检察官给出两个选择：一年监禁，或参加恢复性司法项目——加害者需与店主见面、劳动偿还损失，并在监督下执行为期一年的改造计划。店主表示他想要回损失，但拿不准要不要和撬他家店门的人面对面坐着。量刑指南对两种路径都留有余地。",
+    "scene_en": "A 19-year-old with no prior record broke into a shop at night and stole cash and electronics; the owner, who was not present, lost about two months of income. Prosecutors offer a choice between a one-year prison sentence and a restorative justice program where the offender meets the owner, works to repay the loss, and follows a supervised plan for a year. The owner says he wants his money back but is unsure about sitting across from the person who broke in. Sentencing guidelines leave room for either path.",
+    "options": [
+      {
+        "t": "我会倾向于恢复性司法项目。19 岁时的第一次犯罪可能决定一个人一生的走向；赔偿加监督既能回应损害，又能让他保住正常工作记录的可能——而一年的牢狱很可能断送这条路。",
+        "t_en": "I would favor the restorative program. A first offense at nineteen can set the direction of a life; repayment and supervision address the harm while keeping a normal work record within reach, which a prison year likely forecloses.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会判处一年监禁。闯入别人赖以谋生的店门，就必须承受实打实的后果；监督项目随时可能半途而废，一个明确且被执行的刑罚，才能保护那条街上的其他店主。",
+        "t_en": "I would impose the one-year sentence. Breaking into someone's livelihood has to carry real consequences, and a supervised program can be abandoned midway; a clear, enforced penalty protects every other shopkeeper on that street.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会选择附严格条件的缓刑：一年内全额赔偿、宵禁，一旦再犯立即收监。店主能拿回损失，街道的安全也有人盯着，监狱作为后手悬在那里，形成约束。",
+        "t_en": "I would choose a suspended sentence with strict conditions: full repayment within a year, a curfew, and immediate custody upon any reoffense. The owner gets made whole, the street stays protected, and prison remains one step away as leverage.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会在向店主讲清两条路径后，让他自己选。损失是他承担的，结果也是他日后要面对的；无论他选哪条，国家都能提供对应的执行机制。",
+        "t_en": "I would let the owner choose between the two paths after both are explained to him. He bore the loss and he lives with the outcome; the state can supply the enforcement machinery either way.",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1008,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene": "一所公立学校的校董会正在重新审视校规，起因是一位教师开始佩戴头巾上课，部分家长投诉，也有家长表示支持。现行规则要求教职员工在课堂上保持宗教中立，学生则可以自由佩戴宗教饰物。修正案一：维持现行教职员工规则；修正案二：废除该规则，此事交给每位教师凭良心决定；修正案三：只要求校董会本身保持中立，教职员工和学生的个人宗教表达一概不限制。校董会将在听证会后表决。",
+    "scene_en": "A public school board is reviewing its rules after a teacher began wearing a headscarf to class, prompting complaints from some parents and support from others. Current rules require classrooms to be religiously neutral for staff, while students may wear religious symbols freely. One proposed amendment would keep the staff rule; another would drop it and leave the matter to each teacher's conscience; a third would require the board itself to stay neutral while allowing any staff or student expression. The board will decide after a hearing.",
+    "options": [
+      {
+        "t": "我会维持现行教职员工规则。当教师作为公共机构的代表站在 25 个孩子面前时，教室应当让每个家庭、无论信什么，都觉得向自己敞开；教职工在下班后的私人时间里完全可以自由表达信仰。",
+        "t_en": "I would keep the staff rule. When a teacher stands before twenty-five children as the face of a shared public institution, the classroom should read as open to every family regardless of faith, and staff can express their beliefs freely outside duty hours.",
+        "tags": [
+          "SEC:E",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会废除该规则，相信每位教师自己的判断。成年人戴一条头巾并不会让孩子改信什么，把有信仰的教师挡在公立学校门外，筛选的是他们是什么人，而不是他们教什么。",
+        "t_en": "I would drop the rule and trust each teacher's conscience. A scarf on an adult does not convert a child, and barring believing teachers from public jobs screens people out for what they are rather than for what they teach.",
+        "tags": [
+          "SEC:F",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会采纳第三项修正案。校董会本身不该推崇任何宗教，也不该偏袒任何一方，但工作中的个人仍是个人；学校的中立体现在课程和制度里，而不是体现在管人穿什么衣服上。",
+        "t_en": "I would adopt the third amendment. The board itself should promote no religion and favor none, but individuals at work remain individuals; the school's neutrality lives in its curriculum and procedures, not in policing clothing.",
+        "tags": [
+          "SEC:E",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会把决定权交给各校的家长和教职工联席会。彼此熟识的社区学校有能力就地解决这个问题，而一条全省统一的规则，无论怎么定，都会在某个地方让这场争执持续下去。",
+        "t_en": "I would hand the decision to each school's parents and staff council. A village school where everyone knows one another can settle this locally, and a single province-wide rule will keep this fight alive somewhere whichever way it goes.",
+        "tags": [
+          "COL:M",
+          "SEC:F"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1009,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "一家开发商提议在一个地铁站旁的停车场上建 14 层公寓楼，该地块位于一片以 4 层历史联排住宅闻名的街区。五年来区内租金上涨了四成，而这块地距地铁站步行仅七分钟；反对者列举的理由包括相邻花园将被遮挡、历史街貌会被改变、施工车辆的影响。区划委员会可以选择照原案批准、批准缩减为 8 层的版本，或否决并保留停车场用途。支持和反对两份请愿书都已收集到数百个签名。",
+    "scene_en": "A developer proposes a 14-story apartment block on a parking lot beside a metro station in a neighborhood of 4-story heritage townhouses. Rents in the district have risen 40% in five years, and the lot is a seven-minute walk from the station; opponents cite shadowing on adjacent gardens, the heritage streetscape, and construction traffic. The zoning board can approve as proposed, grant a reduced 8-story version, or reject it and keep the lot for parking. Hundreds have signed both petitions.",
+    "options": [
+      {
+        "t": "我会批准 14 层的方案。距地铁站步行七分钟的一片停车场，是全区最说得上理由的增建住宅地点；一条把自己子女的房价都抬到住不起的历史街貌，就不再成其为一个街区了。",
+        "t_en": "I would approve the 14 stories. A parking lot seven minutes from a metro station is the most defensible place in the district to add homes, and a heritage streetscape that prices out its own children stops functioning as a neighborhood.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会否决这个方案。四层楼高的街巷花了一个世纪才长成今天的样子，一栋 14 层的楼投下的阴影，是那些花园的主人从未料想过的；新住宅完全可以建到两个街区外那条空置办公楼带上。",
+        "t_en": "I would reject it. Four-story lanes took a century to become what they are, and a slab of fourteen floors casts shadows those gardens never planned for; new housing can go on the corridor of empty offices two districts over.",
+        "tags": [
+          "CUL:T",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会促成缩减为 8 层、高层部分逐级后退的折中版本。住宅数量接近翻倍，而阴影线不会落到相邻花园上，我还会在批文中附加一定比例的可负担住房。",
+        "t_en": "I would negotiate the 8-story version with stepped-back upper floors. It nearly doubles the homes while the shadow line stays off the gardens, and I would attach a share of affordable units to the permit.",
+        "tags": [
+          "CUL:P",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把决定留给市场和地块的所有者。项目若无利可图或没人需要，自然无人去建；若确实有人需要，区划委员会的口味就不该横在一个租房者和一套公寓之间。",
+        "t_en": "I would leave the decision to the market and the owner of the lot. If the project is unprofitable or unwanted, no one builds it; if it is wanted, the zoning board's taste should not stand between a renter and an apartment.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1010,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "农业部正在评估是否批准一个耐旱转基因小麦品种。田间试验显示，干旱年份该品种增产两成，灌溉用水减少三成；反对者则提出两点担忧：基因可能漂移到邻近的有机农场，以及种子授权模式会把农民绑定在单一供应商身上。周边国家已批准类似品种；有机认证机构警告，一旦发生异花授粉，邻近农场将失去有机认证。本月底前农业部接受书面意见。",
+    "scene_en": "The agriculture ministry is weighing approval of a drought-tolerant genetically modified wheat variety. Field trials show 20% higher yields in dry years and a 30% cut in irrigation water; opponents raise concerns about gene flow to neighboring organic farms and about seed licensing that binds farmers to one supplier. Neighboring countries have approved similar varieties; organic certifiers warn that any cross-pollination would cost adjacent farms their certification. The ministry accepts written comments until the end of the month.",
+    "options": [
+      {
+        "t": "我会在强制标识的前提下批准该品种。在越来越热的这十年里，抗旱增产和节水都是实打实的收益；有其他偏好的消费者可以看标签选择，有机农场则可以用隔离带规则来保护。",
+        "t_en": "I would approve the variety with mandatory labeling. Drought yields and water savings are measurable gains for a warming decade, and shoppers who prefer otherwise can read a label; organic farms can be protected with buffer-zone rules.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会否决这项批准。基因一旦漂移进邻近的田地就收不回来，而绑定单一授权方的种子供应会把主粮的权力集中到一家手里；比起让农民失去独立性，增产那点收益抵不上。",
+        "t_en": "I would reject the approval. Once gene flow reaches neighboring fields it cannot be recalled, and a seed supply locked to one licensor concentrates power over staple food; the yield gain does not outweigh losing farmers' independence.",
+        "tags": [
+          "ENV:S",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我只会在强制设隔离带、并由种子公司出资设立责任基金的前提下批准：任何因此失去有机认证的农场都应获得全额补偿。只有当副作用的代价落在受益者而不是邻居头上时，创新才配继续推进。",
+        "t_en": "I would approve it only with mandatory buffer strips and a liability fund paid into by the seed company, so any organic farm that loses certification is compensated in full. Innovation can proceed when the cost of its side effects lands on its beneficiary, not on neighbors.",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会让每位农民自己决定：种子层面做好标识，不强制设隔离带。农民比部委更清楚自己的买家和邻居，而相邻农场之间本来就靠各类合同处理通行权等种种地界事务。",
+        "t_en": "I would let each farmer decide, with labeling at the seed level and no buffer mandate. Farmers know their buyers and their neighbors better than a ministry does, and contracts between adjoining farms already handle easements of every other kind.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
   }
 ]
