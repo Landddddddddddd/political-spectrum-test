@@ -653,5 +653,20 @@
       "ideologies": 200,
       "domains": 30
     }
+  },
+  {
+    "date": "2026-10-30",
+    "title": "质量修复：新增批次 domain_en 标准化 + 选项预设立场改写",
+    "items": [
+      "将 10-30 新增批次（ID 1021-1070）中 30 题的非标准 domain_en 改为 30 领域对照表固定译名（如 Immigrant culture → Immigration & Culture、Housing City → Housing & Urban）",
+      "改写 4 处预设立场选项（ID 1028 两处、1041 两处）：移除「真正的壁垒」「冲动离婚真实存在」「冷静期该拦的是冲动」等断言式表述，替换为具体后果陈述；中英源同步改写",
+      "重新构建 deploy/index.html（注入 1070 题 / 43 条更新日志）并同步 deploy 下的独立 JSON",
+      "遗留告警：另有 160 条历史旧题（ID 1-170）使用 15 种非标准 domain_en，本次未改动，建议后续专项回填"
+    ],
+    "stats": {
+      "questions": 1070,
+      "ideologies": 200,
+      "domains": 30
+    }
   }
 ]

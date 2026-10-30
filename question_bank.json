@@ -44086,7 +44086,7 @@
   {
     "id": 1021,
     "domain": "社区邻里",
-    "domain_en": "Community Neighborhoods",
+    "domain_en": "Community & Neighborhood",
     "scene": "你住的六层老楼启动加装电梯表决。一楼两户反对，理由是遮挡采光和运行噪音；五、六楼住着两位每天扶栏爬楼的八十岁老人。业委会拿不出让所有人点头的分摊方案，表决一再延期。",
     "scene_en": "Your six-story walk-up has started a ballot on installing an elevator. The two households on the first floor object, citing blocked light and motor noise; on the fifth and sixth floors live two eighty-year-olds who climb the stairs holding the rail every day. The residents' committee has no cost-sharing plan that satisfies everyone, and the vote keeps being postponed.",
     "options": [
@@ -44132,7 +44132,7 @@
   {
     "id": 1022,
     "domain": "职场雇佣",
-    "domain_en": "Employment in the workplace",
+    "domain_en": "Workplace & Employment",
     "scene": "你所在的三百人公司上线了 AI 简历初筛，招聘周期从六周缩到九天。有落选者比对后发现，简历里有两年职业空窗的申请者得分系统性偏低，而拒信是模板自动生成的，没有联系方式。",
     "scene_en": "Your 300-person company switched to AI screening of resumes, cutting the hiring cycle from six weeks to nine days. Rejected applicants who compared notes found that candidates with a two-year employment gap scored systematically lower, and the rejection letters are auto-generated templates with no contact details.",
     "options": [
@@ -44178,7 +44178,7 @@
   {
     "id": 1023,
     "domain": "言论表达",
-    "domain_en": "Expression of speech",
+    "domain_en": "Speech & Expression",
     "scene": "市图书馆收到二十多封家长投诉，要求把一批描写战争创伤的回忆录从青少年区移到成人区并加封皮遮盖书名。与此同时，一位中学老师来信说，正是其中一本让班里一个沉默的孩子第一次开口谈了家里的事。",
     "scene_en": "The city library has received twenty-plus parent complaints asking that a set of war-trauma memoirs be moved from the teen section to the adult section with the covers wrapped. Meanwhile a middle-school teacher writes that one of these books was what made a silent student in her class talk about his family for the first time.",
     "options": [
@@ -44224,7 +44224,7 @@
   {
     "id": 1024,
     "domain": "经济分配",
-    "domain_en": "Economic Allocation",
+    "domain_en": "Economic Distribution",
     "scene": "你国的统计年鉴显示：GDP 增长 4.8%，基尼系数却升到 0.49，青年失业率 15%。财政部明年只有一个名额的旗舰政策，四套方案都在桌上。",
     "scene_en": "The national yearbook shows GDP growth of 4.8% while the Gini coefficient has climbed to 0.49 and youth unemployment stands at 15%. The finance ministry can fund only one flagship policy next year, and four proposals are on the table.",
     "options": [
@@ -44269,7 +44269,7 @@
   {
     "id": 1025,
     "domain": "贸易产业",
-    "domain_en": "Trading industry",
+    "domain_en": "Trade & Industry",
     "scene": "你国两年前对进口太阳能面板加征关税，本土工厂保住了两千个岗位，但屋顶光伏装机量下降了三成，安装商抱怨面板价格比邻国高 40%。议会正在评估要不要延续关税。",
     "scene_en": "Two years ago your country imposed tariffs on imported solar panels, preserving 2,000 factory jobs, but rooftop installations have fallen 30% and installers complain panels cost 40% more than across the border. Parliament is reviewing whether to renew the tariffs.",
     "options": [
@@ -44315,7 +44315,7 @@
   {
     "id": 1026,
     "domain": "环境生态",
-    "domain_en": "Environmental Ecology",
+    "domain_en": "Environment & Ecology",
     "scene": "一片三平方公里的滨海湿地旁拟建物流园区，承诺三千个岗位和每年四亿税收；同一片湿地是三十万只候鸟的迁徙中转站，环保部门记录显示周边开发已让它十年缩小了一半。",
     "scene_en": "A logistics park is proposed beside a three-square-kilometer coastal wetland, promising 3,000 jobs and 400 million a year in tax revenue; the same wetland is a stopover for 300,000 migratory birds, and records show surrounding development has already halved it in a decade.",
     "options": [
@@ -44361,7 +44361,7 @@
   {
     "id": 1027,
     "domain": "学校教育",
-    "domain_en": "School education",
+    "domain_en": "School & Education",
     "scene": "你所在的初中改革招生政策，讨论是否按入学成绩分班。试点校数据显示：分班两年后尖子班竞赛获奖翻倍，普通班及格率下降六个百分点，普通班家长的投诉信堆满了校长信箱。",
     "scene_en": "Your middle school is debating whether to stream students by entrance scores. Pilot data show that after two years of streaming, competition awards in the top classes doubled while pass rates in the ordinary classes fell six points, and parents’ complaints have filled the principal’s inbox.",
     "options": [
@@ -44406,7 +44406,7 @@
   {
     "id": 1028,
     "domain": "移民文化",
-    "domain_en": "Immigrant culture",
+    "domain_en": "Immigration & Culture",
     "scene": "你所在的地区医院缺口四百名护士，从海外招人后，患者投诉集中在沟通障碍：用药说明听不懂、疼痛描述被误判。护理部提出三个方向，预算只够选一个。",
     "scene_en": "Your regional hospital is short 400 nurses and has recruited from overseas; patient complaints center on communication — medication instructions not understood, pain descriptions misread. Nursing leadership proposes three directions, and the budget covers only one.",
     "options": [
@@ -44427,16 +44427,16 @@
         ]
       },
       {
-        "t": "我会不加附加条件。语言在病房里三个月就能上手，真正的壁垒是行政门槛；护理质量靠培训和督导，不靠口音。",
-        "t_en": "I would add no conditions. Nurses pick up the ward language in three months; the real barrier is administrative gates. Quality of care comes from training and supervision, not from accent.",
+        "t": "我会不加附加条件。病房里用到的护理词汇几个月就能上手；而这四百名护士每多等一个月，病区就多空一个月——护理质量取决于培训与督导，不取决于入职时的口音。",
+        "t_en": "I would add no language condition. The vocabulary a nurse needs on a ward comes in a few months, and every month these four hundred wait is another month the ward runs short; care quality turns on training and supervision, not on accent at hiring.",
         "tags": [
           "NAT:C",
           "GOV:L"
         ]
       },
       {
-        "t": "我会把这笔预算转投本地护理专业的奖学金和薪资，从源头补缺口。海外招聘是止血，本地培养才是造血，患者也不必当语言磨合期的成本。",
-        "t_en": "I would redirect the budget to scholarships and pay for the local nursing pipeline. Overseas recruiting is a tourniquet; growing nurses at home is the marrow, and patients should not be the cost of the language磨合.",
+        "t": "我会把这笔预算转投本地护理专业的奖学金和岗位薪资。海外招聘补的是眼前这几个月的排班，本地培养补的是十年后的供给；这样一来，语言磨合期的成本也不会落在患者身上。",
+        "t_en": "I would move this budget into scholarships and pay for local nursing training. Overseas recruitment fills the rota for the next few months; local training fills the supply ten years out, and the cost of a language adjustment period then does not land on patients.",
         "tags": [
           "NAT:N",
           "ECO:L"
@@ -44452,7 +44452,7 @@
   {
     "id": 1029,
     "domain": "监控隐私",
-    "domain_en": "Monitor privacy",
+    "domain_en": "Surveillance & Privacy",
     "scene": "你所在城市的地铁系统试点人脸识别抓捕，半年内在闸机比对中确认了十二名通缉犯，也误拦了三名长相相似的无辜市民，其中一人在派出所滞留了六个小时。公安部门申请扩大到全部四百个站点。",
     "scene_en": "Your city’s metro has piloted facial-recognition arrests: in six months gate-camera matching confirmed twelve wanted suspects, but also stopped three innocent lookalikes, one of whom was held at a station for six hours. Police now ask to extend it to all 400 stations.",
     "options": [
@@ -44590,7 +44590,7 @@
   {
     "id": 1032,
     "domain": "科技AI",
-    "domain_en": "Tech AI",
+    "domain_en": "Technology & AI",
     "scene": "你所在城市把政务热线换成 AI 客服后，日均处理量翻倍，但老年用户投诉集中在：方言识别失败、材料清单说不清、转人工要排队四十分钟。热线中心 next 年度预算听证在即。",
     "scene_en": "Since your city replaced the government hotline with an AI agent, daily case volume has doubled, but elderly users complain that dialects fail recognition, required-document lists come out garbled, and transfer-to-human queues run forty minutes. The hotline center’s budget hearing is next month.",
     "options": [
@@ -44636,7 +44636,7 @@
   {
     "id": 1033,
     "domain": "司法法治",
-    "domain_en": "Rule of law",
+    "domain_en": "Justice & Rule of Law",
     "scene": "你国法院同罪不同判的离散度引发关注：同样的盗窃数额，各市量刑跨度从缓刑到三年。司法部起草方案，引入量刑辅助算法为法官提供参考区间，法官保留最终决定权。",
     "scene_en": "Sentencing dispersion has drawn scrutiny in your country: for the same theft amount, terms across cities range from probation to three years. The justice ministry proposes a sentencing-support algorithm offering reference ranges, with judges keeping final authority.",
     "options": [
@@ -44682,7 +44682,7 @@
   {
     "id": 1034,
     "domain": "宗教与信仰",
-    "domain_en": "Religion & Spirituality",
+    "domain_en": "Religion & Belief",
     "scene": "你所在省份议会讨论公立学校教师佩戴宗教服饰的禁令：支持者称讲台应保持中立，反对者称这把部分女性挡在了教师职业之外。全省现有二十七名在岗教师受此影响。",
     "scene_en": "Your provincial parliament is debating a ban on teachers wearing religious dress in public schools: supporters say the podium should stay neutral, opponents say it bars some women from the profession. Twenty-seven serving teachers across the province would be affected.",
     "options": [
@@ -44728,7 +44728,7 @@
   {
     "id": 1035,
     "domain": "住房城市",
-    "domain_en": "Housing City",
+    "domain_en": "Housing & Urban",
     "scene": "你所在的城中村住了三万租客，月租六百到九百，是这座城市最低的一档。开发商提出的整体改造方案承诺新房与地铁，但建成前租客需自行搬迁，周边同水平房源几乎没有。",
     "scene_en": "Your urban village houses 30,000 renters paying 600 to 900 a month — the cheapest tier in the city. The developer’s comprehensive redevelopment promises new housing and a metro line, but tenants must relocate on their own before completion, and virtually nothing at that price exists nearby.",
     "options": [
@@ -44774,7 +44774,7 @@
   {
     "id": 1036,
     "domain": "农业食品",
-    "domain_en": "Agri-food",
+    "domain_en": "Agriculture & Food",
     "scene": "你国农业部收到抗旱玉米品种的种植审批申请：试点田增产 22%，农药用量减半；反对联署由三百名种植户和五个环保组织发起，称花粉漂移无法召回。",
     "scene_en": "Your agriculture ministry has received an approval application for a drought-tolerant corn variety: pilot fields show 22% higher yield with half the pesticide use; a counter-petition from 300 growers and five environmental groups argues pollen drift cannot be recalled.",
     "options": [
@@ -44820,7 +44820,7 @@
   {
     "id": 1037,
     "domain": "媒体信息",
-    "domain_en": "Show Media Info",
+    "domain_en": "Media & Information",
     "scene": "大选前六周，一段候选人「承认受贿」的视频在短视频平台播放量破千万，事后证实是 AI 换脸。选举委员会要在投票日前完成规则修补，四个方案都在桌上。",
     "scene_en": "Six weeks before a national election, a clip of a candidate “admitting bribery” passed ten million views on short-video platforms before being confirmed as an AI face-swap. The election commission must patch the rules before voting day, and four proposals are on the table.",
     "options": [
@@ -45009,8 +45009,8 @@
     "scene_en": "Current law requires a 30-day cooling-off period before consensual divorce. Registry data show 22% of filings are withdrawn during the period, while shelter admissions rose 9% in the same window. Parliament is debating extending it to sixty days.",
     "options": [
       {
-        "t": "我会支持延长到六十天。五分之一的婚姻在三十天里想清楚了，说明冲动离婚真实存在，多给三十天救的就是那五分之一。",
-        "t_en": "I would support extending to sixty days. One in five couples thinks better of it within thirty days, which means impulsive divorce is real; the extra thirty days are for exactly that one in five.",
+        "t": "我会支持延长到六十天。有五分之一的申请在三十天内被撤回，多给三十天，改变的就是这五分之一的结果。",
+        "t_en": "I would extend it to sixty days. One in five applications is withdrawn within the first thirty, and an extra thirty days changes the outcome for exactly that fifth.",
         "tags": [
           "CUL:T",
           "GOV:A"
@@ -45025,8 +45025,8 @@
         ]
       },
       {
-        "t": "我会保留三十天，但设家暴与安全例外，并在登记处常驻调解员。冷静期该拦的是冲动，不该拦的是逃跑。",
-        "t_en": "I would keep the thirty days but carve out a domestic-violence and safety exception, with a mediator stationed at the registry. The period exists to stop impulse, not to block escape.",
+        "t": "我会保留三十天，但设家暴与安全例外，并在登记处常驻调解员。这三十天挡下的是仓促提交的申请，不该挡下的是想尽快离开一段危险关系的人。",
+        "t_en": "I would keep the thirty days with a domestic-violence and safety exemption, and a mediator at the registry. The thirty days catch hastily filed applications; they should not catch someone trying to leave a dangerous relationship quickly.",
         "tags": [
           "COL:M",
           "GOV:A"
@@ -45464,7 +45464,7 @@
   {
     "id": 1051,
     "domain": "社区邻里",
-    "domain_en": "Community Neighborhoods",
+    "domain_en": "Community & Neighborhood",
     "scene": "小区有一块两百平米的闲置绿地，业主群为此吵了三个月：有车业主联名要求改划十二个停车位，另一批住户提交了社区花园方案，物业测算两种方案维护成本相近。",
     "scene_en": "Your residential compound has an idle 200-square-meter green patch, and the owners' group has argued for three months: car owners have petitioned for twelve parking spaces, while other households submitted a community-garden plan; property management estimates the upkeep costs are similar.",
     "options": [
@@ -45510,7 +45510,7 @@
   {
     "id": 1052,
     "domain": "职场雇佣",
-    "domain_en": "Employment in the workplace",
+    "domain_en": "Workplace & Employment",
     "scene": "你国四家企业的四天工作制试点满一年：产出持平，离职率下降 22%，客户投诉上升 8%。工会联盟推动立法全面推广，雇主协会要求保持自愿。",
     "scene_en": "A one-year four-day-workweek pilot across four companies in your country ended with output flat, attrition down 22%, and customer complaints up 8%. The union federation is pushing legislation to expand it nationally; the employers' association wants it voluntary.",
     "options": [
@@ -45556,7 +45556,7 @@
   {
     "id": 1053,
     "domain": "言论表达",
-    "domain_en": "Expression of speech",
+    "domain_en": "Speech & Expression",
     "scene": "你所在的大学在上学期因两场访客演讲各爆发一次抗议，一次被迫改线上，一次临时取消。校务会讨论是否建立事前审查：外请讲者需提前提交提纲，由跨部门小组评估。",
     "scene_en": "Your university saw protests at two guest lectures last semester — one forced online, one cancelled on short notice. The university council is debating prior review: external speakers would submit outlines in advance for assessment by a cross-departmental panel.",
     "options": [
@@ -45602,7 +45602,7 @@
   {
     "id": 1054,
     "domain": "经济分配",
-    "domain_en": "Economic Allocation",
+    "domain_en": "Economic Distribution",
     "scene": "你国遗产税最高档 40%，起征点十年未动，房价上涨让中产家庭开始触及起征线。财政部提出四个调整方向，房产中介协会的游说预算创了纪录。",
     "scene_en": "Your country's top inheritance-tax rate is 40%, the threshold has not moved in a decade, and rising home prices are pulling middle-class estates across it. The finance ministry has four adjustment options on the table, and realtors' lobbying budgets just hit a record.",
     "options": [
@@ -45648,7 +45648,7 @@
   {
     "id": 1055,
     "domain": "贸易产业",
-    "domain_en": "Trading industry",
+    "domain_en": "Trade & Industry",
     "scene": "你国锂矿产量占全球 19%，议会讨论出口限制：支持者引用稀土国家的前例，称原矿出口换不来议价权；矿业公司警告限制将促使买家在他国另建供应链，五年后订单不可逆。",
     "scene_en": "Your country supplies 19% of world lithium output, and parliament is debating export restrictions: supporters cite the rare-earths precedent, saying raw-ore exports never bought bargaining power; mining firms warn buyers will build rival supply chains abroad, and orders after five years will not come back.",
     "options": [
@@ -45694,7 +45694,7 @@
   {
     "id": 1056,
     "domain": "环境生态",
-    "domain_en": "Environmental Ecology",
+    "domain_en": "Environment & Ecology",
     "scene": "你所在的流域有六家造纸厂，下游渔业合作社记录鱼获十年减产 40%。环保局提出三案：排污总量管制加许可交易、直接关停排放最高的两家、按吨收费设补偿基金。",
     "scene_en": "Your river basin hosts six paper mills, and the downstream fishing cooperative has recorded a 40% decline in catch over ten years. The environment bureau proposes three options: a cap-and-trade permit system, closing the two worst emitters outright, or a per-ton levy funding a compensation fund.",
     "options": [
@@ -45740,7 +45740,7 @@
   {
     "id": 1057,
     "domain": "学校教育",
-    "domain_en": "School education",
+    "domain_en": "School & Education",
     "scene": "你所在中学拟推行手机统一保管：到校入柜、离校领取。家长会分裂成两派，一派引用课堂注意力研究，另一派引用孩子放学后联系安全的需要；学生自治会提交了反对信。",
     "scene_en": "Your secondary school plans to lock phones in cabinets during school hours. The parents’ meeting has split — one side cites classroom-attention studies, the other cites after-school safety contact — and the student council has submitted a letter of objection.",
     "options": [
@@ -45786,7 +45786,7 @@
   {
     "id": 1058,
     "domain": "移民文化",
-    "domain_en": "Immigrant culture",
+    "domain_en": "Immigration & Culture",
     "scene": "你所在城市小学有 9% 学生的家庭语言不是本地官方语言。市教育局讨论是否开设移民母语选修课：教育学界称母语能力与第二语言学习正相关，财政测算年增支八百万。",
     "scene_en": "In your city, 9% of primary students speak a home language other than the official one. The education bureau debates optional heritage-language classes: education research links mother-tongue proficiency to second-language learning, while the finance office counts an extra 8 million a year.",
     "options": [
@@ -45832,7 +45832,7 @@
   {
     "id": 1059,
     "domain": "监控隐私",
-    "domain_en": "Monitor privacy",
+    "domain_en": "Surveillance & Privacy",
     "scene": "外卖平台拟为二十万骑手强制加装 AI 行车记录仪：疲劳与分心驾驶实时提醒，试点城市事故率降 17%。骑手社群的反应是：摄像头对着人脸，休息时也不关。",
     "scene_en": "A delivery platform plans mandatory AI dashcams for 200,000 riders: real-time fatigue and distraction alerts cut accidents 17% in pilot cities. The rider community’s response: the camera points at their faces, and it does not switch off during breaks.",
     "options": [
@@ -45970,7 +45970,7 @@
   {
     "id": 1062,
     "domain": "科技AI",
-    "domain_en": "Tech AI",
+    "domain_en": "Technology & AI",
     "scene": "你国的生成式 AI 公司被两万名作者和插画师起诉：模型在未授权情况下用了他们的作品训练。法院请立法机关表态，四条路径都在桌上。",
     "scene_en": "Generative-AI companies in your country are being sued by 20,000 authors and illustrators: their work trained the models without license. The courts have asked the legislature to weigh in, and four paths are on the table.",
     "options": [
@@ -46016,7 +46016,7 @@
   {
     "id": 1063,
     "domain": "司法法治",
-    "domain_en": "Rule of law",
+    "domain_en": "Justice & Rule of Law",
     "scene": "你国看守所在押人员中 41% 是未判决的审前羁押，其中六成因交不出保释金，平均关押 187 天后获释且最终多数轻判或无罪。司法改革方案四个方向。",
     "scene_en": "In your country, 41% of detention-center inmates are awaiting trial, six in ten held only because they could not post bail, averaging 187 days before release, with most eventually lightly sentenced or acquitted. Four reform directions are on the table.",
     "options": [
@@ -46062,7 +46062,7 @@
   {
     "id": 1064,
     "domain": "宗教与信仰",
-    "domain_en": "Religion & Spirituality",
+    "domain_en": "Religion & Belief",
     "scene": "你市一座 1680 年建成的教堂被列入建筑遗产名录，屋顶漏雨两年，教区自筹只够三成修缮费。市议会讨论公共资金介入，政教分离条款写得明白。",
     "scene_en": "A church built in 1680 in your city is on the heritage list; its roof has leaked for two years and the parish has raised only a third of the repair cost. The city council debates public funding, with the disestablishment clause written in plain text.",
     "options": [
@@ -46108,7 +46108,7 @@
   {
     "id": 1065,
     "domain": "住房城市",
-    "domain_en": "Housing City",
+    "domain_en": "Housing & Urban",
     "scene": "你市 4.2 万套住宅转为全年短租，同期长租空置率降到 0.8%，租金三年涨 34%。市议会讨论限制方案，旅游业协会提交了短租带动的就业与消费数据。",
     "scene_en": "In your city, 42,000 homes have converted to year-round short-term rentals while the long-term vacancy rate fell to 0.8% and rents rose 34% in three years. The council is weighing limits, and the tourism association has submitted data on short-rental employment and spending.",
     "options": [
@@ -46154,7 +46154,7 @@
   {
     "id": 1066,
     "domain": "农业食品",
-    "domain_en": "Agri-food",
+    "domain_en": "Agriculture & Food",
     "scene": "你国食品系统贡献了 26% 的温室气体排放。消费品委员会讨论是否强制碳标签：零售商称货架放不下，农业团体称测算方法未统一，消费者组织的调查显示 61% 的人看不懂碳足迹数字。",
     "scene_en": "Food systems account for 26% of your country's greenhouse emissions. The consumer-goods commission debates mandatory carbon labels: retailers say shelf space is tight, farm groups say measurement methods are unsettled, and a consumer survey shows 61% cannot interpret a carbon-footprint figure.",
     "options": [
@@ -46200,7 +46200,7 @@
   {
     "id": 1067,
     "domain": "媒体信息",
-    "domain_en": "Show Media Info",
+    "domain_en": "Media & Information",
     "scene": "你国公共广播机构的收视份额降到 14%，财政每年补贴 9 亿。议会辩论：一份提案削减三成预算，一份提案把经费改为固定税收分成并隔离年度政治审批。",
     "scene_en": "Your public broadcaster’s audience share has fallen to 14% on a 900-million annual subsidy. Parliament debates one bill cutting the budget by a third and another converting funding to a fixed tax share, insulated from yearly political approval.",
     "options": [
