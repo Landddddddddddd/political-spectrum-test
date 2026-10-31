@@ -46380,5 +46380,443 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1071,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "玛雅和丹尼尔恋爱两年后准备结婚。玛雅的父母与她工作的医院同城，平时帮她照应年幼的弟弟；丹尼尔的父母经营着三小时车程外的农场，希望节假日期间全家都回农场团聚。农场附近的房租便宜得多，但玛雅的通勤时间会翻倍，也会失去身边的亲友支持网络。两人坐在餐桌前，笔记本电脑上开着两份租房信息：无论选哪个地址，都会影响以后的节日安排、将来可能的育儿分工，以及与哪边父母走动更多。",
+    "scene_en": "After two years together, Maya and Daniel are getting married. Maya's parents live in the same city as her hospital job and help look after her younger brother; Daniel's parents run a farm three hours away and expect the whole family to gather there every festival. Rent is much cheaper near the farm, but Maya's commute would double and she would lose her nearby support network. The couple sits at the kitchen table with two rental listings open on the laptop, knowing that whichever address they choose will shape holiday plans, future childcare, and which set of parents they see more often.",
+    "options": [
+      {
+        "t_en": "We'll rent near my hospital. I'm on call at night and my mother already helps with my brother; having family support within walking distance matters more to me than the cheaper rent out there.",
+        "t": "我们会在医院附近租房。我要上夜班，母亲平时也在帮着照应弟弟，家人支持就在步行范围内这件事，对我来说比农场那边便宜的房租更重要。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd choose the place near Daniel's parents. Housing costs would drop a lot, festivals would be simpler to organize, and his family has repeatedly asked for help during harvest season, which is easier to give if we live closer.",
+        "t": "我会选丹尼尔父母附近的住处。住房开销会降不少，节日聚会也更好安排，而且他家农忙时一直希望有人搭把手，住得近才方便帮忙。",
+        "tags": [
+          "COL:M",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I want us to live on our own somewhere in between, equidistant from both families. I love our parents, but I don't want either household's routines to become the template for our new home; we can visit on a schedule we set ourselves.",
+        "t": "我希望我们俩住在折中的地方，与两边父母距离相当。我爱父母，但我不希望任何一家的生活节奏变成我们新家庭的模板，探望可以按我们自己定的时间表来。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "Let's rent the cheap place near the farm for the first year and see how it actually feels, instead of deciding from the kitchen table. Commuting, holidays and finances all read differently on paper than in practice.",
+        "t": "我们先去农场附近租便宜的那处住一年，看看实际感受再定，而不是只坐在餐桌前空想。通勤、节假日和开销这些事，纸面上的账和过起来的体验往往不一样。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1072,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "河岸片区流浪犬数量成倍增长，两起咬人事件发生后，区议会召开紧急会议。环卫部门提出外包扑杀方案，一周内即可启动；动物福利组织则给出了由本地收容所执行的捕捉-绝育-免疫-放归方案，单只犬的前期投入更高，但能在数年时间里减少新生幼犬数量。居民意见分裂：一些家长希望街道尽快清空流浪犬，另一些居民每天喂食，把狗视为社区的一部分。",
+    "scene_en": "Stray dogs have multiplied in a riverside district, and after two bite incidents the district council is holding an emergency session. The sanitation department proposes a contracted culling program that can start within a week. Animal welfare groups counter with a catch-neuter-vaccinate-return scheme run through local shelters, which costs more per dog upfront but reduces litters over years. Residents are split: some parents want the streets cleared fast, others feed the dogs daily and see them as neighborhood fixtures.",
+    "options": [
+      {
+        "t_en": "I'd back the culling contract. Two children have already been treated for bites, and a visible reduction within weeks is what residents are asking the council to deliver right now.",
+        "t": "我会支持扑杀合同。已经有两名儿童因咬伤就医，居民现在要求议会在几周内看到街面状况的可见改善，这是眼下最直接的回应方式。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd fund the neuter-and-return program even if results take two years. Culling every season is a treadmill; reducing the birth rate at the source is what actually ends the cycle, and vaccinating the dogs we keep also protects people.",
+        "t": "我会为绝育放归方案拨款，哪怕见效要两年。扑杀一季接一季做下去没有尽头，从源头压低出生率才能真正终结这个循环，而且给留存犬只免疫本身也是在保护居民。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "Neither program should be my tax money first. I'd push for mandatory pet registration and real fines for abandonment, because the strays exist because owners dumped them; fixing the cause costs the treasury less than managing the symptom.",
+        "t": "我会先推动强制宠物登记和对遗弃行为的实质罚款，而不是让财政先为方案买单。流浪犬之所以存在，是因为有人遗弃了它们，解决原因比处理后果花钱更少。",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd organize volunteers and donations instead of waiting for the council. Our feeding group already knows every dog by name; with a small budget and a partner clinic we can sterilize most of them ourselves over the summer.",
+        "t": "我会组织志愿者和捐款，而不是等议会拨款。我们的喂食小组已经叫得出每只狗的名字，只要一点预算加一家合作诊所，一个夏天就能给大多数狗完成绝育。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1073,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "年度艺术节因市政预算科目被削减而面临停办。一家地产开发商随即提出全额资助，条件是品牌出现在所有物料上，且公司指派一名经理进入委托作品的评审小组。一些艺术家认为这笔钱能让四十个项目继续运转；另一些艺术家则认为评审席位的让渡，意味着商业方可以影响公共艺术创作方向。艺术节总监有一周时间做决定。",
+    "scene_en": "The city's annual arts festival is about to be cancelled after its municipal budget line was cut. A property developer steps in, offering to cover the entire cost on one condition: its brand appears on all materials and a company-appointed manager sits on the selection panel for commissioned works. Some artists say the money keeps forty programs alive; others argue the panel seat lets a commercial actor shape what public art gets made. The festival director has one week to decide.",
+    "options": [
+      {
+        "t_en": "I'd take the deal and negotiate the scope of the manager's role. Forty programs continuing matters more to the city's cultural life than a logo on the posters, and I'd insist the artists' vote stays the majority on the panel.",
+        "t": "我会接受资助，同时谈判限定那位经理的职权范围。四十个项目延续下去对城市文化生活更重要，一张海报上的标志改变不了这一点，但我会坚持评审团里艺术家票数占多数。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I'd rather raise a small dedicated cultural levy than hand a selection seat to a sponsor. Public art funded by the public should answer to the public, and a stable line in the budget protects future festivals too.",
+        "t": "我宁可推动设立一笔小额文化专项费，也不把评审席位让给赞助方。由公众出钱的艺术应该向公众负责，预算里的稳定科目也能保护今后每一届艺术节。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I'd try crowdfunding and membership fees first. If the festival can't convince a few thousand residents to chip in small amounts, that's information worth having before anyone hands over decision power.",
+        "t": "我会先尝试众筹和会员费。如果艺术节连几千位居民的少量支持都争取不到，那这个信息本身就有价值，比先交出决策权再发现问题要好。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd run a smaller festival on whatever remains and refuse both strings attached. A weekend of open studios and street performances costs little, needs nobody's permission, and keeps the program independent.",
+        "t": "我会用剩下的经费办一个规模更小的艺术节，两种附加条件都不接受。一个周末的工作室开放日和街头演出花不了多少钱，不需要任何人批准，节目也保持独立。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1074,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "区游泳俱乐部面临一个预算抉择。俱乐部一名十五岁选手入选了国家青训计划，每年的教练和差旅费需要一万二；同样一笔钱够俱乐部两个赛季的启蒙班运行，而启蒙班目前服务两百名儿童且仍在排队。董事会周四开会表决，选手家庭表示如果俱乐部承诺承担其余部分，他们可以部分自筹训练费用。",
+    "scene_en": "A district swimming club has one budget decision to make. Its fifteen-year-old swimmer has qualified for national development training that needs twelve thousand a year in coaching and travel. The same amount would fund the club's beginner classes, which serve two hundred children, for a full season — classes that currently have a waiting list. The board meets on Thursday, and the swimmer's family has said they could partially fund her training if the club commits to the rest.",
+    "options": [
+      {
+        "t_en": "I'd commit the money to her training. District clubs exist partly to open doors for the rare kid who can go all the way, and passing on a national selection once may mean never getting another.",
+        "t": "我会把这笔钱投到她的训练上。区级俱乐部存在的意义之一，就是为极少数能走到底的孩子开门，错过一次国家队选拔，可能就再没有第二次机会。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd keep the money in the beginner classes. Two hundred children learning to swim safely benefits the whole district every week, while one athlete's trajectory is uncertain and depends on factors no club budget can control.",
+        "t": "我会把钱留给启蒙班。两百个孩子每周学会安全游泳，惠及的是整个社区，而一名选手的前景并不确定，取决于俱乐部预算无法控制的诸多因素。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd broker a shared arrangement: her family, two local businesses and the club each cover a portion, and the beginner fund loses nothing. It takes more organizing, but it tests whether local sponsorship can carry elite dreams without draining mass programs.",
+        "t": "我会促成各方分摊：她的家庭、两家本地商户和俱乐部各出一部分，启蒙班经费分文不动。组织起来更费事，但这能检验本地赞助能否托起竞技梦想而不挤占普及项目。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I'd introduce tiered fees: families who can pay a little more subsidize both the beginner classes and a training stipend, with fee waivers anyone can request quietly. Money should follow need and talent, not whoever applied first.",
+        "t": "我会推行阶梯收费：有能力多缴的家庭，缴费同时补贴启蒙班和训练津贴，任何家庭都可以低调申请减免。钱应该跟着需求和天赋走，而不是跟着谁先来报名走。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1075,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "你八十二岁的祖母独自住在住了四十年的老房子里。去年春天摔了一跤之后，她已经两次忘记关灶火，医生提到她的记忆力在早期衰退。家族群正在讨论四条路：她搬进你家的空房间；她申请公立养老院床位但排队很长；家里装上传感器并雇白天陪护，让她继续住在原处；或者她搬去外地的姑姑家，但会远离熟悉的医生和老朋友。",
+    "scene_en": "Your grandmother, 82, lives alone in the flat she has kept for forty years. Since a fall last spring she has left the stove on twice, and her doctor mentions early memory decline. The family chat group is debating four paths: she moves into your spare room; she applies for a place in a public care home with a long waiting list; the family installs sensors and hires daytime help so she stays home; or she moves in with your aunt in another city, far from her doctors and friends.",
+    "options": [
+      {
+        "t_en": "She should come live with us. She raised me in that flat, but a person who forgets the stove shouldn't be alone at night, and moving in with family keeps her surrounded by people who know her habits.",
+        "t": "她应该搬来和我们住。那套老房子固然是她一手置办的，但会忘记关灶火的人不该独自过夜，和家人同住能让她身边始终有人了解她的习惯。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd apply for the public care home now, while we wait we keep visiting daily. Professional round-the-clock staff can handle what our family cannot — night supervision, medication, emergency response — and she deserves trained care, not stretched amateurs.",
+        "t": "我会现在就申请公立养老院，等床位期间我们每天探望。全天候专业护理能承担家庭承担不了的部分——夜间看护、用药管理、应急处理，她应当得到受过训练的照护，而不是勉强的外行帮忙。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I'd fit the flat with motion sensors, an automatic stove shutoff, and daytime home help. Home is where her memories and routines are; the right equipment plus a few hours of paid care each day can bridge what's actually failing.",
+        "t": "我会给老房子装上活动传感器、灶台自动断气和白天上门陪护。家是她记忆和习惯所在，合适的设备加上每天几小时的付费照护，恰好能补上目前缺的那一环。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "The aunt's offer deserves a real conversation with grandma herself, not just the four of us. Whichever arrangement we pick, the person living it should be the one who chose it, even if the practical ranking looks obvious from outside.",
+        "t": "姑姑的提议值得和祖母本人认真谈一次，而不只是我们四个人决定。无论最后选哪种安排，真正生活在其中的应该是做出选择的那个人，哪怕从实际情况看某种安排更省事。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1076,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "先买后付类应用已渗透本地商铺，区消费者事务办公室报告称，十八至二十四岁年轻人同时背三笔以上分期付款的比例大幅上升。公开听证会上，监管方列出几个方向：对逾期费设置上限，并要求结账页面用通俗语言展示全成本明细；建立共享信贷登记系统，让放贷机构能看到借款人的既有分期；或者依靠学校金融素养课程，让市场竞争去约束这些应用。",
+    "scene_en": "Buy-now-pay-later apps have spread through local shops, and the district's consumer affairs office reports a sharp rise in eighteen-to-twenty-four-year-olds juggling three or more installment plans. At a public hearing, regulators float options: cap late fees and require a plain-language total-cost box on every checkout screen; mandate a shared credit registry so lenders can see existing plans; or rely on school-based financial literacy and let competition discipline the apps.",
+    "options": [
+      {
+        "t_en": "I'd mandate the total-cost box and cap the late fees. A checkout screen engineered for one-tap speed shouldn't also be where a nineteen-year-old discovers the real price; making the full cost impossible to hide changes behavior without banning anything.",
+        "t": "我会强制要求全成本明细并设逾期费上限。一个为「一键下单」而设计的结账页面，不应该同时成为十九岁年轻人发现真实价格的地方；让全成本无法被隐藏，不需要禁用任何东西就能改变行为。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I'd build the shared registry first. Fee caps treat symptoms; the core problem is that each app sees only its own customer, so a borrower can stack six plans invisibly. Lenders who can see total exposure price risk honestly, which is how markets are supposed to work.",
+        "t": "我会先建共享登记系统。费用上限治的是表面症状，核心问题是每个应用只看得见自己的客户，借款人可以无声地叠加六笔分期。放贷方看得见总敞口才会如实定价风险，这本来就是市场应有的运作方式。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I'd put the money into school and onboarding financial literacy instead of new rules. Most of these borrowers signed their first plan at seventeen; a generation that reads a repayment schedule before tapping confirm protects itself better than any regulator working after the fact.",
+        "t": "我会把资源投到学校和首次使用的金融素养教育上，而不是新增管制。这些借款人大多十七岁就签了第一笔分期；一代人在按下确认前就懂得读还款计划表，比监管者事后补救更能保护他们自己。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd do both the registry and the caps, and add a cooling-off window for plans above a threshold. Evidence from other markets shows single measures get engineered around; stacking a few modest rules closes the routes between them.",
+        "t": "我会同时上登记系统和费用上限，并给超过一定金额的分期加一个冷静期。其他市场的经验表明，单一措施总会被设计出绕行方案，几条温和规则叠加起来才能堵住相互之间的空隙。",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1077,
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene": "区域电网需要新建一条高压线路，把风电走廊接入海岸端。最便宜的路径穿过农田和两个村庄边缘；地下电缆方案成本增至三倍，工期还要多两年。廉价路径沿线的村民已组织起来反对，理由是土地价值和景观影响；电网工程师则警告，风电场每多并网延迟一年，区域就要多烧一年进口燃料。规划专员必须给出路线建议。",
+    "scene_en": "The regional grid needs a new high-voltage line to connect a wind corridor to the coast. The cheapest route crosses farmland and the edge of two villages; burying the line triples the cost and adds two years. Villagers along the cheap route have organized against it, citing land value and visual impact, while grid engineers warn that every year of delay the wind farms stay offline, the region burns more imported fuel. A planning officer must recommend a route.",
+    "options": [
+      {
+        "t_en": "I'd recommend the cheap overhead route with full landowner compensation. The fuel the region burns while the line waits is a cost paid by everyone, and money spent moving towers around is money not spent on the wind farms themselves.",
+        "t": "我会建议走廉价的架空线路，并给土地所有者足额补偿。线路每拖延一年，整个区域都在为多烧的燃料买单，把钱花在挪塔位上，就意味着风电场本身少了一笔投入。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd pay the underground premium on the contested segments. Two villages shouldn't carry a visual and property burden the whole region benefits from, and burying the line where people actually live is the cheaper outcome once compensation fights and appeals are counted.",
+        "t": "在争议路段我会支付地下化的溢价。两个村庄不应独自承担全区域受益项目带来的景观和地价负担，把赔偿诉讼和申诉成本算进去，在人烟所在之处入地反而是更省的结局。",
+        "tags": [
+          "ENV:S",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd reroute along the existing transport corridor even if the line runs longer. Reusing land that is already industrial keeps new farmland and villages untouched, and the extra length is paid back in fewer conflicts over the project's lifetime.",
+        "t": "我会让线路沿既有交通走廊绕行，哪怕总长度更长。复用已经是工业用途的土地，就不会新增农田和村庄的负担，多出的线路成本会在项目全周期里以更少的冲突收回。",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I'd hold the decision until an independent panel hears the villages. A route drawn without the people who live under it invites years of appeal; one afternoon of testimony may reveal a compromise the office maps never showed.",
+        "t": "我会把决定推迟到独立小组听取村庄意见之后。一条不经过沿线居民同意就画定的路线，招来的是经年累月的申诉；一个下午的当面陈述，可能揭示出任何一张办公地图都没显示的折中方案。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1078,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "一座河畔小镇十年内被淹了三次，最近一次洪水漫过了百年一遇地图上标注为安全的街道。政府向居民提供选择：按灾前市场价接受回购、搬到高处重建生活，或留在原地，小镇用国家基建拨款重建并加高堤坝。洪泛区内的保险费已经翻倍，一些年长居民说，他们将失去的不只是房子，而是小镇本身。",
+    "scene_en": "A river town has flooded three times in ten years, and the last flood reached streets the hundred-year maps said were safe. The government offers residents a choice: take a buyout at pre-flood market value and relocate to higher ground, or stay while the town rebuilds and raises the levee using a national infrastructure grant. Insurance premiums in the flood zone have already doubled, and some older residents say the town itself, not just the houses, is what they would be losing.",
+    "options": [
+      {
+        "t_en": "I'd take the buyout. Three floods in ten years is a pattern, not bad luck, and starting over somewhere the river doesn't reach is worth more than another decade of sandbags and doubled premiums.",
+        "t": "我会接受回购。十年三淹是趋势而不是运气差，在一个河水漫不到的地方重新开始，比再来十年的沙袋和翻倍的保险费更值得。",
+        "tags": [
+          "ENV:S",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd stay and back the levee project. The town's school, clinic and shops are what make life here work, and they can't be moved by any buyout; if the national grant can protect them, letting the community scatter would cost the region more than concrete.",
+        "t": "我会留下并支持堤坝工程。镇上的学校、诊所和商铺是这里生活的根基，回购方案带不走它们；如果国家拨款能保护这些，让社区就此散掉，代价会高过一道混凝土堤坝。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd stay but rebuild my own house elevated on stilts with my own money, and let neighbors decide for themselves. No single plan fits every household — the retiree with a paid-off mortgage and the young family with a new one weigh the same flood differently.",
+        "t": "我会留下，但自掏腰包把自家房子架高重建，邻居们怎么选随他们。没有哪套方案适合每个家庭——还清房贷的退休者和背着新房贷的年轻家庭，面对同一场洪水的权衡并不相同。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd push for a staged community relocation: the town moves together to one new site with a shared school and clinic. Individual buyouts quietly dissolve a community, but a planned move keeps the networks that make the town a town.",
+        "t": "我会推动整社区分阶段搬迁：全镇一起搬到一处新址，学校和诊所一并重建。零散的回购会无声地瓦解一个社区，而有计划的搬迁能把让小镇之所以成为小镇的那张关系网保留下来。",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1079,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene": "国家监管机构提出：平台必须把十六岁以下用户的默认信息流改为时间序排列并取消无限下滑，更改默认设置需要在应用内发起、并经家长验证。平台工程师认为，由互动数据驱动的推荐流是服务得以免费的理由；儿童心理学家引用了睡眠与注意力方面的研究数据；青少年权益组织则反驳说，十六岁的人理应和成年人使用同一个互联网，而家长验证环节收集的家庭数据，恰恰是规则声称要保护的对象。",
+    "scene_en": "A national regulator proposes that platforms must default all users under sixteen to a chronological feed without infinite scroll, and that changing the default requires an in-app request verified by a parent. Platform engineers argue engagement-driven feeds are what keep their services free; child psychologists cite sleep and attention data; youth advocates counter that sixteen-year-olds deserve the same internet as adults, and that parent-verification collects exactly the kind of family data the rules claim to protect.",
+    "options": [
+      {
+        "t_en": "I'd support the default limits. Defaults shape behavior more than any advice, and a sixteen-year-old scrolling until 2 a.m. is not a failure of parenting — it's a product working as designed. Making the calm feed the default fixes it at the source.",
+        "t": "我会支持默认限制。默认设置对行为的影响超过任何说教，一个刷到凌晨两点的十六岁少年不是家长管教失败，而是产品设计达到了它的目标。把平静的信息流设为默认，就是从源头解决。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd leave defaults to families. Parents can already set device limits, and a blanket rule treats every household the same regardless of how different their children are; one family's needed safeguard is another's unwanted surveillance of a responsible teenager.",
+        "t": "我会把默认设置留给家庭。家长本来就能设定设备时限，一刀切的规则把情况千差万别的家庭同等对待；对一户人家是必要的保护，对另一户就是对自己自律孩子的多余监视。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I'd require transparency instead of defaults: platforms must publish engagement-engineering audits and give independent researchers data access. Well-designed research lets society see whether the harm is real before it prescribes how every teenager's screen must look.",
+        "t": "我会要求透明度而不是改默认值：平台必须发布「互动设计工程」审计，并向独立研究者开放数据。先让扎实的研究弄清伤害是否属实，再去规定每个青少年的屏幕长什么样。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I'd back the rule but drop the parent-verification layer. A calm default protects the kids whose parents can't or won't intervene, and skipping the verification step avoids building a new database of family relationships in the process.",
+        "t": "我会支持这条规则，但去掉家长验证环节。平静的默认设置恰恰保护的是那些家长无力或不愿干预的孩子，省掉验证步骤也避免了在过程中新建一个家庭关系数据库。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1080,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "在一个约有五分之一居民自幼讲地区少数民族语言的港口城市，议会正在讨论两项提案：全城道路与公共标识双语化，以及在诊所和公共办事机构设立有经费支持的口译服务。支持者说，当公共空间从不出现一种语言时，它就会在无声中消亡；反对者则问，为什么全体纳税人要为大多数人读不懂的标识买单。桌上有一个折中方案：仅在人口普查显示该语言集中的四个区，为两项服务拨款。",
+    "scene_en": "In a port city where roughly a fifth of residents grew up speaking a regional minority language, the council is debating two proposals: bilingual road signs and public signage across the city, and funded interpreter services in clinics and public offices. Supporters say language dies quietly when public space never shows it; opponents ask why all taxpayers should fund signs most can't read. A compromise on the table: fund both only in the four districts where census data shows the language is concentrated.",
+    "options": [
+      {
+        "t_en": "I'd fund both city-wide. A language survives where it's visible and usable in daily life, not only in four districts; half-measures turn a living language into a museum piece, and the cost of signage is small next to what's being preserved.",
+        "t": "我会在全城范围资助这两项。一门语言要在日常生活里被看见、被使用才能存续，而不是只活在四个区里；半套措施会把活生生的语言变成博物馆展品，标识的花费与所要保存的东西相比微不足道。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd keep public signage in one common language for everyone, and put the budget into voluntary evening classes instead. Shared public space should be readable by all comers, and language belongs in homes and schools people choose to attend.",
+        "t": "我会保持公共标识使用所有人共通的语言，把预算投给自愿报名的夜校课程。公共空间应当让任何来客都能读懂，语言传承属于家庭和人们自愿选择的课堂。",
+        "tags": [
+          "NAT:N"
+        ]
+      },
+      {
+        "t_en": "I'd adopt the four-district compromise. Census concentration is exactly where interpreter services see real demand, and starting there proves the model's cost and usefulness before scaling it; if uptake is low, the city hasn't spent city-wide money learning that.",
+        "t": "我会采纳四区折中方案。人口普查的集中区正是口译服务有真实需求的地方，从那里起步能先验证这套模式的成本与效用再谈推广；如果使用率低，城市也不必花全城的钱才得出这个结论。",
+        "tags": [
+          "GOV:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I'd fund the interpreters but not the signs. Reading a road sign is learnable; navigating a cancer diagnosis in a language you only half speak is not. Public money is most defensible where it removes a barrier to essential services.",
+        "t": "我会资助口译服务，但不动路牌。路牌上的字可以学，但癌症诊断书无法靠半吊子的语言水平去理解。公共资金最站得住脚的用途，是移除通往基本服务的障碍。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ]
   }
 ]
