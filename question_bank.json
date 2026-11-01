@@ -46818,5 +46818,465 @@
         "tags": []
       }
     ]
+  },
+  {
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene_en": "A city block association wants to renovate a shared courtyard into a paid community garden with an annual membership fee, to cover upkeep and a part-time gardener. Longtime renters say the fee quietly excludes them from a space they already cross every day; the homeowners funding the repairs say free access means nobody respects the planters, as three years of volunteer upkeep ended in trampled beds and dumped trash. The city council has been asked to decide whether to subsidize the fee for low-income residents or reject the fee model entirely.",
+    "scene": "一个街区协会想把公共庭院改造成收费社区花园，用年费支付维护费用和一名兼职园丁。长期租户说这笔年费会无声地把他们挡在一个每天都要穿行的空间之外；出资修缮的业主则说免费开放意味着没人爱惜花坛，过去三年的志愿维护最终以花坛被踩踏、垃圾成堆告终。市议会收到请愿，需要决定是为低收入居民补贴年费，还是彻底否决收费模式。",
+    "options": [
+      {
+        "t_en": "I would back the fee but have the council cover it for anyone below the local median income. Shared spaces survive when someone is clearly responsible for them, and a paid gardener is that responsibility made concrete; a subsidy keeps the boundary without fencing people out.",
+        "t": "我会支持收费，但由市议会为收入低于当地中位数的居民买单。公共空间能维持下去靠的是有人明确负责，付费园丁就是把这份责任落到实处；补贴既保留了边界，又不会把人关在门外。",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would reject the fee entirely. A courtyard people cross daily already belongs to the street's rhythm, and charging for it turns neighbors into customers; if upkeep failed under volunteering, the fix is recruiting more volunteers and better bins, not a paywall on shared ground.",
+        "t": "我会彻底否决收费。每天有人穿行的庭院本来就属于这条街的生活节奏，对它收费等于把邻居变成顾客；志愿维护失灵，该做的是招募更多志愿者、增设垃圾桶，而不是给公共地面设付费门槛。",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would split the courtyard: a fenced members' section with the gardener, and an open section for anyone passing through. Neither side gets the whole argument, but both keep something real, and we can review the split after two growing seasons.",
+        "t": "我会把庭院分成两块：一块是有围栏、配园丁的会员区，另一块对任何路过的人开放。哪一边都拿不到全部理由，但都保住了实际的东西，两个种植季之后再回头评估这个分法。",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would put it to a binding vote of everyone on the block, renters included, with the fee schedule drafted openly first. Whoever uses the courtyard should set its rules, and a decision made by the loudest twelve households at a Tuesday meeting will fester for years.",
+        "t": "我会把它交给全街区居民，包括租户，进行有约束力的投票，年费方案先公开征求意见。庭院的使用者才应该定规则，而由周二晚会上嗓门最大的十二户做出的决定，会让矛盾发酵好几年。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ],
+    "id": 1081
+  },
+  {
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene_en": "A public library discovers that a local influencer has been filming confrontational street-interview videos inside its reading rooms, ambushing patrons on camera without consent; clips of startled students have drawn millions of views. The library board must write its first filming policy. One proposal bans all commercial filming inside; another requires on-camera consent from anyone identifiable; a third allows filming anywhere in the building as long as it does not obstruct the space, arguing public institutions should be open to the public eye.",
+    "scene": "一家公共图书馆发现有本地网红在其阅览室内拍摄对抗式街头采访视频，未经同意就把镜头对准读者；受惊学生的片段已获得数百万播放。图书馆董事会必须起草第一部拍摄政策。一个方案禁止馆内一切商业拍摄；另一个要求对任何可被识别出的人取得镜头同意；第三个则允许在馆内任何地方拍摄，只要不妨碍空间运转，理由是公共机构本就应该坦然面对公众视线。",
+    "options": [
+      {
+        "t_en": "I would require consent from anyone identifiable and let filming continue otherwise. The harm in these clips is not the camera but the ambush; a five-second agreement protects patrons while keeping the library open to documentarians, journalists, and the merely curious.",
+        "t": "我会要求对任何可被识别的人取得同意，其余拍摄照常进行。这些片段里的伤害不在镜头本身，而在偷袭；五秒钟的同意既保护读者，又让纪录片作者、记者和单纯好奇的人继续可以拍摄。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would ban commercial filming outright. Reading rooms exist for people who come to think, not to become someone's content, and a consent form signed under a rolling camera is not consent anyone can refuse gracefully; the ban is simpler to enforce and easier to understand.",
+        "t": "我会直接禁止商业拍摄。阅览室是为来思考的人存在的，不是为成为别人的素材；在镜头逼近下签的同意书，不是谁都能体面拒绝的同意。禁令执行起来更简单，也更容易让人理解。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would keep the building open to filming and post clear signage instead. Public institutions are paid for by the public, and if the pressure of being seen is uncomfortable, that pressure also keeps such places honest; a policy of light, not doors, fits what a library is for.",
+        "t": "我会保持馆内对拍摄开放，改为设置醒目的标识。公共机构由公众供养，被注视的压力虽然不舒服，但这种压力也督促这类地方保持诚实；对图书馆来说，用灯光而不是门禁来应对更合适。",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would restrict filming to a designated zone near the entrance. Patrons keep their quiet corners and creators keep a workable venue, and the rule draws one bright line a night guard can actually hold instead of a judgment call every librarian resents making.",
+        "t": "我会把拍摄限制在入口附近的指定区域。读者保住安静角落，创作者保住可用场地，这条规则画出的是保安真正守得住的一条明线，而不是让每个馆员都不情愿地临场裁断。",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ],
+    "id": 1082
+  },
+  {
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene_en": "A regional health authority must cut waiting lists for knee replacements, where patients now wait an average of fourteen months. Managers propose three options: contract private clinics to absorb overflow at a fixed price per surgery; add evening and weekend shifts at the public hospital with overtime pay; or reorganize into a single referral pool ranked strictly by clinical urgency, which would push some routine cases behind new cancer screenings. Surgeons are split, and patient groups have petitions for each option.",
+    "scene": "某地区卫生部门必须削减膝关节置换手术的等候名单，患者目前平均要等十四个月。管理层提出三个方案：按每台手术固定价格把溢出量外包给私立诊所；在公立医院增设加班费支撑的晚间和周末班次；或重组为按临床紧急程度严格排序的统一转诊池——这会让部分常规病例排到新增癌症筛查之后。外科医生意见分裂，患者团体为每个方案都征集了请愿。",
+    "options": [
+      {
+        "t_en": "I would contract the private clinics. Fourteen months of pain and lost mobility is a cost that never appears on any budget sheet, and paying a fixed price per surgery buys it back immediately; the public system stays the core, with the private wing as a valve, not a replacement.",
+        "t": "我会把手术外包给私立诊所。十四个月的疼痛和行动能力流失，是任何预算表上都不会出现的成本，按台付费能立刻把它买回来；公立系统仍是主体，私立只是泄压阀，不是替代品。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would fund the evening and weekend shifts. Contracting out trains tomorrow's surgeons somewhere else and siphons staff from the very wards that are short-handed; paying overtime keeps the capacity, the skills, and the institution itself inside the public system where people can hold it accountable.",
+        "t": "我会为晚间和周末班次拨款。外包会把明天的外科医生培养在别处，还从本就缺人的病房抽走人手；付加班费能把产能、技术和机构本身留在公共系统之内，让公众看得见、管得着。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would build the urgency-ranked pool, even though some routine cases wait longer. Equal wait times for unequal needs are their own injustice, and a strict clinical ranking makes the tradeoff visible and appealable instead of buried in whoever shouts loudest at a clinic desk.",
+        "t": "我会建立按紧急程度排序的统一池，即使部分常规病例要等更久。需求不等却等待相等，本身就是一种不公；严格的临床排序让取舍看得见、可申诉，而不是埋没在诊台前谁嗓门大谁先看。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would do both contracting and overtime for a trial year, with published monthly wait-time data for each route. Two modest bets beat one large one when patients are waiting, and transparent numbers let everyone see which valve actually drains the list before the budget is locked in.",
+        "t": "我会同时试点外包和加班一年，每月公开两条路径的等候数据。在患者等待的情况下，两笔小额下注胜过一笔大注；透明的数字让大家看清哪条泄压阀真正排空了名单，再决定预算去留。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ],
+    "id": 1083
+  },
+  {
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene_en": "A national sports federation is revising its transgender participation policy for amateur and youth leagues. Endurance-event coaches cite performance data from elite competition; inclusion advocates point out that amateur races are about finishing, not podiums; some female competitors have withdrawn, saying their concerns are dismissed before they are heard. The federation must choose between category rules based on sex at birth, rules based on current hormone levels, or an open category alongside existing ones with no eligibility rules.",
+    "scene": "某全国体育联合会正在修订业余与青少年联赛的跨性别参赛政策。耐力项目教练引用精英赛事的成绩数据；包容倡导者指出业余比赛的意义是完赛而非领奖台；一些女选手已宣布退赛，说她们的担忧还没被倾听就被驳回了。联合会必须在三类方案中选择：按出生性别划分组别；按当前激素水平划分；或在现有组别之外增设无资格限制的公开组。",
+    "options": [
+      {
+        "t_en": "I would keep categories by sex at birth for ranked competition, while adding a fully open category anyone may enter. Records and podiums keep a consistent frame, and nobody is shut out of racing; the open category absorbs what the ranked categories cannot, without rewriting either.",
+        "t": "我会在有排名的比赛中保留按出生性别划分的组别，同时增设人人可参加的公开组。纪录和领奖台保持一致的参照框架，也没有人被挡在赛道之外；公开组吸收排名组无法容纳的部分，两边都不必改写。",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would set eligibility by current hormone levels, applied uniformly by an independent medical panel. It follows the same logic as anti-doping rules, uses present physiology rather than identity or birth records, and gives every athlete one clear, appealable standard instead of a patchwork by region.",
+        "t": "我会按当前激素水平设定资格，由独立医学小组统一执行。这与反兴奋剂规则逻辑相同，依据的是当下生理状态而非身份或出生记录，给每位运动员一条清晰、可申诉的标准，而不是各地拼接的碎片规则。",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would make all amateur and youth events open by default and keep categories only for elite ranked competition. A ten-kilometer charity run is not the Olympics, and building verification bureaucracy for a finisher's medal spends trust that youth leagues cannot afford to lose.",
+        "t": "我会让所有业余和青少年赛事默认开放，只给精英排名赛保留组别。十公里慈善跑不是奥运会，为一枚完赛奖牌建立核查官僚体系，消耗的是青少年联赛输不起的信任。",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would slow down and fund a two-year pilot with published participation and placement data before fixing rules. Both sides are arguing from conviction where numbers are thin, and a policy built on measured outcomes rather than whichever faction lobbied hardest will survive the next controversy.",
+        "t": "我会放慢节奏，先资助一个两年试点并公开参与人数与名次数据，再定规则。双方都在数据稀薄之处凭信念争论；建立在实测结果而非游说声量之上的政策，才能扛过下一场争议。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ],
+    "id": 1084
+  },
+  {
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene_en": "A city housing authority wants to deploy an AI triage system that reads maintenance requests and ranks repair crews by predicted urgency, promising to cut response times by a third. Tenant advocates note the model's training data comes from a decade of dispatch logs in which wealthier districts called more often and got faster service, and the vendor refuses to disclose weights as trade secrets. The council must vote on adoption, adoption with a published audit requirement, or rejection in favor of human dispatchers with new staff.",
+    "scene": "某市住房部门想部署一套 AI 分诊系统，读取维修申请并按预测的紧急程度调度维修班组，号称能把响应时间缩短三分之一。租户权益组织指出，模型的训练数据来自十年间的调度日志，其中富裕城区报修更频繁、获得服务更快，而供应商以商业机密为由拒绝公开权重。议会须就以下方案表决：直接采用；附带公开审计要求后采用；或否决并扩招人工调度员。",
+    "options": [
+      {
+        "t_en": "I would adopt it only with a mandatory published audit: annual bias testing on response times by district, and the model replaced if gaps widen. Speed saves tenants from mold and cold, and an audit clause turns the trade-secret excuse into something the vendor either accepts or walks away from.",
+        "t": "我只有在附带强制公开审计时才会采用：每年按城区检测响应时间偏差，差距扩大就更换模型。速度能让租户早点摆脱霉斑和寒冷，审计条款则让「商业机密」这个借口变成供应商要么接受、要么退出的条件。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would reject it and hire dispatchers instead. A model trained on a decade of unequal service learns the inequality, and a dispatcher who sees a crying tenant on the phone reads things no log captures; the cheaper path here costs an accountability that a city cannot buy back later.",
+        "t": "我会否决它，改为招聘调度员。用十年不平等服务的数据训练出的模型学到的正是不平等，而电话里听到租户哽咽的调度员，能读出日志记不下的事；这条看似便宜的路，卖掉的是城市日后买不回的问责。",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would adopt it after requiring the vendor to open the weights to the authority's own engineers under NDA, with results published quarterly. The auditors see everything that matters, the secret stays commercially protected, and tenants get both the speed and the scrutiny in writing.",
+        "t": "我会要求供应商在保密协议下向本部门工程师开放权重，然后采用，并按季度公开结果。审计者看得到一切要害，商业机密仍受保护，租户则同时拿到速度和书面形式的监督。",
+        "tags": [
+          "TECH:U",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would run it in three districts for a year against human-dispatched control areas, with both datasets public. Deployment is a one-way door once crews learn the new rhythm, and twelve months of side-by-side evidence is a fair price before betting every tenant's repair queue on it.",
+        "t": "我会先在三个城区试运行一年，与人工调度对照区并行，两套数据都公开。一旦维修班组适应了新节奏，部署就是单向门；在把所有租户的维修队列押上去之前，十二个月的对照证据是个公道的代价。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ],
+    "id": 1085
+  },
+  {
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene_en": "A public university dormitory asks how to accommodate students of different faiths who request exam scheduling changes for religious observance. Some faculty warn that a dozen different calendars would make standardized exam windows unmanageable; religious student groups answer that missing a high-stakes exam for a holy day is a burden no secular student carries; the registrar proposes a single published list of recognized observances with automatic rescheduling, plus a case-by-case appeal for anything unlisted.",
+    "scene": "一所公立大学宿舍区收到请愿：不同信仰的学生因宗教节庆申请考试改期。部分教师警告，十几种不同历法会让标准化考试窗口无法管理；宗教学生团体回应，因圣日错过一场高利害考试，是无此负担的世俗学生无法体会的处境；教务长提出方案——公布一份已认可的节庆清单，清单内自动改期，清单外逐案申诉。",
+    "options": [
+      {
+        "t_en": "I would adopt the published list with automatic rescheduling. A clear rule applied to everyone beats a maze of personal exceptions, students of every faith and none can plan around the same calendar, and the appeal path catches what the list misses without turning every exam into a negotiation.",
+        "t": "我会采纳那份公开清单加自动改期。一条对所有人一视同仁的明规则，胜过个人特例的迷宫；无论有无信仰的学生都能对着同一份日历做规划，申诉通道兜住清单漏掉的部分，又不必把每场考试都变成一场谈判。",
+        "tags": [
+          "SEC:E",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would go further and let each student reschedule one exam per term for any sincerely held observance, listed or not. A university asking eighteen-year-olds to choose between their conscience and their transcript should expect them to hide the observance, and a simple one-exam rule costs the timetable far less than it costs trust.",
+        "t": "我会更进一步：允许每名学生每学期因任何真诚持守的节庆改期一场考试，无论是否在清单上。一所逼十八岁学生在良知和成绩单之间做选择的大学，只会得到隐藏信仰的学生；一场考试的额度，对课表的代价远小于对信任的代价。",
+        "tags": [
+          "SEC:F",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would keep fixed exam windows for everyone. A shared civic timetable that treats all students alike is how a plural campus stays workable, and once scheduling bends to each calendar, the students juggling part-time jobs will reasonably ask why their constraints rank below religious ones.",
+        "t": "我会为所有人保留固定的考试窗口。一份对所有学生相同的公共课表，是多元校园得以运转的基础；一旦课表向各种历法弯折，打工的学生自然会问，为什么他们的困难排在宗教困难之后。",
+        "tags": [
+          "SEC:E",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would expand the recognition list annually with input from student religious councils, and fund a quiet exam hall on major holy days instead of rescheduling individuals. Students keep community on the day itself, faculties keep one window, and the campus absorbs the observance rather than litigating it case by case.",
+        "t": "我会每年根据学生宗教议会意见扩充认可清单，并在重要圣日设置安静的考场，而不是为个人改期。学生在节日当天保有社群，教师保有统一窗口，校园以整体安排容纳节庆，而不是逐案争论。",
+        "tags": [
+          "SEC:F",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ],
+    "id": 1086
+  },
+  {
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene_en": "After a spike in retail theft, a city council debates its response. Shopkeepers report losses and rising insurance premiums; legal-aid lawyers report that most repeat offenders are struggling with addiction, and that pretrial detention of shoplifters has left children in unsupervised homes. Proposals on the table: a dedicated retail-theft court offering treatment instead of jail for first and second offenses, higher minimum fines with immediate citation, or expanded plainclothes patrols in commercial corridors.",
+    "scene": "零售盗窃案激增后，市议会讨论应对。店主报告损失与上涨的保费；法律援助律师报告，多数惯犯正受成瘾困扰，而商店窃贼的审前羁押已让一批孩子处于无人照看的状态。桌上的提案有：设立专门的零售盗窃法庭，对初犯和二次犯提供治疗替代监禁；提高最低罚款并当场开单；或在商业街区增加便衣巡逻。",
+    "options": [
+      {
+        "t_en": "I would fund the specialty court. Addiction-driven theft does not stop at the jail gate, and detention that empties a child's home creates costs the city pays elsewhere; a treatment track with real consequences for noncompliance aims at the repeat cycle instead of the individual episode.",
+        "t": "我会为专门法庭拨款。成瘾驱动的盗窃不会止步于监狱大门，而羁押让一个家失去大人、由此产生的成本，最终都会由城市在别处支付；带真实违约后果的治疗轨道，瞄准的是重复循环本身，而不是单次案件。",
+        "tags": [
+          "GOV:L",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would raise the immediate fines and cite on the spot. Consequence that arrives the same week shapes behavior better than a court date eighteen months out, shopkeepers see enforcement they can believe in, and the revenue can partly fund the treatment programs the same council keeps deferring.",
+        "t": "我会提高即时罚款并当场开单。当周就到账的后果，比十八个月后的开庭日更能影响行为；店主看到的是可感的执法，罚款收入还能部分反哺同一届议会一直拖着不批的治疗项目。",
+        "tags": [
+          "GOV:A",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would expand plainclothes patrols first and reassess in a year. Whatever the courts do later, the theft is happening now on the shop floor, visible presence deters the opportunistic majority who respond to risk, and it buys time to build the treatment infrastructure properly instead of launching it half-staffed.",
+        "t": "我会先扩充便衣巡逻，一年后再评估。无论法院之后怎么做，盗窃就发生在店面上；可见的在场能震慑占多数、对风险敏感的机会型盗窃者，也为把治疗体系建像样争取时间，而不是在人员不足时仓促上线。",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would combine the specialty court with a published dashboard of outcomes — reoffense rates, treatment completion, store loss reports — so the council reviews the data annually instead of re-litigating the philosophy every election season; the approach matters less than whether anyone actually measures it.",
+        "t": "我会同时设立专门法庭和公开的结果看板——再犯率、治疗完成率、店铺损失报告——让议会每年看数据，而不是每逢选举季重吵一遍路线之争；路径之争固然重要，但有没有人真的在测量更重要。",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ],
+    "id": 1087
+  },
+  {
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene_en": "A mid-sized coastal nation discovers illegal fishing fleets from a neighboring state inside its exclusive economic zone, with catches roughly equal to a tenth of its domestic fishing industry's annual output. Its navy has two aging patrol vessels. Options before the cabinet: accept a joint-surveillance offer from a distant power with a naval base nearby, file arbitration and publicize satellite evidence while buying two new patrol boats, or open quiet licensing talks letting foreign vessels fish legally for a fee.",
+    "scene": "某中等沿海国家发现邻国的非法渔船队进入其专属经济区，捕捞量约等于本国渔业年产量的十分之一，而海军只有两艘老旧巡逻艇。内阁面前有三个选项：接受附近拥有海军基地的域外大国的联合监控提议；提起仲裁并公开卫星证据，同时采购两艘新巡逻艇；或开启低调谈判，向外国渔船发放有偿合法捕捞许可。",
+    "options": [
+      {
+        "t_en": "I would take the arbitration route and build the patrol fleet. Publicizing satellite evidence puts the burden on the fleet's owners without renting out our waters, and a nation that polices its own zone keeps its options open with every power instead of leaning on one.",
+        "t": "我会走仲裁路线并建设巡逻舰队。公开卫星证据把压力放回船队所有者身上，而不必把我们的海域租借出去；自己守得住专属区的国家，对任何大国都保有余地，不必依附某一家。",
+        "tags": [
+          "NAT:N",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would accept the joint-surveillance offer. Two aging hulls cannot cover an EEZ that size, and enforcement that actually happens beats enforcement that is technically sovereign; the base agreement can be limited to maritime domain awareness with sunset clauses reviewed every five years.",
+        "t": "我会接受联合监控提议。两艘老旧船体覆盖不了那么大的专属区，实际发生的执法胜过主权上成立、现实中落空的执法；基地协议可以限定在海事情报共享，并设五年一审的日落条款。",
+        "tags": [
+          "NAT:C",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would open the licensing talks. Fish that will be taken either way should pay into our budget and our observer program, licensing gives us a registry of every hull and season, and it converts a confrontation we cannot win into an industry we can tax and inspect.",
+        "t": "我会开启许可谈判。无论如何都会被捞走的鱼，不如让收益进入我们的预算和观察员计划；发许可让我们掌握每条船、每个捕捞季的登记，把一场打不赢的对抗，变成一个可以征税和检查的产业。",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t_en": "I would quietly fund a coalition with three neighboring coastal states to pool patrol assets and satellite data first. Four small navies watching together cover more water than any single deal with a distant power, and the negotiating position of a bloc is one no fishing fleet can wait out.",
+        "t": "我会先低调与三个邻国沿海伙伴共建联合巡逻资产与卫星数据池。四个小国海军一起守望，覆盖的海域超过任何一份与域外大国的协议；而以集团姿态谈判，是任何渔船队都拖不起的。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ],
+    "id": 1088
+  },
+  {
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene_en": "A national football league's newly promoted club shocked everyone by reaching the continental quarterfinals, funded by a billionaire owner whose loans to the club now exceed its annual revenue. League regulators must decide whether the existing financial-fairness rules apply, which currently cap owner debt but grandfather pre-existing loans. Smaller clubs argue the imbalance prices them out of trophies; the promoted club's supporters argue a century of small-market obscurity should not bind a new era; broadcasters worry a points deduction would tank the season.",
+    "scene": "某全国足球联赛一支升班马俱乐部一路杀进大陆八强，震动全国——其背后是亿万富翁老板，向俱乐部提供的贷款已超过俱乐部年收入。联赛监管方须决定既有的财务公平规则是否适用：现行规则限制老板债务，但对既有贷款有祖父条款豁免。小球会指责这种失衡让他们与奖杯无缘；升班马球迷则说，一个世纪的小市场沉寂不该束缚新时代；转播商担心扣分会毁掉整个赛季的收视率。",
+    "options": [
+      {
+        "t_en": "I would apply the cap without grandfathering. Rules that bend for the fashionable newcomer stop being rules, and every club knew the debt ceiling when it planned its spending; a phased two-season schedule softens the landing without making the exemption permanent.",
+        "t": "我会不留祖父条款、直接适用上限。会为时髦新贵弯折的规则就不再成其为规则，每家俱乐部制定开支时都知道债务上限在哪；设两年过渡期可以缓冲落地，但豁免不能变成永久。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would keep the grandfather clause and tighten only forward-looking rules. Punishing a club retroactively for spending that made this season historic teaches owners that ambition invites audits, and investment is how a sleepy league grows its audience; the cap should shape tomorrow's budgets, not erase yesterday's.",
+        "t": "我会保留祖父条款，只收紧面向未来的规则。为一个造就了历史性赛季的开支追溯惩罚，只会让老板们学到「雄心招来审计」；投资正是沉睡联赛扩大观众的方式，上限应当塑造明天的预算，而不是抹掉昨天的。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would convert owner loans into equity instead of punishing them. Debt that can be called in a bad year is the real danger to a club's survival, and an equity rule protects fans from midnight bankruptcies while leaving ambitious owners free to spend what they truly commit.",
+        "t": "我会把老板贷款转为股权，而不是惩罚贷款。真正威胁俱乐部存亡的是坏年景里可能被催收的债务；股权规则保护球迷免于深夜破产，同时让有雄心的老板自由投入他们真心承诺的资金。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would commission an independent review with fan representatives on the panel before touching the rules, and publish every club's debt position meanwhile. Whatever the panel decides, a decision made in the open is one the relegated and the promoted can both live with next season.",
+        "t": "我会先委托一个有球迷代表参与的独立审查，规则未动期间公开每家俱乐部的债务状况。无论审查得出什么结论，在阳光下做出的决定，降级的和升级的俱乐部下个赛季都还过得下去。",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ],
+    "id": 1089
+  },
+  {
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene_en": "A provincial grid operator must decide how to replace a retiring coal plant that supplies a quarter of regional peak load. Proposals: a utility-scale battery plus solar and wind buildout spread across four years with a diesel bridge period; a new gas plant delivering firm capacity in two years with a twenty-five-year operating life; or extending the coal plant's retirement five years while transmission upgrades unlock hydropower imports from a neighboring province.",
+    "scene": "某省级电网运营商须决定如何替代一座即将退役、承担区域四分之一峰荷的燃煤电厂。提案有三：建设覆盖四年的大型电池加风光项目，其间以柴油机组过渡；新建一座两年内交付稳定容量的燃气电厂，运营期二十五年；或将燃煤电厂退役推迟五年，同时升级输电线路以解锁邻省水电输入。",
+    "options": [
+      {
+        "t_en": "I would take the renewables buildout even with the diesel bridge. Four years of generator noise is a bounded cost, while a gas plant locks its emissions in for twenty-five; the same transmission work that the battery plan needs is what lets cheap hydropower flood in later anyway.",
+        "t": "我会选择风光方案，即使有柴油过渡期。四年的机组噪音是有边界的成本，燃气电厂却把排放锁定二十五年；电池方案所需的输电升级，本身就是日后廉价水电大举入网的前提。",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would build the gas plant. Blackouts during a two-diesel bridge winter would hit hospitals and small factories first, and a plant that can throttle up and down is exactly the firm partner a variable renewables buildout still needs; it can convert to hydrogen later if that matures.",
+        "t": "我会建燃气电厂。柴油过渡的两年里若在冬季停电，最先受冲击的是医院和小工厂；一台可灵活调节出力的机组，正是波动性风光体系仍然需要的稳定搭档——若氢能成熟，日后还可改造。",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would extend the coal plant five years and buy the transmission upgrades. Using an existing asset fully before replacing it is not a betrayal of climate goals, it is sequencing; every imported hydropower megawatt displaces coal immediately, without waiting for a battery supply chain to catch up.",
+        "t": "我会推迟燃煤电厂五年退役并购买输电升级。在替代品就位前把既有资产用满不是背叛气候目标，而是排序问题；每兆瓦输入的水电都立刻替代燃煤发电，不必等电池供应链追上来。",
+        "tags": [
+          "ENV:G",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would split the province: gas firm capacity for the industrial north, the renewables-and-battery path for the hydro-adjacent south, with an open annual review. Two regions with different load shapes should not share one forced answer, and the review keeps the split honest as costs shift.",
+        "t": "我会分而治之：工业密集的北部配燃气稳定容量，邻近水电的南部走电池加风光路线，并设公开的年度复核。负荷形态不同的两个地区不该共用一个强行统一的答案，年度复核也让这条分界随成本变化保持诚实。",
+        "tags": [
+          "GOV:L",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ],
+    "id": 1090
   }
 ]
