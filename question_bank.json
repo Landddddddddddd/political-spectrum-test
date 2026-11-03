@@ -48902,5 +48902,739 @@
       }
     ],
     "id": 1090
+  },
+  {
+    "id": 1091,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "你在同一家物流仓库的两份工作之间进入终面。合同 A 提供固定月薪，轮班安排提前两周公布；合同 B 底薪更高，但排班与时薪由需求预测算法决定：预测高峰日你能多赚六成，清淡日你可能在岗两小时后就被无偿打发回家。已在 B 合同上的两位同事说，他们的月收入在宽裕和勉强糊口之间来回摆动。",
+    "scene_en": "You have reached the final round for two jobs at the same logistics warehouse. Contract A offers a fixed monthly wage with rotating shifts announced two weeks ahead. Contract B pays a higher base rate but ties your schedule and hourly pay to a demand-prediction algorithm: on forecast peak days you can earn sixty percent more, on quiet days you are sent home unpaid after two hours. Two coworkers already on Contract B say their monthly income swings between comfortable and barely enough.",
+    "options": [
+      {
+        "t_en": "I would sign the fixed contract. Knowing what next month pays is what lets me plan rent, loan payments, and family obligations; the peak-hour premium sounds attractive, but the income risk ends up carried by the workers with the least bargaining power.",
+        "t": "我会签固定合同。能提前知道下个月赚多少钱，我才能安排房租、还款和家里的事；高峰溢价听着诱人，但收入的波动风险最后都压在了最没有议价能力的员工身上。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would take the algorithm contract and push hard. I am young with no dependents, and a sixty percent premium on peak days is exactly what I need; the volatility is a cost I have priced in and would bear myself.",
+        "t": "我会选算法合同并全力冲刺。我年轻、没养家，高峰日多赚六成正是我需要的；波动是我自己算过账之后愿意承担的成本，赌输了也由我自己收拾。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would not sign either contract on paper alone; I would first join coworkers in demanding the company publish its pricing and dispatch rules. Without transparent criteria the promised premium can be redefined at any time; verifiable standards come before choosing.",
+        "t": "两份合同我都不会只看文字就签，会先联合同事要求公司公开算法定价与派单规则。规则不透明，所谓溢价随时可以改口径；先有可核查的标准，再谈选哪一份。",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1092,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "某县将停用的港口土地出售给开发商，一次性获得的收入相当于全县两年的预算。议会有三个提案：把其中一部分作为等额现金分红发给每一位居民；用于扩建长期欠账的诊所和校车网络；或连续五年削减本县的小微企业税负以吸引雇主。公开听证会人满为患，这笔钱必须在本财政年度内定下用途。",
+    "scene_en": "A county sells decommissioned port land to a developer and receives a one-time windfall equal to two years of its entire budget. The council faces three proposals: distribute part of it as an equal cash dividend to every resident, spend it on expanding the underfunded clinic and school-bus network, or cut the county's small business levy for five years to attract employers. Public hearings draw overflow crowds, and the money must be committed within this fiscal year.",
+    "options": [
+      {
+        "t_en": "I support the equal cash dividend. Each person understands their own priorities best — some need to pay down debt, some need a new roof; leaving the money in residents' hands makes fewer assumptions than a committee guessing the county's needs, and it reaches the most hard-pressed directly.",
+        "t": "我支持等额现金分红。每个人对自己生活的优先级最清楚——有人要还债，有人要修屋顶，把钱交给各家自己支配，比让一个委员会替全县人猜需求更少出错，也最能直接帮到手头最紧的人。",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would vote for the clinic and school buses. A dividend thins out to a month of groceries per person, but a clinic that can handle prenatal visits and buses that run on time are a foundation used every day for the next decade; deferred public services do not repair themselves.",
+        "t": "我会投给诊所和校车。分红摊到每个人头上只够一个月伙食，但一间能做产检的诊所和能准点的校车，是往后十年每天都会用到的底子；公共服务的欠账不会因为等额发放而自己补上。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would choose the five-year tax cut. Local small firms employ more people than anyone in the county, and hiring and raises tend to follow once the levy drops; a one-time dividend is spent and gone, while money left in others' pockets keeps producing new jobs.",
+        "t": "我会选择减税五年。本地小企业雇着全县最多的人，税负降下来之后扩招和加薪会自己发生；一次性分红花完就没了，而留在经营者口袋里的钱能持续生出新岗位。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1093,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "你所在地区一家雇有四千人的太阳能组件工厂，订单正流向价格低三成的进口产品，工厂宣布若情况不变将裁员。贸易部门正在权衡三种应对：对进口组件征收临时关税；用一般财政资金直接发放工资补贴以维持工厂竞争力；或者不干预——理由是更便宜的组件能加速本国的能源转型。行业协会与安装企业各执一词，都在游说。",
+    "scene_en": "A domestic solar panel factory employing 4,000 people in your region is losing orders to imports priced thirty percent lower, and the plant has announced layoffs unless conditions change. The trade ministry is weighing three responses: a temporary tariff on imported panels, direct wage subsidies paid from general revenue to keep the factory competitive, or no intervention on the grounds that cheaper panels accelerate the country's own energy transition. Industry groups and installation companies are lobbying on opposite sides.",
+    "options": [
+      {
+        "t_en": "I support a temporary tariff. Four thousand jobs anchor the livelihoods of a whole surrounding community, and the low prices often rest on looser labor and environmental standards elsewhere; a five-year adjustment window for domestic industry beats letting it bleed out in a subsidy race.",
+        "t": "我支持临时关税。四千个岗位牵着一整片社区的生计，而低价往往来自别处更宽松的用工与环保标准；给本国产业一个五年的调整窗口，比让它在补贴竞赛里慢慢失血更实在。",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I oppose the tariff. Panels thirty percent cheaper mean a third more clean electricity from the same budget, benefiting every electricity consumer and the climate targets; inflating every project to save one plant does not add up, and laid-off workers should be caught by retraining programs.",
+        "t": "我反对加税。组件便宜三成，意味着同样预算能多装三分之一的清洁电力，受益的是全体用电者和气候目标；为保住一个厂给所有项目加价，账算不过来，被裁的工人应该由再就业培训来接住。",
+        "tags": [
+          "ECO:R",
+          "NAT:C",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I lean toward wage subsidies rather than tariffs. Tariffs push the cost straight onto downstream installers and users, while subsidies direct the money to the workers themselves and leave the firm's fate to market competition; for similar spending, one path builds a wall, the other props up people.",
+        "t": "我更倾向工资补贴而不是关税。关税把成本直接推给下游安装商和用户，补贴则把钱定向给工人本人，企业该不该继续存在仍由市场竞争说话；同样花的钱，一条路是筑墙，一条路是扶人。",
+        "tags": [
+          "ECO:L",
+          "NAT:N"
+        ]
+      },
+      {
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1094,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "城市边缘最后一块未开发湿地，是二十年间数量已减半的候鸟种群的栖息地。开发商提出在此建设物流园，可在青年失业率偏高的城区创造三千个岗位，并承诺在二十公里外出资建造一块等面积的人工湿地作为补偿。生态委员会自己的报告也承认，这种人工替代湿地从未被证明能容纳相同的物种。",
+    "scene_en": "The last undeveloped wetland on the city's edge shelters a migratory bird population that has declined by half in twenty years. A developer proposes a logistics park that would create 3,000 jobs in a district where youth unemployment is high, offering to fund an artificial wetland of equal area twenty kilometers away as compensation. The ecology board's own report concedes the artificial replacement has never been shown to host the same species.",
+    "options": [
+      {
+        "t_en": "I would veto the project. The artificial wetland has never been shown to support the same birds, so equal area is not equal value; treating a habitat used for decades as an asset that can be rebuilt elsewhere is a premise that does not hold, and the jobs should be sited elsewhere.",
+        "t": "我会否决项目。人工湿地没被证明能养活同一种候鸟，『等面积』不等于等价值；把一片用了几十年的栖息地当成可以异地重建的资产，这个前提站不住，就业应该另找地块解决。",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I would approve the project. Three thousand stable jobs matter enormously to this district, and with the bird population already halved by many pressures, losing this one site may not be the decisive blow; requiring the compensatory wetland to pass inspection before construction begins would limit the risk.",
+        "t": "我会批准项目。三千个稳定岗位对这个区太重要了，候鸟种群二十年已经减半，说明压力来自多方，缺这一块地未必是压垮它们的最后一根稻草；要求补偿湿地建好并通过验收后再开工，能把风险压低。",
+        "tags": [
+          "ENV:G"
+        ]
+      },
+      {
+        "t_en": "I would not vote with this gap in the evidence; I would first run a joint process of independent assessment and resident hearings — how much the birds still depend on this site, how viable the replacement wetland really is — and let the data and technical testimony come before any approval.",
+        "t": "我不会在证据缺口这么大时直接表决，会先启动独立评估加居民听证的联合程序：候鸟到底还依赖这块地多少、补偿湿地可行性多大，让数据和技术陈述先走完，再谈批不批。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1095,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene": "一所成绩差距悬殊的中学，须从下学年起在两种模式中做选择。模式 A 按学科把学生分入快班与慢班，承诺进度更贴合、课堂更易管理；模式 B 保留混合班级，把同等预算转投课堂内的助教和面向全体的课后辅导。在一个年级试点的结果显示：模式 A 提高了尖子生的分数，但成绩末位四分之一学生的差距反而扩大。",
+    "scene_en": "A middle school with wide achievement gaps must choose between two models from next year. Model A regroups students into faster and slower classes by subject, promising tailored pacing and easier classroom management. Model B keeps mixed-ability classes and redirects the same budget into in-class teaching assistants and after-school tutoring open to everyone. A pilot in one grade showed Model A raised top-student scores but widened the gap for bottom-quartile students.",
+    "options": [
+      {
+        "t_en": "I support ability grouping. In one classroom some students are lost while others are bored, and that wears on both; after regrouping, the slower classes can rebuild fundamentals at a fitting pace, and with periodic re-placement, landing in a lower group does not mean being stuck there.",
+        "t": "我支持分层教学。同一个教室里有人听不懂、有人吃不饱，对两边都是消耗；分层后慢班可以用更合适的节奏把基础补牢，配套定期流动机制，分进慢班不等于被固定在那里。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I support the mixed classes with tutors. The pilot already showed what tracking does to the bottom quartile, and a school's job includes the students who are hardest to teach; assistants inside the classroom lift everyone without sorting children by a test score at thirteen.",
+        "t": "我支持混合班加助教。试点已经展示了分层对末位四分之一学生做了什么，而学校的职责也包括最难教的学生；课堂里的助教能把所有人托起来，不必在十三岁就按一次考试分数给孩子分类。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would take a third path: keep the mixed classes but open cross-grade electives and project tracks for students who finish early. Grouping solves pacing while mixed classes preserve the peer environment; giving fast learners an outlet has fewer side effects than splitting classes apart.",
+        "t": "我会选第三条路：保留混合班，但给先学完的学生开放跨年级选修和项目制通道。分层解决的是课堂节奏，混班保留的是同伴生态；给进度快的人一个出口，比把班级切开副作用更少。",
+        "tags": [
+          "COL:I",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1096,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene": "一座小镇唯一的学校因入学人数跌破三十人而面临关停，主街一半的铺面空置。安置机构提议在五年内安置两百户新来家庭：学校得以保留、商铺有人接手，条件是镇里提供接待服务和语言课程。镇民大会上，老住户分成两派——一派怀念校园里重新有孩子的日子，另一派担心镇子的公共服务会被改变得比它能消化的更快。",
+    "scene_en": "A small town's only school was slated for closure after enrollment fell below thirty students, and half the shops on the main street stand empty. A resettlement agency proposes housing 200 newcomer families over five years, which would keep the school open and fill the storefronts, provided the town supplies reception services and language classes. At the town meeting, long-time residents split between those who miss having children in the schoolyard and those who worry the town's services will change faster than it can absorb.",
+    "options": [
+      {
+        "t_en": "I support receiving them. Once the school closes, only the elderly remain, and in ten years even the supermarket leaves; two hundred families bring students, yes, but also a bakery, construction crews, and street life, and the language classes are an investment the town has owed for a while.",
+        "t": "我支持接收。学校关了，镇上就只剩老人，十年后连超市都会撤走；两百户家庭带来的不只是学生，还有面包店、工地和人气，配套的语言课是镇子本来就欠的一笔投入。",
+        "tags": [
+          "NAT:C",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I support receiving them, but at half the scale and a slower pace. The school survives while the town's reception capacity is not pierced overnight; settle the first hundred families, get jobs and classes running, and only then talk about the next batch — steadier for everyone involved.",
+        "t": "我支持接收，但规模减半、节奏放慢。学校保住了，镇里的接待能力也不至于被一夜打穿；先来的一百户安顿好、就业和课程跑顺了，再谈下一批，对双方都更稳妥。",
+        "tags": [
+          "NAT:C"
+        ]
+      },
+      {
+        "t_en": "I would first ask the town itself. Whether the school stays and what the town becomes is the life of the people who have lived here longest; whether to sign the resettlement agreement should be decided by a vote of local residents, not settled for us by an outside agency and the county.",
+        "t": "我会先问镇民自己。学校要不要留、镇子要变成什么样，这是长期住在这里的人的生活；安置协议签不签，应该由本镇居民投票决定，而不是由外来的机构和县里替我们定。",
+        "tags": [
+          "NAT:N",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1097,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "你所在的公司宣布将在所有办公电脑上安装监控软件：记录活跃分钟数、应用使用情况，并定期截屏，汇入管理者可以查看的仪表盘。人事部门称其用意是发现过载、平衡工作量，而非追责。部署定在两周后，公司只安排了答疑会，并未征求员工同意。你和一位同事正在商量在员工大会上该持什么立场。",
+    "scene_en": "Your company announces it will install monitoring software on all laptops: it tracks active minutes, application usage, and takes periodic screenshots, feeding a dashboard managers can view. HR says it is meant to flag overload and balance workloads, not to discipline. The rollout is scheduled in two weeks, and employees have been invited to a Q&A rather than asked to consent. You and a colleague are deciding what position to take at the staff meeting.",
+    "options": [
+      {
+        "t_en": "I would accept it, but only after three things are published: which fields are recorded, who can view them, and how long they are kept. If the data shows team-level load rather than scoring individuals, it can genuinely speak for overworked departments; boundaries in writing beat verbal reassurances.",
+        "t": "我会接受，但要求先公开三样东西：记录哪些字段、谁能查看、保留多久。如果数据只看团队整体负载而不是逐人打分，它确实能替忙闲不均的部门说话；写在纸上的边界比口头保证可靠。",
+        "tags": [
+          "TECH:K"
+        ]
+      },
+      {
+        "t_en": "I would oppose it outright. Screenshots and minute-level activity measure posture, not output; the most overloaded will not be spotted by it, only taught to perform busyness for the camera. How I work should not become a curve on a manager's dashboard.",
+        "t": "我会明确反对。截屏和逐分钟记录量度的是坐姿不是产出，过载最重的人不会被它发现，只会学会在镜头前表演忙碌；我自己怎么工作，不该变成管理者仪表盘上的一条曲线。",
+        "tags": [
+          "TECH:U"
+        ]
+      },
+      {
+        "t_en": "I would propose the middle path: aggregated anonymous statistics only, with no viewable per-person detail. Workload data is useful for scheduling, but there should be no archive of screenshots traceable to a named person; a solution with both benefits is technically straightforward.",
+        "t": "我会提议折中方案：只做匿名汇总统计，任何单个人的明细都不可查看。负荷数据对排班有用，但不该存在一份能点名到人的截屏档案；两全的做法在技术上完全做得到。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1098,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene": "连环入室盗窃案后，市议会就青少年犯的处置展开辩论。一项提案扩大「恢复性司法」试点：年轻加害人与受害者见面，约定赔偿与社区服务，完成后撤销指控；两年的数据显示其再犯率低于走法院程序。另一项提案则规定无论年龄，第三次犯罪一律强制最低刑期收押。受害者联合会内部对两案也各有支持者。",
+    "scene_en": "After a series of burglaries, your city council debates two responses to juvenile offenders. One proposal expands a restorative justice pilot where young offenders meet victims, agree on repayment and community service, and have charges dropped on completion; its two-year numbers show lower reoffending than court processing. The other sets mandatory minimum detention for any third offense regardless of age. The victims' association is itself split between the two camps.",
+    "options": [
+      {
+        "t_en": "I support expanding the restorative justice pilot. The two-year numbers are on the table: young people who complete the meeting-and-repayment process reoffend less. Detaining every third offender saves only present trouble and sends the bill back years later as a higher reoffending rate.",
+        "t": "我支持扩大恢复性司法试点。两年的数据摆在那里：走完见面赔偿程序的年轻人再犯更少；把第三次犯罪的人直接收押，省下的只是眼前的麻烦，账单会以更高的累犯率在几年后寄回来。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I support mandatory minimum detention. The pilot numbers look good, but they cover hand-picked minor cases; for a third-time burglar the community process has already given two chances. Residents need a clear floor — crossing it carries a certain consequence, and that certainty is itself the deterrent.",
+        "t": "我支持强制最低刑期。试点数据好看，但那是筛出来的轻案；对第三次入室盗窃的人，社区程序已经给过两次机会了。住户需要一条明确的底线——越线有确定的后果，这种确定性本身就是威慑。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would first require an independent review of the pilot data for selection bias before voting. Both proposals rest on the same figure; if the case-selection was skewed, expanding the pilot or mandating detention could both be doubling down on a wrong premise. One month for a clean basis is worth it.",
+        "t": "我会先要求独立复核试点数据的抽样偏差，再回来表决。两边的方案都建立在同一个数字上，如果挑案标准偏了，扩大试点和强制收押都可能是在错误前提下加码；多花一个月换一个干净的依据，值得。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1099,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "一座中型城市须为紧邻轨道交通的街区更新区划，该街区现以独栋住宅和空地为主。方案 A 允许建中层公寓楼，其中三成单元必须以低于市场的租金出租；方案 B 维持低层区划，但把地块切分成入门级小住宅的开发商可免缴各项费用。六年间全市房租上涨四成，而数十年前在此购房的业主对两个方案都反对。",
+    "scene_en": "A mid-sized city must update its zoning for a transit-adjacent district currently occupied by single-family homes and empty lots. Plan A allows mid-rise apartment blocks with a mandatory 30% of units rented below market. Plan B keeps the low-rise zoning but waives fees for builders who subdivide lots into affordable starter homes. Rents in the city have risen forty percent in six years, and the district's homeowners, who bought decades ago, oppose both plans.",
+    "options": [
+      {
+        "t_en": "I support Plan A. Mid-rise buildings at the transit stop with a third of units rent-capped is the only path on the table that actually adds supply; a forty percent rent rise will not be chased back by waiving a few fees, and longtime homeowners' streetscape should not be subsidized by every renter in the city.",
+        "t": "我支持方案 A。地铁口建六层的楼、其中三成租金受限，是眼下唯一能让供给真正增加的路径；房租涨四成不是靠免几笔费用能追回来的，老业主的街区景观不该由全城的租客补贴。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I support Plan B. The fee waiver buys starter homes that genuinely belong to their occupants, and the neighborhood's street scale and social fabric stay intact; the mid-rise plan would turn the district into a transient corridor for renters, and the shadow of six stories falls on someone else's yard first.",
+        "t": "我支持方案 B。免费用换来的是真正属于自住者的小住宅，本地的街道尺度和社区结构不被推平；高楼方案会把这个街区变成租客轮换的过渡带，而六层楼的影子先落在别人家院子里。",
+        "tags": [
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I find both plans too timid and would propose handing the lots to a community land trust: publicly held land, saleable homes, prices indexed to local median income. It addresses supply and affordability at once, does not depend on a one-time waiver, and benefits residents twenty years out as well.",
+        "t": "两个方案我都嫌不够，会提议把地块交给社区土地信托：土地公共持有、房屋可售、价格与本地中位收入挂钩。供给和可负担同时解决，也不依赖一次性的费用减免，二十年后的住户同样受益。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1100,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "一种真菌病害正在全国麦田蔓延，预计下季减产最高可达两成。公共研究机构（而非外国专利持有方）已培育出抗病的基因编辑品种，农业部须做决定：赶在本季快速批准；先进行两季完整的田间公开试验；或批准种植但强制设隔离带与标识，同时持续监测。农民合作社与消费者团体提交了针锋相对的意见。",
+    "scene_en": "A fungal disease is spreading through the country's wheat fields, with yield losses projected up to a fifth next season. A gene-edited resistant variety exists — developed in a public institute, not a foreign patent holder — and the agriculture ministry must decide: fast-track approval for this season, run two full seasons of open field trials first, or approve with mandatory buffer strips and labeling while monitoring runs. Farmer cooperatives and consumer groups filed opposing comments.",
+    "options": [
+      {
+        "t_en": "I would fast-track approval. Twenty percent of the harvest is not an abstraction; it is small farms' entire cash flow for a year. The variety comes from a public institute with no patent lock attached, and every season the disease spreads, the cost of waiting lands on those least able to pay it.",
+        "t": "我会走快速批准。两成收成不是抽象数字，是很多小农一整年的现金流；这个品种出自公共机构、不附带专利锁，病害每多扩散一季，等待的代价就落在最付不起的人头上。",
+        "tags": [
+          "ENV:G"
+        ]
+      },
+      {
+        "t_en": "I would insist on two full seasons of open trials. Even a public-institute variety must answer questions about gene flow and long-term soil effects; a year of losses can be buffered from reserves and imports, but once an unverified variety is rolled out at scale, there is no pulling it back.",
+        "t": "我会坚持先做两季田间试验。公共机构出的品种也要回答基因漂流和长期土壤影响的问题；病害损失可以靠储备和进口缓冲一年，但一个没验证过的品种一旦大面积铺开，出了问题收不回来。",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I would take conditional approval: buffer strips, mandatory labeling, season-by-season monitoring published in an annual report. The disease will not wait two years, and consumers' right to know should not be skipped either; planting starts under controlled conditions, the data speaks, and the rules can tighten or loosen at any time.",
+        "t": "我会选带条件的批准：设隔离带、强制标识、逐季监测并在年报公开。病害等不了两年，消费者的知情权也不该被跳过；让种植在受控条件下开始，数据说话，规则随时可以收紧或放开。",
+        "tags": [
+          "ENV:G",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1101,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene": "全国最大的地方报业集团被一家同时经营博彩门店和房产门户网站的控股公司悄然收购，编辑人员反映针对这些行业的报道正受到越来越大的软化压力。议会委员会提出三种对策：设立公共利益基金，用平台税收入补贴地方新闻；出台透明度规则，强制报业集团在每篇文章页面公示所有权与收入来源；或者不干预，把并购视为市场事务。",
+    "scene_en": "The country's largest regional newspaper chain has been quietly acquired by a holding company that also owns betting shops and real-estate portals, and editorial staff report growing pressure to soften coverage of those industries. A parliamentary committee proposes three remedies: a public interest fund that subsidizes local news with money raised from platform levies, a transparency rule forcing chains to publish ownership and revenue sources on every article page, or no intervention, treating consolidation as a market matter.",
+    "options": [
+      {
+        "t_en": "I support the public interest fund. Council meetings and court coverage by local reporters carry no advertising value, and the market was never going to sustain them; topping them up from a platform levy is simply acknowledging that reality. Money distributed by an independent committee with an editorial-independence clause keeps it from becoming an official mouthpiece.",
+        "t": "我支持公共利益基金。地方记者跑的市政会和法院新闻没有广告价值，市场本来就养不起，靠平台税输血只是承认这个现实；钱由独立委员会分发、附编辑独立条款，就不会变成官方喉舌。",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I support the transparency rule over subsidies. Who owns the paper and where the money comes from, printed under every article, lets readers weigh it themselves; once government starts paying and picking media, however pretty the clauses, the list of subsidized outlets is itself a form of influence.",
+        "t": "我支持透明度规则而不是补贴。谁拥有这张报、钱从哪来，印在每篇文章下面，读者自己会掂量分量；一旦政府开始发钱挑媒体，无论条款写得多好看，接受补贴的名单本身就是一种影响。",
+        "tags": [
+          "GOV:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would choose no intervention. Readers have already voted with subscriptions, and local papers that cannot survive show where demand has moved; government stepping into the media market means deciding for readers what they should see, and consolidation itself has stopped no one from launching a new paper.",
+        "t": "我会选不干预。读者已经用订阅量投过票，办不下去的本地报说明需求在转移；政府接手媒体市场，等于替读者决定他们该看什么，而并购本身并没有阻止任何人另办一份新报。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1102,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene": "养老金精算报告预测十四年后出现缺口：要么退休年龄提高两岁，要么缴费率上调 2.5 个百分点并由雇主与员工均摊，要么把定额普享养老金改为对最高四分之一领取者做资产审查。从事重体力、预期寿命更短的农村劳动者在听证中陈情：延退对他们打击最重。",
+    "scene_en": "The state pension fund's actuary projects a shortfall in fourteen years: either the retirement age rises by two years, contribution rates rise by 2.5 points split evenly between employers and workers, or the flat universal pension becomes means-tested for the top quartile of retirees. Rural workers with physically heavy jobs and shorter life expectancy have testified that a later retirement age falls hardest on them.",
+    "options": [
+      {
+        "t_en": "I would raise contribution rates. If the shortfall is a money problem, solve it with money; asking today's workers to chip in a bit more is fairer than making bricklayers haul for ten extra years. Splitting it between employers and workers spreads the pain thinly and avoids a tiered system where the long-lived collect and the short-lived never do.",
+        "t": "我会选提高缴费率。缺口是钱的问题，就该用钱解决，让现在工作的人多缴一点比让砌砖工多搬十年砖公平；分摊到雇主和员工两头，账面痛苦最小，也不会出现长寿者领得多、短寿者领不到的分层。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I support means-testing. Having affluent pensioners keep full universal benefits amounts to young contributors transfusing people who do not need it; concentrating the savings on those who actually lack money lets the same budget catch twice as many at the bottom.",
+        "t": "我支持资产审查。让高退休金的富裕老人继续拿全额普享金，等于让年轻缴费者给不需要的人输血；把省下的钱集中给手头真正拮据的人，同样的预算能多兜住一倍的底。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would raise the retirement age, with an early-retirement track for heavy physical jobs. Life expectancy has grown, and a scheme designed fourteen years ago cannot carry today; the problem is not the later age itself but the one-size-fits-all — tiering by occupation and contribution years is more sustainable than oscillating between rates and benefits.",
+        "t": "我会支持延退，但给重体力劳动者留提前退休通道。寿命在延长，十四年前定的方案撑不到今天；问题不在延退本身，而在一刀切——按职业和缴费年限分档，比在缴费率和待遇之间反复摇摆更可持续。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1103,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "一项全国性照护假制度正在设计中，允许员工休带薪假期照料重病的父母或配偶。桌上有三种筹资模式：雇主责任制，由各企业自行承担自家员工的假期待遇；全体雇主共同缴费的社会保险池；以及自愿参与、对提供该假期的企业给予税收抵免的制度。小企业主警告，雇主责任制会让他们在招聘处于照护年龄段的员工时更犹豫。",
+    "scene_en": "A new national care leave scheme is being designed to let workers take paid weeks to look after a seriously ill parent or spouse. Three financing models are on the table: employer mandates, where each company pays its own employees' leave; a social insurance pool shared by all employers; or a voluntary system with tax credits for companies that offer it. Small businesses warn the mandate model will make them hesitant to hire workers of caregiving age.",
+    "options": [
+      {
+        "t_en": "I support the social insurance pool. Care is something everyone meets eventually, and pooling it across all employers means no single company is punished for hiring someone with a sick parent; a uniform standard also spares small firms from paying on a different scale than large corporations.",
+        "t": "我支持社会保险池。照护是每个人迟早会遇到的，成本摊到全体雇主头上，没有哪家企业会因为雇了要照顾父母的人而被单独惩罚；统一标准也让小企业不必和大公司按不同口径掏钱。",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I support the voluntary tax-credit model. Whether to offer the benefit should follow each firm's capacity — those who can afford it get the credit, those who cannot face no forced bill; leaving the choice to the market is more workable than drawing a hard line that everyone groans at.",
+        "t": "我支持税收抵免的自愿模式。要不要给员工这个福利，让企业按自己的承受力决定，给得起的得到减税，给不起的没有被强制的账单；把选择留给市场，比划一条人人叫苦的硬线更实际。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would choose the employer mandate with state payment on behalf of small businesses. Responsibility belongs with the party in the most direct relationship of benefit — the firm that profits from an employee's stability should pay; with the treasury covering firms under twenty staff, the discrimination small businesses warn of is defused.",
+        "t": "我会选雇主责任制，但配套中小企业国家代缴。责任就该由受益关系最直接的一方承担——谁的企业享受了员工留下的稳定，谁就该付费；对雇员少于二十人的企业由财政接手，就能把警告中的歧视压下去。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1104,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "在对大型繁殖场条件的调查曝光后，市议会将就是否禁止零售商业繁殖机构的幼犬幼猫进行表决。宠物店此后只能展示收容所动物；购买者仍可直接向持证繁殖者购买。店主表示该禁令切断了他们的主要收入线，却对无证的网络卖家毫无作用，而收容所的接收量已经翻倍。",
+    "scene_en": "A city council is voting on banning retail sales of puppies and kittens from commercial breeding facilities, following investigations into conditions at large-scale breeders. Pet stores would be limited to showcasing shelter animals; buyers could still purchase directly from licensed breeders. Store owners say the ban closes their main revenue line while doing nothing about unlicensed online sellers, and shelter intake has already doubled.",
+    "options": [
+      {
+        "t_en": "I support the ban. A puppy in a shop window is itself a demand engine — the passerby paying at the counter has no idea of the conditions behind it; cutting off the smoothest retail channel redirects demand toward shelters, which is exactly where the doubled intake is waiting.",
+        "t": "我支持禁令。橱窗里的幼犬本身就是需求引擎——路过付钱的人不知道背后是什么条件；切断零售这条最顺的路，需求才会流向收容所，正好接住已经翻倍的接收量。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I oppose the ban. Licensed breeders lose their only open sales channel and the trade merely moves into harder-to-police private messages online; if the target is breeding mills, the answer is enforcement capacity against unlicensed sellers, not closing the shops that follow the rules — while the extra shelter load lands on the budget and on volunteers.",
+        "t": "我反对禁令。持证繁殖者失去唯一的公开销售渠道，交易只会转入更难查的网络私信；要解决繁殖场，就该扩编执法去查处无证卖家，而不是把守规矩的店关门——同时多出来的收容压力最后由财政和志愿者买单。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would back the middle path: no ban, but require stores to display each puppy's breeder registration and inspection records, and give shelter animals equal window space. With the information level, consumer choice means something; a blanket ban only pushes the trade into the shadows.",
+        "t": "我会支持折中方案：不禁售，但要求宠物店对每只幼犬公示繁殖场编号与实地检查记录，并给收容所动物同样的橱窗位置。信息摆平了，消费者的选择才有意义；一刀切只会把生意推进阴影里。",
+        "tags": [
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1105,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "市中心一座 1920 年代的电影院已空置九年，修缮预算是拆除费用的四倍。议会须在三者中选择：全额修缮并配套十年文化补贴；拆除后建设含八十套住宅的商业住宅综合体；或适应性再利用——保留立面与前厅、在其后建住宅——成本高于拆除但低于全额修缮。遗产团体与住房倡导组织各自动员。",
+    "scene_en": "A 1920s picture palace in the city center has stood empty for nine years; restoration estimates run to four times the budget of demolishing it. The council must choose: full restoration with a ten-year cultural subsidy, demolition for a mixed housing-and-retail block with 80 apartments, or adaptive reuse — keeping the facade and foyer while building housing behind — which costs more than demolition but less than full restoration. Heritage groups and housing advocates are mobilizing separately.",
+    "options": [
+      {
+        "t_en": "I support full restoration. A city can grow few things of its own; a domed ceiling built with ninety-year-old craft, once demolished, is gone, while eighty apartments can be built on any plot. The subsidy spread over ten years comes to what a mid-tier road resurfacing costs anyway.",
+        "t": "我支持全额修缮。一座城市能自己长出来的东西不多，九十年前手艺做的穹顶拆了就是拆了，八十套公寓在哪个地块都能盖；文化补贴十年摊下来，其实只是一条中等道路的养护预算。",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would choose demolition. What a building empty for nine years supports is moss and debt; eighty apartments are the daily lives of eighty households. A city's memory lives in things still in use, not in a facade standing guard for someone's nostalgia.",
+        "t": "我会选拆除。空了九年的建筑养着的只有苔藓和债务，八十套住宅是八十户人家的生活；城市记忆靠的是还在被使用的东西，不是一堵替谁怀旧站岗的立面。",
+        "tags": [
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I support adaptive reuse. With the facade and foyer kept, the block keeps its historic character, and the eighty apartments shrink to sixty-something after the added cost; each camp takes most of what it wanted, and a plan like this is the one most likely to survive both the budget and the vote.",
+        "t": "我支持适应性再利用。立面和前厅留下，街区的历史感还在，八十套住宅扣掉增量成本后仍能建六十几套；两个阵营各拿走大半想要的东西，这种方案在预算和投票上都最容易活下来。",
+        "tags": [
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1106,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "全区唯一的养老院因无法达到新的人员配置标准即将关停，九十位在住老人大多来自周边村庄。县里提出三种应对：补贴老人入住六十公里外的区域养老院并安排每周班车；发放居家照护包，为照料亲人的家庭成员支付照护者工资；或将关停建筑改造为代际共居住所，学生以免租入住、提供夜间值守换取住宿。",
+    "scene_en": "The district's only nursing home will close because it cannot meet new staffing standards; its ninety residents come mostly from surrounding villages. The county proposes three responses: subsidized places at a regional facility sixty kilometers away with a weekly shuttle, a home-care package paying family members a caregiver wage, or converting the closing building into an intergenerational residence where students live rent-free alongside elderly residents in exchange for overnight support hours.",
+    "options": [
+      {
+        "t_en": "I support the regional facility with the shuttle. Professional care belongs in professionally staffed settings — what the new standards demand is not something a village annex can provide; distance can be patched with shuttles and travel subsidies, and care quality is not something to gamble against pressure sores.",
+        "t": "我支持区域养老院加班车。专业的事交给专业配置——新标准要求的东西，村庄小院给不了；距离可以用班车和探亲补贴补，护理质量不能拿老人的褥疮风险去赌。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would choose the caregiver wage. Most of the ninety want to stay in their own villages, and spouses and children are already providing the care — it simply has never counted as labor. Paying them costs less than uprooting the elderly sixty kilometers away, and meets far less resistance.",
+        "t": "我会选居家照护工资。九十位老人里大多数想留在自己村庄，配偶和子女的照料本就在发生，只是从没被算作劳动；把工资给他们，比把老人连根拔到六十公里外便宜，也遇到更少的抵抗。",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would try the intergenerational residence. Students need housing and the elderly need someone to answer the door at night — the two gaps fit together. It will not substitute for heavy-care nursing, but as a low-cost first layer it keeps in town those who can be kept.",
+        "t": "我会试代际共居。学生要住处，老人要夜里有人应门，两个缺口正好对上；它替代不了重度失能的照护，但作为低成本的第一层，先把能留在镇上的老人留下来。",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1107,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "州议会正就短期贷款机构的利率上限展开辩论。若将年化利率上限设为 36%，州内多数发薪日贷款门店将停业；邻州的研究结论不一——部分显示借款人转向透支和无证网络放贷，部分显示家庭财务状况改善。放贷方主张，该上限会切断被银行拒绝的借款人唯一能获得的正规信贷；消费者组织则反驳称，这类产品从设计上就让借款人陷入反复续借。",
+    "scene_en": "A state legislature is debating a cap on short-term lenders' interest rates. A 36% APR cap would shut down most payday storefronts in the state; research from neighboring states is split — some shows borrowers shifted to overdrafts and unlicensed online lenders, some shows household finances improved. Lenders argue the cap removes the only formal credit available to borrowers banks refuse; consumer groups counter that the product is engineered to trap borrowers in repeat borrowing.",
+    "options": [
+      {
+        "t_en": "I support the cap. A product at three to four hundred percent annualized is not lending; it is hunting the people most vulnerable in the days before payday. As for those who shifted to unlicensed lenders in neighboring states, that precisely shows a formal alternative — such as small postal-savings loans — needs to be built alongside.",
+        "t": "我支持设上限。年化三、四百个百分点的产品不是在放贷，是在围猎发薪日前后最脆弱的一群人；邻州研究里转向无证放贷的那部分人，恰恰说明正规替代渠道——比如邮政储蓄小额贷——需要一起补上。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I oppose the one-size cap. Risk-based pricing is not greed, and people banks refuse also face emergencies; close the storefronts and what they face is offshore online lenders and bounced checks at even higher cost. Better to keep the stores and mandate disclosure of the true annualized rate.",
+        "t": "我反对一刀切的上限。风险定价不是贪婪，银行不借的人也要有地方应急；把门店关掉，他们面对的就是境外的网络放贷和被退回的支票，成本只会更高。宁可保留门店并强制披露真实年化利率。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would back a public alternative: small emergency loans from a state bank and credit unions at rates covering cost, then let that real cost benchmark discipline market pricing. No need to pick between banning and tolerating first — put a borrowable option on the table.",
+        "t": "我会支持公共替代方案：由州立银行和信用社开设小额应急贷，利率覆盖成本即可，再用这个真实成本去约束市场定价。不必先在禁止和放任之间选边，先把借得起的选择摆上桌。",
+        "tags": [
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1108,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "河畔街区八年内三次被淹，新修订的洪泛区地图刚把街区大半划入高风险区，保险费翻倍。县里为居民提供了两项计划的选择：按灾前市值自愿收购、土地退还为湿地；或堤防加房屋抬高的工程方案，保住每一栋房子，但每户成本是收购方案的四倍，且需要发行公债通过全民投票。",
+    "scene_en": "A riverside neighborhood has flooded three times in eight years, and the floodplain map just redrew most of it into the high-risk zone, doubling insurance premiums. The county offers residents a choice between two programs: voluntary buyouts at pre-flood market value with the land returned to wetland, or a levee-and-elevation program that protects every house but costs four times as much per household and needs a bond referendum to pass.",
+    "options": [
+      {
+        "t_en": "I would take the buyout and move. After the third flood I no longer have faith in 'this time it's different'; money in hand and a new house on higher ground beats betting again on a levee's approval and construction schedule, and the restored wetland would also hold water for downstream.",
+        "t": "我会接受收购方案搬走。第三次被淹之后，我对『这次不一样』的说法已经没有信心；钱落袋、新家在坡上，比再赌一轮堤坝的批复和施工期实在，恢复的湿地还能替下游分洪。",
+        "tags": [
+          "ENV:S",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I support the levee program and will vote for the bond. The neighborhood took generations to build, and its school, congregation, and neighbor networks do not relocate; per household it costs four times as much, but the ledger on buying out a rooted community has never been only the budget line.",
+        "t": "我支持堤防方案并会投公债赞成票。街区是几代人攒出来的，学校、教堂和邻居网络搬不走；按户算账贵四倍，但把一个扎了根的社区连根买断，这笔账从来不只写在预算表里。",
+        "tags": [
+          "COL:M",
+          "ENV:G"
+        ]
+      },
+      {
+        "t_en": "I would push to merge the two: build the levee to hold a five-year protection window while keeping the voluntary buyout open to those who want out, with proportions set by uptake. A program forcing one answer on everyone is the most fragile kind, both in a flood and at the ballot box.",
+        "t": "我会推动两案合并：先修堤防保住五年的防护窗口，同时保留自愿收购给想走的人，比例由报名情况决定。强制所有人给同一个答案的方案，在洪水面前和投票箱前都最脆弱。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1109,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene": "一项议会法案要求达到用户规模门槛的平台，在安全审查框架下向认证研究者开放数据访问以研究算法对用户的影响，拒绝配合将被处以罚款。平台代表称该强制要求侵犯用户隐私与商业机密，不可接受；研究者则指出平台自身泄露的内部研究显示，其提升使用时长的功能所产生的效应从未被公司公布。你的选区议员下月将对法案投票。",
+    "scene_en": "A parliamentary bill would require platforms above a user threshold to grant accredited researchers data access to study algorithmic effects on users, under security review, with fines for refusal. Platform representatives call the mandate an unacceptable breach of user privacy and trade secrets; researchers point to the platform's own leaked internal studies showing engagement-optimizing features whose effects the company never published. Your representative will vote on the bill next month.",
+    "options": [
+      {
+        "t_en": "I support the bill. A platform that ran its own internal studies and withheld them has demonstrated that voluntary transparency does not arrive on its own; security review and researcher accreditation already narrow the avenues for abuse, and the 'privacy' being refused looks more like trade secrets under another name.",
+        "t": "我支持法案。平台自己做过内部研究又压着不发的行为说明，指望自愿透明等不来；安全审查和研究者认证已经把滥用路径收窄了，被拒绝的这份「隐私」更像商业机密换了个名字。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I oppose the mandated access. User data and recommendation weights are a platform's core assets and security perimeter, and bulk researcher access opens a door no one can fully watch; the same goal is reachable through voluntary agreements and industry standards, while the bill only drives smaller platforms out of the market.",
+        "t": "我反对强制开放。用户数据和推荐权重是平台最核心的资产与安全边界，给研究者批量访问等于开一道谁也无法全程盯着的门；同样的目标可以用自愿协议加行业标准达到，法案只会把中小平台逼出市场。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would demand one revision first: access runs inside a third-party escrow environment, outputs are statistics only with no raw records leaving, and platforms bear the cost. Research gets done while personal detail never leaves the room — a version like this outlives the next administration better than the bill's pass-or-veto framing.",
+        "t": "我会要求先修一版：数据访问在第三方托管环境内进行、输出只给统计结果不给原始记录、费用由平台承担。研究能做，个人明细不落外人手里，这一版比原案「要么过、要么否」的框架更经得起换届。",
+        "tags": [
+          "TECH:U"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1110,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "一个世居语言少数群体约占所在地区人口 8%，向地区政府提交请愿：在其聚居的四个区，市政服务、法庭程序与官方标识应提供其语言版本，费用由地区预算承担。多数语言的媒体担心这会形成平行行政体系，而该群体指出，宪法中的文化权利条款八十年来从未被真正落实。",
+    "scene_en": "A regional government must rule on a petition from a long-established linguistic minority, about 8% of the region, asking that municipal services, court proceedings, and official signage be available in their language in the four districts where they are concentrated, with costs met by the regional budget. The majority-language press argues this will create parallel administration, while the minority notes the constitutional clause on cultural rights has never been operationalized in eighty years.",
+    "options": [
+      {
+        "t_en": "I support implementing it in the four districts. A constitutional clause on the books for eighty years should not remain decoration; the language of public services decides whether an elderly person can see a doctor alone and whether a witness can testify accurately in court — these are administrative costs, not favors.",
+        "t": "我支持在四个聚居区落实。宪法写了八十年的条款不该永远是装饰；公共服务用谁的语言，决定的是老人能不能独自看病、证人能不能在法庭上准确作证——这些是行政成本，不是恩惠。",
+        "tags": [
+          "CUL:P",
+          "NAT:C"
+        ]
+      },
+      {
+        "t_en": "I support language learning over bilingual administration. Eighty years of shared life has produced one common working language; split services into two tracks and the clearer the border, the smaller both communities' radius of movement. The budget works harder on schools and translation subsidies than on restructuring administration.",
+        "t": "我支持学习语言而不是双语行政。八十年的共同生活已经形成了一个统一的工作语言；服务分成两套，边界划得越清楚，两个群体各自的移动半径就越小。预算花在语言学校和翻译补贴上，比改行政体系更有效。",
+        "tags": [
+          "CUL:T",
+          "NAT:N"
+        ]
+      },
+      {
+        "t_en": "I would approve bilingual services and court proceedings, and leave signage to each district. Rights-related procedures must be within everyone's reach, while the street-level language landscape is something local majorities and minorities can negotiate; passing the whole package turns a negotiable matter into wholesale confrontation.",
+        "t": "我会批准服务与法庭的双语，标识则交由各区自行决定。涉及权利的程序必须人人可达，街头的语言景观则让当地多数与少数协商；一揽子通过只会把可谈的事变成全面对抗。",
+        "tags": [
+          "NAT:C",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ]
   }
 ]
