@@ -725,5 +725,20 @@
       "ideologies": 200,
       "domains": 30
     }
+  },
+  {
+    "date": "2026-11-03",
+    "title": "题库质量修复：160 题 domain_en 归一化到 30 域标准译名",
+    "items": [
+      "修正 ID 1-568 区间内 160 题的 domain_en（历史批次自由翻译产物，共 17 种非标准写法）",
+      "典型订正：Community Neighborhoods→Community & Neighborhood、Employment in the workplace→Workplace & Employment、Expression of speech→Speech & Expression、Economic Allocation→Economic Distribution、Monitor privacy→Surveillance & Privacy、Show Media Info→Media & Information、Agri-food→Agriculture & Food、Rule of law→Justice & Rule of Law、Religion & Spirituality→Religion & Belief、Housing City→Housing & Urban、Tech AI→Technology & AI",
+      "仅改 domain_en 单字段，题干/选项/标签/计分逻辑零改动；写回前做 JSON 往返一致性校验，diff 仅涉及该字段",
+      "脚本内置守卫：域不在 30 域标准表内即中止，避免误改新增域；复验后 distinct 域-译名对由 55 降为 30，非标准 0 条"
+    ],
+    "stats": {
+      "questions": 1110,
+      "ideologies": 200,
+      "domains": 30
+    }
   }
 ]
