@@ -49636,5 +49636,384 @@
         "tags": []
       }
     ]
+  },
+  {
+    "domain": "职场雇佣",
+    "scene_en": "The logistics company you work for has rolled out an AI system that scores warehouse staff continuously from scanner logs, camera feeds and task timers. Every Friday the lowest-scoring decile automatically receives warning letters, and the scores feed into promotion and shift assignments. The union demands that the scoring criteria be published and that every worker be able to appeal to a human reviewer within 48 hours. Management replies that the algorithm is more even-handed than supervisor intuition, that exposing the criteria would let some staff game the system, and that a 48-hour appeal right would swamp the floor managers. You have been elected as one of the worker representatives in the negotiation.",
+    "scene": "你所在的物流公司上线了一套 AI 系统，通过扫描记录、摄像头画面与任务计时持续为仓库员工打分。每周五得分最低的一成员工会自动收到警告信，分数同时进入晋升与排班决策。工会要求公司公开打分标准，并保证每位员工能在四十八小时内向人工复核员申诉。管理层回应称，算法比主管的个人印象更公平，公开标准会让部分员工钻空子，而四十八小时申诉权会让基层主管不堪重负。你被同事推选为谈判中的员工代表。",
+    "options": [
+      {
+        "t_en": "I will hold firm on the union's full demand. Workers cannot contest what they cannot see, so the criteria must be published and every score appealable to a human within days. If that slows the system down, that is a cost the company accepted when it chose to rank people automatically.",
+        "t": "我会坚持工会的完整要求。看不见标准就谈不上申辩，打分依据必须公开，每个分数都要能在几天内找到人工复核。如果这会让系统慢下来，那是公司选择自动给人排名时就该承担的成本。",
+        "tags": [
+          "TECH:U",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I will tell the union to accept the system. A transparent rule applied to everyone treats long-timers and newcomers alike, while supervisor discretion in the old days quietly favoured whoever got along with the shift lead. Keeping the exact weights internal is a reasonable trade for that consistency.",
+        "t": "我会劝工会接受这套系统。对所有人一视同仁的透明规则，反而比过去主管凭交情排班的做法更公平；至于把具体权重留在公司内部，我认为是换取这种一致性的合理代价。",
+        "tags": [
+          "TECH:K",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I will push for a middle clause: the company publishes the categories it measures and their rough weights, but not the model itself, and an appeal board with two workers and one manager reviews contested scores monthly. If the board finds repeated errors, the burden shifts to the company to fix the model.",
+        "t": "我会争取一个折中条款：公司公开它测量的维度和大致权重，但不公开模型本身；同时设立由两名员工和一名主管组成的申诉委员会，按月复核有争议的分数。一旦发现同一类错误反复出现，修正模型的举证责任就转到公司一方。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "tags": []
+      }
+    ],
+    "id": 1111,
+    "domain_en": "Workplace & Employment"
+  },
+  {
+    "domain": "经济分配",
+    "scene_en": "Your city has a one-off budget surplus and must choose between two child-focused schemes: a universal child allowance paid to every family with children regardless of income, or housing vouchers restricted to low-income renters, distributed through a means test. The universal scheme's backers argue that means-tested programs shed eligible families through paperwork, stigma and changing circumstances, while everyone pays taxes and everyone's children should benefit. The voucher scheme's backers argue that with a fixed budget, concentrating the money on the families paying more than a third of their income in rent helps the most distressed far more per unit of money. The council will decide next month.",
+    "scene": "你所在的城市有一笔一次性预算结余，需要在两个面向儿童的方案之间做出选择：一是全民儿童津贴，凡有孩子的家庭无论收入高低一律发放；二是只面向低收入租房家庭的住房券，须经家计调查才能领取。全民方案的拥护者认为，家计调查会因表格繁琐、 stigma 压力和生活变动把本该受益的家庭筛掉，而人人都纳税，孩子们也都该受益。住房券方案的拥护者则认为，预算固定的情况下，把钱集中给那些房租超过收入三分之一的家庭，每一块钱能帮到最困难的人更多。议会将于下月表决。",
+    "options": [
+      {
+        "t_en": "I will vote for the universal allowance. Every screening process has leaks at its edges, and the families that fall through — informal workers, newly separated parents, people who distrust forms — are usually the ones already struggling. A payment that reaches everyone needs no gatekeeper.",
+        "t": "我会投给全民津贴。任何审核流程都会在边缘漏人，而漏掉的那些——打零工的、刚离婚的、不敢跟表格打交道的——往往本来就是最吃力的人。一笔发给所有人的钱不需要任何守门人。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I will vote for the housing vouchers. The same budget spent on everyone leaves the family paying half its income in rent with pocket change, and I would rather a smaller number of households get out of crisis than every household get a token amount. The test is worth the paperwork.",
+        "t": "我会投给住房券。同样一笔钱摊给所有人，那个房租吃掉一半收入的家庭只能分到零头；我宁愿让少一些家庭真正脱离危机，也不愿所有家庭都拿到一笔不痛不痒的钱。为这个目标，审核手续是值得的。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I will propose a hybrid: a smaller universal payment funded first, with the remainder concentrated as housing top-ups for the highest rent burdens, using tax records to pre-enroll families so almost no separate application is needed.",
+        "t": "我会提出一个混合方案：先保证一笔较小的全民津贴，剩余的钱集中用于房租负担最重家庭的住房补差，并直接调取税务记录为家庭自动登记，几乎不需要另行申请。",
+        "tags": [
+          "ECO:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "tags": []
+      }
+    ],
+    "id": 1112,
+    "domain_en": "Economic Distribution"
+  },
+  {
+    "domain": "贸易产业",
+    "scene_en": "Parliament is debating a package of tariffs and production subsidies to shield domestic solar panel factories from imports sold below estimated cost. The manufacturers warn that three plants employing 12,000 people will close within two years without protection, and that the country's panel supply should not depend on a single foreign production chain. Importers and installation companies counter that tariffs would raise panel prices for households and slow the national installation rate, and that subsidy races between governments mostly burn public money while production simply relocates. You sit on the committee that must recommend a position.",
+    "scene": "议会正在讨论一组关税与生产补贴方案，用以保护本国光伏组件工厂免受低于估算成本进口产品的冲击。厂商警告说，若无保护，三家共雇佣一万二千人的工厂将在两年内关闭，且本国组件供应不应系于单一的外国产业链。进口商与安装企业则反驳，关税会抬高家庭采购组件的价格、拖慢全国安装进度，而各国之间的补贴竞赛大多在烧公共财政，产业却只是换个地方生产。你是负责给出建议的委员会成员。",
+    "options": [
+      {
+        "t_en": "I will recommend the tariffs plus subsidies. Once the domestic plants and their trained workforce are gone, rebuilding them will cost far more than the price difference on panels, and a country that cannot make its own energy equipment negotiates every future contract from weakness.",
+        "t": "我会建议采用关税加补贴。国内工厂和熟练工人一旦流失，重建的代价将远超组件上的差价，而一个连能源设备都要依赖别国的国家，在未来的每一场谈判里都会处于下风。",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I will recommend against the tariffs. Households pay for protection either at the register or through taxes, and history suggests the subsidized plants will lobby for renewal every few years. I would rather spend the same money directly on installation incentives that cut bills regardless of where panels come from.",
+        "t": "我会建议不加关税。保护的成本终究由家庭支付——要么在货架上，要么在税单里，而且经验表明受补贴的工厂每隔几年就会游说延期。我宁愿把同样的钱直接投进安装补贴，让电费账单下降，而不在乎组件产自哪里。",
+        "tags": [
+          "NAT:C",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I will recommend skipping tariffs but funding time-limited support for domestic factory retooling and worker retraining, reviewed publicly every two years so the subsidy must show results to continue.",
+        "t": "我会建议不设关税，但为国内工厂的技术改造和工人转岗培训设立限期资金支持，每两年公开评估一次——补贴要想延续，就得拿得出成效。",
+        "tags": [
+          "NAT:C",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "tags": []
+      }
+    ],
+    "id": 1113,
+    "domain_en": "Trade & Industry"
+  },
+  {
+    "domain": "环境生态",
+    "scene_en": "The port authority proposes a deep-water expansion onto a coastal wetland that hosts hundreds of thousands of migratory birds each year and is listed under an international conservation convention. The expansion is projected to create 3,000 direct jobs in a region where youth unemployment is high, and the authority offers to fund an artificial wetland in a neighbouring estuary as an offset. Ornithologists respond that no artificial site has yet been shown to replace this wetland's function for the bird populations that depend on it. The provincial cabinet must approve or reject the plan this quarter.",
+    "scene": "港务局提出在一片滨海湿地上进行深水港扩建，这片湿地每年承载数十万只候鸟，并被列入一项国际保护公约。扩建预计将在青年失业率偏高的地区直接创造三千个岗位，港务局还承诺出资在邻近河口建造一片人工湿地作为补偿。鸟类学家回应说，迄今没有任何人工湿地被证明能够替代这片湿地对依赖它的鸟类种群的功能。省内阁必须在本季度内批准或否决该方案。",
+    "options": [
+      {
+        "t_en": "I will approve the expansion with strict conditions: construction phased away from migration season, the offset wetland built and monitored before the first dredge, and an independent ecological audit with the power to halt works. Jobs in that region will not wait for a perfect answer.",
+        "t": "我会在严格条件下批准扩建：施工避开候鸟迁徙季、补偿湿地在第一次清淤前建成并接受监测、设立有权叫停工程的独立生态审计。那个地区的就业问题，等不来一个完美答案。",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I will reject the plan. An offset is only a promise on paper until a bird population actually uses the new site, and the species that stop here cannot re-route once the mudflats are gone. Port capacity can grow elsewhere; a stopover site used for millennia cannot be rebuilt.",
+        "t": "我会否决该方案。在鸟类真的开始使用新地点之前，所谓补偿只是纸面承诺，而一旦滩涂消失，在此停歇的物种没有第二条路线可走。港口吞吐能力可以另找地方扩展，但使用了上千年的候鸟中转站无法重建。",
+        "tags": [
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I will support a smaller single-berth version on already-degraded parts of the site, with the untouched core wetland legally protected as a permanent reserve and the jobs estimate re-published honestly at the smaller scale.",
+        "t": "我会支持一个规模更小的单泊位版本，只占用场址内已经退化的部分，同时把未触动的核心湿地区以法律形式永久保护起来，并按缩小后的规模重新如实公布就业预期。",
+        "tags": [
+          "ENV:G",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "tags": []
+      }
+    ],
+    "id": 1114,
+    "domain_en": "Environment & Ecology"
+  },
+  {
+    "domain": "学校教育",
+    "scene_en": "The national school board must decide the fate of the standardized exit examination taken by all eighteen-year-olds. A review found grade differences between schools have widened so much that transcripts are no longer comparable, and selective universities now weight the exam heavily. A proposal would abolish the exam and let schools certify students through coursework, projects and teacher assessments. Teachers' colleges support the change, saying one exam narrows teaching to test drills; university admissions officers warn they have no reliable way to compare applicants from 4,000 schools with different standards.",
+    "scene": "全国教育委员会必须决定年满十八岁学生统一参加的标准化结业考试的存废。一份评估发现，不同学校之间的分数差距已扩大到成绩单无法横向比较的程度，选拔型大学因此越来越倚重这门考试。一项提案主张废除该考试，改由各校通过课程作业、项目与教师评语为学生出具认证。师范院校支持这一改变，认为单一考试把教学压缩成了应试训练；大学招生部门则警告，面对四千所标准各异的学校，他们没有可靠的办法横向比较申请者。",
+    "options": [
+      {
+        "t_en": "I will keep the common exam. However imperfect, it is the one measure applied identically to a student from a wealthy district and one from a poor one; replacing it with school-based grades would make family background and school reputation weigh even more heavily.",
+        "t": "我会保留统一考试。它再不完美，也是唯一一把对富裕学区和贫困学区的学生同样使用的尺子；改用各校自评的成绩，反而会让家庭出身和学校名气在录取中占更大的分量。",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I will abolish the exam. A single high-stakes test tells you who prepped well, not who can think, and it drags every classroom toward drilling. Schools certifying their own students with coursework and projects is how most of adult life already works.",
+        "t": "我会废除统一考试。一场定终身的高利害考试衡量的只是谁备考充分，而不是谁会思考，并且把所有课堂拖向刷题。由学校用课程作业和项目来认证学生，本来就更接近成年后真实世界的运作方式。",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I will keep the exam but cut its weight to a passing threshold, letting coursework and a standardised project portfolio carry the selective decisions, with an external auditor sampling school grading each year.",
+        "t": "我会保留考试，但把它降为达标线，让课程成绩加一份标准化项目作品集来承担选拔功能，并由外部机构每年抽检各校的评分是否可靠。",
+        "tags": [
+          "GOV:L",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "tags": []
+      }
+    ],
+    "id": 1115,
+    "domain_en": "School & Education"
+  },
+  {
+    "domain": "移民文化",
+    "scene_en": "A national resettlement program proposes relocating 300 refugee families over three years to your town of 40,000, where the school roll has fallen by a quarter and several apartment blocks stand empty. The council must vote on a welcome package: language classes, school places and housing allocation. Supporters say the families would fill empty classrooms and staff shortages in local care work. Opponents, including some long-time residents, say the town's medical clinic already has an eighteen-month waiting list and that the national government is placing families where housing is cheap, not where support exists.",
+    "scene": "全国安置计划提议在三年内向你所在的四万人小镇迁移三百户难民家庭。镇上学生人数已减少四分之一，多栋公寓楼空置。议会须就一份安置配套方案表决：语言课程、学校学位与住房分配。支持者表示，这些家庭能填满空置的教室并缓解本地护理行业的用工短缺；包括部分老居民在内的反对者则指出，镇上的诊所预约已排到十八个月之后，而且联邦政府把家庭安置到这里，看中的是房租便宜，而不是配套支持到位。",
+    "options": [
+      {
+        "t_en": "I will vote yes and argue we should ask for a larger share. The town's decline is a people shortage, and the national funds attached to each family — for teachers, interpreters, clinics — are the first new money our services have seen in a decade. Arrival planning can fix the waiting lists.",
+        "t": "我会投赞成票，并主张争取更大的份额。小镇这些年最直观的变化就是人越来越少，而随每个家庭一同拨付的经费——给教师、翻译、诊所的——是本地公共服务十年来见到的第一笔新钱。排队问题完全可以在安置规划里解决。",
+        "tags": [
+          "NAT:C",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I will vote no for now. It is fair to ask that services be sized before arrivals, and the clinic waiting list is already eighteen months for the people who live here today. I will propose accepting families only after the national government funds a second doctor and the empty blocks are actually habitable.",
+        "t": "现阶段我会投反对票。在家庭抵达之前先把服务配套到位，这个要求并不过分——诊所的等候名单对现在的居民来说已经有十八个月。我会提议，等联邦政府出资聘到第二名医生、空置公寓真正具备入住条件之后，再接受安置。",
+        "tags": [
+          "NAT:N",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I will propose a staged yes: half the families in year one, with the rest contingent on published metrics — clinic wait times, school capacity, housing readiness — reviewed openly each six months with residents.",
+        "t": "我会提议一个分阶段的赞成方案：第一年先接收一半家庭，其余名额取决于公开指标——诊所等候时间、学校容量、住房可用性——每六个月与居民共同评议一次。",
+        "tags": [
+          "NAT:C",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "tags": []
+      }
+    ],
+    "id": 1116,
+    "domain_en": "Immigration & Culture"
+  },
+  {
+    "domain": "监控隐私",
+    "scene_en": "The city council is considering a pilot network of acoustic sensors and camera analytics in two high-incident districts, designed to detect gunfire and automatically alert police. Recordings would be retained for 30 days and shared with a regional crime database. The residents' associations in both districts, whose members include many shift workers and parents, support the pilot. Civil liberties organizations object that the sensors also capture ordinary life — arguments, gatherings, who walks home late — and that once the database exists, its uses will expand. The council will decide after two public hearings.",
+    "scene": "市议会正在考虑在两个案发率偏高的街区试点部署声学传感器与摄像头分析网络，用于探测枪声并自动报警。录音录像将保存三十天，并接入区域犯罪数据库。这两个街区的居民协会成员中有大量轮班工人和带孩子的家长，他们对试点表示支持。公民自由组织则反对称，传感器同样会录下日常生活——争吵、聚会、深夜独行的人——而数据库一旦存在，用途必然扩张。议会将在两场听证会后做出决定。",
+    "options": [
+      {
+        "t_en": "I will back the pilot. The people asking for it are the ones who live with the sirens, and gunshot detection cuts response times in ways no app can. Thirty days of retention in two districts, judged by results, is a proportionate place to start.",
+        "t": "我会支持试点。要求安装的正是每天听着警笛生活的人，而枪声探测能把响应时间缩短到任何手机应用都做不到的程度。只在两个街区、只保留三十天、用效果说话——这是一个相称的起点。",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I will oppose it. A system built to catch gunfire does not stop at gunfire; it records every conversation on the street, and the district's young men will bear the cost of that recording long after the pilot ends. Safety bought by putting whole neighbourhoods under permanent audio watch is not a trade I accept.",
+        "t": "我会反对。一套为捕捉枪声而建的系统不会止步于枪声，它录下的是街上的每一次交谈，而试点结束后，为这份长期录音买单的会是街区里的年轻人。用让整个社区处于永久监听之下来换取安全，这笔交易我不接受。",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I will support a conditional pilot: an independent oversight board with resident seats, audio processed on-device so only detected alerts leave the sensor, retention capped at 72 hours unless flagged, and a public report before any expansion.",
+        "t": "我会支持附条件的试点：设立有居民席位的独立监督委员会，音频在设备端处理、只有被识别的警报才会传出传感器，未标记的记录最多保存七十二小时，扩展部署前必须先公布评估报告。",
+        "tags": [
+          "TECH:K",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "tags": []
+      }
+    ],
+    "id": 1117,
+    "domain_en": "Surveillance & Privacy"
+  },
+  {
+    "domain": "住房城市",
+    "scene_en": "With the vacancy rate in your city at one percent, the tenant union is campaigning for a rent cap tied to inflation across all existing rentals, with a board to approve exceptions. Landlord associations and developers respond that capped rents plus rising costs will push small landlords to sell and developers to shelve projects, shrinking supply further. A commissioned economic study recommends instead a package of zoning liberalization near transit lines, fast-track permits, and a ten-year public housing construction program. The council must choose a direction this month.",
+    "scene": "你所在城市的空置率只有百分之一，租客联盟正在推动一项把全部存量租赁房源租金涨幅与通胀挂钩的限租令，并设委员会审批例外情形。房东协会与开发商回应说，租金封顶叠加成本上升，会迫使小房东卖房、开发商搁置项目，让供给进一步萎缩。一项受委托的经济研究则建议改推另一揽子方案：放宽轨道沿线的分区管制、加快审批速度，并启动一项十年期公共住房建造计划。议会本月内必须定下方向。",
+    "options": [
+      {
+        "t_en": "I will support the rent cap. With one percent vacancy, tenants have zero bargaining power, and the market has already shown it will not discipline itself. Supply arguments describe a future that is years away; the family facing a 25 percent increase at renewal needs protection now.",
+        "t": "我会支持限租令。在空置率只有百分之一的市场里，租户毫无议价能力，而这个市场已经证明它不会自我约束。供给侧的说法描绘的是几年后的图景，可续约时面对租金上涨百分之二十五的家庭，需要的是当下的保护。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I will back the zoning and construction package. Rent caps freeze the market in place while doing nothing about the shortage underneath, and cities that tried them watched maintenance and new projects dry up within a decade. Building is slower, but it is the only thing that actually adds homes.",
+        "t": "我会支持放宽管制加建造计划的方案。限租令把市场冻在原地，却不解决底下的短缺问题，尝试过的城市大多在十年内看到维护投入和新项目一起枯竭。盖房虽然慢，但真正能增加住房供给的只有它。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I will propose both, at half strength: a cap on existing tenancies only, leaving new units exempt for fifteen years, alongside an immediate down payment on the public construction program.",
+        "t": "我会主张两者都做、各打对折：限租令只覆盖存量租约，新建房源十五年内豁免，以留住开发商的投资意愿；同时立即为公共住房计划拨付首期资金，让供给端的回应不必等上十年。",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ],
+    "id": 1118,
+    "domain_en": "Housing & Urban"
+  },
+  {
+    "domain": "农业食品",
+    "scene_en": "The health ministry proposes mandatory front-of-pack labels that score packaged foods on nutrition and carbon footprint, displayed as a letter grade with color coding. Public health researchers cite trials showing the labels shift purchases toward higher-scored items. Small producers — the regional raw-milk cheese makers, the family olive presses — object that lab certification fees and a scoring formula biased toward industrial fortification would penalize traditional products and drive them off shelves. Supermarkets say they can implement any scheme within a year if it is mandatory for all, so costs are shared.",
+    "scene": "卫生部提议在包装食品正面强制标注营养与碳足迹评分，以带颜色的字母等级呈现。公共卫生研究者引用实验数据称，这类标签能促使消费者转向评分更高的商品。小型生产者——本地区的生乳奶酪坊、家族橄榄油作坊——反对称，认证收费和偏向工业化营养强化的评分公式会惩罚传统产品，把它们挤出货架。连锁超市则表示，只要对所有厂商一律强制，任何方案都能在一年内落地，成本也能分摊。",
+    "options": [
+      {
+        "t_en": "I will support the mandatory labels. Shoppers currently navigate packages engineered by marketing departments, and a single standardized grade on the front of every package is the cheapest way to level that field. The carbon score should stay — the food system's footprint is too large to leave off the label.",
+        "t": "我会支持强制标签。目前消费者面对的是由市场部门精心设计的包装，在每件商品正面给出一个统一的标准化等级，是拉平这种信息落差最省钱的方式。碳足迹评分也应该保留——食品体系的排放占比太大，不该从标签上省略。",
+        "tags": [
+          "GOV:A",
+          "ENV:S"
+        ]
+      },
+      {
+        "t_en": "I will oppose making it mandatory. A formula written once in an office will rank a centuries-old cheese below a fortified snack, and the certification costs will fall hardest on producers who can least carry them. Voluntary labels let the standard earn its adoption instead of legislating it.",
+        "t": "我会反对强制推行。一个坐在办公室里定下的公式，会把有数百年历史的奶酪排在营养强化零食之下，而认证费用对最无力承担的小生产者打击最重。自愿标签让这套标准靠自身说服力被市场接受，而不是靠立法强加。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I will support the labels for large producers, with an exemption and a simplified self-declaration for producers under a size threshold, so the family creamery is not filing the same paperwork as a multinational.",
+        "t": "我会支持对大型生产商强制标注，但对低于规模门槛的生产者给予豁免和简化的自我申报，让家庭作坊不必和跨国公司填同一套表格。",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ],
+    "id": 1119,
+    "domain_en": "Agriculture & Food"
+  },
+  {
+    "domain": "数字平台",
+    "scene_en": "A draft law would require social platforms above a user threshold to offer every user a chronological feed as the default, to permit third-party apps on equal terms, and to export a user's full data on request — with fines for non-compliance. User groups and independent developers support it, saying ranking algorithms decide what a billion people see and users should be able to choose simpler feeds and move their data. Platform representatives argue the ranking feed is their core product, that open interfaces create security and moderation risks they would absorb alone, and that product design decisions belong to the company and its users, not the legislature.",
+    "scene": "一项法律草案要求达到用户规模门槛的社交平台，把按时间排序的信息流设为默认选项，允许第三方应用在同等条件下接入，并应请求导出用户的全部数据，违者处以罚款。用户团体与独立开发者表示支持：排名算法决定了十亿人能看到什么，用户理应能选择更简单的信息流、能带走自己的数据。平台代表则辩称，排名信息流是他们的核心产品，开放的接口带来的安全与内容治理风险将由平台独自承担，而产品设计的决定权属于公司与其用户，不属于立法机关。",
+    "options": [
+      {
+        "t_en": "I will support the law. When one design choice shapes what hundreds of millions of people see each day, giving users a plain chronological option and the right to leave with their data is a fair rule for any company that size.",
+        "t": "我会支持这部法律。当一项设计决定影响着数亿人每天看到的内容时，给用户提供一个朴素的时间排序选项、并允许他们带着数据离开，对任何这个体量的公司都是合理的规则。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I will oppose the law. Regulators do not know which feed design will suit which user, and legislating one default replaces the market's feedback with a committee's guess. The export requirement I could accept; dictating product design I would not.",
+        "t": "我会反对这部法律。监管者并不了解哪种信息流适合哪类用户，用立法规定默认选项，等于用一个委员会的猜测取代市场的反馈。数据导出的要求我可以接受，但对产品设计本身下指令，我不赞成。",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I will support only the data portability clause, with a standard export format, and leave feed design and third-party access to voluntary agreements between platforms and developers.",
+        "t": "我只支持数据可携带条款——规定一个标准化的导出格式即可；至于信息流设计和第三方接入，交给平台与开发者之间自愿达成的协议去解决。",
+        "tags": [
+          "TECH:U",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ],
+    "id": 1120,
+    "domain_en": "Digital Platforms"
   }
 ]
