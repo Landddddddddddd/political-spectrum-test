@@ -50015,5 +50015,458 @@
     ],
     "id": 1120,
     "domain_en": "Digital Platforms"
+  },
+  {
+    "id": 1121,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "阿尔德街尽头有一座废弃加油站，场地在十年前清理过土壤后一直围栏空置。邻里协会已征集到签名，推动一个由居民自营的方案：高架菜畦、工具借用库和一片小游乐场，由会员家庭轮班维护，靠少量年费和周末义务劳动维持。市属房产部门另有一份承租报价——一家连锁便利店愿按市场价租下这块地，租金进入区级一般预算，并承诺安装照明、开设夜间柜台、提供十一个本地岗位。两份方案下月要在同一场议会表决中二选一，只能落地一个。",
+    "scene_en": "At the end of Alder Street sits a disused filling station, fenced off since the soil was cleared a decade ago. The neighbourhood association has collected signatures for a resident-run scheme: raised vegetable beds, a tool library, a small playground, maintained by member households on a rota, funded by a modest annual fee and weekend work days. The city's property office has a competing offer — a convenience chain will lease the plot at market rate, with the rent going into the district's general budget, and promises lighting, a night counter and eleven local jobs. Both proposals need the same council vote next month, and only one can go ahead.",
+    "options": [
+      {
+        "t_en": "I will back the resident scheme. A plot that neighbours build and maintain themselves keeps the money and the decisions on the street, and a rota means the upkeep does not depend on a budget line that can be cut in a bad year.",
+        "t": "我会支持居民合作社的方案。一块由邻居自己建、自己维护的地，钱和决定都留在街上；轮班维护也意味着日常开销不挂在一条遇到坏年份就会被砍掉的预算科目上。",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would take the lease. Rent at market rate is revenue the district can spend on whatever it needs most, and eleven wage jobs plus lighting at night are concrete gains, while a members' garden serves only the households that can pay the fee and show up on work days.",
+        "t": "我会选择出租。按市场价收的租金是区里可以花在最要紧处的收入，十一个带薪岗位和夜间照明是看得见的收益；而会员制菜园只服务那些交得起年费、周末还能来干活的家庭。",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would split the plot: half leased to the chain, half kept for the garden, with the lease money paying for the garden's water and fencing.",
+        "t": "我会把这块地分成两半：一半租给连锁店，一半留给菜园，租金用来支付菜园的灌溉和围栏费用，两边的开支各自有着落，不必互相挤占。",
+        "tags": [
+          "COL:M",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "Neither the council nor the association should settle this in a closed vote; I would put both offers on a street ballot with the rent figures and the maintenance costs printed, and let the residents within two blocks decide.",
+        "t": "这事不该由议会或协会在一次闭门表决里定下来。我会把两份报价放上街区投票，附上租金数额和维护成本，让住在两个街区以内的居民自己选。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "Honestly, none of these speaks for me on this one — I would rather just skip it.",
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1122,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "连续三个周末在地区卫生局门外发生对峙之后，市里提出一项条例：在公共街道上超过五十人的集会须提前七天登记，只能在四个指定场地举行，未登记可处罚款。警方称这四个场地配有供水、医疗人员和分离的出入口，而上个月的人群管控几乎耗尽了他们的相关预算。一个抗议农村诊所经费削减的小团体组织者则认为，七天足够反对一方组织起反制活动、也足够让他们的议题从新闻里淡出；而被安排在离大楼三个街区的围栏里，抗议对它所针对的人而言等于不存在。",
+    "scene_en": "After three weekends of confrontations outside the regional health office, the city proposes an ordinance: any gathering of more than fifty people on a public street must be registered seven days ahead, must use one of four designated sites, and may be fined for non-registration. The police say the four sites have water, medics and separated entrances, and that the last month cost them most of their crowd-control budget. Organisers of a small group protesting cuts to a rural clinic say seven days is enough time for a counter-campaign to be organised and for their issue to fall out of the news, and that a pen three blocks from the building makes the protest invisible to the people it targets.",
+    "options": [
+      {
+        "t_en": "I will support the ordinance. Four sites with water, medics and separate entrances is a workable arrangement for a city that has spent a month absorbing the cost of unmanaged crowds, and a seven-day notice period is short enough that no campaign has ever died waiting a week.",
+        "t": "我会支持这项条例。对一座已经花了一个月消化人群失控成本的城市来说，四个配供水、医疗人员和分离出入口的场地是可操作的安排；七天的通知期也短到不至于让哪场行动因为等这一周而消失。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would vote it down. A protest's effect comes from being where the decision is made; moving it three blocks away and requiring a week's notice turns a right into a scheduling request, and the fine turns an unregistered gathering into a revenue line.",
+        "t": "我会投反对票。抗议的作用来自它发生在做决定的地方；挪到三个街区外、再加一周通知期，就把一项权利变成了排期申请，罚款则把未登记的集会变成一条收入科目。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep the seven-day registration and drop the designated-site rule, so the city can plan medics and barriers while the gathering stays in sight of the building it is addressing.",
+        "t": "我会保留七天登记，去掉指定场地的规定：市里照样能提前安排医疗人员和隔离栏，而集会仍然待在它所针对的那栋楼看得见的地方。",
+        "tags": [
+          "GOV:A",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would set the threshold by risk rather than headcount — require notice only where a route blocks traffic or where opposing groups have clashed before, and leave a stationary gathering of sixty people on a wide pavement alone.",
+        "t": "我会按风险而不是按人数设门槛：只对封路路线、或对立团体此前发生过冲突的场合要求报备；六十个人在宽人行道上静立，就不去管它。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I do not feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1123,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "国家器官移植服务机构报告称，在人生最艰难的时刻被问及时，四成家庭拒绝捐献，等待名单已连续六年增长。议会正在审议一项法案，拟改为「推定同意」：每位成年人默认是捐献者，除非本人登记过反对；家属仍会被征询，但不再能否决已登记的意愿。移植外科医生与患者组织支持该法案，并援引一些国家在改革后捐献率上升三分之一的经验。缓和医疗医生与若干宗教团体反对，认为以沉默给出的同意不是同意，而在最糟糕的时刻要求悲痛的家属授权摘取器官，等于把他们变成守门人。",
+    "scene_en": "The national transplant service reports that four in ten families refuse donation when asked at the worst moment of their lives, and that waiting lists have grown for six consecutive years. A bill before parliament would move to presumed consent: every adult is a donor unless they have recorded an objection, with families still consulted but no longer able to override a registered wish. Transplant surgeons and patient associations support it and point to countries where rates rose by a third after the change. Palliative care doctors and several faith communities object that consent given by silence is not consent, and that asking a grieving family to authorise retrieval turns them into gatekeepers at the worst possible hour.",
+    "options": [
+      {
+        "t_en": "I will vote for presumed consent. The default is the one part of this system that has never been tried, and a registry that lets anyone opt out at any hour records a person's own stated wish, which is a better guide than a family's guess made in the first hour of grief.",
+        "t": "我会投支持票。默认设定是这个体系里唯一还没试过的一环；一个允许任何人随时登记退出的名册，记录的是本人说过的意愿，比家属在悲痛最初一小时里的猜测更可靠。",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would oppose it. Silence in a country where most people have never seen the form is not a decision, and a system that reads absence as consent will collect organs from people who simply never got around to registering an objection.",
+        "t": "我会反对。在一个大多数人从没见过那份表格的国家，沉默不是决定；把「没登记」读成「同意」的制度，会从那些只是没来得及去登记反对的人身上取走器官。",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would support presumed consent only if the family's veto stays in place; the registry would then carry the intent, and the family would still hold the last word, which is the part that keeps the conversation humane.",
+        "t": "只有在保留家属否决权的前提下我才会支持推定同意：名册负责承载本人的意愿，最后一句话仍留给家属——让这场对话还像人与人之间的对话的，正是这一条。",
+        "tags": [
+          "COL:M",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would replace presumed consent with mandated choice: every adult must answer the question at some routine transaction, a licence renewal or a tax filing, and no default is recorded until they do.",
+        "t": "我会用「强制选择」替代推定同意：每位成年人在某次日常事务中必须回答这个问题，比如换驾照或报税，在回答之前不记录任何默认值。",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I cannot really take a side here — I do not know enough about this to judge.",
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1124,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "一家制造企业提供六个月的育儿假，但符合条件的父亲中只有五分之一休满一个月以上，其余人表示长期缺勤在考核时会被读作投入不足。劳动部起草了一项规则：其中四个月专属于第二照护人，不休即作废，费用由国家保险基金与雇主分担。妇女团体与劳动部称，在可比经济体中，这类制度是少数被观测到确实改变照护分工的措施之一。雇主联合会则表示，小企业无法在短期内承受四个月的岗位空缺；也有家长认为，一个家庭如何分配这几个月不该由国家来决定。",
+    "scene_en": "A manufacturing company offers six months of parental leave, but only a fifth of eligible fathers take more than a month; the rest say a long absence is read as low commitment at review time. The labour ministry drafts a rule: four months of the leave are reserved to the second parent and are forfeited if unused, with the cost shared between the state insurance fund and the employer. Women's groups and the ministry say this is one of the few measures observed to shift the division of care in comparable economies. Employer federations say a small firm cannot absorb a four-month absence on short notice, and some parents say the state should not decide how a household divides its months.",
+    "options": [
+      {
+        "t_en": "I will support the reserved months. The reason fathers do not take leave is not preference but what a review committee reads into an absence; making the months non-transferable changes what the committee reads, and that is the part no awareness campaign has managed to change.",
+        "t": "我会支持这四个月的专属安排。父亲不休假的原因不是偏好，而是考核委员会会把缺勤读成什么；把月份设成不可转让，改的正是委员会的读法，而这恰恰是宣传运动一直没改动的部分。",
+        "tags": [
+          "CUL:P",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would oppose it. A household is better placed than a ministry to decide which parent steps back for a season, and a rule that voids the months if unused pushes a choice onto families that had already made a different one.",
+        "t": "我会反对。哪个家长暂时退出工作一段时间，家庭比一个部委更清楚；不休就作废的规则，是把一种选择强加给早已做出另一种安排的家庭。",
+        "tags": [
+          "CUL:T",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would support the rule together with a compensation scheme for firms under fifty staff, so the cost of the absence is pooled rather than landing on the payroll of the smallest employer in the chain.",
+        "t": "我会支持这条规则，同时要求为五十人以下的企业配套补偿机制，让缺勤的成本由共同池子分摊，而不是全落在这条供应链上规模最小的那家雇主的工资表里。",
+        "tags": [
+          "CUL:P",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "I would drop the forfeiture and pay a bonus to households where both parents take at least three months; the split is what matters, and a bonus reaches the same split without voiding anyone's leave.",
+        "t": "我会取消「不休作废」，改为给双方各休满三个月的家庭发一笔补贴：要的是分工这个结果，补贴同样能换来分工，又不必作废任何人的假期。",
+        "tags": [
+          "ECO:R",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "This feels like a false choice to me; if it actually came up, I would handle it some other way entirely.",
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1125,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene": "卫生部提议建立一个全国统一的诊断影像库：公立医院拍摄的每一张影像须在四十八小时内上传，配唯一患者标识，用于训练与审计 AI 阅片工具。官员称，没有任何本国厂商能靠一家医院的数据训练出可靠模型，共享影像库可以让区级诊所借用教学医院的准确度。放射科医师协会与患者组织提出两点反对：这个影像库本身会成为一个攻击目标；而且从来没人问过患者——入院时签的同意书覆盖的是诊疗，不是训练一个商业产品。医院方面则表示，如果允许真正退出，留在库里的恰好是最没用的那批影像。",
+    "scene_en": "The health ministry proposes a single national archive of diagnostic imaging: every scan taken in a public hospital, uploaded within 48 hours, tagged with a unique patient identifier, used to train and audit AI reading tools. Officials say no domestic vendor can build a reliable model from one hospital's data, and that a shared archive would let a district clinic borrow the accuracy of a teaching hospital. Radiologists' associations and patient groups raise two objections: the archive becomes a target, and patients were never asked, since the form signed at admission covers treatment rather than the training of a commercial product. Hospitals say a real opt-out would leave them holding exactly the scans that are least useful.",
+    "options": [
+      {
+        "t_en": "I would build the archive with upload as a condition of public funding. A model trained on one hospital's scanners does not travel well, and the patients who would benefit most sit in districts that will never generate enough scans of their own.",
+        "t": "我会把上传设为接受公共拨款的条件，据此建起这个影像库。只在一家医院的机器上训练出来的模型换个地方就不灵，而最可能受益的患者，恰恰在那些永远攒不出足够影像的区县。",
+        "tags": [
+          "TECH:K",
+          "COL:M"
+        ]
+      },
+      {
+        "t_en": "I would require explicit consent for every scan, renewed when a patient changes hospitals. A form signed on the way into surgery cannot be read as agreement to train a product a vendor will later sell, and the size of the archive is not a reason to skip the question.",
+        "t": "我会要求每一张影像都取得明确同意，患者换医院时重新确认。进手术室路上签的那张表格，不能被读作同意去训练一个厂商日后要卖的产品；影像库要多大，都不是不问这一句的理由。",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t_en": "I would support the archive with identifiers stripped at the hospital and a genuine opt-out offered at the counter rather than buried in an admission packet; the model still gets its scale, and the patient keeps a switch.",
+        "t": "我会支持建库，但要求标识在医院端就剥离，并把退出选项在服务台当面提供，而不是塞进入院材料里。这样模型仍有足够的规模，患者手里也留着一个开关。",
+        "tags": [
+          "TECH:K",
+          "TECH:U"
+        ]
+      },
+      {
+        "t_en": "I would keep the archive for audit only, comparing a hospital's readings against the national distribution, and license training access case by case with the images of objecting patients excluded.",
+        "t": "我会把这个库限定在审计用途：拿一家医院的阅片结果与全国分布做比对；训练用途则逐案授权，并把明确反对的患者的影像排除在外。",
+        "tags": [
+          "TECH:U",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I am genuinely indifferent — this barely affects my life either way.",
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1126,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene": "农村药店接连被盗，推动立法机关走向强制最低刑期：第三次财产犯罪定罪者至少服刑三年，量刑指南同时改写为法官在任何情形下都不得低于该下限，包括成瘾治疗或需抚养的子女。提案人称，惯犯在真正服实刑之前平均已经过十一次庭审，而同一辖区内不同法官对完全相同的事实判出差异悬殊的刑期。法官协会与法律援助律师则称，这个下限把大厅里最了解全部卷宗的那个人排除在外；同一法条会让一个为维持毒瘾而偷窃的十九岁青年服刑三年，每年花费相当于一名护士的薪水。",
+    "scene_en": "A series of break-ins at rural pharmacies has pushed the legislature toward a mandatory-minimum statute: anyone convicted of a third property offence serves at least three years, and the sentencing guidelines are rewritten so that a judge may not go below the floor for any reason, including addiction treatment or dependent children. The sponsors say repeat offenders cycle through court eleven times before anyone serves real time, and that judges in the same district hand down widely different sentences for identical facts. Judges' associations and legal aid lawyers say the floor removes the person in the room who has read the whole file, and that the same statute would send a nineteen-year-old who stole to feed a habit to prison for three years at a cost of a nurse's salary every year.",
+    "options": [
+      {
+        "t_en": "I will vote for the floor. Eleven appearances before anyone serves a day tells the same offender that nothing follows, and a written floor gives every defendant the same answer instead of whichever judge drew the case.",
+        "t": "我会投赞成票。在同一个人真正开始服刑之前已经过十一次庭审，等于反复告诉他一件事不会有什么后果；写成条文的下限让每个被告得到同一个答案，而不是取决于案子分给了哪位法官。",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I would oppose it. Two people who committed identical acts can differ in everything that matters at sentencing, what treatment they are in and who depends on them, and a statute that forbids the judge from weighing that is a rule written for an average case that no real defendant is.",
+        "t": "我会反对。做出同样行为的两名被告，在量刑真正要看的事情上可能完全不同：正在接受什么治疗、有谁靠他生活；禁止法官权衡这些的法条，是照着平均案子写的规则，而现实中没有哪个被告是平均案子。",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would keep the three-year floor but write in a narrow departure clause for documented treatment enrolment, with reasons published; consistency and the individual file can both survive if the exception must be argued in writing.",
+        "t": "我会保留三年下限，但加一条范围很窄的例外：有在册治疗记录的可偏离下限，理由必须公开。只要例外必须书面论证并公开，判罚的一致性和个案的卷宗就能同时留住，被害人也能查到理由。",
+        "tags": [
+          "GOV:A",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would leave the floor out and give a sentencing council the job of publishing district-by-district ranges, so the disparity gets measured and argued about rather than legislated away.",
+        "t": "我会不设下限，改为让一个量刑委员会公布各辖区的刑期区间，把差异摆出来测量、公开争论，而不是用立法把它抹平；哪个辖区判得偏离常态，看数字就知道。",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1127,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene": "一所有一千四百名学生的公立中学，两年来允许一个穆斯林学生团体在周五使用体育馆礼拜。如今一个基督教团契申请同一时段，一个世俗家长委员会则要求校董会对两者一并叫停。校长表示，体育馆这一个小时不产生额外成本，学生回到课堂时也更安定。世俗家长委员会认为，公共建筑本就不该承载礼拜活动，学校也无法决定名册上四十个信仰团体中哪些配得上一个时段。团契方面则表示，允许一个团体而拒绝下一个的规则，本身就是在确立偏好。",
+    "scene_en": "A public secondary school of 1,400 students has let a Muslim students' group use the gym for Friday prayer for two years. A Christian fellowship has now asked for the same slot, and a secular parents' committee has asked the board to end the arrangement for both. The head teacher says the gym hour costs nothing and the students return to class calmer. The secular committee argues a public building should not host worship at all, and that the school cannot decide which of the forty belief groups on its roll deserve a slot. The fellowship says a rule that allows one group and refuses the next is itself the establishment of a preference.",
+    "options": [
+      {
+        "t_en": "I would open the slot to both groups on the same terms: a room, a fixed hour, and no school staff leading anything. Once the building has hosted one, refusing the next is a decision about which belief belongs in the corridor, and a timetable should not be making that decision.",
+        "t": "我会以同样条件向两个团体开放这个时段：一间房、固定的一小时、校方人员不主持任何环节。一旦这栋楼接待过其中一个，拒绝下一个就成了「哪种信仰配得上这条走廊」的判断，而排课表不该做这种判断。",
+        "tags": [
+          "SEC:F",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would end it for both and offer the students a room off campus plus a released-time arrangement. A public school that starts allocating worship slots has taken on a job it has no neutral way to do.",
+        "t": "我会对两者一并叫停，改为提供校外场地加放行时段的安排。一所公立学校一旦开始分配礼拜时段，就接下了一件它没有任何中立办法去做的差事。",
+        "tags": [
+          "SEC:E",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep the existing arrangement and decline new requests, on the ground that two years of settled practice differs from opening the gym to every group that asks; a school can accommodate what has grown up inside it without becoming a booking office for religion.",
+        "t": "我会维持现有安排、不再接受新申请：已经稳定运行两年的做法，和把体育馆向每个提出申请的团体开放并不是一回事；学校可以容纳在自己内部长出来的东西，不必变成宗教场地的预订窗口。",
+        "tags": [
+          "CUL:T",
+          "SEC:F"
+        ]
+      },
+      {
+        "t_en": "I would replace prayer with a supervised quiet period open to anyone — meditation, reading, silent reflection — so the hour serves a similar need without the school sorting students by creed.",
+        "t": "我会把礼拜改成一个向所有人开放的、有老师在场的安静时段：冥想、阅读、静坐都行。这样这一小时仍能满足相近的需要，学校也不必按信条给学生分类。",
+        "tags": [
+          "SEC:E",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "It would depend on details this scenario does not give, so I cannot commit to any of these.",
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1128,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene": "一个报刊出版方联盟推动了一项法律草案：大型新闻聚合平台须为展示标题与文章前两句付费，费率由仲裁小组确定，谈不拢则适用默认价。出版方称，导流流量已经崩塌，而聚合平台靠改写过的报道建立起广告业务，去年有三家地区报纸停刊。聚合平台则表示，它每月免费为每家出版方送去数十万次访问，这笔费率最终会以订阅费转嫁给用户，而小型媒体分到的是它们从未参与谈判的份额。两家靠搜索流量生存的纯数字媒体则称，仲裁默认价会高于它们实际获得的导流价值。",
+    "scene_en": "A press-publishers' coalition has won a draft bill requiring large news aggregators to pay for displaying headlines and the first two sentences of articles, with rates set by an arbitration panel and a default tariff if talks fail. Publishers say referral traffic has collapsed while aggregators build advertising businesses on rewritten versions of their reporting, and that three regional titles closed last year. The aggregator says it sends each publisher hundreds of thousands of visits a month at no charge, that the tariff will be passed to users as a subscription, and that small outlets will receive a share they never negotiated. Two digital-first outlets that live on search traffic say the default rate would sit above what their referrals are worth.",
+    "options": [
+      {
+        "t_en": "I will support the tariff. A headline and two sentences are the output of a newsroom, and if the aggregator's business depends on displaying them, a panel-set rate is a price for an input rather than a subsidy.",
+        "t": "我会支持这项费率。标题和前两句话是编辑部的产出；如果聚合平台的生意依赖展示它们，由仲裁小组定的价就是为一项投入付的钱，而不是补贴。",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would oppose it. The referrals are already the payment, hundreds of thousands of visits a month that no publisher could buy, and a statutory tariff converts a voluntary exchange into a levy that users will see on their subscription line.",
+        "t": "我会反对。导流本身就是付款——每月几十万次访问，出版方花钱也买不到；法定费率把一桩自愿的交换变成一笔摊派，最后会出现在用户的订阅账单上。",
+        "tags": [
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would apply it only to publishers above a size threshold and let the small digital outlets negotiate separately; a default rate written with the largest titles in mind should not be dropped onto a newsroom of nine people.",
+        "t": "我会只对超过规模门槛的出版方适用，让小型数字媒体单独谈：一个照着最大几家报纸的体量写出来的默认价，不该直接压到一个只有九个人的编辑部头上。",
+        "tags": [
+          "ECO:L",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I would skip the per-headline rate and put a levy on aggregator revenue into a journalism fund allocated by an independent board, so the money follows reporting capacity rather than how often a headline gets displayed.",
+        "t": "我会不走「按标题计费」这条路，改为对聚合平台营收征一笔款进入新闻基金，由独立委员会分配：钱跟着采访能力走，而不是跟着某个标题被展示了多少次走。",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t_en": "It is really none of my business — I would let the people involved sort it out themselves.",
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1129,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene": "市中心低于一定金额的店铺盗窃案大幅上升，检察署正在试点分流：首次作案、承认行为并完成与店主的修复性会议的，不留刑事记录，案件在六周内结案而非十一个月。零售业协会称，这是要求会员与抢过自己的人坐在同一间屋子里，然后把这叫做正义。检察署则表示，法院已经积压两年，一份记录会跟一个二十岁的人一辈子、断掉学徒机会，而试点参与者的再犯率下降了四分之一。警方称，同一个人在被送进法庭之前平均已被抓过四次。",
+    "scene_en": "Shoplifting under a set value has risen sharply in the city centre, and the prosecutor's office is piloting diversion: a first-time offender who admits the act and completes a reparative conference with the shopkeeper avoids a criminal record, and the case closes in six weeks instead of eleven months. The retail association says its members are being asked to sit in a room with the person who robbed them and call the result justice. The prosecutors say the courts are two years behind, that a record follows a twenty-year-old for life and closes off apprenticeships, and that repeat offences among participants fell by a quarter. Police say the same people are detained four times before any file reaches a courtroom.",
+    "options": [
+      {
+        "t_en": "I would expand the pilot. A record that follows a twenty-year-old for life over a shelf of stolen goods costs more than the theft did, and a process that closes in six weeks is the only kind that can keep pace with the volume the courts are carrying.",
+        "t": "我会扩大试点。为一货架失窃商品让一个二十岁的人背一辈子记录，代价超过盗窃本身；而六周结案的流程，是唯一能跟上法院现有案件量的那种流程。",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would keep these cases in court. Asking a shopkeeper to sit across from the person who robbed them and call the result justice puts the cost of the state's backlog onto the people who were wronged.",
+        "t": "我会让这类案子留在法庭上。让店主与抢过自己的人面对面坐着，再把这叫做正义，是把国家积压案件的成本转嫁给被侵害的一方。",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t_en": "I would keep diversion but make the shopkeeper's participation voluntary and give them a separate compensation track, so the young person still avoids a record and no victim is drafted into a meeting they did not choose.",
+        "t": "我会保留分流，但把店主的参与改为自愿，并单设一条赔偿渠道：年轻人照样不留记录，也不会有哪个受害方被拉进一场自己没选的会面。",
+        "tags": [
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t_en": "I would narrow it to first offences under a low value and exclude anyone with a prior violence conviction; the pilot's numbers come from a group that was already the least likely to reoffend.",
+        "t": "我会把它收窄到金额较低、确属首次的案子，并排除有暴力犯罪前科的人：试点数字来自一群本来再犯概率就最低的人身上。",
+        "tags": [
+          "GOV:A",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would abstain if I could — the way this is framed forces a stance I do not actually hold.",
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1130,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene": "一个区域集团邀请某国加入联合灾害救援部队：共享直升机、共同的物资仓库，以及一个常设指挥部——收到请求后十二小时内可进入任一成员国领土。分摊额固定为国防预算的百分之零点四，作战指挥权每两年轮换一次。外交部称，上一次地震暴露了重型运输到位前的四天空窗，区域内没有任何一个国家能长期养着一支闲置的这类能力。持主权优先立场的议员则反对：外国军官将在我方领土上指挥行动；轮换指挥权总有一天会落到一个关系不佳的政府手里；而这百分之零点四，是为一个十年用两次的能力设的永久开支项。",
+    "scene_en": "A regional bloc offers membership in a joint disaster-response force: shared helicopters, a common warehouse of supplies, and a standing command that can move into any member's territory within twelve hours of a request. The contribution is fixed at 0.4% of the defence budget, and operational command rotates every two years. The foreign ministry says the last earthquake exposed a four-day gap before heavy lift arrived, and that no single country in the region can keep that capacity idle. Sovereignty-minded legislators object that foreign officers would direct operations on national soil, that the rotating command will one day sit with a government relations are poor with, and that the 0.4% is a permanent line item for a capability used twice a decade.",
+    "options": [
+      {
+        "t_en": "I would join. Four days is the number that matters here: heavy lift cannot be improvised after an earthquake, and a standing regional command is the only arrangement that puts it on the ground within a day rather than a week.",
+        "t": "我会加入。关键是那四天：地震之后重型空运不可能临时凑出来，而一个常设的区域指挥部，是唯一能让这些装备在一天内而不是一周内落到地面的安排。",
+        "tags": [
+          "NAT:C",
+          "GOV:L"
+        ]
+      },
+      {
+        "t_en": "I would stay out. Command over operations on national soil is the last thing a state should lease out on a two-year rotation, and a fixed 0.4% for a capability used twice a decade is money that will not be there the year a domestic hospital needs it.",
+        "t": "我会留在外面。国土上的行动指挥权，是国家最不该按两年一轮租出去的东西；为一个十年用两次的能力固定支出百分之零点四，等到某年本国医院需要钱时，这笔钱就不在了。",
+        "tags": [
+          "NAT:N",
+          "GOV:A"
+        ]
+      },
+      {
+        "t_en": "I would join the shared warehouse and the helicopter pool but keep a national veto on any deployment inside our territory; the equipment is where the gap is, and the command question can wait until the arrangement has a record.",
+        "t": "我会加入共享仓库与直升机池，但保留对我国境内任何部署的否决权：缺的是装备，指挥权的问题可以等这套安排跑出一段记录之后再谈，比如实际出动的时限和费用分摊是否按承诺兑现。",
+        "tags": [
+          "NAT:C",
+          "NAT:N"
+        ]
+      },
+      {
+        "t_en": "I would decline and fund two heavy-lift aircraft of our own plus a bilateral agreement with the neighbouring state; the capacity would be ours to task, and the cost would end when the aircraft do.",
+        "t": "我会不加入，改为自购两架重型运输机，并与邻国签一份双边协议：能力归自己调度，调度权不必轮给别人；开支也会随这批飞机的退役而结束。",
+        "tags": [
+          "NAT:N",
+          "ECO:R"
+        ]
+      },
+      {
+        "t_en": "I do not hold a fixed view on this; my answer would probably change from one day to the next.",
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "tags": []
+      }
+    ]
   }
 ]
