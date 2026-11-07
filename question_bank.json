@@ -50675,8 +50675,8 @@
         ]
       },
       {
-        "t": "我会按用途分层：赛季固定档期公开竞标、价高者得，但把免费时段写进合同作为条件，谁中标谁承担社区开放义务。",
-        "t_en": "I would layer it by use: auction the season slots to the highest bidder, but write free community hours into the contract so whoever wins carries the obligation to open the ground.",
+        "t": "我会按用途分层：赛季固定档期公开竞标、价高者得，但把免费时段写进合同作为条件，谁中标谁承担社区开放义务，履约情况逐年复审。",
+        "t_en": "I would layer it by use: auction the season slots to the highest bidder, but write free community hours into the contract so whoever wins carries the obligation to open the ground, with compliance reviewed annually.",
         "tags": [
           "ECO:R",
           "COL:M"
@@ -50989,8 +50989,8 @@
         ]
       },
       {
-        "t": "我会保住远程弹性。三成离职率差距换来的招聘与交接成本，比那百分之四产出更值钱；真正的问题是用远程方式重做带教流程，而不是把人叫回办公室。",
-        "t_en": "I would keep the flexibility. The hiring and handover cost implied by thirty percent lower attrition is worth more than four percent of output; the real task is rebuilding onboarding for remote work, not calling people back.",
+        "t": "我会保住远程弹性。三成离职率差距换来的招聘与交接成本，比那百分之四产出更值钱；问题出在用远程方式重做带教流程，而不是把人叫回办公室。",
+        "t_en": "I would keep the flexibility. The hiring and handover cost implied by thirty percent lower attrition is worth more than four percent of output; the task is rebuilding onboarding for remote work, not calling people back.",
         "tags": [
           "COL:I",
           "ECO:R"
@@ -51189,7 +51189,7 @@
         ]
       },
       {
-        "t": "我会先改计量与公开：把取水口与排口的氮数据按周公开到户，让下游居民与农户都看得见谁在排，再决定花钱修什么。",
+        "t": "我会先改计量与公开：把取水口与排口的氮数据按周公开到户，让下游居民与农户都看得见谁在排，再决定该把钱花在修什么上。",
         "t_en": "I would fix measurement and disclosure first: publish weekly nitrogen readings at intakes and outfalls down to the district level so downstream residents and farms can see who discharges what, then decide what to build.",
         "tags": [
           "TECH:K",
