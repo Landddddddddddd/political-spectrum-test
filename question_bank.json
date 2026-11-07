@@ -50468,5 +50468,923 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1131,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene": "本市要在下一财年确定社会救助的形态。一个方案把现有七项定向补助合并成一笔按月发放的统一基本收入，发给全部成年居民，不再审查收入与就业状况；测算显示可省下约三成行政与核查成本，但有孩子的家庭实际到手会少于现行组合。另一个方案保留定向补助、提高复核频率，把省下的钱集中给收入最低的百分之十，覆盖面从现在的百分之二十二收窄到百分之十四。财政研究所指出，两案总支出相同，真正的差别在于钱先发给谁、以及多少钱花在审核上。",
+    "scene_en": "The city must settle the shape of social assistance for the next fiscal year. One proposal merges seven targeted benefits into a single monthly basic income paid to every adult resident, with no income or employment test; costing suggests it would save about thirty percent of the administrative and verification overhead, but households with children would receive less in cash than under the current mix. The other keeps targeted benefits with more frequent re-verification and concentrates the savings on the poorest ten percent, narrowing coverage from twenty-two percent to fourteen. The finance institute notes that both cost the same, and the real difference is who is paid first and how much is spent on checking.",
+    "options": [
+      {
+        "t": "我会选统一基本收入。不审查就没有漏发，也没有为了保住资格而不敢多接一份活的人；省下的三成行政成本本身，就是把钱从表格挪到人身上。",
+        "t_en": "I would take the basic income. No test means nobody is missed, and nobody turns down an extra shift to protect eligibility; the thirty percent saved on administration is itself money moved from forms to people.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会保留定向补助。同一笔钱集中给最低的百分之十，才能让缺口最大的人拿到足够数额；普发是把钱摊薄，有孩子的家庭反而拿得更少。",
+        "t_en": "I would keep the targeted benefits. Concentrating the same money on the poorest ten percent is what gets a meaningful amount to the people with the largest gap; flat payments spread it thin, and households with children end up with less.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会两边都不选，把同样的钱做成按收入递减的税收抵免：由报税表自动算出额度，不用另设机构，也不用养一支核查队伍。",
+        "t_en": "I would choose neither, and turn the same money into an income-tapered tax credit: the return works out the amount automatically, so no new agency and no verification corps.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会先跑一次有对照的试点再定：把本市划成两片，各跑两年，比漏发率、就业率和儿童贫困的实际数字，再决定全市用哪一套。",
+        "t_en": "I would run a controlled pilot first: split the city in two, run each system for two years, compare actual take-up, employment and child poverty numbers, then pick one for the whole city.",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1132,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "议会正在修订育儿假规则，争论集中在那十六周的带薪假期能不能转让。现行制度允许父母任意分配，实际结果是九成的假期由母亲使用，父亲平均只用掉十一天。修正案要把其中六周设为父亲专用、不可转让、过期作废。支持者引用邻国经验：不可转让的专属周数，把父亲的实际使用率从一成二推高到七成以上，也让母亲返岗后的时薪落差缩小。反对者说，这等于把一个家庭的排班权收归立法机关：单亲、自雇、以及配偶收入更低的家庭，都可能在被迫休假里损失更多收入。",
+    "scene_en": "The legislature is revising parental leave, and the fight is over whether the sixteen paid weeks can be transferred. Current rules let parents split it however they like, and the result is that mothers take ninety percent of it while fathers average eleven days. The amendment would make six weeks father-only, non-transferable, use-it-or-lose-it. Supporters cite neighbours: non-transferable weeks pushed fathers' actual take-up from twelve percent to over seventy, and shrank the hourly-wage gap for mothers after returning. Opponents say this hands a household's scheduling decisions to the legislature: single parents, the self-employed, and families where the spouse earns less could all lose more income by being pushed onto leave.",
+    "options": [
+      {
+        "t": "我会支持专属六周。可转让的名义自由，在职场期待面前基本等于没有选择；只有把周数锁给父亲，才逼着雇主把休假当成默认安排而不是母亲的私人问题。",
+        "t_en": "I would back the six father-only weeks. Transferable leave is freedom on paper and no choice at all against workplace expectations; only locking the weeks to fathers forces employers to treat leave as a default rather than a mother's private problem.",
+        "tags": [
+          "CUL:P",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会反对。家庭的排班该由这个家庭自己定，尤其单亲和自雇的人：他们的伴侣根本不存在或没有雇主可以分担，硬锁的六周只会变成作废的六周。",
+        "t_en": "I would oppose it. A household's schedule belongs to that household, especially for single and self-employed parents: their partner either does not exist or has no employer to share the load, so locked weeks simply become forfeited weeks.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会折中：保留可转让，但给用满六周的父亲发一笔相当于当地平均工资的补贴，让愿意休的人休得起，而不是让不愿休的人被制度卡住。",
+        "t_en": "I would compromise: keep transferability, but pay a bonus equal to the local average wage to fathers who take six weeks, so those who want the time can afford it without trapping those who do not.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会先改披露规则：要求雇主每年公布按性别拆分的休假使用与晋升数据，让分配问题在招聘市场上自己显形，再谈要不要强制。",
+        "t_en": "I would change disclosure first: require employers to publish leave taken and promotions broken down by sex each year, so the allocation problem shows up in the hiring market on its own, before mandating anything.",
+        "tags": [
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1133,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "一个监管机构要给化妆品与化学品的安全性测试定过渡期。已有三十余种经过验证的替代方法，能覆盖皮肤与眼刺激等常见终点，但对长期毒性、生殖毒性和复杂体内相互作用的预测仍然有限，现有替代方案对这类终点的复核一致率约为六成。产业界称，若在三年内全面禁用动物测试，约四成的在研配方将无法完成注册，中小企业首当其冲。动物福利组织主张，既然存在可用的替代路径，继续把动物作为默认测试载体就是用成本换痛苦；它们要求三年内全部切换，并把验证预算翻倍。",
+    "scene_en": "A regulator must set a transition period for safety testing of cosmetics and chemicals. More than thirty validated alternatives now cover common endpoints such as skin and eye irritation, but prediction of chronic toxicity, reproductive harm and complex systemic interactions remains weak, with roughly sixty percent concordance on those endpoints. Industry says a full ban on animal testing within three years would leave about forty percent of formulations in development unable to complete registration, hitting smaller firms hardest. Animal welfare groups argue that with usable alternatives existing, keeping animals as the default test vehicle trades suffering for cost; they want a full switch in three years and a doubling of validation funding.",
+    "options": [
+      {
+        "t": "我会定三年全禁。替代方法已经够用，剩下的空白恰好该用验证预算去填，而不是用继续做实验的动物去填；给一个更长的期限，验证的紧迫感就会消失。",
+        "t_en": "I would set a full ban at three years. The alternatives are good enough, and the remaining gaps should be closed with validation money rather than more animals on benches; a longer deadline removes the urgency to validate anything.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会给十年分阶段表，并按终点逐个切换：某类测试一旦验证一致率超过八成，就在两年内强制替换，其余继续允许但要求逐年公布替代进展。",
+        "t_en": "I would set a ten-year staged schedule and switch endpoint by endpoint: once an alternative passes eighty percent concordance it becomes mandatory within two years, and the rest stay permitted with annual disclosure of substitution progress.",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我会把期限交给市场：保留测试许可，但要求产品标注是否经过动物测试，让货架上的选择去决定厂商走哪条路，同时把验证基金交给行业自己出。",
+        "t_en": "I would leave the timeline to the market: keep testing permitted, require a label saying whether a product was animal-tested, let shelf choices decide which route firms take, and have industry fund the validation itself.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会设一个独立委员会逐案审批：凡是替代方法对该配方已能给出结论的，一律不批动物实验；确有空白且涉及公众健康的，限定量与终点后放行。",
+        "t_en": "I would set up an independent case-by-case board: where alternatives can already settle the question for a given formulation, animal work is refused outright; where a genuine gap affects public health, it is approved with capped numbers and named endpoints.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1134,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "市文化基金要重新分配一笔固定预算。现行做法由同行评审决定，八成资金流向前沿与小众项目：实验剧场、声音艺术、少数语种写作，单个项目通常只有几百名观众。一份审计报告显示，这部分资金的观众触达成本是公共音乐厅演出的十一倍。提案改为把七成预算按上座率与售票额分配，剩下的留给同行评审。剧院协会支持改革，认为公共资金应当服务多数纳税人；实验艺术团体反驳说，按上座率分配等于让市场再判一次，而这笔钱存在的理由恰恰是补市场不做的部分。",
+    "scene_en": "The city's culture fund must reallocate a fixed budget. Peer review currently decides, and eighty percent goes to experimental and marginal work — experimental theatre, sound art, writing in minority languages — typically reaching a few hundred people per project. An audit finds that the cost per audience member reached is eleven times that of concerts in the public hall. The proposal would send seventy percent of the budget by attendance and ticket revenue, leaving the rest to peer review. The theatres' association supports it, arguing public money should serve the majority of taxpayers; experimental groups answer that allocating by attendance is asking the market to judge twice, when the point of the money is to cover what the market will not.",
+    "options": [
+      {
+        "t": "我会保留同行评审为主。公共文化经费的功能就是承担市场不会承担的风险，用上座率分配，等于把实验性作品在它最脆弱的阶段筛掉，之后再无来源。",
+        "t_en": "I would keep peer review dominant. Public culture money exists to carry risk the market will not; allocating by attendance screens out experimental work at its most fragile stage, and nothing else funds it afterwards.",
+        "tags": [
+          "CUL:P",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会改成按观众分配。纳税人的钱应当先服务多数人，触达成本差十一倍这件事本身就该被追问；小众项目可以申请剩下的三成，而不是默认占八成。",
+        "t_en": "I would switch to audience-based allocation. Taxpayers' money should serve most of them first, and an eleven-fold difference in cost per person reached deserves an answer; niche projects can compete for the remaining thirty percent instead of holding eighty by default.",
+        "tags": [
+          "CUL:T",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会按类型分开算：大众院团按上座率考核，实验类项目改用评审加小额多笔的方式，单笔不超过某个额度，让更多团体有机会试错。",
+        "t_en": "I would separate the two by category: mainstream companies judged on attendance, experimental projects funded by review in many small grants capped at a set amount, so more groups get a chance to fail cheaply.",
+        "tags": [
+          "ECO:L",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会要求先公开数据再谈分配：每个受资助项目公布票价、观众构成与成本，让市议会和公众看清钱到底买了什么，再决定比例。",
+        "t_en": "I would require the data to be public before changing the split: every funded project reports ticket prices, audience composition and costs, so the council and public can see what the money actually buys, and then set the ratio.",
+        "tags": [
+          "GOV:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1135,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "市里那座公共体育场一年有四十个周末档期，申请量是可用档期的三倍。现行规则先到先得，结果七成被两家职业俱乐部长期包下，它们的青年梯队和商业赛事带来租金与本地曝光；社区联赛、学校运动会和业余跑团只能抢剩下的边角时间，常常排到工作日的清晨。体育局提出新规：职业俱乐部每季最多占三成档期，超出部分按市场竞价，其余按社区申请顺序分配，并保留每周至少两个免费时段。俱乐部称，档期减少会让赛程无法排满，青训和赞助随之缩水。",
+    "scene_en": "The city's public stadium has forty weekend slots a year and three times as many applicants. First-come-first-served means two professional clubs hold seventy percent of them long term, bringing rent and local exposure through youth squads and commercial fixtures; community leagues, school sports days and amateur running clubs fight over the edges, often at dawn on weekdays. The sports authority proposes capping clubs at thirty percent per season, auctioning the excess, allocating the rest by community application order, and reserving at least two free slots a week. The clubs say fewer slots means fixtures cannot be scheduled, and youth training and sponsorship shrink with them.",
+    "options": [
+      {
+        "t": "我会按新规办。公共场地先到先得听起来中立，实际是谁有钱有闲谁包场；三成上限加竞价，才让社区和学校排得上正常的周末时段。",
+        "t_en": "I would adopt the new rule. First-come-first-served sounds neutral but in practice rewards whoever has money and staff to book early; a thirty percent cap plus auction is what gets community and school events normal weekend slots.",
+        "tags": [
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会保留俱乐部的长期档期。职业队带来青训、赞助和稳定租金，是这块场地能维护下去的原因；社区活动可以另建小场地，成本低得多。",
+        "t_en": "I would keep the clubs' long-term slots. Professional sides bring youth training, sponsorship and steady rent, which is why the venue stays maintained at all; community events could use separate small facilities at far lower cost.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会按用途分层：赛季固定档期公开竞标、价高者得，但把免费时段写进合同作为条件，谁中标谁承担社区开放义务。",
+        "t_en": "I would layer it by use: auction the season slots to the highest bidder, but write free community hours into the contract so whoever wins carries the obligation to open the ground.",
+        "tags": [
+          "ECO:R",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会让独立评估先出一份数据：统计各类申请者的实际使用率、弃用率和周边居民受益情况，再定上限比例，避免拍脑袋定三成。",
+        "t_en": "I would have an independent review produce the numbers first: actual utilisation by applicant type, no-show rates, and benefit to surrounding residents, then set the cap on evidence instead of picking thirty percent arbitrarily.",
+        "tags": [
+          "GOV:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1136,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "长期护理保险的筹资方案要在三种路径里选一个。现收现付：在职者按工资的百分之一点二缴费，当年收当年付，待遇随缴费人数浮动。个人账户：同样比例进入个人名下，退休后按累积额支取，可继承，但不参与再分配。混合制：一半进统筹池、一半进个人账户。精算报告显示，本地六十五岁以上人口占比将在十五年内从百分之十九升到百分之三十一，现收现付的赡养比会从四比一降到二比一；而个人账户在通胀高于记账利率的年份里，实际购买力已经连续三年缩水。",
+    "scene_en": "Long-term care insurance must choose among three financing paths. Pay-as-you-go: workers contribute 1.2 percent of wages, this year's intake pays this year's benefits, and entitlements float with the number of contributors. Individual accounts: the same rate accrues to a personal balance, drawn down at retirement, inheritable, with no redistribution. Mixed: half to a pooled fund, half to individual accounts. Actuarial work shows the share of residents over sixty-five rising from nineteen to thirty-one percent within fifteen years, dropping the support ratio from four-to-one to two-to-one; meanwhile individual accounts have lost real purchasing power for three consecutive years whenever inflation outpaced the credited interest rate.",
+    "options": [
+      {
+        "t": "我会选现收现付。护理是当下的照护劳动，钱也该当年收当年用；赡养比降到二比一的时候，只有统筹池能让高龄者的待遇不随自己账户里的数字缩水。",
+        "t_en": "I would choose pay-as-you-go. Care is present-day labour and the money should be collected and spent in the same year; when the support ratio hits two-to-one, only a pooled fund keeps benefits from shrinking with whatever sits in a personal account.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会选个人账户。钱记在自己名下才有约束力，缴的人看得见积累，也不会因为下一代人口变少就被动贬值；可继承这一点，也让中年缴费变得划算。",
+        "t_en": "I would choose individual accounts. Money in your own name is what makes the contribution credible: contributors see it accumulate and are not silently devalued when the next generation is smaller; inheritability also makes mid-life contributions worthwhile.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会选混合制，并把统筹那一半写进法定的最低待遇：无论账户表现如何，护理等级对应的最低支付额不得下调，剩下的部分随账户走。",
+        "t_en": "I would take the mixed model and write the pooled half into a statutory floor: whatever the accounts do, the minimum payment tied to a care level cannot be cut, and the rest follows the account.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会先处理支付端：把护理等级评估和上门服务单价公开标准化，压掉中间环节，再谈要不要提高缴费率，否则加的钱未必变成照护小时。",
+        "t_en": "I would fix the payment side first: standardise and publish care-level assessments and hourly rates for home services, squeeze the intermediaries, and only then discuss raising the contribution rate, or the extra money may not turn into care hours.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1137,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "先买后付的小额分期在本地快速铺开：单笔平均三百元，分四期免息，逾期后转入年化百分之二十八的循环计息。消费者保护机构统计，使用者的逾期率为百分之十一，其中六成的人在同一时间持有三家以上平台的分期，实际总负债超出本人估算的两倍。平台方称，产品把大额消费拆成可承受的小段，让没有信用卡的人也能平滑开支，逾期数据里包含大量忘记还款而非无力还款的账户。监管提案有两个方向：设年化利率上限百分之十八，或强制平台在放款前合并展示用户全部在贷余额与总还款额。",
+    "scene_en": "Small-ticket buy-now-pay-later has spread quickly: an average purchase of three hundred, split into four interest-free instalments, rolling into twenty-eight percent annualised after a missed payment. Consumer agencies find an eleven percent delinquency rate, with sixty percent of those users holding instalments at three or more platforms at once and actual total debt double their own estimate. Platforms say the product splits large purchases into affordable pieces and lets people without credit cards smooth spending, and that the delinquency figure includes many who forgot rather than could not pay. Two regulatory directions are on the table: cap the annualised rate at eighteen percent, or require platforms to show a user's combined outstanding balance and total repayments across all providers before lending.",
+    "options": [
+      {
+        "t": "我会设利率上限。百分之二十八的逾期利率落在最还不起的人身上，正是这个产品赚钱的方式；上限压到十八，才能让定价回到风险本身而不是罚没。",
+        "t_en": "I would cap the rate. A twenty-eight percent penalty rate lands on exactly the people least able to pay, which is how the product makes money; capping at eighteen forces pricing back to risk rather than forfeit.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会选强制合并展示。利率上限只会把高风险用户赶去更贵的渠道，信息合并却能让人在点确认前看清自己一共欠多少，选择权还在本人手里。",
+        "t_en": "I would require the combined disclosure. A rate cap just pushes high-risk borrowers to costlier channels, while aggregated information lets someone see their total owed before tapping confirm, with the choice still theirs.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会两条一起上，并加一条冷静期：首笔分期后七天内可无责撤销，逾期转循环计息前必须先经一次人工提醒与还款计划协商。",
+        "t_en": "I would do both, and add a cooling-off period: seven days to cancel the first instalment without penalty, and a mandatory human reminder plus repayment-plan negotiation before any balance rolls into revolving interest.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先把账算清再动手：让平台按统一口径报送真实年化成本与逾期后总还款额，公开三个季度，看上限或披露哪个真正压低了违约，再定规矩。",
+        "t_en": "I would get the numbers straight first: require platforms to report true annualised cost and post-default total repayment on one standard, publish three quarters, see whether the cap or the disclosure actually cuts defaults, then legislate.",
+        "tags": [
+          "GOV:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1138,
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene": "为接入新建的风光基地，电网公司需要架一条穿越六个乡镇的高压线路。方案一按统一电价把成本摊进全网账单，每户每月约多付四元，工程可在两年内完工。方案二按受益范围分摊：沿线乡镇按征地面积与塔基数量获得补偿，费用由用电增长最快的三座城市按比例承担，谈判预计拉长到五年，且已有两个乡镇表示不接受任何塔基。电网公司提醒，风光基地若不能按期并网，弃风弃光的损失会由全网承担，去年这一项已相当于每户多付七元。",
+    "scene_en": "To connect a new wind and solar base, the grid operator needs a high-voltage line across six townships. Option one spreads the cost across all bills at a uniform tariff, about four extra per household per month, and the line can be finished in two years. Option two allocates by beneficiary: townships along the route are compensated by land taken and towers sited, and the cost is borne proportionally by the three fastest-growing cities, with negotiations expected to stretch to five years — and two townships already say they will accept no towers at all. The operator warns that if the base cannot connect on schedule, curtailed generation is paid for by all customers, a cost that last year equalled seven per household per month.",
+    "options": [
+      {
+        "t": "我会选全网摊平。四元换两年工期，比弃风弃光让每户多付七元划算得多；电网本来就是按全网共用建的，逐段算账只会让一条线卡在最后一个乡镇。",
+        "t_en": "I would spread it network-wide. Four a month for a two-year build beats seven a month in curtailment; the grid was built as a shared network, and segment-by-segment accounting leaves the line stuck at the last township.",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会按受益分摊。谁的城市用电涨得最快，谁就该出这笔钱；统一电价让不受益的人替别人付账，还会让征地谈判失去真实的价码。",
+        "t_en": "I would allocate by beneficiary. The cities whose demand grows fastest should pay; a uniform tariff makes non-beneficiaries foot the bill and removes any real price signal from the land negotiations.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会走混合：主干段全网摊，进城段由受益城市出，同时把沿线补偿标准统一写进法规，避免每个乡镇各谈一个价、越谈越久。",
+        "t_en": "I would mix it: the trunk section network-wide, the city segments paid by the beneficiary cities, and compensation standards for the route fixed in regulation so each township is not bargaining its own price and stretching the schedule.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先换技术路径再谈钱：评估沿既有公路走廊敷设或部分地下化的成本，如果多花的钱低于五年延误的代价，就不必为征地谈五年。",
+        "t_en": "I would change the technical route before arguing about money: cost out following an existing road corridor or partial undergrounding, and if the premium is below the price of a five-year delay, there is no need to bargain over land for five years.",
+        "tags": [
+          "TECH:U",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1139,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "洪水保险制度要重设。现行做法是政府兜底：任何被淹住宅都能获得按重置成本七成赔付，保费与风险无关，全市统一。过去十年理赔集中在沿河的三个区，占全部赔款的八成，而那三个区的新建住宅仍在增加。精算部门提出改为风险定价：保费按海拔与历史淹没频率分档，最高档是最低档的六倍，同时给低收入家庭发放保费补贴券。支持者说，价格不反映风险，就等于用全体投保人的钱鼓励在洪泛区继续盖房；反对者说，那些区的住户多是几十年前就住在那里的老居民，他们没有能力搬家，风险定价等于对无法选择的人收罚金。",
+    "scene_en": "Flood insurance must be rebuilt. Today the government backstops it: any flooded home gets seventy percent of replacement cost, and premiums are flat citywide, unrelated to risk. Claims over the past decade concentrated in three riverside districts that account for eighty percent of payouts — and new housing there is still increasing. Actuaries propose risk-based pricing: premiums banded by elevation and historical inundation frequency, the top band six times the bottom, with vouchers for low-income households. Supporters say a price that ignores risk spends all policyholders' money encouraging more building on the floodplain; opponents say most residents there have lived in place for decades, cannot afford to move, and risk pricing amounts to a fine on people who never had a choice.",
+    "options": [
+      {
+        "t": "我会改成风险定价加补贴券。价格不反映风险，就等于全体投保人出钱鼓励在洪泛区继续盖房；补贴券管住老住户的负担，新建的房子则必须按真实风险付费。",
+        "t_en": "I would move to risk pricing with vouchers. A price that ignores risk has all policyholders funding more building on the floodplain; vouchers protect long-standing residents, while new construction pays what the risk actually costs.",
+        "tags": [
+          "ENV:S",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会维持统一保费，但把差别做在别处：洪泛区新建项目一律不批、也不给保险，存量住宅继续按统一费率承保，不让老住户替规划失误付账。",
+        "t_en": "I would keep flat premiums and put the difference elsewhere: no new permits and no cover for new construction on the floodplain, while existing homes stay insured at the flat rate, so long-standing residents do not pay for planning failures.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会按政府再保的思路改：私人保险按风险定价，政府只对超过某额度的大灾损失做再保，用公共钱兜住尾部风险而不是日常保费。",
+        "t_en": "I would restructure it as public reinsurance: private cover priced by risk, with government reinsuring only catastrophic losses above a threshold — public money carrying the tail, not everyday premiums.",
+        "tags": [
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先做搬迁与改造的选项再动价格：对三个区逐户评估抬高、防洪墙与迁建的成本，把更便宜的那条路先铺出来，价格改革放在后面。",
+        "t_en": "I would put relocation and retrofit options on the table before touching prices: cost out elevation, flood walls and resettlement home by home in the three districts, build the cheaper path first, and leave pricing reform for later.",
+        "tags": [
+          "ENV:G",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1140,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "教育部门要决定少数语言学校的经费方式。这些学校用家庭语言授课，同时按国家课程教主流语言。现行按学生人头拨款，但每所学校的规模都很小，平均不到一百二十人，人均行政与教材成本是普通学校的两倍多。新方案把拨款改为按主流语言考试成绩分配：毕业时主流语言达标率高的学校多得。支持者说，这让公共钱对结果负责，也保证孩子不至于因为家庭语言而失去升学机会。学校联合会反驳说，用主流语言成绩衡量母语学校，等于用客场比分评判主队，规模小带来的固定成本与成绩无关，先砍经费只会让达标率更低。",
+    "scene_en": "The education ministry must decide how minority-language schools are funded. They teach in the home language while following the national curriculum in the majority language. Funding is per pupil, but schools are small — under a hundred and twenty on average — so administrative and textbook costs per head run more than twice those of ordinary schools. A new formula would allocate by majority-language exam results: schools with higher pass rates at graduation get more. Supporters say this makes public money answer for outcomes and ensures children are not shut out of further study because of the language at home. The schools' association answers that judging mother-tongue schools by majority-language scores is scoring the home side by the away team's goals, that fixed costs of small scale have nothing to do with results, and that cutting funds first will only lower pass rates further.",
+    "options": [
+      {
+        "t": "我会反对按成绩分配。小规模学校的固定成本与教学质量无关，先按人头保住基本运转，成绩才可以谈；否则这项改革会直接关掉一半的学校。",
+        "t_en": "I would oppose allocating by results. Fixed costs of small schools are unrelated to teaching quality; hold the per-pupil base first so they can operate, then talk about results, or this reform simply closes half of them.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持新方案，但加一个过渡：拨款一半按人头、一半按达标率，并对规模不足的学校给三年合并期，让它们有时间做大或联办。",
+        "t_en": "I would support the new formula with a transition: half per pupil, half by pass rate, plus a three-year window for undersized schools to merge or share services, so they have time to grow.",
+        "tags": [
+          "CUL:T",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会把衡量标准换掉：不看主流语言单科达标率，而看毕业率、继续升学率与母语能力的保持情况，三项一起算，避免用一个指标决定生死。",
+        "t_en": "I would change the yardstick: not the majority-language pass rate alone but graduation, progression to further study and retention of the home language, all three counted, so no single indicator decides a school's fate.",
+        "tags": [
+          "CUL:P",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会让家长自己选：把同等额度的教育券发给这些家庭，孩子可以留在母语学校，也可以转去主流学校，用真实的入学选择告诉财政该往哪投。",
+        "t_en": "I would let parents decide: issue the same value in education vouchers to these families so a child can stay in the mother-tongue school or move to a mainstream one, and actual enrolment tells the treasury where to put the money.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1141,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "老城区一条街有二百四十户，路边车位一百一十个，其中四十个装了地锁，锁的主人多数在这里住了二十年以上。市交通局提出两种改法：一是保留地锁但改为每年申请、按车牌登记、一户一位，多余的车位按小时收费；二是全部取消私人占用，整条街改为按时计费，居民可购月票，价格高于现有地锁年费的四倍。调查显示，街内登记车辆一百六十台，工作日白天的空位主要被附近写字楼的通勤者占掉。商户担心计时收费会赶走客人，新住户则抱怨一个地锁就意味着一份永久的特权。",
+    "scene_en": "An old-district street has two hundred and forty households and a hundred and ten kerbside spaces, forty of them with private locks held mostly by people who have lived here for twenty years or more. The transport office proposes two fixes: keep the locks but move to an annual permit, registered by plate, one per household, with leftover spaces charged hourly; or abolish private occupation entirely, meter the whole street, and sell residents a monthly pass at four times the current annual lock fee. Surveys show a hundred and sixty registered cars on the street, and daytime vacancies on weekdays mostly taken by commuters from nearby offices. Shopkeepers fear metering drives customers away; newer residents say a lock amounts to a permanent privilege.",
+    "options": [
+      {
+        "t": "我会改成每年申请的许可制。车位是公共资源，一年一审、一户一位，能让长期占位变成可撤回的使用权；多出来的按时收费，也给来访和临时停车留了余地。",
+        "t_en": "I would move to annual permits. Kerbside space is public, and a yearly review with one space per household turns a permanent claim into a revocable right; metering the surplus also leaves room for visitors and short stays.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会整体取消私人占用。地锁把公共路面变成了永久私产，后搬来的人连排队的机会都没有；统一按时计费，至少规则对所有人一样。",
+        "t_en": "I would scrap private occupation entirely. Locks turn public roadway into permanent private property, and anyone who moved in later never even gets to queue; uniform metering at least applies the same rule to everyone.",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会保留地锁但限制范围：只承认符合特定条件的老住户（在此居住超过十五年、无院内车位），其余全部计时收费，并设上限防止转让炒作。",
+        "t_en": "I would keep the locks but narrow them: recognise only long-standing residents who meet set conditions — fifteen years here, no off-street space — meter everything else, and cap transfers so permits cannot be traded for profit.",
+        "tags": [
+          "CUL:T",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先扩容再分配：清查街内夜间实际占用率、协调写字楼错时共享车位，把总量做上去之后再谈谁该有优先权，否则怎么分都是零和。",
+        "t_en": "I would add capacity before dividing it: audit actual overnight occupancy, broker shared use with the office car parks on a time-shift basis, and only then argue about priority — otherwise every split is zero-sum.",
+        "tags": [
+          "TECH:K",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1142,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "一家有两千名员工的公司要在明年确定办公模式。数据显示，远程工作日的人均产出比办公室低百分之四，但离职率也低三成，招聘周期缩短了三分之一，且能招到通勤范围内招不到的人。管理层提案要求每周至少四天到岗，理由是新人带教、跨部门协调与突发问题处理在远程下明显变慢，内部调查里有六成主管同意。员工问卷则显示，若强制四天到岗，两成的人会开始找工作，其中以有幼儿照护需求和单程通勤超过一小时者为主。财务测算指出，每降低一个百分点的离职率，相当于每年省下一笔相当于三十人年薪的招聘与交接成本。",
+    "scene_en": "A company of two thousand must fix its working model for next year. Data show output per remote day is four percent lower, but attrition is thirty percent lower and hiring cycles a third shorter, and it reaches candidates beyond commuting range. Management proposes at least four days on site, arguing onboarding, cross-team coordination and firefighting visibly slow at a distance, with sixty percent of managers agreeing in an internal survey. The staff survey says a four-day mandate would push twenty percent to start looking, concentrated among those with childcare needs and commutes over an hour. Finance notes each point of attrition avoided saves recruitment and handover cost equal to thirty salaries a year.",
+    "options": [
+      {
+        "t": "我会要求四天到岗。产出差百分之四不是小数，而新人带教和跨部门协调慢下来的代价从来不出现在报表里；离职率可以通过管理改善，协作流失却很难补。",
+        "t_en": "I would require four days. Four percent output is not trivial, and the cost of slower onboarding and coordination never shows up in a report; attrition can be managed down, but lost coordination is hard to rebuild.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保住远程弹性。三成离职率差距换来的招聘与交接成本，比那百分之四产出更值钱；真正的问题是用远程方式重做带教流程，而不是把人叫回办公室。",
+        "t_en": "I would keep the flexibility. The hiring and handover cost implied by thirty percent lower attrition is worth more than four percent of output; the real task is rebuilding onboarding for remote work, not calling people back.",
+        "tags": [
+          "COL:I",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会按岗位分：需要密集协作与带教的岗位四天到岗，独立交付型岗位自主选择，并把选择结果与团队产出一起公开，让安排自己收敛。",
+        "t_en": "I would split by role: four days for roles needing heavy coordination and mentoring, free choice for independent delivery roles, and publish the choices alongside team output so the arrangement converges on its own.",
+        "tags": [
+          "TECH:K",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会把决定权交给团队：公司只定结果指标和会议底线，由各团队自己投票决定到岗天数，代价与收益都由这个团队承担。",
+        "t_en": "I would hand the decision to teams: the company sets outcome metrics and a floor for meetings, each team votes its own on-site days, and that team carries both the costs and the gains.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1143,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "本地新闻网站的评论区要改规则。现行允许匿名发言，月均评论四万条，人工加机器审核删掉其中百分之三，涉及人身攻击、隐私泄露与商业刷评。编辑部提案改为实名（后台留身份证、前台显示昵称），试点两周后评论量下降六成，被删比例降到百分之一，但同时出现了另一类现象：关于本地征地纠纷与物业维权的讨论几乎消失，而这些正是此前最活跃的话题。记者反馈，几个关键线索原本来自匿名留言。支持实名的一方强调，实名让讨论回到可追责的公共说理；反对者指出，在小城市里昵称与实名没有区别，被举报的人可能第二天就在单位被认出来。",
+    "scene_en": "A local news site must rewrite its comment rules. Anonymity is allowed, with forty thousand comments a month and three percent removed by human and machine review for personal attacks, privacy leaks and commercial spam. The newsroom proposes real-name registration — ID held in the back end, a nickname shown publicly. After a two-week trial, comment volume fell sixty percent and removals to one percent, but another pattern appeared: discussion of a local land dispute and a residents' property-rights case nearly vanished, and those had been the liveliest threads. Reporters say several key tips came from anonymous comments. Supporters stress accountability in public reasoning; opponents note that in a small city a nickname is no disguise, and a reported commenter can be recognised at work the next day.",
+    "options": [
+      {
+        "t": "我会推实名。没有可追责的身份，公共讨论就会退化成对骂和爆料；评论量少六成不是损失，剩下的百分之一被删比例说明讨论质量真的变了。",
+        "t_en": "I would go real-name. Without an accountable identity, public discussion degrades into abuse and leaks; losing sixty percent of volume is not a loss, and the drop to one percent removals shows the quality genuinely changed.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保留匿名。征地、物业这类题目里，敢说话的人往往就是会被报复的人；把他们的声音一起关掉，等于用秩序换沉默，而线索也一并没了。",
+        "t_en": "I would keep anonymity. On land and property disputes the people willing to speak are exactly the ones who can be retaliated against; shutting their voices removes the tips along with the noise, and trades order for silence.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会做分层：一般话题匿名，涉及具体个人指控与商业内容的强制实名；同时给敏感话题提供编辑部代发渠道，由记者核实后以报道形式刊出。",
+        "t_en": "I would tier it: anonymity for general topics, mandatory real names where a specific person is accused or commercial content is involved, plus an editorial channel where sensitive material is verified by a reporter and published as reporting instead.",
+        "tags": [
+          "GOV:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会把规则交给读者自己定：由随机抽选的读者委员会审议删帖标准与申诉案例，每季度公开一次裁决理由，编辑部只执行不立法。",
+        "t_en": "I would let readers set the rules: a randomly selected reader panel reviews removal standards and appeals, publishing its reasoning each quarter, with the newsroom enforcing rather than legislating.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1144,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "一份关于继承的税制提案进入辩论。现行制度对遗产几乎不征税，仅在转移时收取一笔固定的登记费。提案设置高额免征额，只对超过免征额的部分按阶梯征收，最高一档针对超过免征额二十倍以上的部分；同时允许分十年缴纳，并对以经营中的家族企业股权为主的遗产给出延期与折价。财政部测算，这项税收可覆盖本地基础教育支出的百分之六。反对意见集中两点：一是资产多为房产与股权，继承人可能被迫变卖以缴税，尤其是经营中的企业；二是实际征收依赖资产估值，而估值本身可以被安排。",
+    "scene_en": "A tax proposal on inheritance reaches debate. Today estates are barely taxed, with only a flat registration fee at transfer. The proposal sets a high exemption and taxes only the excess on a graduated scale, with the top band applying above twenty times the exemption; payment may be spread over ten years, and estates consisting mainly of shares in an operating family firm get deferral and a discount. The finance ministry estimates the yield would cover six percent of local basic-education spending. Objections centre on two points: assets are mostly property and shares, so heirs may be forced to sell to pay, particularly where a business is still operating; and collection depends on valuation, which can itself be arranged.",
+    "options": [
+      {
+        "t": "我会支持这项税。财富在代际之间全额传递，本身就会让起点越来越不平等；设了高免征额、允许十年分期，已经照顾到普通家庭与经营中的企业。",
+        "t_en": "I would support it. Wealth passing intact between generations is itself what makes starting points diverge; a high exemption plus ten-year instalments already accommodates ordinary households and operating businesses.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会反对。继承人被迫卖掉正在经营的企业去缴税，损失的是岗位和整条供应链；而能安排估值的，永远是资产结构最复杂的那一批人。",
+        "t_en": "I would oppose it. Heirs forced to sell a running business to pay the tax lose jobs and a whole supply chain, while the ones able to arrange valuations are always those with the most complex holdings.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会只对不动产征，并给经营者一条硬豁免：家族企业股权不计入应税遗产，但必须承诺五年内不裁员、不迁址，否则补缴并加计利息。",
+        "t_en": "I would tax property only, with a hard exemption for operators: shares in a family firm stay out of the taxable estate provided the firm commits to no layoffs and no relocation for five years, or the tax plus interest is clawed back.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先解决估值：建立公开的资产估值口径与第三方复核，让同一份遗产在税务与法院之间不出两个数，然后再决定税率，否则征到的只是估值差价。",
+        "t_en": "I would fix valuation first: publish a common valuation standard with independent review so the same estate does not carry two numbers between the tax office and the courts, and set rates after that — otherwise what is collected is just the gap between valuations.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1145,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "一项关键矿产的出口政策要定下来。本地加工了全球约三成的该类矿石，下游是电池与永磁材料。提案要求出口前必须在本国完成一定比例的深加工，未达标的企业按出口量缴附加费。支持者认为，把冶炼与材料环节留在本地，是摆脱只卖原矿的结构性位置、把就业和附加值一起留下的少数机会；且已有两家企业愿意投资建厂。反对者指出，本地电价是邻国的两倍、环保审批平均需要四十个月，强制深加工很可能只是把订单推给别处的加工厂。行业协会的内部测算显示，若附加费落地，短期出口量可能下降两成，但两年后本地加工产能或可覆盖其中一半。",
+    "scene_en": "An export policy on critical minerals must be settled. The country processes about thirty percent of global output of the ore, feeding batteries and permanent magnets. The proposal requires a set share of downstream processing domestically before export, with a surcharge on exporters that fall short. Supporters say keeping smelting and materials at home is one of the few chances to escape the structural position of selling raw ore, retaining both jobs and value added, and two firms are already willing to invest. Opponents note electricity here costs twice the neighbour's and environmental permits average forty months, so mandatory processing may simply push orders to plants elsewhere. The industry association's internal estimate: the surcharge could cut export volume by a fifth at first, while domestic processing capacity could cover half of that within two years.",
+    "options": [
+      {
+        "t": "我会推强制深加工。只卖原矿就等于把最赚钱的环节让出去，还锁死在价格波动的底端；短期掉两成订单，换两年后一半的产能落地，这笔账算得过来。",
+        "t_en": "I would mandate downstream processing. Selling raw ore hands over the most profitable stage and locks the country at the volatile bottom of the chain; losing a fifth of orders now to have half the capacity in two years is a trade worth making.",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会反对强制。电价是邻国两倍、审批要四十个月，这两条不改，强制只会让买家换供应商；先把成本和审批解决，产能自然会来。",
+        "t_en": "I would oppose the mandate. With power at twice the neighbour's price and forty-month permits, compulsion just makes buyers switch suppliers; fix cost and permitting and the capacity will follow on its own.",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会改成有条件的分阶段：附加费按年度递减、达标企业给电价与审批的快速通道，让愿意投的人先吃到好处，而不是所有人一起交罚金。",
+        "t_en": "I would make it a conditional phase-in: the surcharge steps down each year, and compliant firms get a fast track on power pricing and permits, so those willing to invest gain first instead of everyone paying a fine together.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会先补基础设施再谈政策：把冶炼用电的长期合约与环评时限写进承诺，用可验证的条件换取企业建厂，而不是用出口限制去逼。",
+        "t_en": "I would build the enabling conditions first: long-term power contracts for smelting and statutory permit deadlines, trading verifiable conditions for plant construction rather than forcing it with export restrictions.",
+        "tags": [
+          "TECH:K",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1146,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "一条流经市区与农田的河流，总氮超标已经连续五年。治理有两条路径：一是在上游建一座深度处理厂，一次性投入大、运行耗电高，能把入河总氮削掉七成，可研显示处理成本会进入水费，每户每月约涨十一元；二是推广流域内的农田缓冲带与精准施肥，单位成本低得多，但需要沿岸四百多家农户自愿参与，测算显示参与率要到八成才能达到同等削减效果，前三年的实际参与率是四成。农业部门倾向于后者，认为它同时改善土壤；供水公司则指出，水厂一旦按新标准改造，成本就固定下来，而农业措施随时可能因补贴退出而回退。",
+    "scene_en": "A river running through the city and farmland has exceeded the nitrogen limit for five years. Two paths: an advanced treatment plant upstream, capital-intensive and power-hungry, cutting nitrogen entering the river by seventy percent, with the cost landing on water bills at about eleven per household per month; or buffer strips and precision fertiliser across the catchment, far cheaper per unit but requiring voluntary participation from more than four hundred farms, with modelling showing eighty percent participation for the same reduction, against an actual forty percent in the first three years. Agriculture officials favour the second, noting it also improves soil; the water utility points out that once the plant is built to the new standard the cost is fixed, whereas farm measures can slide back the moment subsidies end.",
+    "options": [
+      {
+        "t": "我会建处理厂。工程措施一旦建成就在那里运行，而自愿参与率只有四成、补贴一撤就回退；十一元买一条能长期达标的河，比每年重谈一次补贴便宜。",
+        "t_en": "I would build the plant. Engineered works keep running once built, whereas voluntary participation sits at forty percent and retreats when subsidies end; eleven a month for a river that reliably meets the limit is cheaper than renegotiating subsidies every year.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会走农田路径。它单位成本低得多，还顺带改善土壤与化肥用量；处理厂那十一元是永久账单，而农业措施只要把补贴做成多年合约，退出的问题就能解决。",
+        "t_en": "I would take the farm route. It costs far less per unit and improves soil and fertiliser use as a side effect; the plant's eleven is a permanent bill, and a multi-year contract structure solves the retreat problem for farm measures.",
+        "tags": [
+          "ENV:G",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会组合：先投农业措施三年、签约到八成参与，未达标的缺口再由处理厂兜底，让工程规模按实际缺口定，而不是一开始就按最坏情况建满。",
+        "t_en": "I would combine them: fund farm measures for three years under contracts to eighty percent participation, and let the plant cover only the residual gap, sizing the works to the shortfall instead of building for the worst case up front.",
+        "tags": [
+          "ENV:S",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会先改计量与公开：把取水口与排口的氮数据按周公开到户，让下游居民与农户都看得见谁在排，再决定花钱修什么。",
+        "t_en": "I would fix measurement and disclosure first: publish weekly nitrogen readings at intakes and outfalls down to the district level so downstream residents and farms can see who discharges what, then decide what to build.",
+        "tags": [
+          "TECH:K",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1147,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene": "一所中学要决定是否在校园内全面禁用智能手机。现行规则是上课期间收进储物柜、课间与午休可以用。教师问卷中七成支持全面禁用，理由是课间冲突、拍摄视频与注意力碎片化；学生会的调查则显示，八成学生在放学后需要联系家长安排接送，而校内公用电话只有两部。已有研究给出互相矛盾的结论：同一份关于成绩的元分析显示禁用与成绩的相关性接近于零，而关于校园欺凌的追踪研究显示，全面禁用后涉及拍摄的欺凌事件下降了一半以上。校方还需要考虑家长一方：多数家长希望在紧急情况下能直接联系到孩子。",
+    "scene_en": "A secondary school must decide whether to ban smartphones on campus outright. Current rules collect them into lockers during lessons and allow use at breaks and lunch. Seventy percent of teachers back a full ban, citing conflicts, filmed incidents and fragmented attention; the student council's survey finds eighty percent need to reach parents after school to arrange pickups, and there are two public phones on site. Research conflicts: one meta-analysis finds the correlation between bans and attainment near zero, while a longitudinal study of bullying finds filmed incidents falling by more than half under full bans. The school also weighs parents, most of whom want to reach a child in an emergency.",
+    "options": [
+      {
+        "t": "我会全面禁用。涉及拍摄的欺凌掉一半以上，这一条就足够；成绩不涨不代表没有收益，课间的注意力与人际冲突才是校园里最日常的部分。",
+        "t_en": "I would ban them outright. Filmed bullying falling by more than half is enough on its own; flat attainment does not mean no benefit, since breaks and conflicts are the most everyday part of school life.",
+        "tags": [
+          "CUL:T",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会维持现状。八成学生放学后要联系家长，两部公用电话根本不够；把工具收走不会让人更专注，只会把问题转到校门外。",
+        "t_en": "I would keep the current rules. Eighty percent need to reach parents after school and two phones cannot carry that; taking the tool away does not create focus, it just moves the problem outside the gate.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会做技术性限制而不是物理禁用：在校期间只开放通话与定位白名单，摄像头与社交应用由校方系统级关闭，放学自动恢复。",
+        "t_en": "I would restrict technically rather than ban physically: during school hours only calls and a location whitelist stay open, camera and social apps are disabled at system level by the school, and everything returns at dismissal.",
+        "tags": [
+          "TECH:K",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会让每个年级自己定：先补足公用电话与班主任联络通道，再由教师、家长与学生三方投票，各年级可试一学期，学期末比较冲突与欺凌记录再定。",
+        "t_en": "I would let each year group decide: first add public phones and a reliable route to form tutors, then hold a three-way vote of teachers, parents and students, with each year trialling a term and comparing conflict and bullying records at the end.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1148,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene": "入籍的语言要求被重新讨论。现行规定要求通过中级口语与听力测试，费用由申请人自付，一次不过可重考，重考费另计。统计显示，通过率为七成八，未通过者中六成是五十岁以上、以家庭团聚身份申请的人；他们多数在当地已居住十年以上，日常用家庭语言与同乡往来，但与公共服务打交道时需要子女陪同。提案把测试降为初级水平、把考试费纳入公共财政，并同时要求新设免费的社区语言课程、报名优先给测试未通过者。反对者指出，语言能力直接影响就业与参与公共生活，降低门槛等于放弃融入；支持者认为，把年龄与学习条件不同的人用同一把尺子筛，筛掉的是意愿而不是能力。",
+    "scene_en": "Language requirements for naturalisation are under review. Current rules require an intermediate speaking and listening test, paid for by the applicant, resittable at extra cost. The pass rate is seventy-eight percent; among those who fail, sixty percent are over fifty and applying through family reunification — most have lived here over a decade, use the home language daily with people from the same background, and need a child to interpret at public offices. The proposal lowers the test to beginner level, moves the fee onto public funds, and pairs this with free community courses with priority for those who failed. Opponents say language ability drives employment and public participation, so lowering the bar abandons integration; supporters say one yardstick applied to people of different ages and learning conditions screens out willingness, not ability.",
+    "options": [
+      {
+        "t": "我会维持中级要求。语言是参与公共生活的前提，把标准降下来，最后承担代价的还是这些家庭：找工作、看病、办手续永远要靠别人。",
+        "t_en": "I would keep the intermediate level. Language is the precondition for public life, and lowering it leaves those families carrying the cost: jobs, clinics and paperwork forever depend on someone else.",
+        "tags": [
+          "CUL:T",
+          "NAT:N"
+        ]
+      },
+      {
+        "t": "我会支持降为初级并免费。用同一把尺子筛年龄与学习条件完全不同的人，筛掉的是意愿而不是能力；免费课程加优先报名，才是真的在帮人过线。",
+        "t_en": "I would support beginner level and public funding. One yardstick applied across very different ages and learning conditions screens out willingness, not ability; free courses with priority enrolment are what actually help people pass.",
+        "tags": [
+          "CUL:P",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会保留中级但改支付与准备方式：考试费由公共财政承担、允许无限次重考，同时把课程与测试绑定，上课出勤达标即可豁免部分测试内容。",
+        "t_en": "I would keep intermediate but change payment and preparation: public funding for the test, unlimited retakes, and courses tied to assessment so satisfactory attendance exempts part of the exam.",
+        "tags": [
+          "CUL:T",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会按用途分开：入籍只要初级，涉及执业资格、公职与驾驶等特定场景另设专业语言要求，把语言门槛放在真正需要它的地方。",
+        "t_en": "I would separate by purpose: beginner level for citizenship, with separate professional language requirements for licensed work, public office and driving — putting the bar where language actually matters.",
+        "tags": [
+          "TECH:K",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1149,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "地铁系统正在评估人脸识别闸机。方案是用面部特征替代票卡，通行速度可提高三成，逃票率预计从百分之二降到不足百分之一，也能在寻回走失儿童与追查在逃人员时调用。技术说明指出，模板以加密特征值形式存储在本地闸机，不上传原图，保留期九十天。独立评估提出三点：一是在光线不足与佩戴口罩时误识率显著上升，可能造成误拦；二是三个站点的历史数据显示，误拦集中在少数几个族裔外观的乘客身上；三是系统一旦铺开，功能扩展的边界只能靠规章维持。民调显示，乘客对通行速度的提升有明显偏好，但对数据保留期限几乎没有概念。",
+    "scene_en": "The metro is assessing facial recognition gates. The plan replaces cards with face templates, raising throughput by thirty percent, cutting fare evasion from two percent to under one, and enabling calls in missing-child cases and manhunts. The technical note says templates are stored as encrypted feature vectors on local gates, never as raw images, retained ninety days. An independent review raises three points: error rates rise sharply in poor light and with masks, risking wrongful stops; historical data from three stations show wrongful stops concentrating on passengers of a few ethnic appearances; and once deployed, the limits of any functional expansion rest on regulation alone. Polling shows clear preference for faster passage but almost no public understanding of retention periods.",
+    "options": [
+      {
+        "t": "我会推。通行效率与找回走失儿童是实打实的好处，模板加密、本地存储、九十天保留已经比很多现有系统克制；误识问题应当靠阈值与人工复核修，而不是放弃整个系统。",
+        "t_en": "I would deploy it. Throughput and missing-child cases are real gains, and encrypted local templates with ninety-day retention are already more restrained than many systems in use; false matches should be fixed with thresholds and human review, not by dropping the system.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会停在这里。误拦集中在特定族裔外观上，这不是调阈值能解决的技术问题，而是把可疑写进了基础设施；通行快三成换不来这个代价。",
+        "t_en": "I would stop here. Wrongful stops concentrating on particular ethnic appearances is not a threshold problem, it is suspicion built into infrastructure; thirty percent faster passage is not worth that.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会先做有条件的试点：只在两个枢纽站上线，误识率与误拦的族裔分布按季度公开，设独立申诉与赔偿通道，任一指标越线即停。",
+        "t_en": "I would run a conditional pilot: two hub stations only, quarterly disclosure of error rates and the ethnic distribution of wrongful stops, an independent appeal and compensation channel, and automatic suspension if any metric breaches its limit.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会换方案：改用不采集生物特征的快速通道（感应刷卡、手机通行），把通行速度的问题解决掉，而不引入一张长期存在的面部数据库。",
+        "t_en": "I would change the design: use a fast lane without biometrics — tap cards, phone passage — and solve throughput without creating a facial database that persists.",
+        "tags": [
+          "TECH:U",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1150,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "器官捐献制度面临一次选择。现行是明示同意：登记成为捐献者的人数占成年人口的百分之二十四，等待名单上每年约有百分之八的人因等不到合适器官而退出。提案改为推定同意：除非本人或家属明确反对，否则视为同意，家属仍保有最终否决权。实行类似制度的地区报告，登记口径下的同意率升至九成以上，实际摘取率的提升幅度则小得多，约在一到两成之间，原因之一是家属否决。反对意见有两个来源：一是认为沉默不等于同意，把不表态解释为许可会侵蚀知情同意的原则；二是担心在重症救治中，医生对「潜在捐献者」的判定可能影响抢救力度。",
+    "scene_en": "Organ donation faces a choice. Under current explicit consent, twenty-four percent of adults are registered donors, and about eight percent of those on the waiting list drop off each year for want of a suitable organ. The proposal moves to presumed consent: donation unless the person or family objects, with the family keeping a final veto. Jurisdictions with such systems report consent rates above ninety percent on paper, while actual retrieval rises far less — between ten and twenty percent — one reason being family refusals. Objections come from two directions: that silence is not consent, and reading it as permission erodes informed consent; and that in critical care, judging someone a potential donor could affect how hard resuscitation is pursued.",
+    "options": [
+      {
+        "t": "我会改为推定同意。等待名单上每年有百分之八的人退出，这是能救的命；家属保留否决权已经守住了最重要的那道关，沉默不该被当成拒绝。",
+        "t_en": "I would move to presumed consent. Eight percent leaving the waiting list each year are lives that could be saved; the family veto already guards the crucial gate, and silence should not be read as refusal.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会维持明示同意。沉默就是沉默，把它解释成许可会一点点磨掉知情同意的根基；真正该做的是把登记流程做得更容易、更常见，而不是改默认值。",
+        "t_en": "I would keep explicit consent. Silence is silence, and reading it as permission erodes the basis of informed consent by degrees; what is needed is making registration easier and more routine, not changing the default.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会用强制选择代替推定：办理身份证、驾照与年度体检时必须回答一次「捐或不捐」，不做选择就不能完成手续，让同意始终是明确表达的。",
+        "t_en": "I would use mandated choice instead of presumption: identity papers, licences and annual check-ups require answering donate or not, and the transaction does not complete without an answer, so consent is always explicit.",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会先扩供给再改默认：推广活体与循环死亡后捐献、提高移植中心周转效率，把等待时间压下来，再评估是否还需要动默认规则。",
+        "t_en": "I would expand supply before changing the default: promote living and circulatory-death donation, raise transplant-centre throughput, cut waiting times, and then reassess whether the default rule needs touching at all.",
+        "tags": [
+          "TECH:K",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
   }
 ]
