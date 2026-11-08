@@ -51386,5 +51386,490 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1151,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "一国正在重新设计育儿假制度。现行规定母亲可休十六个月带薪育儿假，父亲只有两周；头胎出生后女性就业率下降约三分之一，约每九名父亲只有一人用完自己的短期额度。新提案把双方育儿假改为不可转让：总共十六个月，父母各八个月，父亲未休部分到期作废。雇主方面警告，每个岗位都要两人轮换，排班成本会上升；工会则回应，当假期平等属于父母双方时，招聘者就无法再猜测谁会在未来一年里离岗。",
+    "scene_en": "A country is redesigning its parental leave system. At present mothers can take sixteen months of paid leave while fathers get two weeks; after a first child, women's employment rate drops by a third and only about one father in nine uses his short allowance. A new proposal makes each parent's leave non-transferable: sixteen months in total, eight for each parent, and any unused father's months simply expire. Employers warn that rotating two workers through each role will raise scheduling costs, while unions reply that when leave belongs equally to both parents, hiring managers can no longer guess who will disappear for a year.",
+    "options": [
+      {
+        "t": "我会投给不可转让的平分方案。只要育儿假被默认是要由母亲耗掉的假期，每一场面试背后都会有一次关于谁明年可能离岗的沉默盘算；让父母双方同样可能休假，等于把这份风险摊到所有人头上，而不是单独压在女性身上。",
+        "t_en": "I'd vote for the non-transferable split. As long as leave is something only mothers are expected to burn through, every interview ends with a silent calculation about who might be away next year; making both parents equally likely to take time spreads that risk across everyone instead of parking it on women.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保留现行制度，让每个家庭自行决定十六个月怎么分。写进法律的统一规定看不到这对夫妻是不是一起经营生意、哪位老人住得近、谁挣得更多；假期政策应该跟着家庭的实际情况走，而不是反过来让家庭服从表格。",
+        "t_en": "I'd keep the current design and let each family divide the months however it wants. A one-size rule written into law can't see whether a couple runs a business together, which grandparent lives nearby, or who earns more; leave policy should follow the family's actual situation, not the other way round.",
+        "tags": [
+          "CUL:T",
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会用中性激励替代强制配额：无论哪一方在家带娃，都拿到同样高的固定薪资替代率，并设置一项税收抵免——如果父母双方休假比例差距始终很大，抵免就相应缩减。用钱改变行为比强制条文更稳定，最终决定权仍留在家庭手里。",
+        "t_en": "I'd replace the quota with a neutral incentive: a flat, generous replacement rate for whichever parent stays home, and a tax credit that shrinks if the gap between mothers' and fathers' leave uptake stays wide. Money changes behavior more reliably than mandates, and families keep the final say.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会接受平分方案，但要求国家报销小雇主的临时替岗成本。我担心的不是原则本身，而是账单落在谁头上：一家十人作坊确实扛不住两个人同时离岗，如果负担全压在这里，政策只会在招聘环节催生更隐蔽的区别对待。",
+        "t_en": "I'd accept the equal split but pair it with state reimbursement of temporary staffing costs for small employers. My worry isn't the principle, it's who pays: a ten-person workshop genuinely cannot absorb two simultaneous departures, and if the burden lands there, the policy will breed quieter discrimination in hiring.",
+        "tags": [
+          "CUL:P",
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1152,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene": "一波声音克隆诈骗掏空多名退休老人的积蓄后，政府提出建立全国内容真实性登记库：所有 AI 生成的图像、视频与音频都必须带有在中央机构注册的水印，公众可以查询该库来核实文件的来源。隐私组织反对称，登记库会变成一份可检索的档案——谁在何时创作了什么一览无余——主张改用开源检测工具加上只在设备本地完成的密码学签名，数据不经手任何中央数据库。新闻机构则表示，他们需要的是一个可以引用的权威答案，而不是十几个结论互相打架的检测器。",
+    "scene_en": "After a wave of voice-cloning scams emptied several retirees' savings, the government proposed a national content-authenticity registry: every AI-generated image, video or audio clip must carry a watermark registered with a central authority, and viewers can query the registry to check a file's origin. Privacy organizations object that the registry becomes a searchable archive of who created what and when, and argue for open-source detection tools plus device-level cryptographic signing that never touches a central database. News organizations say they need one authoritative answer they can cite, not a dozen competing detectors.",
+    "options": [
+      {
+        "t": "我会支持建中央登记库。这类诈骗的迭代速度比任何志愿者维护的工具都快，一个所有人都能查询的权威机构能让法院、新闻编辑部与银行拿到同一个答案；隐私代价确实存在，但如果登记库只存哈希值、不存原始文件，是可以控制的。",
+        "t_en": "I'd build the central registry. Fraud of this kind moves faster than any volunteer-maintained tool, and a single authority everyone can query gives courts, newsrooms and banks the same answer; the privacy cost is real but manageable if the registry stores only hashes, not the files themselves.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会直接拒绝中央数据库方案。一旦每次创作都被登记并可查询，一套足以追踪任何人阅读、观看与发布习惯的基础设施就已经存在了——无论今天谁承诺把它用好用正；设备级签名能提供同等的真实性保证，却不必把这份档案拼装出来。",
+        "t_en": "I'd refuse the central database outright. Once every creation event is registered and queryable, the infrastructure for tracking anyone's reading, watching and posting habits already exists, whoever promises to use it well today; device-level signing gives us the same authenticity guarantee without ever assembling that archive.",
+        "tags": [
+          "TECH:U",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把范围收窄：不建通用登记库，但政治广告与竞选材料必须使用水印系统，因为选举中的冒充造成的伤害事后无法弥补。普通创作者继续用开放工具链，先观察两年的运行数据，再决定要不要扩大范围。",
+        "t_en": "I'd scope it narrowly: no general registry, but political advertising and campaign materials must use the watermark system, since impersonation in elections causes damage that can't be repaid afterward. Ordinary creators keep the open toolchain, and we watch two years of data before deciding whether to widen it.",
+        "tags": [
+          "GOV:L",
+          "TECH:U",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会先办一场公开比测而不是直接下命令：用公共资金资助多个独立的开源检测器，不强制任何一家，让新闻机构、银行与平台竞争采用最准确的那一个。在开放竞争里胜出的标准，通常比靠法令安装的标准更经得起折腾。",
+        "t_en": "I'd fund a bake-off instead of a mandate: put public money into several independent, open-source detectors, require none of them, and let newsrooms, banks and platforms compete to adopt the most accurate one. Standards that win in the open tend to be sturdier than ones installed by decree.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1153,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "一座中等城市的房租五年内上涨四成，租户平均要将收入的百分之三十八用于住房。市议会正在审议一项方案：允许每座地铁站八百米范围内建造六层公寓楼，取代现行两层的限高；已有业主反对，认为低矮的天际线和路边停车位正是他们当初购房时买下的东西；而本市最大的雇主则表示，招不到能住在通勤范围内的人，招聘已经很吃力。",
+    "scene_en": "A mid-sized city's rents have risen forty percent in five years, and the average renter now spends thirty-eight percent of income on housing. The council is considering a plan to allow six-story apartment buildings within eight hundred meters of every metro station, replacing the current two-story limit; existing homeowners object that the neighborhood's low skyline and street parking are what they paid for, while the city's largest employer says it struggles to recruit staff who cannot find housing within commuting distance.",
+    "options": [
+      {
+        "t": "我会按原案通过限高放宽。住房成本跟着供给走，地铁站周边的地块是无需新建交通就能增加数千套住宅的最便宜的地方；街区的风貌可以慢慢适应，但被挤出一座城市的整整一代人，失去的那几年是不会回来的。",
+        "t_en": "I'd pass the upzoning as proposed. Housing costs track supply, and the parcels around stations are the cheapest place to add thousands of homes without building new transit; the character of a neighborhood can adapt over time, but a generation locked out of the city never gets those years back.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会保留限高，把增长引导到郊外：那里地价便宜，新区可以从第一天起就按学校、公园的配套整体规划。在老站点周边填缝式加密度，意味着已住在这里的人要多年忍受施工扬尘、日照被挡和街道拥堵。",
+        "t_en": "I'd keep the height limits and direct growth to the outskirts instead, where land is cheap and new districts can be planned with schools and parks from day one. Dense infill around old stations means years of construction dust, blocked sunlight and clogged streets for the people already living there.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我支持在站点周边建六层楼，但要带一个条件：每栋新楼两成的单元划作社会住房，租金与收入挂钩。否则放宽限高主要是把土地增值送给了小块地块的业主，房租照涨不误。",
+        "t_en": "I'd support six stories near stations, but only with a condition: twenty percent of each new building reserved as social housing with rents pegged to income. Otherwise the upzoning mostly transfers land value to owners of small plots, and rents keep climbing anyway.",
+        "tags": [
+          "ECO:L",
+          "COL:M",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会先不动分区规划，从需求侧下手：对空置超过六个月的单元征空置税，并限制换租时租金的涨幅。如果这些措施没能把曲线压下来，放宽限高仍在桌面上，但凭直觉重建整片街区不是我想的起点。",
+        "t_en": "I'd leave zoning alone and try demand-side tools first: a vacancy tax on units kept empty over six months and a cap on how much rent can rise at turnover. If those fail to bend the curve, upzoning remains on the table, but rebuilding whole streets on a hunch is not where I'd start.",
+        "tags": [
+          "ECO:L",
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1154,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "细胞培养肉——用生物反应器中的动物细胞培养而成——已通过安全审查获准上市，价格约为传统肉类的三倍。牧场主协会正在推动两条规则：培养肉产品的标签上不得出现「肉」字，且商店必须将其陈列在独立冷柜。相关企业回应称，消费者本来就清楚自己买的是什么；环保团体则指出，这种产品占用的土地与水资源只是传统畜牧业的一小部分。",
+    "scene_en": "Cultivated meat — grown from animal cells in bioreactors — has been approved for sale after safety review, at roughly three times the price of farmed meat. The ranchers' association is pressing for two rules: the word meat may not appear on cultivated products' labels, and stores must display them in a separate case. The companies reply that shoppers already understand what they are buying, while environmental groups point out that the product needs a fraction of the land and water of conventional ranching.",
+    "options": [
+      {
+        "t": "我会否决这两条规则，让常规食品法规各司其职。成分与安全标识本来就是强制的；单独冷柜加上一个被禁用的词，起的作用已经超出了告知消费者——它们是在给产品贴上可疑的标记，这是在保护在位行业，而不是在保护买家。",
+        "t_en": "I'd reject both rules and let ordinary food law do its job. Ingredient and safety labeling is already mandatory; a separate case and a banned word go further than informing buyers — they mark the product as suspect, which is a choice about protecting incumbents, not shoppers.",
+        "tags": [
+          "ECO:R",
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持这两条规则。「肉」这个词背后连着上百年的家庭食谱与牧场生计，在冷柜前比价的顾客有权一眼看出两种产品是完全不同的来路。货架上的清晰分隔是诚实，不是敌意。",
+        "t_en": "I'd support both rules. Words like meat carry a century of family recipes and ranching livelihoods behind them, and shoppers comparing prices at a case deserve to know at a glance that the two products were made in entirely different ways. Clear separation is honesty at the shelf, not hostility.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我不止要管标签，还要暂停销售五年，等待对反应器规模生产的长期研究。食品是每天两次进入每个人身体的东西；三倍的定价也意味着早期市场只属于富裕人群，这场试验的负担不该由先吃的人来承担。",
+        "t_en": "I'd go further than labeling and suspend sales for five years pending long-term studies on bioreactor-scale production. Food goes into everyone's body twice a day; a three-fold price also means the early market belongs to the wealthy, and the burden of that experiment shouldn't fall on whoever eats first.",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会在常规标签规则下允许销售，并追加两件事：资助公共研究核算这种产品的土地与水足迹，以及按转产牲畜头数向牧区发放转型基金。如果这项技术确实如支持者所说，牧场主需要的是一座桥，而不是一堵墙。",
+        "t_en": "I'd allow sales under normal labeling and add two things: public research funding to audit the product's land and water footprint, and a transition fund for ranching regions, paid per head of herd converted. If the technology is what its backers claim, ranchers deserve a bridge, not a wall.",
+        "tags": [
+          "ENV:S",
+          "ECO:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1155,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "同居十二年后，一名男子在没有遗嘱的情况下去世；按照现行法律，与他同居十二年的伴侣——两人从未登记结婚——无法继承任何遗产，遗产归他十年没说过话的兄弟所有。议会正在审议一项提案：设立可退出登记制度——同居满三年的伴侣自动登记为家庭伴侣，享有医院探视权及法定一半遗产份额，除非双方签署文件声明退出。宗教团体称这是「变相婚姻」，租户权益组织则表示欢迎。",
+    "scene_en": "After twelve years living together, a man dies without a will; under current law his partner of twelve years — they never married — inherits nothing, and the estate goes to a sibling he hadn't spoken to in a decade. A proposal before parliament creates an opt-out registry: couples who cohabit for three years are automatically registered as domestic partners with hospital visitation rights and a statutory half-share of the estate, unless both sign a document declining. Religious organizations call it marriage by stealth; tenants' rights groups welcome it.",
+    "options": [
+      {
+        "t": "我会支持可退出登记。两个人的相互责任不应取决于有没有填过一张表格；何况在收税与追债的时候，国家早就乐于承认同居关系了。十二年共同还贷的日子，应当与十二年婚姻获得同样的地位。",
+        "t_en": "I'd back the opt-out registry. A couple's obligations shouldn't hinge on whether they filled in a form, and the state already recognizes cohabitation when it suits it — for tax audits and debt collection. Twelve years of shared mortgage payments deserve the same standing as twelve years of marriage.",
+        "tags": [
+          "COL:M",
+          "GOV:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会维持婚姻作为这些权利的单一入口。登记制把一条家庭、雇主与保险机构都赖以运转的界线弄模糊了；为一桩令人难过的个案增设一种新法律身份，回应不了普遍问题。想要婚姻带来的保障，任何人都可以去登记结婚，这扇门对所有人敞开。",
+        "t_en": "I'd keep marriage as the single gateway to these rights. The registry blurs a line that families, employers and insurers all rely on, and one sad case is not a reason to invent a new legal status; anyone who wants the protections marriage brings can marry, and the door is open to everyone.",
+        "tags": [
+          "CUL:T",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会取中间方案：医院探视与紧急决策权自动给登记伴侣，但继承仍以遗嘱为准。财产安排恰恰是各家分歧最大的地方，法定一半份额会推翻一些伴侣刻意做出的安排。",
+        "t_en": "I'd split the difference: hospital visitation and emergency decisions go to registered partners automatically, but inheritance stays with the will. Property arrangements are exactly where families differ most, and a statutory half-share overrides arrangements some couples deliberately made.",
+        "tags": [
+          "GOV:L",
+          "COL:I",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会资助遗嘱撰写服务，而不是创设一种新身份。这个案例的缺口不在法律，而在于写遗嘱这件事从来不显得紧迫；在每个市政窗口与药房柜台都放上免费简洁的遗嘱模板，落到错误手里的遗产就会少得多。",
+        "t_en": "I'd fund will-writing clinics instead of creating a new status. The gap in this story wasn't the law, it was that writing a will never felt urgent; make free, simple will templates available at every municipal office and pharmacy counter, and far fewer estates land in the wrong hands.",
+        "tags": [
+          "GOV:L",
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1156,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "一项法案将在八年内逐步淘汰蛋鸡的层架式笼养，多个国家已经这样做。据测算蛋价将上涨约百分之十五；占行业三分之一的家庭小农场表示，改造投入会让它们关停，而大型生产商已经开始转型。超市方面注意到，在邻近市场，带动物福利标识的鸡蛋销量已超过低价蛋；家禽科学研究所的报告则显示，非笼养鸡群的死亡率略高。",
+    "scene_en": "A bill would phase out battery cages for laying hens over eight years, following several countries that have already done so. Egg prices are projected to rise about fifteen percent, and small family farms — a third of the sector — say the required rebuild costs will end their businesses, while larger producers have already begun converting. Supermarkets note that in neighboring markets, welfare-labeled eggs now outsell cheap ones, and the poultry science institute reports cage-free flocks have somewhat higher mortality.",
+    "options": [
+      {
+        "t": "我会通过淘汰法案。让一只母鸡在比一张纸还小的空间里过完一生，是我自己的钱不愿意再支撑的那部分便宜；八年对每一家提前规划的农场都足够了。非笼养系统死亡率偏高是饲养技术要解决的问题，而不是把笼子留下来的理由。",
+        "t_en": "I'd pass the phase-out. A hen spending her whole life in a space smaller than a sheet of paper is the part of cheap eggs I don't want my money to underwrite, and eight years is a long enough runway for every farm that plans ahead. Higher mortality in cage-free systems is a husbandry problem to solve, not a reason to keep the cages.",
+        "tags": [
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会投反对票，改用标签制度。在意这件事的消费者本来就在为福利蛋付钱，市场的变化比任何法律都快；一道会把三分之一家庭农场挤出行业的强制令，只会让生产集中到更少的公司手里——这与多数支持者的初衷相反。",
+        "t_en": "I'd vote it down and trust labels instead. Shoppers who care already pay for welfare eggs, and the market has moved faster than any law; a mandate that prices out a third of family farms concentrates production in fewer corporate hands — the opposite of what most supporters want.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会通过法案但附带资金：为五千只以下的小农场提供低息改造贷款和更长的过渡期，并调整关税让进口蛋达到同等标准。只抬高本土小农场成本的规则改善不了动物福利，只会把问题搬到别处。",
+        "t_en": "I'd pass it with money attached: low-interest conversion loans and a slower timetable for farms under five thousand birds, plus tariff adjustments so imports meet the same standard. Rules that raise costs only for domestic small farms don't improve welfare; they relocate it.",
+        "tags": [
+          "CUL:P",
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会先资助研究：非笼养鸡群更高的死亡率意味着每年多出数千万只早逝的蛋鸡，老老实实算下来，动物福利的答案未必站在宣传海报那一边。给科学研究所三年时间和一个公开数据看板，按数字立法，不按照片立法。",
+        "t_en": "I'd fund the research first: higher mortality in cage-free flocks means tens of millions more hens dying early each year, and honest welfare accounting may not point where the campaign posters say. Give the science institute three years and a public dashboard; legislate on numbers, not on photos.",
+        "tags": [
+          "ECO:R",
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1157,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "随着八十岁以上人口翻倍，长期护理保险基金将在四年内出现结构性赤字。桌上摆着三条筹资路径：将工资税上调一个百分点；立法规定成年子女按收入比例补足父母的护理费用缺口；或者削减给付、由家庭私下填补差额。调查显示，多数成年子女已经在承担一部分无偿照护，约每五人中有一人因此减少了工作时间。",
+    "scene_en": "The long-term care insurance fund will run a structural deficit within four years as the over-eighty population doubles. Three financing paths are on the table: a one-percentage-point payroll increase; a legal obligation on adult children to top up their parents' care costs, scaled to their income; or trimming benefits and letting families fill the gap privately. Surveys show most adult children already provide some unpaid care, and about one in five has cut working hours for it.",
+    "options": [
+      {
+        "t": "我会选上调工资税。护理是每个家庭迟早都会抽中的风险，按工资缴费不过是所有人预付自己的未来；向子女征费惩罚的恰恰是那些已经付出时间而不是金钱的家庭，而对没有子女的人——他们的需求一分不少——这笔钱则无从谈起。",
+        "t_en": "I'd take the payroll increase. Care is a risk every family eventually draws, and a payroll contribution is simply everyone prepaying their own future; a levy on children punishes exactly the households already giving their time instead of money, and it shrinks to nothing for people without children while their need stays the same.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会立法规定子女义务。在历史上、也仍在今天的多数乡村，照护一直是沿着家庭走的；国家把所有人的担子都接过去，不出一代人就会磨掉这个习惯。把义务按收入分档能保住公平，而且家庭出的钱，花在谁身上、怎么花，始终对被照护的人有个交代。",
+        "t_en": "I'd legislate the family obligation. For most of history, and still in much of the countryside, care ran through the family, and the state taking over everyone's share erodes that habit within a generation. Scaling the duty to income keeps it fair, and money a family contributes stays answerable to the person being cared for.",
+        "tags": [
+          "CUL:T",
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会削减给付并按资产审查，而不是加税。工资税上涨落在同一批年轻人头上，他们已经被住房和自己的育儿开销压得喘不过气；与此同时，五分之一的养老院床位住着拥有可观资产的人。让这些人先动用自己的积蓄、公共基金再接手，才算得上相称。",
+        "t_en": "I'd trim benefits and mean-test, not raise taxes. A payroll hike lands on the same young workers already squeezed by housing and their own childcare, while a fifth of care-home beds are occupied by people with substantial assets; asking them to draw those down before the public fund steps in is proportionate.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把下一笔钱花在居家照护上，而不是纠结筹资公式：发放能真正给家庭照护者发工资的券，并资助住房适老化改造。机构床位是我们手上最贵的照护单元，一位老人每年多留在家中，省下的钱比任何一种加税收得都多。",
+        "t_en": "I'd spend the next tranche on home care, not on financing formulas: vouchers that pay family caregivers a real wage and grants to retrofit homes for aging in place. Institutional beds are the most expensive unit of care we have, and every year a person stays home saves the fund more than either tax would raise.",
+        "tags": [
+          "GOV:L",
+          "COL:I",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1158,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "先买后付服务目前已占线上消费的八分之一，最大服务商的用户中每六人有一人同时持有三笔以上未结清计划。由于这类计划游离在信贷法规之外，这些信息不会进入征信档案；银行审批房贷时看到的是一份干净记录。监管机构提出强制偿付能力审查：所有服务商放款前必须查询共享数据库，绕开者课以罚款。行业方面称，结账环节的审查会让成交率下降两成，把用户推向利率更高的信用卡。",
+    "scene_en": "Buy-now-pay-later plans now finance one in eight online purchases, and one in six users of the largest provider holds three or more active plans at once. Because the plans sit outside credit law, none of this appears in credit-bureau files; a bank approving a mortgage sees a clean record. Regulators propose mandatory affordability checks through a shared database that all providers must query before approving a plan, with fines for bypasses. Industry says checks at checkout will cut conversion rates by a fifth and push users toward costlier credit cards.",
+    "options": [
+      {
+        "t": "我会强制推行共享审查。这套商业模式的成立，靠的是每家服务商只看得见借款人债务堆里属于自己的那一角；这不是什么创新，而是蒙着眼放款，历史上所有放任这类分期信贷的市场的结局都一样。成交率下降，就是把事情看清楚的成本。",
+        "t_en": "I'd mandate the shared check. The whole business model works because each provider sees only its own slice of a borrower's stack; that's not innovation, it's a blindfold, and it ends the way unregulated installment credit has ended in every market that tried it. Conversion-rate losses are the cost of seeing clearly.",
+        "tags": [
+          "GOV:A",
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会只定数据标准、让服务商自己做审查：共享数据库必须建立，但拿到数据后是硬性拒绝还是弹性额度，由服务商自己决定，判断错了坏账也自己消化。看得到全貌还乱放贷的机构，理应自己承担违约损失。",
+        "t_en": "I'd set data standards and let providers run their own checks: the shared database must exist, but what a provider does with it — hard cutoffs or soft limits — stays its own decision, and its own loss when it guesses wrong. Lenders who see the full picture and still lend badly deserve to eat the defaults.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会跳过审查，直接改费用结构：逾期费设上限，每笔计划的总成本以一个数字直接印在付款按钮上，用户持有两笔以上时一键即可暂停新的计划。人在点下按钮的那一刻，比一个提前替他打分的数据库更需要诚实的数字。",
+        "t_en": "I'd skip the checks and go after the fee structure instead: late fees capped, the total cost of each plan printed as one number on the payment button itself, and a one-tap pause on new plans once a user holds two. People need honest numbers at the moment they click, more than a database judging them in advance.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会直接把先买后付纳入现行信贷法规：持牌经营、利率披露、征信上报，一样不少。为一个六年前的产品量身定做一套宽松的新规，正是走到今天这一步的原因；消费者信贷的规则之所以旧，是因为它要解决的问题从来不新。",
+        "t_en": "I'd put BNPL under the existing lending law, full stop: licensing, interest disclosure, bureau reporting, the works. Writing a bespoke light-touch regime for a product invented six years ago is how we got here; the rules for consumer credit are old because the problems are old.",
+        "tags": [
+          "GOV:A",
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1159,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "一座九千人的河畔小镇十年内被淹三次，最近一次的洪水灌进小学，积水深达一米。州政府提出按灾前价格收购被淹街区，把土地改造成永久蓄洪区，小学迁往高处；镇上则想要一道堤坝，理由是收购方案会拆散一个存在了两百年的社区，而堤坝省下的灾害损失足以覆盖造价。水文学者预测，河流洪峰还会继续抬升。",
+    "scene_en": "A river town of nine thousand has flooded three times in ten years; the last one put a meter of water through the primary school. The state offers to buy out the flooded blocks at pre-flood prices and convert the land into a permanent floodplain, moving the school uphill; the town wants a levee instead, arguing the buyout dissolves a community that has existed for two centuries and that the levee will pay for itself in avoided damages. Hydrologists project river peaks to keep rising.",
+    "options": [
+      {
+        "t": "我会接受收购，然后搬走。水文学者的曲线只指一个方向，按这十年的洪水规模设计的堤坝，是一张由镇上的孙辈来付的账单。社区是真实存在的，但社区是人，不是地块；人们可以搬到两条街之外重建，教堂还是那座教堂，酒馆还是那间酒馆，邻居也还是那些邻居。",
+        "t_en": "I'd take the buyout, and I'd move. The hydrologists' curve points one way, and a levee sized for this decade's floods is a bill the town's grandchildren inherit; the community is real, but a community is people, not parcels, and people can rebuild two streets over and keep the same church, the same pub and the same neighbors.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会修堤坝。总得有蓄洪区来装水，但不必装在这里、装在一座供水、就业与祖坟都在同一片土地的小镇上面。按灾前价格付钱让人们放弃自己的生活，州政府的账本好看了，人们的生活却空了。",
+        "t_en": "I'd build the levee. Floodplains somewhere have to hold water, but they don't have to hold it here, on top of a town whose water supply, jobs and family graves all sit in the same ground. Paying people at pre-flood prices to abandon their own history makes the state's balance sheet cleaner and their lives emptier.",
+        "tags": [
+          "ENV:G",
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会两条都做、分先后：先修堤坝，同时开放自愿收购，想走的人今年就能卖掉房子，而不是等到第四次洪水冲垮我们建的东西。把人捆住不放才会让邻里反目；一个真实的退出选项和一道真实的堤坝，完全可以并存。",
+        "t_en": "I'd do both, sequenced: build the levee now, and open a voluntary buyout at the same time so that whoever wants out can sell this year, not after the fourth flood breaks whatever we build. Compulsion is what turns neighbors against each other; a real exit option and a real levee can coexist.",
+        "tags": [
+          "GOV:L",
+          "ENV:G",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "在两个方案里挑之前，我会先停止对风险本身的补贴：今年起，高水位线以下重建的房屋不再续保联邦洪水保险、灾后也不再赔付，改由按风险定价的保费。如果小镇靠自己的钱还立得住，答案就有了；如果人走空了，答案也有了。",
+        "t_en": "I'd stop subsidizing the risk before choosing between the two: no federal flood-insurance renewals and no disaster payouts for rebuilt homes below the high-water line after this year — risk-priced premiums instead. If the town still stands on its own dime, it has its answer; if it empties, it also has its answer.",
+        "tags": [
+          "ECO:R",
+          "COL:I",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1160,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene": "最大的即时通讯应用占有全国百分之八十二的市场份额，今年以安全为由关停了三个第三方客户端。一项数字市场规则草案拟将其认定为守门人，并要求：开放接口供第三方实现消息互通、四十八小时内完成用户数据可携带、不得惩罚使用替代客户端的用户。该公司辩称，端到端加密无法在第三方客户端上得到同等保证，互通等于用所有人的安全去换竞争对手的便利。",
+    "scene_en": "The largest messaging app holds an 82 percent national market share and has shut down three third-party clients this year, citing security. A draft digital-markets rule would designate it a gatekeeper and require: open APIs for interoperable messaging, user data portability within 48 hours, and no punishing users who connect through alternative clients. The company argues its end-to-end encryption cannot be guaranteed across third-party clients, so interop would trade everyone's security for competitors' convenience.",
+    "options": [
+      {
+        "t": "我会执行互通义务。一座城镇的商铺、学校和家族群所赖以运转的关系网络，不应变成一家公司的私人护城河；加密的说辞是双向的——同一家公司一边声称无法为第三方客户端担保，一边顺畅地运营着自己的网页版。只要规范公开、经过认证，互通同样能满足安全标准。",
+        "t_en": "I'd impose the interoperability duty. The network a town's shops, schools and family groups run on shouldn't be a private moat, and the encryption argument cuts both ways — the same company that can't vouch for third-party clients had no trouble shipping its own web client. Certified interop with published specs can meet the security bar.",
+        "tags": [
+          "GOV:A",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我不会碰这个平台。没有人被强制使用它，今年还有三家有力的竞争者上线；而互通义务在实践中往往落到两个结局：要么功能被拉到最低标准，要么在所有人的消息背后留下一个安全漏洞。产品烂到一定程度用户自然会走——那是一位永不休息的监管者。",
+        "t_en": "I'd leave the platform alone. Nobody is conscripted to use it, three serious competitors launched this year, and interoperability mandates in practice tend to end as either lowest-common-denominator features or a security hole with everyone's messages behind it. If the product gets bad enough, users leave — that's the regulator that never sleeps.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会强制数据可携带，但不强制互通：用户每年有权申请一次，四十八小时内以开放格式导出全部聊天记录。互通是要国家替一个仍在快速变化的市场设计统一协议；可携带只是要求守门人别再藏用户自己的数据。真正把人锁住的是迁移成本。",
+        "t_en": "I'd mandate portability but not interop: full chat-history export in an open format within 48 hours, every year, on request. Interop asks the state to engineer one protocol for a market that's still moving; portability just asks the gatekeeper to stop hiding the user's own data, and switching costs are what actually lock people in.",
+        "tags": [
+          "TECH:U",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会认定其守门人地位并开放接口，但把安全豁免写得诚实一些：第三方客户端必须通过年度独立密码学审计才能接入，审计费注入公共基金。审计标准一旦公开，竞争与加密就不再互相对立——如今只有这家公司自己有资格定义什么算安全。",
+        "t_en": "I'd designate it and open APIs, but with the security carve-out written honestly: third-party clients must pass an annual independent cryptographic audit to connect, paid into a common fund. Competition and encryption stop being opposites the moment the audit standard is public — right now only the company gets to say what counts as secure.",
+        "tags": [
+          "GOV:A",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
   }
 ]
