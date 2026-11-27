@@ -59213,5 +59213,1414 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1321,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "某地医保基金年度结余约3亿元，运营方拟把一种罕见病基因筛查纳入报销，单次检测定价4000元，预计覆盖2万人、发现早期病例约160例，但会有约12%的假阳性，带来复查支出和焦虑；该筛查需三次采血、两家独立实验室复核，结果入档后还可能影响未来投保。若纳入，需从现有慢性病用药补贴中挤出8%预算；若不纳入，这批结余可用于扩建社区护理站。你会支持把筛查列入报销目录吗？",
+    "scene_en": "In a certain region the public insurance fund has an annual surplus of about 300 million yuan. The operator proposes covering a rare-disease genetic screening test: a single test costs 4,000 yuan, is expected to reach 20,000 people and detect about 160 early cases, but about 12% of results would be false positives, bringing extra follow-up costs and anxiety. The screening requires three blood draws and review by two independent labs, and entering the result in the record could affect future insurance eligibility. If it is included, 8% of the current chronic-disease drug subsidy budget must be diverted; if not, the surplus could be used to expand community nursing stations. Would you support adding the screening to the reimbursement list?",
+    "options": [
+      {
+        "t": "我会支持纳入报销，因为两万人里多查出约160个早期病例，低收入家庭也能用上，挤出的8%慢病补贴可以用分级诊疗慢慢补回来。",
+        "t_en": "I would support adding it to reimbursement, because 160 extra early cases out of 20,000 people would be found and lower-income families could use it too; the 8% cut in chronic-disease subsidies could be made up gradually through tiered care.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会让家庭自费购买，医保只保基本，因为4000元一次的筛查若由基金全付，会挤占8%慢病用药，自费的人可按收入自愿选择。",
+        "t_en": "I would leave the test to out-of-pocket payment and keep insurance for basic care, because a 4,000-yuan test paid fully by the fund would crowd out 8% of chronic-disease drugs, while self-paying households could choose according to income.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会先设一年试点，用统一数据平台追踪假阳性和复查成本，达标再进目录，这样既不浪费3亿元结余，也不放弃早发现的机会。",
+        "t_en": "I would run a one-year pilot first, tracking false positives and follow-up costs on a unified data platform, and only add it to the list if targets are met, so the 300 million yuan surplus is not wasted while early detection is not given up.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把决定权交给参保人投票，而不是统一纳入，因为基因信息敏感，12%的假阳性焦虑该由本人权衡，社区护理站是否扩建也该由居民定。",
+        "t_en": "I would let enrollees vote instead of imposing a uniform inclusion, because genetic data are sensitive, the anxiety from 12% false positives should be weighed by each person, and residents should decide whether to expand nursing stations.",
+        "tags": [
+          "TECH:U",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1322,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "某市公立机构的管理培训名额每年600个，女性入选率连续三年只有22%。新方案拟规定未来三年里女性名额不低于40%，由人事部门按季度审计，未达标要说明理由并压缩下一批预算，审计结果向参保单位公开，连续两年未达标的负责人需向理事会说明。方案同时要求导师配对与轮岗记录存档，方便追溯培养过程。支持者认为这能补足晋升通道，反对者担心部分岗位匹配度下降、培训成本增加约120万元。该不该把比例写进硬性规定？",
+    "scene_en": "A city's public institutions offer 600 management-training slots each year, and the share of women selected has been only 22% for three years running. A new plan would require women to hold at least 40% of slots over the next three years, with quarterly audits by the personnel department; institutions falling short must explain why and face a cut in the next budget tranche. Audit results would be disclosed to contributing units, and heads of institutions missing the target two years running would report to the council. The plan also requires mentor pairing and rotation records to be kept so the training process can be traced. Supporters say it fills the promotion pipeline; opponents worry about lower role fit and about 1.2 million yuan in added training costs. Should the proportion be written into a binding rule?",
+    "options": [
+      {
+        "t": "我会支持写进硬规定，因为600个名额里从22%提到40%意味着每年多约108名女性进管道，公开审计能防止只喊口号，预算约束让执行有依据。",
+        "t_en": "I would support writing it into a binding rule, because moving from 22% to 40% of 600 slots means about 108 more women enter the pipeline each year; public audits prevent empty slogans and budget conditions give the rule force.",
+        "tags": [
+          "CUL:P",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会反对硬配额，改用匿名简历和统一面试评分，因为按性别切名额可能让个别岗位匹配度下降，120万元更该花在托育支持上而不是指标本身。",
+        "t_en": "I would oppose a hard quota and use anonymous resumes and a common interview score instead, because slicing slots by gender may lower fit for some roles, and the 1.2 million yuan is better spent on childcare support than on the target itself.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会要求按季度公开分性别数据并给整改期，但名额由各机构自定，因为统一指标会掩盖岗位差异，透明压力比罚预算更能持续改变22%的现状。",
+        "t_en": "I would require quarterly gender-disaggregated data and a correction period while letting each institution set its own slots, because a uniform target hides role differences and transparency pressures change the 22% figure more sustainably than budget penalties.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会把重点放在社区托育和弹性工作制，不设名额，因为女性退出管理管道常发生在35岁前后，配套支持比硬比例更能留住人，也少些对立。",
+        "t_en": "I would focus on neighborhood childcare and flexible hours rather than set quotas, because women often leave the management pipeline around age 35, and supporting infrastructure retains them better than a hard ratio and creates less friction.",
+        "tags": [
+          "CUL:T",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1323,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene": "某城区年处理16至18岁轻微盗窃案约1200起，现行做法是警察现场罚款并留记录，单案成本约2000元。提案改为首次涉案者进入修复程序：完成80小时社区服务和受害者对话后不留案底，成本降到1200元；程序由社工跟进，半年内未完成则转回原流程，受害者也可拒绝对话。修复期间监护人需签署知情同意，社区服务由街道安排，内容限于公共空间维护。但警方担心少了即时处罚会削弱威慑。该用修复程序替代现场罚款吗？",
+    "scene_en": "A district handles about 1,200 minor theft cases involving 16- to 18-year-olds each year. Current practice is an on-the-spot police fine plus a record, at about 2,000 yuan per case. A proposal would route first-time suspects into a restorative process: after 80 hours of community service and a dialogue with the victim, no record would be kept, and the cost would fall to 1,200 yuan. A social worker would follow the case; if the steps are not finished within six months it would return to the original track, and the victim may decline the dialogue. Guardians must sign informed consent, and the community service would be arranged by the neighborhood office and limited to maintaining public spaces. Police worry that dropping the immediate penalty weakens deterrence. Should the restorative process replace the on-the-spot fine?",
+    "options": [
+      {
+        "t": "我会支持修复程序，因为首犯不留案底能让社工跟进，1200元成本也低于2000元，80小时服务比一张罚单更可能让受害者得到实际补偿。",
+        "t_en": "I would support the restorative track, because leaving no record for first-time cases lets social workers follow up, the 1,200-yuan cost is below 2,000 yuan, and 80 hours of service is more likely than a fine to give victims practical repair.",
+        "tags": [
+          "COL:M",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会保留现场罚款和记录，因为1200起案件若没有即时后果，潜在作案者会把风险估得更低，2000元的单案成本换来的是可预期的威慑。",
+        "t_en": "I would keep the on-the-spot fine and record, because without an immediate consequence in 1,200 cases, potential offenders would price the risk lower, and the 2,000-yuan per-case cost buys predictable deterrence.",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会设分层：首次且赃物价值低于500元进修复，重复或带暴力线索的仍走罚款记录，这样既省下800元单案成本，也保住对高风险者的约束。",
+        "t_en": "I would split the tracks: first offenses with stolen goods under 500 yuan go to restoration, while repeat cases or those with violent clues keep the fine and record, saving 800 yuan per case while preserving control over higher-risk individuals.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对把对话写成强制流程，因为受害者是否愿意见面不确定，强迫对话可能造成二次伤害，留不留记录该由检察官按个案决定。",
+        "t_en": "I would oppose making the dialogue mandatory, because victims may not want to meet and forced dialogue could cause secondary harm; whether to keep a record should be decided by prosecutors case by case.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1324,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene": "某区域渔业委员会提出一项公约：三年内把跨界鱼种捕捞配额削减15%，设立2亿元转产基金，并建立强制仲裁处理争议。公约要求沿岸方每季度共享渔获数据，允许观察员登船核查，观察员费用从基金利息中列支；基金优先用于转产培训，但领取者须退出捕捞两年。加入后本国船队预计减少约3000个岗位，不加入则继续现行补贴、可能面临外部渔船进入争议海域。要不要签署并接受配额与仲裁？",
+    "scene_en": "A regional fisheries commission has proposed a convention that would cut the quota for a shared migratory stock by 15% over three years, set up a 200 million yuan retraining fund, and create binding arbitration for disputes. The convention would require coastal parties to share catch data each quarter and allow observers on board, with observer costs paid from fund interest; fund recipients must leave fishing for two years. Joining would cost the domestic fleet about 3,000 jobs, while staying out would keep current subsidies but could leave the area open to disputes with outside vessels. Should the convention be signed with its quotas and arbitration?",
+    "options": [
+      {
+        "t": "我会支持签署，因为15%的配额加上观察员核查能让鱼种恢复，2亿元转产基金给3000名船队人员缓冲，外部争议也能靠仲裁解决。",
+        "t_en": "I would support signing, because a 15% quota plus observer checks lets the stock recover, the 200 million yuan fund cushions 3,000 fleet workers, and outside disputes can be settled by arbitration.",
+        "tags": [
+          "NAT:C",
+          "ENV:S"
+        ]
+      },
+      {
+        "t": "我会反对签署，因为3000个岗位不是纸面数字，退出捕捞两年的条件太硬，2亿元基金不如先用来升级本国港口和加工链。",
+        "t_en": "I would oppose signing, because 3,000 jobs are not abstract numbers, the two-year exit from fishing is too rigid, and the 200 million yuan would be better spent upgrading domestic ports and processing chains.",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会先签框架但把15%配额分五年到位，并要求2亿元基金先拨付，因为船队需要时间转产，强制仲裁也应写入退出条款。",
+        "t_en": "I would sign a framework but phase the 15% cut over five years and require the 200 million yuan fund to be disbursed first, because the fleet needs time to switch and binding arbitration should include an exit clause.",
+        "tags": [
+          "GOV:A",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会让船队和沿岸社区自己谈配额，不承诺强制仲裁，因为受影响的多是小船主，统一对外承诺会绑住他们的经营安排。",
+        "t_en": "I would let the fleet and coastal communities negotiate quotas themselves without committing to binding arbitration, because most affected are small boat owners and a uniform external pledge would tie up their operating arrangements.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1325,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "某老旧片区有8栋楼、1200户，登记车位只有300个，缺口约500个。物业提案把中央600平方米绿地改成两层立体车库，能新增200个车位并配充电桩，出入口设在侧巷、雨季需另设排水泵，但绿地和儿童活动场地会消失。另一方案是保留绿地，按年摇号分配现有车位并推行夜间错峰共享，时段限定晚8点至早7点，由物业登记车牌，违规三次取消资格，每户每年交800元管理费，租金用于电梯年检。你支持哪一种？",
+    "scene_en": "An old neighborhood has 8 apartment buildings and 1,200 households but only 300 registered parking spaces, a gap of about 500. The property office proposes turning the central 600-square-meter green area into a two-level garage, adding 200 spaces with charging points, an entrance on a side lane and extra drainage pumps for the rainy season, at the cost of the green space and children's play area. The alternative keeps the green area, allocates the existing spaces by annual lottery and introduces nighttime shared use from 8 p.m. to 7 a.m., with plate registration by the office, three violations losing eligibility, and an 800-yuan annual management fee per household that funds elevator inspections. Which do you support?",
+    "options": [
+      {
+        "t": "我会支持改车库，因为新增200个车位能减少消防通道被占，出入口在侧巷也便于管理，600平方米绿地虽可惜，但安全通行更急。",
+        "t_en": "I would support the garage, because 200 new spaces reduce blocked fire lanes and a side-lane entrance is easier to manage; the 600 square meters of green space is a loss, but safe access is more urgent.",
+        "tags": [
+          "ENV:G",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会保留绿地，用摇号和错峰消化300个车位，800元管理费足够维护电梯和照明，600平方米是老人孩子唯一的开放空间。",
+        "t_en": "I would keep the green space and absorb the 300 spaces through a lottery and off-peak sharing; the 800-yuan fee covers elevator and lighting upkeep, and 600 square meters is the only open space for elders and children.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会把车位交给市场转租，不摇号也不新建，让愿意付钱的人用车位、不愿的省钱，800元管理费按实际使用量收更清楚。",
+        "t_en": "I would leave spaces to market subletting, with no lottery and no new construction; those willing to pay use the spaces and others save money, and an 800-yuan fee charged by actual use is clearer.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会由街道统一测绘后按楼栋固定分配，并装地锁和摄像头，因为每年重排会让邻里反复争执，固定到户反而减少摩擦。",
+        "t_en": "I would have the neighborhood office map the spaces and assign them by building with locks and cameras, because reassigning every year causes repeated disputes while fixed allocation to households reduces friction.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1326,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "某服务行业约80万从业者中，六成按项目计酬，月收入上下浮动可达40%。主管部门拟设每小时28元的最低计酬底线，按城市分档、高物价城市上浮10%，由平台按单量补差并每月公示，连续三个月接单少于60小时者不适用；平台若拒付，从业者可向行业仲裁点申请调解，处理时限15个工作日。替代方案是只推自愿职业伤害险，年成本约3亿元、覆盖率不到一半且不含收入损失。要不要把最低小时工资写成强制规则？",
+    "scene_en": "In a service industry of about 800,000 workers, 60% are paid per project and monthly income can swing by 40%. The regulator proposes a floor of 28 yuan per hour, adjusted by city with a 10% uplift in high-cost cities, topped up by platforms by volume and published monthly; workers with fewer than 60 hours of work in three consecutive months would be exempt. If a platform refuses the top-up, workers could seek mediation at an industry arbitration point within 15 working days. The alternative is only a voluntary occupational-injury insurance costing about 300 million yuan a year, covering less than half the workforce and excluding income loss. Should the hourly minimum be made mandatory?",
+    "options": [
+      {
+        "t": "我会支持强制底线，因为六成从业者收入波动40%，28元每小时能让淡季也有基本进账，12亿元成本摊到每单并不算高。",
+        "t_en": "I would support a mandatory floor, because 60% of workers face 40% income swings and 28 yuan an hour gives a basic income in slow months; 1.2 billion yuan spread across orders is not a heavy burden.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对强制，改为自愿保险加信息透明，因为不少人按单量灵活择时，28元底线可能让平台减少派单，12亿元成本最终会压到价格上。",
+        "t_en": "I would oppose mandates and choose voluntary insurance plus transparent information, because many workers choose hours flexibly and a 28-yuan floor could make platforms cut dispatches, with the 1.2 billion yuan eventually passed into prices.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会设六个月过渡期，先对高频接单者试行28元底线，再评估是否扩围，因为12亿元是估算值，分步走能看清实际派单变化。",
+        "t_en": "I would set a six-month transition and first try the 28-yuan floor for high-frequency workers, then assess whether to expand it, because 1.2 billion yuan is an estimate and a gradual step shows real changes in dispatching.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会把决定权交给行业工会和企业协商，不直接定28元，因为不同城市生活成本差一倍，统一底线会让低物价地区的从业者失去接单机会。",
+        "t_en": "I would leave the decision to industry unions and employers rather than set 28 yuan directly, because living costs differ twofold across cities and a uniform floor could cost workers in cheaper areas their shifts.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1327,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "某公共讨论平台有500万注册用户，每天新增留言约20万条。运营方拟上线关键词前置过滤，系统先拦截可疑内容，再由2%的人工抽检复核，预计误删率3%，过滤词表暂不对外公布；申诉需提交身份证明，平均排队7天且期间功能受限，恢复后原点赞和转发数不回溯，平台另设每周一次的申诉集中开放日。另一方案是不预筛，只靠用户举报后24小时内初判、72小时终判。要在效率与表达空间之间怎么选？",
+    "scene_en": "A public discussion platform has 5 million registered users and about 200,000 new comments a day. The operator plans keyword pre-filtering: the system blocks suspect content first, then 2% is spot-checked by humans; the expected false-deletion rate is 3%, and the keyword list is not published. Appeals require identity documents, take about 7 days on average during which the account is limited, and restored comments do not get their likes and reposts back; the platform would also hold one weekly appeal open day. The alternative is no pre-screening, only user reports with a first decision within 24 hours and a final decision within 72 hours. How should the balance between efficiency and room for expression be struck?",
+    "options": [
+      {
+        "t": "我会支持前置过滤，因为每天20万条留言靠举报要等24小时，3%误删可通过申诉补回，先拦住明显有害内容能保护多数人的讨论环境。",
+        "t_en": "I would support pre-filtering, because 200,000 daily comments would wait 24 hours under a report-only system, 3% false deletions can be restored on appeal, and blocking clearly harmful content first protects the discussion space for most users.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对前置过滤，只保留举报后下架，因为算法误删3%意味着每天约6000条正常发言消失，7天申诉期足以让讨论错过时机。",
+        "t_en": "I would oppose pre-filtering and keep only post-report takedowns, because a 3% false-deletion rate means about 6,000 ordinary comments vanish each day and a 7-day appeal window is long enough for a discussion to lose its moment.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会要求公开过滤词表和误删数据，但不取消算法，因为用户若能提前知道规则就能自己避开误伤，2%的人工抽检也可优先看申诉。",
+        "t_en": "I would require publishing the keyword list and false-deletion data without removing the algorithm, because users who know the rules can avoid collateral damage and the 2% human spot-check could prioritize appeals.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会把人工复核从2%提到10%，并设24小时快速申诉，因为3%误删主要来自抽检太少，多花审核人力比事前全拦更稳。",
+        "t_en": "I would raise human review from 2% to 10% and add a 24-hour fast appeal, because the 3% false deletions come mainly from too little spot-checking and more reviewers are steadier than blocking everything upfront.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1328,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "某地区年度可自由支配税收约120亿元。方案甲把其中10%、即12亿元按人头发放现金，覆盖100万居民，每人每年1200元，分两批发放且需完成社区登记，登记时核实居住年限，新迁入者满六个月才可领取，同一住址不重复申领，领取账户不可转让；方案乙把这12亿元用于把基础税率下调2个百分点，适用于所有工薪阶层且不追溯已缴税款，但预计六成减税收益落在收入前30%的人群。你更支持哪种分配方式？",
+    "scene_en": "A region has about 12 billion yuan of disposable tax revenue. Plan A would spend 10%, or 1.2 billion yuan, on per-person cash transfers covering 1 million residents at 1,200 yuan each per year, paid in two installments after community registration; registration checks length of residence, newcomers must have lived there six months, no duplicate claims per address, and accounts are non-transferable. Plan B would use the 1.2 billion yuan to cut the basic tax rate by 2 percentage points for all wage earners, with no retroactive refunds, but about 60% of the benefit would go to the top 30% of earners. Which distribution do you prefer?",
+    "options": [
+      {
+        "t": "我会支持按头发钱，因为1200元对100万人里的低收入家庭是实打实的生活缓冲，而减税六成流向了前30%，差距不会自动缩小。",
+        "t_en": "I would support the per-person payment, because 1,200 yuan is a real buffer for low-income families among 1 million residents, while 60% of the tax cut goes to the top 30% and the gap will not narrow on its own.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持降税2个百分点，因为按头发12亿元会推高支出却不改变赚钱的激励，减税让前30%的人扩大投资，最终税基变大也能惠及公共服务。",
+        "t_en": "I would support the 2-point tax cut, because handing out 1.2 billion yuan raises spending without changing the incentive to earn, while tax cuts let the top 30% invest more and a larger tax base eventually supports public services.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会把12亿元改成定向补贴给收入后40%的家庭，并设资产核查，因为100万人普遍发钱太散，集中给最需要的人每户能拿到更多。",
+        "t_en": "I would turn the 1.2 billion yuan into targeted support for the bottom 40% of households with asset checks, because paying all 1 million residents is too diffuse and concentrating on those most in need gives each household more.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会把12亿元存进个人发展账户，由居民自己决定用于培训或医疗，不直接发现金也不减税，因为1200元一次性花掉难改变处境。",
+        "t_en": "I would put the 1.2 billion yuan into individual development accounts that residents decide to use for training or healthcare, neither handing out cash nor cutting taxes, because spending 1,200 yuan at once rarely changes a situation.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1329,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "某地区有200家零部件企业，其中三成产品外销。产业政策拟在公共采购中设50%本地含量门槛，按采购批次而非年度核算，由第三方机构核查、企业可申诉一次，未达标者不得参与后续招标，预计新增5000个岗位但采购成本上升8%；另一选项是签署自由贸易协定取消关税，设五年过渡期并提供限用于本地职业院校的转岗培训券，消费者价格可降约5%，本地产出预计缩窄6%。该选哪条路？",
+    "scene_en": "A region has 200 parts suppliers, 30% of which sell outside the area. The industrial policy would set a 50% local-content threshold in public procurement, calculated per procurement batch rather than annually, checked by a third party with one appeal allowed; firms failing the check cannot join later tenders. It is expected to add 5,000 jobs but raise procurement costs by 8%. The alternative is a free-trade agreement removing tariffs, with a five-year transition and retraining vouchers usable only at local vocational colleges; consumer prices could fall about 5% while local output shrinks about 6%. Which path should be taken?",
+    "options": [
+      {
+        "t": "我会支持本地含量门槛，因为5000个岗位能留住200家企业里的技术工人，8%的采购成本可由长期配套消化，产业链完整值得这点代价。",
+        "t_en": "I would support the local-content threshold, because 5,000 jobs keep skilled workers in the 200 suppliers, the 8% procurement cost can be absorbed by long-term complementary industries, and a complete supply chain is worth that price.",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持取消关税，因为5%的价格下降能让100万消费者直接受益，200家企业里效率低的部分退出，资源会转到更有优势的环节。",
+        "t_en": "I would support removing tariffs, because a 5% price drop directly benefits 1 million consumers and the less efficient part of the 200 suppliers would exit, moving resources to stronger segments.",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会把50%门槛分三年降到30%，同时设转型基金，因为5000个岗位和8%成本都需缓冲，一步到位可能让企业来不及调整。",
+        "t_en": "I would phase the 50% threshold down to 30% over three years alongside a transition fund, because 5,000 jobs and 8% costs need a buffer and a single step could leave firms no time to adjust.",
+        "tags": [
+          "GOV:A",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会优先降低价格，反对用采购阈值补贴生产者，因为8%的成本最终会转嫁给纳税人，个人更该自己选买便宜进口货还是贵一点的本国货。",
+        "t_en": "I would prioritize lower prices and oppose using procurement thresholds to subsidize producers, because the 8% cost eventually falls on taxpayers and individuals should choose for themselves between cheaper imports and slightly costlier domestic goods.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1330,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "某流域现有年度排污许可总量100万吨。新方案拟三年内收紧到80万吨，并把排放权公开拍卖，每季度一次、未售出配额自动失效，设企业买入上限以防囤积，预计拍得15亿元按湿地面积分配用于修复，优先投向下游河段，修复效果由第三方逐年评估，企业成本上升或使相关产品价格涨约4%。替代方案是维持100万吨上限，用5亿元补贴企业自愿装净化设备并要求公开减排量，预计只能降到90万吨。该采纳哪一种？",
+    "scene_en": "A river basin currently has an annual discharge permit total of 1 million tons. The new plan would tighten it to 800,000 tons within three years and auction the permits each quarter, with unsold permits expiring; a cap per buyer prevents hoarding. About 1.5 billion yuan is expected from the auction, allocated by wetland area and directed first to the lower reaches, with outcomes assessed by a third party each year; higher costs could lift related prices by about 4%. The alternative keeps the 1-million-ton cap and uses 500 million yuan to subsidize voluntary purifier installation with public emissions reporting, expected to bring the total down only to 900,000 tons. Which should be adopted?",
+    "options": [
+      {
+        "t": "我会支持收紧到80万吨并拍卖，因为15亿元修复资金能让湿地恢复，4%的价格上涨由全体消费者分摊，比把成本留给下游居民更公平。",
+        "t_en": "I would support tightening to 800,000 tons and holding the auction, because 1.5 billion yuan in restoration funds brings wetlands back and a 4% price rise is shared by all consumers, fairer than leaving the cost to downstream residents.",
+        "tags": [
+          "ENV:S",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会维持100万吨并补贴自愿设备，因为90万吨已比现在好，5亿元补贴比拍卖少增加企业负担，4%的涨价会影响低收入家庭开支。",
+        "t_en": "I would keep the 1-million-ton cap and subsidize voluntary equipment, because 900,000 tons is already better than now, the 500 million yuan subsidy adds less burden than an auction, and a 4% price rise would hit low-income household budgets.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会拍卖但把15亿元中的一半返给居民抵扣水电费，其余修复湿地，因为80万吨目标要硬，但4%涨价不能只由能源消费者扛。",
+        "t_en": "I would auction but return half of the 1.5 billion yuan to residents as utility bill credits and spend the rest on wetlands, because the 800,000-ton target should hold but a 4% price rise should not fall only on energy consumers.",
+        "tags": [
+          "ECO:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会把拍卖收入交给流域社区投票决定用途，不强求全部用于湿地，因为从90万到80万的差距需要沿途居民亲身权衡，自上而下定价容易忽略小村庄。",
+        "t_en": "I would let basin communities vote on how to use the auction revenue rather than require all of it for wetlands, because the move from 900,000 to 800,000 tons needs local weighting and top-down pricing can overlook small villages.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1331,
+    "domain": "学校教育",
+    "domain_en": "School & Education",
+    "scene": "某地区教育部门拟改革高中录取制度：现行全市统一笔试模式下，过去三年城乡考生平均分相差 68 分；备选方案是改为平时成绩加社会实践档案的综合评价，但评审主观性较大，且每年需新增约 2.4 亿元评审与监督经费。另有两个备选：给农村考生统一加 10 分，或发放教育券让家庭携带额度自由择校。四条路线对公平、效率和财政的压力各不相同，需要确定一个方向。",
+    "scene_en": "A regional education authority plans to reform high school admissions: under the current citywide unified written exam, urban and rural candidates' average scores have differed by 68 points over the past three years; one alternative is holistic evaluation based on coursework and social-practice records, but review is fairly subjective and would add about 240 million a year in assessment and oversight costs. Two other options are on the table: a flat 10-point bonus for rural candidates, or school vouchers that let families take their funding and choose freely. The four routes put very different pressure on fairness, efficiency and the budget, and one direction must be chosen.",
+    "options": [
+      {
+        "t": "我会坚持全市统一笔试：分数差距虽然刺眼，但同一把尺子透明可比，能把暗箱和人情操作的空间压到最小，综合评审反而更容易被关系左右。",
+        "t_en": "I would keep the unified written exam: the score gap is uncomfortable, but one transparent yardstick for everyone leaves the least room for favoritism, while fuzzy holistic review is easier to game through connections.",
+        "tags": [
+          "GOV:A",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会选择综合评价取代统考，用每年 2.4 亿元的评审投入换取不看家庭补课能力的多元标准，68 分的起点差距不该一次性决定一个孩子的人生。",
+        "t_en": "I would replace the exam with holistic evaluation, spending 240 million a year on review capacity so that multiple criteria, not a family's ability to pay for tutoring, decide outcomes; a 68-point starting gap should not settle a child's future in one sitting.",
+        "tags": [
+          "ECO:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会保留统考但给农村考生统一加 10 分：规则照旧可预期，又直接对准城乡差距这个具体缺口，比整体换制度的风险小得多。",
+        "t_en": "I would keep the exam and add a flat 10 points for rural candidates: the rules stay predictable, the fix targets the urban-rural gap directly, and it is far less risky than overhauling the whole system.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会发放教育券让家庭自由择校：把钱交到家长手里，倒逼学校竞争提质，统一标准的捆绑反而保护了平庸的学校。",
+        "t_en": "I would hand out school vouchers so families can choose freely: putting the money in parents' hands forces schools to compete on quality, while uniform standards shelter mediocre schools.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1332,
+    "domain": "移民文化",
+    "domain_en": "Immigration & Culture",
+    "scene": "某城市外来居民占常住人口 18%，其中约三分之一母语与本地主流语言不同。市议会正讨论一套融合政策：为公共部门增设双语服务并每年拨出 5000 万元用于移民社群文化活动；同时有议员提议，外来居民须居住满五年、通过语言考试并缴纳社保满 36 个月，才能申请长期居留与福利资格；还有方案主张按技能与纳税积分设快速通道。财政测算显示各方案年成本相差可达 3 倍，而本地服务业 40% 的岗位由外来居民承担。",
+    "scene_en": "Immigrants make up 18% of a city's population, and about one third of them speak a native language different from the mainstream local one. The city council is debating an integration package: adding bilingual services in the public sector with an annual budget of 50 million for immigrant community cultural activities; another proposal would require five years of residence, a language exam and 36 months of social insurance contributions before granting long-term residency and welfare eligibility; a third option offers a fast track based on skills and tax points. Fiscal estimates show annual costs differing by up to three times, while immigrants fill 40% of local service jobs.",
+    "options": [
+      {
+        "t": "我会支持居住满五年、语言考试加社保 36 个月的门槛：长期福利应对长期贡献者开放，加入社区理应先证明愿意承担共同义务。",
+        "t_en": "I would support the threshold of five years' residence, a language exam and 36 months of social insurance: long-term benefits should go to long-term contributors, and joining a community should start with proving willingness to share its obligations.",
+        "tags": [
+          "NAT:N",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会每年拨 5000 万元做双语服务和社群文化经费：让新来者保有自己的语言不等于拒绝融入，被接纳的人反而更快愿意扎根。",
+        "t_en": "I would budget 50 million a year for bilingual services and community cultural programs: letting newcomers keep their language is not refusing integration; people who feel accepted put down roots faster.",
+        "tags": [
+          "NAT:C",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会按技能与纳税设积分快速通道：服务业 40% 的岗位本来就靠外来劳动力，按贡献排序既补缺口又给出清晰的上升规则。",
+        "t_en": "I would set up a points-based fast track by skills and tax contributions: with immigrants already filling 40% of service jobs, ranking by contribution both fills the gap and gives everyone a clear ladder upward.",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会收紧总量，把住房、学校和医疗资源先向本地低收入居民倾斜：外来居民可以有序进入，但不能让本地弱势群体在排队中永远靠后。",
+        "t_en": "I would cap overall numbers and prioritize housing, schools and healthcare for low-income local residents: newcomers can enter in an orderly way, but the locally disadvantaged should not stay at the back of every queue.",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1333,
+    "domain": "监控隐私",
+    "domain_en": "Surveillance & Privacy",
+    "scene": "某市为降低街面犯罪率，计划两年内部署 2 万个支持人脸识别的摄像头，内部测算称可让街头抢劫与盗窃案下降约 25%。警方希望数据保留 90 天并可实时比对；隐私组织则要求识别功能默认关闭、调取须逐案经法院批准；还有一个折中方案是仅保留普通录像、不加识别，同时增加 15% 的警力巡逻，成本约多 6 亿元。预算只够支持其中一条路线。",
+    "scene_en": "To cut street crime, a city plans to install 20,000 cameras with facial recognition over two years; internal estimates suggest this would reduce street robbery and theft by about 25%. Police want data retained for 90 days with real-time matching; privacy groups demand that identification be off by default and every retrieval approved case by case by a court; a compromise would keep ordinary footage without identification while expanding police patrols by 15%, costing about 600 million more. The budget can support only one of these routes.",
+    "options": [
+      {
+        "t": "我会支持 2 万个识别摄像头全面部署：若能让街面案件下降四分之一，90 天留存加实时比对是值得付出的代价，我会同时要求严格限定适用罪名。",
+        "t_en": "I would back the full rollout of 20,000 recognition cameras: if street crime drops by a quarter, 90-day retention with real-time matching is a price worth paying, as long as the list of eligible offenses is kept strict.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会接受布控但坚持默认不识别、调取逐案经法院批准：安全目标可以要，但开关必须放在司法手里而不是警察手里。",
+        "t_en": "I would accept the cameras but insist identification be off by default and every retrieval court-approved: the security goal is legitimate, but the switch must sit with the judiciary, not the police.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会放弃人脸识别，选普通录像加 15% 警力巡逻：多花 6 亿元买人力，比建一个一旦失控就无法收回的识别网络更让人放心。",
+        "t_en": "I would drop facial recognition and go with ordinary footage plus 15% more patrols: spending an extra 600 million on people beats building a recognition network that, once out of control, cannot be taken back.",
+        "tags": [
+          "TECH:U",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会把部署交给市场竞争，由企业自建安防体系、政府按成效付费：不让国家直接掌握每个人的行踪数据，出了问题也有明确的追责对象。",
+        "t_en": "I would leave deployment to market competition, with companies building security systems and government paying for results: the state should not directly hold everyone's movement data, and private providers give someone clear to hold accountable.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1334,
+    "domain": "科技AI",
+    "domain_en": "Technology & AI",
+    "scene": "某地区拟对大型人工智能模型实施准入管理：方案一要求医疗、金融、司法辅助等高风险应用上线前经审批备案，审批周期约 90 天；方案二不设事前审批，仅靠事后追责与市场淘汰；方案三由公共财政投入 80 亿元建设开源基础模型，免费向社会开放权重；方案四对单一企业设置算力与数据规模上限，防止市场过度集中。研发企业警告，严格审批将使本地产业落后约两代技术。",
+    "scene_en": "A region is considering licensing rules for large AI models: option one requires high-risk applications (healthcare, finance, judicial assistance) to pass a roughly 90-day review before launch; option two has no ex-ante approval and relies only on after-the-fact liability and market selection; option three commits 8 billion of public money to building an open-source foundation model with weights free to everyone; option four caps any single company's compute and data scale to prevent excessive concentration. Developers warn that strict review would leave the local industry about two technology generations behind.",
+    "options": [
+      {
+        "t": "我会要求高风险应用上线前过 90 天审批：出错的代价由公众承担，事前把关比事后追责更省钱，也更少制造受害者。",
+        "t_en": "I would require high-risk applications to pass a 90-day review before launch: when things go wrong the public bears the cost, and screening up front is cheaper and produces fewer victims than liability after the fact.",
+        "tags": [
+          "TECH:K",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会拒绝事前审批：落后两代技术的代价太大，用清晰的事后追责和市场竞争淘汰劣质产品，比让官员预判技术风险更可靠。",
+        "t_en": "I would reject ex-ante approval: falling two technology generations behind is too costly, and clear after-the-fact liability plus market competition weeds out bad products more reliably than officials trying to predict technical risk.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会投 80 亿元建公共开源模型：基础能力不该被少数企业垄断定价，开放权重能让小机构、学生和研究者平等参与。",
+        "t_en": "I would spend 8 billion on a public open-source model: foundational capability should not be priced behind a few companies' walls, and open weights let small organizations, students and researchers participate equally.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会给单一企业的算力与数据设规模上限：竞争被掐断时创新也会被掐断，过度的集中本身就是社会风险。",
+        "t_en": "I would cap any single company's compute and data scale: when competition is strangled, innovation is strangled too, and excessive concentration is itself a social risk.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1335,
+    "domain": "司法法治",
+    "domain_en": "Justice & Rule of Law",
+    "scene": "某地区看守所审前羁押率达 62%，平均羁押时长 148 天，其中约三成被告最终被判无罪或免刑。司法改革委员会提出多条路线：扩大取保候审与非羁押措施适用范围，预计羁押率可降至 40%，但再犯罪风险可能上升约 2 个百分点；对涉暴力犯罪嫌犯原则上一律羁押；或引入随机抽取的陪审团参与重罪量刑，每年需增加约 1.7 亿元运行成本。委员会须确定改革优先级。",
+    "scene_en": "In one region, the pretrial detention rate in remand centers is 62%, with an average detention of 148 days, and about 30% of defendants are ultimately acquitted or exempted from punishment. A judicial reform committee weighs several routes: expanding bail and non-custodial measures, expected to cut the detention rate to 40% though recidivism risk may rise by about 2 percentage points; presumptively detaining anyone accused of violent crime; or introducing randomly drawn juries for sentencing in serious felonies, adding about 170 million a year in operating costs. The committee must set the reform priority.",
+    "options": [
+      {
+        "t": "我会扩大取保候审把羁押率压到 40%：三成被告最终无罪却平均被关 148 天，这个代价不该由未定罪的人承担，上升 2 个点的再犯风险可以用配套监管对冲。",
+        "t_en": "I would expand bail and bring the detention rate down to 40%: 30% of defendants are eventually found innocent yet sit in custody 148 days on average; that cost should not fall on the unconvicted, and a 2-point rise in recidivism can be offset with proper supervision.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会对涉暴力嫌犯原则上一律羁押：公共安全是底线，等悲剧发生再谈程序正义，受害者付出的代价已经无法挽回。",
+        "t_en": "I would presumptively detain anyone accused of violent crime: public safety is the floor, and by the time tragedy strikes, talking about procedural justice cannot undo what the victim lost.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会引入随机陪审团参与重罪量刑：每年多花 1.7 亿元换普通人的常识进入法庭，判决会更贴近社会对正义的真实理解。",
+        "t_en": "I would introduce randomly drawn juries for felony sentencing: spending 170 million more a year to bring ordinary people's common sense into court makes verdicts closer to how society actually understands justice.",
+        "tags": [
+          "GOV:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会先维持羁押制度现状，把新增司法预算用于提高法官待遇与专业培训：制度频繁改动本身就有成本，先把裁判质量做实再谈结构改革。",
+        "t_en": "I would keep the detention system as is for now and spend the added judicial budget on judges' pay and professional training: frequent restructuring carries its own costs; solidify the quality of adjudication first, then talk structural reform.",
+        "tags": [
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1336,
+    "domain": "宗教与信仰",
+    "domain_en": "Religion & Belief",
+    "scene": "某市 12 所宗教背景学校提出申请，希望纳入公共教育财政体系：若按生均标准全额补贴，每年约需 4.5 亿元；教育部门回应称可以补贴，但要求宗教课程课时压缩到每周 2 小时以内，并完整开设公民与科学课程；宗教团体认为这是对办学者信念的附加条件，主张改为按家长教育券方式由家庭自主选择资金流向；也有意见坚持公共经费只应流向世俗公立学校。市议会须就此表决。",
+    "scene_en": "Twelve religiously affiliated schools in a city have applied to join the public education funding system: full per-student subsidies would cost about 450 million a year. The education department says it can subsidize them, but only if religious instruction is capped at 2 hours a week and full civics and science curricula are taught; the religious groups see this as a condition imposed on their convictions and instead propose parent-directed vouchers letting families choose where the money flows; others insist public funds should go only to secular public schools. The council must vote on the matter.",
+    "options": [
+      {
+        "t": "我会按生均标准全额补贴这 12 所学校：家长同样纳税，孩子不该因为学校有宗教背景就在公共财政里变成二等。",
+        "t_en": "I would fully subsidize these 12 schools at the standard per-student rate: the parents pay taxes too, and children should not become second-class in public funding because their school has a religious background.",
+        "tags": [
+          "SEC:F",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会补贴但要求宗教课时压到每周 2 小时并开足公民与科学课：拿公共经费的底线是培养共同体的公民，信念教育留给家庭和教会。",
+        "t_en": "I would subsidize on the condition that religious instruction stays under 2 hours a week with full civics and science curricula: the bottom line for taking public money is educating citizens of the shared community; formation in belief belongs to families and churches.",
+        "tags": [
+          "SEC:E",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会坚持公共经费只流向世俗公立学校：政教分开不能打折，宗教教育可以办，但应当靠社群自愿捐献来支撑。",
+        "t_en": "I would insist public funds flow only to secular public schools: the separation of religion and state admits no discount; religious schools may exist, but they should run on voluntary community donations.",
+        "tags": [
+          "SEC:E",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会改发教育券由家庭自主选择资金流向：包括宗教学校在内，选择权在家长而不是官僚手里，多元供给反而逼着公立学校改进。",
+        "t_en": "I would switch to vouchers and let families direct the money themselves, religious schools included: the choice belongs to parents, not bureaucrats, and plural supply in turn pushes public schools to improve.",
+        "tags": [
+          "SEC:F",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1337,
+    "domain": "住房城市",
+    "domain_en": "Housing & Urban",
+    "scene": "某大都市五年内租金累计上涨 42%，租金收入比中位数达 38%，住房空置率仅 1.8%。市议会收到三个方向的建议：对存量租约实施年涨幅不超过 5% 的租金管制；由政府直接投资 10 万套公共租赁房，分八年建成；或放开容积率与规划限制，允许在地铁站点周边加密建设，预计十年新增供给 25 万套。三条路径对财政、房东与租户的影响差异极大，议会须择一优先推进。",
+    "scene_en": "In a large metropolis, rents have risen 42% cumulatively over five years, the median rent-to-income ratio is 38%, and the vacancy rate is only 1.8%. The council faces three proposals: rent control capping annual increases on existing leases at 5%; direct government investment in 100,000 public rental units built over eight years; or relaxing floor-area ratios and zoning to allow denser building near metro stations, expected to add 250,000 units of supply in a decade. The three paths affect the budget, landlords and tenants very differently, and one must be prioritized.",
+    "options": [
+      {
+        "t": "我会实施年涨幅 5% 的租金管制：租户在 38% 的租金收入比下已经没有议价能力，先止住涨势，其他改革才有时间展开。",
+        "t_en": "I would impose rent control capping annual increases at 5%: with rents eating 38% of median income, tenants have no bargaining power; stop the rise first, and the other reforms will have time to work.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会投资 10 万套公共租赁房：市场不会为最穷的人建房，八年周期虽长，但公共存量是唯一能长期压住租金的资产。",
+        "t_en": "I would invest in 100,000 public rental units: the market does not build for the poorest; eight years is long, but a public stock is the only asset that holds rents down for good.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会放开容积率与规划限制：1.8% 的空置率说明问题出在供给不足，站点周边加密建设十年多 25 万套，几乎不花财政一分钱。",
+        "t_en": "I would relax floor-area ratios and zoning: a 1.8% vacancy rate shows the problem is undersupply; denser building near stations adds 250,000 units in a decade at almost no cost to the budget.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会直接给低收入租户发放住房补贴券：不扭曲市场租金，把钱精准给到付不起的人手里，比大工程见效更快也更少副作用。",
+        "t_en": "I would hand housing vouchers directly to low-income tenants: no distortion of market rents, money aimed precisely at those who cannot afford to pay — faster to take effect than mega-projects and with fewer side effects.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1338,
+    "domain": "农业食品",
+    "domain_en": "Agriculture & Food",
+    "scene": "某地区农业部门评估转基因主粮品种：多点试验数据显示单产可提高 15%，农药使用量减少约 30%，但消费者调查显示 55% 的受访者反对其进入主粮市场。备选路线包括：批准商业化并配套强制标识与农民留种权保护；维持禁令，同时每年追加 12 亿元补贴有机生态农业转型；或将决定权下放到县，由当地社区投票决定是否种植。部门须提交一份首选方案。",
+    "scene_en": "A regional agriculture department is evaluating a genetically modified staple crop: multi-site trials show yields up 15% and pesticide use down about 30%, but a consumer survey finds 55% of respondents opposed to its entry into the staple food market. The options are: approve commercialization with mandatory labeling and protection of farmers' seed-saving rights; keep the ban while adding 1.2 billion a year in subsidies for organic farming conversion; or devolve the decision to counties, letting local communities vote on whether to plant. The department must submit a preferred plan.",
+    "options": [
+      {
+        "t": "我会批准转基因主粮商业化并强制标识：单产 15% 的提升和农药减量 30% 是实打实的收益，标识制度把知情权留在消费者手里。",
+        "t_en": "I would approve commercialization with mandatory labeling: a 15% yield gain and 30% less pesticide are real benefits, and labeling keeps the right to know in consumers' hands.",
+        "tags": [
+          "ENV:G",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会维持禁令并补贴有机生态转型：主粮的基因和土壤经不起不可逆的风险，每年 12 亿元买个稳妥，比事后补救便宜。",
+        "t_en": "I would keep the ban and subsidize the organic transition: staple-crop genes and soil cannot survive irreversible risks; 1.2 billion a year for safety is cheaper than cleaning up afterwards.",
+        "tags": [
+          "ENV:S",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会把决定权下放到县，由当地社区投票：种什么是涉及土地和餐桌的共同体事务，不该由省级文件一刀切。",
+        "t_en": "I would devolve the decision to counties and let local communities vote: what to plant is a community matter of land and dinner tables, not something a provincial directive should settle with one stroke.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会先搁置争议品种，把财政重点放在灌溉、育种站和冷链上：无论转不转基因，增产的瓶颈更多在水、路和仓储。",
+        "t_en": "I would set the contested variety aside for now and focus the budget on irrigation, seed stations and cold chains: genetically modified or not, the real yield bottlenecks are water, roads and storage.",
+        "tags": [
+          "ENV:G",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1339,
+    "domain": "媒体信息",
+    "domain_en": "Media & Information",
+    "scene": "某社交平台月活跃用户 3 亿，过去一年收到虚假信息举报 420 万条，其中健康类谣言占比 34%。监管草案提出：平台须在接到权威核实通知后 24 小时内删除相关内容，逾期按营收比例罚款；反对者认为核实机构的公正性难以保证，主张只删除明确伪造的内容，其余交由用户自行判断；另有提案要求公开推荐算法逻辑并资助独立事实核查组织。立法机构须在三者间作出取舍。",
+    "scene_en": "A social platform with 300 million monthly active users received 4.2 million misinformation reports in the past year, 34% of them health-related rumors. A draft regulation requires the platform to delete flagged content within 24 hours of an authoritative verification notice, with revenue-proportional fines for delays; opponents argue the verifier's impartiality cannot be guaranteed and would only remove clearly fabricated content, leaving the rest to users' own judgment; another proposal demands disclosure of recommendation algorithm logic and funding for independent fact-checking organizations. The legislature must choose among the three.",
+    "options": [
+      {
+        "t": "我会要求平台 24 小时内删除被核实的虚假内容并按营收罚款：健康谣言占了三分之一，慢一天就可能有人照着谣言吃药。",
+        "t_en": "I would require platforms to delete verified falsehoods within 24 hours with revenue-based fines: health rumors are a third of the total, and one day's delay could leave someone taking medicine based on a lie.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我只接受删除明确伪造的内容，其余交给用户判断：一旦平台要替 3 亿人审定真伪，删除权本身就会变成新的权力滥用点。",
+        "t_en": "I would accept deletion only for clearly fabricated content and leave the rest to users: once a platform arbitrates truth for 300 million people, the deletion power itself becomes a new point of abuse.",
+        "tags": [
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会用公共资金资助独立事实核查并公开标注争议内容：与其一删了之，不如让用户看到核查标记后自己决定信不信。",
+        "t_en": "I would publicly fund independent fact-checking and label disputed content: rather than deleting outright, let users see the fact-check flag and decide for themselves what to believe.",
+        "tags": [
+          "CUL:P",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会强制平台公开推荐算法逻辑并接受第三方审计：虚假信息扩散的根源是流量分发机制，不透明才是谣言最好的温床。",
+        "t_en": "I would force platforms to disclose their recommendation algorithm logic and accept third-party audits: the root of misinformation spread is the traffic distribution mechanism, and opacity is what incubates rumors best.",
+        "tags": [
+          "GOV:A",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1340,
+    "domain": "社会保障",
+    "domain_en": "Social Security",
+    "scene": "某地区养老金精算报告显示：按现行制度，人口抚养比将从目前的 3.2 降至 15 年后的 1.8，基金累计结余将在 12 年后耗尽。备选方案包括：将法定领取年龄逐步延迟三年并小幅提高缴费率；维持退休年龄不变，对高收入群体加征社保税；或改革为名义个人账户制，使待遇与终身缴费更紧密挂钩、弱化再分配功能。各方案在不同年龄与收入群体间的得失分布差异显著，决策部门须确定首选方案。",
+    "scene_en": "An actuarial report on a region's pension system shows that under current rules the dependency ratio will fall from today's 3.2 to 1.8 in fifteen years, and the fund's accumulated balance will be exhausted in twelve. Options on the table: gradually raise the statutory claiming age by three years with a small contribution-rate increase; keep the retirement age unchanged and levy an extra social-security tax on high earners; or switch to notional individual accounts, tying benefits more tightly to lifetime contributions and weakening redistribution. The gains and losses fall very differently across age and income groups, and the decision body must pick a preferred plan.",
+    "options": [
+      {
+        "t": "我会把领取年龄逐步延迟三年并小幅提高缴费率：抚养比从 3.2 掉到 1.8 是算得出来的账，越晚调整，每代人承受的冲击越大。",
+        "t_en": "I would gradually raise the claiming age by three years with a small contribution increase: a dependency ratio sliding from 3.2 to 1.8 is simple arithmetic, and the later the adjustment, the harder the shock each generation absorbs.",
+        "tags": [
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会维持退休年龄、对高收入群体加征社保税：让多挣的人多担一份，不能靠推迟普通劳动者的退休来填精算缺口。",
+        "t_en": "I would keep the retirement age and levy an extra social-security tax on high earners: those who earn more should carry more; you do not fill an actuarial hole by postponing ordinary workers' retirement.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会改成名义个人账户、待遇与终身缴费挂钩：多缴多得让制度可信，模糊的再分配反而让年轻人觉得缴了也是白缴。",
+        "t_en": "I would switch to notional individual accounts with benefits tied to lifetime contributions: more paid in, more paid out makes the system credible, while vague redistribution just convinces young people their payments vanish.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会建立统一标准的全民基础养老金并与缴费脱钩：养老是公民权利而不是精算产品，缺口用一般税收补上。",
+        "t_en": "I would create a flat universal basic pension decoupled from contributions: old-age security is a citizen's right, not an actuarial product, and the shortfall should be covered by general taxation.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1341,
+    "domain": "动物伦理",
+    "domain_en": "Animal Ethics",
+    "scene": "某市拟把一处闲置厂区改建为实验动物中心，每年预计使用约6000只小鼠和400只兔做药物安全性测试，并承诺公开年度数据。提案要求所有项目经7人伦理委员会审批，其中2席留给动物保护代表，委员会可在3年内逐步停用两类高关注测试。支持者认为福利底线不能让步，反对者担心审批流程拖慢新药上市、使本地研发外流。市议会需要在“附条件批准”与“暂缓建设”之间做出可辨识的公共选择。",
+    "scene_en": "A city plans to convert an idle factory site into a laboratory animal center, using about 6,000 mice and 400 rabbits each year for drug safety testing, with a commitment to publish annual data. The proposal requires every project to be reviewed by a 7-member ethics committee, 2 seats reserved for animal-welfare representatives, and allows the committee to phase out two high-concern test types within 3 years. Supporters say welfare standards cannot be compromised; opponents worry the review process will delay new drug launches and push local research elsewhere. The city council must make an identifiable public choice between conditional approval and postponing construction.",
+    "options": [
+      {
+        "t": "我会投附条件批准，但要求委员会把动物福利摆在速度前面，哪怕新药上市平均晚4个月；6000只动物的痛苦不该被进度抵消。",
+        "t_en": "I would vote for conditional approval but require the committee to put animal welfare ahead of speed, even if new drugs reach the market about 4 months later; the suffering of 6,000 animals should not be offset by a schedule.",
+        "tags": [
+          "ENV:S",
+          "CUL:P",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持建设并把伦理审批压到30天内完成，先让研究跑起来；福利标准可以随技术再提高，否则资金和人才会流向条件更松的地区。",
+        "t_en": "I would support construction and cap ethics review at 30 days so research can get moving; welfare standards can rise with technology later, otherwise funding and talent will flow to regions with looser rules.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会投暂缓建设，等计算机模型和类器官替代品成熟后再议；在替代手段可用时，先建一个每年消耗6000只动物的中心并不合适。",
+        "t_en": "I would vote to postpone construction until computer models and organoid alternatives mature; when substitutes are available, building a center that consumes 6,000 animals a year is not appropriate.",
+        "tags": [
+          "ENV:S",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会支持行业自定标准、政府只做备案；7人委员会里留2席给保护代表会让审批变成拉锯，科研自主比统一门槛更重要。",
+        "t_en": "I would support industry setting its own standards with government only recording them; reserving 2 of 7 committee seats for welfare advocates would turn review into a tug-of-war, and research autonomy matters more than a uniform threshold.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1342,
+    "domain": "数字平台",
+    "domain_en": "Digital Platforms",
+    "scene": "监管机构拟要求用户超1000万的平台在严重案件中为5人监督办在24小时内提供加密聊天数据，并实行实名核验；平台称这会破坏端到端加密、影响2亿用户的隐私。监管方认为没有后门就难以及时阻止伤害，平台则担心后门一旦存在就可能被滥用。法案要求在“强制数据移交”与“维持加密不可读”之间二选一，且没有中间选项。",
+    "scene_en": "A regulator plans to require platforms with over 10 million users to provide encrypted chat data to a 5-person oversight office within 24 hours in serious cases, along with real-name verification; platforms say this breaks end-to-end encryption and affects the privacy of 200 million users. Regulators argue that without a backdoor, harm cannot be stopped in time, while platforms worry that once a backdoor exists it could be abused. The bill forces a choice between mandatory data handover and keeping encryption unreadable, with no middle option.",
+    "options": [
+      {
+        "t": "我会支持强制数据移交，24小时的窗口能让严重案件及时处置；2亿用户的加密隐私虽然重要，但生命安全的代价更高。",
+        "t_en": "I would support mandatory data handover; a 24-hour window allows serious cases to be handled in time, and although the encrypted privacy of 200 million users matters, the cost to personal safety is higher.",
+        "tags": [
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持维持加密不可读，后门一旦开了就收不回；2亿用户的通信不该为5人办公室的办案便利让路，隐私受损是不可逆的。",
+        "t_en": "I would support keeping encryption unreadable, because once a backdoor is opened it cannot be closed; the communications of 200 million users should not give way to the convenience of a 5-person office, and privacy loss is irreversible.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持实名核验但反对交出聊天内容；先确认账号归属就能追责，不必拆掉加密，这样既保留秩序也守住隐私边界。",
+        "t_en": "I would support real-name verification but oppose handing over chat content; confirming account ownership enables accountability without dismantling encryption, preserving order while keeping the privacy boundary.",
+        "tags": [
+          "GOV:A",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我会反对这部法案，让平台自行决定配合尺度；24小时硬期限会逼出草率的数据交付，反而制造更多错误。",
+        "t_en": "I would oppose this bill and let platforms decide their own level of cooperation; a hard 24-hour deadline would force hasty data handovers and create more errors instead.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1343,
+    "domain": "家庭婚姻",
+    "domain_en": "Family & Marriage",
+    "scene": "某地拟修订婚姻财产规则：婚姻存续期间所得默认共同所有、离婚时原则上按5:5均分，除非双方另签书面约定；备选方案是默认各自所有、共同开支按比例分摊。改革还附带30天离婚冷静期，官方数据显示近3年离婚率约2.8%。支持者说共同制保护全职照护一方，反对者说分别制更尊重个人财产权。立法需要在“默认共同制”与“默认分别制”之间选一个。",
+    "scene_en": "A region plans to reform marital property rules: assets acquired during marriage would by default be jointly owned and split roughly 50:50 on divorce unless a written agreement says otherwise; the alternative is default separate ownership with shared expenses apportioned by ratio. The reform also adds a 30-day cooling-off period for divorce, with official data showing a divorce rate of about 2.8% over the past 3 years. Supporters say joint ownership protects the spouse who does full-time caregiving; opponents say separate ownership better respects individual property rights. The legislature must choose between default joint ownership and default separate ownership.",
+    "options": [
+      {
+        "t": "我会支持默认共同制，5:5均分能让照护多年的一方不因收入中断而吃亏；30天冷静期还能减少冲动离婚。",
+        "t_en": "I would support default joint ownership; a 50:50 split keeps a spouse who has spent years caregiving from losing out because of interrupted income, and the 30-day cooling-off period also reduces impulsive divorces.",
+        "tags": [
+          "ECO:L",
+          "COL:M",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会支持默认分别制，各自财产归各自更清楚；5:5均分会鼓励搭便车，30天冷静期也拖长了本已破裂的关系。",
+        "t_en": "I would support default separate ownership; keeping each spouse's property separate is clearer, a 50:50 split encourages free-riding, and the 30-day cooling-off period merely prolongs already broken relationships.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会支持保留共同制但取消30天冷静期，2.8%的离婚率里多数不是冲动；把书面约定做简单，比用等待期干预更合适。",
+        "t_en": "I would support keeping joint ownership but removing the 30-day cooling-off period; most of the 2.8% divorce rate is not impulsive, and simplifying written agreements is more appropriate than intervening with a waiting period.",
+        "tags": [
+          "ECO:L",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会支持由每对夫妻自行约定、法律只提供模板；默认规则无论选哪种，都会替2.8%的家庭把财产安排写好。",
+        "t_en": "I would support letting each couple decide by agreement, with law only providing templates; whichever default is chosen, it writes the property arrangement for the 2.8% of families rather than letting them decide.",
+        "tags": [
+          "GOV:L",
+          "COL:I",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1344,
+    "domain": "老龄化养老",
+    "domain_en": "Aging & Elderly Care",
+    "scene": "某地测算到2035年65岁以上人口将占22%，养老金统筹基金出现缺口。方案A把退休年龄从60岁逐步提到65岁，每年延迟6个月，同时缴费率从8%升到10%；方案B维持60岁退休，但把部分统筹改为个人积累账户、待遇与缴费挂钩。测算显示方案A可将缺口缩小约40%，方案B会让低收入者月待遇减少约15%。议会需在两案之间选一。",
+    "scene_en": "A region projects that people over 65 will make up 22% of the population by 2035, leaving a gap in the pooled pension fund. Plan A raises the retirement age gradually from 60 to 65, by 6 months each year, while lifting the contribution rate from 8% to 10%; Plan B keeps retirement at 60 but shifts part of the pooled scheme into individual accumulation accounts with benefits tied to contributions. Estimates show Plan A could close about 40% of the gap, while Plan B would cut monthly benefits for low-income retirees by about 15%. The council must choose between the two plans.",
+    "options": [
+      {
+        "t": "我会支持方案A，延迟退休加提高缴费能把缺口缩小40%，让22%的老年人口待遇不打折；代价是多数人多工作5年。",
+        "t_en": "I would support Plan A; delayed retirement plus higher contributions would close 40% of the gap and keep benefits intact for the 22% elderly population, at the cost of working 5 more years.",
+        "tags": [
+          "GOV:A",
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持方案B，个人账户让缴费和待遇对应，长期更可持续；低收入者少15%虽是代价，但把缺口留给下一代更不公平。",
+        "t_en": "I would support Plan B; individual accounts link contributions to benefits and are more sustainable long term, and although low-income retirees lose 15%, leaving the gap to the next generation is less fair.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会支持方案A但给体力劳动者豁免，把10%缴费改为累进；缺口缩小40%的同时，不该让收入最低的人扛同样的5年延迟。",
+        "t_en": "I would support Plan A but exempt manual laborers and make the 10% contribution progressive; while closing 40% of the gap, the lowest earners should not bear the same 5-year delay.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对两案，先削减其他行政开支来补缺口；无论延迟退休还是个人账户，都是把22%的老龄化压力转嫁给个人。",
+        "t_en": "I would oppose both plans and first cut other administrative spending to fill the gap; whether delayed retirement or individual accounts, both shift the pressure of a 22% elderly population onto individuals.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1345,
+    "domain": "消费债务",
+    "domain_en": "Consumption & Debt",
+    "scene": "某地居民债务收入比已达180%，拟将个人贷款年利率上限从24%降到15%，并要求放贷机构逐笔核实还款能力。银行测算：利率上限会让放贷规模收缩约20%，近300万依赖消费贷的小商户周转受影响；监管方认为高息是债务滚雪球的主因。法案要求在“设定利率上限并强制审核”与“由市场自由定价”之间选择，且两者不可兼得。",
+    "scene_en": "A region's household debt-to-income ratio has reached 180%, and it plans to cut the annual cap on personal loan interest from 24% to 15% while requiring lenders to verify repayment ability case by case. Banks estimate the cap will shrink lending by about 20%, affecting the cash flow of nearly 3 million small merchants reliant on consumer loans; regulators consider high interest the main driver of snowballing debt. The bill requires choosing between setting an interest cap with mandatory review and letting the market price freely, and the two cannot be combined.",
+    "options": [
+      {
+        "t": "我会支持利率上限加审核，180%的债务比说明高息已经压垮很多家庭；20%的放贷收缩是必要代价，保护借款人优先。",
+        "t_en": "I would support the interest cap plus review; a 180% debt ratio shows high interest is already crushing many households, and a 20% lending contraction is a necessary price, with protecting borrowers coming first.",
+        "tags": [
+          "ECO:L",
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持市场自由定价，15%的硬上限会让300万小商户借不到钱；利率高低应由风险决定，监管只该要求充分披露。",
+        "t_en": "I would support free market pricing; a hard 15% cap would leave 3 million small merchants unable to borrow, interest should reflect risk, and regulators should only require full disclosure.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持上限但设小商户豁免，把24%降到15%的同时让经营贷另行定价；180%的居民杠杆和个人周转不该用同一把尺子。",
+        "t_en": "I would support the cap but exempt small merchants, cutting 24% to 15% while pricing business loans separately; a 180% household leverage ratio and working capital needs should not be measured with the same ruler.",
+        "tags": [
+          "ECO:L",
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对15%上限，改用债务重组和财务教育来化解180%的杠杆；压低利率只会把风险赶到不受监管的渠道。",
+        "t_en": "I would oppose the 15% cap and instead use debt restructuring and financial education to defuse the 180% leverage; suppressing rates only pushes risk into unregulated channels.",
+        "tags": [
+          "GOV:L",
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1346,
+    "domain": "能源基建",
+    "domain_en": "Energy & Infrastructure",
+    "scene": "某地计划投资120亿元建设近海风电场，年发电约8亿度，可覆盖60万户用电；但场址位于候鸟迁徙通道，并会让约200户渔民失去作业海域。备选方案是在内陆300公顷农地上建同等容量，成本高出15%，但不影响鸟类与渔业。能源部门测算近海方案每年可减排二氧化碳60万吨。听证会需在“核准近海风电”与“改用内陆场址”之间表态。",
+    "scene_en": "A region plans to invest 12 billion yuan in an offshore wind farm generating about 800 million kWh a year, enough for 600,000 households; but the site lies on a migratory bird corridor and would cost about 200 fishing households their working waters. The alternative is to build the same capacity on 300 hectares of inland farmland, costing 15% more but sparing birds and fisheries. The energy department estimates the offshore plan could cut 600,000 tonnes of CO2 annually. The hearing must take a position between approving the offshore wind farm and switching to the inland site.",
+    "options": [
+      {
+        "t": "我会支持核准近海风电，60万吨减排和60万户用电是眼前的收益；多花15%建内陆会让清洁电力推迟上线。",
+        "t_en": "I would support approving the offshore wind farm; cutting 600,000 tonnes of CO2 and powering 600,000 households are immediate gains, and spending 15% more inland would delay clean power.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会支持改用内陆场址，候鸟通道和200户渔民的生计不该为15%的成本让步；60万吨减排在别处也能实现。",
+        "t_en": "I would support switching to the inland site; the migratory corridor and the livelihoods of 200 fishing households should not give way for 15% cost, and the 600,000-tonne reduction can be achieved elsewhere.",
+        "tags": [
+          "ENV:S",
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持近海方案但要求划定2平方公里禁建区并给200户补偿，让60万吨减排和渔业共存；一律否决会拖慢能源转型。",
+        "t_en": "I would support the offshore plan but require a 2-square-kilometer no-build zone and compensation for the 200 households, letting the 600,000-tonne reduction coexist with fisheries; blanket rejection would slow the energy transition.",
+        "tags": [
+          "ENV:G",
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持内陆农地方案并把电价提高3%来覆盖15%成本，由用电者承担；不该让候鸟和渔民替60万户的用电买单。",
+        "t_en": "I would support the inland farmland site and raise electricity prices by 3% to cover the 15% cost, with consumers bearing it; birds and fishermen should not pay for the power of 600,000 households.",
+        "tags": [
+          "ENV:S",
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1347,
+    "domain": "气候灾害",
+    "domain_en": "Climate & Disasters",
+    "scene": "某地连续3年遭遇极端高温，累计损失约50亿元。政府拟对企业营业额征收0.8%的气候适应附加费，每年筹资约80亿元，用于防洪堤和200个降温中心；企业测算这会减少约12万个岗位。另一方案是不征税，靠商业保险和私人防灾投入应对。方案要求明确选择“征收适应附加费”或“不新增税费、由市场承担”，两者不能并行。",
+    "scene_en": "After 3 consecutive years of extreme heat causing cumulative losses of about 5 billion yuan, a government plans a 0.8% climate adaptation levy on enterprise turnover, raising about 8 billion yuan a year for flood walls and 200 cooling centers; businesses estimate it would cost about 120,000 jobs. The alternative is no new tax, relying on commercial insurance and private disaster preparedness. The proposal demands a clear choice between levying the adaptation fee and no new taxes with the market bearing it, and the two cannot run in parallel.",
+    "options": [
+      {
+        "t": "我会支持征收0.8%附加费，80亿元建防洪堤和降温中心能减少50亿元级别的损失；12万岗位代价虽重，但防灾不能等。",
+        "t_en": "I would support the 0.8% levy; 8 billion yuan for flood walls and cooling centers can reduce losses on the scale of 5 billion, and although 120,000 jobs are a heavy price, disaster preparedness cannot wait.",
+        "tags": [
+          "ENV:S",
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持不新增税费、由市场承担，0.8%会让12万人失业；保险和私人防灾能更精确地定价风险，政府征税只会抬高成本。",
+        "t_en": "I would support no new taxes with the market bearing it; 0.8% would put 120,000 people out of work, insurance and private preparedness price risk more precisely, and a government levy only raises costs.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持附加费但对营业额低于500万元的企业免征，把80亿元优先投向200个降温中心；12万岗位里多数在小企业，不该一刀切。",
+        "t_en": "I would support the levy but exempt firms with turnover under 5 million yuan, directing the 8 billion first to 200 cooling centers; most of the 120,000 jobs are in small firms and should not be hit uniformly.",
+        "tags": [
+          "ECO:L",
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持把80亿元改由发行灾害债券筹集，不征0.8%附加费；用未来年度偿还替代对企业营业额征税，能把12万岗位的压力延后。",
+        "t_en": "I would support raising the 8 billion through disaster bonds instead of the 0.8% levy; repaying in future years rather than taxing enterprise turnover can defer the pressure on 120,000 jobs.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1348,
+    "domain": "少数群体",
+    "domain_en": "Minority Groups",
+    "scene": "某地约8%居民患有一种需长期用药的慢性病，医保目前只覆盖30%费用。拟议的《平等可及法案》要求保险方将覆盖提到90%，并禁止按健康状况差别定价；保险方测算这会让人人保费上涨18%。备选方案是不改定价规则，只用一般税收给低收入患者定向补贴，覆盖约3万人。法案需在“统一强制覆盖90%”与“仅定向补贴低收入者”之间选择。",
+    "scene_en": "About 8% of residents in a region have a chronic condition requiring long-term medication, and insurance currently covers only 30% of costs. A proposed Equal Access Act would require insurers to raise coverage to 90% and ban pricing differences based on health status; insurers estimate this would raise everyone's premiums by 18%. The alternative is to leave pricing rules unchanged and use general tax revenue for targeted subsidies to low-income patients, covering about 30,000 people. The bill must choose between a universal 90% coverage mandate and targeted subsidies only for low-income patients.",
+    "options": [
+      {
+        "t": "我会支持统一强制覆盖90%，8%的人不该因病史被区别对待；人人保费涨18%是多数人为少数风险分摊，符合共济原则。",
+        "t_en": "I would support the universal 90% mandate; the 8% should not be treated differently because of medical history, and an 18% premium rise for everyone is the majority sharing minority risks, in line with mutual aid.",
+        "tags": [
+          "ECO:L",
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持只补贴低收入者，18%的全民涨价会让92%的人为8%买单；把资源集中给3万最困难的人，比普遍涨价更精准。",
+        "t_en": "I would support subsidizing only low-income patients; an 18% rise for everyone makes the 92% pay for the 8%, and concentrating resources on the 30,000 worst-off is more precise than a broad premium increase.",
+        "tags": [
+          "ECO:R",
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持强制覆盖但设12%的保费涨幅上限，差额由财政补足；90%覆盖不能靠18%的涨价实现，否则会引发健康人群退保。",
+        "t_en": "I would support the mandate but cap premium increases at 12%, with the difference covered by the treasury; 90% coverage cannot be funded by an 18% rise without prompting healthy people to drop out.",
+        "tags": [
+          "ECO:L",
+          "GOV:A",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会支持取消差别定价但不规定90%的比例，让保险方在30%基础上自由竞争；8%群体的待遇应由市场方案决定，而非立法固定数字。",
+        "t_en": "I would support banning differential pricing without fixing 90% in law, letting insurers compete from the 30% baseline; the treatment of the 8% should be decided by market plans rather than a legislated number.",
+        "tags": [
+          "ECO:R",
+          "GOV:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1349,
+    "domain": "艺术文化",
+    "domain_en": "Art & Culture",
+    "scene": "某市有3家公共剧院，目前40%的档期给商业演出，贡献60%的票房收入；60%档期给实验性剧目，上座率仅5%。拟议改革要求把实验剧目档期保底提到50%，即使票房因此下降约25%；备选方案是维持现有档期，另拨2000万元补贴实验团体。文化部门需在“档期配额保底”与“财政补贴、不改档期”之间选一项，不能两全。",
+    "scene_en": "A city has 3 public theaters; currently 40% of scheduling slots go to commercial performances, generating 60% of box office revenue, while 60% go to experimental productions with only a 5% attendance rate. A proposed reform would guarantee at least 50% of slots to experimental work even if box office revenue falls about 25%; the alternative is to keep the current schedule and allocate 20 million yuan in subsidies to experimental groups. The culture department must choose between guaranteed slot quotas and fiscal subsidies without changing the schedule, and cannot have both.",
+    "options": [
+      {
+        "t": "我会支持档期配额保底，50%的舞台给实验剧目能让5%的小众观众有位置；票房少25%是公共剧院该承担的探索成本。",
+        "t_en": "I would support guaranteed slot quotas; giving 50% of stages to experimental work secures a place for the 5% niche audience, and a 25% box office drop is an exploration cost public theaters should bear.",
+        "tags": [
+          "CUL:P",
+          "COL:M",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持财政补贴、不改档期，2000万元可以直接扶持实验团体；硬占50%档期让票房少25%，最后连补贴的来源都萎缩。",
+        "t_en": "I would support subsidies without changing the schedule; 20 million yuan can directly support experimental groups, whereas forcing 50% slots cuts box office by 25% and shrinks the very revenue base for subsidies.",
+        "tags": [
+          "ECO:R",
+          "CUL:T",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持配额保底但把比例定在45%，并把3家剧院中1家全留给实验剧目；50%一刀切会让另两家损失过大，分区更可持续。",
+        "t_en": "I would support quota guarantees but set the ratio at 45%, dedicating 1 of the 3 theaters entirely to experimental work; a flat 50% would hurt the other two too much, and zoning is more sustainable.",
+        "tags": [
+          "CUL:P",
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持维持商业档期、取消补贴，让实验剧目靠票房竞争；5%的上座率说明观众已用选择表态，公共资金不该替代市场判断。",
+        "t_en": "I would support keeping commercial scheduling and ending subsidies, letting experimental work compete for ticket sales; a 5% attendance rate shows audiences have already spoken, and public funds should not replace market judgment.",
+        "tags": [
+          "ECO:R",
+          "CUL:T",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1350,
+    "domain": "体育竞技",
+    "domain_en": "Sports & Competition",
+    "scene": "某国家级代表队有20名候选运动员，最终只取4人进入正式名单，并可分配300万元奖金。现行规则按六站赛事累计积分取前4名；改革提案把其中1个名额留给来自欠发达地区的年轻选手，并将奖金改为4人均分，每人75万元。已知第4名与第5名积分只差0.5分，且各候选人的训练资源相当。选拔委员会需在“纯积分排名”与“预留1席并均分奖金”之间做决定。",
+    "scene_en": "A national-level team has 20 candidate athletes, with only 4 places on the final roster and a 3 million yuan bonus pool to distribute. The current rule selects the top 4 by cumulative points across six events; a reform proposal reserves 1 place for a young athlete from an underdeveloped region and splits the bonus equally at 750,000 yuan each. The 4th and 5th ranked athletes are known to differ by only 0.5 points, and all candidates have comparable training resources. The selection committee must decide between pure points ranking and reserving 1 place with an equal bonus split.",
+    "options": [
+      {
+        "t": "我会支持纯积分排名，0.5分也是0.5分；按成绩取前4名最清楚，预留名额会让第5名觉得规则中途变了。",
+        "t_en": "I would support pure points ranking; 0.5 points is still 0.5 points, selecting the top 4 by results is the clearest rule, and a reserved place would make the 5th-ranked athlete feel the rules changed midway.",
+        "tags": [
+          "COL:I",
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持预留1席并均分奖金，0.5分差距不足以抹平地区机会的差异；300万元均分能让年轻选手获得继续训练的条件。",
+        "t_en": "I would support reserving 1 place and splitting the bonus; a 0.5-point gap is not enough to erase regional differences in opportunity, and an equal 3 million split gives the young athlete resources to keep training.",
+        "tags": [
+          "ECO:L",
+          "COL:M",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会支持按积分取前4名，但把奖金改为4人均分；名额靠成绩、报酬靠团队，这样既守住0.5分的规则，也减少队内差距。",
+        "t_en": "I would support taking the top 4 by points but splitting the bonus equally; places decided by results and pay by team both preserve the 0.5-point rule and reduce internal gaps.",
+        "tags": [
+          "ECO:L",
+          "COL:I",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持预留名额但奖金仍按积分分档，让第1名拿120万、末位拿45万；机会可以调节，报酬还是该区分成绩。",
+        "t_en": "I would support reserving the place but keeping the bonus tiered by points, with 1.2 million for first place and 450,000 for the last; opportunity can be adjusted, but pay should still reflect results.",
+        "tags": [
+          "ECO:R",
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
   }
 ]
