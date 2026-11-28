@@ -8,6 +8,18 @@ patch_data.txt
 *_orig.json
 question_bank_300.json
 question_bank_orig.json
+question_bank.json.bak_*
+
+# 一次性生成/归档/合并工作文件（自动化运行残留）
+_gen_*
+_arch_*
+_verify_*
+_commit_msg_*
+translate_progress.json
+self_label_template.csv
+
+# 测量/验证脚本的输出快照（脚本可重跑再生）
+*.out.json
 
 # 一次性生成脚本
 build_bank.py
