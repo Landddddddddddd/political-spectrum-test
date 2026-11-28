@@ -60622,5 +60622,465 @@
         "tags": []
       }
     ]
+  },
+  {
+    "id": 1351,
+    "domain": "医疗健康",
+    "domain_en": "Healthcare",
+    "scene": "某地区计划把公立与私立医院的就诊、检验和用药记录接入统一平台，医生在接诊时可直接调取患者过去五年的病历，不必每次征得同意。主管部门估算，这能让重复检查减少约百分之十二，每年节省数亿元支出，急救时也更容易查到过敏史。但一次系统漏洞就可能让数百万人的健康信息外泄。方案要求在“默认接入、个人可申请退出”与“每次调阅都须单独授权”之间二选一。你会支持哪一种安排？",
+    "scene_en": "A region plans to link the records of public and private hospitals, including visits, lab results and prescriptions, into a single platform, so doctors can pull up a patient's past five years of medical history at consultation without asking permission each time. Officials estimate this could cut duplicate testing by about twelve percent, saving hundreds of millions a year, and make allergy histories faster to find in emergencies. But a single system breach could expose the health data of millions. The plan asks you to choose between opt-out enrollment by default and requiring separate consent for every access. Which arrangement do you favor?",
+    "options": [
+      {
+        "t": "我会支持默认接入，因为急救时几秒钟就能查到过敏史，重复检查少了，病人自付的钱也跟着降下来。",
+        "t_en": "I would support opt-out enrollment, because in an emergency an allergy history turns up in seconds, and with fewer duplicate tests patients pay less out of pocket.",
+        "tags": [
+          "ECO:L",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会坚持每次调阅都单独授权，因为健康信息泄露出去就收不回来，让人自己握着开关才踏实。",
+        "t_en": "I would insist on separate consent for every lookup, because leaked health information cannot be taken back, and people are safer holding the switch themselves.",
+        "tags": [
+          "TECH:U",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持默认接入但要求每次调阅留痕、泄露即追责，因为这样省下的钱和可控的风险能同时兼顾。",
+        "t_en": "I would support opt-out enrollment only with an audit trail for every access and real liability for breaches, so the savings and a manageable risk can coexist.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会把这事交给医院和病人自行签约，政府不建统一平台，因为不同机构的安全水平该由市场检验。",
+        "t_en": "I would leave this to contracts between hospitals and patients rather than a government platform, because different providers' security standards should be tested by the market.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "说实话这几个说法都不代表我，这题我宁愿跳过。",
+        "t_en": "Honestly, none of these speaks for me on this one — I'd rather just skip it.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1352,
+    "domain": "性别平权",
+    "domain_en": "Gender Equality",
+    "scene": "某市老城区的公共厕所长期按男女一比一设置厕位。抽样显示，女性平均排队约四分钟，男性不到一分钟；市里准备投入八百万元改造。方案一把女性厕位增到男性的两倍，按生理与使用时长差异配置；方案二不按性别分，改为一半隔间做成不分性别的通用厕位，谁都可以用。支持者说通用厕位方便带孩子和与异性亲属同行的人，反对者担心它反而让女性排队更久。你支持哪种配置？",
+    "scene_en": "A city's old district has long built public toilets with a one-to-one ratio of stalls for men and women. A survey found women wait about four minutes on average while men wait under one minute, and the city is ready to spend eight million on renovations. Plan one doubles the number of women's stalls, matching capacity to time used. Plan two drops gender labeling and makes half the stalls all-gender, open to anyone. Supporters say all-gender stalls help people with children or opposite-sex relatives; critics worry women would still queue longer. Which layout do you favor?",
+    "options": [
+      {
+        "t": "我会选女性厕位翻倍，因为四分钟对不到一分钟的差距摆在那儿，多三百个隔间比改标签更能解决排队。",
+        "t_en": "I would double the women's stalls, because a four-minute versus sub-minute wait is right there in the data, and three hundred more stalls fix the queue better than changing labels.",
+        "tags": [
+          "ECO:L",
+          "CUL:P"
+        ]
+      },
+      {
+        "t": "我会选全通用厕位，因为带老人或异性孩子出门时，按性别划线反而把人挡在门外。",
+        "t_en": "I would choose all-gender stalls, because when you are out with an elderly parent or a child of another gender, drawing a gender line keeps people out.",
+        "tags": [
+          "CUL:P",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会维持一比一、只扩大总面积，因为沿用多年的分法大家已经习惯，先多建总厕位比改规则稳妥。",
+        "t_en": "I would keep the one-to-one ratio and just add more total stalls, because people are used to the long-standing arrangement and building more is safer than rewriting the rule.",
+        "tags": [
+          "CUL:T",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会让运营方按客流数据自己决定比例，政府只规定总数，因为哪家客流大哪家自己最清楚。",
+        "t_en": "I would let operators set the ratio from their own footfall data, with government setting only the total, because each site knows its own traffic best.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这事我没啥代入感，哪种结果我都能接受。",
+        "t_en": "I don't feel personally involved in this issue; any of these outcomes would be fine with me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1353,
+    "domain": "治安刑罚",
+    "domain_en": "Policing & Punishment",
+    "scene": "某地区近三年判处的盗窃类案件中，约四成是六个月以下的短期刑。监狱管理部门测算，这类服刑人员一年内再犯比例约百分之三十，而改为社区服务加赔偿的方案再犯比例约百分之二十，但受害者更常反映没坐牢等于没惩罚。司法部门考虑把六个月以下案件原则上改为社区刑，保留电子定位和定期报到，重罪不受影响。社区方案还要求每周面谈一次、完成八十小时公益劳动，违反安排就恢复原刑。你会怎么选？",
+    "scene_en": "In a region, about forty percent of theft convictions over the past three years carried sentences of six months or less. Prison authorities estimate that roughly thirty percent of these short-term inmates reoffend within a year, compared with about twenty percent under community service plus restitution, though victims more often say that no jail time feels like no punishment. Justice officials are considering making community sentences the default for terms under six months, with electronic monitoring and regular check-ins, leaving serious crimes unchanged. The community option would also require a weekly meeting and eighty hours of public work, with a return to the original sentence if the terms are broken. What would you choose?",
+    "options": [
+      {
+        "t": "我会支持社区刑，因为再犯率从三成降到两成，赔偿也能更早到受害者手里。",
+        "t_en": "I would support community sentences, because reoffending drops from thirty percent to twenty percent and compensation reaches victims sooner.",
+        "tags": [
+          "GOV:L",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会坚持短期监禁，因为受害者需要看到明确的代价，否则赔了钱也难觉得公道。",
+        "t_en": "I would keep short prison terms, because victims need to see a real price paid; otherwise even repayment may not feel like justice.",
+        "tags": [
+          "GOV:A",
+          "CUL:T"
+        ]
+      },
+      {
+        "t": "我会支持社区刑但加一条违反即收监的规则，因为这样既留改造机会，也不让约束落空。",
+        "t_en": "I would support community sentences with an automatic return to custody for violations, so there is room to reform without letting the conditions mean nothing.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会让受害者和被告自己谈赔偿，国家只在必要时介入，因为当事人谈出的结果更容易被双方接受。",
+        "t_en": "I would let victims and defendants negotiate restitution themselves, with the state stepping in only when needed, because an agreement they reach is easier for both to accept.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这题我站不了边，了解得不够，判断不了。",
+        "t_en": "I can't really take a side here — I don't know enough about this to judge.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1354,
+    "domain": "外交国际",
+    "domain_en": "Foreign Affairs & International",
+    "scene": "某区域正在推动一项公约，加入方须在五年内把工业排放统一降到现行水平的七成，并接受跨国检查组进厂核查。测算显示，本国履行后相关产品成本上升约百分之八，出口竞争力可能下降；不加入则每年省下约六十亿元减排投入，但会失去区域内的统一认证资格。公约还规定，核查结果须公开，企业可申诉；检查组每年进厂两次，提前三天通知，每次核查费用按产值分摊。你支持加入还是留在公约之外？",
+    "scene_en": "A region is promoting a convention under which members must cut industrial emissions to seventy percent of current levels within five years and accept cross-border inspection teams in factories. Estimates show compliance would raise related product costs by about eight percent and may weaken export competitiveness; staying out would save roughly six billion a year in abatement spending but forfeit mutual recognition within the region. Inspection results would be published, with a right of appeal for firms; inspection teams would visit twice a year with three days' notice, and costs would be shared by output. Do you favor joining or staying out?",
+    "options": [
+      {
+        "t": "我会支持加入，因为统一认证能让企业继续进区域市场，长远看比省下的六十亿更要紧。",
+        "t_en": "I would join, because mutual recognition keeps our firms in the regional market, which matters more over time than the sixty billion saved by staying out.",
+        "tags": [
+          "NAT:C",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我会支持留在公约之外，因为八个百分点的成本会把工厂挤走，先把就业稳住再谈国际承诺。",
+        "t_en": "I would stay outside the convention, because an eight-percent cost squeeze pushes factories away; secure jobs first, then talk about international commitments.",
+        "tags": [
+          "NAT:N",
+          "ENV:G"
+        ]
+      },
+      {
+        "t": "我会支持加入但坚持两年整改期和申诉通道，因为一步到位的罚则容易让企业关门，渐进执行留得住。",
+        "t_en": "I would join but insist on a two-year adjustment period and an appeal route, because immediate penalties can close plants, while a gradual rollout holds them together.",
+        "tags": [
+          "NAT:C",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会主张不加入也不接受统一标准，各国按自己的条件定排放线，因为外国检查组进厂本身就是约束。",
+        "t_en": "I would neither join nor accept a common standard, letting each country set its own emissions line, because foreign inspection teams in our factories are themselves a constraint.",
+        "tags": [
+          "NAT:N",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我觉得这题是个伪选择，真到那一步我会用别的方式处理。",
+        "t_en": "This feels like a false choice to me; if it actually came up, I'd handle it some other way entirely.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1355,
+    "domain": "社区邻里",
+    "domain_en": "Community & Neighborhood",
+    "scene": "一个六层老旧小区想给单元加装电梯，总费用约一百二十万元，楼层越高出得越多，六楼每户约三十万元，一二楼通常不用出。但一楼住户担心采光和噪音，按现行规则需本单元三分之二同意且一楼不反对才能动工，因此长期卡住。新提案改为只要三分之二同意即可开工，给一楼每户十万元补偿并加装隔音窗，电梯维护费由六楼以上按楼层递增分摊。你会支持改规则吗？",
+    "scene_en": "An old six-story neighborhood wants to add an elevator to a building unit, at a total cost of about 1.2 million, with higher floors paying more, roughly 300,000 per household on the sixth floor, while first- and second-floor homes normally pay nothing. Ground-floor residents worry about light and noise, and under current rules the project needs two-thirds consent plus no objection from the ground floor, so it has stalled. A new proposal requires only two-thirds consent, with 100,000 compensation and soundproof windows for ground-floor households, while maintenance is split among upper floors on a rising scale. Would you change the rule?",
+    "options": [
+      {
+        "t": "我会支持新规则，因为十万元加隔音窗已经补了损失，不能让一户把整栋楼的方便拖住。",
+        "t_en": "I would back the new rule, because 100,000 plus soundproof windows already covers the loss, and one household should not hold up an entire building.",
+        "tags": [
+          "COL:M",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会保留一楼否决权，因为采光和噪音是天天要忍的，多数人不能替少数人做这个决定。",
+        "t_en": "I would keep the ground-floor veto, because lost light and noise are daily burdens, and the majority should not make that call for the few.",
+        "tags": [
+          "COL:I",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持新规则但把补偿提到二十万，因为真正的损失不止玻璃钱，得让反对者也觉得划算。",
+        "t_en": "I would back the new rule but raise compensation to 200,000, because the real loss is more than window glass and even opponents should come out ahead.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会让住户自己谈，谈不拢就按市场价买断一楼产权，政府不设门槛，因为价格比投票更能算清谁让了步。",
+        "t_en": "I would let the residents negotiate, and if they cannot agree, buy out the ground-floor unit at market price with no government threshold, because price settles concessions more cleanly than a vote.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我确实无所谓，这事对生活影响不大。",
+        "t_en": "I'm genuinely indifferent — this barely affects my life either way.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1356,
+    "domain": "职场雇佣",
+    "domain_en": "Workplace & Employment",
+    "scene": "一家客服公司用系统给员工打分：每天接够八十通、满意度九成五以上才算达标，排名末位百分之十的员工自动进入待岗名单。管理层说这套办法让平均处理时长下降了百分之十五；员工代表要求公开评分权重，并允许对误判申诉、由主管复核。公司担心公开规则会让人钻空子，待岗期间只发基本工资的六成，满三个月仍未达标就解除合同。你要在算法管理照旧只公布结果与公开权重并设人工复核之间选一个。",
+    "scene_en": "A customer-service firm scores workers automatically: eighty calls a day and a satisfaction rate above ninety-five percent count as meeting targets, and the bottom ten percent are placed on standby. Management says this cut average handling time by fifteen percent. Worker representatives demand the scoring weights be published and that wrong judgments be appealable to a supervisor. The company worries that publishing the rules invites gaming. On standby, staff receive only sixty percent of base pay, and failure to meet targets after three months ends the contract. Choose between keeping algorithmic management with results-only disclosure and publishing the weights with human review.",
+    "options": [
+      {
+        "t": "我会支持公开权重加人工复核，因为误判一次就丢工作太重，主管看一眼上下文就能纠正。",
+        "t_en": "I would publish the weights and add human review, because losing a job over one wrong score is too harsh and a supervisor can correct it with a glance at the context.",
+        "tags": [
+          "ECO:L",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "我会支持算法照旧，因为处理时长降了百分之十五，公开权重后大家照着指标凑数，服务反而会掉。",
+        "t_en": "I would keep the algorithm as it is, because handling time fell fifteen percent, and once weights are public people will game the metrics and service will suffer.",
+        "tags": [
+          "ECO:R",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会支持公开评分但由工会参与定权重，因为单人申诉太弱，得让员工集体坐到桌前。",
+        "t_en": "I would publish the scoring but let the union help set the weights, because an individual appeal is weak and workers need a seat at the table together.",
+        "tags": [
+          "ECO:L",
+          "COL:M"
+        ]
+      },
+      {
+        "t": "我会让企业自己决定怎么考核，只要按合同付钱，员工不满意可以另找工作，因为考核方式本就属经营自由。",
+        "t_en": "I would let the company decide how to assess staff, as long as it pays the contract; unhappy workers can find another job, because assessment methods are a management freedom.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "这题我反复摇摆，哪个方向都觉得不太对。",
+        "t_en": "I keep going back and forth on this; neither direction feels quite right to me.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1357,
+    "domain": "言论表达",
+    "domain_en": "Speech & Expression",
+    "scene": "某社交平台试行新规：帖子被系统判定为疑似不实时，自动加上提示标签并减少一半推荐量，判定由平台内部团队做出，用户可申诉但须在四十八小时内举证。平台称试点三个月里误判申诉占百分之三；批评者担心平台一边做判定一边做裁判。监管方考虑要求判定交给独立委员会，但会使处理时效从两小时延长到两天，试点期间被限流的帖子约占总发帖量的百分之一点五。你会选哪种安排？",
+    "scene_en": "A social platform is trialing a rule: posts flagged as possibly inaccurate receive a notice label and half their normal reach, with decisions made by an in-house team and appeals requiring evidence within forty-eight hours. The platform says wrong-flag appeals were three percent during a three-month pilot, while critics say it acts as both judge and interested party. A regulator is considering handing decisions to an independent panel, which would stretch processing from two hours to two days; about 1.5 percent of all posts had their reach reduced during the pilot. Which arrangement do you favor?",
+    "options": [
+      {
+        "t": "我会支持平台自己判定并限流，因为两小时就能压住扩散，交给委员会两天黄花菜都凉了。",
+        "t_en": "I would let the platform decide and limit reach, because two hours can stop the spread while two days through a committee is far too late.",
+        "tags": [
+          "GOV:A",
+          "TECH:K"
+        ]
+      },
+      {
+        "t": "我会支持交给独立委员会，因为平台一边判定一边当当事人，换个中立者才让人信服。",
+        "t_en": "I would hand decisions to an independent panel, because the platform is both judge and interested party and a neutral body is more convincing.",
+        "tags": [
+          "COL:M",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持只加提示标签、不限流，因为让读者自己看证据比替他减少曝光稳妥得多。",
+        "t_en": "I would allow the notice label but no reach reduction, because letting readers see the evidence is safer than quietly cutting what they are shown.",
+        "tags": [
+          "GOV:L",
+          "TECH:U"
+        ]
+      },
+      {
+        "t": "我会反对任何标签，让帖子原样展示，因为百分之三的误判说明系统还不够格替人判断。",
+        "t_en": "I would oppose all labels and leave posts untouched, because a three-percent error rate means the system is not ready to judge for people.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "这取决于情景里没交代的细节，我没法锁定任何一项。",
+        "t_en": "It would depend on details this scenario doesn't give, so I can't commit to any of these.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1358,
+    "domain": "经济分配",
+    "domain_en": "Economic Distribution",
+    "scene": "某地区向低收入家庭发放食品券，每月人均价值一千元，只能买指定食品，覆盖约十万人，年预算十二亿元。新方案想改成等额现金，不加用途限制，由领取人自己安排；测算显示行政成本能从百分之八降到百分之三。反对意见说现金可能被拿去买烟酒，孩子反而吃得差；支持意见说一千元现金能用来交电费，缓解更要紧的缺口；新方案还要求领取人每季度报到一次，逾期未领视为放弃。你支持哪种发放方式？",
+    "scene_en": "A region gives low-income households food vouchers worth 1,000 a month per person, redeemable only for approved foods, covering about 100,000 people at an annual cost of 1.2 billion. A new plan would replace them with unrestricted cash of the same value, letting recipients decide; administrative costs would fall from eight percent to three. Opponents say cash might buy tobacco or alcohol and leave children worse fed; supporters say 1,000 in cash could pay an electricity bill, easing a more urgent gap. The new plan would also require a check-in once a quarter, with unclaimed benefits forfeited. Which delivery method do you favor?",
+    "options": [
+      {
+        "t": "我会支持改现金，因为行政成本从百分之八降到百分之三，省下的钱能让更多人受助。",
+        "t_en": "I would switch to cash, because administrative costs fall from eight percent to three percent and the savings can cover more people.",
+        "tags": [
+          "ECO:R",
+          "GOV:L"
+        ]
+      },
+      {
+        "t": "我会支持保留食品券，因为指定用途能保证钱花在吃的上，孩子的营养不该靠个人自觉。",
+        "t_en": "I would keep food vouchers, because restricted use ensures the money goes to food and children's nutrition should not depend on willpower.",
+        "tags": [
+          "ECO:L",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会支持现金但附加就业培训条件，因为给钱也要给条出去的路，不然容易长期依赖。",
+        "t_en": "I would allow cash but attach a job-training condition, because money needs a way out with it or dependence can set in.",
+        "tags": [
+          "GOV:A",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会主张取消发放、改为工资补贴，因为让工作付得起家用比争论钱怎么花更少争议。",
+        "t_en": "I would replace the benefit with a wage subsidy, because making work pay enough for a household is less contentious than arguing over how the money is spent.",
+        "tags": [
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "这说不上和我有关，让当事各方自己去定就好。",
+        "t_en": "It's really none of my business — I'd let the people involved sort it out themselves.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1359,
+    "domain": "贸易产业",
+    "domain_en": "Trade & Industry",
+    "scene": "某国考虑把一类机电产品的进口关税从百分之十降到零，估计每个家庭每年能省下约五百元，但本地同类工厂可能减少两万个岗位。政府同时提议，占采购额三成的公共项目必须买本地产组件，作为让步。企业界说本地含量要求会招来贸易报复，消费者组织则说五百元对低收入家庭更重要。该品类去年进口额约九十亿元，本地工厂出货量占国内市场的四成。你会支持哪项组合？",
+    "scene_en": "A country is considering cutting import tariffs on a category of machinery from ten percent to zero, which could save each household about 500 a year but may cost 20,000 local factory jobs. As a concession, the government proposes requiring locally made components in public projects, which make up thirty percent of procurement. Industry warns the local-content rule invites retaliation, while consumer groups say 500 matters more to low-income households. Imports in that category were about nine billion last year, and local plants supplied forty percent of the domestic market. Which package do you support?",
+    "options": [
+      {
+        "t": "我会支持降税到底、不要本地含量要求，因为五百元对普通家庭是实打实的，报复风险可以谈掉。",
+        "t_en": "I would cut the tariff all the way with no local-content rule, because 500 is real money for ordinary families and retaliation can be negotiated away.",
+        "tags": [
+          "ECO:R",
+          "NAT:C"
+        ]
+      },
+      {
+        "t": "我会支持保留关税和本地采购要求，因为两万个岗位背后是整条产业链，工资和税收都留在本地。",
+        "t_en": "I would keep the tariff and the local-purchase rule, because 20,000 jobs support a whole supply chain and wages and tax revenue stay at home.",
+        "tags": [
+          "NAT:N",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持降税但保留本地含量要求，因为消费者拿到便宜，工厂也有过渡期，两头都留一点。",
+        "t_en": "I would cut the tariff but keep the local-content rule, so consumers get lower prices and factories get a transition period, with something for both sides.",
+        "tags": [
+          "ECO:R",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对关税也反对本地要求，改给受影响工人培训补贴，因为扭曲价格不如直接帮人转岗。",
+        "t_en": "I would oppose both the tariff and the local rule, and instead fund retraining for affected workers, because helping people move is better than distorting prices.",
+        "tags": [
+          "ECO:R",
+          "COL:I"
+        ]
+      },
+      {
+        "t": "可以弃权的话我就弃权，这题的问法有点替我表态的意思。",
+        "t_en": "I'd abstain if I could — the way this is framed forces a stance I don't actually hold.",
+        "tags": []
+      }
+    ]
+  },
+  {
+    "id": 1360,
+    "domain": "环境生态",
+    "domain_en": "Environment & Ecology",
+    "scene": "某市拟对居民用电加征每度五分钱的碳附加，收入按人头全额返还。按每月用电三百度算，一户多付十五元，而三口之家能拿回三十元，用电少的家庭净得收益。环保部门说这能让用电总量下降约百分之六；供电公司担心冬季取暖季低收入老人反而负担变重，因为先付后退。返还按户籍人头在次月账单抵扣，一年预计征收十八亿元、全额退清。方案要求在征收并返还与不征收、改用补贴节能家电之间选。",
+    "scene_en": "A city plans a carbon surcharge of five cents per kilowatt-hour on household electricity, with all revenue rebated equally per head. At 300 kWh a month, a household pays fifteen yuan more while a family of three gets thirty back, so low-use homes come out ahead. The environment agency expects electricity use to fall about six percent; the utility worries that low-income elderly people pay upfront in winter and get the rebate later. The rebate is credited on the next bill per registered resident; the levy is expected to raise 1.8 billion a year, all returned. Choose between levying with rebate and skipping the levy in favor of subsidizing efficient appliances.",
+    "options": [
+      {
+        "t": "我会支持征收并返还，因为用电多的人多付、三口之家净拿回十五元，顺带还能少排。",
+        "t_en": "I would levy the charge and rebate it, because heavy users pay more, a family of three gets fifteen back net, and emissions fall as a byproduct.",
+        "tags": [
+          "ENV:S",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持改补贴家电，因为老人先掏钱再等返还，冬天这几个月最难熬，换台节能机更直接。",
+        "t_en": "I would subsidize appliances instead, because pensioners pay first and wait for the rebate, which is hardest in winter, and a more efficient machine helps directly.",
+        "tags": [
+          "ENV:G",
+          "ECO:L"
+        ]
+      },
+      {
+        "t": "我会支持征收但把返还前置到账单里，因为这样既留着价格信号，又不让低收入家庭垫钱。",
+        "t_en": "I would levy it but put the rebate directly on the bill, keeping the price signal without making low-income households front the money.",
+        "tags": [
+          "ENV:S",
+          "GOV:A"
+        ]
+      },
+      {
+        "t": "我会反对任何附加费，因为六个百分点的节电不值得每户每月多一笔账，市场自己会换设备。",
+        "t_en": "I would oppose any surcharge, because a six-percent cut in electricity use is not worth an extra monthly charge for every home, and the market will replace equipment on its own.",
+        "tags": [
+          "ENV:G",
+          "ECO:R"
+        ]
+      },
+      {
+        "t": "我对这事没有固定立场，换个日子答案可能就不一样。",
+        "t_en": "I don't hold a fixed view on this; my answer would probably change from one day to the next.",
+        "tags": []
+      }
+    ]
   }
 ]
